@@ -1,0 +1,1420 @@
+<apex:page lightningStylesheets="false" controller="APIT30_IntegrationPagesController" showHeader="true" docType="html-5.0">
+    <apex:includeScript value="https://code.jquery.com/jquery-3.4.1.js" />
+    <apex:includeScript value="https://code.jquery.com/ui/1.12.1/jquery-ui.js"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <style>
+        
+        .fields-container
+        {
+        width : 50%;
+        margin:auto;
+        
+        }
+        
+        .form-section
+        {
+        display : none;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        }
+        .form-section.active
+        {
+        display : block;
+        }
+        .controlBtn
+        {
+        padding: 9px 15px;
+        margin-top: 15px;
+        margin-left: 50px;
+        }
+        #prevBtn
+        {
+        visibility: hidden;
+        }
+        #controlBtnsContainer
+        {
+        width: 50%;
+        margin: auto;
+        border-top: 1px solid rgba(211, 208, 208, 0.5);
+        }
+        #projectSection{
+        display:none;
+        }
+        #ccnlSection{
+        display:none;
+        }
+        #pdrSection{
+        display:none;
+        }
+        #dataTerminePdr{
+        display:none;
+        }
+        
+        input[id="j_id0:mdaForm:invia"]{
+        position: absolute !important;
+        right: 37px;
+        top: 50px;
+        }
+        #j_id0:unicaForm{
+        width: 80%;
+        }
+        #errorMessage{
+        margin-top: 8px;
+        width: fit-content;
+        background: red;
+        padding: 0 10px;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        border-radius: 5px;
+        display: none;
+        }
+        
+        #point{
+        position: absolute;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid red;
+        }
+        
+        #warningIcon{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        }
+        
+        .tableView{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        }
+        
+        table th{
+        font-weight: bold;
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+        .headerLine{
+        border-bottom: 2px solid #3341FF;
+        }
+        .action img{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        cursor: pointer;
+        }
+        
+        #societaSection td,#unicaSection td,#societaSection th,#unicaSection th{
+        width: 100px !important;
+        margin: 0 5px;
+        }
+        #unicaSection td input,#societaSection td input {
+        width: 98% !important;
+        }
+        #sedeSection td{
+        width: 115px;
+        margin: 0 5px;
+        }
+        
+        #sedeSection td input{
+        width: 98%;
+        margin: auto;
+        }
+        
+        input.innerInput{
+        border: none !important;
+        background: none !important;
+        padding: 0 !important;
+        }
+        input.innerInput.active{
+        border: 1px solid rgba(211, 208, 208, 0.5) !important;
+        background: white !important;
+        }
+        input.hasError, input.innerInput.hasError{
+        border-color: red !important;
+        }
+        .fieldDiv{
+        width:45%;
+        display:inline-block;
+        margin-top: 5px;
+        }
+        table caption{
+        border: 1px solid #3341FF;
+        }
+        .header, table caption{
+        text-align: center;
+        border-bottom: 2px solid #3341FF;
+        }
+        #previewSection table{
+        width:95%;
+        margin: auto;
+        border: 1px solid #3341FF;
+        }
+        #previewSection table th:last-child,#previewSection table td:last-child {
+        border: none;
+        }
+        #previewSection table td,#previewSection table th {
+        border-right: 1px solid #3341FF;
+        }
+        #previewSection table td{
+        margin-left: 5px;
+        }
+        
+        
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #7575a3;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        / Position the tooltip /
+        position: absolute;
+        z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+        #files input {
+        display: block;
+        margin: 10px;
+        }
+    </style>
+    <div id="errorMessage">
+        <div id="point"></div>
+        <p id="messageBox"><img src="https://cdn.jotfor.ms/images/exclamation-octagon.png" id="warningIcon"/>questo campo è obbligatorio</p>
+    </div>
+    <div align="center" id="logo">
+        <apex:image url="https://er-italy--devam--c.documentforce.com/servlet/servlet.ImageServer?id=0150E000000u5zi&oid=00D0E000000AXQp&lastMod=1581412458000" id="theImage"/>
+    </div>
+    <div id="globalFormSection">
+        <apex:form id="myForm" style="width:85%; margin:auto;" >
+            <div class="form-section active" id="firstSection" >
+                <apex:pageBlock > 
+                    <h1 style="text-align:center">PARTENZA PROGETTO WELFARE  </h1><hr style="border-color:#f8f8f8; width:80%;"/><br/>
+                    <h1 style="text-align:center">Cliente</h1>
+                    <br/>
+                    
+                    <div class="fields-container" style="width:80%;">
+                        
+                        <apex:pageBlockSection columns="1">
+                            <apex:inputField value="{!account.ER_VAT_Number__c}" label="Partita iva cliente" html-disabled="true" required="true" style="width:80%; margin-left: auto; margin-right: auto;"/> <br/>
+                            
+                            <apex:inputField value="{!account.Name}" label="Nome Azienda" html-disabled="true" required="true" style="width:80%"/> <br/>
+                            
+                            
+                            <apex:inputField value="{!account.IT_Account_Address__c}" html-disabled="true" label="Indirizzo azienda" style="width:80%" required="true"/> <br/>
+                            
+                            <apex:inputField value="{!account.IT_Industry__c}" html-disabled="true" label="Settore merceologico" style="width:80%"/> <br/>
+                        </apex:pageBlockSection>  
+                        <!-- NOTE DI INDIRIZZO -->
+                        <apex:pageBlockSection columns="1"> 
+                            
+                            <apex:inputField value="{!account.NumberOfEmployees}" label="Numero dipendenti complessivi in Italia" html-disabled="true" required="true" />
+                            
+                        </apex:pageBlockSection>
+                        
+                    </div>
+                    
+                </apex:pageBlock>
+            </div>
+            
+            <div class="form-section" id="secondSection">
+                <apex:pageBlock id="referenti">
+                    <h1 style="text-align:center" id="referente">REFERENTE WELFARE  </h1> <hr style="border-color:#f8f8f8; width:80%;"/><br/>
+                    <div class="description">Contatti referente progetto Welfare <span style="color:red;">*</span></div>
+                    <div class="fields-container">
+                        <div>
+                            <apex:outputLabel value="Cognome : "></apex:outputLabel>
+                            <apex:inputField value="{!contact.LastName}" style="width:90%;"></apex:inputField>
+                            
+                        </div>
+                        <div>
+                            <apex:outputLabel value="Nome : " style="width:90%"></apex:outputLabel>
+                            <apex:inputField value="{!contact.FirstName}" style="width:90%;"></apex:inputField>
+                            
+                        </div>
+                        <div>
+                            <apex:outputLabel value="Ruolo in azienda : " style="width:90%"></apex:outputLabel>
+                            <apex:inputField value="{!contact.Title}" style="width:90%;"></apex:inputField>
+                            
+                        </div>
+                        <div><br/>
+                            <div class="fieldDiv" >
+                                <apex:outputLabel value="Telefono : "></apex:outputLabel><br/>
+                                <apex:inputField value="{!contact.phone}"></apex:inputField>
+                                
+                            </div>
+                            <div class="fieldDiv" style="float:right;margin-right:11px;">
+                                <apex:outputLabel value="e-mail : "></apex:outputLabel><br/>
+                                <apex:inputField value="{!contact.email}" ></apex:inputField>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- <div class="description">Aggiungere referente <span style="color:red;">*</span></div> -->
+                    
+                    <apex:repeat value="{!lContact}" var="c">
+                        <br/><br/>
+                        <div class="description">Contatti referente progetto Welfare {!c.counter} <span style="color:red;">*</span></div>
+                        <div class="fields-container">
+                            <div>
+                                <apex:outputLabel value="Cognome"></apex:outputLabel>
+                                <apex:inputField value="{!c.contact.LastName}" style="width:90%;" required="false"></apex:inputField>
+                                
+                            </div>
+                            <div>
+                                <apex:outputLabel value="Nome" style="width:90%"></apex:outputLabel><br/>
+                                <apex:inputField value="{!c.contact.FirstName}" style="width:90%;"></apex:inputField>
+                                
+                            </div>
+                            <div> 
+                                <apex:outputLabel value="Ruolo in azienda" style="width:%"></apex:outputLabel><br/>
+                                <apex:inputField value="{!c.contact.Title}" style="width:90%;"></apex:inputField>
+                                
+                            </div>
+                            <div>
+                                <div class="fieldDiv">
+                                    <apex:outputLabel value="Telefono"></apex:outputLabel><br/>
+                                    <apex:inputField value="{!c.contact.phone}"></apex:inputField>
+                                    
+                                </div>
+                                <div class="fieldDiv" style="float:right;margin-right:11px;">
+                                    <apex:outputLabel value="e-mail"></apex:outputLabel><br/>
+                                    <apex:inputField value="{!c.contact.email}" ></apex:inputField>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <br/> 
+                        <apex:commandButton action="{!deleteContacts}" style="button" value="Rimuovi referente" reRender="referenti" immediate="true"/>
+                        <apex:param value="{!c.counter}" name="selected" assignTo="{!selectedContact}"/>
+                        
+                    </apex:repeat>
+                    
+                    <apex:commandButton action="{!addContact}" style="button" value="Aggiungi referente" reRender="referenti" immediate="true" rendered="{!markerC<7}"/>
+                    <br/><br/>
+                    <!--   <div class="fields-container">
+<div>
+<apex:selectRadio value="{!showReferente}" onchange="toggleReferenteSection(this.value);" layout="pageDirection">
+<apex:selectOptions value="{!referenteOptions}" />
+</apex:selectRadio>
+</div>
+</div>
+<div id="referenteSection">
+<div class="description">Contatti referente progetto Welfare 2 <span style="color:red;">*</span></div>
+<div class="fields-container">
+<div>
+<apex:inputField html-placeholder="Cognome" value="{!contactAccount.LastName}" style="width:90%;"></apex:inputField>
+</div>
+<div>
+<apex:inputField html-placeholder="Nome" value="{!contactAccount.FirstName}" style="width:90%;"></apex:inputField>
+</div>
+<div> 
+<apex:inputField html-placeholder="Ruolo in azienda" value="{!contactAccount.ER_Role__c}" style="width:90%;"></apex:inputField>
+</div>
+<div>
+<apex:inputField html-placeholder="Telefono" value="{!contactAccount.phone}" style="width:44%;margin-right:6px;"></apex:inputField>
+<apex:inputField html-placeholder="e-mail" value="{!contactAccount.email}" style="width:44%;margin-left:6px;"></apex:inputField>
+</div>
+</div>
+</div>  -->
+                    
+                    
+                    <br/>
+                    <apex:outputPanel rendered="{!if(projectWelfare.IT_Acquisition_Channel__c == 'Aggregator', false, true)}"> 
+                        <div class="description">Indirizzo email per invio credenziali Portale Cliente che consente di monitorare il proprio progetto Welfare <span style="color:red;">*</span></div>
+                        <br/> 
+                        <div class="fields-container">
+                            <div>
+                                <apex:inputField html-placeholder="example@example.com" value="{!contactDetail.Name}" style="width:90%;" ></apex:inputField>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlock>
+            </div> 
+            
+            
+            <div class="form-section" id="thirdSection">
+                <!-- toggle PDR -->
+                <apex:actionFunction action="{!PassParameters}" name="showSectionPdr" reRender="project">
+                    <apex:param name="P1" value="" assignTo="{!showPdr}"/>
+                    <apex:param name="Param2" value="" assignTo="{!selectedFunding}"/>
+                </apex:actionFunction>
+                <apex:actionFunction action="{!PassParameters}" name="showIncentivo" reRender="project">
+                    <apex:param name="P2" value="" assignTo="{!showIncentivo}"/>
+                    <apex:param name="Param5" value="" assignTo="{!selectedFunding}"/>
+                </apex:actionFunction>
+                <apex:actionFunction action="{!PassParameters}" name="showSectionIncentivo" reRender="project">
+                    <apex:param name="P3" value="" assignTo="{!showSectionIncentivo}"/>
+                    <apex:param name="Param8" value="" assignTo="{!selectedFunding}"/>
+                </apex:actionFunction>
+                <apex:actionFunction action="{!PassParameters}" name="showReferenteCassa" rerender="project">
+                    <apex:param name="P4" value="" assignTo="{!showReferenteCassa}"/>
+                </apex:actionFunction>
+                <apex:pageBlock id="project">
+                    <apex:pageMessages id="message" > </apex:pageMessages>
+                    <h1 style="text-align:center">PROGETTO WELFARE</h1><hr style="border-color:#f8f8f8; width:75%;"/><br/>
+                    <br/>
+                    
+                    <div class="fields-container" style="width:80%;" >
+                        <apex:pageBlockSection columns="1" id="projectsection">
+                            <apex:inputField value="{!piano.Name}" label="Nome progetto welfare" style="width:80%;"></apex:inputField>
+                            
+                            
+                            <apex:repeat value="{!lFunding}" var="x">
+                                <apex:selectRadio value="{!x.funding.IT_Type__c}" label="Tipologia fonte di finanziamento" style="width:90%" onchange="showSectionPdr(this.value=='pdr', {!x.counter});" layout="pageDirection">  
+                                    <apex:selectOption itemLabel="PDR" itemValue="pdr"/>
+                                    <apex:selectOption itemLabel="CCNL" itemValue="ccnl"/>   
+                                    <apex:selectOption itemLabel="Liberalità" itemValue="liberality"/>
+                                </apex:selectRadio> 
+                                <!-- {!IF(AND(showPdr=='true', x.counter==CurrentItemSelected),TRUE,FALSE)} -->
+                                <apex:pageBlockSection rendered="{!lFunding[x.counter].flag[0]}" columns="1" >
+                                    <apex:selectRadio value="{!x.funding.IT_Membership_Payment_Type_Notes__c}" label="Dettagli PDR" style="width:90%" onchange="showSectionIncentivo(this.value=='Conversione premio con incentivo', {!x.counter});" layout="pageDirection"> 
+                                        <apex:selectOption itemLabel="Conversione premio" itemValue="Conversione premio"> </apex:selectOption>
+                                        <apex:selectOption itemLabel="Conversione premio con incentivo" itemValue="Conversione premio con incentivo"> </apex:selectOption>    
+                                    </apex:selectRadio>
+                                    
+                                    <apex:pageBlockSection rendered="{!lFunding[x.counter].flag[1]}" columns="1">
+                                        <apex:selectRadio value="{!incentivo}" label="Seleziona incentivo"  onchange="showIncentivo(this.value=='incentivo lineare', {!x.counter});"  layout="pageDirection" style="width:90%"> 
+                                            <apex:selectOption itemLabel="Incentivo all'Adesione" itemValue="incentivo lineare"> </apex:selectOption>
+                                            <apex:selectOption itemLabel="Percentuale Incentivo all'Adesione " itemValue="incentivo Percentuale"> </apex:selectOption>    
+                                        </apex:selectRadio>
+                                        <apex:inputText label="Inserisci incentivo in euro" html-placeholder="€ " value="{!x.funding.IT_Incentive_for_Membership__c}" rendered="{!lFunding[x.counter].flag[2]}" ></apex:inputText>
+                                        <apex:inputText label="Inserisci incentivo %" html-placeholder="0.00 %" value="{!x.funding.Incentive_for_Membership_percentage__c}" rendered="{!lFunding[x.counter].flag[2] =='false'}" ></apex:inputText>
+                                    </apex:pageBlockSection>
+                                    
+                                    <apex:selectRadio value="{!x.funding.IT_Platform_Choice__c}" label="Scelta conversione PDR tramite portale"  layout="pageDirection" style="width:80%;">
+                                        <apex:selectOption itemLabel="Si" itemValue="Yes"/>
+                                        <apex:selectOption itemLabel="No" itemValue="No"/>     
+                                    </apex:selectRadio>
+                                    
+                                    <apex:selectRadio value="{!x.funding.IT_Membership_Payment_Type__c}" label="Modalità della scelta PDR"  layout="pageDirection" style="width:90%" > 
+                                        <apex:selectOption itemLabel="scaglioni percentuali" itemValue="Packages percentage"></apex:selectOption>
+                                        <apex:selectOption itemLabel="scaglioni importo" itemValue="Packages amount"></apex:selectOption>
+                                        <apex:selectOption itemLabel="scelta libera" itemValue="Free amount"></apex:selectOption>
+                                    </apex:selectRadio> 
+                                    
+                                    <apex:inputTextarea value="{!x.DettaglisceltaPDR}" label="Dettagli sulla scelta PDR" html-placeholder="Indicare scaglioni in percentuale (es. 0% 50% 100%)  
+                                                                                                                                           o valori fissi della scelta (es. 0€ 500€ 1000€)" style="width:90%;"/>
+                                    
+                                </apex:pageBlockSection>
+                                
+                                
+                                <apex:selectList value="{!x.funding.IT_Details_CCNL__c}" label=" Dettagli CCNL" style="width:80%;" rendered="{!x.funding.IT_Type__c=='ccnl'}" size="1">
+                                    <apex:selectOption itemLabel="Metalmeccanico" itemValue="Metalmeccanico"/>
+                                    <apex:selectOption itemLabel="Orafo" itemValue="Orafo"/>   
+                                    <apex:selectOption itemLabel="Telecomunicazioni" itemValue="Telecomunicazioni"/>  
+                                    <!-- <apex:actionSupport reRender="areaForList" event="onchange" action="{!onChangeSelectRadio}" />  -->
+                                </apex:selectList>   
+                                
+                                <!--  <apex:inputTextArea label="Dettagli sulla scelta PDR" html-placeholder="Indicare scaglioni in percentuale o valori fissi della scelta" style="width:80%" rendered="{!showPdr}" /> -->
+                                <apex:inputField value="{!x.funding.IT_Beneficiaries__c}" label="Numero beneficiari piano (numero orientativo)" style="width:90%"/>
+                                <apex:inputField value="{!x.funding.IT_Per_capita_Amount__c}" label="Quota pro capite" style="width:90%"/>
+                                <apex:inputTextarea html-placeholder="Ad esempio dirigenti, quadri, operai etc." label="Tipologie di categorie coinvolte" style="width:90%;" ></apex:inputTextarea>
+                                <br/> 
+                                
+                                <apex:pageBlockSectionItem rendered="{!lFunding[x.counter].flag[0] =='false'}"> 
+                                    <apex:outputLabel value="Data indicativa partenza: " />
+                                    <!--   <apex:inputField value="{!piano.IT_Plan_Start_Date__c}" type="date" onmouseover="setMinValue(this);"/>  -->
+                                    <apex:inputField value="{!piano.IT_Plan_Start_Date__c}" type="date" onmouseover="setMinValue(this);" showDatePicker="false" style="width:25%;"/>  
+                                </apex:pageBlockSectionItem>
+                                
+                                <apex:pageBlockSectionItem rendered="{!lFunding[x.counter].flag[0]}" helpText="Data di partenza, se PDR data inizio scelta">
+                                    <!--  <apex:outputLabel value="Data indicativa partenza: (in caso di PDR con scelta tramite il portale, indicare la data di partenza della scelta)"/>  -->
+                                    <p data-toggle="tooltip" title="Nel caso di PDR con scelta tramite il portale, indicare la data di partenza della scelta. 
+                                                                    La partenza del progetto richiede solitamente una lavorazione di 20 giorni.">Data indicativa partenza:</p>
+                                    <apex:inputField value="{!x.funding.IT_Membership_Choice_Start_Date__c}" type="date" onmouseover="setMinValue(this);" showDatePicker="false" style="width:25%;"/>
+                                </apex:pageBlockSectionItem>
+                                
+                                <!--   <apex:outputText style="margin:auto">nel caso di PDR con scelta tramite il portale, indicare la data di partenza della scelta</apex:outputText> -->
+                                
+                                <apex:pageBlockSectionItem rendered="{!lFunding[x.counter].flag[0]}">
+                                    <apex:outputLabel value="Data indicativa fine: "/>
+                                    <apex:inputField value="{!x.funding.IT_Membership_Choice_End_Date__c}" type="date" onmouseover="setMinValue(this);" showDatePicker="false" style="width:25%" />
+                                </apex:pageBlockSectionItem>
+                                
+                                <apex:inputField value="{!piano.IT_Plan_End_Date__c}" label="Data fine piano" html-disabled="true" rendered="false" style="width:25%;"/>
+                                
+                                <!--  <apex:inputField value="{!x.funding.IT_Membership_Choice_End_Date__c}" label="Data indicativa termine scelta" style="width:50%" />                      
+<label for="from">From</label> <input type="text" id="from" name="from"/> <label for="to">to</label> <input type="text" id="to" name="to"/>   -->
+                                <div style="text-align:justify;">
+                                    <h2>Gestione dei Residui</h2>
+                                    <p style="font-size:110%;">Indicare in basso come saranno gestiti gli eventuali residui
+                                        alla fine del piano. I residui possono essere: </p>
+                                    <ul style="font-size:110%;">
+                                        <li> <b>Azzerati:</b> il credito non utilizzato viene perso;</li><br/>
+                                        <li><b>Fondo pensione:</b> il credito non utilizzato vi verrà comunicato perchè possa essere destinato 
+                                            al Fondo Pensione del dipendente se iscritto;</li><br/>
+                                        <li><b>Carry forward:</b> il credito non utilizzato vi verrà comunicato affinché possa essere reso disponibile nei 
+                                            caricamenti di credito Welfare dell'anno successivo;</li><br/>
+                                        <li><b>Liquidati </b>(solo per il PdR):   il credito non utilizzato vi verrà comunicato affinché 
+                                            possa essere accreditato nella busta paga del dipendente </li><br/>
+                                    </ul>
+                                </div>
+                                <apex:pageBlockSectionItem >Gestione dei residui a fine piano
+                                    
+                                    <apex:selectRadio layout="pageDirection" value="{!x.funding.IT_End_Plan_Residue_Management__c}" >
+                                        <apex:selectOption itemLabel="Azzerati" itemValue="Azzerati"/>
+                                        <apex:selectOption itemLabel="Fondo pensione" itemValue="Fondo pensione"/>   
+                                        <apex:selectOption itemLabel="Carry forward" itemValue="Carry forward"/>
+                                        <apex:selectOption itemLabel="Liquidati (scelta PDR)" itemValue="Liquidati" rendered="{!lFunding[x.counter].flag[0]}"/>
+                                        <!-- <apex:actionSupport reRender="areaForList" event="onchange" action="{!onChangeSelectRadio}" />  -->
+                                    </apex:selectRadio>   
+                                    
+                                </apex:pageBlockSectionItem>
+                                <apex:inputTextarea value="{!x.funding.IT_Informative_Notes__c}" html-placeholder="Note" label="Note particolari" style="width:90%"></apex:inputTextarea>  
+                                
+                                
+                                <apex:commandButton action="{!deleteRows}" style="button" value="Rimuovi" reRender="project" rendered="{!x.counter!=0}" immediate="true"/>
+                                <apex:param value="{!x.counter}" name="selected" assignTo="{!selectedFunding2}"/>
+                                <!-- </apex:panelGrid>  -->
+                                <br/>
+                                <hr/>
+                                <br/> 
+                                
+                            </apex:repeat>
+                            <apex:commandButton action="{!addFunding}" style="button" value="Aggiungi fonte di finanziamento" reRender="project" immediate="true"/>
+                            <br/> 
+                            
+                            
+                            <div> 
+                                <p data-toggle="tooltip" title="ATTENZIONE: sarà possibile inserire richieste di rimborso fino a 5 giorni prima della chiusura del Progetto Welfare.">Indicare i benefit da attivare:  </p>
+                                <apex:selectCheckboxes value="{!benefitDaAttivare}" layout="pageDirection" onclick="showReferenteCassa(this.value=='cassa');" style="margin:auto; width:90%;">
+                                    <apex:selectOption itemLabel="Rimborsi istruzione" itemValue="istruzione"/>
+                                    <apex:selectOption itemLabel="Rimborsi assistenza" itemValue="assistenza"/>   
+                                    <apex:selectOption itemLabel="Rimborsi trasporto" itemValue="trasporto"/>
+                                    <apex:selectOption itemLabel="Cassa sanitaria" itemValue="cassa"/>
+                                    <apex:selectOption itemLabel="Previdenza" itemValue="previdenza"/>   
+                                    <apex:selectOption itemLabel="Ticket Compliments stampabili (buoni acquisto)" itemValue="compliments"/>
+                                    <apex:selectOption itemLabel="Ticket Welfare (voucher per l'acquisto di servizi)" itemValue="welfare"/>
+                                    <!-- <apex:actionSupport reRender="areaForList" event="onchange" action="{!onChangeSelectRadio}" />  -->
+                                </apex:selectCheckboxes>  <br/>
+                            </div>
+                            <apex:outputPanel rendered="{!cassa}" style="width:56%; margin:auto">
+                                <apex:outputText > <b>Contatti del referente aziendale per la Cassa Sanitaria che riceverà le indicazioni per la registrazione: </b> </apex:outputText><br/><br/>
+                                <div class="fieldDiv">
+                                    <apex:outputLabel >Nome</apex:outputLabel>
+                                    <apex:inputText value="{!contCassaSanitaria.FirstName}" label="Nome"/>  
+                                </div>
+                                <div class="fieldDiv" style="float:right;margin-right:30px;">
+                                    <apex:outputLabel >Cognome</apex:outputLabel>
+                                    <apex:inputText value="{!contCassaSanitaria.LastName}" label="Cognome"/>                                
+                                </div>
+                                <div>
+                                    <!--  <div class="fieldDiv">
+<apex:outputLabel value="Telefono" style="width:15%"></apex:outputLabel>
+<apex:inputText value="{!contCassaSanitaria.Phone}" label="Telefono"/>
+</div>   -->
+                                    <div class="fieldDiv">
+                                        <apex:outputLabel value="E-mail"></apex:outputLabel>
+                                        <apex:inputText value="{!contCassaSanitaria.Email}" label="Email"/>
+                                    </div>
+                                </div>                            
+                            </apex:outputPanel> <br/><br/>  
+                            
+                            <apex:outputLabel value="Indicare mail a cui inviare il 
+                                                     riepilogo del residuo a termine piano *"/>  
+                            
+                            <apex:selectList value="{!getRiepilogo}" size="1">
+                                <apex:selectOptions value="{!emailRiepilogo}"/> 
+                            </apex:selectList> 
+                            <apex:inputText value="{!contactDetailResidue.Name}" label="" />    
+                            <!--  <div class="fields-container">
+<div>
+<apex:inputText label="" html-placeholder="example@example.com" value="{!contactDetailResidue.Name}"  style="float:right;margin-right:11px;" ></apex:inputText>
+</div>
+</div>  -->
+                        </apex:pageBlockSection>
+                    </div>
+                </apex:pageBlock>  
+            </div>
+            
+            <div class="form-section" id="fourthSection">
+                <apex:pageMessages id="message" > </apex:pageMessages>
+                <h1 style="text-align:center">FATTURAZIONE  </h1> <hr style="border-color:#f8f8f8; width:80%;"/><br/>
+                <div class="description">Fatturazione desiderata <span style="color:red;margin-top:20px;">*</span></div>
+                <div class="fields-container">
+                    <div id="billingOptions">
+                        <apex:selectRadio value="{!showReferente}" onchange="toggleBillingSection(this.value);" layout="pageDirection">
+                            <apex:selectOptions value="{!billingOptions}" />
+                            <apex:actionSupport action="{!showReferenteSelected}" event="onchange" reRender="unicaFormSection">
+                                
+                            </apex:actionSupport>
+                        </apex:selectRadio>
+                    </div>
+                </div>
+                <div class="fields-container">
+                    <!-- <div>
+<apex:inputField type="date" value="{!contactDetail.IT_Contact_Info__c}" style="width:90%;"></apex:inputField>
+</div>  -->
+                </div>
+                <div id="separataSection" style="display:none;margin-top:20px;">
+                    <div class="description">Criterio separazione fatturazione <span style="color:red;">*</span></div>
+                    <div class="fields-container">
+                        <div>
+                            <apex:selectCheckboxes onchange="separataSelected();" layout="pageDirection" id="separata">
+                                <apex:selectOptions value="{!separataOptions}"/>
+                            </apex:selectCheckboxes>
+                        </div>
+                    </div>
+                </div>
+                <div id="altroSection" style="display:none;margin-top:20px;">
+                    <div class="description">Specificare dettagli altro <span style="color:red;">*</span></div>
+                    <div class="fields-container">
+                        <!-- <div>
+<apex:inputField html-placeholder="example@example.com" value="{!contactDetail.IT_Contact_Info__c}" style="width:90%;"></apex:inputField>
+</div>   -->
+                    </div>
+                </div>
+                <br/>
+            </div>
+            
+            
+            <div class="form-section" id="fifthSection">
+                <apex:pageBlock id="payroll">
+                    <apex:pageMessages id="message" > </apex:pageMessages>
+                    <h1 style="text-align:center">PAYROLL</h1> <hr style="border-color:#f8f8f8; width:80%;"/><br/>
+                    <p style="text-align:center">Ogni mese Easy Welfare Edenred invierà un flusso payroll utile
+                        all'azienda per la lavorazione delle buste paga dei propri beneficiari. </p>
+                    <br/>
+                    
+                    <apex:actionFunction action="{!PassParameters}" name="payrollAltro" reRender="payroll">
+                        <apex:param name="P1" value="" assignTo="{!payroll}"/>
+                    </apex:actionFunction>
+                    
+                    <div class="fields-container" style="width:85%;">
+                        <apex:pageBlockSection columns="2">
+                            <apex:outputLabel > Struttura del flusso payroll<span style="color:red"> *   </span></apex:outputLabel>
+                            <apex:selectList value="{!strutturaPayroll}" onchange="payrollAltro(this.value=='altro');" size="1">
+                                <apex:selectOption itemValue="unico" itemLabel="Unico"></apex:selectOption>
+                                <apex:selectOption itemValue="separato" itemLabel="Separato per le stesse società indicate per fatturazione separata"></apex:selectOption>
+                                <apex:selectOption itemValue="altro" itemLabel="Altro"></apex:selectOption>
+                            </apex:selectList>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection columns="2" rendered="{!payroll}">
+                            <apex:outputLabel >Specificare dettagli altro <span style="color:red">*</span></apex:outputLabel>
+                            <apex:inputText value="{!dettagliAltro}"/>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection columns="2">
+                            <apex:outputLabel >Indirizzo email per l'invio dei flussi payroll <span style="color:red">*</span></apex:outputLabel>
+                            <apex:inputText value="{!contactDetailPay.Name}" label="" /> 
+                        </apex:pageBlockSection>
+                    </div>
+                </apex:pageBlock>
+            </div>
+            
+            <div class="form-section" id="sixthSection">
+                <apex:pageBlock >
+                    <div class="fields-container" style="width:85%;">
+                        
+                        <apex:pageMessages id="message" > </apex:pageMessages>
+                        <br/><br/>
+                        <apex:outputLabel style="top:20%">Inserire mail a cui inviare riepilogo dei dati inseriti <span style="class:red">*</span></apex:outputLabel>
+                        <apex:inputText value="{!emailRiepilogoDati}"></apex:inputText> <br/> <br/>
+                        
+                        <div id="saveSection" align="center" style="display:block;">
+                            <apex:commandButton action="{!savePlan}" value="SALVA" reRender="message" oncomplete="saved(); lockForm({!confirm});"/>
+                            <br/>
+                            
+                            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                            <apex:pageBlockSection >
+                                <apex:outputLink value="https://www.edenred.it/informativa-clienti-dicembre-2019" id="theLink">Consulta la nostra informativa privacy al seguente link</apex:outputLink>
+                            </apex:pageBlockSection>
+                        </div>
+                        
+                    </div>
+                </apex:pageBlock>
+            </div>
+            
+        </apex:form>
+        <apex:form id="unicaForm">
+            <div id="unicaSection" style="display:none;width:55%;margin:auto;margin-top:20px;">
+                <apex:pageBlock id="unicaFormSection" title="Indicare dettagli societari">
+                    <div class="tableView">
+                        <table>
+                            <tr class="headerLine">
+                                <th>P.IVA</th>
+                                <th>Nome azienda</th>
+                                <th>Indirizzo</th>
+                                <th>PEC oppure codice univoco</th>
+                                <th>Mail per fatture cortesia</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <apex:repeat value="{!listUnicas}" var="item">
+                                    <tr class="unicaLine{!item.index}">
+                                        <td><apex:input value="{!item.pIva}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.nomeAzianda}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.indirizzo}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.pec}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.mail}" styleClass="innerInput" disabled="true"/></td>
+                                        <td class="action">
+                                            <img src="https://img.icons8.com/small/16/000000/edit-file.png" title="Edit" onclick="editLine('unicaLine',{!item.index});" />
+                                            <img src="https://img.icons8.com/windows/32/000000/delete-forever.png" title="Delete" onclick="deleteToUnicaList();" />
+                                            <button type="button" onclick="updateLine('unicaLine',{!item.index});" style="display:none;">update</button>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+                                <tr id="unicaFormLine">
+                                    <td><apex:input value="{!unicaObject.pIva}" type="number" styleClass="tableFormInput" id="pIvaField"/></td>
+                                    <td><apex:input value="{!unicaObject.nomeAzianda}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!unicaObject.indirizzo}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!unicaObject.pec}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!unicaObject.mail}" styleClass="tableFormInput"/></td>
+                                    <td><apex:commandButton onclick="checkSocietaFields(); return false;" value="Salva" /></td>
+                                    <!--td> <apex:commandButton value="Salva" onclick="checkSocietaFields();" reRender="unicaFormSection"/> </td><!-- onclick="addToSocietaList();return false;"-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </apex:pageBlock>
+                
+            </div>
+            <apex:actionFunction action="{!showReferenteSelected}" name="showReferenteSelected" reRender="unicaFormSection">
+                <apex:param name="section" assignTo="{!showReferente}" value=""/>
+            </apex:actionFunction>
+            <apex:actionFunction action="{!addToUnicaList}" name="addUnicaToList" reRender="unicaFormSection" oncomplete="unicaAdded();" />
+            <apex:actionFunction action="{!deleteUnicaToList}" name="deleteToUnicaList" reRender="unicaFormSection" oncomplete="societaDeleted();">
+            	<apex:param name="index" assignTo="{!indexToDelete}" value=""/>
+            </apex:actionFunction>
+        </apex:form>
+        <apex:form id="societaForm">
+            <div id="societaSection" style="display:none;width:55%;margin:auto;margin-top:20px;">
+                <apex:pageBlock id="societaFormSection" title="Indicare dettagli societari">
+                    <div class="tableView">
+                        <table>
+                            <tr class="headerLine">
+                                <th>P.IVA</th>
+                                <th>Nome azienda</th>
+                                <th>Indirizzo</th>
+                                <th>PEC oppure codice univoco</th>
+                                <th>Mail per fatture cortesia</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <apex:repeat value="{!listSocietas}" var="item">
+                                    <tr class="societaLine societaLine{!item.index}">
+                                        <td><apex:input value="{!item.pIva}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.nomeAzianda}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.indirizzo}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.pec}" styleClass="innerInput" disabled="true"/></td>
+                                        <td><apex:input value="{!item.mail}" styleClass="innerInput" disabled="true"/></td>
+                                        <td class="action">
+                                            <img src="https://img.icons8.com/small/16/000000/edit-file.png" title="Edit" onclick="editLine('societaLine',{!item.index});" />
+                                            <img src="https://img.icons8.com/windows/32/000000/delete-forever.png" title="Delete" onclick="deleteToSocietaList({!item.index}); return false;" />
+                                            <button type="button" onclick="updateLine('societaLine',{!item.index});" style="display:none;">update</button>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+                                <tr id="societaFormLine">
+                                    <td><apex:input value="{!societaObject.pIva}" type="number" styleClass="tableFormInput" id="pIvaField"/></td>
+                                    <td><apex:input value="{!societaObject.nomeAzianda}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!societaObject.indirizzo}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!societaObject.pec}" styleClass="tableFormInput"/></td>
+                                    <td><apex:input value="{!societaObject.mail}" styleClass="tableFormInput"/></td>
+                                    <td><apex:commandButton onclick="checkSocietaFields(); return false;" value="Salva" /></td>
+                                    <!--td> <apex:commandButton value="Salva" onclick="checkSocietaFields();" reRender="unicaFormSection"/> </td><!-- onclick="addToSocietaList();return false;"-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </apex:pageBlock>
+                
+            </div>
+            <apex:actionFunction action="{!addToSocietaList}" name="addSocietaToList" reRender="societaFormSection" />
+            <apex:actionFunction action="{!deleteSocietaToList}" name="deleteToSocietaList" reRender="societaFormSection">
+                <apex:param name="index" assignTo="{!indexToDelete}" value=""/>
+            </apex:actionFunction>
+        </apex:form>
+        <apex:form id="sedeForm">
+            <div id="sedeSection" style="display:none;width:55%;margin:auto;margin-top:20px;">
+                <apex:pageBlock id="sedeFormSection" title="Indicare dettagli delle altre sedi del gruppo">
+                    <table class="tableView">
+                        <tr class="headerLine">
+                            <th>Nome sede</th>
+                            <th>Indirizzo</th>
+                            <th>PEC oppure codice univoco</th>
+                            <th>Mail per fatture cortesia</th>
+                            <th></th>
+                        </tr>
+                        <tbody>
+                            <apex:repeat value="{!listSedes}" var="item">
+                                <tr class="sedeLine{!item.index}">
+                                    <td><apex:input value="{!item.nomeSede}" styleClass="innerInput" disabled="true"/></td>
+                                    <td><apex:input value="{!item.indirizzo}" styleClass="innerInput" disabled="true"/></td>
+                                    <td><apex:input value="{!item.pec}" styleClass="innerInput" disabled="true"/></td>
+                                    <td><apex:input value="{!item.mail}" styleClass="innerInput" disabled="true"/></td>
+                                    <td class="action">
+                                        <img src="https://img.icons8.com/small/16/000000/edit-file.png" title="Edit" onclick="editLine('sedeLine',{!item.index});" />
+                                        <img src="https://img.icons8.com/windows/32/000000/delete-forever.png" title="Delete" onclick="deleteToSedeList({!item.index});" />
+                                        <button type="button" onclick="updateLine('sedeLine',{!item.index});" style="display:none;">update</button>
+                                    </td>
+                                </tr>
+                            </apex:repeat>
+                            <tr id="sedeFormLine">
+                                <td><apex:input value="{!sedeObject.nomeSede}" styleClass="tableFormInput"/></td>
+                                <td><apex:input value="{!sedeObject.indirizzo}" styleClass="tableFormInput"/></td>
+                                <td><apex:input value="{!sedeObject.pec}" styleClass="tableFormInput"/></td>
+                                <td><apex:input value="{!sedeObject.mail}" styleClass="tableFormInput" type="email"/></td>
+                                <td> <apex:commandButton onclick="checkSedeFields(); return false;" value="Salva e Aggiungi Riga"/> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </apex:pageBlock>
+            </div>
+            <apex:actionFunction action="{!addToSedeList}" name="addSedeToList" reRender="sedeFormSection" />
+            <apex:actionFunction action="{!deleteSedeToList}" name="deleteToSedeList" reRender="sedeFormSection">
+                <apex:param name="index" assignTo="{!indexToDelete}" value=""/>
+            </apex:actionFunction>
+            <br/> 
+            
+        </apex:form>
+        
+        
+        <div id="controlBtnsContainer">
+            <button type="button" class="controlBtn" id="prevBtn" onclick="previousSection(); return false;">Indietro</button>
+            <button type="button" class="controlBtn" id="nextBtn" onclick="nextSection(); return false;">Avanti</button> 
+            <button type="button" class="controlBtn" id="pdfBtn" onclick="displayPdf(); return false;" style="display:none;">Genera PDF</button> 
+        </div> 
+    </div>
+    <!--div id="previewSection" style="width:70%;display:none;margin:auto;border:1px solid rgba(211, 208, 208, 0.5); border-radius:5px;padding:0 5px;margin-bottom:10px;"-->
+    <apex:form id="aForm">
+        <apex:actionFunction action="{!displayPdf}" name="displayPdf" reRender="aForm" oncomplete="generatePdf();"/><!---->
+        <!--apex:param name="show" assignTo="{!showPdf}" value=""/-->
+        <apex:actionFunction action="{!savePdfAttachment}" name="savePdfFile" reRender="aForm" oncomplete="pdfSaved();">
+        <apex:param name="html" assignTo="{!pdfHtml}" value=""/>
+        </apex:actionFunction>
+        <apex:outputPanel id="pdfPreview" rendered="{!showPdf}" style="width:90%;margin:auto;border: 2px solid #3341FF;border-radius:3px;">
+            <div align="center">
+                <apex:image url="https://er-italy--devam--c.documentforce.com/servlet/servlet.ImageServer?id=0150E000000u5zi&oid=00D0E000000AXQp&lastMod=1581412458000" id="theImage"/>
+            </div>
+            <div class="section">
+                <h1 class="header" style="text-align:center;">
+                    PARTENZA PROGETTO WELFARE
+                </h1>
+                <div class="body">
+                    <p>
+                        Partita iva cliente : {!account.ER_VAT_Number__c}
+                    </p>
+                    <p>
+                        Nome Azienda : {!account.Name}
+                    </p>
+                    <p>
+                        Indirizzo azienda : {!account.IT_Account_Address__c}
+                    </p>
+                    <p>
+                        Settore merceologico : {!account.IT_Industry__c}
+                    </p>
+                    <p>
+                        Numero dipendenti complessivi in Italia : {!account.NumberOfEmployees}
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="header" style="text-align:center;">
+                    REFERENTE WELFARE
+                </h1>
+                <div class="body">
+                    <h3>Contatti referente progetto Welfare</h3>
+                    <p>
+                        Cognome : {!contact.LastName}
+                    </p>
+                    <p>
+                        Nome: {!contact.FirstName}
+                    </p>
+                    <p>
+                        Ruolo in azienda : {!contact.Title}
+                    </p>
+                    <p>
+                        Telefono : {!contact.phone}
+                    </p>
+                    <p>
+                        E-mail : {!contact.email}
+                    </p>
+                    <hr/>
+                    <table style="border:1px solid #3341FF;">
+                        <caption>Contatti referente progetto Welfare</caption>
+                        <tr style="border:1px solid #3341FF;">
+                            <th style="border:1px solid #3341FF;">Cognome</th>
+                            <th style="border:1px solid #3341FF;">Nome</th>
+                            <th style="border:1px solid #3341FF;">Ruolo in azienda</th>
+                            <th style="border:1px solid #3341FF;">Telefono</th>
+                            <th style="border:1px solid #3341FF;">E-mail</th>
+                        </tr>
+                        <apex:repeat value="{!lContact}" var="cont">
+                            <tr style="border:1px solid #3341FF;">
+                                <td style="border:1px solid #3341FF;">{!cont.contact.LastName}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.contact.FirstName}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.contact.Title}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.contact.phone}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.contact.email}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                    <hr/>
+                    <p>
+                        Indirizzo email per invio credenziali Portale Cliente che consente di monitorare il proprio progetto Welfare : {!contactDetail.Name}
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="header" style="text-align:center;">
+                    PROGETTO WELFARE
+                </h1>
+                <div class="body">
+                    <p>Nome progetto welfare : {!piano.Name}</p>
+                    <table style="border:1px solid #3341FF;">
+                        <tr style="border:1px solid #3341FF;">
+                            <th style="border:1px solid #3341FF;">Tipologia fonte di finanziamento</th>
+                            <th style="border:1px solid #3341FF;">Note</th>
+                            <th style="border:1px solid #3341FF;">Beneficiari</th>
+                            <th style="border:1px solid #3341FF;">Importo pro-capite</th>
+                            <th style="border:1px solid #3341FF;">Percentuale incentivo adesione</th>
+                            <th style="border:1px solid #3341FF;">incentivo adesione lineare</th>
+                            <th style="border:1px solid #3341FF;">Percentuale incentivo adesione</th>
+                        </tr>
+                        <apex:repeat value="{!lFunding}" var="cont">
+                            <tr style="border:1px solid #3341FF;">
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Type__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Membership_Payment_Type_Notes__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Beneficiaries__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Per_capita_Amount__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.Incentive_for_Membership_percentage__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Incentive_for_Membership__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Membership_Payment_Type__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Details_CCNL__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Membership_Choice_Start_Date__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Membership_Choice_End_Date__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_End_Plan_Residue_Management__c}</td>
+                                <td style="border:1px solid #3341FF;">{!cont.funding.IT_Informative_Notes__c}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                    <apex:outputPanel rendered="{!cassa}">
+                        <apex:outputText > <b>Contatti del referente aziendale per la Cassa Sanitaria che riceverà le indicazioni per la registrazione: </b> </apex:outputText>
+                        <p>Nome : {!contCassaSanitaria.FirstName}</p>
+                        <p>Cognome : {!contCassaSanitaria.LastName}</p>
+                        <p>Email : {!contCassaSanitaria.Email}</p>  
+                    </apex:outputPanel>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="header" style="text-align:center;">
+                    FATTURAZIONE
+                </h1>
+                <div class="body">
+                    <table style="border:1px solid #3341FF;" id="listUnicaPreview">
+                        <caption>Indicare dettagli societari</caption>
+                        <tr style="border:1px solid #3341FF;">
+                            <th style="border:1px solid #3341FF;">P.IVA</th>
+                            <th style="border:1px solid #3341FF;">Nome azienda</th>
+                            <th style="border:1px solid #3341FF;">Indirizzo</th>
+                            <th style="border:1px solid #3341FF;">PEC oppure codice univoco</th>
+                            <th style="border:1px solid #3341FF;">Mail per fatture cortesia</th>
+                        </tr>
+                        <apex:repeat value="{!listUnicas}" var="item">
+                            <tr style="border:1px solid #3341FF;">
+                                <td style="border:1px solid #3341FF;">{!item.pIva}</td>
+                                <td style="border:1px solid #3341FF;">{!item.nomeAzianda}</td>
+                                <td style="border:1px solid #3341FF;">{!item.indirizzo}</td>
+                                <td style="border:1px solid #3341FF;">{!item.pec}</td>
+                                <td style="border:1px solid #3341FF;">{!item.mail}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                    <hr />
+                    <table style="border:1px solid #3341FF;" id="listSocietaPreview">
+                        <caption>Indicare dettagli societari</caption>
+                        <tr style="border:1px solid #3341FF;">
+                            <th style="border:1px solid #3341FF;">P.IVA</th>
+                            <th style="border:1px solid #3341FF;">Nome azienda</th>
+                            <th style="border:1px solid #3341FF;">Indirizzo</th>
+                            <th style="border:1px solid #3341FF;">PEC oppure codice univoco</th>
+                            <th style="border:1px solid #3341FF;">Mail per fatture cortesia</th>
+                        </tr>
+                        <apex:repeat value="{!listSocietas}" var="item">
+                            <tr style="border:1px solid #3341FF;">
+                                <td style="border:1px solid #3341FF;">{!item.pIva}</td>
+                                <td style="border:1px solid #3341FF;">{!item.nomeAzianda}</td>
+                                <td style="border:1px solid #3341FF;">{!item.indirizzo}</td>
+                                <td style="border:1px solid #3341FF;">{!item.pec}</td>
+                                <td style="border:1px solid #3341FF;">{!item.mail}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                    <hr/>
+                    <table style="border:1px solid #3341FF;"  id="listSedePreview">
+                        <caption>Indicare dettagli delle altre sedi del gruppo</caption>
+                        <tr style="border:1px solid #3341FF;">
+                            <th style="border:1px solid #3341FF;">Nome sede</th>
+                            <th style="border:1px solid #3341FF;">Indirizzo</th>
+                            <th style="border:1px solid #3341FF;">PEC oppure codice univoco</th>
+                            <th style="border:1px solid #3341FF;">Mail per fatture cortesia</th>
+                        </tr>
+                        <apex:repeat value="{!listSedes}" var="item">
+                            <tr style="border:1px solid #3341FF;">
+                                <td style="border:1px solid #3341FF;">{!item.nomeSede}</td>
+                                <td style="border:1px solid #3341FF;">{!item.indirizzo}</td>
+                                <td style="border:1px solid #3341FF;">{!item.pec}</td>
+                                <td style="border:1px solid #3341FF;">{!item.mail}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="header" style="text-align:center;">
+                    PAYROLL
+                </h1>
+                <div class="body">
+                    <p>Struttura del flusso payroll : {!strutturaPayroll}</p>
+                    <apex:outputPanel rendered="{!payroll}">
+                        <p>Specificare dettagli altro : {!dettagliAltro}</p>
+                    </apex:outputPanel>
+                    <p>Indirizzo email per l'invio dei flussi payroll : {!contactDetailPay.Name}</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="body">
+                    <p>Inserire mail a cui inviare riepilogo dei dati inseriti : {!emailRiepilogoDati}</p>
+                </div>
+            </div>
+        </apex:outputPanel>
+    </apex:form>
+    <!--/div-->
+    
+    <apex:form id="upload" html-hidden="hidden" style="width:85%; margin:auto;">  
+        <div class="form-section">
+            <div id="files" style="width:85%; margin:auto; margin-top:20%">
+                <input type="file" id="file" /> 
+            </div>
+            <div id="buttons" style="margin-top: 30px;margin-bottom: 30px; margin:auto; width:85%;">
+                <button type="button" id="addFileBtn" onclick="addNewFile();">Add a file</button>
+                <button type="button" id="button" onclick="uploadFiles()">Save</button> 
+            </div>
+            
+        </div>
+    </apex:form> 
+    
+    <script>
+    
+    $(document).ready(function(){
+        window.onload=lockForm({!caseInstance.IT_Form_Submitted__c});
+        function lockForm(controllo){
+            if ( controllo ){
+                $('input').attr("disabled","disabled");
+                $('select').attr("disabled","disabled");
+                $('textarea').attr("disabled","disabled");
+                //document.getElementById('{!$Component.mdaForm.mdaDistantProcess.datiClienteBlock.datiClienteSection}').removeAttribute('disabled');
+                //   document.getElementById('{!$Component.mdaForm}').setAttribute("html-hidden", "hidden");
+                document.getElementById('{!$Component.upload}').removeAttribute('hidden');
+                $('#files input').removeAttr("disabled");
+                $('#buttons button').attr("enabled","enabled");
+                //document.getElementById('{!$Component.upload.attachmentPb.attachmentPbs.attachmentFPbsi.file}').removeAttribute('disabled');
+                //document.getElementById('{!$Component.upload.attachmentPb.attachmentPbs.attachmentTPbsi.title}').removeAttribute('disabled');
+                //document.getElementById('{!$Component.upload.attachmentPb.attachmentBtnPBs.button}').removeAttribute('disabled');
+            }
+        };
+        
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        var mdaForm = document.getElementById('{!$Component.mdaForm}');
+        var altroSection = document.getElementById('altroSection');
+        var saveSection = document.getElementById('saveSection');
+        var sedeSection = document.getElementById('sedeSection');
+        var unicaSection = document.getElementById('unicaSection');
+        var societaSection = document.getElementById('societaSection');
+        var separataSection = document.getElementById('separataSection');
+        var billingOptions = document.getElementById('billingOptions');
+        var billingOptionsInputs = billingOptions.getElementsByTagName('input');
+        var sections = document.getElementsByClassName('form-section');
+        var prevBtn = document.getElementById('prevBtn');
+        var nextBtn = document.getElementById('nextBtn');
+        var pdfBtn = document.getElementById('pdfBtn');
+        var currentSection =1;
+        var showUnicaSection = false;
+        var showSocietaList = false, showSedeList = false;
+        for(var i=0; i<billingOptionsInputs.length; i++){
+            billingOptionsInputs[i].checked = false;
+        }
+        
+        
+        console.log(sections.length + 'ciao' + sections[0].className + '  ' + sections[1].className);
+        //console.log(window.getComputedStyle(prevBtn) + 'visibility start');
+        var errorMessage = document.getElementById('errorMessage');
+        /*     toggleReferenteSection = function(selectedValue){
+                var referenteSection = document.getElementById('referenteSection');
+                console.log('section',referenteSection);
+                if(selectedValue === 'si'){
+                    referenteSection.style.display = 'block';
+                }
+                else{
+                    referenteSection.style.display = 'none';
+                }
+            }   */
+        saved = function(){
+            //if({!saveDone}){
+            pdfBtn.style.display = 'inline';
+            //}
+        }
+        pdfSaved = function(){
+        	alert('PDF file saved successfully');
+        }
+        addNewFile = function(){
+            //alert('here');
+            let fileInput=document.getElementById('file');
+            let files=document.getElementById('files');
+            if(files.getElementsByTagName('input').length < 5){
+                let file = fileInput.cloneNode(true);
+                file.value = '';
+                files.appendChild(file);
+            }
+            if(files.getElementsByTagName('input').length >= 5){
+                document.getElementById('addFileBtn').style.display = 'none';
+            }
+        }
+        uploadFiles=function(){
+            console.log('entra'); 
+            let results = [];
+            let filesDiv = document.getElementById('files');
+            let filesInputs = filesDiv.getElementsByTagName('input');
+            console.log('inputs',filesInputs);
+            for(let i=0; i<filesInputs.length; i++){
+                if(filesInputs[i].value != ''){
+                    let files = filesInputs[i].files;
+                    let file = files[0];
+                    let result = doUpload(file);
+                    if(result){
+                        results.push({
+                            'isUploaded': result,
+                            'fileName': file.name
+                        });   
+                    }
+                }
+            }
+            var message = '';
+            results.forEach(function(result, index){
+                message += 'file '+(index+1)+' : '+result.fileName+' ';
+                message += result.isUploaded ? 'uploaded successfuly \n':'not uploaded \n';
+            });
+            //alert(message);
+            console.log('dopo readAsDataurl');
+        } 
+        doUpload = function(file){
+            var fr = new FileReader();
+            fr.onload = function() {
+                debugger;
+                var fileContents = fr.result;
+                var base64Mark = 'base64,';
+                var dataStart = fileContents.indexOf(base64Mark)
+                + base64Mark.length;
+                
+                fileContents = fileContents.substring(dataStart);
+                
+                let xhr = new XMLHttpRequest();     
+                xhr.open('POST', 'https://er-italy--devten.my.salesforce.com/services/apexrest/FileUpload/v1/upload?id=' + 
+                         '{!projectWelfare.id}' + '&filename=' + encodeURIComponent(file.name), true);
+                xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+                xhr.setRequestHeader('SalesforceProxy-Endpoint', 'https://er-italy--devten.my.salesforce.com/services/apexrest/FileUpload/v1/upload?id=' + 
+                                     '{!projectWelfare.id}' + '&filename=' + encodeURIComponent(file.name));
+                xhr.onload = function() {
+                    if (xhr.status != 200) { // analyze HTTP status of the response
+                        alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+                    } else { // show the result
+                        alert(file.name +` File succesfully uploaded`); // responseText is the server
+                        return true;
+                    }
+                };
+                xhr.onerror = function( err, err1, err2 ) { // only triggers if the request couldn't be made at all
+                    alert(file.name+` NetWork Error`);
+                    return false;
+                };
+                xhr.send(fileContents);
+                
+            };
+            fr.readAsDataURL(file);
+        }
+        generatePdf = function(){
+            document.getElementById('globalFormSection').style.display = 'none';
+            document.getElementById('logo').style.display = 'none';
+            if(!showSocietaList){
+            	document.getElementById('listSocietaPreview').style.display = 'none';
+            }
+            if(!showSedeList){
+            	document.getElementById('listSedePreview').style.display = 'none';
+            }
+            if(!showUnicaSection){
+            	document.getElementById('listUnicaPreview').style.display = 'none';
+            }
+            var pdfPreview = document.getElementById('{!$Component.aForm.pdfPreview}');
+            console.log('html ',pdfPreview.innerHTML);
+            //document.getElementById('previewSection').style.display = 'block';
+            savePdfFile(pdfPreview.innerHTML);
+        }
+        setMinValue = function(dateField){
+            //alert('hee');
+            if(dateField.min != minDate){
+                var date = new Date();
+                date.setDate(date.getDate()+20);
+                var minDate = date.getFullYear()+'-'+('0'+Number(date.getMonth()+1)).slice(-2)+'-'+('0'+date.getDate()).slice(-2);
+                dateField.min = minDate; 
+            }
+        }
+        lockUnicaForm = function(){
+            $('#unicaFormLine input').attr("disabled","disabled");
+        }
+        unlockUnicaForm = function(){
+            $('#unicaFormLine input').attr("enabled","enabled");
+        }
+        showSocietaLines = function(){
+            document.getElementById('listSocietas').style.display='table-row-group';
+        }
+        hideSocietaLines = function(){
+            document.getElementById('listSocietas').style.display='none';
+        }
+        showUnicaLines = function(){
+            document.getElementById('listUnicas').style.display='table-row-group';
+        }
+        hideUnicaLines = function(){
+            document.getElementById('listUnicas').style.display='none';
+        }
+        unicaAdded = function(){
+            if(showUnicaSection){
+                lockUnicaForm();
+            }
+        }
+        unicaDeleted = function(){
+            if(showUnicaSection){
+                unlockUnicaForm();
+            }
+        }
+        updateLine = function(className,index){
+            var line = document.querySelector('.'+className+index);
+            var inputs = line.querySelectorAll('input');
+            var icons = line.querySelectorAll('img');
+            var updateBnt = line.querySelector('button');
+            if(((className.includes('societa') || className.includes('unica')) && societaFielsValidate(inputs)) || (className.includes('sede') && sedeFielsValidate(inputs))){
+                for(var i=0; i<inputs.length; i++){
+                    inputs[i].disabled = true;
+                    inputs[i].className = inputs[i].className.replace(' active','');
+                }
+                updateBnt.style.display = 'none';
+                icons[0].style.display = 'inline';
+                icons[1].style.display = 'inline';
+            }
+        }
+        addSocietaToListJs = function(){
+            if(showUnicaSection){
+                addUnicaToList();
+            }
+            else{
+            	addSocietaToList();
+            }
+        }
+        checkSocietaFields = function(){
+            var inputs;
+            if(showUnicaSection)
+                inputs = document.querySelectorAll('#unicaFormLine .tableFormInput');
+            else
+            	inputs = document.querySelectorAll('#societaFormLine .tableFormInput');
+            if(societaFielsValidate(inputs)){
+                addSocietaToListJs();
+            }
+        }
+        societaFielsValidate = function(inputs){
+            var isValidate = true;
+            inputs.forEach(function(item, index){
+                if(index>0 && item.value == '' || (index == 0 && item.value.length != 11)){
+                    isValidate = false;
+                    item.className += ' hasError';
+                }
+                else{
+                    item.className = item.className.replace(' hasError','');
+                }
+            });
+            return isValidate;
+        }
+        checkSedeFields = function(){
+            var inputs = document.querySelectorAll('#sedeFormLine .tableFormInput');
+            if(sedeFielsValidate(inputs)){
+                addSedeToList();
+            }
+        }
+        sedeFielsValidate = function(inputs){
+            var isValidate = true;
+            inputs.forEach(function(item, index){
+                if(index>0 && item.value == ''){
+                    isValidate = false;
+                    item.className += ' hasError';
+                }
+                else{
+                    item.className = item.className.replace(' hasError','');
+                }
+            });
+            return isValidate;
+        }
+        editLine = function(className,index){
+            var line = document.querySelector('.'+className+index);
+            var inputs = line.querySelectorAll('input');
+            var icons = line.querySelectorAll('img');
+            var updateBnt = line.querySelector('button');
+            for(var i=0; i<inputs.length; i++){
+                inputs[i].disabled = false;
+                inputs[i].className += ' active';
+            }
+            updateBnt.style.display = 'block';
+            icons[0].style.display = 'none';
+            icons[1].style.display = 'none';
+        }
+        separataSelected = function(){//page:globalFormSection:myForm:j_id211:1
+            var separata = document.getElementById('{!$Component.myForm.separata}');
+            var inputs = separata.getElementsByTagName('input');
+            if(inputs[0].checked){
+                societaSection.style.display = 'block';
+                showSocietaList = true;
+            }
+            else{
+                societaSection.style.display = 'none';
+                showSocietaList = false;
+            }
+            if(inputs[1].checked){
+                sedeSection.style.display = 'block';
+                showSedeList = true;
+            }
+            else{
+                sedeSection.style.display = 'none';
+                showSedeList = false;
+            }
+            if(inputs[2].checked){
+                altroSection.style.display = 'block';
+            }
+            else{
+                altroSection.style.display = 'none';
+            }
+            console.log('inputs => ',inputs);
+        }
+        
+        toggleBillingSection = function(selectedValue){
+            var referenteSection = document.getElementById('referenteSection');
+            if(selectedValue === 'unica'){
+                unicaSection.style.display = 'block';
+                separataSection.style.display = 'none';
+                societaSection.style.display = 'none';
+                sedeSection.style.display = 'none';
+                showUnicaSection = true;
+                showSocietaList = false;
+                showSedeList = false;
+            }
+            else{
+                separataSection.style.display = 'block';
+                unicaSection.style.display = 'none';
+                separataSelected();
+                showUnicaSection = false;
+            }
+            showReferenteSelected(selectedValue);
+        }
+        
+        previousSection = function(){
+            currentSection--;
+            for(var i=0; i<sections.length; i++){
+                sections[i].className = 'form-section'+(i === currentSection-1 ? ' active':'');
+            }
+            if(currentSection === 1){
+                prevBtn.style.visibility = 'hidden';
+            }
+            if(nextBtn.style.visibility === 'hidden'){
+                nextBtn.style.visibility = 'visible';
+            }
+            if(currentSection != 4){
+                societaSection.style.display = 'none';
+                unicaSection.style.display = 'none';
+                sedeSection.style.display = 'none';
+            }
+            else{
+                if(showUnicaSection === true){
+                    unicaSection.style.display = 'block';
+                }
+                else{
+                    separataSelected();
+                }
+            }
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        nextSection = function(){
+            currentSection++;
+            for(var i=0; i<sections.length; i++){
+                sections[i].className = 'form-section'+(i === currentSection-1 ? ' active':'');
+            }
+            prevBtn.style.visibility = 'visible';
+            if(currentSection === sections.length){
+                nextBtn.style.visibility = 'hidden';
+            }
+            if(currentSection === 4){
+                if(showUnicaSection === true){
+                    unicaSection.style.display = 'block';
+                }
+                else{
+                    separataSelected();
+                }
+            }
+            else{
+                unicaSection.style.display = 'none';
+                societaSection.style.display = 'none';
+                sedeSection.style.display = 'none';
+            }
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        toggleCcnlSection = function(selectedValue){
+            var ccnlSection = document.getElementById('ccnlSection');
+            console.log(selectedValue + '  value ccnl ');
+            if(selectedValue === 'c'){
+                ccnlSection.style.display = 'block';
+                pdrSection.style.display = 'none';
+                dataTerminePdr.style.display = 'none';
+            }
+            else if (selectedValue === 'p'){
+                pdrSection.style.display = 'block';
+                ccnlSection.style.display = 'none';
+                dataTerminePdr.style.display = 'block';
+            }else {
+                ccnlSection.style.display = 'none';
+                pdrSection.style.display = 'none';
+                dataTerminePdr.style.display = 'none';
+            }
+        }
+        
+        
+    });    
+    
+    </script>  
+    
+</apex:page>

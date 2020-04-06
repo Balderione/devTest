@@ -1,0 +1,285 @@
+<apex:page controller="APIT22_MdaFormController" lightningStylesheets="true" showHeader="true" docType="html-5.0" sidebar="false">
+    
+    <apex:includeScript value="https://code.jquery.com/jquery-3.4.1.js" />
+    <!-- <apex:includeScript value="{!URLFOR( $Resource.bootstrap3, '/js/bootstrap.min.js' )}"/> -->
+    
+    <apex:form id="mdaForm">
+           <div align="center">
+           <apex:image url="https://er-italy--devam--c.documentforce.com/servlet/servlet.ImageServer?id=0150E000000u5zi&oid=00D0E000000AXQp&lastMod=1581412458000" id="theImage"/>
+           </div>
+        <apex:pageBlock id="mdaDistantProcess">
+            <div align="left" style="font-weight: bold; font-size: 150%;">
+               PARTENZA PROGETTO WELFARE
+            </div>
+            <br/>  
+             <div align="left" style="font-weight: bold; font-size: 150%;">
+               CLIENTE
+            </div>
+            <br/>
+            <style>
+                
+                body .bPageBlock .pbBody .color .pbSubheader {
+
+    			background-color: #0070d2;
+
+   				 color: white;
+
+				}
+                #mdaDistantProcess
+                {
+                 font-size: 150%;
+                }
+                
+            </style>
+            <apex:pageMessages id="errorPage" > </apex:pageMessages>
+            <apex:outputPanel styleClass="color" layout="block" id="datiClienteBlock"> 
+                <apex:pageBlockSection title="Dati Cliente" columns="3" collapsible="true"  id="datiClienteSection">        
+                    <apex:inputField value="{!account.ER_VAT_Number__c}" html-disabled="true"/>
+                    <apex:inputField value="{!account.Name}" html-disabled="true"/>              
+                    <apex:inputField value="{!projectwelfare.IT_Acquisition_Channel__c}" html-disabled="false"/>
+                    
+                </apex:pageBlockSection> 
+            </apex:outputPanel>  
+            
+            <apex:outputPanel styleClass="color" layout="block"> 
+                <apex:pageBLockSection title="Dati Societari e Fatturazione" columns="3" collapsible="true"> 
+                    <!-- <apex:outputText value="Struttura Societaria"> </apex:outputText> -->
+                <!--     <apex:inputField value="{!account.ParentId}"/>  società controllante -->
+                    <apex:inputField value="{!account.IT_Account_Address__c}" html-disabled="true"/>   <!-- SEDI  -->
+                    <!--   <apex:outputText value="PO/ODA"> </apex:outputText> -->
+                    
+                    <apex:inputField value="{!projectWelfare.Name}" html-disabled="true"/>
+                    <apex:inputField value="{!projectWelfare.IT_PO_ODA__c}" />
+                    <!--  <apex:outputText value="Sedi Coinvolte"> </apex:outputText>   -->
+                    <apex:inputField value="{!projectWelfare.IT_Involved_locations__c}"  />
+                    <!--   <apex:outputText value="Società Coinvolte"> </apex:outputText>   -->
+                    <apex:inputField value="{!projectWelfare.IT_Involved_Society__c}" />
+                    <!--   <apex:outputText value="Fatturazione Unica"> </apex:outputText>   -->
+                    <apex:inputCheckbox value="{!projectWelfare.IT_Unique_Billing__c}"/>
+                    <!--     <apex:outputText value="Separazione Fatturazione per CDC"> </apex:outputText>   -->
+                    <apex:inputCheckbox value="{!projectWelfare.IT_Splitted_Billing_for_CDC__c}" />
+                    <!--      <apex:outputText value="Fee Capogruppo"> </apex:outputText>    -->
+                    <apex:inputCheckbox value="{!projectWelfare.IT_Fee_Parent_Group__c}" />
+                    <!--     <apex:outputText value="Centro di costo"> </apex:outputText>   -->
+                    <apex:inputCheckbox value="{!projectWelfare.IT_CdC_Center_of_Cost__c}" />
+                    
+                </apex:pageBLockSection>
+            </apex:outputPanel>
+            
+            <apex:outputPanel styleClass="color" layout="block"> 
+                <apex:pageBlockSection title="Contatto" columns="3" collapsible="true"> 
+                    <!--    <apex:outputText value="Nome referente welfare"> </apex:outputText>  -->
+                    <apex:inputField value="{!contact.FirstName}"  />
+                    <!--   <apex:outputText value="Cognome del referente welfare"></apex:outputText>  -->
+                    <apex:inputField value="{!contact.LastName}" />
+                    <!--   <apex:outputText value="Indirizzo Mail del referente welfare"></apex:outputText>  -->
+                    <apex:inputField value="{!contact.Email}"  />
+                    <!--   <apex:outputText value="Numero di telefono del referente welfare"> </apex:outputText> -->
+                    <apex:inputField value="{!contact.Phone}" />
+                    <!--   <apex:outputText value="Importo Pro Capite"> </apex:outputText>   -->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Per_Capita_Amount__c}" />  -->
+                    <!--     <apex:outputText value="Numero beneficiari ed eventuali gruppi omogenei"> </apex:outputText>	-->
+                 <!--   <apex:inputField value="{!projectwelfare.IT_Beneficiaries_Number__c}" />  -->
+                    <!--   <apex:outputText value="Tempistiche piano: data di inizio" > </apex:outputText>-->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Plan_Start_Date__c}" /> -->
+                    <!-- <apex:outputText value="Tempistiche piano: data di fine" > </apex:outputText>-->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Plan_End_Date__c}" /> -->
+                    <!--     <apex:outputText value="Scelta Piattaforma"> </apex:outputText>-->
+                <!--    <apex:inputField value="{!projectwelfare.IT_End_Plan_Residue_Management__c}" /> -->
+                    
+               <!--     <apex:inputField value="{!projectwelfare.IT_Type__c}"  />  -->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Platform_Choice__c}"/>  -->
+                    <!--   <apex:outputText value="Tipologia di Scelta (percentuale, fisso, libero) *Solo se PDR"> </apex:outputText>-->
+               <!--     <apex:inputField value="{!projectwelfare.IT_Membership_Payment_Type__c}" />   -->
+                    <!--     <apex:outputText value="Gestione dei residui"> </apex:outputText>-->
+                    
+                    
+                    <!--       <apex:outputText value="Gestione cessati"> </apex:outputText>-->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Cessation_Residue_Management__c}" />
+                    
+                 <!--   <apex:inputField value="{!projectwelfare.IT_Macro_Benefit__c}" /> -->
+                <!--    <apex:inputField value="{!projectwelfare.IT_Benefit__c}" /> -->
+                    
+                    
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Indirizzo" columns="2" collapsible="true" id="province">
+                    <apex:selectList onchange="retrieveMunicipalities()" size="1" value="{!projectwelfare.IT_BillingProvince_form__c}">
+                        <apex:selectOptions value="{!provinceLst }"/>
+                    </apex:selectList>
+                    <apex:selectList value="{!projectwelfare.IT_BillingCityBillingCity_form__c}" multiselect="false" id="municipality" size="1">
+                        <apex:selectOptions value="{!municipalityLst}"></apex:selectOptions> 
+                    </apex:selectList>
+                    
+                    <apex:inputField value="{!projectWelfare.IT_BillingStreetSquare_form__c}" />
+                    <apex:inputField value="{!projectWelfare.IT_BillingStreetNumber_form__c}" />
+                    
+                    <apex:inputField value="{!projectWelfare.IT_BillingPostalCodeBilling_form__c}" />
+                    <apex:inputField value="{!projectWelfare.IT_BillingAdressNotes_form__c}"/>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+        <!--    <apex:pageBlockSection title="Tempistiche della scelta PDR *" columns="4" collapsible="false">
+                
+                <apex:inputField value="{!projectwelfare.IT_Membership_Choice_Start_Date__c}"  />
+                
+                <apex:inputField value="{!projectwelfare.IT_Membership_Choice_End_Date__c}" />
+                
+            </apex:pageBlockSection>    -->
+            
+            
+      <!--      <apex:pageBlockSection title="Tempistiche di utilizzo dei singoli benefit" columns="4" collapsible="false">
+                
+                <apex:inputField value="{!projectwelfare.IT_Benefit_Start_Date__c}" />
+                
+                <apex:inputField value="{!projectwelfare.IT_Benefit_End_Date__c}" />
+                
+            </apex:pageBlockSection>   -->
+            
+            
+            
+            
+            <apex:outputPanel styleClass="color" layout="block"> 
+                <apex:pageBlockSection title="Dati Payroll" columns="4" collapsible="true"> 
+                    <apex:inputField value="{!projectwelfare.IT_Email_send_payroll__c}" />
+              <!--      <apex:inputCheckbox value="{!contactdetail.IT_Payroll__c}" />  -->
+                    
+             <!--       <apex:inputField value="{!projectwelfare.IT_Payroll_for_Levels__c}"  />   -->
+                    
+                    <!--<apex:inputText value="{!datapr}"/>-->
+                    <!--    <apex:outputText value="Tipologia payroll (standard, custom, PO/CIG, Split payment, codici benefit)"> </apex:outputText>-->
+                  <!--  <apex:inputField value="{!projectwelfare.IT_Payroll_Personalization__c}" />  -->
+                </apex:pageBlockSection> 
+            </apex:outputPanel>
+            
+            <apex:outputPanel styleClass="color" layout="block"> 
+                <apex:pageBlockSection title="Dati per partenza piano" columns="4" collapsible="true">
+                    <!--   <apex:outputText value="Credenziali"> </apex:outputText>  -->
+ <!--                   <apex:inputField value="{!projectwelfare.IT_Credentials__c}"  />                  -->
+                    <!--    <apex:outputText value="Indirizzo mail per l'invio credenziali del Portale Clienti"> </apex:outputText>     <apex:inputField value="{!contactdetail.IT_Credentials__c}" /> -->
+                    <apex:inputField value="{!projectwelfare.IT_Email_Credentials__c}" />
+                    <!-- <apex:inputField value="{!contactdetail.IT_Credentials__c}" /> -->
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+            <apex:outputPanel styleClass="color" layout="block"> 
+                <apex:pageBlockSection title="Altro" columns="3" collapsible="false">
+                 <!--   <apex:inputField value="{!projectWelfare.IT_Project_Notes__c}" id="para-addattr" /> -->
+                 
+                <apex:inputField value="{!projectwelfare.IT_Replacement__c}"/>  <!-- convervazione sostitutiva -->
+                <apex:inputField value="{!projectWelfare.IT_Plan_Description__c}"/>
+                <apex:inputField value="{!projectWelfare.IT_Financial_Sources__c}"/>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+            
+            <br/> <apex:pageBlockButtons location="bottom" > 
+            <!-- <apex:commandButton value="SUBMIT" action="{!submit}" onclick="if(!changeAttr('Are you sure?')) return false;" style="font-size:16px;color:#000000; background-color:#FA5858"/>-->
+            <apex:commandButton value="SUBMIT" onclick="confirmSubmit();return false;" style="font-size:16px;color:#000000; background-color:#0070d2"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+        <apex:actionFunction action="{!submit}" name="submitForm" rerender="errorPage" oncomplete="lockForm('{!controllo}')">
+        </apex:actionFunction>
+        
+      <apex:actionFunction action="{!retrieveMunicipalities}" name="retrieveMunicipalities" rerender="municipality">
+        </apex:actionFunction> 
+    </apex:form> 
+    
+    <apex:form id="upload" html-hidden="hidden">  
+        
+          <apex:pageBlock rendered="true" id="attachmentPb" >
+            <apex:pageBlockSection id="attachmentPbs"> 
+         		 <apex:pageBlockSectionItem id="attachmentFPbsi">
+                    <apex:outputLabel value="File" for="file"/>
+                    <apex:inputFile value="{!file}"  id="file"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="attachmentTPbsi">
+                    <apex:outputLabel value="Title" for="title"/>
+                    <apex:inputText value="{!cversiontitle}"  id="title"/>
+                </apex:pageBlockSectionItem>
+              
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="attachmentBtnPBs">
+                <button type="button" id="button" onclick="uploadFile()">Save</button> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+      
+    
+    </apex:form>
+    
+    <script> 
+    $(document).ready(function(){
+        lockForm=function(controllo){
+                if ( controllo ){
+            	 $('input').attr("disabled","disabled");
+                 $('select').attr("disabled","disabled");
+                 $('textarea').attr("disabled","disabled");
+                										//document.getElementById('{!$Component.mdaForm.mdaDistantProcess.datiClienteBlock.datiClienteSection}').removeAttribute('disabled');
+                                                    	//   document.getElementById('{!$Component.mdaForm}').setAttribute("html-hidden", "hidden");
+                  document.getElementById('{!$Component.upload}').removeAttribute('hidden');
+                  document.getElementById('{!$Component.upload.attachmentPb.attachmentPbs.attachmentFPbsi.file}').removeAttribute('disabled');
+                  document.getElementById('{!$Component.upload.attachmentPb.attachmentPbs.attachmentTPbsi.title}').removeAttribute('disabled');
+                  document.getElementById('{!$Component.upload.attachmentPb.attachmentBtnPBs.button}').removeAttribute('disabled');
+            }
+        }
+        
+        confirmSubmit=function(){
+            var response=confirm('ATTENZIONE: una volta inviati i dati essi non saranno più modificabili');
+            if(response){
+                submitForm();
+            }
+        };
+        
+        uploadFile=function(){
+            console.log('entra'); 
+            let fileInput=document.getElementById('{!$Component.upload.attachmentPb.attachmentPbs.attachmentFPbsi.file}');
+            let files=fileInput.files;
+            let file=files[0];
+            var fr = new FileReader();
+            fr.onload = function() {
+                debugger;
+                var fileContents = fr.result;
+                var base64Mark = 'base64,';
+                var dataStart = fileContents.indexOf(base64Mark)
+                + base64Mark.length;
+                
+                fileContents = fileContents.substring(dataStart);
+                
+                 let xhr = new XMLHttpRequest();    
+                   xhr.open('POST', 'https://er-italy--devam.my.salesforce.com/services/apexrest/FileUpload/v1/upload?id=' + 
+                                 '{!projectWelfare.id}' + '&filename=' + encodeURIComponent(file.name), true);
+                xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+                xhr.setRequestHeader('SalesforceProxy-Endpoint', 'https://er-italy--devam.my.salesforce.com/services/apexrest/FileUpload/v1/upload?id=' + 
+                                 '{!projectWelfare.id}' + '&filename=' + encodeURIComponent(file.name));
+                   xhr.onload = function() {
+                    if (xhr.status != 200) { // analyze HTTP status of the response
+                        alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+                    } else { // show the result
+                        alert(`File succesfully uploaded`); // responseText is the server
+                    }
+                };
+                
+                xhr.onerror = function( err, err1, err2 ) { // only triggers if the request couldn't be made at all
+                    alert(`Network Error`);
+                };
+                xhr.send(fileContents);
+                
+            };
+             fr.readAsDataURL(file);
+            console.log('dopo readAsDataurl');
+        }  
+    });
+    
+    jQuery(document).ready(function(){
+        function changeAttr(){
+            console.log('ciaociao');
+                        $("#para-addattr").attr("html-disabled","true");
+        };
+    });
+    
+                
+    
+    </script> 
+    
+</apex:page>
