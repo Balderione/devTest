@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT01_Verify_Quantity_Usage</fullName>
+    <active>false</active>
+    <description>Maximum 1 daily used quantity for this product</description>
+    <errorConditionFormula>AND(
+ CONTAINS(IT_Usage_Type__c , &quot;Day&quot;), 
+ IT_Used_Quantity__c &gt; 1
+)</errorConditionFormula>
+    <errorDisplayField>IT_Used_Quantity__c</errorDisplayField>
+    <errorMessage>Just 1 unit is allowed</errorMessage>
+</ValidationRule>

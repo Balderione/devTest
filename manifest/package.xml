@@ -5,8 +5,8 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>Flow</name>
+        <members>IT_Usage__c</members>
+        <name>CustomObject</name>
     </types>
     <version>48.0</version>
 </Package>
