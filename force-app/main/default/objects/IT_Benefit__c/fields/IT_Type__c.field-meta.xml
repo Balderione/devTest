@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>IT_Benefit__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already stipulated fund</fullName>
+                <default>false</default>
+                <label>Already stipulated fund</label>
+            </value>
+            <value>
+                <fullName>Company agreement (name and link)</fullName>
+                <default>false</default>
+                <label>Company agreement (name and link)</label>
+            </value>
+            <value>
+                <fullName>Home to Work</fullName>
+                <default>false</default>
+                <label>Home to Work</label>
+            </value>
+            <value>
+                <fullName>Integrated Home to Work (integration is born by the client)</fullName>
+                <default>false</default>
+                <label>Integrated Home to Work (integration is born by the client)</label>
+            </value>
+            <value>
+                <fullName>Stipulated fund and Company agreement (name and link)</fullName>
+                <default>false</default>
+                <label>Stipulated fund and Company agreement (name and link)</label>
+            </value>
+            <value>
+                <fullName>Contribution charged to Employee</fullName>
+                <default>false</default>
+                <label>Contribution charged to Employee</label>
+            </value>
+            <value>
+                <fullName>Contribution charged to Company</fullName>
+                <default>false</default>
+                <label>Contribution charged to Company</label>
+            </value>
+            <value>
+                <fullName>Free Amount</fullName>
+                <default>false</default>
+                <label>Free Amount</label>
+            </value>
+            <value>
+                <fullName>Packages</fullName>
+                <default>false</default>
+                <label>Packages</label>
+            </value>
+            <value>
+                <fullName>Sanint Marsh or Easy Welfare</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sanint Marsh or Easy Welfare</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ticket Transport (ATM)</controllingFieldValue>
+            <valueName>Home to Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ticket Transport (ATM)</controllingFieldValue>
+            <valueName>Integrated Home to Work (integration is born by the client)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monetization</controllingFieldValue>
+            <valueName>Free Amount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monetization</controllingFieldValue>
+            <valueName>Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Fees</controllingFieldValue>
+            <valueName>Contribution charged to Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Fees</controllingFieldValue>
+            <valueName>Contribution charged to Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Already stipulated fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Company agreement (name and link)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Stipulated fund and Company agreement (name and link)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

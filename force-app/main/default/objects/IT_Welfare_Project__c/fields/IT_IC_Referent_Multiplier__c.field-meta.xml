@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_IC_Referent_Multiplier__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+TEXT(IT_Complexity_Index__c) = &quot;1&quot;, 0.8, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;2&quot;, 0.9, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;3&quot;, 1, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;4&quot;, 1.25,1.4 
+) 
+) 
+) 
+)</formula>
+    <label>IC Referent Multiplier</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

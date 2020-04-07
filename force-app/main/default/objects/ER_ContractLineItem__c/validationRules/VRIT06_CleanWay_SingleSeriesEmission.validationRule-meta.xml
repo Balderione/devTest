@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT06_CleanWay_SingleSeriesEmission</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &#39;6&#39;) , 
+				ISPICKVAL(  IT_Financial_Center__r.IT_Client_Status__c  ,&#39;02&#39;),
+ IT_Single_Series_Emission__c = false,
+	$User.ER_BypassVR__c = False,
+	ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;))</errorConditionFormula>
+    <errorMessage>Single Series Emission must be true for this type of service (Clean Way)!</errorMessage>
+</ValidationRule>

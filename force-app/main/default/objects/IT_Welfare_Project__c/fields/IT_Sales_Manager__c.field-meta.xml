@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Sales_Manager__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMOROSO EMANUELA</fullName>
+                <default>false</default>
+                <label>AMOROSO EMANUELA</label>
+            </value>
+            <value>
+                <fullName>BARBIERO MATTEO</fullName>
+                <default>false</default>
+                <label>BARBIERO MATTEO</label>
+            </value>
+            <value>
+                <fullName>BONOMO TULLIO</fullName>
+                <default>false</default>
+                <label>BONOMO TULLIO</label>
+            </value>
+            <value>
+                <fullName>CALANNI MARIA ELENA</fullName>
+                <default>false</default>
+                <label>CALANNI MARIA ELENA</label>
+            </value>
+            <value>
+                <fullName>CERCIELLO FRANCESCA</fullName>
+                <default>false</default>
+                <label>CERCIELLO FRANCESCA</label>
+            </value>
+            <value>
+                <fullName>CORTI CLAUDIA</fullName>
+                <default>false</default>
+                <label>CORTI CLAUDIA</label>
+            </value>
+            <value>
+                <fullName>DE LUCIA RAFFAELE</fullName>
+                <default>false</default>
+                <label>DE LUCIA RAFFAELE</label>
+            </value>
+            <value>
+                <fullName>DI FRONZO MARCO</fullName>
+                <default>false</default>
+                <label>DI FRONZO MARCO</label>
+            </value>
+            <value>
+                <fullName>FINA MAURILLIO</fullName>
+                <default>false</default>
+                <label>FINA MAURILLIO</label>
+            </value>
+            <value>
+                <fullName>GALLI ALISIA</fullName>
+                <default>false</default>
+                <label>GALLI ALISIA</label>
+            </value>
+            <value>
+                <fullName>HABAZAJ ELMIRA</fullName>
+                <default>false</default>
+                <label>HABAZAJ ELMIRA</label>
+            </value>
+            <value>
+                <fullName>IACONA MIRKO</fullName>
+                <default>false</default>
+                <label>IACONA MIRKO</label>
+            </value>
+            <value>
+                <fullName>MANFRIN GIORGIA</fullName>
+                <default>false</default>
+                <label>MANFRIN GIORGIA</label>
+            </value>
+            <value>
+                <fullName>MAURILLIO FINA</fullName>
+                <default>false</default>
+                <label>MAURILLIO FINA</label>
+            </value>
+            <value>
+                <fullName>MENESCALDI ANDREA</fullName>
+                <default>false</default>
+                <label>MENESCALDI ANDREA</label>
+            </value>
+            <value>
+                <fullName>MIGLIORATO SIMONE</fullName>
+                <default>false</default>
+                <label>MIGLIORATO SIMONE</label>
+            </value>
+            <value>
+                <fullName>MISSERE GIUSY</fullName>
+                <default>false</default>
+                <label>MISSERE GIUSY</label>
+            </value>
+            <value>
+                <fullName>MONTORFANO SIMONE</fullName>
+                <default>false</default>
+                <label>MONTORFANO SIMONE</label>
+            </value>
+            <value>
+                <fullName>NANI ETTORE</fullName>
+                <default>false</default>
+                <label>NANI ETTORE</label>
+            </value>
+            <value>
+                <fullName>PELLEGRINI LORENZA</fullName>
+                <default>false</default>
+                <label>PELLEGRINI LORENZA</label>
+            </value>
+            <value>
+                <fullName>PINATO STEFANO</fullName>
+                <default>false</default>
+                <label>PINATO STEFANO</label>
+            </value>
+            <value>
+                <fullName>RANIERI ADOLFO</fullName>
+                <default>false</default>
+                <label>RANIERI ADOLFO</label>
+            </value>
+            <value>
+                <fullName>RIMOLDI DANIELE</fullName>
+                <default>false</default>
+                <label>RIMOLDI DANIELE</label>
+            </value>
+            <value>
+                <fullName>SALA MARCELLA</fullName>
+                <default>false</default>
+                <label>SALA MARCELLA</label>
+            </value>
+            <value>
+                <fullName>STRIPPARO DONATELLA</fullName>
+                <default>false</default>
+                <label>STRIPPARO DONATELLA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

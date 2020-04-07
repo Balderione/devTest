@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT_08_SDD_Authorized</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+NOT($User.ER_BypassVR__c),
+$Profile.Name &lt;&gt; &quot;IT CRM&quot;,
+$Profile.Name != &#39;IT System Integration&#39;,
+
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISCHANGED( IT_SDD_Authorized__c ),
+NOT(ISCHANGED( IT_SkipActivation__c )))</errorConditionFormula>
+    <errorMessage>User not allowed to edit this field</errorMessage>
+</ValidationRule>

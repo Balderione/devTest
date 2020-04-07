@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Commission_Percentage_F__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( IT_Commission_Percentage__c != null, IT_Commission_Percentage__c,  IT_Financial_Center__r.IT_Contract__r.IT_Commission_Percentage__c  )</formula>
+    <label>Commission Percentage F</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

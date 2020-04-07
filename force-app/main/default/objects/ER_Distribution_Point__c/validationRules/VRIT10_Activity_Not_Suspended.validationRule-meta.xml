@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT10_Activity_Not_Suspended</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+
+ IT_Suspension__c = false,
+
+OR(
+ISCHANGED( IT_Suspension_End_Date__c ),
+ISCHANGED( IT_Authorization_Reactivation_User__c )
+
+)
+)</errorConditionFormula>
+    <errorMessage>The activity is not suspended! Impossible to reactivate it!</errorMessage>
+</ValidationRule>

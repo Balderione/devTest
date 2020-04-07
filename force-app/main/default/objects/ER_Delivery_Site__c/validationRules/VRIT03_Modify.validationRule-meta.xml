@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT03_Modify</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+$Profile.Name != &#39;IT System Integration&#39;,
+NOT(
+OR(
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;1B&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;1X&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;2X&#39;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;0G&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;0F&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;0H&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;0P&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;0Q&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;1W&#39;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c , &#39;2F&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;2G&#39;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;1D&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;1L&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;1M&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &#39;1N&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;1O&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &#39;1E&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &#39;1Y&#39;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;1H&#39;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;2J&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;2X&#39;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &#39;2C&#39;)/*,
+AND(  
+NOT(ISBLANK(ER_Financial_Center__r.IT_DEMO_Financial_Center__c )),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &#39;1B&#39;)
+)*/
+)
+))</errorConditionFormula>
+    <errorMessage>Impossible to modify for this type of service</errorMessage>
+</ValidationRule>

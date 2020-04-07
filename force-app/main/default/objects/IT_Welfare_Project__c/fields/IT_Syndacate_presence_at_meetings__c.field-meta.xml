@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Syndacate_presence_at_meetings__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Specificare se sarà presente a tutti gli incontri o in quali</inlineHelpText>
+    <label>Syndacate presence at meetings</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

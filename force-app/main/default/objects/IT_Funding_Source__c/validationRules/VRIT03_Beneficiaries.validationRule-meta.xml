@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT03_Beneficiaries</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ 
+IT_Beneficiaries__c &lt;IT_Beneficiaries_Member__c 
+)</errorConditionFormula>
+    <errorMessage>Beneficiaries member cannot be more than Beneficiaries!</errorMessage>
+</ValidationRule>

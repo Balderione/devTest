@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_SFTP_Flow_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>SFTP Flow Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>IT_SFTP_DSP__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Input path</fullName>
+                <default>false</default>
+                <label>Input path</label>
+            </value>
+            <value>
+                <fullName>Output Flow</fullName>
+                <default>false</default>
+                <label>Output Flow</label>
+            </value>
+            <value>
+                <fullName>Input Path e Output Flow</fullName>
+                <default>false</default>
+                <label>Input Path e Output Flow</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Input path</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Output Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Input Path e Output Flow</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

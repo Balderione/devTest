@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT09_Order_Receipts_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.ER_BypassVR__c = False,
+ISPICKVAL( $User.ER_Business_Unit__c , &#39;IT&#39;),
+
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c, &#39;02&#39; ),
+ ISPICKVAL( IT_Order_Receipts_Type__c, &#39;&#39; ) 
+
+)</errorConditionFormula>
+    <errorMessage>Insert Order Receipts Type!</errorMessage>
+</ValidationRule>

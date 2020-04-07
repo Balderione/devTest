@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT08_Ticket_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &#39;IT&#39;),
+				
+				IT_Ticket_Display__c =true,
+	NOT( ISPICKVAL( IT_Ticket_Type__c , &#39;1&#39;) )
+				
+				)</errorConditionFormula>
+    <errorMessage>Ticket Type must be &#39;GOOD MEAL&#39; if  Ticket Display equals true</errorMessage>
+</ValidationRule>

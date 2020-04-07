@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT03_Billing_Company_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+OR(
+
+CONTAINS ( IT_Short_Name__c  ,&#39;À&#39;),
+CONTAINS ( IT_Short_Name__c  ,&#39;È&#39;),
+CONTAINS ( IT_Short_Name__c  ,&#39;Ì&#39;),
+CONTAINS ( IT_Short_Name__c  ,&#39;Ò&#39;),
+CONTAINS ( IT_Short_Name__c  ,&#39;Ù&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Á&#39;),
+CONTAINS ( IT_Short_Name__c  ,&#39;É&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Í&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ó&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ú&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ä&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ë&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ï&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ö&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;Ü&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;°&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;€&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;¿&#39;),
+CONTAINS ( IT_Short_Name__c ,&#39;|&#39;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;À&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;È&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ì&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ò&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ù&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Á&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;É&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Í&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ó&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ú&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ä&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ë&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ï&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ö&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;Ü&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;°&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;€&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;¿&#39;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&#39;|&#39;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;À&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;È&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ì&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ò&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ù&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Á&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;É&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Í&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ó&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ú&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ä&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ë&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ï&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ö&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;Ü&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;°&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;€&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;¿&#39;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&#39;|&#39;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;À&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;È&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ì&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ò&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ù&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Á&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;É&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Í&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ó&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ú&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ä&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ë&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ï&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ö&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;Ü&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;°&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;€&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;¿&#39;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&#39;|&#39;)
+))</errorConditionFormula>
+    <errorMessage>The Billing Company Name can&#39;t contains special charactes:
+ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜ°€¿|</errorMessage>
+</ValidationRule>

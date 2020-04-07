@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Sales_Manager__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(IT_Contact_Code__c,
+&quot;230&quot;,&quot;ALTOBELLI MATTEO&quot;,
+&quot;315&quot;,&quot;LATTE SAVERIO&quot;,
+&quot;245&quot;,&quot;MACCHINI SILVIA&quot;,
+&quot;332&quot;,&quot;CALANNI MARIA ELENA&quot;,
+&quot;266&quot;,&quot;GRILLO SERENA&quot;,
+&quot;465&quot;,&quot;MAZZARETTO SIMONA&quot;,
+&quot;286&quot;,&quot;CARMANNINI LEONARDO&quot;,
+&quot;308&quot;,&quot;MANFRIN GIORGIA&quot;,
+&quot;481&quot;,&quot;MONTORFANO SIMONE&quot;,
+&quot;370&quot;,&quot;STRIPPARO DONATELLA&quot;,
+&quot;482&quot;,&quot;IACONA MIRKO&quot;,
+&quot;387&quot;,&quot;RANIERI ADOLFO&quot;,
+&quot;083&quot;,&quot;BUZZONI ALESSANDRO&quot;,
+&quot;480&quot;,&quot;BARBIERO MATTEO&quot;,
+&quot;247&quot;,&quot;DE GIORGI FABIANA&quot;,
+&quot;016&quot;,&quot;CASTIGLIONE ALESSANDRO&quot;,
+&quot;301&quot;,&quot;DE MARCHI ROBERTA&quot;,
+&quot;211&quot;,&quot;GISMANI FEDERICO&quot;,
+&quot;464&quot;,&quot;DI FRONZO MARCO&quot;,
+&quot;080&quot;,&quot;CREMONA SAUL&quot;,
+&quot;467&quot;,&quot;VULTAGGIO ALESSANDRA&quot;,
+
+IT_Contact_Code__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

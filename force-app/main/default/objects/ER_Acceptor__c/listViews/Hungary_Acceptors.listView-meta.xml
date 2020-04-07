@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hungary_Acceptors</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ER_Business_Unit__c</field>
+        <operation>equals</operation>
+        <value>HU</value>
+    </filters>
+    <label>Hungary Acceptors</label>
+    <sharedTo>
+        <roleAndSubordinates>HUN</roleAndSubordinates>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT02_Authorized_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+
+ISPICKVAL(IT_Request_Status__c, &#39;4&#39;),
+ ISPICKVAL(PRIORVALUE(IT_Request_Status__c), &#39;4&#39;) ,
+
+OR(
+ ISCHANGED( IT_Expiration_Contract_Date__c ),
+ ISCHANGED( IT_Date_presence__c ),
+ ISCHANGED(IT_Reason__c),
+ ISCHANGED( IT_Transport_Cost__c ),
+ ISCHANGED( IT_No_Cost_Reason__c ),
+ ISCHANGED( IT_Contractual_Particularities__c ),
+ ISCHANGED( IT_Only_Client_Copy__c ),
+ ISCHANGED( IT_No_Sign_Activation_Authorization__c ),
+ ISCHANGED( IT_No_Massive_Print__c ),
+ ISCHANGED( Name )
+
+))</errorConditionFormula>
+    <errorMessage>Impossible to modify data for this Request status!</errorMessage>
+</ValidationRule>

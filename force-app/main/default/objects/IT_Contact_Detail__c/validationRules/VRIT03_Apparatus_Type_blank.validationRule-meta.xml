@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT03_Apparatus_Type_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISNEW(),
+ ISBLANK( TEXT(IT_Apparatus_Type__c )),
+				$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>IT_Apparatus_Type__c</errorDisplayField>
+    <errorMessage>Type field is mandatory</errorMessage>
+</ValidationRule>

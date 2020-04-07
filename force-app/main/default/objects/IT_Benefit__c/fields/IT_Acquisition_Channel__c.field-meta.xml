@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Acquisition_Channel__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL(IT_Benefit__c, &#39;Medical Fees&#39; ) , &#39;Marsh&#39; ,  TEXT(IT_Plan__r.IT_Welfare_Project__r.IT_Acquisition_Channel__c))</formula>
+    <label>Acquisition Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

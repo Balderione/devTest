@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Logic__c</fullName>
+    <description>Logic to insert with AND and OR operators basing fields on CMIT01_Entitlement_Fields</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Example: A01 AND A02 OR (A02 AND A03)</inlineHelpText>
+    <label>Logic</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

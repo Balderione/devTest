@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Min_Plan_Start_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Min Plan Start Date</label>
+    <summarizedField>IT_Plan__c.IT_Plan_Start_Date__c</summarizedField>
+    <summaryForeignKey>IT_Plan__c.IT_Welfare_Project__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

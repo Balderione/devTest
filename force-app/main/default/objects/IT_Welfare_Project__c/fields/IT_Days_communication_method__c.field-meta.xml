@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Days_communication_method__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicare se la partecipazione è obbligatoria o facoltativa, come viene reso noto l’incontro ai dipendenti</inlineHelpText>
+    <label>Days communication method</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

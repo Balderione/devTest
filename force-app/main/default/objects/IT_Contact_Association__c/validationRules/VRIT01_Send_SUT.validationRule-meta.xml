@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT01_Send_SUT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(		
+				$User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &#39;IT&#39;),
+				OR(
+				    ISPICKVAL( IT_Contact_Detail__r.IT_Apparatus_Type__c ,&#39;001&#39;),
+	       ISPICKVAL( IT_Contact_Detail__r.IT_Apparatus_Type__c ,&#39;002&#39;)
+								
+				),
+		  OR(
+								IT_Send_SUT__c,
+			     IT_Notifications__c
+				)
+			
+)</errorConditionFormula>
+    <errorMessage>&#39;Send SUT&#39; field or &#39;Notifications&#39; field cannot be selected because the Apparatus Type is &#39;Phone&#39; or &#39;Fax&#39;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT03_Service_and_Contract_Line_Item</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+	
+OR(ISPICKVAL( IT_Financial_Center__r.IT_Service__c  ,&#39;1H&#39;),
+			ISPICKVAL(IT_Service__c ,&#39;1Z&#39;)),
+OR(
+PRIORVALUE(IT_Display_Active_Name__c)!=IT_Display_Active_Name__c,
+PRIORVALUE(IT_Display_Address__c) !=IT_Display_Address__c,
+PRIORVALUE(IT_Display_Locale__c ) !=IT_Display_Locale__c,
+PRIORVALUE(IT_Address_Row_display__c)!=IT_Address_Row_display__c) 
+				)</errorConditionFormula>
+    <errorMessage>If &#39;Service&#39; equals = COMPLIMENTS EXPERIENCE or COMPLIMENTS EXPERIENCE PROMO,the fields:
+Display Active Name, Display Address, Display Locale, Address Row display cannot be changed</errorMessage>
+</ValidationRule>

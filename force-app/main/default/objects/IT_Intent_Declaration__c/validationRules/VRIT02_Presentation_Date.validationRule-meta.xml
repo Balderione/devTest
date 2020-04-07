@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT02_Presentation_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				IT_Presentation_Date__c &gt;TODAY(),
+				$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;)
+)</errorConditionFormula>
+    <errorMessage>It cannot be a future date!</errorMessage>
+</ValidationRule>

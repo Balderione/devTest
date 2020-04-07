@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT14_SDI_and_Unique_Office_Code</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+
+OR(
+
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Institution&#39;),
+ IT_SDI__c != null),
+
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
+ IT_SDI__c != null),
+
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
+ IT_Office_Code__c != null)
+)
+)</errorConditionFormula>
+    <errorMessage>You must be populate SDI for Private Client and Unique Office Code for Institution Client!</errorMessage>
+</ValidationRule>

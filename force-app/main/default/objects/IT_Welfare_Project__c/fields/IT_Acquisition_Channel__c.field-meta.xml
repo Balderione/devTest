@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Acquisition_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Acquisition Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Edenred</fullName>
+                <default>true</default>
+                <label>Edenred</label>
+            </value>
+            <value>
+                <fullName>Marsh</fullName>
+                <default>false</default>
+                <label>Marsh</label>
+            </value>
+            <value>
+                <fullName>Aggregator</fullName>
+                <default>false</default>
+                <label>Aggregator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

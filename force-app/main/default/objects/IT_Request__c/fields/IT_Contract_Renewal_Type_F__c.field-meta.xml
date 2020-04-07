@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Contract_Renewal_Type_F__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISPICKVAL( IT_Contract_Renewal_Type__c , &#39;&#39;)), TEXT(IT_Contract_Renewal_Type__c),  TEXT(IT_Financial_Center__r.IT_Contract__r.IT_Contract_Renewal_Type__c ))</formula>
+    <label>Contract Renewal Type F</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

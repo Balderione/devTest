@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT13_Cancellation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+$Profile.Name != &#39;IT System Integration&#39;,
+				 NOT( ISCHANGED(IT_Cancellation__c)) ,
+				IT_Cancellation__c )</errorConditionFormula>
+    <errorMessage>fields cannot be edited because the activity is canceled</errorMessage>
+</ValidationRule>

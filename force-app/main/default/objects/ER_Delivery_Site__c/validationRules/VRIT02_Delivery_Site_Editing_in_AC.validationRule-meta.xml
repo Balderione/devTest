@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VRIT02_Delivery_Site_Editing_in_AC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (NOT (ISNEW()) ,
+					ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+$Profile.Name != &#39;IT System Integration&#39;,
+IT_Delivery_AC__c == null,
+NOT($User.ER_BypassVR__c),
+NOT(ISCHANGED(IT_Count_Distribution_Point__c)))</errorConditionFormula>
+    <errorMessage>Sincronizzazione Anagrafica Clienti in corso: non è possibile modificare la consegna!</errorMessage>
+</ValidationRule>
