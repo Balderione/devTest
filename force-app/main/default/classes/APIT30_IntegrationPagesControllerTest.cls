@@ -70,6 +70,7 @@ public class APIT30_IntegrationPagesControllerTest {
         mdaform.deleteRows();
         mdaform.addContact();
         mdaform.addContact();
+        mdaform.addContact2();
         mdaform.deleteContacts();
         mdaform.addFunding();
         mdaform.savePlan();

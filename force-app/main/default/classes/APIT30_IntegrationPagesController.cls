@@ -1,5 +1,6 @@
 //
-//Insert of multiple child record on Piano
+//Onboarding Form Controller
+
 
 public class APIT30_IntegrationPagesController {
     
@@ -29,16 +30,18 @@ public class APIT30_IntegrationPagesController {
     public String showIncentivo{get;set;}
     public String showSectionIncentivo{get;set;}
     public String residuiDaAttivare{get;set;}
+    public String showRiepilogoEm{get;set;}
     public Contact contact {get; set;}
     public Contact contCassaSanitaria{get;set;}
-   // public Contact contactAccount{get;set;}
+    // public Contact contactAccount{get;set;}
     public IT_Contact_Detail__c contactDetail{get;set;}
     public IT_Contact_Detail__c contactDetailPay{get;set;}
     public IT_Contact_Detail__c contactDetailResidue{get;set;}
     public Decimal incentive1{get;set;}
     public Decimal incentive2{get;set;} 
     public String incentivo{get;set;} 
-   	
+    public String attachmentId{get;set;}
+    
     public String showReferenteCassa{get;set;}
     public String showReferente{get; set;}
     public Boolean saveDone{get; set;}
@@ -49,8 +52,9 @@ public class APIT30_IntegrationPagesController {
     public SocietaObject unicaObject{get;set;}
     public List<SedeObject> listSedes{get;set;}
     public SedeObject sedeObject{get;set;}
-   	public String emailRiepilogoDati {get;set;}
+    public String emailRiepilogoDati {get;set;}
     public String dettagliAltro{get;set;}
+    public String dettagliAltroFatt{get;set;}
     public List<SelectOption> emailRiepilogo{get;set;}
     public String getRiepilogo{get;set;}
     public String payroll{get;set;}
@@ -58,21 +62,28 @@ public class APIT30_IntegrationPagesController {
     public Boolean cassa{get;set;}
     
     public String pdfHtml {get;set;}
+    public Attachment attach{get; set;}
     public ContentVersion cversion{get;set;}
     public String cversiontitle{get;set;}
-    //parametro showPDR
+    public String pdfBody{get;set;}
+    public String linkToPdf{get;set;}
     public Integer CurrentItemSelected{get;set;}
+    
+    
     
     //nella sezione benefit da attivare, se seleziono cassa si mostra
     //la sezione "contatti referente cassa sanitaria"
     public void PassParameters()
     {   
+        system.debug('SHOWPDR : ' + showPdr);
+        system.debug('funding flag list : ' +  lFunding[selectedFunding].flag);
+        system.debug('SHOWPDR list 1 : ' +  lFunding[selectedFunding].flag[0]);
         try{
             
-        cassa = benefitDaAttivare.contains('cassa');
-        lFunding[selectedFunding].flag.set(0, showPdr);
-        lFunding[selectedFunding].flag.set(1, showSectionIncentivo);
-        lFunding[selectedFunding].flag.set(2, showIncentivo);
+            cassa = benefitDaAttivare.contains('cassa');
+            lFunding[selectedFunding].flag.set(0, showPdr);
+            lFunding[selectedFunding].flag.set(1, showSectionIncentivo);
+            lFunding[selectedFunding].flag.set(2, showIncentivo);
         }catch(exception e)
         {system.debug('error!' + e.getMessage()); 
         }
@@ -82,15 +93,17 @@ public class APIT30_IntegrationPagesController {
     public APIT30_IntegrationPagesController() {
         value=0;
         residuiDaAttivare = '';
-    	incentive1 = 0;
-    	incentive2 = 0;
-    	incentivo = ''; 
+        incentive1 = 0;
+        incentive2 = 0;
+        incentivo = ''; 
         dettagliAltro = '';
+        dettagliAltroFatt ='';
         CurrentItemSelected=0;
         confirm = true;
         showPdf = false;
         saveDone = false;
         showPdr = '';
+        showRiepilogoEm = '';
         payroll = '';
         cassa = false;
         cversiontitle = '';
@@ -100,12 +113,16 @@ public class APIT30_IntegrationPagesController {
         showSectionIncentivo = '';
         benefitDaAttivare = new List<String>();
         cversion = new ContentVersion();
-        this.caseNumber = this.getCaseNumber();
-        this.emailRiepilogoDati = '';
+        
+        if ( System.currentPageReference().getParameters().get('caseNumber') != null)
+            this.caseNumber = this.getCaseNumber();
+        else 
+            this.pdfBody = getAttachment();
+        this.emailRiepilogoDati = '';                 
         this.pdfHtml = '';
-        //this.files = new List<Blob>();
-        //addFile();
-        //addFile();
+        
+        if (attach != null)
+            this.linkToPdf = 'https://devam-welcomeonboardingtest.cs89.force.com/apex/VFIT31_ShowPdf?attachmentId='+attach.ID;
         //istanzio le classi wrapper per gli oggetti da 
         //inserire su SFDC
         //
@@ -126,10 +143,20 @@ public class APIT30_IntegrationPagesController {
         contactDetailResidue = new IT_Contact_Detail__c();
         contactDetail.IT_Credentials__c = true;
         contactDetail.IT_Apparatus_Type__c = '005';
-        contactDetailPay.IT_Payroll__c = true;
+        if (contactDetail.Name == contactDetailPay.Name)
+            contactDetail.IT_Payroll__c = true;
+        else
+            contactDetailPay.IT_Payroll__c = true;
+        if (contactDetailResidue.Name == contactDetail.Name )
+            contactDetail.IT_Residue__c = true;
+        else if (contactDetailPay.Name == contactDetailResidue.Name ) 
+            contactDetailPay.IT_Residue__c = true;
+        else
+            contactDetailResidue.IT_Residue__c = true;
+        
         contactDetailPay.IT_Apparatus_Type__c = '005';
         contactDetailResidue.IT_Apparatus_Type__c = '005';
-        contactDetailResidue.IT_Residue__c = true;
+        
         societaObject = new SocietaObject(0);
         unicaObject = new SocietaObject(0);
         sedeObject = new SedeObject(0);
@@ -138,7 +165,8 @@ public class APIT30_IntegrationPagesController {
         listSedes = new List<SedeObject>();
         if (this.caseNumber != null)
         {
-            List<case> cases = [SELECT id, AccountId, ContactId, IT_Welfare_Project__r.Id, IT_Form_Submitted__c from Case WHERE CaseNumber =: caseNumber];
+            System.debug('caseNumber1: '+caseNumber);
+            List<case> cases = [SELECT id, AccountId, ContactId, IT_Welfare_Project__r.Id, IT_Form_Submitted__c from Case WHERE CaseNumber =: this.caseNumber];
             //if no cases are found show message Error
             if( cases.size()<1)
             {
@@ -155,18 +183,23 @@ public class APIT30_IntegrationPagesController {
                     this.account = [SELECT Id, Name, ER_VAT_Number__c, IT_Account_Address__c, isPersonAccount, ParentId,
                                     NumberOfEmployees, IT_Industry__c
                                     From Account WHERE Id =:this.caseInstance.AccountId];
-            
-                   //istanzio la lista delle Email di tutti i contatti su Account
-                   //e popolo emailRiepilogo List
+                    
+                    //istanzio la lista delle Email con i Recapiti del piano di tutti i contatti dell' Account collegato  al Case
+                    //
                     emailRiepilogo = new List<SelectOption>();
-                    List<Contact> cList = [Select id,Email,accountId from Contact where accountId =: this.account.Id];
-                    for(Contact c: cList)
+                    emailRiepilogo.add(new SelectOption('','- Altro -'));
+                   // List<Contact> cList = [Select id,Email,accountId from Contact where accountId =: this.account.Id];
+                      List<IT_Contact_Detail__c> cList = [select id, Name, IT_Apparatus_Type__c from IT_Contact_Detail__c where IT_Contact__c IN:
+                          								[select id from Contact where AccountId =: this.account.ID] and IT_Apparatus_Type__c ='005'];
+                    for(IT_Contact_Detail__c c: cList)
                     {
-                      if(c.Email != null)
-                      {
-                         emailRiepilogo.add(new SelectOption(c.Email, c.Email)); 
-                      }
+                        if(c.Name != null)
+                        {
+                            emailRiepilogo.add(new SelectOption(c.Name, c.Name)); 
+                        }
                     }
+                    
+                    
                 }
                 
                 //check if lookup Contact is found
@@ -181,10 +214,13 @@ public class APIT30_IntegrationPagesController {
                 //check if lookup IT_Welfare_Project is found  
                 if(this.caseInstance.IT_Welfare_Project__r.Id!=null){
                     this.projectWelfare = [SELECT Id,Name,IT_Acquisition_Channel__c from IT_Welfare_Project__c where Id=:this.caseInstance.IT_Welfare_Project__r.Id];
+                    system.debug('PROGETTO: ' +  this.projectWelfare );
                     
+                    // List<IT_Plan__c> plans = [SELECT id, name, IT_Welfare_Project__r.id, IT_Plan_End_Date__c, IT_Plan_Start_Date__c from IT_Plan__c 
+                    //        where IT_Welfare_Project__r.Id =: this.projectWelfare.ID order by CreatedDate desc ];  
+                    List<IT_Plan__c> plans = [SELECT id, name, IT_Provisioning_Case__c, CreatedDate, IT_Welfare_Project__r.id, IT_Plan_End_Date__c, IT_Plan_Start_Date__c from IT_Plan__c where IT_Provisioning_Case__c =: this.caseInstance.ID 
+                                              order by CreatedDate desc];
                     
-                    List<IT_Plan__c> plans = [SELECT id, name, IT_Welfare_Project__r.id, IT_Plan_End_Date__c, IT_Plan_Start_Date__c from IT_Plan__c 
-                                              where IT_Welfare_Project__r.Id =: this.projectWelfare.ID order by CreatedDate desc ];  
                     if( plans.size() <1 )
                     {
                         apexpages.Message msg = new apexpages.Message( 
@@ -201,80 +237,94 @@ public class APIT30_IntegrationPagesController {
     }
     
     public PageReference savePdfAttachment(){
-        PageReference pdf = Page.VFIT30_IntegrationPages_Form;
-        //System.debug('pdf'+pdf.getContent());
-		// add parent id to the parameters for standardcontroller
-        pdf.getParameters().put('id',this.projectWelfare.Id);
-    
-        // create the new attachment
-        Attachment attach = new Attachment();
-        
-        // the contents of the attachment from the pdf
+        this.attach = new Attachment();
         Blob body;
-        /*
-        try {
-            
-            // returns the output of the page as a PDF
-            body = pdf.getContentAsPDF();
-            
-        // need to pass unit test -- current bug	
-        } catch (VisualforceException e) {
-            System.debug('Error : '+e.getMessage());
-            body = Blob.valueOf('Some Text');
-        }
-        */
-        attach.Body = blob.toPDF(this.pdfHtml);
-        // add the user entered name
-        attach.Name = this.projectWelfare.Name+'.pdf';//this.projectWelfare.Name+
-        attach.IsPrivate = false;
-        // attach the pdf to the account
-        attach.ParentId = this.projectWelfare.Id;
-        insert attach;
+        this.attach.Body = blob.toPDF(this.pdfHtml);
+        this.projectWelfare.IT_Pdf_Html_Body__c = this.pdfHtml;
+        this.attach.Name = this.projectWelfare.Name+'.pdf';//this.projectWelfare.Name+
+        this.attach.IsPrivate = false;
+        this.attach.ParentId = this.projectWelfare.Id;
+        insert this.attach;
+        this.attachmentId = this.projectWelfare.ID;
+        update this.projectWelfare;
+        sendMail();
+        
         System.debug('saved : '+attach);
         return null;
-        // send the user to the account to view results
-        //return new PageReference('/'+this.projectWelfare.Id);
+        
     }
-    /*
-    public void addFile(){
-        if(files.size() < 5){
-            Blob file;
-            files.add(file);
-            System.debug('file added');
+    
+    public PageReference showPdfPage()
+    {
+        PageReference pageRef = new PageReference('/VFIT31_ShowPdf?attachmentId='+attachmentId);
+        
+        return pageRef;
+    }
+    
+    
+    public void sendMail(){
+        System.debug('Email '+this.emailRiepilogoDati);
+        Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
+        string[] toAdresses = new string[] {this.emailRiepilogoDati};
+        email.setToAddresses(toAdresses);
+        EmailTemplate emailTemplate = [select HtmlValue from EmailTemplate where Name='IT Recup'];
+        string htmlBody = emailTemplate.HtmlValue;
+        email.setSubject('Modulo di attivazione Welfare  ' + this.Account.ER_VAT_Number__c + ' '+ this.Account.Name);
+        email.setHtmlBody(htmlBody);
+        try
+        {
+            Messaging.sendEmail(new Messaging.SingleEmailMessage[] { email });
+            System.debug('Email sent successfuly');
+        }
+        catch(exception e)
+        {
+            System.debug('Error sending email '+e.getMessage());
+            apexpages.addmessage(new apexpages.message(apexpages.severity.error,e.getMessage()));
         }
     }
-    */
+    
     public PageReference savePlan()
     {
         if (confirm) 
         {
-        // update del PIANO
-        //this.piano.IT_Plan_Start_Date__c = (dateChoice_Start_Date != null ? dateChoice_Start_Date: this.piano.IT_Plan_Start_Date__c);
-       
-        //setto la data inizio PIANO, sovrascrivo con la data minore presa dal Form 
-    
-        this.projectWelfare.IT_Unique_Billing__c = (strutturaPayroll == 'unico' ? true : false);
-        this.projectWelfare.IT_Splitted_Billing_for_CDC__c = ( strutturaPayroll == 'separato' ? true : false );
-        update this.projectWelfare;
-        insertContactDetail(contactDetail);
-        insertContactDetail(contactDetailPay);
-        insertContactDetail(contactDetailResidue);
-        insertFundingScource(lFunding);
-        insertBenefit(lBenefit);            
-        insertContact(contact);
-        
+            // update del PIANO
+            //this.piano.IT_Plan_Start_Date__c = (dateChoice_Start_Date != null ? dateChoice_Start_Date: this.piano.IT_Plan_Start_Date__c);
+            
+            //setto la data inizio PIANO, sovrascrivo con la data minore presa dal Form 
+            
+            this.projectWelfare.IT_Unique_Billing__c = (strutturaPayroll == 'unico' ? true : false);
+            this.projectWelfare.IT_Splitted_Billing_for_CDC__c = ( strutturaPayroll == 'separato' ? true : false );
+            update this.projectWelfare;
+            List<String> listCd = new List<String>();
+            insertContactDetail(contactDetail);
+            listCd.add(contactDetail.Name);
+            if ( !listCd.contains(contactDetailPay.Name))
+            {
+                insertContactDetail(contactDetailPay);
+                listCd.add(contactDetailPay.Name);
+            }
+            if ( !listCd.contains(contactDetailResidue.Name) )
+            {
+                insertContactDetail(contactDetailResidue);
+            }
+            
+            insertFundingScource(lFunding);
+            insertBenefit(lBenefit);            
+            insertContact(contact);
+            
             if ( cassa )
             {  
-        insertRefCassaSanitaria(contCassaSanitaria);
+                insertRefCassaSanitaria(contCassaSanitaria);
             }
-        insertContactAccount(lContact);
-  		saveDone = true;
+            insertContactAccount(lContact);
+            this.saveDone = true;
+            refreshPage();
             this.caseInstance.IT_Form_Submitted__c = true;
             update this.caseInstance;
             apexpages.Message msg = new apexpages.Message( 
                 apexpages.Severity.CONFIRM,'Dati inseriti con successo. ' );
             apexpages.addMessage(msg);
-        confirm = false;
+            //confirm = false;
         }
         else 
         {
@@ -282,7 +332,6 @@ public class APIT30_IntegrationPagesController {
                 apexpages.Severity.ERROR,'Dati non inseriti' );
             apexpages.addMessage(msg);                
         }
-        
         
         return null; 
     }
@@ -298,15 +347,26 @@ public class APIT30_IntegrationPagesController {
         c.accountId = this.account.ID;
         c.Phone = '0';
         if((String.isBlank(c.FirstName) || String.isBlank(c.LastName)) || ( c.Email == null))
-           {
-               apexpages.Message msg = new apexpages.Message( 
+        {
+            apexpages.Message msg = new apexpages.Message( 
                 apexpages.Severity.ERROR,'Errore durante inserimento referente Cassa Sanitaria. Riprova' );
-              apexpages.addMessage(msg);
-           }
-           else{
-           insert c;
-           }
+            apexpages.addMessage(msg);
+        }
+        else{
+            insert c;
+        }
     }
+    
+    public PageReference refreshPage() {
+        if(this.saveDone){
+            System.debug('on refresh '+this.saveDone);
+            PageReference ref = Page.VFIT30_IntegrationPages_Form;
+            ref.getParameters().putAll(ApexPages.currentPage().getParameters());
+            ref.setRedirect(true); // Discard page state
+            return ref;
+        }
+        return null;
+    } 
     
     public void insertContactAccount(List<WrapperClass> wrapper)
     {
@@ -314,29 +374,29 @@ public class APIT30_IntegrationPagesController {
         List<Contact> listContAcc = new List<Contact>();
         for ( WrapperClass w: wrapper )
         {
-           Contact c = new Contact();
-           c.LastName = w.contact.LastName;
-           c.FirstName = w.contact.FirstName;
-           c.Email = w.contact.Email;
-           c.Phone = w.contact.Phone;
-           c.AccountId = w.contact.AccountId;
-           c.Title = w.contact.Title;
-           listContAcc.add(c);
+            Contact c = new Contact();
+            c.LastName = w.contact.LastName;
+            c.FirstName = w.contact.FirstName;
+            c.Email = w.contact.Email;
+            c.Phone = w.contact.Phone;
+            c.AccountId = w.contact.AccountId;
+            c.Title = w.contact.Title;
+            listContAcc.add(c);
             
-           if (String.isBlank(c.FirstName) || String.isBlank(c.LastName) ) 
-           {
-               controllo = false;
-           }
+            if (String.isBlank(c.FirstName) || String.isBlank(c.LastName) ) 
+            {
+                controllo = false;
+            }
         }
         if ( listContAcc.size() >= 1 && controllo)
         {
-           insert listContAcc;
+            insert listContAcc;
         } /*else
-        {
-              apexpages.Message msg = new apexpages.Message( 
-                apexpages.Severity.ERROR,'Errore durante inserimento Contatti su Account! Riprova' );
-              apexpages.addMessage(msg);
-        } */
+{
+apexpages.Message msg = new apexpages.Message( 
+apexpages.Severity.ERROR,'Errore durante inserimento Contatti su Account! Riprova' );
+apexpages.addMessage(msg);
+} */
         
     }
     
@@ -358,23 +418,23 @@ public class APIT30_IntegrationPagesController {
             fs.IT_Type__c = wrapper[i].funding.IT_Type__c;
             fs.IT_Platform_Choice__c = wrapper[i].funding.IT_Platform_Choice__c;
             fs.IT_Membership_Payment_Type__c = (wrapper[i].funding.IT_Platform_Choice__c == 'No' ? '' : wrapper[i].funding.IT_Membership_Payment_Type__c);
-          //  fs.IT_Membership_Choice_Start_Date__c = (dateChoice_Start_Date_PDR != null ? dateChoice_Start_Date_PDR: this.piano.IT_Plan_Start_Date__c);
+            //  fs.IT_Membership_Choice_Start_Date__c = (dateChoice_Start_Date_PDR != null ? dateChoice_Start_Date_PDR: this.piano.IT_Plan_Start_Date__c);
             fs.IT_Membership_Choice_Start_Date__c = wrapper[i].funding.IT_Membership_Choice_Start_Date__c;
             fs.IT_Membership_Choice_End_Date__c = wrapper[i].funding.IT_Membership_Choice_End_Date__c ;
             fs.IT_Incentive_for_Membership__c = wrapper[i].funding.IT_Incentive_for_Membership__c; 
             fs.Incentive_for_Membership_percentage__c = wrapper[i].funding.Incentive_for_Membership_percentage__c; 
-          //  fs.IT_Membership_Choice_End_Date__c = dateChoice_End_Date_PDR;
+            //  fs.IT_Membership_Choice_End_Date__c = dateChoice_End_Date_PDR;
             fs.IT_Details_CCNL__c = (wrapper[i].funding.IT_Details_CCNL__c != null ? wrapper[i].funding.IT_Details_CCNL__c : '' );
             fs.IT_End_Plan_Residue_Management__c = wrapper[i].funding.IT_End_Plan_Residue_Management__c; 
             fs.IT_Membership_Payment_Type_Notes__c = (wrapper[i].funding.IT_Membership_Payment_Type_Notes__c != null ? wrapper[i].funding.IT_Membership_Payment_Type_Notes__c +  ' Dettagli Scelta PDR: ' + wrapper[i].DettaglisceltaPDR : '');
-           // fs.IT_Membership_Payment_Type_Notes__c = wrapper[i].funding.IT_Membership_Payment_Type_Notes__c +  ' Dettagli Scelta PDR: ' + wrapper[i].DettaglisceltaPDR;
+            // fs.IT_Membership_Payment_Type_Notes__c = wrapper[i].funding.IT_Membership_Payment_Type_Notes__c +  ' Dettagli Scelta PDR: ' + wrapper[i].DettaglisceltaPDR;
             fs.IT_Informative_Notes__c = (wrapper[i].funding.IT_Informative_Notes__c != null ? wrapper[i].funding.IT_Informative_Notes__c : '' );
             fs.IT_Plan__c = this.piano.Id;
             
             fontiList.add(fs);
             datesStart.add(wrapper[i].funding.IT_Membership_Choice_Start_Date__c);
             datesEnd.add(wrapper[i].funding.IT_Membership_Choice_End_Date__c);            
-                
+            
         }
         if( fontiList.size() > 0) {
             try{
@@ -387,7 +447,7 @@ public class APIT30_IntegrationPagesController {
                     {
                         datesStart.remove(i);
                     }
-                        
+                    
                 }
                 this.piano.IT_Plan_Start_Date__c = datesStart.get(0);
                 this.piano.IT_Plan_End_Date__c = datesEnd.get(datesEnd.size()-1);
@@ -421,7 +481,7 @@ public class APIT30_IntegrationPagesController {
                 IT_Benefit__c = wc.benefit.IT_Benefit__c,
                 IT_Fund_Name_1__c = (wc.benefit.IT_Macro_Benefit__c == 'Fund'? 'Nominare il fondo previdenza':''),
                 IT_Plan__c = this.piano.ID
-            );										                    //inserisce un nome "campo required" al fondo se inserisco benefit previdenza
+            );                                                          //inserisce un nome "campo required" al fondo se inserisco benefit previdenza
             benefitList.add(b);
         }
         
@@ -447,19 +507,20 @@ public class APIT30_IntegrationPagesController {
     {
         if (cd.IT_Residue__c == true)
         {
-           cd.Name= ( cd.Name==null? getRiepilogo : cd.Name);
+            cd.Name= ( cd.Name==null? getRiepilogo : cd.Name);
         }
-           
+        
         if ( cd.Name != null )
         {
-        cd.IT_Plan__c = this.piano.Id;
-        try{
-            insert cd;  
-        }
-        catch(exception e)
-        {
-            system.debug('ERRORE inserimento contact detail' + e.getMessage());
-        }
+            cd.IT_Plan__c = this.piano.Id;
+            cd.IT_Contact__c = this.contact.ID;
+            try{
+                insert cd;  
+            }
+            catch(exception e)
+            {
+                system.debug('ERRORE inserimento contact detail' + e.getMessage());
+            }
         }
     }
     //-------------------------------------------------------------------------------------
@@ -481,10 +542,10 @@ public class APIT30_IntegrationPagesController {
     public PageReference addContact(){
         try
         {
-        Contact c = new Contact();
-        c.AccountId = this.account.Id;
-        lContact.add(new WrapperClass(c, markerC));
-        markerC = markerC +1;
+            Contact c = new Contact();
+            c.AccountId = this.account.Id;
+            lContact.add(new WrapperClass(c, markerC));
+            markerC = markerC +1;
         }
         catch (exception e)
         {
@@ -492,22 +553,47 @@ public class APIT30_IntegrationPagesController {
         }
         return null;
     }
+    
+    public PageReference addContact2(){
+        try
+        {
+            Contact c = new Contact();
+            c.AccountId = this.account.Id;
+            
+            c.FirstName = this.contact.FirstName;
+            c.LastName = this.contact.LastName;
+            c.Title = this.contact.Title;
+            c.Phone = this.contact.Phone;
+            c.Email = this.contact.Email;
+            
+            lContact.add(new WrapperClass(c, markerC));
+            markerC = markerC +1;
+        }
+        catch (exception e)
+        {
+            system.debug(e.getMessage() + 'error');
+        }
+        return null;
+    }
+    
+    
+    
     public void showReferenteSelected(){
         System.debug('section : '+showReferente);
     }
     public PageReference deleteRows(){
         Integer x=-1;
         for(WrapperClass wc : lFunding){
-             x++;
+            x++;
             if(wc.counter==selectedFunding2){
                 break;
-               
+                
             } 
         }
         try
         {
-        lFunding.remove(x);
-        marker--;
+            lFunding.remove(x);
+            marker--;
         }
         catch (exception e)
         {
@@ -523,13 +609,13 @@ public class APIT30_IntegrationPagesController {
         for (WrapperClass wc: lContact){
             x++;
             if(wc.counter==selectedContact){
-             break;
+                break;
             }
         }
         try
         {
-        lContact.remove(x);
-        markerC = markerC -1;
+            lContact.remove(x);
+            markerC = markerC -1;
         } catch (exception e)
         {
             system.debug('Error: ' + e.getMessage());
@@ -589,7 +675,7 @@ public class APIT30_IntegrationPagesController {
                 lBenefit.add(new WrapperClass(b,markerB));
                 markerB = markerB+1;
                 IT_Benefit__c b1 = new IT_Benefit__c(IT_Macro_Benefit__c = 'Ticket Compliments', 
-                                                    IT_Benefit__c = 'Printable Top Premium');
+                                                     IT_Benefit__c = 'Printable Top Premium');
                 lBenefit.add(new WrapperClass(b1,markerB));
                 markerB++;
                 
@@ -632,7 +718,16 @@ public class APIT30_IntegrationPagesController {
     
     //get current caseNumber used in the controller to make SOQL
     public string getCaseNumber(){
-        string caseNumber = System.currentPageReference().getParameters().get('caseNumber');
+        //AD encrypt case number
+        IT_Custom_Control__c mhc = IT_Custom_Control__c.getInstance('KeyCaseNumber');  
+        String stringKey = mhc.IT_Custom_Text__c;
+        Blob keyEn = EncodingUtil.base64Decode(stringKey);
+        String caseNumebrString = System.currentPageReference().getParameters().get('caseNumber');
+        Blob caseNumberBlob = EncodingUtil.base64Decode(caseNumebrString);
+        Blob codeDecrypt =  Crypto.decryptWithManagedIV('AES128', keyEn, caseNumberBlob);
+        String caseNumber = codeDecrypt.toString();
+        System.debug('caseNumber1: '+caseNumber);
+        //AD encrypt case number - END
         System.debug(System.currentPageReference().getParameters());
         if ( String.isBlank(caseNumber) || String.isEmpty(caseNumber)) 
         {
@@ -643,6 +738,24 @@ public class APIT30_IntegrationPagesController {
         }
         return caseNumber;
     }
+    
+    public String getAttachment()
+        
+    {
+        system.debug('attachmentId'+ attachmentId );
+        String result = System.currentPageReference().getParameters().get('attachmentId'); 
+        //  Attachment attch = [ SELECT ID, Body from Attachment where Id =: result LIMIT 1]; 
+        IT_Welfare_Project__c  proj = [ SELECT ID, IT_Pdf_Html_Body__c from IT_Welfare_Project__c where Id =: result LIMIT 1];
+        //String bodyString = attch.Body.toString().unescapeHtml4();
+        String bodyString = proj.IT_Pdf_Html_Body__c;
+        //String bodyString = attch.Body.toPDF('');
+        system.debug('attachmentId'+ bodyString );
+        
+        
+        return bodyString;
+        
+    }
+  
     
     //referente methods
     public List<SelectOption> getReferenteOptions(){
