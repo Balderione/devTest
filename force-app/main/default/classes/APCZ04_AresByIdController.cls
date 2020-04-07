@@ -1,3 +1,14 @@
+/*
+----------------------------------------------------------------------
+-- - Name          : APCZ04_AresByIdController
+-- - Author        : XXX
+-- - Description   : The controller of the page APCZ04_AresByIdController
+--
+-- Date         Name                Version     Remarks
+-- -----------  -----------         --------    ---------------------------------------
+--  XXX            XXX                 1.0         Initial version
+---------------------------------------------------------------------------------------
+*/
 public with sharing class APCZ04_AresByIdController 
 {
    @AuraEnabled
@@ -71,6 +82,9 @@ public with sharing class APCZ04_AresByIdController
             if (oPopUp.bGetVatNumber == true) {
                 oList[0].ER_VAT_Number__c = oPopUp.sVatNumber;
             }
+            if (oPopUp.bGetOtherFiscalId == true) {
+                oList[0].ER_Other_Fiscal_ID__c = oPopUp.sOtherFiscalId;
+            }
 
 
             oList[0].ER_NaceList__c = oPopUp.sNaceList;
@@ -127,18 +141,21 @@ public with sharing class APCZ04_AresByIdController
             }
 
             if (oPopUp.bGetStreet == true) {
-                oList[0].Street = oPopUp.sStreet;
+                oList[0].ER_Legal_Street__c = oPopUp.sStreet;
             }
 
             if (oPopUp.bGetZipCode == true) {
-                oList[0].PostalCode = oPopUp.sPostalCode;
+                oList[0].ER_Legal_Zip_Code__c = oPopUp.sPostalCode;
             }
 
             if (oPopUp.bGetCity == true) {
-                oList[0].City = oPopUp.sCity;
+                oList[0].ER_Legal_City__c = oPopUp.sCity;
             }
             if (oPopUp.bGetVatNumber == true) {
                 oList[0].ER_VAT_Number__c = oPopUp.sVatNumber;
+            }
+            if (oPopUp.bGetOtherFiscalId == true) {
+                oList[0].ER_Other_Fiscal_ID__c = oPopUp.sOtherFiscalId;
             }
 
             oList[0].ER_NaceList__c = oPopUp.sNaceList;

@@ -181,7 +181,6 @@ public class APIT14_DataFactory {
             Name = 'DelTest',
             ER_Financial_Center__c = financialCenterId,
             ER_Account_Name__c = accountId,
-            IT_Client_Code__c = '445566',
             IT_Activity_AC__c = 'asd'
             
         );
@@ -221,8 +220,7 @@ public class APIT14_DataFactory {
         
         IT_Request__c result = new IT_Request__c(
             IT_Request_Status__c = '2',
-            IT_Financial_Center__c = financialCenterId,
-            IT_Contract_Start_Date__c = System.today()
+            IT_Financial_Center__c = financialCenterId
         );
         
         return result;
@@ -290,30 +288,6 @@ public class APIT14_DataFactory {
         Product2 result = new Product2(
             Name = 'TEST CLASS',
             ProductCode = '1G'
-        );
-        
-        return result;
-    }
-
-    public static IT_Note__c create_Note(string financialCenterId, String deliveryId) {
-        
-        IT_Note__c result = new IT_Note__c(
-            Name = 'TEST CLASS',
-            IT_Financial_Center__c = financialCenterId,
-            IT_Delivery_Site__c = deliveryId,
-            IT_Title__c = 'TEST TITLE'
-        );
-        
-        return result;
-    }
-
-    public static IT_Additional_Expenses__c create_AddExp(string financialCenterId) {
-        
-        IT_Additional_Expenses__c result = new IT_Additional_Expenses__c(
-            IT_Financial_Center__c = financialCenterId,
-            IT_Service__c = 'A',
-            IT_Code__c = '01',
-            IT_Amount__c = 3
         );
         
         return result;

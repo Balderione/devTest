@@ -7,7 +7,7 @@
 public class APER08_Case_Management_Test {
     @testSetup
     static void testSetup() {
-        Account newCompany = APER07_UtilityTestMethod.getCompany('VFCER01_Asset_Transactions_Balance_Test');
+        Account newCompany = APER07_UtilityTestMethod.getCompany('APER08_Case_Management_Test');
         insert newCompany;
         
         ER_Employee__c newEmployee = APER07_UtilityTestMethod.getEmployee();

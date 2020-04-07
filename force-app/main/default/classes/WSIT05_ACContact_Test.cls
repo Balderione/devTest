@@ -21,10 +21,6 @@ public class WSIT05_ACContact_Test {
 
         Account accountTest = APIT14_DataFactory.create_BusinessAccount();
         insert accountTest;
-        Contact contactTest2 = APIT14_DataFactory.create_Contact(accountTest.Id);
-        contactTest2.IT_Code__c = 'StringSoc2';
-        contactTest2.IT_Type__c = 'Soc';
-        insert contactTest2;
         Contact contactTest = APIT14_DataFactory.create_Contact(accountTest.Id);
         contactTest.IT_Code__c = 'StringString';
         insert contactTest;

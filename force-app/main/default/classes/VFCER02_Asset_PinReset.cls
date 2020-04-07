@@ -23,9 +23,15 @@ public class VFCER02_Asset_PinReset {
     public String caseID {get; set;}
     public Boolean wsCalledAtLeastOnce {get; set;}
     public Boolean wsSuccess {get; set;}
+    public String userBU {get; set;}
 
     public VFCER02_Asset_PinReset(ApexPages.StandardController controller) {
 
+        userBU = APER10_User_Management.userBU;
+        if(userBU == 'CZ'){
+            Apexpages.addMessage(new ApexPages.Message(Apexpages.Severity.INFO, Label.LAB_SF_FunctionalityNotAvailableForBU));
+            showError = true;
+        }
         assetFields = new List<String>();
         assetFields.add('Status');
         assetFields.add('Name');

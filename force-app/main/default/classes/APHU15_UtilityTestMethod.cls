@@ -113,7 +113,7 @@ public class APHU15_UtilityTestMethod {
         
         for (Integer i = 0; i < numFcenters ; i++) {
             ER_Financial_Center__c fc = new ER_Financial_Center__c(
-                Name = 'CANADA HOTEL KFT.' + i,
+                Name = 'CANADA HOTEL KFT.'+ DateTime.now().getTime() + i,
                 ER_Type__c = fcType,
                 ER_Invoicing_Site__c = true,
                 ER_Account_Name__c = accId,

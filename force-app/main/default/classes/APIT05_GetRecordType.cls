@@ -6,10 +6,9 @@ public class APIT05_GetRecordType {
     @auraenabled
     public static string getRecordType (string recordId){
         List<Case> caseItem = [SELECT id,RecordTypeId , IT_Financial_Center__c, IT_Circuit__c from case where id =:recordId LIMIT 1];
-        List<ER_Financial_Center__c> linkedFC = [SELECT id , IT_Service__c, IT_Product2__r.IT_Card__c FROM ER_Financial_Center__c WHERE Id =:caseItem[0].IT_Financial_Center__c];
+        List<ER_Financial_Center__c> linkedFC = [SELECT id , IT_Service__c FROM ER_Financial_Center__c WHERE Id =:caseItem[0].IT_Financial_Center__c];
         List<IT_Circuit__c> circ = [SELECT id , Name , IT_Circuit_Code__c from IT_Circuit__c where id = :caseItem[0].IT_Circuit__c];//FIX THIS
         string result;
-        string isCard;
         if(caseItem != null && caseItem.size() > 0){
             result = Schema.getGlobalDescribe().get('Case').getDescribe().getRecordTypeInfosById().get(caseItem[0].RecordTypeId).getDeveloperName();
         }
@@ -29,12 +28,6 @@ public class APIT05_GetRecordType {
             else{
                 result+='§home';
             }
-            if(linkedFC[0].IT_Product2__r.IT_Card__c){
-                isCard = 'card';
-            }
-            else{
-                isCard = 'ticket';
-            }
         }
         else{
             result+='§home';
@@ -43,8 +36,6 @@ public class APIT05_GetRecordType {
         if(circ != null && circ.size() >0){
             result += circ[0].IT_Circuit_Code__c;
         }
-        result += '§'+isCard;
-
         
         return result;
     }

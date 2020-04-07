@@ -56,11 +56,10 @@ public without sharing class APIT11_Utilities {
                     if(singleRequest.IT_Contract_Start_Date__c <= System.today()){
                         upsertFC = populateFinancialCenter(listFC, singleRequest, true, mapContractOld);
                         if(upsertFC != null && upsertFC != upsertFCControl) 
-                            returnConditionChange = upsertFC.Id;
+                            returnConditionChange = 'ConditionChangeOK';
                     }else{ 
-                        upsertFC = populateFinancialCenterFuture(listFC, singleRequest, mapContractOld);  
-                        if(upsertFC != null && upsertFC != upsertFCControl) 
-                            returnConditionChange = upsertFC.Id;
+                        populateFinancialCenterFuture(listFC, singleRequest, mapContractOld); 
+                        returnConditionChange = 'ConditionChangeOK';
                     }          
                 }    
             }
@@ -78,7 +77,7 @@ public without sharing class APIT11_Utilities {
         list<IT_Request__c> requestError = [Select Id, IT_Request_Status__c From IT_Request__c Where Id =: idErrorRequest];
         if(requestError != null && requestError.size() > 0){
             IT_Request__c updateRequest = new IT_Request__c(Id = requestError[0].Id);
-            updateRequest.IT_Request_Status__c = '5';
+            updateRequest.IT_Request_Status__c = '2';
             update updateRequest;
         }
     }
@@ -94,11 +93,6 @@ public without sharing class APIT11_Utilities {
         List<Contract> upsertContractErrorList = new List<Contract>();
         upsertContractErrorList.add(upsertContractError);
         System.debug('upsertContractErrorList::: '+upsertContractErrorList);
-
-        //AD - Control contract progressive 
-        Map<String, String> mapProgressiveCont = new Map<String, String>(); 
-        mapProgressiveCont = calculateProgressiveContract(mapFinCen);
-        //AD - Control contract progressive - END
 
         Savepoint sp = Database.setSavepoint();
         System.debug('mapFinCen::: '+mapFinCen);
@@ -148,45 +142,23 @@ public without sharing class APIT11_Utilities {
                     upsertFCMethod.IT_Confirm_Flow__c = true;        
 
                 System.debug('mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c::: '+mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c);
-                Set<String> controlPaymentCode = new Set<String> {'094','095','131','132','135','137','138','158','168','175','176','177','178','183','184','185','186','187','189','190','192','193','194','196','211','073','124'};
+
                 if(!String.isBlank(mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c)){
                     upsertBAMethod = new ER_Bank_Account__c (Id = mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c);
                     upsertBAMethod.IT_Payment_Code__c =  requestObj.IT_Payment_Code__c;
                     upsertBAMethod.IT_SDD_Payment_Code__c =  requestObj.IT_SDD_Payment_Code__c;
-                    if(String.isBlank(requestObj.IT_Payment_Code__c) && String.isBlank(requestObj.IT_SDD_Payment_Code__c)){       
-                        upsertBAMethod.IT_Check_Iban__c  = '';
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = null;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
-                        upsertBAMethod.IT_CIN__c = '';
-                        upsertBAMethod.IT_SDD_Contract_Code__c = '';
-                        upsertBAMethod.IT_CC__c = '';
-                        upsertBAMethod.IT_Bank_Account_Code__c = '';
-                        upsertBAMethod.IT_ABI__c = '';
-                        upsertBAMethod.IT_CAB__c = '';
-                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && !controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
-                        upsertBAMethod.IT_Check_Iban__c  = '';
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = null;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
-                        upsertBAMethod.IT_CIN__c = '';
-                        upsertBAMethod.IT_SDD_Contract_Code__c = '';
-                        upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
-                        upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
-                        upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = '';
-                    }else{
-                        upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = requestObj.IT_SDD_Fiscal_Code__c;
-                        upsertBAMethod.IT_CIN__c = requestObj.IT_CIN__c;
-                        upsertBAMethod.IT_SDD_Contract_Code__c = requestObj.IT_SDD_Contract_Code__c;
-                        upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
-                        upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
-                        upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
-                    }   
-                    
+                    upsertBAMethod.IT_CIN__c = requestObj.IT_CIN__c;
                     upsertBAMethod.ER_Country__c = requestObj.IT_Country__c;
+                    upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
+                    upsertBAMethod.IT_SDD_Contract_Code__c = requestObj.IT_SDD_Contract_Code__c;
+                    upsertBAMethod.IT_SDD_Fiscal_Code__c = requestObj.IT_SDD_Fiscal_Code__c;
+                    //upsertBAMethod.IT_Authorized__c = requestObj.IT_Authorized__c;
                     upsertBAMethod.IT_SDD_Authorized__c = requestObj.IT_SDD_Authorized__c;
+                    upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;
+                    upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
+                    upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
+                    upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
+                    upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
 
                     //Skip
                     if(mapFinCen.get(requestObj.IT_Client_Code__c).IT_SkipActivation__c)
@@ -200,20 +172,9 @@ public without sharing class APIT11_Utilities {
 
                 System.debug('mapFinCen.get(requestObj.IT_Client_Code__c).IT_Contract__c::: '+mapFinCen.get(requestObj.IT_Client_Code__c).IT_Contract__c);
 
-                if(requestObj.IT_Editing_Reason__c == '18'){
-                    upsertContractMethod = new Contract(Id = mapFinCen.get(requestObj.IT_Client_Code__c).IT_Contract__c);
-                }else{
-                    if(mapProgressiveCont!= null && mapProgressiveCont.size() > 0 && mapProgressiveCont.keyset().contains(mapOldContract.get(requestObj.IT_Client_code__c)[0].IT_Contract_Number__c)){
-                        Integer intControlTemp = Integer.valueOf(mapProgressiveCont.get(mapOldContract.get(requestObj.IT_Client_code__c)[0].IT_Contract_Number__c));
-                        upsertContractMethod.IT_Contract_Progressive__c = String.valueOf(intControlTemp + 1);
-                    }else{
-                        upsertContractMethod.IT_Contract_Progressive__c = '1';     
-                    }    
-                }    
-
                 //Contract
                 upsertContractMethod.IT_Commission_Type__c = requestObj.IT_Commission_Type__c;
-                upsertContractMethod.IT_Commission_Percentage__c = requestObj.IT_Commission_Percentage__c; 
+                upsertContractMethod.IT_Commission_Percentage__c = requestObj.IT_Commission_Percentage__c;
                 upsertContractMethod.IT_Discount_Type__c = requestObj.IT_Discount_Type__c;
                 upsertContractMethod.IT_Discount_Percentage__c = requestObj.IT_Discount_Percentage__c ;
                 upsertContractMethod.IT_Validity_Start_Date_EC__c = requestObj.IT_Contract_Start_Date__c;
@@ -243,6 +204,7 @@ public without sharing class APIT11_Utilities {
                 upsertContractMethod.IT_Term_Type__c = requestObj.IT_Term_Type__c;
                 upsertContractMethod.IT_Delivery_Fixed_Day__c = requestObj.IT_Delivery_Fixed_Day__c;
                 upsertContractMethod.IT_Order_Reception_Term__c = requestObj.IT_Order_Reception_Term__c;
+                upsertContractMethod.IT_Contract_Progressive__c = requestObj.IT_Contract_Progressive__c;
                 upsertContractMethod.IT_Framework_Head_Code__c = requestObj.IT_Framework_Head_Code__c;
                 upsertContractMethod.IT_Opportunity_Code__c = requestObj.IT_Opportunity_Code__c;
                 upsertContractMethod.IT_Campaign_Start_Date__c = requestObj.IT_Campaign_Start_Date__c;   
@@ -255,13 +217,7 @@ public without sharing class APIT11_Utilities {
                 upsertContractMethod.IT_UTA_Monthly_Limit__c = requestObj.IT_UTA_Monthly_Limit__c;
                 upsertContractMethod.IT_UTA_Offer_Type__c = requestObj.IT_UTA_Offer_Type__c;
                 upsertContractMethod.IT_Card_Cost_Billing_Frequency__c = requestObj.IT_Card_Cost_Billing_Frequency__c;
-                upsertContractMethod.IT_No_Sign_Activation_Authorization__c = requestObj.IT_No_Sign_Activation_Authorization__c;
-                upsertContractMethod.IT_Discount_Percentage_2__c = requestObj.IT_Discount_Percentage_2__c;
-                upsertContractMethod.IT_Discount_Percentage_3__c = requestObj.IT_Discount_Percentage_3__c;
-                upsertContractMethod.IT_Discount_Validity_Date_2__c = requestObj.IT_Discount_Validity_Date_2__c;
-                upsertContractMethod.IT_Discount_Validity_Date_3__c = requestObj.IT_Discount_Validity_Date_3__c;
-                upsertContractMethod.IT_Extradiscount_Percentage__c = requestObj.IT_Extradiscount_Percentage__c;
-                upsertContractMethod.IT_Type_Extradiscount__c = requestObj.IT_Type_Extradiscount__c;
+                upsertContractMethod.IT_No_Sign_Activation_Authorization__c = requestObj.IT_No_Sign_Activation_Authorization__c; 
 
                 System.debug('mapOldContract: '+mapOldContract);
                 if(mapOldContract != null && mapOldContract.size() > 0 && mapOldContract.keySet().contains(requestObj.IT_Client_Code__c)){
@@ -289,6 +245,14 @@ public without sharing class APIT11_Utilities {
 
                     upsertContractMethod.AccountId = mapOldContract.get(requestObj.IT_Client_Code__c)[0].AccountId;
                     upsertContractMethod.IT_Financial_Center__c = mapFinCen.get(requestObj.IT_Client_Code__c).Id;
+                    /*Contract sendOldContr = new Contract();
+                    List<Contract> sendOldContrList = new List<Contract>();
+                    sendOldContr = mapOldContract.get(requestObj.IT_Client_Code__c)[0];
+                    sendOldContr.EndDate = System.today() - 1;
+                    sendOldContr.IT_Contract_Closing_Type__c = '017';
+                    sendOldContr.IT_Contract_Status__c = '03';
+                    sendOldContrList.add(sendOldContr);*/
+                    //APIT12_CallOutbound.createRequestContract(sendOldContrList, 'Contract');
                 }
                 //Skip
                 if(mapFinCen.get(requestObj.IT_Client_Code__c).IT_SkipActivation__c)
@@ -296,7 +260,13 @@ public without sharing class APIT11_Utilities {
                 else
                     upsertContractMethod.IT_SkipActivation__c = true;
 
-                upsert upsertContractMethod;
+                insert upsertContractMethod;
+
+                //Change condition modify 10122019 - Start
+                List<Contract> newContractList = new List<Contract>();
+                newContractList.add(upsertContractMethod);
+                APIT12_CallOutbound.createRequestContract(newContractList, 'Contract');
+                //Change condition modify 10122019 - End
 
                 upsertFCMethod.IT_Contract__c = upsertContractMethod.Id;
                 update upsertFCMethod;
@@ -310,25 +280,21 @@ public without sharing class APIT11_Utilities {
             System.debug('populateFinancialCenter: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
             Database.rollback(sp);
             catchRequest(requestObj.Id);
+            System.debug('upsertContractErrorListCatch::: '+upsertContractErrorList);
+            APIT12_CallOutbound.createRequestContract(upsertContractErrorList, 'Contract');
             return null;
         }
         return upsertFCMethod;        
     }
 
-    private static ER_Financial_Center__c populateFinancialCenterFuture(Map<String, ER_Financial_Center__c> mapFinCen, IT_Request__c requestObj, Map<String, List<Contract>> mapOldContract){
+    private static void populateFinancialCenterFuture(Map<String, ER_Financial_Center__c> mapFinCen, IT_Request__c requestObj, Map<String, List<Contract>> mapOldContract){
         System.debug('mapOldContract::: '+mapOldContract);
         try{
-            ER_Financial_Center__c upsertFCMethod = new ER_Financial_Center__c(); 
+            ER_Financial_Center__c upsertFCMethod = new ER_Financial_Center__c();
             ER_Bank_Account__c upsertBAMethod = new ER_Bank_Account__c();
             Contract upsertContractMethod = new Contract();
             Contract upsertContractMethodCR = new Contract();
             Contract upsertContractMethodEC = new Contract();
-
-            //AD - Control contract progressive 
-            Map<String, String> mapProgressiveCont = new Map<String, String>(); 
-            mapProgressiveCont = calculateProgressiveContract(mapFinCen);
-            //AD - Control contract progressive - END
-
             if(mapFinCen != null && mapFinCen.size() > 0 && mapFinCen.Keyset().contains(requestObj.IT_Client_Code__c)){ 
                 upsertFCMethod = new ER_Financial_Center__c(Id = mapFinCen.get(requestObj.IT_Client_Code__c).Id);
                 upsertFCMethod.IT_Contractual_Particularities__c = requestObj.IT_Contractual_Particularities__c;
@@ -345,45 +311,23 @@ public without sharing class APIT11_Utilities {
                     upsertFCMethod.IT_SkipActivation__c = true;
 
                 update upsertFCMethod;    
-                Set<String> controlPaymentCode = new Set<String> {'094','095','131','132','135','137','138','158','168','175','176','177','178','183','184','185','186','187','189','190','192','193','194','196','211','073','124'};
+
                 if(!String.isBlank(mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c)){
                     upsertBAMethod = new ER_Bank_Account__c (Id = mapFinCen.get(requestObj.IT_Client_Code__c).ER_Bank_Account__c);
                     upsertBAMethod.IT_Payment_Code__c =  requestObj.IT_Payment_Code__c;
                     upsertBAMethod.IT_SDD_Payment_Code__c =  requestObj.IT_SDD_Payment_Code__c;
-                    if(String.isBlank(requestObj.IT_Payment_Code__c) && String.isBlank(requestObj.IT_SDD_Payment_Code__c)){       
-                        upsertBAMethod.IT_Check_Iban__c  = '';
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = null;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
-                        upsertBAMethod.IT_CIN__c = '';
-                        upsertBAMethod.IT_SDD_Contract_Code__c = '';
-                        upsertBAMethod.IT_CC__c = '';
-                        upsertBAMethod.IT_Bank_Account_Code__c = '';
-                        upsertBAMethod.IT_ABI__c = '';
-                        upsertBAMethod.IT_CAB__c = '';
-                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && !controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
-                        upsertBAMethod.IT_Check_Iban__c  = '';
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = null;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
-                        upsertBAMethod.IT_CIN__c = '';
-                        upsertBAMethod.IT_SDD_Contract_Code__c = '';
-                        upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
-                        upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
-                        upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = '';
-                    }else{
-                        upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
-                        upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;
-                        upsertBAMethod.IT_SDD_Fiscal_Code__c = requestObj.IT_SDD_Fiscal_Code__c;
-                        upsertBAMethod.IT_CIN__c = requestObj.IT_CIN__c;
-                        upsertBAMethod.IT_SDD_Contract_Code__c = requestObj.IT_SDD_Contract_Code__c;
-                        upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
-                        upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
-                        upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
-                    }   
-                    
+                    upsertBAMethod.IT_CIN__c = requestObj.IT_CIN__c;
                     upsertBAMethod.ER_Country__c = requestObj.IT_Country__c;
+                    upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
+                    upsertBAMethod.IT_SDD_Contract_Code__c = requestObj.IT_SDD_Contract_Code__c;
+                    upsertBAMethod.IT_SDD_Fiscal_Code__c = requestObj.IT_SDD_Fiscal_Code__c;
+                    //upsertBAMethod.IT_Authorized__c = requestObj.IT_Authorized__c;
                     upsertBAMethod.IT_SDD_Authorized__c = requestObj.IT_SDD_Authorized__c;
+                    upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;
+                    upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
+                    upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
+                    upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
+                    upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
 
                     //Skip
                     if(mapFinCen.get(requestObj.IT_Client_Code__c).IT_SkipActivation__c)
@@ -441,19 +385,7 @@ public without sharing class APIT11_Utilities {
                     upsertContractMethodEC.IT_Term_Type__c = requestObj.IT_Term_Type__c;
                     upsertContractMethodEC.IT_Delivery_Fixed_Day__c = requestObj.IT_Delivery_Fixed_Day__c;
                     upsertContractMethodEC.IT_Order_Reception_Term__c = requestObj.IT_Order_Reception_Term__c;
-                    if(requestObj.IT_Editing_Reason__c != '18'){
-                        if(mapProgressiveCont!= null && mapProgressiveCont.size() > 0 && mapProgressiveCont.keyset().contains(mapOldContract.get(requestObj.IT_Client_code__c)[0].IT_Contract_Number__c)){
-                            Integer intControlTemp = Integer.valueOf(mapProgressiveCont.get(mapOldContract.get(requestObj.IT_Client_code__c)[0].IT_Contract_Number__c));
-                            upsertContractMethod.IT_Contract_Progressive__c = String.valueOf(intControlTemp + 1);
-                        }else{
-                            upsertContractMethod.IT_Contract_Progressive__c = '1';    
-                        } 
-                    }else{
-                        upsertContractMethodEC.IT_Contract_Progressive__c = requestObj.IT_Contract_Progressive__c;
-                    }
-                    System.debug('mapProgressiveCont::: '+mapProgressiveCont);
-                    System.debug('IT_Contract_Progressive__c::: '+upsertContractMethod.IT_Contract_Progressive__c);   
-                    System.debug('mapFinCen::: '+mapFinCen);      
+                    upsertContractMethodEC.IT_Contract_Progressive__c = requestObj.IT_Contract_Progressive__c;
                     upsertContractMethodEC.IT_Framework_Head_Code__c = requestObj.IT_Framework_Head_Code__c;
                     upsertContractMethodEC.IT_Opportunity_Code__c = requestObj.IT_Opportunity_Code__c;
                     upsertContractMethodEC.IT_Campaign_Start_Date__c = requestObj.IT_Campaign_Start_Date__c;
@@ -467,12 +399,6 @@ public without sharing class APIT11_Utilities {
                     upsertContractMethodEC.IT_UTA_Offer_Type__c = requestObj.IT_UTA_Offer_Type__c;
                     upsertContractMethodEC.IT_Card_Cost_Billing_Frequency__c = requestObj.IT_Card_Cost_Billing_Frequency__c;
                     upsertContractMethodEC.IT_No_Sign_Activation_Authorization__c = requestObj.IT_No_Sign_Activation_Authorization__c;
-                    upsertContractMethodEC.IT_Discount_Percentage_2__c = requestObj.IT_Discount_Percentage_2__c;
-                    upsertContractMethodEC.IT_Discount_Percentage_3__c = requestObj.IT_Discount_Percentage_3__c;
-                    upsertContractMethodEC.IT_Discount_Validity_Date_2__c = requestObj.IT_Discount_Validity_Date_2__c;
-                    upsertContractMethodEC.IT_Discount_Validity_Date_3__c = requestObj.IT_Discount_Validity_Date_3__c;
-                    upsertContractMethodEC.IT_Extradiscount_Percentage__c = requestObj.IT_Extradiscount_Percentage__c;
-                    upsertContractMethodEC.IT_Type_Extradiscount__c = requestObj.IT_Type_Extradiscount__c;
 
                     //Skip
                     if(mapFinCen.get(requestObj.IT_Client_Code__c).IT_SkipActivation__c)
@@ -501,41 +427,34 @@ public without sharing class APIT11_Utilities {
                 }      
 
             }
-            
-            return mapFinCen.get(requestObj.IT_Client_Code__c);
+
+            if(mapOldContract != null && mapOldContract.size() > 0 && mapOldContract.keySet().contains(requestObj.IT_Client_Code__c)){ 
+                Contract sendOldContr = new Contract();
+                List<Contract> sendOldContrList = new List<Contract>();
+                sendOldContr = mapOldContract.get(requestObj.IT_Client_Code__c)[0];
+                sendOldContr.EndDate = requestObj.IT_Contract_Start_Date__c - 1;   
+                sendOldContr.IT_Contract_Closing_Type__c = '017';
+                sendOldContr.IT_Contract_Status__c = '03';
+                sendOldContrList.add(sendOldContr);
+                //APIT12_CallOutbound.createRequestContract(mapOldContract.get(requestObj.IT_Client_Code__c), 'Contract');
+                List<IT_Request__c> requestFuture = new List<IT_Request__c>();
+                requestFuture.add(requestObj);
+                /*APIT12_CallOutbound.createRequestCustomFlow(requestFuture, mapOldContract.get(requestObj.IT_Client_Code__c)[0], null, 1);
+                Integer start = System.Now().millisecond();
+                while(System.Now().millisecond()< start+150){ 
+                }*/
+                APIT12_CallOutbound.createRequestCustomFlow(requestFuture, mapOldContract.get(requestObj.IT_Client_Code__c)[0], mapFinCen.get(requestObj.IT_Client_Code__c), 0); 
+            }  
 
         }catch(Exception ecc){
             System.debug('populateFinancialCenterFuture: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-            return null;
         }      
-    }
-    
-    public static Map<String, String> calculateProgressiveContract(Map<String, ER_Financial_Center__c> mapFCForProgrssive){
-        Map<String, String> mapProgressive = new Map<String, String>();
-        for(String singleFC : mapFCForProgrssive.keyset()){
-            ER_Financial_Center__c fc = new ER_Financial_Center__c();
-            fc = mapFCForProgrssive.get(singleFC);
-            if(fc.Contracts__r != null && fc.Contracts__r.size() > 0){
-                for(Contract singleContr : fc.Contracts__r){
-                    if(!mapProgressive.keyset().contains(singleContr.IT_Contract_Number__c)){
-                        mapProgressive.put(singleContr.IT_Contract_Number__c, singleContr.IT_Contract_Progressive__c);    
-                    }else{
-                        Integer intTemp = Integer.valueOf(mapProgressive.get(singleContr.IT_Contract_Number__c)); 
-                        if(Integer.valueOf(singleContr.IT_Contract_Progressive__c) > intTemp){
-                            mapProgressive.put(singleContr.IT_Contract_Number__c, singleContr.IT_Contract_Progressive__c);             
-                        }
-                    }
-                }
-            }
-        }
-        return mapProgressive;
-    }    
+    }   
 
     @Future(callout = true)
     public static void postRequest (String urlParam, String jsonPost){
         String responseBody = '';
         try{
-            System.debug('jsonPost: '+jsonPost);
             Http callHttp = new Http();
             HttpRequest req = APER06_WebserviceUtility.getHttpRequest( '/'+urlParam, 'POST', jsonPost, null);
             HttpResponse res = callHttp.send(req);
@@ -550,7 +469,7 @@ public without sharing class APIT11_Utilities {
             if((resp != null && resp.meta.status != 'succeeded') || resp == null){  
                 List<String> toAddresses = new List<String>();
                 List<CMIT11_Mail_Error__mdt> mailingList = new List<CMIT11_Mail_Error__mdt>();
-                mailingList = [Select MasterLabel,  IT_Mail_Address__c, IT_Active__c From CMIT11_Mail_Error__mdt Where IT_Active__c = true];
+                mailingList = [Select MasterLabel, 	IT_Mail_Address__c, IT_Active__c From CMIT11_Mail_Error__mdt Where IT_Active__c = true];
                 for(CMIT11_Mail_Error__mdt singleMail : mailingList){
                     toAddresses.add(singleMail.IT_Mail_address__c);
                 }
@@ -581,91 +500,6 @@ public without sharing class APIT11_Utilities {
             }
         }catch(Exception ecc){
             System.debug('Error pupulateBankAccountLookup: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-        }        
-        
-    }
-
-    @Future
-    public static void updateDistributionSuspension (String disPointId, String changeSuspension){
-        ER_Distribution_Point__c updateDP = new ER_Distribution_Point__c();
-        try{
-            if(!String.isBlank(disPointId)){
-                updateDP = new ER_Distribution_Point__c(Id = disPointId);
-
-                if(changeSuspension == '1' || changeSuspension == '3'){
-                    if(changeSuspension == '1') 
-                        updateDP.IT_Suspension__c = true;
-                    else 
-                        updateDP.IT_Suspension__c = false;        
-
-                    updateDP.IT_Suspension_Reason__c = '002'; 
-                }else if(changeSuspension == '2'){ 
-                    updateDP.IT_Suspension__c = false; 
-                }       
-                  
-                update updateDP;  
-            }
-        }catch(Exception ecc){
-            System.debug('Error updateDistributionSuspension: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-        }        
-        
-    }
-
-    @Future
-    public static void updateNote (String noteId, Integer progrssive, String fcId){
-        IT_Note__c updateNote = new IT_Note__c();
-        try{
-            if(!String.isBlank(noteId)){
-                updateNote = new IT_Note__c(Id = noteId);
-                updateNote.IT_Progressive__c = progrssive;
-                updateNote.IT_Financial_Center__c = fcId;
-                  
-                update updateNote;  
-            }
-        }catch(Exception ecc){
-            System.debug('Error updateNote: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-        }        
-        
-    }
-
-    @Future
-    public static void updateAddExp(String addExpId, Integer progrssive){
-        IT_Additional_Expenses__c updateAddExp = new IT_Additional_Expenses__c();
-        try{
-            if(!String.isBlank(addExpId)){
-                updateAddExp = new IT_Additional_Expenses__c(Id = addExpId);
-                updateAddExp.IT_Progressive__c = progrssive;
-                  
-                update updateAddExp;  
-            }
-        }catch(Exception ecc){
-            System.debug('Error updateAddExp: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-        }        
-        
-    }
-
-    public static void updateAllAccountForVatGroup(List<Account>  accGroup){
-        List<Account> updateListAccount = new  List<Account>();
-        List<Account> listAccount = new  List<Account>();
-        try{
-            if(accGroup != null && accGroup.size() > 0 && !String.isBlank(accGroup[0].IT_Group_VAT_Number__c)){
-                listAccount = [Select Id, IT_Group_VAT_Number__c, IT_VAT_Group_Naming__c, IT_VAT_Group_PEC__c, IT_VAT_Group_SDI__c From Account Where IT_Group_VAT_Number__c =: accGroup[0].IT_Group_VAT_Number__c];
-                for(Account singleAccount : listAccount){
-                    if(singleAccount.Id != accGroup[0].Id){
-                        singleAccount.IT_Group_VAT_Number__c = accGroup[0].IT_Group_VAT_Number__c; 
-                        singleAccount.IT_VAT_Group_Naming__c = accGroup[0].IT_VAT_Group_Naming__c; 
-                        singleAccount.IT_VAT_Group_PEC__c = accGroup[0].IT_VAT_Group_PEC__c; 
-                        singleAccount.IT_VAT_Group_SDI__c = accGroup[0].IT_VAT_Group_SDI__c; 
-                        updateListAccount.add(singleAccount);  
-                    }  
-                }
-
-                if(updateListAccount != null && updateListAccount.size() > 0)
-                    update updateListAccount;
-            }        
-
-        }catch(Exception ecc){
-            System.debug('Error updateAllAccountForVatGroup: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
         }        
         
     }

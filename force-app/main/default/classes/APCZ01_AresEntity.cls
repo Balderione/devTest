@@ -2,6 +2,7 @@ public class APCZ01_AresEntity {
   
     public class AresDarvBas
     {   
+        
         //legal node
         public String n03_ICO_CRN { get; set; }
         public String n03_DIC_VatNumber { get; set; }
@@ -30,11 +31,13 @@ public class APCZ01_AresEntity {
         public String oId { get; set; }
         public String sName { get; set; }
         public String sVatNumber { get; set; }
+        public String sOtherFiscalId { get; set; }
         public String sStreet { get; set; }
         public String sPostalCode { get; set; }
         public String sCity { get; set; }
         public Boolean bGetName { get; set; }
         public Boolean bGetVatNumber { get; set; }
+        public Boolean bGetOtherFiscalId { get; set; }
         public Boolean bGetLegalForm { get; set; }
         public Boolean bGetZipCode { get; set; }
         public Boolean bGetStreet { get; set; }

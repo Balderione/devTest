@@ -15,7 +15,7 @@ public class APER17_Contact_Management {
         
         List<Contact> contactToUpdate = new List<Contact>();
         
-        for(Contact cont : [select id,accountId from Contact where accountId in : accountMap.keyset() and ER_Account_Address_Sync__c =: Label.LABS_SF_Account_SyncAddressContact]){
+        for(Contact cont : [select id,accountId from Contact where accountId in : accountMap.keyset() and ER_Account_Address_Sync__c =: Label.LABS_SF_Account_SyncAddressContact and ER_Status__c !=: Label.LAB_SF_Contact_Inactive]){
             
             cont.MailingStreet = accountMap.get(cont.accountId).BillingStreet;
             cont.MailingPostalCode = accountMap.get(cont.accountId).BillingPostalCode;

@@ -49,11 +49,6 @@ public class APIT14_DataFactory_Test {
         
         Product2 testProduct = APIT14_DataFactory.create_Product();
         insert testProduct;
-
-        IT_Note__c testNote = APIT14_DataFactory.create_Note(financialCenterTest.Id, deliverySiteTest.Id);
-        insert testNote;
-        IT_Additional_Expenses__c testPAddExp = APIT14_DataFactory.create_AddExp(financialCenterTest.Id);
-        insert testPAddExp;
         
     }
     
@@ -76,40 +71,24 @@ public class APIT14_DataFactory_Test {
         ER_Financial_Center__c financialCenterTest = APIT14_DataFactory.create_FinancialCenter(businessAccountTest.Id, contactTest.Id);
         financialCenterTest.IT_Financial_Center__c = '445566';
         insert financialCenterTest;
-        ER_Delivery_Site__c deliverySiteTest = APIT14_DataFactory.create_DeliverySite(financialCenterTest.Id, businessAccountTest.Id);
-        insert deliverySiteTest;
-        
-        Contract contractTest = APIT14_DataFactory.create_Contract(businessAccountTest.Id); 
-        contractTest.IT_Financial_center__c = financialCenterTest.Id; 
-        contractTest.IT_Contract_Progressive__c = '1';
+        Contract contractTest = APIT14_DataFactory.create_Contract(businessAccountTest.Id);
+        contractTest.IT_Financial_center__c = financialCenterTest.Id;
         insert contractTest;
         ER_Bank_Account__c bankAccountTest = APIT14_DataFactory.create_BankAccount(financialCenterTest.Id);
-        insert bankAccountTest; 
+        insert bankAccountTest;
         financialCenterTest.ER_Bank_Account__c = bankAccountTest.Id;
         financialCenterTest.IT_Contract__c = contractTest.Id; 
         update financialCenterTest;
         IT_Request__c requestTest = APIT14_DataFactory.create_Request(financialCenterTest.Id);
         requestTest.IT_Client_Code__c = '445566';
         requestTest.IT_Request_Status__c = '3';
-        requestTest.IT_Contract_Progressive__c = '2';  
         insert requestTest;
         requestTest.IT_Request_Status__c = '5';
         update requestTest;
         requestTest.IT_Client_Code__c = '445566';
         requestTest.IT_Request_Status__c = '4';
         update requestTest;
-
-        IT_Request__c requestTest2 = APIT14_DataFactory.create_Request(financialCenterTest.Id); 
-        requestTest2.IT_Client_Code__c = '445566';
-        requestTest2.IT_Request_Status__c = '3';
-        requestTest2.IT_Contract_Progressive__c = '2';
-        insert requestTest2;
-        requestTest2.IT_Request_Status__c = '5';
-        requestTest2.IT_Contract_Start_Date__c = System.today() + 1;
-        update requestTest2;
-        requestTest2.IT_Client_Code__c = '445566';
-        requestTest2.IT_Request_Status__c = '4';
-        update requestTest2;
+        
         
         List<IT_Request__c> listReq = new List<IT_Request__c>();
         List<ER_Financial_Center__c> listFC = new List<ER_Financial_Center__c>();
@@ -118,8 +97,8 @@ public class APIT14_DataFactory_Test {
         listFC.add(financialCenterTest);
 
         String requestActivation = APIT12_CallOutbound.createRequestFinancialCenterActivation(listFC);
-        APIT12_CallOutbound.createRequestCustomFlow(listReq, contractTest, financialCenterTest);
-        APIT12_CallOutbound.createRequestCustomFlow(listReq, contractTest, financialCenterTest); 
+        APIT12_CallOutbound.createRequestCustomFlow(listReq, contractTest, financialCenterTest, 0);
+        APIT12_CallOutbound.createRequestCustomFlow(listReq, contractTest, financialCenterTest, 1);
         
         requestTest.IT_Request_Status__c = '3';
         update requestTest;
@@ -129,11 +108,6 @@ public class APIT14_DataFactory_Test {
 
         contractTest.IT_Transport_Cost__c = '05';
         update contractTest;
-
-        IT_Note__c testNote = APIT14_DataFactory.create_Note(financialCenterTest.Id, deliverySiteTest.Id);
-        insert testNote;
-        IT_Additional_Expenses__c testPAddExp = APIT14_DataFactory.create_AddExp(financialCenterTest.Id);
-        insert testPAddExp;
         
     }
     

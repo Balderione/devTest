@@ -42,6 +42,6 @@ public with sharing class APIT17_QueueableCallGenericService implements Queueabl
       
     public void execute(QueueableContext context){
         System.debug('context: '+context);
-        //APIT11_Utilities.postRequest('clients', stringJson);
+        APIT11_Utilities.postRequest('clients', stringJson);
     }   
 }

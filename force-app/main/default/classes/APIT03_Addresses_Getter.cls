@@ -150,6 +150,7 @@ responseBody='{ "meta": { "messages": [], "status": "succeeded" }, "data": [ { "
         system.debug('LIST ID:: '+idList);
         id AccoId;
         id FinCentId;
+        id Leadid;
         list<id> DelSiteIds = new list<String>();
         list<id> DistrPointIds= new list<String>();
         for(string s : idList){
@@ -176,6 +177,12 @@ responseBody='{ "meta": { "messages": [], "status": "succeeded" }, "data": [ { "
                 system.debug('TRIMMERED:: '+idtoadd);
                 DistrPointIds.add((id)idtoadd);
                 system.debug('DistrPointIds:: '+ DistrPointIds);
+            }
+            if(((id)s).getSObjectType().getDescribe().getName() == 'Lead'){
+                string idtoadd = s.replaceAll( '\\s+', '');
+                system.debug('TRIMMERED:: '+idtoadd);
+                Leadid= (id)idtoadd;
+                system.debug('LeadID:: '+ Leadid);
             }
             
         }
@@ -280,6 +287,38 @@ responseBody='{ "meta": { "messages": [], "status": "succeeded" }, "data": [ { "
                 d.IT_Change_Address__c = true;
             }
             update distPoints;
+        }
+                if(LeadId != null){
+            Lead Lead = [SELECT id, name  FROM Lead Where Id =:LeadId];
+            Lead.Street = street;
+            Lead.State = province;
+            Lead.PostalCode = cap;
+            Lead.City = city;
+            Lead.IT_State_Code__c = provinceCode;
+            Lead.IT_City_Code__c = cityCode;
+            Lead.IT_Additional_Locality__c = locagg; 
+            if(geoRefX != null){
+                Lead.Longitude = double.valueof(geoRefX.replace(',' , '.'));
+            }
+            else{
+                Lead.Longitude = 0.0;
+            }
+            if(geoRefY != null){
+                Lead.Latitude = double.valueof(geoRefY.replace(',' , '.'));
+            }
+            else{
+                Lead.Latitude = 0.0;
+            }
+            Lead.IT_Hamlet__c = hamlet;
+            Lead.IT_Hamlet_Code__c = hamletRef;
+            Lead.IT_Extra_Urban_Specifications__c = urbanSpecs;
+            Lead.IT_MetRef_Loc_Y__c = metRefY;
+            Lead.IT_MetRef_Loc_X__c = metRefX;
+            Lead.IT_Toponym__c = toponym;
+            Lead.IT_Region_Code__c = regionRef;
+            Lead.IT_Street_Code__c = streetCode;
+            
+            update Lead;
         }
     }
 }

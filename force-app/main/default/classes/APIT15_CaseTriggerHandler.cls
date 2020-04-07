@@ -2,8 +2,7 @@ public class APIT15_CaseTriggerHandler {
     
     public static boolean isfirsttime = true;
     
-    public static String CaseToContractLink(List<Case> triggerNewCase) {
-        String returnFCCode = '';      
+    public static void CaseToContractLink(List<Case> triggerNewCase) {      
         try{
             list<String> allFinancialCenterCircuit = new list<String>();   // Use junction object between FC and Circuit   
             map<Id, List<String>> mapCaseCode = new map<Id, List<String>>(); 
@@ -69,7 +68,8 @@ caseItem.AccountId = contractItem.AccountId;
                             if(possibleContractCode != null && possibleContractCode.contains(financialItem.IT_Financial_Center__c)){
                                 caseItem.IT_Financial_Center__c = financialItem.Id; 
                                 caseItem.Accountid = financialItem.ER_Account_Name__c;
-                                returnFCCode = financialItem.IT_Financial_Center__c;
+                  
+
                             }
                         }
                     }
@@ -79,7 +79,6 @@ caseItem.AccountId = contractItem.AccountId;
                                 if(possibleContractCode != null && possibleContractCode.contains(fCItem.IT_Financial_Center__c)){
                                     system.debug('Financial Center::: '+fCItem.Id);
                                     caseItem.IT_Financial_Center__c = fCItem.Id;
-                                    returnFCCode = fCItem.IT_Financial_Center__c;
                                     caseItem.Accountid = fCItem.ER_Account_Name__c;
                                     if(fcItem.IT_Circuit__c != null){
                                         caseItem.IT_Circuit__c = fcItem.IT_Circuit__c;
@@ -116,10 +115,8 @@ caseItem.AccountId = contractItem.AccountId;
                     }    
                 }
             }
-            return returnFCCode;
         }catch(Exception ecc){  
             System.debug('Error APIT15_CaseTriggerHandler: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-            return null;
         }         
     }
     
@@ -129,7 +126,7 @@ caseItem.AccountId = contractItem.AccountId;
         List<Entitlement> entList = new List<Entitlement>();
         string result = Schema.getGlobalDescribe().get('Case').getDescribe().getRecordTypeInfosById().get(newcase.RecordTypeId).getDeveloperName();
         system.debug('SLA NAME:: '+result);
-        if(result != 'IT_Client_Welfare_Provisioning_Case_RT' && result != 'IT_Client_Consip_Case_RT'){
+        if(result != 'IT_Client_Welfare_Provisioning_Case_RT'){
             if(newcase.IT_Financial_Center__c != NULL){
                 List<CMIT01_Entitlement_Matching_Field__mdt> EntitlementMatches = [SELECT MasterLabel, IT_Case_Field__c, IT_Entitlement_Field__c FROM CMIT01_Entitlement_Matching_Field__mdt];
                 CMIT02_Entitlement_Logic__mdt EntitlementLogic = [SELECT IT_Logic__c, IT_Is_Active__c FROM CMIT02_Entitlement_Logic__mdt WHERE IT_Is_Active__c = true LIMIT 1];
@@ -168,28 +165,8 @@ caseItem.AccountId = contractItem.AccountId;
                 }
             }
         }
-        else if(result == 'IT_Client_Consip_Case_RT'){
-            string EntitlementName;
-            if(newcase.IT_Statement__c == 'Consip BPE 1'){
-               EntitlementName = 'Consip BPE 1';
-            }
-            else if(newcase.IT_Statement__c == 'Consip BP 8'){
-                //List<case>consipCase = [SELECT id , IT_Financial_Center__c, IT_Financial_Center__r.IT_Product2__r.IT_Card__c FROM Case Where id =:newCase.id];
-                system.debug('FINCENT:: '+newCase.IT_Financial_Center__c);
-                if(newCase.IT_Financial_Center__c != null){
-                    List<ER_Financial_Center__c>consipCase = [SELECT id , IT_Product2__r.IT_Card__c FROM ER_Financial_Center__c Where id =:newCase.IT_Financial_Center__c];
-                    if(consipCase[0].IT_Product2__r.IT_Card__c){
-                        EntitlementName = 'Consip BP 8 Elettronico';
-                    }
-                    else{
-                        EntitlementName = 'Consip BP 8 Cartaceo';
-                    }
-                }
-                else{
-                    EntitlementName = 'Consip BP 8 Cartaceo';
-                }
-            }
-            List<Entitlement> entListProv= [SELECT id FROM Entitlement Where Name = :EntitlementName];
+        else{
+            List<Entitlement> entListProv= [SELECT id FROM Entitlement Where Name = 'Provisioning Flexben'];
             if(entListProv != null && entListProv.size() > 0){
                 newcase.EntitlementId = entListProv[0].id;
             }
@@ -202,7 +179,6 @@ caseItem.AccountId = contractItem.AccountId;
         List<Id> updateCases = new List<Id>();
         List<Id> closeCases = new List<Id>();
         for (Case c : triggerNewCase){
-            
             if ((c.Status == 'In_Progress')&&((c.SlaStartDate 
                                                <= completionDate)&&(c.SlaExitDate == null)))
                 updateCases.add(c.Id);
@@ -210,7 +186,7 @@ caseItem.AccountId = contractItem.AccountId;
                 closeCases.add(c.Id);
             }
             
-        } //AGGIUNGERE LOGICA CONSIP MILESTONE completeCONSIPMilestones
+        }
         if (updateCases.isEmpty() == false)
             APIT08_MilestoneUtilities.completeMilestone(updateCases, 'IT Take Over', completionDate);
         if (closeCases.isEmpty() == false)
@@ -218,9 +194,7 @@ caseItem.AccountId = contractItem.AccountId;
         }
     
 
-    
-    
-    /*@future
+    @future
     public static void emailSender (string mailRecievedJSON){
         List<id> AttIds = new list<id> ();
         //EmailMessage mailRecieved = [SELECT Subject ,FromAddress,fromname,createddate,toaddress, HtmlBody , id , ContentDocumentIds, HasAttachment , parentId FROM EmailMessage where id = :mailrecievedId];
@@ -230,22 +204,22 @@ caseItem.AccountId = contractItem.AccountId;
             system.debug('MAIL:: ' +mailrecieved.id +' - '+ mailrecieved.parentid);
             List<Case> linkedCase = [SELECT Subject, Origin , Account.ER_Segment__c FROM Case WHERE Id =: mailrecieved.Parentid limit 1];
             if(mailRecieved.HasAttachment){
-            List<ContentVersion> DocumentList = [SELECT id FROM ContentVersion WHERE ContentDocumentId IN :mailrecieved.ContentDocumentIds];
-            system.debug('ATTACHMENTS:: ' +DocumentList);
-            if (linkedCase != NULL && linkedCase.size() > 0 ){
-                
-                if(DocumentList != NULL && DocumentList.size() > 0){
-                    for (ContentVersion att : DocumentList){
-                        AttIds.add(att.id);
+                List<ContentVersion> DocumentList = [SELECT id FROM ContentVersion WHERE ContentDocumentId IN :mailrecieved.ContentDocumentIds];
+                system.debug('ATTACHMENTS:: ' +DocumentList);
+                if (linkedCase != NULL && linkedCase.size() > 0 ){
+                    
+                    if(DocumentList != NULL && DocumentList.size() > 0){
+                        for (ContentVersion att : DocumentList){
+                            AttIds.add(att.id);
+                        }
                     }
                 }
             }
-            }
             string headerToAdd = '<b>Da:</b> '+mailRecieved.fromaddress + '    <b>A:</b> '+mailRecieved.toaddress + '<br/><b>Inviato il:</b><br/> '+string.ValueOf(mailRecieved.createddate);
-                system.debug('SEGMENT:: ' +linkedcase[0].Account.Er_Segment__c);
-                system.debug('Attids:: ' +Attids);
-                //if (linkedCase[0].Account.ER_Segment__c == 'A+' || linkedCase[0].Account.ER_Segment__c == 'A' ){
-            if (mailRecieved.FromAddress == 'assistenza.test-it@edenred.com' && (mailRecieved.FromAddress == 'moreno.bonini@ellysse.it' || mailRecieved.FromAddress == 'sandro.torri@ellysse.it' || mailRecieved.FromAddress == 'matteo.bolzoni@mail-bip.com')){
+            system.debug('SEGMENT:: ' +linkedcase[0].Account.Er_Segment__c);
+            system.debug('Attids:: ' +Attids);
+            //if (linkedCase[0].Account.ER_Segment__c == 'A+' || linkedCase[0].Account.ER_Segment__c == 'A' ){
+            if (mailRecieved.toaddress == 'assistenza.test-it@edenred.com' && (mailRecieved.FromAddress == 'moreno.bonini@ellysse.it' || mailRecieved.FromAddress == 'sandro.torri@ellysse.it' || mailRecieved.FromAddress == 'matteo.bolzoni@mail-bip.com')){
                 List<CMIT10_Mail_Forward__mdt> mailingList = [SELECT IT_Mail_address__c FROM CMIT10_Mail_Forward__mdt WHERE IT_Active__c = true];
                 List<String> toAddresses = new List<String>();
                 //String[] toAddresses = new String[] {'Assistenzatemp.test-it@edenred.com'}; 
@@ -253,19 +227,19 @@ caseItem.AccountId = contractItem.AccountId;
                     toAddresses.add(singleMail.IT_Mail_address__c);
                 }
                 system.debug('ENTRATO IN MAIL SEND' + mailRecieved.fromaddress + ' NAME ' + mailRecieved.fromname);
-                    Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-                    mail.setReplyTo(mailRecieved.fromaddress);
-                    mail.setSubject(mailRecieved.subject);
-                    mail.sethtmlBody(headerToAdd + mailRecieved.htmlBody);
-                    mail.setToAddresses(toAddresses);
-                    mail.setEntityAttachments(Attids);
-                    mail.setSenderDisplayName(mailRecieved.fromname);
-                    //Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
-            //}
+                Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+                mail.setReplyTo(mailRecieved.fromaddress);
+                mail.setSubject(mailRecieved.subject);
+                mail.sethtmlBody(headerToAdd + mailRecieved.htmlBody);
+                mail.setToAddresses(toAddresses);
+                mail.setEntityAttachments(Attids);
+                mail.setSenderDisplayName(mailRecieved.fromname);
+                Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+                //}
             }
-            }
-            
-        }*/
+        }
+        
+    }
     
     public static void changeCaseQueue (string caseJSON){
         Case singleCase = (Case)JSON.deserialize(caseJSON, Case.Class);
@@ -353,10 +327,10 @@ caseItem.AccountId = contractItem.AccountId;
         System.debug('ENDPOINT: '+request.getEndpoint());
         System.debug('SERIALIZED: '+json.serialize(newRequest));
         //if(!duplicateCase){
-            HttpResponse response = http.send(request);
+            //HttpResponse response = http.send(request); 
             // Parse the JSON response
             //responsePost responseObject = (responsePost)JSON.deserializeUntyped(response.getBody());
-            System.debug('RESPONSE: '+response);
+            //System.debug('RESPONSE: '+response);
             //}
         /*if (response.getStatusCode() != 201) {
             System.debug('The status code returned was not expected: ' +
@@ -408,26 +382,6 @@ caseItem.AccountId = contractItem.AccountId;
        	
             
     } 
-    
-    
-    public static void populateCaseMilestoneFields(case TriggerNew){
-        List<CaseMilestone> cmsToUpdate = [select Id, completionDate, MilestoneType.Name, TargetDate
-                                           from CaseMilestone cm
-                                           where caseId = :TriggerNew.id
-                                           and completionDate = null LIMIT 1];
-        if(cmsToUpdate != null && cmsToUpdate.size() > 0){
-            TriggerNew.IT_Active_Milestone__c = cmsToUpdate[0].MilestoneType.Name;
-            TriggerNew.IT_Targetdate_Milestone__c = cmsToUpdate[0].TargetDate;
-            update TriggerNew;
-        }
-        
-        else{
-            TriggerNew.IT_Active_Milestone__c = 'IT Accettazione Modulo Alfa';
-            DateTime firstDateTime = datetime.now().addDays(2); 
-            TriggerNew.IT_Targetdate_Milestone__c = firstDateTime;
-        }
-        
-    }
     
     /*public class WorkflowCreateContactRequest {
         string WorkflowCreateContactRequest = '';

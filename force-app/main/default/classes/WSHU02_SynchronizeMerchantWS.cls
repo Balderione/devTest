@@ -130,7 +130,8 @@ To Do :
                 MailingPostalCode = merchantList[0].HU_HQ_Contact__r.MailingPostalCode,
                 MailingCountry = merchantList[0].HU_HQ_Contact__r.MailingCountry, 
                 MailingLatitude = merchantList[0].HU_HQ_Contact__r.MailingLatitude, 
-                MailingLongitude = merchantList[0].HU_HQ_Contact__r.MailingLongitude
+                MailingLongitude = merchantList[0].HU_HQ_Contact__r.MailingLongitude,
+                Id =     merchantList[0].HU_HQ_Contact__c
             ));
             }
             
