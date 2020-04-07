@@ -16,18 +16,35 @@ public class APER12_Contract_Management {
 		List<Contract> contractToInsert = new List<Contract>();
 		Contract newContract;
 
-		List<Quote> quoteList = [Select id, OpportunityId, AccountId, Pricebook2Id, CurrencyIsoCode
+		List<Quote> quoteList = [Select id, OpportunityId, AccountId, Pricebook2Id, CurrencyIsoCode, recordtype.developerName, ER_Credit_Limit__c, 
+        						 ER_Indexation_Index__c, ER_InvoicingFrequency__c, ER_PaymentMethod__c, ER_PaymentTerms__c,
+        						 ER_ReimbursementTerm__c, SK_Credit_Note_Frequency__c, SK_Payment_Terms_Voucher__c, ER_Indexation__c
 		                         From Quote
 		                         Where id IN : acceptedQuoteMap.keyset()];
 		for (Quote quote : quoteList) {
 			System.debug('APER12_Contract_Management : createContractFromQuote : Account : ' + quote.AccountId);
-
+            
 			newContract = new Contract();
+            if(quote.recordtype.developerName == 'ER_Client_Quote'){
+                newContract.RecordTypeId = Schema.SObjectType.Contract.getRecordTypeInfosByDeveloperName().get('ER_Client_Contract_RT').getRecordTypeId();
+            }
+            else if(quote.recordtype.developerName == 'ER_Merchant_Quote'){
+                newContract.RecordTypeId = Schema.SObjectType.Contract.getRecordTypeInfosByDeveloperName().get('ER_Merchant_Contract_RT').getRecordTypeId();
+            }
 			newContract.ER_QuoteId__c = quote.Id;
 			newContract.ER_OpportunityId__c = quote.OpportunityId;
 			newContract.AccountId = quote.AccountId;
 			newContract.Pricebook2Id = quote.Pricebook2Id;
 			newContract.CurrencyIsoCode = quote.CurrencyIsoCode;
+			newContract.ER_Credit_Limit2__c = quote.ER_Credit_Limit__c;
+			newContract.ER_Indexation_Index2__c = quote.ER_Indexation_Index__c;
+			newContract.ER_InvoicingFrequency2__c = quote.ER_InvoicingFrequency__c;
+			newContract.ER_PaymentMethod2__c = quote.ER_PaymentMethod__c;
+			newContract.ER_PaymentTerms2__c = quote.ER_PaymentTerms__c;
+			newContract.ER_ReimbursementTerm2__c = quote.ER_ReimbursementTerm__c;
+			newContract.SK_Credit_Note_Frequency2__c = quote.SK_Credit_Note_Frequency__c;
+			newContract.SK_Payment_Terms_Voucher2__c = quote.SK_Payment_Terms_Voucher__c;
+			newContract.ER_OppIndexation2__c = quote.ER_Indexation__c;
 			newContract.StartDate = Date.today();
 
 			contractToInsert.add(newContract);
@@ -114,17 +131,17 @@ public class APER12_Contract_Management {
 	@AuraEnabled
 	public static List<Contract> getContract(String contractId) {
 
-		return [select id, Status, AccountId, Account.Name, StartDate, EndDate, ER_OpportunityId__c, ER_OpportunityId__r.ER_IsAmended__c, ER_OpportunityId__r.ER_AmendedFromContract__c, ER_OpportunityId__r.ER_AmendedFromOpportunity__r.ContractId, ContractNumber, ER_Creation_date_in_OS__c, CustomerSignedDate, (select id, Name, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c from ER_ContractLineItems__r) from Contract where id = : contractId];
+		return [select id,ER_InvoicingFrequency2__c, ER_ReimbursementTerm2__c,CustomerSigned.Email,CustomerSignedId, Status,ER_Indexation__c, ER_PaymentTerms2__c,ER_PaymentMethod2__c , Account.ER_VIP__c , AccountId, Account.Name, StartDate, EndDate, ER_OpportunityId__c, ER_OpportunityId__r.ER_IsAmended__c, ER_OpportunityId__r.ER_AmendedFromContract__c, ER_OpportunityId__r.ER_AmendedFromOpportunity__r.ContractId, ContractNumber, ER_Creation_date_in_OS__c, CustomerSignedDate, (select id, Name, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c from ER_ContractLineItems__r) from Contract where id = : contractId];
 	}
 
 	public static Map<Id,ER_ContractLineItem__c> getContractLineItems(String contractId) {
 
-		return new Map<Id,ER_ContractLineItem__c>([select id, Name, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c, ER_Minimum_Fee__c, ER_Product2__c, ER_Product2__r.ER_Solution__c, ER_Contract__r.accountId from ER_ContractLineItem__c where ER_Contract__c = : contractId]);
+		return new Map<Id,ER_ContractLineItem__c>([select id, Name,ER_Contract__r.ER_PaymentTerms2__c,ER_Contract__r.ER_PaymentMethod2__c, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c, ER_Minimum_Fee__c, ER_Product2__c, ER_Product2__r.ER_Solution__c, ER_Contract__r.accountId from ER_ContractLineItem__c where ER_Contract__c = : contractId]);
 	}
 
 	public static Map<Id,ER_ContractLineItem__c> getAllActiveContractLineItems(Set<String> companyIds) {
 
-		return new Map<Id,ER_ContractLineItem__c>([select id, Name, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c, ER_Minimum_Fee__c, ER_Product2__c, ER_Product2__r.ER_Solution__c, ER_Contract__r.accountId from ER_ContractLineItem__c where ER_Contract__r.status =: Label.LABS_SF_Contract_Status_Activated and ER_Contract__r.AccountId IN : companyIds]);
+		return new Map<Id,ER_ContractLineItem__c>([select id, Name,ER_Contract__r.ER_PaymentTerms2__c,ER_Contract__r.ER_PaymentMethod2__c, ER_Solution__c, ER_ProductCode__c, ER_Creation_date_in_OS__c, ER_Minimum_Fee__c, ER_Product2__c, ER_Product2__r.ER_Solution__c, ER_Contract__r.accountId from ER_ContractLineItem__c where ER_Contract__r.status =: Label.LABS_SF_Contract_Status_Activated and ER_Contract__r.AccountId IN : companyIds]);
 	}
 
 	/*
@@ -163,6 +180,7 @@ public class APER12_Contract_Management {
 				String contractId = String.isNotBlank(contract.ER_OpportunityId__r.ER_AmendedFromContract__c) ? contract.ER_OpportunityId__r.ER_AmendedFromContract__c : contract.ER_OpportunityId__r.ER_AmendedFromOpportunity__r.ContractId;
 				Contract terminateContract = new Contract(Id = contractId);
 				terminateContract.Status = Label.LABS_SF_Contract_Status_Terminated;
+				terminateContract.ER_TerminationReason__c = Label.LAB_SF_Contract_Amendment;
 				terminateContract.ER_Terminated_Date__c  = Datetime.now();
 				terminateContract.EndDate = Date.today();
 				contractToUpdate.add(terminateContract);

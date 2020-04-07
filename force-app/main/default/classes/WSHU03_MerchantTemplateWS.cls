@@ -71,7 +71,7 @@ public class WSHU03_MerchantTemplateWS {
             this.legal_name = theAccount.merchant.Name; /* Retailer Name - required */
             this.commercial_name = ''; /* not needed */
 
-            if (theAccount.merchant.ER_BUPicklist__c == 'CZ')
+            /*if (theAccount.merchant.ER_BUPicklist__c == 'CZ')
             {
 
                 this.refs.add(new refs('state.merchant.registration_number', theAccount.merchant.ER_Registration_Number__c));    
@@ -103,8 +103,9 @@ public class WSHU03_MerchantTemplateWS {
                 //this.insert_user_id = UserInfo.getUserEmail(); TBD!
                 this.old_registration_number = '';
                 
-            }
-            else if (theAccount.merchant.ER_BUPicklist__c == 'HU')
+            }*/
+            //else if (theAccount.merchant.ER_BUPicklist__c == 'HU')
+            if(true)
             {
             
             
@@ -252,7 +253,8 @@ this.parent_merchant_reference = new refs('state.merchant.vat_number', theAccoun
             
             this.last_name = (ct.LastName != null) ? ct.LastName : 'lastnameismissing'; /* Contact Name -- required */
             
-            if(ct.ER_Business_Unit_2__c == 'HU')
+            //if(ct.ER_Business_Unit_2__c == 'HU')
+            if(true)
             {
                 
                 this.birth_date = '1975-01-01'; /* not needed */
@@ -278,12 +280,13 @@ this.parent_merchant_reference = new refs('state.merchant.vat_number', theAccoun
                                            '', double.valueOf('48.819947'), double.valueOf('2.309554'));
                 }
             }
-            else if (ct.ER_Business_Unit_2__c == 'CZ')
+            /*else if (ct.ER_Business_Unit_2__c == 'CZ')
             {
 
-                this.title = (!String.isEmpty(ct.CZ_AcademicTitle__c)) ? (ct.CZ_AcademicTitle__c.removeEndIgnoreCase('.')).toLowerCase() : 'pan'; /* Title -- required */
+                this.title = (!String.isEmpty(ct.CZ_AcademicTitle__c)) ? (ct.CZ_AcademicTitle__c.removeEndIgnoreCase('.')).toLowerCase() : 'pan';
             
-                this.language_ref = 'CZE'; /* default value */
+                this.language_ref = 'CZE'; 
+
             
                 if (ct.MailingStreet != null && ct.MailingCity != null && ct.MailingPostalCode != null) {
                 
@@ -293,7 +296,7 @@ this.parent_merchant_reference = new refs('state.merchant.vat_number', theAccoun
                                            '', double.valueOf(ct.MailingLatitude), double.valueOf(ct.MailingLongitude));
                                            //'', double.valueOf('49.8069'), double.valueOf('18.2941'));
                 }
-            }
+            }*/
         }
         
         public Personal_info(String firstName, String lastname, String salutation) {

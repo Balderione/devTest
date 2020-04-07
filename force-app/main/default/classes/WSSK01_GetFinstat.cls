@@ -62,6 +62,7 @@ public class WSSK01_GetFinstat {
             switch on element.getName() {
                 when 'Name' {  finstatInst.Name = String.isNotBlank(element.getText())?element.getText():'' ; }
                 when 'Dic' {  finstatInst.Dic = String.isNotBlank(element.getText())?element.getText():'' ; }
+                when 'IcDPH' {  finstatInst.IcDPH = String.isNotBlank(element.getText())?element.getText():'' ; }
                 when 'Ico' {  finstatInst.Ico  = String.isNotBlank(element.getText())?element.getText():'' ; }
                 when 'LegalFormText' {  finstatInst.LegalFormText  = String.isNotBlank(element.getText())?element.getText():'' ; }
                 when 'StreetNumber' {  finstatInst.StreetNumber  = String.isNotBlank(element.getText())?element.getText():'' ; }
@@ -93,6 +94,8 @@ public class WSSK01_GetFinstat {
         @AuraEnabled
         public String Dic { get; set; }
         @AuraEnabled
+        public String IcDPH { get; set; }
+        @AuraEnabled
         public String Ico { get; set; }
         @AuraEnabled
         public String LegalFormText { get; set; }
@@ -113,6 +116,7 @@ public class WSSK01_GetFinstat {
             
             Name = '';
             Dic = '';
+            IcDPH = '';
             Ico = '';
             LegalFormText = '';
             Street = '';

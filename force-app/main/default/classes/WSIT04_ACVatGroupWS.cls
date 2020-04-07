@@ -8,7 +8,6 @@ global with sharing class WSIT04_ACVatGroupWS {
         Set<String> accountVatNumber = new Set<String>();  
         List<Account> listAllAccount = new List<Account>(); 
         String body = System.RestContext.request.requestBody.toString();
-        Map<String, Contact> mapContacts = new Map<String, Contact>(); 
         Request req = (Request) JSON.deserializeStrict(body, Request.class);
         system.debug('req::: '+req); 
         system.debug('req.VatGroup::: '+req.IT_VatGroup);
@@ -22,14 +21,9 @@ global with sharing class WSIT04_ACVatGroupWS {
         }
 
         if(accountVatNumber != null && accountVatNumber.size() > 0)
-            listAllAccount = [Select Id, Name, IT_VAT_Group_AC_User__c, IT_Private_work_for_institution__c, BillingPostalCode, IT_State_Code__c, IT_VAT_Group_Naming__c, IT_VAT_Group_PEC__c, IT_VAT_Group_SDI__c, IT_VAT_Group_Start_Date__c, IT_Vat_Group_End_Date__c,  ER_VAT_Number__c, IT_Foreign_VAT_Number__c, IT_Fiscal_Code__c, ER_Legal_Name__c, IT_Legal_Form__c, ER_Segment__c, IT_Industry__c, NumberOfEmployees, Website, IT_Company_Type__c, IT_Split_Payment__c, IT_Group_VAT_Number__c, IT_Invoice_Naming__c, BillingState, IT_Toponym__c, BillingStreet, IT_Short_Address__c, BillingCity, IT_Hamlet__c, IT_Additional_Locality__c, IT_City_Code__c, IT_Hamlet_Code__c, IT_Sestiere_Code__c, IT_Street_Code__c, IT_Road_Arch_Code__c, IT_MetRef_Loc_X__c, IT_MetRef_Loc_Y__c, BillingLongitude, BillingLatitude, IT_Extra_Urban_Specifications__c, IT_AC_User__c, IT_Address_Validity_Start_Date__c, IT_Address_Validity_End_Date__c, IT_Validity_Start_Date__c, IT_Validity_End_Date__c, (Select Id, Name, IT_Fiscal_Code__c, IT_Validity_Year__c, IT_Progressive__c, IT_Declaration_Number__c, IT_Type__c, IT_Presentation_Date__c, IT_Exporter_Type__c, IT_Operation_Type__c, IT_Declared_Amount__c, IT_AC_User__c, IT_Validity_Start_Date__c, IT_Validity_End_Date__c From Intent_declaration__r), (Select Id From Contacts Where IT_Type__c = 'Soc') From Account Where ER_VAT_Number__c IN : accountVatNumber];
+            listAllAccount = [Select Id, Name, IT_VAT_Group_AC_User__c, IT_Private_work_for_institution__c, BillingPostalCode, IT_State_Code__c, IT_VAT_Group_Naming__c, IT_VAT_Group_PEC__c, IT_VAT_Group_SDI__c, IT_VAT_Group_Start_Date__c, IT_Vat_Group_End_Date__c,  ER_VAT_Number__c, IT_Foreign_VAT_Number__c, IT_Fiscal_Code__c, ER_Legal_Name__c, IT_Legal_Form__c, ER_Segment__c, IT_Industry__c, NumberOfEmployees, Website, IT_Company_Type__c, IT_Split_Payment__c, IT_Group_VAT_Number__c, IT_Invoice_Naming__c, BillingState, IT_Toponym__c, BillingStreet, IT_Short_Address__c, BillingCity, IT_Hamlet__c, IT_Additional_Locality__c, IT_City_Code__c, IT_Hamlet_Code__c, IT_Sestiere_Code__c, IT_Street_Code__c, IT_Road_Arch_Code__c, IT_MetRef_Loc_X__c, IT_MetRef_Loc_Y__c, BillingLongitude, BillingLatitude, IT_Extra_Urban_Specifications__c, IT_AC_User__c, IT_Address_Validity_Start_Date__c, IT_Address_Validity_End_Date__c, IT_Validity_Start_Date__c, IT_Validity_End_Date__c, (Select Id, Name, IT_Fiscal_Code__c, IT_Validity_Year__c, IT_Progressive__c, IT_Declaration_Number__c, IT_Type__c, IT_Presentation_Date__c, IT_Exporter_Type__c, IT_Operation_Type__c, IT_Declared_Amount__c, IT_AC_User__c, IT_Validity_Start_Date__c, IT_Validity_End_Date__c From Intent_declaration__r) From Account Where ER_VAT_Number__c IN : accountVatNumber];
         for(Account sinAcc : listAllAccount){
             mapAllAccount.put(sinAcc.ER_VAT_Number__c, sinAcc);
-            List<Contact> listContUpSingle = new List<Contact>();
-            listContUpSingle = sinAcc.Contacts;
-            if(listContUpSingle != null && listContUpSingle.Size() > 0){
-                mapContacts.put(sinAcc.ER_VAT_Number__c, listContUpSingle[0]);
-            }
         }
 
         system.debug('req.IT_VatGroup::: '+req.IT_VatGroup.size());
@@ -81,17 +75,7 @@ global with sharing class WSIT04_ACVatGroupWS {
                         upsertAccount = populateAccount(accountControl, singleAccount, singleVatGroup);
                         system.debug('upsertAccountComplete::: '+upsertAccount);
                         if(upsertAccount != null){
-                            Contact contactSOC = new Contact();
-                            if(mapContacts.keySet().contains(upsertAccount.ER_VAT_Number__c))
-                                contactSOC = new Contact(Id = mapContacts.get(upsertAccount.ER_VAT_Number__c).Id);
-
-                            contactSOC.IT_Type__c = 'Soc';
-                            contactSOC.LastName = upsertAccount.ER_Legal_Name__c;
-                            contactSOC.IT_Code__c = upsertAccount.ER_VAT_Number__c;
-
                             upsert upsertAccount;
-                            contactSOC.AccountId = upsertAccount.Id;
-                            upsert contactSOC;  
                         }    
                         //Upsert Account - End   
                         response responseService = new response(); 
@@ -157,8 +141,8 @@ global with sharing class WSIT04_ACVatGroupWS {
 
     private static Account populateAccount(Account accountObj, IT_Account accountRequest, IT_VatGroup vatGroupRequest){
         Account upsertAccounttMethod = new Account();
-        if(accountObj != null && accountObj != new Account())
-            upsertAccounttMethod = new Account(Id = accountObj.Id);    
+        if(accountObj != null)
+            upsertAccounttMethod = new Account(Id = accountObj.Id);
 
         upsertAccounttMethod.Name = accountRequest.ER_Legal_Name;
         upsertAccounttMethod.ER_VAT_Number__c = accountRequest.ER_VAT_Number;

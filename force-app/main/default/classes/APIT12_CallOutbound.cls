@@ -17,8 +17,6 @@ global without sharing class APIT12_CallOutbound {
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
         System.debug('jsonRequest::: '+jsonRequest);
-        if(AccountGroup != 'Account')
-            APIT11_Utilities.updateAllAccountForVatGroup(accTriggernew);
         return 'OK';          
     }
 
@@ -66,38 +64,47 @@ global without sharing class APIT12_CallOutbound {
         return 'OK';          
     }
 
-    public static String createRequestDeliverySite(List<ER_Delivery_Site__c> dsTriggernew, Map<Id, ER_Delivery_Site__c> mapOldValue){
+    public static String createRequestDeliverySite(List<ER_Delivery_Site__c> dsTriggernew){
+        List<CMIT08_Matched_Delivery__mdt> matchedDel = new List<CMIT08_Matched_Delivery__mdt>();
+        Map<String, String> mapMatDel = new Map<String, String>();
+        matchedDel = [Select MasterLabel, IT_Branch__c, IT_Delivery_Value__c, IT_Provider__c From CMIT08_Matched_Delivery__mdt];
+        for(CMIT08_Matched_Delivery__mdt singleItem : matchedDel){
+            mapMatDel.put(singleItem.IT_Branch__c+singleItem.IT_Provider__c, singleItem.IT_Delivery_Value__c);
+        }
         String idConnectUser = userinfo.getuserid();
         String userAC = getUserAC(idConnectUser);
         firstTrigger = false; 
         String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = new RequestForUpdate(dsTriggernew, userAC, mapOldValue);
+        RequestForUpdate wrapperPivotal = new RequestForUpdate(dsTriggernew, userAC, mapMatDel);
         jsonStructure structureTot = new jsonStructure(wrapperPivotal);
         jsonRequest = JSON.serializePretty(structureTot, true);
         System.debug('jsonRequest::: '+jsonRequest);
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, dsTriggernew, 'ER_Delivery_Site__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
     
-    public static String createRequestDistributionPoint(List<ER_Distribution_Point__c> dpTriggernew, List<ER_Delivery_Site__c> dsTriggernew, String typeFlow, String dmlType, Map<Id, ER_Distribution_Point__c> mapOldValue){
-        System.debug('typeFlow:: '+typeFlow);
+    public static String createRequestDistributionPoint(List<ER_Distribution_Point__c> dpTriggernew, List<ER_Delivery_Site__c> dsTriggernew, String dmlType){
+        List<CMIT08_Matched_Delivery__mdt> matchedDel = new List<CMIT08_Matched_Delivery__mdt>();
+        Map<String, String> mapMatDel = new Map<String, String>();
+        matchedDel = [Select MasterLabel, IT_Branch__c, IT_Delivery_Value__c, IT_Provider__c From CMIT08_Matched_Delivery__mdt];
+        for(CMIT08_Matched_Delivery__mdt singleItem : matchedDel){
+            mapMatDel.put(singleItem.IT_Branch__c+singleItem.IT_Provider__c, singleItem.IT_Delivery_Value__c);
+        }
         String idConnectUser = userinfo.getuserid();
         String userAC = getUserAC(idConnectUser); 
         firstTrigger = false;
         String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = null;
-        if(!String.isBlank(typeFlow)) 
-            wrapperPivotal = new RequestForUpdate(dpTriggernew, dsTriggernew, dmlType, userAC, mapOldValue, typeFlow);
-        else
-            wrapperPivotal = new RequestForUpdate(dpTriggernew, dsTriggernew, dmlType, userAC, mapOldValue);     
+        RequestForUpdate wrapperPivotal = new RequestForUpdate(dpTriggernew, dsTriggernew, dmlType, userAC, mapMatDel);
         jsonStructure structureTot = new jsonStructure(wrapperPivotal);
         jsonRequest = JSON.serializePretty(structureTot, true);
         System.debug('jsonRequest::: '+jsonRequest);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, dpTriggernew, 'ER_Distribution_Point__c');  
+        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, dpTriggernew, 'ER_Distribution_Point__c'); 
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -113,6 +120,7 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, baTriggernew, 'ER_Bank_Account__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -128,6 +136,7 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, contractTriggernew, 'Contract');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -143,6 +152,7 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, intentDeclarationTriggernew, 'IT_Intent_Declaration__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -188,6 +198,7 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, contactAssTriggernew, 'IT_Contact_Association__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -203,6 +214,7 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, groupCodeTriggernew, 'IT_Group_Code__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
@@ -218,42 +230,11 @@ global without sharing class APIT12_CallOutbound {
         APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, groupTriggernew, 'IT_Group__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
-        return 'OK';          
-    }
-
-    public static String createRequestCustom(List<Contract> requestContract, List<IT_Request__c> requestTriggernew, ER_Financial_Center__c requestFC){ 
-        String idConnectUser = userinfo.getuserid();
-        String userAC = getUserAC(idConnectUser);
-        firstTrigger = false;
-        String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = new RequestForUpdate(requestContract, requestTriggernew, requestFC, userAC);
-        System.debug('wrapperPivotal::: '+wrapperPivotal);
-        jsonStructure structureTot = new jsonStructure(wrapperPivotal);
-        jsonRequest = JSON.serializePretty(structureTot, true);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, requestTriggernew, 'IT_Request__c');
-        ID jobID = System.enqueueJob(calloutJob);
-        System.debug('jobID::: '+jobID);
         System.debug('jsonRequest::: '+jsonRequest);
         return 'OK';          
     }
 
-    public static String createRequestCustomFlow(List<IT_Request__c> requestTriggernew, Contract addField, ER_Financial_Center__c fcRecord){ 
-        String idConnectUser = userinfo.getuserid();
-        String userAC = getUserAC(idConnectUser);
-        firstTrigger = false;
-        String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = new RequestForUpdate(requestTriggernew, addField, fcRecord, userAC);
-        System.debug('wrapperPivotal::: '+wrapperPivotal);
-        jsonStructure structureTot = new jsonStructure(wrapperPivotal);
-        jsonRequest = JSON.serializePretty(structureTot, true);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, requestTriggernew, 'IT_Request__c');
-        ID jobID = System.enqueueJob(calloutJob);
-        System.debug('jobID::: '+jobID);
-        System.debug('jsonRequest::: '+jsonRequest);
-        return 'OK';          
-    }
-
-    public static String updateRequest(IT_Request__c requestTriggernew){ 
+    public static String createRequestCustom(List<IT_Request__c> requestTriggernew){ 
         String idConnectUser = userinfo.getuserid();
         String userAC = getUserAC(idConnectUser);
         firstTrigger = false;
@@ -262,9 +243,23 @@ global without sharing class APIT12_CallOutbound {
         System.debug('wrapperPivotal::: '+wrapperPivotal);
         jsonStructure structureTot = new jsonStructure(wrapperPivotal);
         jsonRequest = JSON.serializePretty(structureTot, true);
-        List<IT_Request__c> listForQueueable = new List<IT_Request__c>();
-        listForQueueable.add(requestTriggernew);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, listForQueueable, 'IT_Request__c');
+        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, requestTriggernew, 'IT_Request__c');
+        ID jobID = System.enqueueJob(calloutJob);
+        System.debug('jobID::: '+jobID);
+        System.debug('jsonRequest::: '+jsonRequest);
+        return 'OK';          
+    }
+
+    public static String createRequestCustomFlow(List<IT_Request__c> requestTriggernew, Contract addField, ER_Financial_Center__c fcRecord, Integer flow){ 
+        String idConnectUser = userinfo.getuserid();
+        String userAC = getUserAC(idConnectUser);
+        firstTrigger = false;
+        String jsonRequest = '';
+        RequestForUpdate wrapperPivotal = new RequestForUpdate(requestTriggernew, flow, addField, fcRecord, userAC);
+        System.debug('wrapperPivotal::: '+wrapperPivotal);
+        jsonStructure structureTot = new jsonStructure(wrapperPivotal);
+        jsonRequest = JSON.serializePretty(structureTot, true);
+        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, requestTriggernew, 'IT_Request__c');
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
         System.debug('jsonRequest::: '+jsonRequest);
@@ -284,36 +279,6 @@ global without sharing class APIT12_CallOutbound {
         ID jobID = System.enqueueJob(calloutJob);
         System.debug('jobID::: '+jobID);
         System.debug('jsonRequest::: '+jsonRequest);
-        return 'OK';          
-    }
-
-    public static String createRequestAdditionalExpenses(List<IT_Additional_Expenses__c> addExpTriggernew){ 
-        String idConnectUser = userinfo.getuserid();
-        String userAC = getUserAC(idConnectUser);
-        firstTrigger = false;
-        String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = new RequestForUpdate(addExpTriggernew, userAC);
-        jsonStructure structureTot = new jsonStructure(wrapperPivotal);
-        jsonRequest = JSON.serializePretty(structureTot, true);
-        System.debug('jsonRequest::: '+jsonRequest);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, addExpTriggernew, 'IT_Additional_Expenses__c');
-        ID jobID = System.enqueueJob(calloutJob);
-        System.debug('jobID::: '+jobID);
-        return 'OK';          
-    }
-
-    public static String createRequestNotes(List<IT_Note__c> noteTriggernew){ 
-        String idConnectUser = userinfo.getuserid();
-        String userAC = getUserAC(idConnectUser); 
-        firstTrigger = false;
-        String jsonRequest = '';
-        RequestForUpdate wrapperPivotal = new RequestForUpdate(noteTriggernew, userAC);
-        jsonStructure structureTot = new jsonStructure(wrapperPivotal);
-        jsonRequest = JSON.serializePretty(structureTot, true);
-        System.debug('jsonRequest::: '+jsonRequest);
-        APIT17_QueueableCallGenericService calloutJob = new APIT17_QueueableCallGenericService(jsonRequest, noteTriggernew, 'IT_Note__c');
-        ID jobID = System.enqueueJob(calloutJob);
-        System.debug('jobID::: '+jobID);
         return 'OK';          
     }
 
@@ -345,8 +310,6 @@ global without sharing class APIT12_CallOutbound {
         public List<addresses> addresses {get;set;}
         public List<conditions_change> conditions_change {get;set;}
         public List<contacts> contacts {get;set;}
-        public List<additional_expenses> additional_expenses {get;set;}
-        public List<notes> notes {get;set;}
         public RequestForUpdate(List<Account> sinAccQuery, String accGroup, String ac_User){
             accounts = new List<accounts>();
             intents_declaration = new List<intents_declaration>();
@@ -364,32 +327,21 @@ global without sharing class APIT12_CallOutbound {
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
             vats_group = new List<vats_group>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            System.debug('accGroup:: '+accGroup);
             if(accGroup == 'Account'){
                 vats_group = new List<vats_group>();
                 for(Account singleAccount : sinAccQuery){
                     accounts reqAccSingle = new accounts(singleAccount, ac_User);
                     accounts.add(reqAccSingle);    
                 }
-            }else if(accGroup == 'VatGroupAccount'){ 
-                accounts = new List<accounts>();
-                for(Account singleAccount : sinAccQuery){
-                    vats_group newVatGroup = new vats_group(singleAccount, ac_User);
-                    vats_group.add(newVatGroup);
-                    accounts reqAccSingle = new accounts(singleAccount, ac_User);
-                    accounts.add(reqAccSingle);
-                }    
             }else{
                 accounts = new List<accounts>();
                 for(Account singleAccount : sinAccQuery){
                     vats_group newVatGroup = new vats_group(singleAccount, ac_User);
                     vats_group.add(newVatGroup);
-                }        
+                }    
             }           
         }  
-        public RequestForUpdate(List<ER_Delivery_Site__c> sinDelSiteQuery, String ac_User, Map<Id, ER_Delivery_Site__c> mapValueOld){
+        public RequestForUpdate(List<ER_Delivery_Site__c> sinDelSiteQuery, String ac_User, Map<String, String> DelMatched){
             accounts = new List<accounts>();
             intents_declaration = new List<intents_declaration>();
             contacts_association = new List<contacts_association>();
@@ -406,14 +358,12 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(ER_Delivery_Site__c singleDeliverySite : sinDelSiteQuery){
-                deliveries_site reqDelSiteSingle = new deliveries_site(singleDeliverySite, ac_User, null, mapValueOld);
+                deliveries_site reqDelSiteSingle = new deliveries_site(singleDeliverySite, ac_User, DelMatched);
                 deliveries_site.add(reqDelSiteSingle);
             }        
         } 
-        public RequestForUpdate(List<ER_Distribution_Point__c> sinDistPointQuery, List<ER_Delivery_Site__c> sinDSQuery, String typeDml, String ac_User, Map<Id, ER_Distribution_Point__c> maDPOld){
+        public RequestForUpdate(List<ER_Distribution_Point__c> sinDistPointQuery, List<ER_Delivery_Site__c> sinDSQuery, String typeDml, String ac_User, Map<String, String> DelMatched){
             accounts = new List<accounts>();
             intents_declaration = new List<intents_declaration>();
             contacts_association = new List<contacts_association>();
@@ -430,61 +380,23 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             System.debug('typeDml::: '+typeDml);
             for(ER_Distribution_Point__c singleDistributionPoint : sinDistPointQuery){
-                activities reqDistPointSingle = new activities(singleDistributionPoint, ac_User, maDPOld);
+                activities reqDistPointSingle = new activities(singleDistributionPoint, ac_User);
                 activities.add(reqDistPointSingle);
-                if(sinDSQuery != null && (typeDml == 'Insert' || singleDistributionPoint.ER_Delivery_Site__c != maDPOld.get(singleDistributionPoint.Id).ER_Delivery_Site__c)){
+                if(typeDml == 'Insert'){
                     addresses reqAddressDP = new addresses(singleDistributionPoint, 'ER_Distribution_Point__c', ac_User);
-                    addresses.add(reqAddressDP);
-                    for(ER_Delivery_Site__c singleDeliverySite : sinDSQuery){
-                        deliveries_site reqDSSingle = new deliveries_site(singleDeliverySite, ac_User, singleDistributionPoint, null);
-                        deliveries_site.add(reqDSSingle);
-                        addresses reqAddressDS = new addresses(singleDeliverySite, 'ER_Delivery_Site__c', ac_User);
-                        addresses.add(reqAddressDS); 
-                    }    
+                    addresses.add(reqAddressDP);    
                 }
-            }       
-        }
-        public RequestForUpdate(List<ER_Distribution_Point__c> sinDistPointQuery, List<ER_Delivery_Site__c> sinDSQuery, String typeDml, String ac_User, Map<Id, ER_Distribution_Point__c> maDPOld, String controlUpdateDelivery){
-            accounts = new List<accounts>();
-            intents_declaration = new List<intents_declaration>();
-            contacts_association = new List<contacts_association>();
-            economics_condition = new List<economics_condition>();
-            activities = new List<activities>();
-            deliveries_site = new List<deliveries_site>();
-            contracts = new List<contracts>();
-            administratives_data = new List<administratives_data>();
-            products_data = new List<products_data>();
-            groups = new List<groups>();
-            clients_group = new List<clients_group>();
-            documents = new List<documents>();
-            vats_group = new List<vats_group>();
-            addresses = new List<addresses>();
-            conditions_change = new List<conditions_change>();
-            contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            System.debug('typeDml::: '+typeDml);
-            System.debug('controlUpdateDelivery::: '+controlUpdateDelivery);
-            for(ER_Distribution_Point__c singleDistributionPoint : sinDistPointQuery){
-				if(controlUpdateDelivery == '1' || controlUpdateDelivery == '2'){
-					activities reqDistPointSingle = new activities(singleDistributionPoint, ac_User, maDPOld);
-					activities.add(reqDistPointSingle);
-					addresses reqAddressDP = new addresses(singleDistributionPoint, 'ER_Distribution_Point__c', ac_User);
-					addresses.add(reqAddressDP);
-				}		
-				for(ER_Delivery_Site__c singleDeliverySite : sinDSQuery){
-					deliveries_site reqDSSingle = new deliveries_site(singleDeliverySite, ac_User, singleDistributionPoint, null);
-					deliveries_site.add(reqDSSingle);
-					if(controlUpdateDelivery == '1' || controlUpdateDelivery == '3'){
-						addresses reqAddressDS = new addresses(singleDeliverySite, 'ER_Delivery_Site__c', ac_User);
-						addresses.add(reqAddressDS);
-					}	   
-                }
-            }             
+            }
+            if(typeDml == 'Insert'){
+                for(ER_Delivery_Site__c singleDeliverySite : sinDSQuery){
+                    deliveries_site reqDSSingle = new deliveries_site(singleDeliverySite, ac_User, DelMatched);
+                    deliveries_site.add(reqDSSingle);
+                    addresses reqAddressDS = new addresses(singleDeliverySite, 'ER_Delivery_Site__c', ac_User);
+                    addresses.add(reqAddressDS); 
+                }       
+            }        
         }   
         public RequestForUpdate(List<Contract> sinContrQuery, String contractEC, String ac_User){
             accounts = new List<accounts>();
@@ -503,8 +415,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             if(contractEC == 'EconomicConditions'){
                 for(Contract singleContract : sinContrQuery){
                     SObject contractSObj = (SObject) singleContract;
@@ -518,7 +428,7 @@ global without sharing class APIT12_CallOutbound {
                 }    
             }else{
                 for(Contract singleContract : sinContrQuery){
-                    contracts reqContrSingle = new contracts(singleContract, ac_User); 
+                    contracts reqContrSingle = new contracts(singleContract, ac_User);
                     contracts.add(reqContrSingle); 
                 }
             }            
@@ -539,8 +449,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(ER_ContractLineItem__c singleProduct : productQuery){
                 products_data reqProductSingle = new products_data(singleProduct, ac_User);
                 products_data.add(reqProductSingle);
@@ -564,8 +472,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(SObject singleSObject : addressQuery){
                 addresses reqAddressSingle = new addresses(singleSObject, sObjectName, ac_User);
                 addresses.add(reqAddressSingle);
@@ -588,8 +494,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(ER_Bank_Account__c singleBA : backAccountQuery){
                 SObject bASObject = (SObject) singleBA;
                 economics_condition reqBASingle = new economics_condition(bASObject, 'ER_Bank_Account__c', null, null, ac_User);
@@ -613,8 +517,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             if(typeList == 'ER_Financial_Center__c'){
                 for(ER_Financial_Center__c singleFiCen : listFinCen){
                     administratives_data reqFCSingle = new administratives_data(singleFiCen, ac_User);
@@ -654,8 +556,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             if(singleFinCen != null){
                 administratives_data reqFCSingle = new administratives_data(singleFinCen, ac_User);
                 administratives_data.add(reqFCSingle);
@@ -684,8 +584,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             Set<String> controlContact = new Set<String>();
             for(IT_Contact_Association__c singleConASS : contactAssQuery){
                 contacts_association reqConAssSingle = new contacts_association(singleConASS, ac_User);
@@ -714,8 +612,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(IT_Group_Code__c singleGroupCode: groupCodeQuery){
                 clients_group reqGCSingle = new clients_group(singleGroupCode, ac_User);
                 clients_group.add(reqGCSingle);
@@ -738,8 +634,6 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(IT_Group__c singleGroup: groupQuery){
                 groups reqGSingle = new groups(singleGroup, ac_User);
                 groups.add(reqGSingle);
@@ -762,14 +656,12 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(IT_Intent_Declaration__c singleIntentDeclaration: intentDeclarationQuery){
                 intents_declaration reqIntentDecingle = new intents_declaration(singleIntentDeclaration, ac_User);
                 intents_declaration.add(reqIntentDecingle);
             }        
         }
-        public RequestForUpdate(List<Contract> reqContract, List<IT_Request__c> listRequest, ER_Financial_Center__c reqFC, String ac_User){
+        public RequestForUpdate(List<IT_Request__c> listRequest, String ac_User){
             accounts = new List<accounts>();
             intents_declaration = new List<intents_declaration>();
             contacts_association = new List<contacts_association>();
@@ -786,62 +678,13 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(IT_Request__c singleRequest : listRequest){
                 conditions_change reqRequestSingle = new conditions_change(singleRequest, ac_User);
                 conditions_change.add(reqRequestSingle);
-            }
-            for(Contract singleContr : reqContract){
-                if(singleContr.Enddate == null || (singleContr.Enddate != null && listRequest[0].IT_Editing_Reason__c == '03' && reqFC.IT_Client_Status__c != '03')){     
-                    contracts reqRequestSingle = new contracts(singleContr, ac_User);
-                    contracts.add(reqRequestSingle);
-                }    
-            }
-            if(listRequest[0].IT_Editing_Reason__c == '03'){
-                SObject econominContSObj = (SObject) reqFC;
-                economics_condition reqECSingle = new economics_condition(econominContSObj, 'ER_Financial_Center__c', null, null, ac_User);
-                economics_condition.add(reqECSingle);  
-            }           
-        }
-        public RequestForUpdate(List<IT_Request__c> listRequest, Contract fieldForAdd, ER_Financial_Center__c fieldsForEC, String ac_User){
-            accounts = new List<accounts>();
-            intents_declaration = new List<intents_declaration>();
-            contacts_association = new List<contacts_association>();
-            economics_condition = new List<economics_condition>();
-            activities = new List<activities>();
-            deliveries_site = new List<deliveries_site>();
-            contracts = new List<contracts>();
-            administratives_data = new List<administratives_data>();
-            products_data = new List<products_data>();
-            groups = new List<groups>();
-            clients_group = new List<clients_group>();
-            documents = new List<documents>();
-            vats_group = new List<vats_group>();
-            addresses = new List<addresses>();
-            conditions_change = new List<conditions_change>();
-            contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            for(IT_Request__c singleRequest : listRequest){
-                conditions_change reqRequestSingle = new conditions_change(singleRequest, ac_User);
-                conditions_change.add(reqRequestSingle);
-            }    
-            if(listRequest[0].IT_Editing_Reason__c == '03'){
-                SObject econominContSObj = (SObject) listRequest[0];
-                economics_condition reqECSingle = new economics_condition(econominContSObj, 'IT_Request__c', fieldForAdd, fieldsForEC, ac_User);
-                economics_condition.add(reqECSingle);
-            }    
 
-            if(listRequest[0].IT_Editing_Reason__c == '03' && fieldsForEC.IT_Client_Status__c != '03'){            
-                contracts reqRequestSingle = new contracts(fieldForAdd, ac_User);
-                contracts.add(reqRequestSingle);
-            }
-            contracts reqContrSingle = new contracts(listRequest[0], fieldForAdd, ac_User);
-            contracts.add(reqContrSingle); 
-       
+            }        
         }
-        public RequestForUpdate(IT_Request__c reqQuery, String ac_User){ 
+        public RequestForUpdate(List<IT_Request__c> listRequest, Integer flow, Contract fieldForAdd, ER_Financial_Center__c fieldsForEC, String ac_User){
             accounts = new List<accounts>();
             intents_declaration = new List<intents_declaration>();
             contacts_association = new List<contacts_association>();
@@ -858,11 +701,17 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            
-            conditions_change reqRequestSingle = new conditions_change(reqQuery, ac_User);
-            conditions_change.add(reqRequestSingle);       
+            for(IT_Request__c singleRequest : listRequest){
+                if(flow == 0){
+                    SObject econominContSObj = (SObject) singleRequest;
+                    economics_condition reqECSingle = new economics_condition(econominContSObj, 'IT_Request__c', fieldForAdd, fieldsForEC, ac_User);
+                    economics_condition.add(reqECSingle);
+                }
+                else if(flow == 1){
+                    contracts reqContrSingle = new contracts(singleRequest, fieldForAdd, ac_User);
+                    contracts.add(reqContrSingle); 
+                }
+            }        
         }
         public RequestForUpdate(List<Contact> contactQuery, String ac_User){ 
             accounts = new List<accounts>();
@@ -881,65 +730,9 @@ global without sharing class APIT12_CallOutbound {
             addresses = new List<addresses>();
             conditions_change = new List<conditions_change>();
             contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
             for(Contact singleCon : contactQuery){
                 contacts reqConSingle = new contacts(singleCon, ac_User);
                 contacts.add(reqConSingle);
-                if(singleCon.IT_Contact_Association__r != null && singleCon.IT_Contact_Association__r.size() > 0){
-                    for(IT_Contact_Association__c singleASS: singleCon.IT_Contact_Association__r){ 
-                        contacts_association reqConAssSingle = new contacts_association(singleASS, ac_User);
-                        contacts_association.add(reqConAssSingle);
-                    }
-                }    
-            }        
-        }
-        public RequestForUpdate(List<IT_Additional_Expenses__c> addExpQuery, String ac_User){
-            accounts = new List<accounts>();
-            intents_declaration = new List<intents_declaration>();
-            contacts_association = new List<contacts_association>();
-            economics_condition = new List<economics_condition>();
-            activities = new List<activities>();
-            deliveries_site = new List<deliveries_site>();
-            contracts = new List<contracts>();
-            administratives_data = new List<administratives_data>();
-            products_data = new List<products_data>();
-            groups = new List<groups>();
-            clients_group = new List<clients_group>();
-            documents = new List<documents>();
-            vats_group = new List<vats_group>();
-            addresses = new List<addresses>();
-            conditions_change = new List<conditions_change>();
-            contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            for(IT_Additional_Expenses__c singleAddexp: addExpQuery){
-                additional_expenses reqAESingle = new additional_expenses(singleAddexp, ac_User);
-                additional_expenses.add(reqAESingle);
-            }        
-        }
-        public RequestForUpdate(List<IT_Note__c> noteQuery, String ac_User){
-            accounts = new List<accounts>();
-            intents_declaration = new List<intents_declaration>();
-            contacts_association = new List<contacts_association>();
-            economics_condition = new List<economics_condition>();
-            activities = new List<activities>();
-            deliveries_site = new List<deliveries_site>();
-            contracts = new List<contracts>();
-            administratives_data = new List<administratives_data>();
-            products_data = new List<products_data>();
-            groups = new List<groups>();
-            clients_group = new List<clients_group>();
-            documents = new List<documents>();
-            vats_group = new List<vats_group>();
-            addresses = new List<addresses>();
-            conditions_change = new List<conditions_change>();
-            contacts = new List<contacts>();
-            additional_expenses = new List<additional_expenses>();
-            notes = new List<notes>();
-            for(IT_Note__c singleAnote: noteQuery){
-                notes reqNoteSingle = new notes(singleAnote, ac_User);
-                notes.add(reqNoteSingle); 
             }        
         } 
     }
@@ -978,8 +771,6 @@ global without sharing class APIT12_CallOutbound {
         List<groups> groups {get;set;}
         List<clients_group> clients_group {get;set;}
         List<addresses> addresses {get;set;}
-        List<additional_expenses> additional_expenses {get;set;}
-        List<notes> notes {get;set;}
         public section_2(RequestForUpdate wrapperTotal){
             activities = wrapperTotal.activities;
             economics_condition = wrapperTotal.economics_condition;
@@ -990,10 +781,7 @@ global without sharing class APIT12_CallOutbound {
             documents = wrapperTotal.documents;
             groups = wrapperTotal.groups;
             clients_group = wrapperTotal.clients_group;
-            addresses = wrapperTotal.addresses; 
-            additional_expenses = wrapperTotal.additional_expenses;
-            notes = wrapperTotal.notes; 
-              
+            addresses = wrapperTotal.addresses;   
         }    
     }
     public class section_3{
@@ -1188,15 +976,15 @@ global without sharing class APIT12_CallOutbound {
                 AC_delivery = Integer.valueof(sinContactAss.IT_Delivery_AC__c);
             if(sinContactAss.IT_Delivery_SF__c != null)
                 SF_delivery = Integer.valueof(sinContactAss.IT_Delivery_SF__c);    
-            contact_progressive = sinContactAss.IT_Association_Progressive__c;
-            contact = sinContactAss.IT_Contact_Info__c;
-            contact_type = sinContactAss.IT_Apparatus_Type__c;
+            contact_progressive = sinContactAss.IT_Contact_Detail__r.IT_Contact_Progressive__c;
+            contact = sinContactAss.IT_Contact_Detail__r.IT_Contact_Info__c;
+            contact_type = sinContactAss.IT_Contact_Detail__r.IT_Apparatus_Type__c;
             flg_order_confirmation = sinContactAss.IT_Order_Confirm_Address__c;
             flg_invoice_confirmation = sinContactAss.IT_Billing_Confirm_Address__c;
             flg_sut = sinContactAss.IT_Send_Sut__c;
             flg_notifications = sinContactAss.IT_Notifications__c;
             user = user_AC;
-            flg_main_contact = sinContactAss.IT_Main_Contact__c;
+            flg_main_contact = sinContactAss.IT_Contact_Detail__r.IT_Main_Contact__c;
         }
     }
 
@@ -1221,65 +1009,33 @@ global without sharing class APIT12_CallOutbound {
         public String user {get;set;}
         public Date start_date {get;set;}
         public Date end_date {get;set;}
-        public String authorization_suspension_user {get;set;}
-        public Date cost_center_end_date {get;set;} 
-        public Date suspension_start_date {get;set;} 
-        public Date suspension_end_date {get;set;}
-        public String suspension_reason {get;set;}
-        public String authorization_reactivation_user {get;set;}
-        public String notes {get;set;}
-        public Date note_validity_start_date {get;set;} 
-        public Date note_validity_end_date {get;set;} 
         public activities(){
         }
-        public activities(ER_Distribution_Point__c singleActivity, String user_AC, Map<Id, ER_Distribution_Point__c> oldMapDp){
+        public activities(ER_Distribution_Point__c singleActivity, String user_AC){
             client_ref = singleActivity.IT_Client_Code__c ;
+            ac_activity = singleActivity.IT_AC_Activity__c ;
+            sf_activity = singleActivity.IT_SF_Activity__c ;
+            flg_suspension = singleActivity.IT_Suspension__c ;
+            flg_cancellation = singleActivity.IT_Cancellation__c ;
+            cancellation_type = singleActivity.IT_Cancellation_Type__c ;
+            if(singleActivity.IT_Employees_Number__c != null)
+                employees_number = Integer.valueof(singleActivity.IT_Employees_Number__c);
+            if(singleActivity.IT_Technical_Data_Progressive__c != null)
+                technical_data_progressive = Integer.valueof(singleActivity.IT_Technical_Data_Progressive__c);
+            contact_code = singleActivity.IT_Contact_Code__c ;
+            cost_center = singleActivity.IT_Cost_Center__c ;
+            flg_free_description_to_display = singleActivity.IT_Free_Description_to_Display__c ;
+            flg_address_to_display = singleActivity.IT_Address_to_Display__c ;
+            flg_locality_to_display = singleActivity.IT_Locality_to_Display__c ;
+            flg_naming_to_display = singleActivity.IT_Naming_to_Display__c ;
+            if(singleActivity.IT_Raw_Number_for_Display__c != null)
+                raw_number_for_display = Integer.valueof(singleActivity.IT_Raw_Number_for_Display__c);
+            data_to_display = singleActivity.IT_Data_to_Display__c ;
+            data_type_to_display = singleActivity.IT_Data_Type_to_Display__c ;
             user = user_AC;
-            if(oldMapDp != null && oldMapDp.size() > 0 && oldMapDp.get(singleActivity.Id).IT_Cost_Center_End_Date__c != singleActivity.IT_Cost_Center_End_Date__c){
-                cost_center_end_date = singleActivity.IT_Cost_Center_End_Date__c;
-            }else{
-                ac_activity = singleActivity.IT_AC_Activity__c ;
-                sf_activity = singleActivity.IT_SF_Activity__c ;
-                flg_cancellation = singleActivity.IT_Cancellation__c ;
-                cancellation_type = singleActivity.IT_Cancellation_Type__c ;
-                if(singleActivity.IT_Employees_Number__c != null)
-                    employees_number = Integer.valueof(singleActivity.IT_Employees_Number__c);
-                if(singleActivity.IT_Technical_Data_Progressive__c != null)
-                    technical_data_progressive = Integer.valueof(singleActivity.IT_Technical_Data_Progressive__c);
-                contact_code = singleActivity.IT_Contact_Code__c ;
-                cost_center = singleActivity.IT_Cost_Center__c ;
-                flg_free_description_to_display = singleActivity.IT_Free_Description_to_Display__c ;
-                flg_address_to_display = singleActivity.IT_Address_to_Display__c ;
-                flg_locality_to_display = singleActivity.IT_Locality_to_Display__c ;
-                flg_naming_to_display = singleActivity.IT_Naming_to_Display__c ;
-                if(singleActivity.IT_Raw_Number_for_Display__c != null)
-                    raw_number_for_display = Integer.valueof(singleActivity.IT_Raw_Number_for_Display__c); 
-                data_to_display = singleActivity.IT_Data_to_Display__c ;
-                data_type_to_display = singleActivity.IT_Data_Type_to_Display__c ;
-                //start_date = singleActivity.IT_Validity_Start_Date__c ;
-                start_date = System.today();
-                end_date = singleActivity.IT_Validity_End_Date__c ;
-                suspension_start_date = singleActivity.IT_Suspension_Start_Date__c;
-                suspension_end_date = singleActivity.IT_Suspension_End_Date__c;
-                if(oldMapDp != null && oldMapDp.size() > 0 && oldMapDp.get(singleActivity.Id).IT_Suspension_Start_Date__c != singleActivity.IT_Suspension_Start_Date__c && singleActivity.IT_Suspension_Start_Date__c <= System.today()){
-                    flg_suspension = true;
-                    suspension_reason = '002';
-                    authorization_suspension_user = singleActivity.IT_Authorization_Suspension_User_Code__c;
-                    APIT11_Utilities.updateDistributionSuspension(singleActivity.Id, '1');
-                }else if(oldMapDp != null && oldMapDp.size() > 0 && oldMapDp.get(singleActivity.Id).IT_Suspension_End_Date__c != singleActivity.IT_Suspension_End_Date__c && singleActivity.IT_Suspension_End_Date__c <= System.today() && singleActivity.IT_Suspension_Start_Date__c != null){
-                    flg_suspension = false;
-                    authorization_reactivation_user = singleActivity.IT_Authorization_Reactivation_User_Code__c;
-                    APIT11_Utilities.updateDistributionSuspension(singleActivity.Id, '2');
-                }else if(oldMapDp != null && oldMapDp.size() > 0 && oldMapDp.get(singleActivity.Id).IT_Suspension_Start_Date__c != singleActivity.IT_Suspension_Start_Date__c && singleActivity.IT_Suspension_Start_Date__c > System.today()){
-                    flg_suspension = singleActivity.IT_Suspension__c;
-                    suspension_reason = '002';
-                    authorization_suspension_user = singleActivity.IT_Authorization_Suspension_User_Code__c;
-                    APIT11_Utilities.updateDistributionSuspension(singleActivity.Id, '3');
-                }
-                notes = singleActivity.IT_Notes__c;
-                note_validity_start_date = singleActivity.IT_Note_Validity_Start_Date__c;
-                note_validity_end_date = singleActivity.IT_Note_Validity_End_Date__c;
-            }         
+            //start_date = singleActivity.IT_Validity_Start_Date__c ;
+            start_date = System.today();
+            end_date = singleActivity.IT_Validity_End_Date__c ;
         }
     }
 
@@ -1340,12 +1096,6 @@ global without sharing class APIT12_CallOutbound {
         public Date end_date {get;set;}
         public String billing_frequency {get;set;}
         public Decimal bond {get;set;}
-        public String type_extradiscount {get;set;}
-        public Decimal extradiscount_percentage {get;set;}
-        public Date discount_validity_date_3 {get;set;}
-        public Decimal discount_percentage_2 {get;set;}
-        public Decimal discount_percentage_3 {get;set;}
-        public Date discount_validity_date_2 {get;set;}
         public economics_condition(){
         }
         public economics_condition(Sobject singleEC, String objType, Contract contractAddFields, ER_Financial_Center__c addFieldEC, String user_AC){
@@ -1377,12 +1127,6 @@ global without sharing class APIT12_CallOutbound {
                 flexben_fee_frequency = contractForEC.IT_Flexben_Fee_Frequency__c;
                 billing_frequency = contractForEC.IT_Billing_Frequency_UTA__c;
                 bond = contractForEC.IT_Bond_UTA__c;
-                type_extradiscount = contractForEC.IT_Type_Extradiscount__c;
-                extradiscount_percentage = contractForEC.IT_Extradiscount_Percentage__c;
-                discount_validity_date_3 = contractForEC.IT_Discount_Validity_Date_3__c;
-                discount_percentage_2 = contractForEC.IT_Discount_Percentage_2__c;
-                discount_percentage_3 = contractForEC.IT_Discount_Percentage_3__c;
-                discount_validity_date_2 = contractForEC.IT_Discount_Validity_Date_2__c;
                 if(contractForEC.IT_Financial_Center__c != null){
                     cliente_ref = contractForEC.IT_Financial_Center__r.IT_Financial_Center__c;
                     special_billing_type = contractForEC.IT_Financial_Center__r.IT_Special_Billing_Type__c;
@@ -1463,12 +1207,6 @@ global without sharing class APIT12_CallOutbound {
                     flexben_fee_frequency= finCenterForEC.IT_Contract__r.IT_Flexben_Fee_Frequency__c;
                     billing_frequency = finCenterForEC.IT_Contract__r.IT_Billing_Frequency_UTA__c;
                     bond = finCenterForEC.IT_Contract__r.IT_Bond_UTA__c;
-                    type_extradiscount = finCenterForEC.IT_Contract__r.IT_Type_Extradiscount__c;
-                    extradiscount_percentage = finCenterForEC.IT_Contract__r.IT_Extradiscount_Percentage__c;
-                    discount_validity_date_3 = finCenterForEC.IT_Contract__r.IT_Discount_Validity_Date_3__c;
-                    discount_percentage_2 = finCenterForEC.IT_Contract__r.IT_Discount_Percentage_2__c;
-                    discount_percentage_3 = finCenterForEC.IT_Contract__r.IT_Discount_Percentage_3__c;
-                    discount_validity_date_2 = finCenterForEC.IT_Contract__r.IT_Discount_Validity_Date_2__c;
                 }
                 if(finCenterForEC.ER_Bank_Account__c != null){
                     payment_code = finCenterForEC.ER_Bank_Account__r.IT_Payment_Code__c;
@@ -1529,13 +1267,7 @@ global without sharing class APIT12_CallOutbound {
                     flexben_fee_date = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Flexben_Start_Fee_Date__c;
                     flexben_fee_frequency= bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Flexben_Fee_Frequency__c;
                     billing_frequency = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Billing_Frequency_UTA__c;
-                    bond = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Bond_UTA__c;
-                    type_extradiscount = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Type_Extradiscount__c;
-                    extradiscount_percentage = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Extradiscount_Percentage__c;
-                    discount_validity_date_3 = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Discount_Validity_Date_3__c;
-                    discount_percentage_2 = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Discount_Percentage_2__c;
-                    discount_percentage_3 = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Discount_Percentage_3__c;
-                    discount_validity_date_2 = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Discount_Validity_Date_2__c;    
+                    bond = bAForEC.ER_Financial_Center__r.IT_Contract__r.IT_Bond_UTA__c;    
                 }
                 if(bAForEC.ER_Financial_Center__c != null){
                     cliente_ref = bAForEC.ER_Financial_Center__r.IT_Financial_Center__c;
@@ -1612,13 +1344,6 @@ global without sharing class APIT12_CallOutbound {
                 billing_frequency = contractAddFields.IT_Billing_Frequency_UTA__c;
                 bond = contractAddFields.IT_Bond_UTA__c;
 
-                type_extradiscount = requestForEC.IT_Type_Extradiscount__c;
-                extradiscount_percentage = requestForEC.IT_Extradiscount_Percentage__c;
-                discount_validity_date_3 = requestForEC.IT_Discount_Validity_Date_3__c;
-                discount_percentage_2 = requestForEC.IT_Discount_Percentage_2__c;
-                discount_percentage_3 = requestForEC.IT_Discount_Percentage_3__c;
-                discount_validity_date_2 = requestForEC.IT_Discount_Validity_Date_2__c;
-
                 payment_code = requestForEC.IT_Payment_Code__c;
                 sdd_payment_code = requestForEC.IT_SDD_Payment_Code__c;
                 bank_account_code = requestForEC.IT_Bank_Account_Code__c;
@@ -1660,28 +1385,16 @@ global without sharing class APIT12_CallOutbound {
         public String user {get;set;}
         public Date start_date {get;set;}
         public Date end_date {get;set;}
-        public Date note_validity_start_date {get;set;} 
-        public Date note_validity_end_date {get;set;}
         public deliveries_site(){
         }
-        public deliveries_site(ER_Delivery_Site__c singleDeliverySite, String user_AC, ER_Distribution_Point__c dpgorDs, Map<Id, ER_Delivery_Site__c> oldvalMAp){
-            List<ER_Distribution_Point__c> disList = new List<ER_Distribution_Point__c>();
-            disList = singleDeliverySite.Distribution_Points__r;
+        public deliveries_site(ER_Delivery_Site__c singleDeliverySite, String user_AC, Map<String, String> mapMatched){
             client_ref = singleDeliverySite.IT_Client_Code__c ;
             if(singleDeliverySite.IT_Delivery_AC__c != null)
                 ac_delivery = Integer.valueOf(singleDeliverySite.IT_Delivery_AC__c);
             if(singleDeliverySite.IT_Delivery_SF__c != null)
                 sf_delivery = Integer.valueOf(singleDeliverySite.IT_Delivery_SF__c);    
-            if(dpgorDs != null && dpgorDs != new ER_Distribution_Point__c()){        
-                ac_activity = dpgorDs.IT_AC_Activity__c ;
-                sf_activity = dpgorDs.IT_SF_Activity__c ;
-            }else if(singleDeliverySite.Distribution_Points__r != null && singleDeliverySite.Distribution_Points__r.size() > 0){
-                ac_activity = singleDeliverySite.Distribution_Points__r[0].IT_AC_Activity__c ;
-                sf_activity = singleDeliverySite.Distribution_Points__r[0].IT_SF_Activity__c ;
-            }else if(disList == new List<ER_Distribution_Point__c>() || disList.size() == 0){
-                ac_activity = singleDeliverySite.IT_Activity_AC__c ;
-                sf_activity = singleDeliverySite.IT_Activity_SF__c ;
-            }
+            ac_activity = singleDeliverySite.IT_Activity_AC__c ;
+            sf_activity = singleDeliverySite.IT_Activity_SF__c ;
             delivery_type = singleDeliverySite.IT_Delivery_Type__c ;
             flg_delivery_point = singleDeliverySite.IT_Delivery_Point__c ;
             branch  = singleDeliverySite.IT_Branch__c ;
@@ -1689,21 +1402,18 @@ global without sharing class APIT12_CallOutbound {
             vehicle = singleDeliverySite.IT_Vehicle__c ;
             flg_vehicle_forcing = singleDeliverySite.IT_Vehicle_Forcing__c ;
             special_service = singleDeliverySite.IT_Special_Service__c ;
-            if(singleDeliverySite.IT_Matched_Delivery__c != null)
-                matched_delivery = Integer.valueOf(singleDeliverySite.IT_Matched_Delivery__c);
-            if(!String.isBlank(singleDeliverySite.IT_Notes__c)){    
-                //notes_type = singleDeliverySite.IT_Notes_Type__c;
-                notes_type = '015';
-            }    
+            if(!String.isBlank(singleDeliverySite.IT_Delivery_Type__c) && singleDeliverySite.IT_Delivery_Type__c == 'F' && !String.isBlank(singleDeliverySite.IT_Branch__c) && !String.isBlank(singleDeliverySite.IT_Provider__c) && mapMatched != null && mapMatched.size() > 0 && mapMatched.Keyset().contains(singleDeliverySite.IT_Branch__c+singleDeliverySite.IT_Provider__c)){
+                matched_delivery = Integer.valueof(mapMatched.get(singleDeliverySite.IT_Branch__c+singleDeliverySite.IT_Provider__c));
+            }else if(!String.isBlank(singleDeliverySite.IT_Delivery_Type__c) && singleDeliverySite.IT_Delivery_Type__c == 'A' && !String.isBlank(singleDeliverySite.IT_Delivery_AC__c)){
+                matched_delivery = Integer.valueOf(singleDeliverySite.IT_Delivery_AC__c);
+            }
+            notes_type = singleDeliverySite.IT_Notes_Type__c ;
             notes = singleDeliverySite.IT_Notes__c ;
             text = singleDeliverySite.IT_Text__c ;
             user = user_AC;
             //start_date = singleDeliverySite.IT_Validity_Start_Date__c ;
             start_date = System.today();
             end_date = singleDeliverySite.IT_Validity_End_Date__c ;
-            if(!String.isBlank(singleDeliverySite.IT_Text__c) && singleDeliverySite.IT_Text__c != oldvalMAp.get(singleDeliverySite.Id).IT_Text__c)
-                note_validity_start_date = System.today(); 
-            note_validity_end_date = singleDeliverySite.IT_Note_Validity_End_Date__c;
         }
     }
     
@@ -1889,14 +1599,8 @@ global without sharing class APIT12_CallOutbound {
                 delivery_fixed_day = Integer.valueOf(singleContract.IT_Delivery_Fixed_Day__c);
             if(singleContract.IT_Order_Reception_Term__c != null)
                 order_reception_term = Integer.valueOf(singleContract.IT_Order_Reception_Term__c); 
-            if(singleContract.IT_Contract_Progressive__c != null && singleContract.IT_Editing_Reason__c != '18'){
-                if(singleContract.IT_Contract_Progressive__c == oldContr.IT_Contract_Progressive__c)
-                    contract_progressive = Integer.valueOf(oldContr.IT_Contract_Progressive__c) + 1;
-                else
-                    contract_progressive = 1;     
-            }else{
-                contract_progressive = Integer.valueOf(singleContract.IT_Contract_Progressive__c);  
-            }          
+            if(singleContract.IT_Contract_Progressive__c != null)
+                contract_progressive = Integer.valueOf(singleContract.IT_Contract_Progressive__c);       
             framework_head_code = singleContract.IT_Framework_Head_Code__c;
             opportunity_code = singleContract.IT_Opportunity_Code__c;
             campaign_start_date = singleContract.IT_Campaign_Start_Date__c;
@@ -1977,31 +1681,28 @@ global without sharing class APIT12_CallOutbound {
             new_code = singleFC.IT_New_Code__c;
             associated_client = singleFC.IT_Associated_Client__c;
             if(!String.isBlank(singleFC.IT_Billing_Company_Name_R3__c)){
-                //company_name = singleFC.IT_Billing_Company_Name_R1__c+' '+singleFC.IT_Billing_Company_Name_R2__c+' '+singleFC.IT_Billing_Company_Name_R3__c;
-                company_name = singleFC.IT_Billing_Company_Name_R1__c+singleFC.IT_Billing_Company_Name_R2__c+singleFC.IT_Billing_Company_Name_R3__c;
+                company_name = singleFC.IT_Billing_Company_Name_R1__c+' '+singleFC.IT_Billing_Company_Name_R2__c+' '+singleFC.IT_Billing_Company_Name_R3__c;
             }else if(!String.isBlank(singleFC.IT_Billing_Company_Name_R2__c)){
                 company_name = singleFC.IT_Billing_Company_Name_R1__c;
-                for(integer i = singleFC.IT_Billing_Company_Name_R1__c.length(); i < 30; i++){
+                for(integer i = singleFC.IT_Billing_Company_Name_R1__c.length(); i < 31; i++){
                     company_name = company_name + ' ';
                 }
                     
-                company_name = company_name+singleFC.IT_Billing_Company_Name_R2__c; 
+                company_name = company_name+singleFC.IT_Billing_Company_Name_R2__c;
             }else{ 
                 company_name = singleFC.IT_Billing_Company_Name_R1__c;
             }    
             short_name = singleFC.IT_Short_Name__c;
-            extended_company_name = singleFC.IT_Extended_Company_Name__c; 
+            extended_company_name = singleFC.IT_Extended_Company_Name__c;
             cig = singleFC.IT_CIG__c;
             derived_cig = singleFC.IT_Derived_CIG__c;
             circuit_ref = singleFC.IT_Circuit_Code__c;
             client_type = singleFC.IT_Client_Type__c;
             contact_ref = singleFC.IT_Contact_Code__c;
             admin_data_ac_user = user_AC;
-            if(singleFC.IT_Admin_Data_Validity_Start_Date__c != null && singleFC.IT_Admin_Data_Validity_Start_Date__c > System.today())
-                start_date = singleFC.IT_Admin_Data_Validity_Start_Date__c;
-            else
-                start_date = System.today();
-            end_date = singleFC.IT_Admin_Data_Validity_End_Date__c; 
+            //start_date = singleFC.IT_Admin_Data_Validity_Start_Date__c;
+            start_date = System.today();
+            end_date = singleFC.IT_Admin_Data_Validity_End_Date__c;
             vat_number = singleFC.IT_VAT_Number__c;
         }
     } 
@@ -2227,7 +1928,7 @@ global without sharing class APIT12_CallOutbound {
             user = user_AC;
             //start_date = sinAcc.IT_Vat_Group_End_Date__c;
             start_date = System.today();
-            end_date = sinAcc.IT_VAT_Group_End_Date__c;
+            end_date = sinAcc.IT_VAT_Group_Start_Date__c;
         }
     }
 
@@ -2287,8 +1988,7 @@ global without sharing class APIT12_CallOutbound {
                 hamlet = FinCenterObj.IT_Hamlet__c;
                 additional_locality = FinCenterObj.IT_Additional_Locality__c;
                 city_ref = FinCenterObj.IT_City_Code__c;
-                if(!String.isBlank(FinCenterObj.IT_Hamlet_Code__c) && FinCenterObj.IT_Hamlet_Code__c != '00000000000')
-                    hamlet_ref = FinCenterObj.IT_Hamlet_Code__c;
+                hamlet_ref = FinCenterObj.IT_Hamlet_Code__c;
                 sestiere_ref = FinCenterObj.IT_Sestiere_Code__c;
                 street_ref = FinCenterObj.IT_Street_Code__c;
                 road_arch_ref = FinCenterObj.IT_Road_Arch_Code__c;
@@ -2328,8 +2028,7 @@ global without sharing class APIT12_CallOutbound {
                 hamlet = delSiteObj.IT_Hamlet__c;
                 additional_locality = delSiteObj.ER_Street_additionnal__c;
                 city_ref = delSiteObj.IT_City_Code__c;
-                if(!String.isBlank(delSiteObj.IT_Hamlet_Code__c) && delSiteObj.IT_Hamlet_Code__c != '00000000000')
-                    hamlet_ref = delSiteObj.IT_Hamlet_Code__c;
+                hamlet_ref = delSiteObj.IT_Hamlet_Code__c;
                 sestiere_ref = delSiteObj.IT_Sestiere_Code__c;
                 street_ref = delSiteObj.IT_Street_Code__c;
                 road_arch_ref = delSiteObj.IT_Road_Arch_Code__c;
@@ -2367,8 +2066,7 @@ global without sharing class APIT12_CallOutbound {
                 hamlet = disPointObj.IT_Hamlet__c;
                 additional_locality = disPointObj.IT_Additional_Locality__c;
                 city_ref = disPointObj.IT_City_Code__c;
-                if(!String.isBlank(disPointObj.IT_Hamlet_Code__c) && disPointObj.IT_Hamlet_Code__c != '00000000000')
-                    hamlet_ref = disPointObj.IT_Hamlet_Code__c;
+                hamlet_ref = disPointObj.IT_Hamlet_Code__c;
                 sestiere_ref = disPointObj.IT_Sestiere_Code__c;
                 street_ref = disPointObj.IT_Street_Code__c;
                 road_arch_ref = disPointObj.IT_Road_Arch_Code__c;
@@ -2591,7 +2289,7 @@ global without sharing class APIT12_CallOutbound {
             flg_extradiscount = singleRequest.IT_Extradiscount__c;
             flg_multidiscount = singleRequest.IT_Multidiscount__c;
             extradiscount_percentage = singleRequest.IT_Extradiscount_Percentage__c;
-            extradiscount_type = singleRequest.IT_Type_Extradiscount__c;
+            extradiscount_type = singleRequest.IT_Extradiscount_Type__c;
             flg_date_presence = singleRequest.IT_Date_presence__c;
             flg_sdd_payment = singleRequest.IT_SDD_Payment__c;
             flg_no_date_presence = singleRequest.IT_No_Date_presence__c;
@@ -2730,7 +2428,7 @@ global without sharing class APIT12_CallOutbound {
         public Integer contact_progressive {get;set;}
         public contacts(){
         }
-        public contacts(Contact sinContactAss, String user_AC){            
+        public contacts(Contact sinContactAss, String user_AC){
             code = sinContactAss.IT_Code__c;
             last_name = sinContactAss.LastName;
             first_name = sinContactAss.FirstName;
@@ -2750,19 +2448,14 @@ global without sharing class APIT12_CallOutbound {
                 contact_progressive = Integer.valueOf(sinContactAss.IT_Referent_Progressive__c);   
         }
         public contacts(IT_Contact_Association__c sinAss, String user_AC){
-            if(!String.isBlank(sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c) && sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c == 'Soc'){
-                code = 'AC'+sinAss.IT_Client_Code__c;
-                type = 'Cli';
-            }else{
-                code = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Code__c;
-                type = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c;
-            }    
+            code = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Code__c;
             last_name = sinAss.IT_Contact_Detail__r.IT_Contact__r.LastName;
             first_name = sinAss.IT_Contact_Detail__r.IT_Contact__r.FirstName;
             phone = sinAss.IT_Contact_Detail__r.IT_Contact__r.Phone;
             fax = sinAss.IT_Contact_Detail__r.IT_Contact__r.Fax;
             email = sinAss.IT_Contact_Detail__r.IT_Contact__r.Email;
             pec = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_PEC__c;
+            type = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c;
             flg_makes_orders = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Order_Making__c;
             flg_receipts_ticket = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Ticket_Receipts__c;
             flg_recepits_client_billing = sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Client_Billing_Recepits__c;
@@ -2773,106 +2466,19 @@ global without sharing class APIT12_CallOutbound {
             if(sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Referent_Progressive__c != null)
                 contact_progressive = Integer.valueOf(sinAss.IT_Contact_Detail__r.IT_Contact__r.IT_Referent_Progressive__c);    
         }
-    }
-
-    public class additional_expenses{
-        public Integer progressive {get;set;}
-        public String client_ref {get;set;}
-        public String code {get;set;}
-        public Decimal amount {get;set;}
-        public String calculation_type {get;set;}
-        public String user {get;set;}
-        public Date start_date {get;set;}
-        public Date end_date {get;set;}
-        public additional_expenses(){
-        }
-        public additional_expenses(IT_Additional_Expenses__c sinAddExp, String user_AC){
-            if(sinAddExp.IT_Progressive__c != null)
-                progressive = Integer.valueOf(sinAddExp.IT_Progressive__c);
-            else {
-                List<ER_Financial_Center__c> fcList = [Select Id, (Select Id, IT_Progressive__c From Additional_Expenses__r Order by IT_Progressive__c desc NULLS LAST) From ER_Financial_Center__c Where Id =: sinAddExp.IT_Financial_Center__c];    
-                System.debug('fcList:: '+fcList);
-                if(fcList != null && fcList.size() > 0 && fcList[0].Additional_Expenses__r != null && fcList[0].Additional_Expenses__r.size() > 1)
-                    progressive = Integer.valueOf(fcList[0].Additional_Expenses__r[0].IT_Progressive__c) + 1;
-                else
-                    progressive = 1;
-
-                APIT11_Utilities.updateAddExp(sinAddExp.Id, progressive);    
-            }    
-            client_ref = sinAddExp.IT_Financial_Center__r.IT_Financial_Center__c;
-            code = sinAddExp.IT_Code__c;
-            amount = sinAddExp.IT_Amount__c;
-            calculation_type = sinAddExp.IT_Calculation_Type__c; 
-            user = user_AC; 
-            start_date = System.today();
-            end_date = sinAddExp.IT_Validity_End_Date__c;   
-        }
-    }
-
-    public class notes{
-        public Integer progressive {get;set;}
-        public String client_ref {get;set;}
-        public String ac_activity {get;set;}
-        public String sf_activity {get;set;}
-        public Integer ac_delivery {get;set;}
-        public Integer sf_delivery {get;set;}
-        public String note_type {get;set;}
-        public String title {get;set;}
-        public String text_notes {get;set;}
-        public Date start_date {get;set;}
-        public Date end_date {get;set;}
-        public String user {get;set;}
-        public notes(){
-        }
-        public notes(IT_Note__c sinNote, String user_AC){
-            if(sinNote.IT_Progressive__c != null)
-                progressive = Integer.valueOf(sinNote.IT_Progressive__c);
-            else {
-                List<ER_Financial_Center__c> fcList = [Select Id, (Select Id, IT_Progressive__c From Note__r Order by IT_Progressive__c desc NULLS LAST) From ER_Financial_Center__c Where IT_Financial_Center__c =: sinNote.IT_Delivery_Site__r.IT_Client_Code__c];    
-                System.debug('fcList:: '+fcList);
-                if(fcList[0].Note__r != null && fcList[0].Note__r.size() > 1)
-                    progressive = Integer.valueOf(fcList[0].Note__r[0].IT_Progressive__c) + 1;
-                else
-                    progressive = 1;
-
-                APIT11_Utilities.updateNote(sinNote.Id, progressive, fcList[0].Id);    
-            }    
-            if(sinNote.IT_Financial_Center__c != null)    
-                client_ref = sinNote.IT_Financial_Center__r.IT_Financial_Center__c;
-            else if(sinNote.IT_Delivery_Site__c != null)
-                client_ref = sinNote.IT_Delivery_Site__r.IT_Client_Code__c;    
-            ac_activity = sinNote.IT_AC_Activity__c;
-            sf_activity = sinNote.IT_SF_Activity__c;
-            if(sinNote.IT_Delivery_Site__r.IT_Delivery_AC__c != null)    
-                ac_delivery = Integer.valueOf(sinNote.IT_Delivery_Site__r.IT_Delivery_AC__c); 
-            if(sinNote.IT_Delivery_Site__r.IT_Delivery_SF__c != null)    
-                sf_delivery = Integer.valueOf(sinNote.IT_Delivery_Site__r.IT_Delivery_SF__c);
-            note_type = sinNote.IT_Note_Type__c;
-            title = sinNote.Name; 
-            text_notes = sinNote.IT_Text_Notes__c; 
-            start_date = System.today();
-            end_date = sinNote.IT_Validity_End_Date__c;
-            user = user_AC;   
-        }
     }   
     
     @InvocableMethod(label='Call Distribution Point Request' description='Calls the APIT12 method callDistPointRequest')
     public static void callDistPointRequest (list<flowVars> flvrs){
-        //screateRequestDistributionPoint(flvrs[0].flowDistPoints , flvrs[0].flowDelSites, 'Insert', null);
         System.debug('flvrs::: '+flvrs);
-        if(flvrs[0].flowString != null)
-            createRequestDistributionPoint(flvrs[0].flowDistPoints , flvrs[0].flowDelSites , flvrs[0].flowString[0], 'Insert', null);
-        else
-            createRequestDistributionPoint(flvrs[0].flowDistPoints , flvrs[0].flowDelSites , null, 'Insert', null);
+        createRequestDistributionPoint(flvrs[0].flowDistPoints , flvrs[0].flowDelSites , 'Insert');
     }
     
     global class flowVars{
         @invocablevariable
         global List<ER_Delivery_Site__c> flowDelSites;
         @invocablevariable
-        global List<ER_Distribution_Point__c> flowDistPoints; 
-        @invocablevariable
-        global List<String> flowString;
+        global List<ER_Distribution_Point__c> flowDistPoints;
     }
         
     

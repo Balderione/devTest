@@ -107,24 +107,32 @@ public class APER08_Case_Management {
     *
     * OLA
     * JUN 2019
-    * manageCasesFromWeb: This method is used to Linked inserted cases to Asset, Indivudual, Employee and entitlment
+    * manageCasesAssets: This method is used to Linked inserted cases to Asset, Indivudual, Employee and entitlment
     *
     *
     */
-    public static void manageCasesFromWeb(List<Case> caseList) {
+    public static void manageCasesAssets(List<Case> caseList) {
 
         Map<String, Asset> assetMap = new Map<String, Asset>();
+        Map<id, Asset> assetidMap = new Map<id, Asset>();
         Set<String> assetNumberSet = new Set<String>();
+        Set<id> assetidSet = new Set<id>();
 
         for (Case caseInst : caseList) {
             if (caseInst.ER_Card_Number__c != null) {
 
                 assetNumberSet.add(String.valueOf(caseInst.ER_Card_Number__c));
             }
+            if (caseInst.AssetId != null) 
+            {
+
+                assetidSet.add(caseInst.AssetId);
+            }
         }
-        for (Asset asset : [Select Name, SerialNumber, ER_Employee__c, ER_Individual__c from Asset where Name IN : assetNumberSet]) {
+        for (Asset asset : [Select Name, SerialNumber, ER_Employee__c, ER_Individual__c, Product2Id from Asset where Name IN : assetNumberSet or id IN : assetidSet ]) {
 
             assetMap.put(asset.Name, asset);
+            assetIdMap.put(asset.Id, asset);
         }
 
         if (!assetMap.isEmpty()) {
@@ -135,6 +143,12 @@ public class APER08_Case_Management {
                     caseInst.ER_Employee__c  = assetMap.get(String.valueOf(caseInst.ER_Card_Number__c)).ER_Employee__c;
                     caseInst.ER_Individual__c  = assetMap.get(String.valueOf(caseInst.ER_Card_Number__c)).ER_Individual__c;
                     caseInst.AssetId  = assetMap.get(String.valueOf(caseInst.ER_Card_Number__c)).Id;
+                }
+                if(caseInst.AssetId != null)
+                {
+                    caseInst.ER_Employee__c  = assetIdMap.get(caseInst.AssetId).ER_Employee__c;
+                    caseInst.ER_Individual__c  = assetIdMap.get(caseInst.AssetId).ER_Individual__c;
+                    caseInst.ProductId  = assetIdMap.get(caseInst.AssetId).Product2Id;
                 }
             }
         }
@@ -159,7 +173,7 @@ public class APER08_Case_Management {
             }
         }
         for (Case c : caseList) {
-            if(defaultEntitlemnt != null){
+            if(defaultEntitlemnt != null && c.ER_BUPicklist__c!='CEN'){
                 c.EntitlementId = defaultEntitlemnt.id;//Core entitlement has no business Unit
             }
             

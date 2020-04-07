@@ -17,27 +17,39 @@ public with sharing class APER03_Lead_CreateFinancialCenter {
 public static void createFinancialCenter(List<Lead> listOflead) {
     List<ER_Financial_Center__c> financialC = new List<ER_Financial_Center__c>();
     List<ER_Store__c> listofStore = new List<ER_Store__c>();
+    List<Account> accountsToUpdate = new List<Account>();
+    Account accConverted;
+    List<Opportunity> opportunitiesToUpdate = new List<Opportunity>();
+    Opportunity oppConverted;
+    String financialCenterType;
     Database.SaveResult sr;
     Database.SaveResult sr1;
-    String financialCenterType;
+    
 
     APER05_DoNotRunTrigger donotRunTrigger = new  APER05_DoNotRunTrigger();
     donotRunTrigger.setDoNotRunTrigger();  
-
+    
     for (Lead ld : listOflead) {
-
+            
+            //OLA BUG 5009 28/11/2019
+            oppConverted = new Opportunity();
+            oppConverted.id = ld.ConvertedOpportunityId;
+            oppConverted.Description = ld.Description;
+            opportunitiesToUpdate.add(oppConverted);
+            //update oppConverted;
             //OLA Add New Conditions for Type. 29042019
             if(ld.recordTypeId == Schema.SObjectType.Lead.getRecordTypeInfosByDeveloperName().get('ER_Merchant_Lead_RT').getRecordTypeId()){
                 financialCenterType = Label.LABS_SF_FinancialCenter_Merchant;
                 //////// Update the address of the account with the custom address of the lead
-                Account AccConverted = new Account();
-                AccConverted.Id = ld.ConvertedAccountId;
-                AccConverted.BillingStreet = ld.ER_Legal_Street__c;
-                AccConverted.BillingCity = ld.ER_Legal_City__c;
-                AccConverted.BillingCountry = ld.ER_Legal_Country__c;
-                AccConverted.BillingPostalCode = ld.ER_Legal_Zip_Code__c;
-                AccConverted.BillingState = ld.ER_Legal_State_Province__c;
-                update AccConverted;
+                accConverted = new Account();
+                accConverted.Id = ld.ConvertedAccountId;
+                accConverted.BillingStreet = ld.ER_Legal_Street__c;
+                accConverted.BillingCity = ld.ER_Legal_City__c;
+                accConverted.BillingCountry = ld.ER_Legal_Country__c;
+                accConverted.BillingPostalCode = ld.ER_Legal_Zip_Code__c;
+                accConverted.BillingState = ld.ER_Legal_State_Province__c;
+                accountsToUpdate.add(accConverted);
+                //update AccConverted;
                 ////////
             }
             else if(ld.recordTypeId == Schema.SObjectType.Lead.getRecordTypeInfosByDeveloperName().get('ER_Client_Lead_RT').getRecordTypeId()){
@@ -105,10 +117,16 @@ public static void createFinancialCenter(List<Lead> listOflead) {
             }
             
             myFinancialCenter = null;
-
-
-
-            
         }
+    if(!accountsToUpdate.isEmpty()){
+        
+        System.debug('### Lead conversion accountsToUpdate : '+accountsToUpdate);
+        update accountsToUpdate;
+    }
+    if(!opportunitiesToUpdate.isEmpty()){
+        
+        System.debug('### Lead conversion opportunitiesToUpdate : '+opportunitiesToUpdate);
+        update opportunitiesToUpdate;
+    }
     }
 }

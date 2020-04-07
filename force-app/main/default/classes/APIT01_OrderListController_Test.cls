@@ -13,8 +13,8 @@
         Test.setMock(HttpCalloutMock.class, new OrdersMock());
         APIT01_OrderListController.getPicklistValues('Case' , 'Status');
         APIT01_OrderListController.callCase(caseTest.id);
-        APIT01_OrderListController.listOrder(dataDa, dataA, '6235', '872635', 'piva', 'ServizioTP1', true, 'rawHmac' , caseTest.id);
-        APIT01_OrderListController.listOrder(dataDa, dataA, '6235', '872635', 'piva', 'ServizioTP1', false, 'rawHmac' , caseTest.id);
+        APIT01_OrderListController.listOrder(dataDa, dataA, caseTest.id);
+        APIT01_OrderListController.listOrder(dataDa, dataA, caseTest.id);
         string jsonstring = '{"isOutcomeKo":false, "errorCode":"OK", "errorDescription":"NO_ERRORS", "dettaglioOrdiniResponse":0, "applicazione":"SGOP", "codiceCircuito":"A001", "codiceSocieta":832, "codiceCliente":"540156", "annoOrdine":2019, "codiceOrdine":20665, "dataCaricamento":"2019-07-23", "descrServizio":"Ticket Compliments", "descrCanale":"Portale", "tipoOrdine":"Standard", "importoOrdine":1723.56, "numTotBuoni":1050, "descrPagamento":"Bonifico Anticipato", "dataConsegna":"2019-02-15", "descrStatoOrdine":"CONSEGNATO AL CLIENTE", "personalizzato":"D", "isOrdineModificabile":false},{"isOutcomeKo":false, "errorCode":"OK", "errorDescription":"NO_ERRORS", "dettaglioOrdiniResponse":0, "applicazione":"SGOP", "codiceCircuito":"A001", "codiceSocieta":832, "codiceCliente":"540156", "annoOrdine":2019, "codiceOrdine":50526, "dataCaricamento":"2019-07-19", "descrServizio":"Ticket Restaurant", "descrCanale":"Portale", "tipoOrdine":"Standard", "importoOrdine":1683.56, "numTotBuoni":1050, "descrPagamento":"Bonifico Anticipato", "dataConsegna":"2019-02-15", "descrStatoOrdine":"CONSEGNATO AL CLIENTE", "personalizzato":"D", "isOrdineModificabile":false}';
         APIT01_OrderListController.data listOrder = (APIT01_OrderListController.data) JSON.deserialize (jsonString, APIT01_OrderListController.data.class);
         

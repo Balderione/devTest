@@ -2,6 +2,7 @@
 public class APIT03_Addresses_Getter_Test {
     
     static testMethod void testAddress (){ 
+        //TESTCOMMENT
         IT_ControlUpdateTrigger__c settings = IT_ControlUpdateTrigger__c.getOrgDefaults();
         settings.IT_ControlTreiggerUpdate__c = true;
         insert settings;

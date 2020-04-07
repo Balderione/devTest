@@ -9,7 +9,6 @@ global class WSIT03_ACWS  {
         Map<String, ER_ContractLineItem__c> mapContactLineItem = new Map<String, ER_ContractLineItem__c>();
         Map<String, ER_Delivery_Site__c> mapDeliverySite = new Map<String, ER_Delivery_Site__c>();
         Map<String, ER_Distribution_Point__c> mapDistributionPoint = new Map<String, ER_Distribution_Point__c>();
-        Map<String, ER_Distribution_Point__c> mapDistributionPointForNote = new Map<String, ER_Distribution_Point__c>();
         Map<String, IT_Group_Code__c> mapGroupCode = new Map<String, IT_Group_Code__c>();
         Map<String, ER_Bank_Account__c> mapBankAccount = new Map<String, ER_Bank_Account__c>();
         Map<String, IT_Address> mapAddress = new Map<String, IT_Address>();
@@ -23,27 +22,15 @@ global class WSIT03_ACWS  {
         List<Contract> contractMatchClientCode = new List<Contract>();
         List<Product2> contractAssignService = new List<Product2>();
 
-        Set<String> setAbiCab = new Set<String>(); 
+        Set<String> setAbiCab = new Set<String>();
         List<IT_ABI_CAB__c> listAbiCabObj = new List<IT_ABI_CAB__c>();
         Map<String, IT_Abi_Cab__c> mapAbiCabForBank = new Map<String, IT_Abi_Cab__c>(); 
 
         List<IT_Group__c> listConnectionGroupCode = new List<IT_Group__c>();
         List<String> listGroupCode = new List<String>();
-        Map<String, IT_Group__c> mapGroupForCode = new Map<String, IT_Group__c>();
-
-        Map<String, IT_Additional_Expenses__c> mapAdditionalExpense = new Map<String, IT_Additional_Expenses__c>();
-        Map<String, IT_Note__c> mapNote = new Map<String, IT_Note__c>();
-
-        Map<String, String> controlDuplicateDelivery = new Map<String, String>();
-
-        //Usercheck 16012020
-        Map<String, String> authorizationUserDistributioPoint = new Map<String, String>();
-        for(User dingleUser : [Select Id, IT_AC_User_Code__c From User Where IT_AC_User_Code__c != '']){
-            authorizationUserDistributioPoint.put(dingleUser.IT_AC_User_Code__c, dingleUser.Id);    
-        }    
+        Map<String, IT_Group__c> mapGroupForCode = new Map<String, IT_Group__c>();    
 
         String body = System.RestContext.request.requestBody.toString();
-        system.debug('body::: '+body);
         Request req = (Request) JSON.deserializeStrict(body, Request.class);
         system.debug('data::: '+req);
 
@@ -84,8 +71,6 @@ global class WSIT03_ACWS  {
             (Select Id, IT_Activity_AC__c, IT_Activity_SF__c, IT_Delivery_AC__c, IT_Delivery_SF__c From Delivery_Sites__r), 
             (Select Id, ER_Delivery_Site__c, IT_Client_Code__c, IT_SF_Activity__c, IT_AC_Activity__c, IT_Raw_Number_for_Display__c From Distribution_Points__r), 
             (Select Id, IT_Client_Code__c, IT_Group_Code__c, ER_Financial_Center__c, IT_Group_Type__c From Groups_Code__r), 
-            (Select Id, IT_AC_Activity__c, IT_Progressive__c,  IT_AC_Delivery__c, IT_Note_Type__c, IT_Title__c, IT_Client_Code__c From Note__r), 
-            (Select Id, IT_Client_Code__c, IT_Code__c, IT_AC_User__c, IT_Amount__c, IT_Progressive__c, IT_Calculation_Type__c, IT_Validity_End_Date__c, IT_Validity_Start_Date__c, IT_Financial_Center__c From Additional_Expenses__r), 
             (Select Id, IT_Client_Code__c, IT_ABI__c, ER_IBAN__c, IT_CAB__c, IT_CIN__c, IT_CC__c, ER_Country__c, IT_Check_Iban__c From Bank_Accounts__r) From ER_Financial_Center__c Where IT_Financial_Center__c IN : listAllClientCode]; 
             
             contractMatchClientCode = [Select Id, IT_Client_Code__c, IT_Contract_Number__c, IT_Contract_Progressive__c From Contract Where IT_Client_Code__c IN : listAllClientCode];
@@ -134,10 +119,10 @@ global class WSIT03_ACWS  {
             if(singleSfFC.Delivery_Sites__r != null && singleSfFC.Delivery_Sites__r.size() > 0){
                 for(ER_Delivery_Site__c sinDelSite : singleSfFC.Delivery_Sites__r){
                     String keyCode = '';
-                    if(!String.isBlank(sinDelSite.IT_Delivery_SF__c)) 
-                        keyCode = sinDelSite.IT_Delivery_SF__c;
+                    if(!String.isBlank(sinDelSite.IT_Delivery_AC__c) && !String.isBlank(sinDelSite.IT_Activity_AC__c))
+                        keyCode = sinDelSite.IT_Delivery_AC__c+sinDelSite.IT_Activity_AC__c;
                     else
-                        keyCode = sinDelSite.IT_Delivery_AC__c;  
+                        keyCode = sinDelSite.IT_Delivery_SF__c+sinDelSite.IT_Activity_SF__c;  
       
                     mapDeliverySite.put(keyCode, sinDelSite);
                 }
@@ -145,13 +130,14 @@ global class WSIT03_ACWS  {
             if(singleSfFC.Distribution_Points__r != null && singleSfFC.Distribution_Points__r.size() > 0){
                 for(ER_Distribution_Point__c sinDisPoint : singleSfFC.Distribution_Points__r){
                     String keyCode = '';
-                    if(!String.isBlank(sinDisPoint.IT_AC_Activity__c) && sinDisPoint.IT_Raw_Number_for_Display__c == null)
+                    if(!String.isBlank(sinDisPoint.IT_AC_Activity__c) && sinDisPoint.IT_Raw_Number_for_Display__c != null)
+                        keyCode = sinDisPoint.IT_AC_Activity__c+sinDisPoint.IT_Raw_Number_for_Display__c;
+                    else if(!String.isBlank(sinDisPoint.IT_AC_Activity__c) && sinDisPoint.IT_Raw_Number_for_Display__c == null)
                         keyCode = sinDisPoint.IT_AC_Activity__c;
                     else
                         keyCode = sinDisPoint.IT_SF_Activity__c;  
       
                     mapDistributionPoint.put(keyCode, sinDisPoint);
-                    mapDistributionPointForNote.put(sinDisPoint.IT_AC_Activity__c, sinDisPoint);
                 }
             }
             if(singleSfFC.Groups_Code__r != null && singleSfFC.Groups_Code__r.size() > 0){
@@ -162,16 +148,6 @@ global class WSIT03_ACWS  {
             if(singleSfFC.Bank_Accounts__r != null && singleSfFC.Bank_Accounts__r.size() > 0){
                 for(ER_Bank_Account__c sinBankAcc : singleSfFC.Bank_Accounts__r){
                     mapBankAccount.put(sinBankAcc.IT_Client_Code__c+sinBankAcc.ER_IBAN__c, sinBankAcc);  
-                }
-            }
-            if(singleSfFC.Additional_Expenses__r != null && singleSfFC.Additional_Expenses__r.size() > 0){
-                for(IT_Additional_Expenses__c sinAddExp : singleSfFC.Additional_Expenses__r){
-                    mapAdditionalExpense.put(singleSfFC.IT_Financial_Center__c+sinAddExp.IT_Code__c, sinAddExp);  
-                }
-            }
-            if(singleSfFC.Note__r != null && singleSfFC.Note__r.size() > 0){
-                for(IT_Note__c sinNote : singleSfFC.Note__r){
-                    mapNote.put(singleSfFC.IT_Financial_Center__c+sinNote.IT_Progressive__c, sinNote); 
                 }
             }              
         }
@@ -270,8 +246,7 @@ global class WSIT03_ACWS  {
                     }    
                 }
                 if(singleFinancialCenter.IT_Delivery_Site != null && singleFinancialCenter.IT_Delivery_Site.size() > 0){
-                    for(IT_Delivery_Site sinWrapperDS : singleFinancialCenter.IT_Delivery_Site){
-                        controlDuplicateDelivery.put(sinWrapperDS.IT_Activity_AC, sinWrapperDS.IT_Delivery_AC); 
+                    for(IT_Delivery_Site sinWrapperDS : singleFinancialCenter.IT_Delivery_Site){ 
                         if(String.isblank(sinWrapperDS.IT_Client_Code)){
                             response responseService = new response();
                             responseService = populateResponseError(singleFinancialCenter.IT_Client_Code, 'Required Field Missing IT_Client_Code'); 
@@ -452,29 +427,13 @@ global class WSIT03_ACWS  {
                     fC_DistributionPoint = singleFinancialCenter.IT_Distribution_Point;
                     List<ER_Distribution_Point__c> fC_DistributionPointUpsert = new List<ER_Distribution_Point__c>();
                     System.debug('fC_DeliverySiteUpsert:: '+fC_DeliverySiteUpsert);
-                    fC_DistributionPointUpsert = populateDistributionPoint(upsertFinCen, fC_DistributionPoint, mapDistributionPoint, fC_DeliverySiteUpsert, fC_ContractLineUpsert, mapAddress, authorizationUserDistributioPoint, controlDuplicateDelivery);
-                    System.debug('fC_DistributionPointUpsert:: '+fC_DistributionPointUpsert);
+                    fC_DistributionPointUpsert = populateDistributionPoint(upsertFinCen, fC_DistributionPoint, mapDistributionPoint, fC_DeliverySiteUpsert, fC_ContractLineUpsert, mapAddress);
                     if(fC_DistributionPointUpsert != null && fC_DistributionPointUpsert.size() > 0) 
                         upsert fC_DistributionPointUpsert;
+
                     /**
                         * Upsert Distribution Point
                         * END
-                    */
-                    /**
-                        * Case management without activities not managed by AC
-                        * START
-                    */
-                    System.debug('fC_DeliverySiteUpsert.size():: '+fC_DeliverySiteUpsert.size());
-                    System.debug('fC_DistributionPoint.size():: '+fC_DistributionPoint.size());
-                    if(fC_DeliverySiteUpsert != null && fC_DeliverySiteUpsert.size() == 2 && (fC_DistributionPoint == new List<IT_Distribution_Point>() || fC_DistributionPoint.size() == 0)){
-                        List<ER_Distribution_Point__c> updateListDistributionP = new List<ER_Distribution_Point__c>();
-                        updateListDistributionP = updateDistributionFromDeleivery(fC_DeliverySite, mapDistributionPoint, fC_DeliverySiteUpsert);
-                        if(updateListDistributionP != null && updateListDistributionP.size() > 0)
-                            update updateListDistributionP; 
-                    }
-                    /**
-                        * Case management without activities not managed by AC
-                        * START
                     */
                     /**
                         * Upsert Group
@@ -491,36 +450,6 @@ global class WSIT03_ACWS  {
 
                     /**
                         * Upsert Group
-                        * END
-                    */
-                    /**
-                        * Upsert Additional Expenses
-                        * START
-                    */  
-                    List<IT_Additional_Expenses> upsertAddExpList = new List<IT_Additional_Expenses>();
-                    upsertAddExpList = singleFinancialCenter.IT_Additional_Expenses;
-                    List<IT_Additional_Expenses__c> fC_AddExpUpsert = new List<IT_Additional_Expenses__c>();
-                    fC_AddExpUpsert = populateAdditionalExpenses(upsertFinCen, upsertAddExpList, mapAdditionalExpense);
-                    system.debug('fC_AddExpUpsert::: '+fC_AddExpUpsert);
-                    if(fC_AddExpUpsert != null && fC_AddExpUpsert.size() > 0)
-                        upsert fC_AddExpUpsert;
-                    /**
-                        * Upsert Additional Expenses
-                        * END
-                    */
-                    /**
-                        * Upsert Notes
-                        * START
-                    */  
-                    List<IT_Note> upsertNoteList = new List<IT_Note>();
-                    upsertNoteList = singleFinancialCenter.IT_Note;
-                    List<IT_Note__c> fC_NoteUpsert = new List<IT_Note__c>();
-                    fC_NoteUpsert = populateNotes(upsertFinCen, upsertNoteList, mapNote, mapDeliverySite, mapDistributionPointForNote);
-                    system.debug('fC_NoteUpsert::: '+fC_NoteUpsert);
-                    if(fC_NoteUpsert != null && fC_NoteUpsert.size() > 0)
-                        upsert fC_NoteUpsert;
-                    /**
-                        * Upsert Notes
                         * END
                     */
                     if(null != upsertFinCen.Id && null != upsertBankAcc.Id){
@@ -585,11 +514,6 @@ global class WSIT03_ACWS  {
             newFCEconomicFuture = new ER_Financial_Center__c(Id = financialCenterObj.Id);
             newFCComplete = new ER_Financial_Center__c(Id = financialCenterObj.Id);
         }
-
-        if(financialCenterRequest.IT_Economic_Validity_Start_Date != null && financialCenterRequest.IT_Economic_Validity_Start_Date == System.today() + 1)
-            upsertFCMethod.IT_Future_Change_Economic_Conditions__c = ''; 
-        if(financialCenterRequest.IT_Admin_Data_Validity_Start_Date != null && financialCenterRequest.IT_Admin_Data_Validity_Start_Date == System.today() + 1)
-            upsertFCMethod.IT_Future_Change_FC__c = '';                   
         
         if(mapProduct2!= null && mapProduct2.size() > 0 && mapProduct2.keyset().contains(financialCenterRequest.IT_Service))
             upsertFCMethod.Name = financialCenterRequest.IT_Client_Code + ' - ' + mapProduct2.get(financialCenterRequest.IT_Service).Name;
@@ -702,13 +626,10 @@ global class WSIT03_ACWS  {
             newFCAddressFuture.IT_Address_Validity_End_Date__c = newAddress.IT_Validity_End_Date;
             newFCAddressFuture.IT_Address_AC_User__c = newAddress.IT_AC_User;
 
-            if(newAddress.IT_Validity_Start_Date != null && newAddress.IT_Validity_Start_Date == System.today() + 1)
-                newFCAddressFuture.IT_Future_Change_Address__c = ''; 
-
         }
 
         //AD - Continue 17/09/2019
-        if(!String.isBlank(newFCEconomicFuture.Id) && newFCEconomicFuture.IT_Economic_Validity_Start_Date__c != null && newFCEconomicFuture.IT_Economic_Validity_Start_Date__c > System.today() + 1){
+        if(!String.isBlank(newFCEconomicFuture.Id) && newFCEconomicFuture.IT_Economic_Validity_Start_Date__c != null && newFCEconomicFuture.IT_Economic_Validity_Start_Date__c > System.today()){
             Map<Id, SObject> newMapFC = new Map<Id, SObject>();
             SObject newFinancialCenter = (SObject) newFCEconomicFuture;
             newMapFC.put(newFCEconomicFuture.Id, newFinancialCenter);
@@ -717,7 +638,7 @@ global class WSIT03_ACWS  {
             newUpdate = (ER_Financial_Center__c) newFinancialCenter;
             newFCComplete.IT_Future_Change_Economic_Conditions__c = newUpdate.IT_Future_Change_Economic_Conditions__c;
         }
-        if(!String.isBlank(upsertFCMethod.Id) && upsertFCMethod.IT_Admin_Data_Validity_Start_Date__c != null && upsertFCMethod.IT_Admin_Data_Validity_Start_Date__c > System.today() + 1){
+        if(!String.isBlank(upsertFCMethod.Id) && upsertFCMethod.IT_Admin_Data_Validity_Start_Date__c != null && upsertFCMethod.IT_Admin_Data_Validity_Start_Date__c > System.today()){
             Map<Id, SObject> newMapFC = new Map<Id, SObject>();
             SObject newFinancialCenter = (SObject) upsertFCMethod;
             newMapFC.put(upsertFCMethod.Id, newFinancialCenter);
@@ -726,7 +647,7 @@ global class WSIT03_ACWS  {
             newUpdate = (ER_Financial_Center__c) newFinancialCenter;
             newFCComplete.IT_Future_Change_FC__c = newUpdate.IT_Future_Change_FC__c;
         }
-        if(!String.isBlank(newFCAddressFuture.Id) && newFCAddressFuture.IT_Address_Validity_Start_Date__c != null && newFCAddressFuture.IT_Address_Validity_Start_Date__c > System.today() + 1){
+        if(!String.isBlank(newFCAddressFuture.Id) && newFCAddressFuture.IT_Address_Validity_Start_Date__c != null && newFCAddressFuture.IT_Address_Validity_Start_Date__c > System.today()){
             Map<Id, SObject> newMapFC = new Map<Id, SObject>();
             SObject newFinancialCenter = (SObject) newFCAddressFuture;
             newMapFC.put(newFCAddressFuture.Id, newFinancialCenter);
@@ -864,7 +785,7 @@ global class WSIT03_ACWS  {
             upsertBankAccountMethod.ER_Financial_Center__c = financialCenterObj.Id;
 
             // Change Future
-            if(!String.isBlank(upsertBankAccountMethod.Id) && financialCenterRequest.IT_Economic_Validity_Start_Date != null && financialCenterRequest.IT_Economic_Validity_Start_Date > System.today() + 1){
+            if(!String.isBlank(upsertBankAccountMethod.Id) && financialCenterRequest.IT_Economic_Validity_Start_Date != null && financialCenterRequest.IT_Economic_Validity_Start_Date > System.today()){
                 Map<Id, SObject> newMapDS = new Map<Id, SObject>();
                 SObject updateBankAccount = (SObject) upsertBankAccountMethod;
                 newMapDS.put(upsertBankAccountMethod.Id, updateBankAccount);
@@ -911,12 +832,6 @@ global class WSIT03_ACWS  {
                         newcontractComplete = new Contract(Id = newContract.Id);
                     }    
                 }
-
-                if(fcReq.IT_Economic_Validity_Start_Date != null && fcReq.IT_Economic_Validity_Start_Date == System.today() + 1)
-                    newContract.IT_Future_Change_Economic_Conditions__c = ''; 
-                if(singleContract.StartDate != null && singleContract.StartDate == System.today() + 1)
-                    newContract.IT_Future_Change_Contract__c = '';
-
                 newContract.AccountId = financialCenterObj.ER_Account_Name__c;
                 newContract.IT_Financial_Center__c = financialCenterObj.Id;
                 newContract.IT_Contract_Number__c = newContractRequest.IT_Contract_Number;
@@ -950,7 +865,7 @@ global class WSIT03_ACWS  {
                 newContract.IT_Fixed_Day_Type__c = newContractRequest.IT_Fixed_Day_Type;
                 newContract.IT_Order_Reception_Term__c = newContractRequest.IT_Order_Reception_Term;
                 newContract.IT_Order_Reception_Term_Type__c = newContractRequest.IT_Order_Reception_Term_Type;
-                if(!String.isBlank(newContractRequest.IT_No_Sign_Activation_Authorization) && newContractRequest.IT_No_Sign_Activation_Authorization == '1')
+                if(!String.isBlank(newContractRequest.IT_No_Sign_Activation_Authorization) && newContractRequest.IT_Penal_Presence == '1')
                     newContract.IT_No_Sign_Activation_Authorization__c = true;
                 else    
                     newContract.IT_No_Sign_Activation_Authorization__c = false;
@@ -1080,19 +995,9 @@ global class WSIT03_ACWS  {
 
             newContractEconomicFuture.IT_Billing_Frequency_UTA__c = fcReq.IT_Billing_Frequency_UTA;
             newContractEconomicFuture.IT_Bond_UTA__c = fcReq.IT_Bond_UTA;
-
-            //UserCheck 16012020
-            newContractEconomicFuture.IT_Discount_Percentage_2__c = fcReq.IT_Discount_Percentage_2; 
-            newContractEconomicFuture.IT_Discount_Percentage_3__c = fcReq.IT_Discount_Percentage_3;
-            if(fcReq.IT_Discount_Validity_Date_2 != null)  
-                newContractEconomicFuture.IT_Discount_Validity_Date_2__c = fcReq.IT_Discount_Validity_Date_2;
-             if(fcReq.IT_Discount_Validity_Date_3 != null)  
-                newContractEconomicFuture.IT_Discount_Validity_Date_3__c = fcReq.IT_Discount_Validity_Date_3;
-            newContractEconomicFuture.IT_Extradiscount_Percentage__c = fcReq.IT_Extradiscount_Percentage;
-            newContractEconomicFuture.IT_Type_Extradiscount__c = fcReq.IT_Type_Extradiscount;
         }    
 
-        if(null != newContract && newContract != new Contract() && !String.isBlank(newContract.Id) && newContract.StartDate != null && newContract.StartDate > System.today() + 1){
+        if(null != newContract && newContract != new Contract() && !String.isBlank(newContract.Id) && newContract.StartDate != null && newContract.StartDate > System.today()){
             System.debug('IF_1');
             Map<Id, SObject> newMapDS = new Map<Id, SObject>();
             SObject updateDelverySite = (SObject) newContract;
@@ -1102,7 +1007,7 @@ global class WSIT03_ACWS  {
             newContractFuture = (Contract) updateDelverySite;
             newcontractComplete.IT_Future_Change_Contract__c = newContractFuture.IT_Future_Change_Contract__c;
         } 
-        if(!String.isBlank(newContractEconomicFuture.Id) && fcReq.IT_Economic_Validity_Start_Date != null && fcReq.IT_Economic_Validity_Start_Date > System.today() + 1){
+        if(!String.isBlank(newContractEconomicFuture.Id) && fcReq.IT_Economic_Validity_Start_Date != null && fcReq.IT_Economic_Validity_Start_Date > System.today()){
             System.debug('IF_2');
             Contract tempContr = new Contract();
             if(newContract == null || newContract == tempContr)
@@ -1165,7 +1070,7 @@ global class WSIT03_ACWS  {
         ER_Financial_Center__c upsertFCMethod = new ER_Financial_Center__c();
         if(financialCenterObj != upsertFCMethodTemp && contractObj != null && contractObj.size() > 0){
             for(Contract singleContract : contractObj){
-                if((singleContract.EndDate == null && financialCenterObj.IT_Contract__c != singleContract.Id) || (contractObj.size() == 1 && financialCenterObj.IT_Contract__c != singleContract.Id)){
+                if((singleContract.EndDate == null && financialCenterObj.IT_Contract__c != singleContract.Id) || (contractObj.size() == 1 && financialCenterObj.IT_Contract__c != singleContract.Id)){    
                     System.debug('singleContract.Id::: '+singleContract.Id);
                     upsertFCMethod = new ER_Financial_Center__c(Id = financialCenterObj.Id);
                     upsertFCMethod.IT_Contract__c = singleContract.Id;
@@ -1189,10 +1094,7 @@ global class WSIT03_ACWS  {
             }
 
             if(!String.isBlank(financialCenterObj.name) && financialCenterObj.Name.contains(' - '))
-                newContractLineItem.Name = financialCenterObj.Name.split(' - ')[1]; 
-
-            if(singleContractLineItem.IT_Validity_Start_Date != null && singleContractLineItem.IT_Validity_Start_Date == System.today() + 1)
-                newContractLineItem.IT_Future_Change_Contract_Line_Item__c = '';        
+                newContractLineItem.Name = financialCenterObj.Name.split(' - ')[1];     
 
             newContractLineItem.IT_Client_Code__c = singleContractLineItem.IT_Client_Code;
             newContractLineItem.IT_Technical_Data_Progressive__c = singleContractLineItem.IT_Technical_Data_Progressive;
@@ -1294,7 +1196,7 @@ global class WSIT03_ACWS  {
             newContractLineItem.ER_Quantity__c = 0;
             newContractLineItem.ER_UnitPrice__c = 0;
 
-            if(!String.isBlank(newContractLineItem.Id) && newContractLineItem.IT_Validity_Start_Date__c != null && newContractLineItem.IT_Validity_Start_Date__c > System.today() + 1){
+            if(!String.isBlank(newContractLineItem.Id) && newContractLineItem.IT_Validity_Start_Date__c != null && newContractLineItem.IT_Validity_Start_Date__c > System.today()){
                 Map<Id, SObject> newMapDS = new Map<Id, SObject>();
                 SObject updateProduct = (SObject) newContractLineItem;
                 newMapDS.put(newContractLineItem.Id, updateProduct);
@@ -1318,408 +1220,302 @@ global class WSIT03_ACWS  {
 
     private static List<ER_Delivery_Site__c> populateDeliverySite(ER_Financial_Center__c financialCenterObj, List<IT_Delivery_Site> deliverySiteRequest, Map<String, ER_Delivery_Site__c> mapDeliverySiteSF, Map<String, IT_Address> mapAddressFields){
         List<ER_Delivery_Site__c> upsertDeliverySiteMethod = new List<ER_Delivery_Site__c>();
-        List<String> controlDuplicate = new List<String>();
 
         for(IT_Delivery_Site singleDeliverySite : deliverySiteRequest){
             ER_Delivery_Site__c newDeliverySite = new ER_Delivery_Site__c();
             ER_Delivery_Site__c newDeliverySiteAddressFuture = new ER_Delivery_Site__c();
             ER_Delivery_Site__c newDeliverySiteFuture = new ER_Delivery_Site__c();
             ER_Delivery_Site__c newDeliverySiteComplete = new ER_Delivery_Site__c();
-            
-            System.debug('singleDeliverySiteAC::: '+singleDeliverySite.IT_Delivery_AC);
-            System.debug('singleDeliverySiteSF::: '+singleDeliverySite.IT_Delivery_SF);
 
-            if(!String.isBlank(singleDeliverySite.IT_Delivery_SF) && mapDeliverySiteSF != null && mapDeliverySiteSF.size() > 0 && mapDeliverySiteSF.Keyset().contains(singleDeliverySite.IT_Delivery_SF)){
-                newDeliverySite = new ER_Delivery_Site__c(Id = mapDeliverySiteSF.get(singleDeliverySite.IT_Delivery_SF).Id);
-            }else if(!String.isBlank(singleDeliverySite.IT_Delivery_AC) && mapDeliverySiteSF != null && mapDeliverySiteSF.size() > 0 && mapDeliverySiteSF.Keyset().contains(singleDeliverySite.IT_Delivery_AC)){
-                newDeliverySite = new ER_Delivery_Site__c(Id = mapDeliverySiteSF.get(singleDeliverySite.IT_Delivery_AC).Id);
-            }     
-            
-            System.debug('newDeliverySite::: '+newDeliverySite);
-            System.debug('controlDuplicate::: '+controlDuplicate);
-            if(newDeliverySite == new ER_Delivery_Site__c() || !controlDuplicate.contains(newDeliverySite.Id)){         
-                System.debug('IF OK::: ');
+            if(!String.isBlank(singleDeliverySite.IT_Delivery_SF) && !String.isBlank(singleDeliverySite.IT_Activity_SF) && mapDeliverySiteSF != null && mapDeliverySiteSF.size() > 0 && mapDeliverySiteSF.Keyset().contains(singleDeliverySite.IT_Delivery_SF+singleDeliverySite.IT_Activity_SF))
+                newDeliverySite = new ER_Delivery_Site__c(Id = mapDeliverySiteSF.get(singleDeliverySite.IT_Delivery_SF+singleDeliverySite.IT_Activity_SF).Id);
+            else if(String.isBlank(singleDeliverySite.IT_Delivery_SF) && mapDeliverySiteSF != null && mapDeliverySiteSF.size() > 0 && mapDeliverySiteSF.Keyset().contains(singleDeliverySite.IT_Delivery_AC+singleDeliverySite.IT_Activity_AC))
+                newDeliverySite = new ER_Delivery_Site__c(Id = mapDeliverySiteSF.get(singleDeliverySite.IT_Delivery_AC+singleDeliverySite.IT_Activity_AC).Id);      
 
-                if(!String.isBlank(newDeliverySite.Id)){
-                    newDeliverySiteAddressFuture = new ER_Delivery_Site__c(Id = newDeliverySite.Id);
+            if(!String.isBlank(newDeliverySite.Id)){
+                newDeliverySiteAddressFuture = new ER_Delivery_Site__c(Id = newDeliverySite.Id);
+                newDeliverySiteFuture = newDeliverySite;
+                newDeliverySiteComplete = new ER_Delivery_Site__c(Id = newDeliverySite.Id);
+            }
+            
+            newDeliverySite.IT_Client_Code__c = singleDeliverySite.IT_Client_Code;
+            newDeliverySite.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
+            newDeliverySite.IT_Delivery_SF__c = singleDeliverySite.IT_Delivery_SF;
+            newDeliverySite.IT_Delivery_AC__c = singleDeliverySite.IT_Delivery_AC;
+            newDeliverySite.IT_Delivery_Type__c = singleDeliverySite.IT_Delivery_Type;
+            if(singleDeliverySite.IT_Delivery_Point != null)
+                newDeliverySite.IT_Delivery_Point__c = singleDeliverySite.IT_Delivery_Point;
+            newDeliverySite.IT_Branch__c = singleDeliverySite.IT_Branch;
+            newDeliverySite.IT_Provider__c = singleDeliverySite.IT_Provider;
+            newDeliverySite.IT_Vehicle__c = singleDeliverySite.IT_Vehicle;
+            if(!String.isBlank(singleDeliverySite.IT_Vehicle_Forcing) && singleDeliverySite.IT_Vehicle_Forcing == '1')
+                newDeliverySite.IT_Vehicle_Forcing__c = true;
+            else    
+                newDeliverySite.IT_Vehicle_Forcing__c = false;
+            newDeliverySite.IT_Special_Service__c = singleDeliverySite.IT_Special_Service;
+            newDeliverySite.IT_Matched_Delivery__c = singleDeliverySite.IT_Matched_Delivery;
+            newDeliverySite.IT_Notes_type__c = singleDeliverySite.IT_Notes_type;
+            newDeliverySite.IT_Notes__c = singleDeliverySite.IT_Notes;
+            newDeliverySite.IT_Text__c = singleDeliverySite.IT_Text;
+            newDeliverySite.IT_AC_User__c = singleDeliverySite.IT_AC_User;
+            if(singleDeliverySite.IT_Validity_Start_Date != null)
+                newDeliverySite.IT_Validity_Start_Date__c = singleDeliverySite.IT_Validity_Start_Date;
+            if(singleDeliverySite.IT_Validity_End_Date != null) 
+                newDeliverySite.IT_Validity_End_Date__c = singleDeliverySite.IT_Validity_End_Date;
+            newDeliverySite.ER_Financial_Center__c = financialCenterObj.Id;
+            newDeliverySite.ER_Account_Name__c = financialCenterObj.ER_Account_Name__c;
+
+            //Menage Address
+            if(mapAddressFields != null && mapAddressFields.keyset().contains(singleDeliverySite.IT_Delivery_AC)){
+                IT_Address newAddress = mapAddressFields.get(singleDeliverySite.IT_Delivery_AC);
+
+                newDeliverySiteAddressFuture.Name = newAddress.IT_Ticket_Naming;
+                newDeliverySiteAddressFuture.IT_Ticket_Naming__c = newAddress.IT_Ticket_Naming;
+                newDeliverySiteAddressFuture.IT_Province__c = newAddress.IT_Province;
+                newDeliverySiteAddressFuture.IT_Toponym__c = newAddress.IT_Toponym;
+                newDeliverySiteAddressFuture.ER_Street__c = newAddress.IT_Street + ', ' + newAddress.IT_Street_Number; 
+                newDeliverySiteAddressFuture.IT_Short_Address__c = newAddress.IT_Short_Address;
+                newDeliverySiteAddressFuture.ER_Zip_Code__c = newAddress.IT_Postal_Code;
+                newDeliverySiteAddressFuture.ER_City__c = newAddress.IT_City;
+                newDeliverySiteAddressFuture.IT_Hamlet__c = newAddress.IT_Hamlet;
+                newDeliverySiteAddressFuture.ER_Street_additionnal__c = newAddress.IT_Additional_Locality;
+                newDeliverySiteAddressFuture.IT_State_Code__c = newAddress.IT_State_Code;
+                newDeliverySiteAddressFuture.IT_City_Code__c = newAddress.IT_City_Code;
+                newDeliverySiteAddressFuture.IT_Hamlet_Code__c = newAddress.IT_Hamlet_Code;
+                newDeliverySiteAddressFuture.IT_Sestiere_Code__c = newAddress.IT_Sestiere_Code;
+                newDeliverySiteAddressFuture.IT_Street_Code__c = newAddress.IT_Street_Code;
+                newDeliverySiteAddressFuture.IT_Road_Arch_Code__c = newAddress.IT_Road_Arch_Code;
+                newDeliverySiteAddressFuture.IT_MetRef_Loc_X__c = newAddress.IT_MetRef_Loc_X;
+                newDeliverySiteAddressFuture.IT_MetRef_Loc_Y__c = newAddress.IT_MetRef_Loc_Y;
+                newDeliverySiteAddressFuture.IT_GeoRef_Loc_X__c = newAddress.IT_GeoRef_Loc_X;
+                newDeliverySiteAddressFuture.IT_GeoRef_Loc_Y__c = newAddress.IT_GeoRef_Loc_Y;
+                newDeliverySiteAddressFuture.IT_Extra_Urban_Specifications__c = newAddress.IT_Extra_Urban_Specifications;
+                newDeliverySiteAddressFuture.IT_Zone__c = newAddress.IT_Zone;
+                newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c = newAddress.IT_Validity_Start_Date;
+                newDeliverySiteAddressFuture.IT_Address_Validity_End_Date__c = newAddress.IT_Validity_End_Date;
+                newDeliverySiteAddressFuture.IT_Address_AC_User__c = newAddress.IT_AC_User;
+            } 
+            //Menage Address - END
+
+            if(!String.isBlank(newDeliverySite.Id) && newDeliverySite.IT_Validity_Start_Date__c != null && newDeliverySite.IT_Validity_Start_Date__c > System.today()){
+                    Map<Id, SObject> newMapDS = new Map<Id, SObject>();
+                    SObject updateDelverySite = (SObject) newDeliverySite;
+                    newMapDS.put(newDeliverySite.Id, updateDelverySite);
+                    updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Delivery_Site__c', 'IT_Future_Change_DS__c');
+                    newDeliverySiteFuture = new ER_Delivery_Site__c();
+                    newDeliverySiteFuture = (ER_Delivery_Site__c) updateDelverySite;
+                    newDeliverySiteComplete.IT_Future_Change_DS__c = newDeliverySiteFuture.IT_Future_Change_DS__c;
+                } 
+                if(!String.isBlank(newDeliverySiteAddressFuture.Id) && newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c != null && newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c > System.today()){
+                    Map<Id, SObject> newMapDS = new Map<Id, SObject>();
+                    SObject updateDelverySite = (SObject) newDeliverySiteAddressFuture;
+                    newMapDS.put(newDeliverySiteAddressFuture.Id, updateDelverySite);
+                    updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Delivery_Site__c', 'IT_Future_Change_Address__c');
+                    newDeliverySiteFuture = new ER_Delivery_Site__c();
+                    newDeliverySiteFuture = (ER_Delivery_Site__c) updateDelverySite;
+                    newDeliverySiteComplete.IT_Future_Change_Address__c = newDeliverySiteFuture.IT_Future_Change_Address__c;
+                }
+                if(String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
+                    newDeliverySiteFuture = new ER_Delivery_Site__c();
+                    for(SObjectField field:newDeliverySite.getSObjectType().getDescribe().fields.getMap().values()) {
+                        try {
+                            Object del1Field = newDeliverySite.get(field);
+                            Object del2Field = newDeliverySiteAddressFuture.get(field);
+                            if (del2Field != null) {
+                                newDeliverySite.put(field, del1Field==null ? del2Field : del1Field);
+                            }
+                        }catch (SObjectException ecc) {
+                            System.debug('populateDeliverySiteMerge: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
+                        }
+                    }
+                    upsertDeliverySiteMethod.add(newDeliverySite);    
+                }
+                else if(!String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
+                    newDeliverySiteFuture = new ER_Delivery_Site__c();
+                    newDeliverySiteFuture = newDeliverySiteAddressFuture;
+                    newDeliverySiteFuture.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
+                    newDeliverySiteFuture.IT_Activity_SF__c = singleDeliverySite.IT_Activity_SF;
+                    newDeliverySiteFuture.IT_Future_Change_DS__c = newDeliverySiteComplete.IT_Future_Change_DS__c;
+                    upsertDeliverySiteMethod.add(newDeliverySiteFuture);
+                }
+                else if(String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && !String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
+                    newDeliverySiteFuture = new ER_Delivery_Site__c();
                     newDeliverySiteFuture = newDeliverySite;
-                    newDeliverySiteComplete = new ER_Delivery_Site__c(Id = newDeliverySite.Id);
+                    newDeliverySiteFuture.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
+                    newDeliverySiteFuture.IT_Activity_SF__c = singleDeliverySite.IT_Activity_SF;
+                    newDeliverySiteFuture.IT_Future_Change_Address__c = newDeliverySiteComplete.IT_Future_Change_Address__c;
+                    upsertDeliverySiteMethod.add(newDeliverySiteFuture);
+                }else{
+                    upsertDeliverySiteMethod.add(newDeliverySiteComplete);    
                 }
 
-                if(singleDeliverySite.IT_Validity_Start_Date != null && singleDeliverySite.IT_Validity_Start_Date == System.today() + 1)
-                    newDeliverySite.IT_Future_Change_DS__c = '';
-                
-                newDeliverySite.IT_Client_Code__c = singleDeliverySite.IT_Client_Code;
-                //newDeliverySite.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
-                newDeliverySite.IT_Delivery_SF__c = singleDeliverySite.IT_Delivery_SF;
-                newDeliverySite.IT_Delivery_AC__c = singleDeliverySite.IT_Delivery_AC;
-                newDeliverySite.IT_Delivery_Type__c = singleDeliverySite.IT_Delivery_Type;
-                if(singleDeliverySite.IT_Delivery_Point != null)
-                    newDeliverySite.IT_Delivery_Point__c = singleDeliverySite.IT_Delivery_Point;
-                newDeliverySite.IT_Branch__c = singleDeliverySite.IT_Branch;
-                newDeliverySite.IT_Provider__c = singleDeliverySite.IT_Provider;
-                newDeliverySite.IT_Vehicle__c = singleDeliverySite.IT_Vehicle;
-                if(!String.isBlank(singleDeliverySite.IT_Vehicle_Forcing) && singleDeliverySite.IT_Vehicle_Forcing == '1')
-                    newDeliverySite.IT_Vehicle_Forcing__c = true;
-                else    
-                    newDeliverySite.IT_Vehicle_Forcing__c = false;
-                newDeliverySite.IT_Special_Service__c = singleDeliverySite.IT_Special_Service;
-                newDeliverySite.IT_Matched_Delivery__c = singleDeliverySite.IT_Matched_Delivery;
-                newDeliverySite.IT_Notes_type__c = singleDeliverySite.IT_Notes_type;
-                newDeliverySite.IT_Notes__c = singleDeliverySite.IT_Notes;
-                newDeliverySite.IT_Text__c = singleDeliverySite.IT_Text;
-                newDeliverySite.IT_AC_User__c = singleDeliverySite.IT_AC_User;
-                if(singleDeliverySite.IT_Validity_Start_Date != null)
-                    newDeliverySite.IT_Validity_Start_Date__c = singleDeliverySite.IT_Validity_Start_Date;
-                if(singleDeliverySite.IT_Validity_End_Date != null) 
-                    newDeliverySite.IT_Validity_End_Date__c = singleDeliverySite.IT_Validity_End_Date;
-                newDeliverySite.ER_Financial_Center__c = financialCenterObj.Id;
-                newDeliverySite.ER_Account_Name__c = financialCenterObj.ER_Account_Name__c;
-
-                //UserCheck 30012020
-                newDeliverySite.IT_Note_Validity_Start_Date__c = singleDeliverySite.IT_Note_Validity_Start_Date;
-                newDeliverySite.IT_Note_Validity_End_Date__c = singleDeliverySite.IT_Note_Validity_End_Date;
-
-                //Menage Address
-                if(mapAddressFields != null && mapAddressFields.keyset().contains(singleDeliverySite.IT_Delivery_AC)){
-                    IT_Address newAddress = mapAddressFields.get(singleDeliverySite.IT_Delivery_AC);
-
-                    newDeliverySiteAddressFuture.Name = newAddress.IT_Ticket_Naming;
-                    newDeliverySiteAddressFuture.IT_Ticket_Naming__c = newAddress.IT_Ticket_Naming;
-                    newDeliverySiteAddressFuture.IT_Province__c = newAddress.IT_Province;
-                    newDeliverySiteAddressFuture.IT_Toponym__c = newAddress.IT_Toponym;
-                    newDeliverySiteAddressFuture.ER_Street__c = newAddress.IT_Street + ', ' + newAddress.IT_Street_Number; 
-                    newDeliverySiteAddressFuture.IT_Short_Address__c = newAddress.IT_Short_Address;
-                    newDeliverySiteAddressFuture.ER_Zip_Code__c = newAddress.IT_Postal_Code;
-                    newDeliverySiteAddressFuture.ER_City__c = newAddress.IT_City;
-                    newDeliverySiteAddressFuture.IT_Hamlet__c = newAddress.IT_Hamlet;
-                    newDeliverySiteAddressFuture.ER_Street_additionnal__c = newAddress.IT_Additional_Locality;
-                    newDeliverySiteAddressFuture.IT_State_Code__c = newAddress.IT_State_Code;
-                    newDeliverySiteAddressFuture.IT_City_Code__c = newAddress.IT_City_Code;
-                    newDeliverySiteAddressFuture.IT_Hamlet_Code__c = newAddress.IT_Hamlet_Code;
-                    newDeliverySiteAddressFuture.IT_Sestiere_Code__c = newAddress.IT_Sestiere_Code;
-                    newDeliverySiteAddressFuture.IT_Street_Code__c = newAddress.IT_Street_Code;
-                    newDeliverySiteAddressFuture.IT_Road_Arch_Code__c = newAddress.IT_Road_Arch_Code;
-                    newDeliverySiteAddressFuture.IT_MetRef_Loc_X__c = newAddress.IT_MetRef_Loc_X;
-                    newDeliverySiteAddressFuture.IT_MetRef_Loc_Y__c = newAddress.IT_MetRef_Loc_Y;
-                    newDeliverySiteAddressFuture.IT_GeoRef_Loc_X__c = newAddress.IT_GeoRef_Loc_X;
-                    newDeliverySiteAddressFuture.IT_GeoRef_Loc_Y__c = newAddress.IT_GeoRef_Loc_Y;
-                    newDeliverySiteAddressFuture.IT_Extra_Urban_Specifications__c = newAddress.IT_Extra_Urban_Specifications;
-                    newDeliverySiteAddressFuture.IT_Zone__c = newAddress.IT_Zone;
-                    newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c = newAddress.IT_Validity_Start_Date;
-                    newDeliverySiteAddressFuture.IT_Address_Validity_End_Date__c = newAddress.IT_Validity_End_Date;
-                    newDeliverySiteAddressFuture.IT_Address_AC_User__c = newAddress.IT_AC_User;
-
-                    if(newAddress.IT_Validity_Start_Date != null && newAddress.IT_Validity_Start_Date == System.today() + 1)
-                        newDeliverySiteAddressFuture.IT_Future_Change_Address__c = '';
-                } 
-                //Menage Address - END
-
-                if(!String.isBlank(newDeliverySite.Id) && newDeliverySite.IT_Validity_Start_Date__c != null && newDeliverySite.IT_Validity_Start_Date__c > System.today() + 1){
-                        Map<Id, SObject> newMapDS = new Map<Id, SObject>();
-                        SObject updateDelverySite = (SObject) newDeliverySite;
-                        newMapDS.put(newDeliverySite.Id, updateDelverySite);
-                        updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Delivery_Site__c', 'IT_Future_Change_DS__c');
-                        newDeliverySiteFuture = new ER_Delivery_Site__c();
-                        newDeliverySiteFuture = (ER_Delivery_Site__c) updateDelverySite;
-                        newDeliverySiteComplete.IT_Future_Change_DS__c = newDeliverySiteFuture.IT_Future_Change_DS__c;
-                    } 
-                    if(!String.isBlank(newDeliverySiteAddressFuture.Id) && newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c != null && newDeliverySiteAddressFuture.IT_Address_Validity_Start_Date__c > System.today() + 1){
-                        Map<Id, SObject> newMapDS = new Map<Id, SObject>();
-                        SObject updateDelverySite = (SObject) newDeliverySiteAddressFuture;
-                        newMapDS.put(newDeliverySiteAddressFuture.Id, updateDelverySite);
-                        updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Delivery_Site__c', 'IT_Future_Change_Address__c');
-                        newDeliverySiteFuture = new ER_Delivery_Site__c();
-                        newDeliverySiteFuture = (ER_Delivery_Site__c) updateDelverySite;
-                        newDeliverySiteComplete.IT_Future_Change_Address__c = newDeliverySiteFuture.IT_Future_Change_Address__c;
-                    }
-                    if(String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
-                        newDeliverySiteFuture = new ER_Delivery_Site__c();
-                        for(SObjectField field:newDeliverySite.getSObjectType().getDescribe().fields.getMap().values()) {
-                            try {
-                                Object del1Field = newDeliverySite.get(field);
-                                Object del2Field = newDeliverySiteAddressFuture.get(field);
-                                if (del2Field != null) {
-                                    newDeliverySite.put(field, del1Field==null ? del2Field : del1Field);
-                                }
-                            }catch (SObjectException ecc) {
-                                System.debug('populateDeliverySiteMerge: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-                            }
-                        }
-                        upsertDeliverySiteMethod.add(newDeliverySite);    
-                    }
-                    else if(!String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
-                        newDeliverySiteFuture = new ER_Delivery_Site__c();
-                        newDeliverySiteFuture = newDeliverySiteAddressFuture;
-                        newDeliverySiteFuture.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
-                        newDeliverySiteFuture.IT_Activity_SF__c = singleDeliverySite.IT_Activity_SF;
-                        newDeliverySiteFuture.IT_Future_Change_DS__c = newDeliverySiteComplete.IT_Future_Change_DS__c;
-                        upsertDeliverySiteMethod.add(newDeliverySiteFuture);
-                    }
-                    else if(String.isBlank(newDeliverySiteComplete.IT_Future_Change_DS__c) && !String.isBlank(newDeliverySiteComplete.IT_Future_Change_Address__c)){
-                        newDeliverySiteFuture = new ER_Delivery_Site__c();
-                        newDeliverySiteFuture = newDeliverySite;
-                        newDeliverySiteFuture.IT_Activity_AC__c = singleDeliverySite.IT_Activity_AC;
-                        newDeliverySiteFuture.IT_Activity_SF__c = singleDeliverySite.IT_Activity_SF;
-                        newDeliverySiteFuture.IT_Future_Change_Address__c = newDeliverySiteComplete.IT_Future_Change_Address__c;
-                        upsertDeliverySiteMethod.add(newDeliverySiteFuture);
-                    }else{
-                        upsertDeliverySiteMethod.add(newDeliverySiteComplete);    
-                    }
-
-                //upsertDeliverySiteMethod.add(newDeliverySite);
-                if(newDeliverySiteComplete.Id != null)
-                    controlDuplicate.add(newDeliverySiteComplete.Id);
-            }
+            //upsertDeliverySiteMethod.add(newDeliverySite);
         }
         return upsertDeliverySiteMethod;   
     }
 
-    private static List<ER_Distribution_Point__c> populateDistributionPoint(ER_Financial_Center__c financialCenterObj, List<IT_Distribution_Point> distributionPointRequest, Map<String, ER_Distribution_Point__c> mapDistributionPointSF, List<ER_Delivery_Site__c> listDeliveryParent, List<ER_ContractLineItem__c> ListItemParent, Map<String, IT_Address> mapAddressFields, Map<String, String> authorizationUserDP, Map<String, String> controloDSDuplicate){
+    private static List<ER_Distribution_Point__c> populateDistributionPoint(ER_Financial_Center__c financialCenterObj, List<IT_Distribution_Point> distributionPointRequest, Map<String, ER_Distribution_Point__c> mapDistributionPointSF, List<ER_Delivery_Site__c> listDeliveryParent, List<ER_ContractLineItem__c> ListItemParent, Map<String, IT_Address> mapAddressFields){
         List<ER_Distribution_Point__c> upsertDistributionPointMethod = new List<ER_Distribution_Point__c>();
-        //AD MultiActivity Menage - 16032020
-        List<String> controlActivityACPresent = new List<String>();
-        Map<String, Map<Integer, IT_Distribution_Point>> multiDistribution = new Map<String, Map<Integer, IT_Distribution_Point>>();
+        
+
         for(IT_Distribution_Point singleDistributionPoint : distributionPointRequest){
-            if(multiDistribution != null && multiDistribution.size() > 0 && multiDistribution.Keyset().contains(singleDistributionPoint.IT_AC_Activity)){
-                if(singleDistributionPoint.IT_Raw_Number_for_Display != null){
-                    Map<Integer, IT_Distribution_Point> distributionTemp = new Map<Integer, IT_Distribution_Point>();
-                    distributionTemp = multiDistribution.get(singleDistributionPoint.IT_AC_Activity);
-                    distributionTemp.put(singleDistributionPoint.IT_Raw_Number_for_Display, singleDistributionPoint);
-                    multiDistribution.put(singleDistributionPoint.IT_AC_Activity, distributionTemp);
-                }            
-            }else{
-                Map<Integer, IT_Distribution_Point> distributionTemp = new Map<Integer, IT_Distribution_Point>();
-                distributionTemp.put(singleDistributionPoint.IT_Raw_Number_for_Display, singleDistributionPoint);
-                multiDistribution.put(singleDistributionPoint.IT_AC_Activity, distributionTemp);    
+            ER_Distribution_Point__c newDistributionPoint = new ER_Distribution_Point__c();
+            ER_Distribution_Point__c newDPAddressFuture = new ER_Distribution_Point__c();
+            ER_Distribution_Point__c newDPFuture = new ER_Distribution_Point__c();
+            ER_Distribution_Point__c newDPComplete = new ER_Distribution_Point__c();
+            if(!String.isBlank(singleDistributionPoint.IT_SF_Activity) && singleDistributionPoint.IT_Raw_Number_for_Display != null && mapDistributionPointSF != null && mapDistributionPointSF.size() > 0 && mapDistributionPointSF.Keyset().contains(singleDistributionPoint.IT_SF_Activity+singleDistributionPoint.IT_Raw_Number_for_Display))
+                newDistributionPoint = new ER_Distribution_Point__c(Id = mapDistributionPointSF.get(singleDistributionPoint.IT_SF_Activity+singleDistributionPoint.IT_Raw_Number_for_Display).Id);
+            else if(!String.isBlank(singleDistributionPoint.IT_SF_Activity) && mapDistributionPointSF != null && mapDistributionPointSF.size() > 0 && mapDistributionPointSF.Keyset().contains(singleDistributionPoint.IT_SF_Activity))
+                newDistributionPoint = new ER_Distribution_Point__c(Id = mapDistributionPointSF.get(singleDistributionPoint.IT_SF_Activity).Id);
+            else if(String.isBlank(singleDistributionPoint.IT_SF_Activity) && mapDistributionPointSF != null && mapDistributionPointSF.size() > 0 && mapDistributionPointSF.Keyset().contains(singleDistributionPoint.IT_AC_Activity))
+                newDistributionPoint = new ER_Distribution_Point__c(Id = mapDistributionPointSF.get(singleDistributionPoint.IT_AC_Activity).Id);    
+
+            newDistributionPoint.IT_Client_Code__c = singleDistributionPoint.IT_Client_Code;
+            newDistributionPoint.IT_SF_Activity__c = singleDistributionPoint.IT_SF_Activity;
+            newDistributionPoint.IT_AC_Activity__c = singleDistributionPoint.IT_AC_Activity;
+            if(!String.isBlank(singleDistributionPoint.IT_Suspension) && singleDistributionPoint.IT_Suspension == '1')
+                newDistributionPoint.IT_Suspension__c = true;
+            else    
+                newDistributionPoint.IT_Suspension__c = false;
+            if(!String.isBlank(singleDistributionPoint.IT_Cancellation) && singleDistributionPoint.IT_Cancellation == '1')    
+                newDistributionPoint.IT_Cancellation__c = true;
+            else    
+                newDistributionPoint.IT_Cancellation__c = false;
+            newDistributionPoint.IT_Cancellation_Type__c = singleDistributionPoint.IT_Cancellation_Type;
+            newDistributionPoint.IT_Employees_Number__c = singleDistributionPoint.IT_Employees_Number;
+            if(singleDistributionPoint.IT_Technical_Data_Progressive != null) 
+                newDistributionPoint.IT_Technical_Data_Progressive__c = String.valueOf(singleDistributionPoint.IT_Technical_Data_Progressive);
+            newDistributionPoint.IT_Contact_Code__c = singleDistributionPoint.IT_Contact_Code;
+            newDistributionPoint.IT_Cost_Center__c = singleDistributionPoint.IT_Cost_Center;
+            if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1') 
+                newDistributionPoint.IT_Free_Description_to_Display__c = true;
+            else    
+                newDistributionPoint.IT_Free_Description_to_Display__c = false;
+            if(!String.isBlank(singleDistributionPoint.IT_Address_to_Display) && singleDistributionPoint.IT_Address_to_Display == '1')    
+                newDistributionPoint.IT_Address_to_Display__c = true;
+            else    
+                newDistributionPoint.IT_Address_to_Display__c = false;
+            if(!String.isBlank(singleDistributionPoint.IT_Naming_to_Display) && singleDistributionPoint.IT_Naming_to_Display == '1')
+                newDistributionPoint.IT_Locality_to_Display__c = true;
+            else    
+                newDistributionPoint.IT_Locality_to_Display__c = false; 
+            if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1')
+                newDistributionPoint.IT_Naming_to_Display__c = true;
+            else    
+                newDistributionPoint.IT_Naming_to_Display__c = false; 
+            newDistributionPoint.IT_Raw_Number_for_Display__c = singleDistributionPoint.IT_Raw_Number_for_Display;
+            newDistributionPoint.IT_Data_to_Display__c = singleDistributionPoint.IT_Data_to_Display;
+            newDistributionPoint.IT_Data_Type_to_Display__c = singleDistributionPoint.IT_Data_Type_to_Display;
+            newDistributionPoint.IT_AC_User__c = singleDistributionPoint.IT_AC_User;
+            if(singleDistributionPoint.IT_Validity_Start_Date != null)
+                newDistributionPoint.IT_Validity_Start_Date__c = singleDistributionPoint.IT_Validity_Start_Date;
+            if(singleDistributionPoint.IT_Validity_End_Date != null)
+                newDistributionPoint.IT_Validity_End_Date__c = singleDistributionPoint.IT_Validity_End_Date;
+
+            //Menage Address
+            if(mapAddressFields != null && mapAddressFields.keyset().contains(singleDistributionPoint.IT_AC_Activity)){
+                IT_Address newAddress = mapAddressFields.get(singleDistributionPoint.IT_AC_Activity);
+
+                newDPAddressFuture.Name = newAddress.IT_Ticket_Naming;
+                newDPAddressFuture.IT_Ticket_Naming__c = newAddress.IT_Ticket_Naming;
+                newDPAddressFuture.IT_Province__c = newAddress.IT_Province;
+                newDPAddressFuture.IT_Toponym__c = newAddress.IT_Toponym;
+                newDPAddressFuture.ER_Street__c = newAddress.IT_Street + ', ' + newAddress.IT_Street_Number; 
+                newDPAddressFuture.IT_Short_Address__c = newAddress.IT_Short_Address;
+                newDPAddressFuture.ER_Zip_Code__c = newAddress.IT_Postal_Code;
+                newDPAddressFuture.ER_City__c = newAddress.IT_City;
+                newDPAddressFuture.IT_Hamlet__c = newAddress.IT_Hamlet;
+                newDPAddressFuture.IT_Additional_Locality__c = newAddress.IT_Additional_Locality;
+                newDPAddressFuture.IT_State_Code__c = newAddress.IT_State_Code;
+                newDPAddressFuture.IT_City_Code__c = newAddress.IT_City_Code;
+                newDPAddressFuture.IT_Hamlet_Code__c = newAddress.IT_Hamlet_Code;
+                newDPAddressFuture.IT_Sestiere_Code__c = newAddress.IT_Sestiere_Code;
+                newDPAddressFuture.IT_Street_Code__c = newAddress.IT_Street_Code;
+                newDPAddressFuture.IT_Road_Arch_Code__c = newAddress.IT_Road_Arch_Code;
+                newDPAddressFuture.IT_MetRef_Loc_X__c = newAddress.IT_MetRef_Loc_X;
+                newDPAddressFuture.IT_MetRef_Loc_Y__c = newAddress.IT_MetRef_Loc_Y;
+                newDPAddressFuture.IT_GeoRef_Loc_X__c = newAddress.IT_GeoRef_Loc_X;
+                newDPAddressFuture.IT_GeoRef_Loc_Y__c = newAddress.IT_GeoRef_Loc_Y;
+                newDPAddressFuture.IT_Extra_Urban_Specifications__c = newAddress.IT_Extra_Urban_Specifications;
+                newDPAddressFuture.IT_Zone__c = newAddress.IT_Zone;
+                newDPAddressFuture.IT_Address_Validity_Start_Date__c = newAddress.IT_Validity_Start_Date;
+                newDPAddressFuture.IT_Address_Validity_End_Date__c = newAddress.IT_Validity_End_Date;
+                newDPAddressFuture.IT_Address_AC_User__c = newAddress.IT_AC_User;
+            } 
+            //Menage Address - END
+
+            newDistributionPoint.IT_Financial_Center__c = financialCenterObj.Id;
+            if(listDeliveryParent != null && listDeliveryParent.size() > 0){
+                for(ER_Delivery_Site__c sinDel : listDeliveryParent){
+                    System.debug('sinDel.IT_Activity_AC__c:: '+sinDel.IT_Activity_AC__c);
+                    System.debug('singleDistributionPoint.IT_AC_Activity:: '+singleDistributionPoint.IT_AC_Activity);
+                    if(sinDel.IT_Activity_AC__c == singleDistributionPoint.IT_AC_Activity){
+                        newDistributionPoint.ER_Delivery_Site__c = sinDel.Id;
+                        System.debug('newDistributionPoint.ER_Delivery_Site__c:: '+newDistributionPoint.ER_Delivery_Site__c);
+                    }
+                }
             }
-        }
-        //AD MultiActivity Menage - 16032020 - END 
-
-        IT_Custom_Control__c mhc = IT_Custom_Control__c.getInstance('Control Consegna');  
-        String deliveryStandard = mhc.IT_Custom_Text__c;
-        List<ER_Delivery_Site__c> deliveryStandardList = new List<ER_Delivery_Site__c>();
-        if(!String.isBlank(deliveryStandard))
-            deliveryStandardList = [Select Id From ER_Delivery_Site__c Where Name =: deliveryStandard];   
-
-        for(IT_Distribution_Point singleDistributionPoint : distributionPointRequest){
-            if(!controlActivityACPresent.contains(singleDistributionPoint.IT_AC_Activity)){ 
-                ER_Distribution_Point__c newDistributionPoint = new ER_Distribution_Point__c();
-                ER_Distribution_Point__c newDPAddressFuture = new ER_Distribution_Point__c();
-                ER_Distribution_Point__c newDPFuture = new ER_Distribution_Point__c();
-                ER_Distribution_Point__c newDPComplete = new ER_Distribution_Point__c();
-                if(!String.isBlank(singleDistributionPoint.IT_SF_Activity) && mapDistributionPointSF != null && mapDistributionPointSF.size() > 0 && mapDistributionPointSF.Keyset().contains(singleDistributionPoint.IT_SF_Activity))
-                    newDistributionPoint = new ER_Distribution_Point__c(Id = mapDistributionPointSF.get(singleDistributionPoint.IT_SF_Activity).Id);
-                else if(!String.isBlank(singleDistributionPoint.IT_AC_Activity) && mapDistributionPointSF != null && mapDistributionPointSF.size() > 0 && mapDistributionPointSF.Keyset().contains(singleDistributionPoint.IT_AC_Activity))
-                    newDistributionPoint = new ER_Distribution_Point__c(Id = mapDistributionPointSF.get(singleDistributionPoint.IT_AC_Activity).Id);
-
-                if(!String.isBlank(newDistributionPoint.Id)){
-                    newDPAddressFuture = new ER_Distribution_Point__c(Id = newDistributionPoint.Id);
-                    newDPFuture = newDistributionPoint;
-                    newDPComplete = new ER_Distribution_Point__c(Id = newDistributionPoint.Id);
-                }      
-
-                if(singleDistributionPoint.IT_Validity_Start_Date != null && singleDistributionPoint.IT_Validity_Start_Date == System.today() + 1)
-                    newDistributionPoint.IT_Future_Change_Distribution_Point__c = '';
-
-                newDistributionPoint.IT_Client_Code__c = singleDistributionPoint.IT_Client_Code;
-                newDistributionPoint.IT_SF_Activity__c = singleDistributionPoint.IT_SF_Activity;
-                newDistributionPoint.IT_AC_Activity__c = singleDistributionPoint.IT_AC_Activity;
-                if(!String.isBlank(singleDistributionPoint.IT_Suspension) && singleDistributionPoint.IT_Suspension == '1')
-                    newDistributionPoint.IT_Suspension__c = true;
-                else    
-                    newDistributionPoint.IT_Suspension__c = false;
-                if(!String.isBlank(singleDistributionPoint.IT_Cancellation) && singleDistributionPoint.IT_Cancellation == '1')    
-                    newDistributionPoint.IT_Cancellation__c = true;
-                else    
-                    newDistributionPoint.IT_Cancellation__c = false;
-                newDistributionPoint.IT_Cancellation_Type__c = singleDistributionPoint.IT_Cancellation_Type;
-                newDistributionPoint.IT_Employees_Number__c = singleDistributionPoint.IT_Employees_Number;
-                if(singleDistributionPoint.IT_Technical_Data_Progressive != null) 
-                    newDistributionPoint.IT_Technical_Data_Progressive__c = String.valueOf(singleDistributionPoint.IT_Technical_Data_Progressive);
-                newDistributionPoint.IT_Contact_Code__c = singleDistributionPoint.IT_Contact_Code;
-                if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1') 
-                    newDistributionPoint.IT_Free_Description_to_Display__c = true;
-                else    
-                    newDistributionPoint.IT_Free_Description_to_Display__c = false;
-                if(!String.isBlank(singleDistributionPoint.IT_Address_to_Display) && singleDistributionPoint.IT_Address_to_Display == '1')    
-                    newDistributionPoint.IT_Address_to_Display__c = true;
-                else    
-                    newDistributionPoint.IT_Address_to_Display__c = false;
-                if(!String.isBlank(singleDistributionPoint.IT_Naming_to_Display) && singleDistributionPoint.IT_Naming_to_Display == '1')
-                    newDistributionPoint.IT_Locality_to_Display__c = true;
-                else    
-                    newDistributionPoint.IT_Locality_to_Display__c = false; 
-                //if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1')
-                    //newDistributionPoint.IT_Naming_to_Display__c = true;
-                //else    
-                    //newDistributionPoint.IT_Naming_to_Display__c = false; 
-                
-                newDistributionPoint.IT_Raw_Number_for_Display__c = singleDistributionPoint.IT_Raw_Number_for_Display;
-                newDistributionPoint.IT_Data_to_Display__c = singleDistributionPoint.IT_Data_to_Display;
-                newDistributionPoint.IT_Data_Type_to_Display__c = singleDistributionPoint.IT_Data_Type_to_Display;
-                
-                if(singleDistributionPoint.IT_Raw_Number_for_Display == null)
-                    newDistributionPoint.IT_Cost_Center__c = singleDistributionPoint.IT_Cost_Center;
-
-                if(multiDistribution != null && multiDistribution.size() > 0 && multiDistribution.Keyset().contains(singleDistributionPoint.IT_AC_Activity)){
-                    if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).Keyset().contains(2)){
-                        newDistributionPoint.IT_Data_to_Display_2__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(2).IT_Data_to_Display;
-                        newDistributionPoint.IT_Data_Type_to_Display_2__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(2).IT_Data_Type_to_Display;
-                    }
-                    if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).Keyset().contains(3)){
-                        newDistributionPoint.IT_Data_to_Display_3__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(3).IT_Data_to_Display;
-                        newDistributionPoint.IT_Data_Type_to_Display_3__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(3).IT_Data_Type_to_Display;
-                    }
-                    if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).Keyset().contains(4)){
-                        newDistributionPoint.IT_Data_to_Display_4__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(4).IT_Data_to_Display;
-                        newDistributionPoint.IT_Data_Type_to_Display_4__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(4).IT_Data_Type_to_Display;
-                    }
-                } 
-                newDistributionPoint.IT_AC_User__c = singleDistributionPoint.IT_AC_User; 
-                if(singleDistributionPoint.IT_Validity_Start_Date != null) 
-                    newDistributionPoint.IT_Validity_Start_Date__c = singleDistributionPoint.IT_Validity_Start_Date;
-                if(singleDistributionPoint.IT_Validity_End_Date != null)
-                    newDistributionPoint.IT_Validity_End_Date__c = singleDistributionPoint.IT_Validity_End_Date;
-
-                //UserCheck 16012020
-                if(singleDistributionPoint.IT_Cost_Center_End_Date != null)
-                    newDistributionPoint.IT_Cost_Center_End_Date__c = singleDistributionPoint.IT_Cost_Center_End_Date;
-                if(singleDistributionPoint.IT_Suspension_Start_Date != null)    
-                    newDistributionPoint.IT_Suspension_Start_Date__c = singleDistributionPoint.IT_Suspension_Start_Date;
-                if(singleDistributionPoint.IT_Suspension_End_Date != null)
-                    newDistributionPoint.IT_Suspension_End_Date__c = singleDistributionPoint.IT_Suspension_End_Date;
-                newDistributionPoint.IT_Authorization_Suspension_User_Text__c = singleDistributionPoint.IT_Authorization_Suspension_User_Text;
-                newDistributionPoint.IT_Authorization_Reactivation_User_Text__c = singleDistributionPoint.IT_Authorization_Reactivation_User_Text;
-                newDistributionPoint.IT_Suspension_Reason__c = singleDistributionPoint.IT_Suspension_Reason;
-
-                if(authorizationUserDP != null && authorizationUserDP.size() > 0 && !String.isBlank(singleDistributionPoint.IT_Authorization_Reactivation_User_Text) && authorizationUserDP.Keyset().contains(singleDistributionPoint.IT_Authorization_Reactivation_User_Text))    
-                    newDistributionPoint.IT_Authorization_Reactivation_User__c = authorizationUserDP.get(singleDistributionPoint.IT_Authorization_Reactivation_User_Text);
-                if(authorizationUserDP != null && authorizationUserDP.size() > 0 && !String.isBlank(singleDistributionPoint.IT_Authorization_Suspension_User_Text) && authorizationUserDP.Keyset().contains(singleDistributionPoint.IT_Authorization_Suspension_User_Text))    
-                    newDistributionPoint.IT_Authorization_Suspension_User__c = authorizationUserDP.get(singleDistributionPoint.IT_Authorization_Suspension_User_Text);       
-
-                //UserCheck 30012020
-                newDistributionPoint.IT_Notes_Type__c = singleDistributionPoint.IT_Notes_Type;
-                newDistributionPoint.IT_Notes__c = singleDistributionPoint.IT_Notes;
-                newDistributionPoint.IT_Note_Validity_Start_Date__c = singleDistributionPoint.IT_Note_Validity_Start_Date;
-                newDistributionPoint.IT_Note_Validity_End_Date__c = singleDistributionPoint.IT_Note_Validity_End_Date;
-                
-                //Menage Address
-                if(mapAddressFields != null && mapAddressFields.keyset().contains(singleDistributionPoint.IT_AC_Activity)){
-                    IT_Address newAddress = mapAddressFields.get(singleDistributionPoint.IT_AC_Activity);
-
-                    newDPAddressFuture.Name = newAddress.IT_Ticket_Naming;
-                    newDPAddressFuture.IT_Ticket_Naming__c = newAddress.IT_Ticket_Naming;
-                    newDPAddressFuture.IT_Province__c = newAddress.IT_Province;
-                    newDPAddressFuture.IT_Toponym__c = newAddress.IT_Toponym;
-                    newDPAddressFuture.ER_Street__c = newAddress.IT_Street + ', ' + newAddress.IT_Street_Number; 
-                    newDPAddressFuture.IT_Short_Address__c = newAddress.IT_Short_Address;
-                    newDPAddressFuture.ER_Zip_Code__c = newAddress.IT_Postal_Code;
-                    newDPAddressFuture.ER_City__c = newAddress.IT_City;
-                    newDPAddressFuture.IT_Hamlet__c = newAddress.IT_Hamlet;
-                    newDPAddressFuture.IT_Additional_Locality__c = newAddress.IT_Additional_Locality;
-                    newDPAddressFuture.IT_State_Code__c = newAddress.IT_State_Code;
-                    newDPAddressFuture.IT_City_Code__c = newAddress.IT_City_Code;
-                    newDPAddressFuture.IT_Hamlet_Code__c = newAddress.IT_Hamlet_Code;
-                    newDPAddressFuture.IT_Sestiere_Code__c = newAddress.IT_Sestiere_Code;
-                    newDPAddressFuture.IT_Street_Code__c = newAddress.IT_Street_Code;
-                    newDPAddressFuture.IT_Road_Arch_Code__c = newAddress.IT_Road_Arch_Code;
-                    newDPAddressFuture.IT_MetRef_Loc_X__c = newAddress.IT_MetRef_Loc_X;
-                    newDPAddressFuture.IT_MetRef_Loc_Y__c = newAddress.IT_MetRef_Loc_Y;
-                    newDPAddressFuture.IT_GeoRef_Loc_X__c = newAddress.IT_GeoRef_Loc_X;
-                    newDPAddressFuture.IT_GeoRef_Loc_Y__c = newAddress.IT_GeoRef_Loc_Y;
-                    newDPAddressFuture.IT_Extra_Urban_Specifications__c = newAddress.IT_Extra_Urban_Specifications;
-                    newDPAddressFuture.IT_Zone__c = newAddress.IT_Zone;
-                    newDPAddressFuture.IT_Address_Validity_Start_Date__c = newAddress.IT_Validity_Start_Date;
-                    newDPAddressFuture.IT_Address_Validity_End_Date__c = newAddress.IT_Validity_End_Date;
-                    newDPAddressFuture.IT_Address_AC_User__c = newAddress.IT_AC_User;
-
-                    if(newAddress.IT_Validity_Start_Date != null && newAddress.IT_Validity_Start_Date == System.today() + 1)
-                        newDPAddressFuture.IT_Future_Change_Address__c = '';
-                } 
-                //Menage Address - END
-
-                newDistributionPoint.IT_Financial_Center__c = financialCenterObj.Id;
-                if(listDeliveryParent != null && listDeliveryParent.size() > 0){
-                    Boolean controlActivityOK = false;
-                    for(ER_Delivery_Site__c sinDel : listDeliveryParent){
-                        System.debug('controloDSDuplicate:: '+controloDSDuplicate);
-                        System.debug('singleDistributionPoint.IT_AC_Activity:: '+singleDistributionPoint.IT_AC_Activity);
-                        if(sinDel.IT_Delivery_AC__c == controloDSDuplicate.get(singleDistributionPoint.IT_AC_Activity)){
-                            newDistributionPoint.ER_Delivery_Site__c = sinDel.Id;
-                            System.debug('newDistributionPoint.ER_Delivery_Site__c:: '+newDistributionPoint.ER_Delivery_Site__c);
-                            controlActivityOK = true;
-                        }
-                    }
-                    if(deliveryStandardList != null && deliveryStandardList.size() > 0 && controlActivityOK == false)
-                        newDistributionPoint.ER_Delivery_Site__c = deliveryStandardList[0].Id;   
-                }else if(newDistributionPoint.Id == null){
-                    if(deliveryStandardList != null && deliveryStandardList.size() > 0)
-                        newDistributionPoint.ER_Delivery_Site__c = deliveryStandardList[0].Id;    
-                }
-                if(ListItemParent != null && ListItemParent.size() > 0){
-                    String distributionControl = singleDistributionPoint.IT_Client_Code + String.valueOf(singleDistributionPoint.IT_Technical_Data_Progressive);
-                    for(ER_ContractLineItem__c sinItem : ListItemParent){
-                        String keyControl = sinItem.IT_Client_Code__c + String.valueOf(sinItem.IT_Technical_Data_Progressive__c);
-                        if(keyControl == distributionControl){
-                            newDistributionPoint.IT_Contract_Line_Item__c = sinItem.Id; 
-                        }
+            if(ListItemParent != null && ListItemParent.size() > 0){
+                String distributionControl = singleDistributionPoint.IT_Client_Code + String.valueOf(singleDistributionPoint.IT_Technical_Data_Progressive);
+                for(ER_ContractLineItem__c sinItem : ListItemParent){
+                    String keyControl = sinItem.IT_Client_Code__c + String.valueOf(sinItem.IT_Technical_Data_Progressive__c);
+                    if(keyControl == distributionControl){
+                        newDistributionPoint.IT_Contract_Line_Item__c = sinItem.Id;
                     }
                 }
+            }
 
-                if(!String.isBlank(newDistributionPoint.Id) && newDistributionPoint.IT_Validity_Start_Date__c != null && newDistributionPoint.IT_Validity_Start_Date__c > System.today() + 1){
-                        Map<Id, SObject> newMapDS = new Map<Id, SObject>();
-                        SObject updateDelverySite = (SObject) newDistributionPoint;
-                        newMapDS.put(newDistributionPoint.Id, updateDelverySite);
-                        updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Distribution_Point__c', 'IT_Future_Change_Distribution_Point__c');
-                        newDPFuture = new ER_Distribution_Point__c();
-                        newDPFuture = (ER_Distribution_Point__c) updateDelverySite;
-                        newDPComplete.IT_Future_Change_Distribution_Point__c = newDPFuture.IT_Future_Change_Distribution_Point__c;
-                    } 
-                    if(!String.isBlank(newDPAddressFuture.Id) && newDPAddressFuture.IT_Address_Validity_Start_Date__c != null && newDPAddressFuture.IT_Address_Validity_Start_Date__c > System.today() + 1){
-                        Map<Id, SObject> newMapDS = new Map<Id, SObject>();
-                        SObject updateDelverySite = (SObject) newDPAddressFuture;
-                        newMapDS.put(newDPAddressFuture.Id, updateDelverySite);
-                        updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Distribution_Point__c', 'IT_Future_Change_Address__c');
-                        newDPFuture = new ER_Distribution_Point__c();
-                        newDPFuture = (ER_Distribution_Point__c) updateDelverySite;
-                        newDPComplete.IT_Future_Change_Address__c = newDPFuture.IT_Future_Change_Address__c;
-                    }
-                    if(String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
-                        newDPFuture = new ER_Distribution_Point__c();
-                        for(SObjectField field:newDistributionPoint.getSObjectType().getDescribe().fields.getMap().values()) {
-                            try {
-                                Object del1Field = newDistributionPoint.get(field);
-                                Object del2Field = newDPAddressFuture.get(field);
-                                if (del2Field != null) {
-                                    newDistributionPoint.put(field, del1Field==null ? del2Field : del1Field);
-                                }
-                            }catch (SObjectException ecc) {
-                                System.debug('populateDeliverySiteMerge: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
+            if(!String.isBlank(newDistributionPoint.Id) && newDistributionPoint.IT_Validity_Start_Date__c != null && newDistributionPoint.IT_Validity_Start_Date__c > System.today()){
+                    Map<Id, SObject> newMapDS = new Map<Id, SObject>();
+                    SObject updateDelverySite = (SObject) newDistributionPoint;
+                    newMapDS.put(newDistributionPoint.Id, updateDelverySite);
+                    updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Distribution_Point__c', 'IT_Future_Change_Distribution_Point__c');
+                    newDPFuture = new ER_Distribution_Point__c();
+                    newDPFuture = (ER_Distribution_Point__c) updateDelverySite;
+                    newDPComplete.IT_Future_Change_Distribution_Point__c = newDPFuture.IT_Future_Change_Distribution_Point__c;
+                } 
+                if(!String.isBlank(newDPAddressFuture.Id) && newDPAddressFuture.IT_Address_Validity_Start_Date__c != null && newDPAddressFuture.IT_Address_Validity_Start_Date__c > System.today()){
+                    Map<Id, SObject> newMapDS = new Map<Id, SObject>();
+                    SObject updateDelverySite = (SObject) newDPAddressFuture;
+                    newMapDS.put(newDPAddressFuture.Id, updateDelverySite);
+                    updateDelverySite = APIT11_Utilities.FutureChange(newMapDS, 'ER_Distribution_Point__c', 'IT_Future_Change_Address__c');
+                    newDPFuture = new ER_Distribution_Point__c();
+                    newDPFuture = (ER_Distribution_Point__c) updateDelverySite;
+                    newDPComplete.IT_Future_Change_Address__c = newDPFuture.IT_Future_Change_Address__c;
+                }
+                if(String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
+                    newDPFuture = new ER_Distribution_Point__c();
+                    for(SObjectField field:newDistributionPoint.getSObjectType().getDescribe().fields.getMap().values()) {
+                        try {
+                            Object del1Field = newDistributionPoint.get(field);
+                            Object del2Field = newDPAddressFuture.get(field);
+                            if (del2Field != null) {
+                                newDistributionPoint.put(field, del1Field==null ? del2Field : del1Field);
                             }
+                        }catch (SObjectException ecc) {
+                            System.debug('populateDeliverySiteMerge: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
                         }
-                        upsertDistributionPointMethod.add(newDistributionPoint);    
                     }
-                    else if(!String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
-                        newDPFuture = new ER_Distribution_Point__c();
-                        newDPFuture = newDPAddressFuture;
-                        newDPFuture.ER_Delivery_Site__c = newDistributionPoint.ER_Delivery_Site__c;
-                        newDPFuture.IT_Future_Change_Distribution_Point__c = newDPComplete.IT_Future_Change_Distribution_Point__c;
-                        upsertDistributionPointMethod.add(newDPFuture);
-                    }
-                    else if(String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && !String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
-                        newDPFuture = new ER_Distribution_Point__c();
-                        newDPFuture = newDistributionPoint;
-                        newDPFuture.ER_Delivery_Site__c = newDistributionPoint.ER_Delivery_Site__c;
-                        newDPFuture.IT_Future_Change_Address__c = newDPComplete.IT_Future_Change_Address__c;
-                        upsertDistributionPointMethod.add(newDPFuture);
-                    }else{
-                        upsertDistributionPointMethod.add(newDPComplete);    
-                    }
+                    upsertDistributionPointMethod.add(newDistributionPoint);    
+                }
+                else if(!String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
+                    newDPFuture = new ER_Distribution_Point__c();
+                    newDPFuture = newDPAddressFuture;
+                    newDPFuture.ER_Delivery_Site__c = newDistributionPoint.ER_Delivery_Site__c;
+                    newDPFuture.IT_Future_Change_Distribution_Point__c = newDPComplete.IT_Future_Change_Distribution_Point__c;
+                    upsertDistributionPointMethod.add(newDPFuture);
+                }
+                else if(String.isBlank(newDPComplete.IT_Future_Change_Distribution_Point__c) && !String.isBlank(newDPComplete.IT_Future_Change_Address__c)){
+                    newDPFuture = new ER_Distribution_Point__c();
+                    newDPFuture = newDistributionPoint;
+                    newDPFuture.ER_Delivery_Site__c = newDistributionPoint.ER_Delivery_Site__c;
+                    newDPFuture.IT_Future_Change_Address__c = newDPComplete.IT_Future_Change_Address__c;
+                    upsertDistributionPointMethod.add(newDPFuture);
+                }else{
+                    upsertDistributionPointMethod.add(newDPComplete);    
+                }
 
-                //upsertDistributionPointMethod.add(newDistributionPoint);
-            }
-            controlActivityACPresent.add(singleDistributionPoint.IT_AC_Activity);   
+            //upsertDistributionPointMethod.add(newDistributionPoint);
         }
         return upsertDistributionPointMethod;
     }
@@ -1737,11 +1533,7 @@ global class WSIT03_ACWS  {
                 if(mapgroupSF != null && mapgroupSF.size() > 0 && mapgroupSF.Keyset().contains(singleGroup.IT_Group_Code+singleGroup.IT_Group_Type+singleGroup.IT_Client_Code)){
                     newGroup = new IT_Group_Code__c(Id = mapgroupSF.get(singleGroup.IT_Group_Code+singleGroup.IT_Group_Type+singleGroup.IT_Client_Code).Id);
                     newFutureComplete = new IT_Group_Code__c(Id = mapgroupSF.get(singleGroup.IT_Group_Code+singleGroup.IT_Group_Type+singleGroup.IT_Client_Code).Id);
-                }
-
-                if(singleGroup.IT_Validity_Start_Date != null && singleGroup.IT_Validity_Start_Date == System.today() + 1)
-                    newGroup.IT_Future_Change_Group_Code__c = '';
-
+                }    
                 newGroup.Name = singleGroup.IT_Group_Code + ' - ' +singleGroup.IT_Group_Type;
                 newGroup.IT_Client_Code__c = singleGroup.IT_Client_Code;
                 newGroup.IT_Group_Code__c = singleGroup.IT_Group_Code;
@@ -1756,7 +1548,7 @@ global class WSIT03_ACWS  {
                     newGroup.IT_Group__c = mapGroupParent.get(singleGroup.IT_Client_Code).Id;
 
                 // Change Future
-                if(!String.isBlank(newGroup.Id) && newGroup.IT_Validity_Start_Date__c != null && newGroup.IT_Validity_Start_Date__c > System.today() + 1){
+                if(!String.isBlank(newGroup.Id) && newGroup.IT_Validity_Start_Date__c != null && newGroup.IT_Validity_Start_Date__c > System.today()){
                     Map<Id, SObject> newMapDS = new Map<Id, SObject>();
                     SObject updateGroupCode = (SObject) newGroup;
                     newMapDS.put(newGroup.Id, updateGroupCode);
@@ -1777,103 +1569,6 @@ global class WSIT03_ACWS  {
             }
         }    
         return upsertGroupMethod;
-    }
-
-    private static List<IT_Additional_Expenses__c> populateAdditionalExpenses(ER_Financial_Center__c financialCenterObj, List<IT_Additional_Expenses> additionalExpensesRequest, Map<String, IT_Additional_Expenses__c> mapAdditionalExpensesSF){
-        List<IT_Additional_Expenses__c> upsertAdditionalExpensesMethod = new List<IT_Additional_Expenses__c>();
-
-        if(additionalExpensesRequest != null && additionalExpensesRequest.size() > 0){
-            for(IT_Additional_Expenses singleAdditionalExpenses : additionalExpensesRequest){
-                IT_Additional_Expenses__c newAdditionalExpenses = new IT_Additional_Expenses__c();
-            
-                System.debug('singleGroup.IT_Code:: '+singleAdditionalExpenses.IT_Code);
-                if(mapAdditionalExpensesSF != null && mapAdditionalExpensesSF.size() > 0 && mapAdditionalExpensesSF.Keyset().contains(singleAdditionalExpenses.IT_Client_Code+singleAdditionalExpenses.IT_Code)){
-                    newAdditionalExpenses = new IT_Additional_Expenses__c(Id = mapAdditionalExpensesSF.get(singleAdditionalExpenses.IT_Client_Code+singleAdditionalExpenses.IT_Code).Id);
-                }    
-                newAdditionalExpenses.IT_Client_Code__c = singleAdditionalExpenses.IT_Client_Code;
-                newAdditionalExpenses.IT_Code__c = singleAdditionalExpenses.IT_Code;
-                newAdditionalExpenses.IT_AC_User__c = singleAdditionalExpenses.IT_AC_User;
-                newAdditionalExpenses.IT_Amount__c = singleAdditionalExpenses.IT_Amount;
-                newAdditionalExpenses.IT_Progressive__c = singleAdditionalExpenses.IT_Progressive;
-                newAdditionalExpenses.IT_Calculation_Type__c = singleAdditionalExpenses.IT_Calculation_Type;
-
-                if(singleAdditionalExpenses.IT_Validity_End_Date != null)
-                    newAdditionalExpenses.IT_Validity_End_Date__c = singleAdditionalExpenses.IT_Validity_End_Date;
-                if(singleAdditionalExpenses.IT_Validity_Start_Date != null)
-                    newAdditionalExpenses.IT_Validity_Start_Date__c = singleAdditionalExpenses.IT_Validity_Start_Date;
-                newAdditionalExpenses.IT_Financial_Center__c = financialCenterObj.Id;
-                        
-                upsertAdditionalExpensesMethod.add(newAdditionalExpenses);
-            }
-        }    
-        return upsertAdditionalExpensesMethod;
-    }
-
-    private static List<IT_Note__c> populateNotes(ER_Financial_Center__c financialCenterObj, List<IT_Note> notesRequest, Map<String, IT_Note__c> mapNotesSF, Map<String, ER_Delivery_Site__c> mapDelSF, Map<String, ER_Distribution_Point__c> mapDisSF){
-        List<IT_Note__c> upsertNotesMethod = new List<IT_Note__c>();
-
-        if(notesRequest != null && notesRequest.size() > 0){
-            for(IT_Note singleNotes : notesRequest){
-                IT_Note__c newNote = new IT_Note__c();
-            
-                System.debug('singleNotes.IT_Progressive:: '+singleNotes.IT_Progressive);
-                if(mapNotesSF != null && mapNotesSF.size() > 0 && mapNotesSF.Keyset().contains(singleNotes.IT_Client_Code+singleNotes.IT_Progressive)){
-                    newNote = new IT_Note__c(Id = mapNotesSF.get(singleNotes.IT_Client_Code+singleNotes.IT_Progressive).Id);
-                }    
-                newNote.Name = singleNotes.IT_Title;
-                newNote.IT_Progressive__c = singleNotes.IT_Progressive;
-                newNote.IT_Client_Code__c = singleNotes.IT_Client_Code;
-                newNote.IT_AC_Activity__c = singleNotes.IT_AC_Activity;
-                newNote.IT_SF_Activity__c = singleNotes.IT_SF_Activity;
-                newNote.IT_AC_Delivery__c = singleNotes.IT_AC_Delivery;
-                newNote.IT_SF_Delivery__c = singleNotes.IT_SF_Delivery;
-                newNote.IT_Note_Type__c = singleNotes.IT_Note_Type; 
-                newNote.IT_Text_Notes__c = singleNotes.IT_Text_Notes;
-                newNote.IT_Validity_Start_Date__c = singleNotes.IT_Validity_Start_Date;
-                newNote.IT_Validity_End_Date__c = singleNotes.IT_Validity_End_Date;
-                newNote.IT_AC_User__c = singleNotes.IT_AC_User;
-                newNote.IT_Financial_Center__c = financialCenterObj.Id;
-
-                System.debug('mapDisSF:: '+mapDisSF.Keyset());
-                System.debug('singleNotes.IT_AC_Activity:: '+singleNotes.IT_AC_Activity);
-                if(singleNotes.IT_SF_Delivery != null && mapDelSF != null && mapDelSF.size() > 0 && mapDelSF.keyset().contains(String.valueOf(singleNotes.IT_SF_Delivery)))
-                    newNote.IT_Delivery_Site__c = mapDelSF.get(String.valueOf(singleNotes.IT_SF_Delivery)).Id;
-                else if(singleNotes.IT_AC_Delivery != null && mapDelSF != null && mapDelSF.size() > 0 && mapDelSF.keyset().contains(String.valueOf(singleNotes.IT_AC_Delivery)))
-                    newNote.IT_Delivery_Site__c = mapDelSF.get(String.valueOf(singleNotes.IT_AC_Delivery)).Id;      
-                else if(!String.isBlank(singleNotes.IT_AC_Activity) && mapDisSF != null && mapDisSF.size() > 0 && mapDisSF.keyset().contains(singleNotes.IT_AC_Activity))    
-                    newNote.IT_Distribution_Point__c = mapDisSF.get(singleNotes.IT_AC_Activity).Id;
-                        
-                upsertNotesMethod.add(newNote);
-            }
-        }    
-        return upsertNotesMethod;
-    }
-
-    private static List<ER_Distribution_Point__c> updateDistributionFromDeleivery(List<IT_Delivery_Site> listDeliveries, Map<String, ER_Distribution_Point__c> mapDistributionSF, List<ER_Delivery_Site__c> listDeliverySF){
-        List<ER_Distribution_Point__c> listDis = new List<ER_Distribution_Point__c>();
-        ER_Distribution_Point__c updatedeistribution = new ER_Distribution_Point__c();
-        String keyCode = '';  
-        Map<String, ER_Delivery_Site__c> mapDeliverySF = new Map<String, ER_Delivery_Site__c>();
-        for(ER_Delivery_Site__c sinDe :listDeliverySF) 
-            mapDeliverySF.put(sinDe.IT_Delivery_AC__c, sinDe);
-
-        System.debug('listDeliveries:: '+listDeliveries);
-        for(IT_Delivery_Site sinfleDel : listDeliveries){
-            if(sinfleDel.IT_Validity_End_Date == null){
-                if(!String.isBlank(sinfleDel.IT_Activity_AC)) 
-                    keyCode = sinfleDel.IT_Activity_AC;
-                else
-                    keyCode = sinfleDel.IT_Activity_SF;
-
-                if(mapDistributionSF != null && mapDistributionSF.size() > 0 && mapDistributionSF.keyset().contains(keyCode)){
-                    updatedeistribution = new ER_Distribution_Point__c(Id = mapDistributionSF.get(keyCode).Id);
-                    updatedeistribution.ER_Delivery_Site__c = mapDeliverySF.get(sinfleDel.IT_Delivery_AC).Id;
-                    listDis.add(updatedeistribution);
-                }    
-            }     
-        }
-        System.debug('listDis:: '+listDis);
-        return listDis;     
     }
 
     /**
@@ -1967,14 +1662,6 @@ global class WSIT03_ACWS  {
         public String IT_Economic_AC_User;
         public Date IT_Economic_Validity_Start_Date;
         public Date IT_Economic_Validity_End_Date;
-        public Decimal IT_Discount_Percentage_2;
-        public Decimal IT_Discount_Percentage_3;
-        public Date IT_Discount_Validity_Date_2;
-        public Date IT_Discount_Validity_Date_3;
-        public Decimal IT_Extradiscount_Percentage;
-        public String IT_Type_Extradiscount;
-
-
         //Add address fields
         public List<IT_Contract> IT_Contract;
         public List<IT_Billable_Service> IT_Billable_Service;
@@ -1982,8 +1669,6 @@ global class WSIT03_ACWS  {
         public List<IT_Delivery_Site> IT_Delivery_Site;
         public List<IT_Group> IT_Group;
         public List<IT_Address> IT_Address;
-        public List<IT_Additional_Expenses> IT_Additional_Expenses;
-        public List<IT_Note> IT_Note;
     }
 
     public class IT_Contract{ 
@@ -2113,8 +1798,6 @@ global class WSIT03_ACWS  {
         public String IT_AC_User;
         public Date IT_Validity_Start_Date;
         public Date IT_Validity_End_Date;
-        public Date IT_Note_Validity_Start_Date;
-        public Date IT_Note_Validity_End_Date;
     }
 
     public class IT_Distribution_Point{
@@ -2138,16 +1821,6 @@ global class WSIT03_ACWS  {
         public String IT_AC_User;
         public Date IT_Validity_Start_Date;
         public Date IT_Validity_End_Date;
-        public Date IT_Cost_Center_End_Date;
-        public Date IT_Suspension_Start_Date;
-        public Date IT_Suspension_End_Date;
-        public String IT_Authorization_Suspension_User_Text;
-        public String IT_Authorization_Reactivation_User_Text;
-        public String IT_Suspension_Reason;
-        public String IT_Notes_Type;
-        public String IT_Notes;
-        public Date IT_Note_Validity_Start_Date;
-        public Date IT_Note_Validity_End_Date;
     }
 
     public class IT_Address{
@@ -2186,32 +1859,6 @@ global class WSIT03_ACWS  {
         public String IT_Delivery_SF;
         public String IT_Activity_AC;
         public String IT_Activity_SF;    
-    }
-
-    public class IT_Additional_Expenses {
-        public Integer IT_Progressive;
-        public String IT_Client_Code;
-        public String IT_Code;
-        public Decimal IT_Amount;
-        public String IT_Calculation_Type; 
-        public String IT_AC_User; 
-        public Date IT_Validity_Start_Date; 
-        public Date IT_Validity_End_Date;    
-    }
-
-    public class IT_Note {
-        public Integer IT_Progressive;
-        public String IT_Client_Code;
-        public String IT_AC_Activity;
-        public String IT_SF_Activity;
-        public Integer IT_AC_Delivery;
-        public Integer IT_SF_Delivery;
-        public String IT_Note_Type; 
-        public String IT_Title;
-        public String IT_Text_Notes; 
-        public Date IT_Validity_Start_Date; 
-        public Date IT_Validity_End_Date; 
-        public String IT_AC_User;   
     }
 
     global class response {

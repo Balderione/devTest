@@ -351,6 +351,7 @@ public class APHU12_Contract_Management {
 			}
 			else if(action == 'Termination'){
 
+				contractInst.ER_TerminationReason__c = Label.LAB_SF_Contract_Amendment;
 				contractInst.ER_Termination_date_in_OS__c = Datetime.now();
 				contractInst.ER_Terminated_Date__c  = Datetime.now();
 				terminateContract(contractInst);

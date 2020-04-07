@@ -33,8 +33,8 @@ global class VFCER05_Opportunity_EditPrice {
 			opportunityFields.add('ER_IsAmended__c');
 			opportunityFields.add('ER_AmendedFromOpportunity__r.ContractId');
 			opportunityFields.add('ER_AmendedFromContract__c');
-			opportunityFields.add('ER_Business_Unit__c');
-
+			opportunityFields.add('ER_BU_Picklist__c');
+			
 			if (!Test.isRunningTest()) controller.addFields(opportunityFields);
 
 			opportunityRecord = (Opportunity) controller.getRecord();
@@ -131,6 +131,22 @@ global class VFCER05_Opportunity_EditPrice {
 		set {}
 	}
 
+    /**
+    * @author Oussama LASFAR
+    * @date 15/10/2019 (dd/mm/yyyy)
+    * @description getProductDependencies : get Products dependencies
+    */
+    @RemoteAction
+    public static Map<Id, ER_Product_Dependency__c> getProductDependencies(String oppBusinessUnit) {
+        
+        Map<Id, ER_Product_Dependency__c> mapProductDependencies = new Map<Id, ER_Product_Dependency__c>([SELECT id, ER_Controlling_Product__c, ER_Controlling_Product__r.Name, ER_Controlling_Product__r.ER_Solution__c, ER_Dependent_Product__c, ER_Dependent_Product__r.Name, ER_Dependent_Product__r.ER_Solution__c, ER_Configuration__c
+                                                 FROM ER_Product_Dependency__c
+                                                 WHERE ER_Controlling_Product__r.ER_Business_Unit__c =: oppBusinessUnit AND ER_Dependent_Product__r.ER_Business_Unit__c =: oppBusinessUnit
+                                                 AND ER_Controlling_Product__r.IsActive = true AND ER_Dependent_Product__r.IsActive = true]);
+
+        return mapProductDependencies;
+    }    
+
 	/**
 	* @author Oussama LASFAR
 	* @date 27/12/2018 (dd/mm/yyyy)
@@ -182,6 +198,8 @@ global class VFCER05_Opportunity_EditPrice {
 
 		return mapProductOli;
 	}
+    
+    
 
 	public class VisualforceException extends Exception {}
 }

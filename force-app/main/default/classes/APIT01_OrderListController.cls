@@ -1,4 +1,13 @@
-public class APIT01_OrderListController {
+public class APIT01_OrderListController extends APIT00_Behaviour{
+
+    public class OrdersException extends Exception{}
+    public class OrdersResponse extends APIT00_AuraResponse{
+        @AuraEnabled public APIT00_OrdersRest.ResponseModel payload;
+    }
+    public class FinacialCenterResponse extends APIT00_AuraResponse{
+        @AuraEnabled public List<ER_Financial_Center__c> listData;
+    }
+
     @AuraEnabled
     public static List<picklistWrapper> getPicklistValues(String nameObj, String namePicklistField) {
         List<picklistWrapper> lstPWrapper = new List<picklistWrapper>();
@@ -10,126 +19,166 @@ public class APIT01_OrderListController {
     }
 
     @AuraEnabled
-    public static Case callCase(String idCase) {
-        List<Case> contextualizeCase = new List<Case>();
-        contextualizeCase = [Select Id, Account.ER_VAT_Number__c, IT_Financial_Center__r.IT_Financial_Center__c, IT_Financial_Center__r.Name, IT_Circuit__r.IT_Circuit_Code__c From Case Where Id =: idCase limit 1];
+    public static Case callCase(String caseId) {
+        List<Case> contextualizeCase = [
+            SELECT Id, Account.ER_VAT_Number__c, IT_Financial_Center__r.IT_Financial_Center__c, 
+                IT_Financial_Center__r.Name, IT_Circuit__r.IT_Circuit_Code__c 
+            FROM Case 
+            WHERE Id =: caseId 
+            LIMIT 1
+        ];
 
         if(contextualizeCase != null && contextualizeCase.size() > 0)
             return contextualizeCase[0]; 
         else
             return null; 
+    }
+
+    @AuraEnabled
+    public static FinacialCenterResponse getFinancialCenter(String accountId){
+        DebugStart('APIT02_InvoicesListController', 'getFinancialCenter');
+        Debug('accountId', accountId);
+
+        FinacialCenterResponse response = new FinacialCenterResponse();
+
+        try{
+            response.listData = [
+                SELECT Name, IT_Financial_Center__c
+                FROM ER_Financial_Center__c 
+                WHERE ER_Account_Name__c = :accountId
+            ];
+
+            response.isSuccess = true;
+        }catch(OrdersException ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
+        }catch(Exception ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
+        }
+
+        Debug('response', response);
+        DebugEnd();
+
+        return response;
+    }
+
+    @AuraEnabled
+    public static OrdersResponse listOrderAccount(Date dataDa, Date dataA, String accountId, String finacialCenter){
+        DebugStart('APIT01_OrderListController', 'listOrderAccount');
+        OrdersResponse response = new OrdersResponse();
+
+        try{
+            Date dateFrom;
+            Date dateTo;
             
+            if(dataDa == null || dataA == null){
+                dateFrom = date.today().addmonths(-2);
+                dateTo = date.today();
+            }else{
+                dateFrom = dataDa;
+                dateTo = dataA;
+            }
+
+            List<Account> accounts = [
+                SELECT Id, ER_VAT_Number__c 
+                FROM Account
+                WHERE Id = :accountId
+            ];
+
+            List<ER_Financial_Center__c> finacialCenters = [
+                SELECT Name, IT_Financial_Center__c, IT_Circuit_Code__c
+                FROM ER_Financial_Center__c 
+                WHERE ER_Account_Name__c = :accountId
+                AND IT_Financial_Center__c = :finacialCenter
+            ];
+
+            if(accounts.size() == 0) throw new OrdersException('Account not found');
+            if(finacialCenters.size() == 0) throw new OrdersException('Financial Center not found');
+
+            Account account = accounts.get(0);
+            ER_Financial_Center__c finacialCenterObject = finacialCenters.get(0);
+            Debug('finacialCenterObject', finacialCenterObject);
+            
+            APIT00_OrdersRest.ResponseModel responseCallout = APIT00_OrdersRest.getOrders(
+                finacialCenter,
+                finacialCenterObject.IT_Circuit_Code__c,
+                account.ER_VAT_Number__c,
+                dateFrom,
+                dateTo
+            );
+
+            response.payload = responseCallout;
+
+            if(responseCallout.meta.status == 'failed') throw new OrdersException('Error 500');
+            response.isSuccess = true;
+        }catch(OrdersException ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
+        }catch(Exception ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
+        }
+
+        Debug('response', response);
+        DebugEnd();
+
+        return response;
     }
     
     @AuraEnabled
-    public static List<data> listOrder(Date dataDa, Date dataA, String codeCirc, String codeCli, String piva, String codeServizio, Boolean AllFilter, String rawHmac, String idCase) {
+    public static OrdersResponse listOrder(Date dataDa, Date dataA, String caseId) {
+        DebugStart('APIT01_OrderListController', 'listOrder');
+        OrdersResponse response = new OrdersResponse();
+
         try{
-            List<Case> contextualizeCase = new List<Case>();
-        	contextualizeCase = [Select Id, Account.ER_VAT_Number__c, IT_Financial_Center__r.IT_Financial_Center__c, IT_Financial_Center__r.Name, IT_Circuit__r.IT_Circuit_Code__c From Case Where Id =: idCase limit 1];
+            Date dateFrom;
+            Date dateTo;
             
-            system.debug('codeCli::: '+codeCli);
-            system.debug('piva::: '+piva);
-            system.debug('codeServizio::: '+codeServizio);
-            String returnJson = '';
-            String responseBody = '';
-            date dateFrom;
-            date dateTo;
-            //check date
             if(dataDa == null || dataA == null){
-            dateFrom = date.today().addmonths(-2);
-            dateTo = date.today();
-            }
-            else{
-            dateFrom = dataDa;
-            dateTo = dataA;
+                dateFrom = date.today().addmonths(-2);
+                dateTo = date.today();
+            }else{
+                dateFrom = dataDa;
+                dateTo = dataA;
             }
 
-            
-            //String requestSFDC = 'https://salesforce.it.dev.edenred.io/v1/orders?idRichiedente=SF&codCircuito='+codeCirc+'&codCli='+codeCli+'&partitaIva='+piva+'&dateFrom='+dataDa+'&dateTo='+dataA+'&codServ='+codeServizio;
-            String requestSFDC = 'https://salesforce.dev.it.edenred.io/v1/orders?date-from=2019-10-07&date-to=2019-10-07';
-            string requestURI = '/orders?applicant-id=SF&date-from='+string.valueOf(dateFrom)+'&date-to='+string.valueOf(dateTo);
-            if(contextualizeCase[0].IT_Financial_Center__r.IT_Financial_Center__c != null){
-                requestURI +='&client-ref='+contextualizeCase[0].IT_Financial_Center__r.IT_Financial_Center__c;
-            }
-            if(contextualizeCase[0].IT_Circuit__r.IT_Circuit_Code__c != null){
-               requestURI +='&circuit-code='+contextualizeCase[0].IT_Circuit__r.IT_Circuit_Code__c; 
-            }
-            if(contextualizeCase[0].Account.ER_VAT_Number__c != null){
-               requestURI +='&vat-code='+contextualizeCase[0].Account.ER_VAT_Number__c;  
-            }                
-            system.debug('requestSFDC::: '+requestSFDC);
-            Http callHttp = new Http();
-            //+'&client-type='+clientType+'&date-from='+dataDa+'&date-to='+dataA+'&user-profile='+userProfile+'&company='+company
-            //
-            //codeCli = '019562';
-            HttpRequest requ = APER06_WebserviceUtility.getHttpRequest(
-                requestURI,
-                'GET',
-                null,
-                null);
-            requ.setHeader('Content-Type', 'application/java');
-            HttpResponse res = callHttp.send(requ);
-            responseBody = res.getbody();
-            
-            system.debug('responseBody::: '+responseBody);
+            List<Case> contextualizeCase = new List<Case>();
+            contextualizeCase = [
+                SELECT Id, Account.ER_VAT_Number__c, IT_Financial_Center__r.IT_Financial_Center__c, 
+                    IT_Financial_Center__r.Name, IT_Circuit__r.IT_Circuit_Code__c 
+                FROM Case 
+                WHERE Id =: caseId 
+                LIMIT 1
+            ];
 
-            Request req = (Request) JSON.deserializeStrict(responseBody, Request.class);//RESPONSEBODY WHEN MULE WORKS
-            List<data> listOrder = new List<data>();
-            listOrder = req.data;
-            if (!AllFilter){
-                for(data singlerequest : listOrder){
-                    string queryString = '?para_funzione=VisOrdineTestata';
-                    if(singlerequest.client_ref != null){
-                        queryString+='&para_codice_cliente='+singlerequest.client_ref;
-                    }
-                    if(singlerequest.company_ref != null){
-                        queryString+='&para_codice_societa='+singlerequest.company_ref;
-                    }
-                    if(singlerequest.order_year != null){
-                        queryString+='&para_anno_ordine='+singlerequest.order_year;
-                    }
-                    if(singlerequest.order_ref != null){
-                        queryString+='&para_codice_ordine='+singlerequest.order_ref;
-                    }
-                    if(singlerequest.circuit_code != null){
-                        queryString+='&para_codice_circuito='+singlerequest.circuit_code; 
-                    }
-                    singlerequest.detailURL = '/lightning/cmp/c__LNIT00_iframeOpener?c__calledSystem='+singlerequest.application+'&c__isIframe=false&c__queryString='+EncodingUtil.urlEncode(queryString, 'UTF-8');
-                    //singlerequest.detailURL = 'https://eit-ssobridge-d.edenred.net/'+singlerequest.application+'?';
-                }
-            }
-            else{
-                for(data singlerequest : listOrder){
-                    string queryString = '?para_funzione=VisOrdineTestata';
-                    if(singlerequest.client_ref != null){
-                        queryString+='&para_codice_cliente='+singlerequest.client_ref;
-                    }
-                    if(singlerequest.company_ref != null){
-                        queryString+='&para_codice_societa='+singlerequest.company_ref;
-                    }
-                    if(singlerequest.order_year != null){
-                        queryString+='&para_anno_ordine='+singlerequest.order_year;
-                    }
-                    if(singlerequest.order_ref != null){
-                        queryString+='&para_codice_ordine='+singlerequest.order_ref;
-                    }
-                    if(singlerequest.circuit_code != null){
-                        queryString+='&para_codice_circuito='+singlerequest.circuit_code; 
-                    }
-                    singlerequest.detailURL = 'https://eit-ssobridge-d.edenred.net/'+singlerequest.application+queryString;
-                    //singlerequest.detailURL = 'https://eit-ssobridge-d.edenred.net/'+singlerequest.application+'?';
-                }
-            }
-           
-            system.debug('listOrderSize::: '+listOrder.size());
-            system.debug('req::: '+req);     
-            system.debug('req.listOrder::: '+req.data);  
-            
-            return listOrder;    
-        }catch(Exception ecc){
-            System.debug('Error listviewController: '+ecc.getMessage()+ ' at line: '+ecc.getLineNumber()+' stack trace: '+ecc.getStackTraceString());
-            return null; 
+            if(contextualizeCase.size() == 0) throw new OrdersException('Case not found');
+
+            Case caseData = contextualizeCase[0];
+            APIT00_OrdersRest.ResponseModel responseCallout = APIT00_OrdersRest.getOrders(
+                caseData.IT_Financial_Center__r.IT_Financial_Center__c,
+                caseData.IT_Circuit__r.IT_Circuit_Code__c,
+                caseData.Account.ER_VAT_Number__c,
+                dateFrom,
+                dateTo
+            );
+
+            response.payload = responseCallout;
+            if(responseCallout.meta.status == 'failed') throw new OrdersException('Error 500');
+
+            response.isSuccess = true;
+        }catch(OrdersException ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
+        }catch(Exception ex){
+            Debug('Exception', ex.getStackTraceString());
+            response.errorMessage = ex.getMessage();
         }
+
+        Debug('response', response);
+        DebugEnd();
+
+        return response;
     }
     
     public class picklistWrapper {      

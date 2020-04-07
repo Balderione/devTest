@@ -249,13 +249,8 @@ global with sharing class  WSIT07_AC_Condition_Change {
         upsertFCRequestMethod.IT_Discount_Type__c = singleCondition.IT_Discount_Type;
         upsertFCRequestMethod.IT_Discount_Percentage__c = singleCondition.IT_Discount_Percentage;
         upsertFCRequestMethod.IT_Contract_Start_Date__c = singleCondition.StartDate;
-        if(!String.isblank(singleCondition.IT_Transport_Cost)){
-            upsertFCRequestMethod.IT_Transport_Cost__c = singleCondition.IT_Transport_Cost; 
-            upsertFCRequestMethod.IT_No_Cost_Reason__c = '';
-        }else if(!String.isblank(singleCondition.IT_No_Cost_Reason)){
-            upsertFCRequestMethod.IT_Transport_Cost__c = ''; 
-            upsertFCRequestMethod.IT_No_Cost_Reason__c = singleCondition.IT_No_Cost_Reason;
-        }    
+        upsertFCRequestMethod.IT_Transport_Cost__c = singleCondition.IT_Transport_Cost; 
+        upsertFCRequestMethod.IT_No_Cost_Reason__c = singleCondition.IT_No_Cost_Reason;
         upsertFCRequestMethod.IT_Contract_Number__c = singleCondition.IT_Contract_Number;
         upsertFCRequestMethod.IT_Attendance_Type__c = singleCondition.IT_Attendance_Type;
         upsertFCRequestMethod.IT_Contract_Type__c = singleCondition.IT_Contract_Type;

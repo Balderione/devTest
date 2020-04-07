@@ -37,7 +37,7 @@ public class VFCER01_Asset_Transactions_Balance {
         
         assetFields = new List<String>();
         balanceInst = new BalanceWrapper();
-        
+
         assetFields.add('ER_Edenred_Solution__c');
         assetFields.add('Accountid');
         assetFields.add('Status');
