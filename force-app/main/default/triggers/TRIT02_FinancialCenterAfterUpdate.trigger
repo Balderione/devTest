@@ -35,10 +35,6 @@ trigger TRIT02_FinancialCenterAfterUpdate on ER_Financial_Center__c (after updat
             List<ER_Financial_Center__c> JustFinCentList = new List<ER_Financial_Center__c>();
             List<ER_Financial_Center__c> financialCenterActive = new List<ER_Financial_Center__c>();
             List<ER_Financial_Center__c> changeRequest = new List<ER_Financial_Center__c>();
-
-            //AD - Delete FC and Childs with client status equals 10
-            List<String> idFcForDelete = new List<String>();
-            List<ER_Financial_Center__c> listFcForDelete = new List<ER_Financial_Center__c>();
             for(string singleId : listEconomicConditions.Keyset()){
                 Boolean EconomicCondChanged = false;
                 Boolean FinCentChanged = false;
@@ -46,7 +42,7 @@ trigger TRIT02_FinancialCenterAfterUpdate on ER_Financial_Center__c (after updat
                 Boolean changeRequestBool = false;
                 if(trigger.newMap.get(singleId).IT_Confirm_Flow__c != trigger.oldMap.get(singleId).IT_Confirm_Flow__c){
                     changeRequestBool = true;
-                }else if((trigger.newMap.get(singleId).IT_Client_Status__c != trigger.oldMap.get(singleId).IT_Client_Status__c && trigger.oldMap.get(singleId).IT_Client_Status__c == '01' && (trigger.newMap.get(singleId).IT_Client_Status__c == '02') || trigger.newMap.get(singleId).IT_Client_Status__c == '05')){
+                }else if((trigger.newMap.get(singleId).IT_Client_Status__c != trigger.oldMap.get(singleId).IT_Client_Status__c && trigger.oldMap.get(singleId).IT_Client_Status__c == '01' && trigger.newMap.get(singleId).IT_Client_Status__c == '02')){
                     activeFC = true;
                 }else if(trigger.newMap.get(singleId).IT_SkipActivation__c == trigger.newMap.get(singleId).IT_SkipActivation__c){    
                     //Condizioni Economiche
@@ -97,11 +93,9 @@ trigger TRIT02_FinancialCenterAfterUpdate on ER_Financial_Center__c (after updat
                     trigger.newMap.get(singleId).IT_Admin_Data_Validity_End_Date__c != trigger.oldMap.get(singleId).IT_Admin_Data_Validity_End_Date__c){
                         //Financial Center Changed
                         FinCentChanged = true;
-                        //AD - Delete FC and Childs with client status equals 10
-                        if(trigger.newMap.get(singleId).IT_Client_Status__c != trigger.oldMap.get(singleId).IT_Client_Status__c && trigger.newMap.get(singleId).IT_Client_Status__c == '10')
-                            idFcForDelete.add(singleId);  
+                        
                     }
-                } 
+                }
 
                 System.debug('FinCentChanged::: '+FinCentChanged);
                 System.debug('EconomicCondChanged::: '+EconomicCondChanged); 
@@ -126,34 +120,47 @@ trigger TRIT02_FinancialCenterAfterUpdate on ER_Financial_Center__c (after updat
                 
             }
 
-            if(changeRequest == null || changeRequest.size() == 0){
-                if(financialCenterActive != null && financialCenterActive.size() > 0){
-                    APIT12_CallOutbound.createRequestFinancialCenterActivation(financialCenterActive);
-                }else{
-
-                    Map <String , List<ER_Financial_Center__c>> triggerMap = new Map <String , List<ER_Financial_Center__c>>();
-                    if(DualFincentList != null && DualFincentList.size() > 0){
-                        triggerMap.put('Dual' , DualFincentList );
-                        //Call method with DUAL
-                    }
-                    if(JustFinCentList != null && JustFinCentList.size() > 0){
-                        triggerMap.put('ER_Financial_Center__c' , JustFinCentList );   
-                        //Call method with FINANCIAL CENTER
-                    }
-                    if(EconomicCondList != null && EconomicCondList.size() > 0){
-                        triggerMap.put('EconomicCondition' , EconomicCondList );
-                        //Call method with ECONOMIC CONDITIONS 
-                    }
-                    
-                    if(triggerMap != null && triggerMap.size() > 0)
-                        APIT12_CallOutbound.createRequestFinancialCenter(triggerMap);
+            if(financialCenterActive != null && financialCenterActive.size() > 0){
+                APIT12_CallOutbound.createRequestFinancialCenterActivation(financialCenterActive);
+            }else if(changeRequest != null && changeRequest.size() > 0){
+                Contract updateContract = new Contract();
+                SObjectType contractType = Schema.getGlobalDescribe().get('Contract');
+                Map<String,Schema.SObjectField> contractFields = contractType.getDescribe().fields.getMap();
+                String queryCon = 'SELECT ';
+                for(String field : contractFields.keySet()) {
+                    queryCon+=field+',';
                 }
-            }
-            //AD - Delete FC and Childs with client status equals 10
-            if(idFcForDelete != null && idFcForDelete.size() > 0){
-                listFcForDelete = [Select Id, (Select Id From Contract_Line_Items__r), (Select Id From Delivery_Sites__r), (Select Id From Distribution_Points__r), (Select Id From Groups_Code__r), (Select Id From Note__r), (Select Id From Additional_Expenses__r), (Select Id From Bank_Accounts__r), (Select Id From Contracts__r), (Select Id From Contact_Association__r) From ER_Financial_Center__c Where Id IN: idFcForDelete];        
-                delete listFcForDelete; 
-            }        
+                queryCon = queryCon.removeEnd(',');
+                
+                System.debug(queryCon);
+                queryCon += ' FROM Contract WHERE Id =\''+ changeRequest[0].IT_Contract__c+'\'';
+                List<Contract> ContractList = Database.query(queryCon);
+                Map <String , List<ER_Financial_Center__c>> triggerMapEC = new Map <String , List<ER_Financial_Center__c>>();
+                triggerMapEC.put('EconomicCondition' , changeRequest );
+                /*APIT12_CallOutbound.createRequestContract(ContractList, 'Contract');
+                Integer start = System.Now().millisecond();
+                while(System.Now().millisecond()< start+150){ 
+                }*/
+                APIT12_CallOutbound.createRequestFinancialCenter(triggerMapEC);
+
+            }else{
+
+                Map <String , List<ER_Financial_Center__c>> triggerMap = new Map <String , List<ER_Financial_Center__c>>();
+                if(DualFincentList != null && DualFincentList.size() > 0){
+                    triggerMap.put('Dual' , DualFincentList );
+                    //Call method with DUAL
+                }
+                if(JustFinCentList != null && JustFinCentList.size() > 0){
+                    triggerMap.put('ER_Financial_Center__c' , JustFinCentList );
+                    //Call method with FINANCIAL CENTER
+                }
+                if(EconomicCondList != null && EconomicCondList.size() > 0){
+                    triggerMap.put('EconomicCondition' , EconomicCondList );
+                    //Call method with ECONOMIC CONDITIONS 
+                }
+    
+                APIT12_CallOutbound.createRequestFinancialCenter(triggerMap);
+            }    
         }        
     }        
 }

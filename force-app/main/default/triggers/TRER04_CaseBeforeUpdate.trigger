@@ -14,7 +14,8 @@
 */
 trigger TRER04_CaseBeforeUpdate on Case (before update) {
     
-    Map<id,Case> oldCasesMap = Trigger.oldMap;
+   List<Case> casesAssets = new List<Case>();
+   Map<id,Case> oldCasesMap = Trigger.oldMap;
     
     if (APER10_User_Management.canTrigger) {
         
@@ -25,8 +26,17 @@ trigger TRER04_CaseBeforeUpdate on Case (before update) {
                 
                 cs.ER_BUPicklist__c = cs.ER_Business_Unit__c;
             }
+            if(cs.AssetId != oldCasesMap.get(cs.id).AssetId)
+            {
+                casesAssets.add(cs);
+            }
         }
         
         System.debug('###:TRER04_CaseBeforeUpdate before update Start');
+    }
+    if (!casesAssets.isEmpty()) 
+    {
+        System.debug('###:TRER04_CaseBeforeUpdate casesAssets '+casesAssets);
+        APER08_Case_Management.manageCasesAssets(casesAssets);
     }
 }

@@ -37,4 +37,12 @@ trigger TRHU05_AcceptorAfterUpdate on ER_Acceptor__c(after insert, after update)
     if (!acceptorSet.isEmpty() && !currentUser.ER_bypassTrigger__c) {
         WSHU09_SynchronizeAcceptorWS.updateAddAcceptorsFuture(acceptorSet);
     }
+
+    if(trigger.isinsert && APER10_User_Management.canTrigger)
+    {
+        // Create Acceptor to loops related to the new acceptor created     
+        APER22_AcceptorToLoopManagement.CreatenewAcceptorToLoopOnAcceptorInsert(trigger.new);
+        
+    }
+    
 }

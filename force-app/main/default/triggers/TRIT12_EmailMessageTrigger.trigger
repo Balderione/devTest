@@ -5,7 +5,7 @@ trigger TRIT12_EmailMessageTrigger on EmailMessage (after insert) {
             if(trigger.isAfter && APIT15_CasetriggerHandler.isfirsttime){
                 APIT15_CasetriggerHandler.isfirsttime = false;
                 //APIT15_CasetriggerHandler.emailSender(JSON.serialize(mailRecieved));
-                //APIT13_EmailMessageTriggerHandler.SemanticEngine(mailRecieved);
+                APIT13_EmailMessageTriggerHandler.SemanticEngine(mailRecieved);
             }
             if(trigger.isAfter && APIT05_GetRecordType.isfirsttime){
                 APIT05_GetRecordType.isfirsttime = false;

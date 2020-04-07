@@ -32,4 +32,12 @@ trigger TRER10_ER_StoreAfterInsert on ER_Store__c (after insert) {
             }
         }
     }*/
+
+    if(trigger.isinsert && APER10_User_Management.canTrigger)
+    { 
+        // Create Store to loops related to the new Stores created
+        APER21_StoreToLoopManagement.CreatenewStoreToLoopOnStoreInsert(trigger.new);
+        
+    }
+    
 }
