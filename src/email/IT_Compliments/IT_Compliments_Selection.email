@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="overflow-y: hidden;">
+<head><meta content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="noindex,nofollow" name="robots"><meta content="telephone=no" name="format-detection"><meta content="Ordina i tuoi Ticket Compliments®">
+	<title>Ordina i tuoi Ticket Compliments&reg;</title>
+	<style type="text/css">/* Email clients fixes*/
+	#outlook a{padding:0;}
+	.ReadMsgBody{width:100%;}
+	.ExternalClass{width:100%;}
+	.yshortcuts,a .yshortcuts,a .yshortcuts:hover,a .yshortcuts:active,a .yshortcuts:focus{background-color:transparent !important;border:none !important;color:inherit !important;} 	
+    body{margin:0;padding:0;-ms-text-size-adjust:none;}
+	.backgroundTable,.backgroundTd{width:100% !important;height:100% !important;margin:0;}
+    img {border:0;outline:none;text-decoration:none;line-height:100%;}
+    table,td,tr{border-collapse:collapse !important;} 
+	td.spacer,.spacer td,.contentTable td.spacer{font-size:0%;line-height:0%;}
+
+	
+	/* Template */
+	body,.backgroundTable{background-color:#ffffff;}
+    .backgroundTd{padding-left:10px;padding-right:10px;padding-top:0px;padding-bottom:0px;}
+
+	.colTd{padding-left:18px;padding-right:18px;}
+	.colTdLeft{padding-left:18px;padding-right:9px;}
+	.colTdMid{padding-left:9px;padding-right:9px;}
+	.colTdRight{padding-left:9px;padding-right:18px;}
+	.colTdInner{padding-left:50px;padding-right:50px;}
+	.colTdInner2{padding-left:30px;padding-right:30px;}
+	.colTdInner2Mid{padding-left:30px;}
+	
+	.fullTable{background-color:#ffffff;}
+	
+	.contentTable{}
+	.contentTd,.contentTd td{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:16px;line-height:24px;color:#666666;text-align:left;}
+	.contentTd a{color:#666666;text-decoration:none;font-weight:normal;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:16px;}
+	.contentTd a:hover {text-decoration: underline !important;}	
+
+	.articleTable{background-color: #ffffff;}
+	.articleTd{padding-top:20px;padding-bottom:20px;}
+	td.articleImage{padding-bottom:15px;line-height: 100%;font-size: 0%;}
+	td.articleImage img{display:block;}
+	td.articleImage2{padding-bottom:0px;line-height: 100%;font-size: 0%;border-bottom:1px solid #f0f0f0;}
+	td.articleImage img{display:block;}
+	td.articleImage2{padding-bottom:0px;line-height: 100%;font-size: 0%;}
+	td.articleImage img{display:block;}
+	td.articleTitle{padding-top:14px;padding-bottom:7px;}
+	td.articleTitle,td.articleTitle a{color:#1d1f4d;font-size:34px;line-height:36px;font-weight:normal;text-decoration:none;}
+	td.articleTitle2{padding-top:19px;padding-bottom:10px;}
+	td.articleTitle2,td.articleTitle2 a{color:#1d1f4d;font-size:20px;line-height:22px;font-weight:bold;text-decoration:none;}
+	td.articleTitleSection{text-align:center;padding-top:12px;padding-bottom:12px;}
+	td.articleTitleSection,td.articleTitleSection a{color:#1d1f4d;font-size:26px;line-height:30px;font-weight:normal;text-decoration:none;}
+	td.articleDescription{padding-top:4px;padding-bottom:6px;text-align:left;}
+	td.articleDescription2{padding-top:0px;padding-bottom:6px;text-align:left;color:#1d1f4d;line-height: 16px;}
+	td.articleReadmoreContainer{padding-top:10px;padding-bottom:20px;text-align:left;}
+	td.articleReadmoreContainer2{padding-top:6px;padding-bottom:16px;text-align:left;}
+	td.articleReadmoreContainer3{padding-top:10px;padding-bottom:10px;text-align:center;background-color: #ffffff;}
+	td.articleReadmore{padding-top:15px;padding-bottom:14px;padding-left:30px;padding-right:30px;border-radius: 3px;background-color: #0072b8; }
+	td.articleReadmore,td.articleReadmore a{color:#ffffff;font-size:11px;line-height:13px;font-weight:bold;}
+	td.articleReadmore3{text-align:center;padding-top:15px;padding-bottom:14px;width:100%;border-radius: 3px;background-color: #0072b8; }
+	td.articleReadmore3,td.articleReadmore3 a{color:#ffffff;font-size:11px;line-height:13px;font-weight:bold;}
+	
+	td.sconto{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+text-align:center;color:#ffffff;font-size:50px;line-height:50px;font-weight:bold;}
+	td.sconto .perc{font-size:32px;}
+	td.scontotext{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+text-align:center;color:#ffffff;font-size:12px;line-height:14px;font-weight:bold;}
+	
+	td.specialText{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+padding-left:8px;padding-right:8px;color:#3da8f4;font-size:11px;line-height: 17px;}
+	td.specialText2{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+padding-left:8px;color:#c2dff1;font-size:11px;line-height: 11px;mso-line-height-rule: exactly;}
+	td.specialSconto{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+padding-left:14px;color:#ffffff;font-size:30px;line-height: 30px;font-weight:bold;mso-line-height-rule: exactly;}
+	td.textSpecialSconto{font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+padding-left:4px;color:#ffffff;font-size:14px;line-height: 14px;font-weight:normal;mso-line-height-rule: exactly;}
+
+	.headerTable{background-color:#e1e1e1;}
+	.headerTd{padding-top:8px;padding-bottom:6px;color:#19425b;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:11px;line-height:11px;text-align:center;text-align:right;}
+	.headerTd a{color:#19425b;text-decoration:none;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:11px;line-height:11px;font-weight:bold;}
+	
+	.logoTable{border-left:10px solid #0072b8;border-bottom:1px solid #f3f3f3;}
+	td.logoTd{padding-top:18px;padding-bottom:22px;padding-left:30px;}
+	
+	.footerTable{background-color:#1d1f4d;}
+	.footerTd{padding-top:40px;padding-bottom:25px;}
+	.footerTdTitle{color:#ffffff;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:11px;line-height:14px;text-align:left;}
+	.socialTd{padding-left:5px;padding-right:5px;}
+	td.copy, td.copy a{color:#c2dff1;text-decoration:none;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:12px;line-height:27px;font-weight:normal;}
+	td.datiSoc{color:#c2dff1;text-decoration:none;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:12px;line-height:17px;font-weight:normal;}
+	td.datiSoc .title{color:#c2dff1;text-decoration:none;font-family:  'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;
+font-size:14px;line-height:14px;font-weight:bold;}
+	
+	/* classi per le linee */
+	.borderLogoBottomClass{border-bottom:1px solid #d6d6d6;}
+	.borderLogoTopClass{border-top:1px solid #d6d6d6;}
+	
+	@media only screen and (max-width: 640px){
+		body,table,td,p,a,li,div{-webkit-text-size-adjust:none !important;}
+		body{width:auto !important;}
+		.fixTable{width:100% !important;max-width:600px !important;}
+		.fixImage{height:auto !important;width:100% !important;max-width:none !important;}
+		.fixTable50{width:48% !important;}
+		.fixTable35{width:32% !important;}		
+		.fixTable65{width:65% !important;}
+		.footerBarTable{float:none !important;margin:0 auto !important;}		
+		.articleImage img{}
+		.colTd{padding-left:3% !important;padding-right:3% !important;}
+		.colTdInner{padding-left:6% !important;padding-right:6% !important;}
+		.colTdInner2{padding-left:4% !important;padding-right:4% !important;}
+		.colTdLeft{padding-left:3% !important;padding-right:1% !important;}
+		.colTdMid{padding-left:2% !important;padding-right:2% !important;}
+		.colTdRight{padding-left:1% !important;padding-right:3% !important;}	
+		.colTdInner2Mid{padding-left:4% !important;}
+	}
+	@media only screen and (max-width: 520px){
+		.backgroundTd{padding:0 !important;}
+		.articleReadmore {text-align:left;}
+		.left{text-align:left !important;}
+		.fixTable50{width:100% !important;}
+		.fixTable35{width:100% !important;}		
+		.fixTable65{width:100% !important;}
+		.fixTable{width:100% !important; float: none !important;}
+		.articleImage img{width:auto !important;}
+		.articleImage .fixImage{width:100% !important;}
+		.colTdLeft,.colTdMid,.colTdRight{display:block !important;padding-left:3% !important;padding-right:3% !important;}
+		.secondTableMobile{margin-top:20px !important;}
+		.td100mobile{width:100% !important; display: block !important;}
+	}
+
+
+a[href^="x-apple-data-detectors:"] {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+
+@media screen {*{-webkit-text-size-adjust: none;}}
+	</style>
+	<style type="text/css">
+	</style>
+	<style type="text/css">
+	</style>
+</head>
+<body style="background-color: rgb(255, 255, 255); padding: 0px; margin: 0px; height: auto; min-height: auto;">
+<table border="0" cellpadding="0" cellspacing="0" class="backgroundTable" style="background-color: #ffffff;margin: 0;width: 100% !important;border-collapse: collapse !important;height: 100% !important;" width="100%">
+	<tbody>
+		<tr style="border-collapse: collapse !important;">
+			<td align="center" class="backgroundTd" style="padding-top: 0px;margin: 0;padding-left: 10px;width: 100% !important;padding-bottom: 0px;border-collapse: collapse !important;padding-right: 10px;height: 100% !important;" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+				<tbody>
+					<tr style="border-collapse: collapse !important;">
+						<td align="center" style="border-collapse: collapse !important;width: 0; max-height: 0;overflow: hidden; float: left; display: none !important; color: #ffffff;line-height:0px;font-size:0%;" valign="top">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="0" cellpadding="0" cellspacing="0" class="headerTable fixTable" style="background-color: #e1e1e1;border-collapse: collapse !important;" width="600">
+				<tbody>
+					<tr style="border-collapse: collapse !important;">
+						<td class="headerTd colTd" style="padding-top: 8px;color: #19425b;padding-left: 18px;padding-bottom: 6px;font-size: 11px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 11px;border-collapse: collapse !important;padding-right: 18px;text-align: right;" valign="top">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div>
+			<table border="0" cellpadding="0" cellspacing="0" class="logoTable fixTable" style="border-bottom: 1px solid #f3f3f3;border-collapse: collapse !important;max-width:600px;border-left:10px solid #00BFF0;" width="100%">
+				<tbody>
+					<tr style="border-collapse: collapse !important;">
+						<td class="logoTd" style="padding-top: 18px;padding-left: 30px;padding-bottom: 22px;border-collapse: collapse !important;" valign="top"><span><img alt="Ticket Compliments Edenred" border="0" src="https://repo.edenred.it/OrdiniTC/logo.jpg" style="border: 0;outline: none;text-decoration: none;line-height: 100%;" width="211" /> </span></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+
+			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+				<tbody>
+					<tr style="border-collapse: collapse !important;">
+						<td class="contentTd articleTd" style="padding-top: 20px;color: #666666;font-size: 16px;padding-bottom: 0px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;text-align: left;" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="articleImage" style="color: #666666;font-size: 0%;padding-bottom: 15px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 100%;border-collapse: collapse !important;text-align: left;" valign="top"><a href={!Case.IT_Compliments_URL__c} style="color: #666666;font-weight: normal;text-decoration: none;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;" target="_blank" title=""><img border="0" class="fixImage" src="https://repo.edenred.it/OrdiniTC/header_ordinetc.jpg" style="border: 0;outline: none;text-decoration: none;display: block;line-height: 100%;margin: 0 auto;" title="" width="600" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="contentTd colTdInner" style="color: #666666;padding-left: 50px;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;padding-right: 50px;text-align: left;">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+										<tbody>
+											<tr style="border-collapse: collapse !important;">
+												<td class="articleDescription" style="padding-top: 4px;color: #666666;font-size: 16px;padding-bottom: 6px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;text-align: left;" valign="top">
+												<p><span style="color: #121f49;">Gentile Cliente,</span><br />
+												<br />
+												<span style="color: #121f49;">ti ringraziamo per l&#39;interesse dimostrato.</span></p>
+
+												<p><span style="color: #121f49;"><strong>Accedi al portale</strong> per completare il tuo ordine e <strong>ricevere </strong>i buoni acquisto <strong>Ticket Compliments<sup>&reg;</sup> Selection</strong>.</span></p>
+												</td>
+											</tr>
+											<tr style="border-collapse: collapse !important;">
+												<td class="articleReadmoreContainer" style="padding-top: 30px;color: #666666;font-size: 16px;padding-bottom: 20px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;text-align: left;" valign="top">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;">
+													<tbody>
+														<tr style="border-collapse: collapse !important;">
+															<td class="articleReadmore" style="border-radius: 3px;padding-top: 15px;color: #ffffff;font-weight: bold;padding-left: 30px;font-size: 11px;padding-bottom: 14px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 13px;border-collapse: collapse !important;text-align: left;padding-right: 30px;background-color:#00BFF0;" valign="top"><a href={!Case.IT_Compliments_URL__c} style="color: #ffffff;font-weight: bold;text-decoration: none;font-size: 18px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 13px;" target="_blank" title="">ACQUISTA ORA</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+				<tbody>
+					<tr style="border-collapse: collapse !important;">
+						<td class="contentTd articleTd colTd" style="padding-top: 0px;color: #666666;padding-left: 18px;font-size: 16px;padding-bottom: 20px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;padding-right: 18px;text-align: left;" valign="top">
+						<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="contentTd articleTd colTd" style="padding-top: 0px; padding-left: 18px;font-size: 16px;padding-bottom: 0px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;padding-right: 18px;text-align: left;" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" class="articleTable" style="background-color: #ffffff;border-collapse: collapse !important;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;" width="100%">
+										<tbody>
+											<tr style="border-collapse: collapse !important;">
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="contentTd articleTd colTd" style="padding-top: 0px; color: #1d1f4d;padding-left: 18px;font-size: 16px;padding-bottom: 0px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;padding-right: 18px;text-align: left;" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" class="articleTable" style="background-color: #ffffff;border-collapse: collapse !important;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;" width="100%">
+										<tbody>
+											<tr style="border-collapse: collapse !important;">
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+								</tr>
+							</tbody>
+						</table>
+
+						<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;" width="600">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="contentTd articleTd" style="padding-top: 10px;color: #666666;font-size: 16px;padding-bottom: 20px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;text-align: left;" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+										<tbody>
+											<tr style="border-collapse: collapse !important;">
+												<td class="contentTd colTdInner" style="color: #666666;padding-left: 50px;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;padding-right: 50px;text-align: left;">
+												<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+													<tbody>
+														<tr style="border-collapse: collapse !important;">
+															<td class="articleDescription" style="padding-top: 4px;color: #666666;font-size: 16px;padding-bottom: 6px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;border-collapse: collapse !important;text-align: left;" valign="top">
+															<div style="text-align: left;"><span style="color: #121f49;">Per qualsiasi richiesta contattaci al numero verde<span style="color: #04af20;"> <strong>800.411.817</strong></span> oppure scrivici una e-mail all&#39;indirizzo:</span>
+
+															<p style="text-align: center"><span style="color: #121f49;"><span><strong><span style="text-decoration: underline;"><span style="font-weight: bold; align: center;"><a href="mailto:assistenza-IT@edenred.com" rel="noopener noreferrer" style="font-weight: normal;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;color: #121f49; text-decoration: underline;" target="_blank"><span style="text-decoration: underline;"><span style="font-weight: bold;">assistenza-IT@edenred.com</span></span></a></span></span></strong></span></span></p>
+															<span style="color: #121f49;">specificando il tuo <em>codice cliente</em> e la tua <em>Partita IVA</em>.</span></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" class="footerTable fixTable" style="background-color: #1d1f4d;border-collapse: collapse !important;" width="600">
+							<tbody>
+								<tr style="border-collapse: collapse !important;">
+									<td class="footerTd colTd" style="color: #666666;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;text-align: left;padding-top:18px;padding-left: 18px;padding-bottom: 25px;border-collapse: collapse !important;padding-right: 18px;" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+										<tbody>
+											<tr style="border-collapse: collapse !important;">
+												<td style="color: #666666;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;text-align: left;border-collapse: collapse !important;" valign="top">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="fixTable" style="border-collapse: collapse !important;">
+													<tbody>
+														<tr style="border-collapse: collapse !important;">
+														</tr>
+													</tbody>
+												</table>
+
+												<table align="right" border="0" cellpadding="0" cellspacing="0" class="fixTable secondTableMobile" style="border-collapse: collapse !important;">
+													<tbody>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr style="border-collapse: collapse !important;">
+												<td class="colTd" style="color: #666666;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;text-align: left;padding-left: 18px;border-collapse: collapse !important;padding-right: 18px;padding-top:5px;" valign="top">
+												<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse !important;" width="100%">
+													<tbody>
+														<tr style="border-collapse: collapse !important;">
+															<td style="color: #666666;font-size: 16px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 24px;text-align: left;border-collapse: collapse !important;" valign="middle" width="44"><img alt="Edenred" border="0" src="https://repo.edenred.it/OrdiniTC/logo_footer.png" style="border: 0;outline: none;text-decoration: none;line-height: 100%;" width="44" /></td>
+															<td class="copy" style="text-align: left;color: #c2dff1;font-weight: normal;text-decoration: none;font-size: 12px;font-family: 'Century Gothic', CenturyGothic, AppleGothic, Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Segoe, 'Segoe UI', Arial, sans-serif;line-height: 27px;border-collapse: collapse !important;" valign="middle" width="100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&copy; 2018 Edenred Italia All rights reserved.</span></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr style="border-collapse: collapse !important;">
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

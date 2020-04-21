@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Fax__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Mandate_Reference__c</fullName>
+        <externalId>false</externalId>
+        <formula>&#39;C8829N832&#39; + IT_Financial_Center__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mandate Reference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Product2__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Toponym__c &amp; &quot; &quot; &amp; ER_Street__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>VRIT01_CIG_Institution</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+
+OR(
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c ,&#39;Private&#39;),
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;)),
+
+
+
+OR(
+NOT(ISBLANK( IT_CIG__c )),
+NOT(ISBLANK( IT_Derived_CIG__c ))
+))</errorConditionFormula>
+        <errorMessage>Company = Private, Delete CIG and Derived CIG</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT06_Unique_Office_Code_Pec</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+IT_Accepts_New_Billing_System__c  =true,
+
+OR(
+ISPICKVAL (ER_Account_Name__r.IT_Company_Type__c ,&#39;Private&#39;) ,
+ ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;)),
+				 
+				
+ ISBLANK( IT_PEC_Mail__c), 
+ ISBLANK (  IT_SDI__c  ) 
+
+
+)</errorConditionFormula>
+        <errorMessage>PEC Mail or Unique Office Code has to be populated!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT14_SDI_and_Unique_Office_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+
+OR(
+
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Institution&#39;),
+ IT_SDI__c != null),
+
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
+IT_Office_Code__c != null),
+
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
+ IT_Office_Code__c != null)
+)
+)</errorConditionFormula>
+        <errorMessage>You must be populate SDI for Private Client and Unique Office Code for Institution Client!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT15_Unique_Office_Code_Length</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+OR(
+LEN( IT_Office_Code__c ) &gt; 6,
+LEN( IT_Office_Code__c ) &lt; 6),
+IT_Office_Code__c != null
+)</errorConditionFormula>
+        <errorMessage>Unique Office Code must contains only 6 characters!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT16_SDI</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+OR(
+ISPICKVAL( IT_Client_Status__c ,&#39;02&#39;),
+ISPICKVAL( IT_Client_Status__c ,&#39;05&#39;)),
+
+ER_Account_Name__r.IT_Send_Client_Billing_SDI__c = true,
+
+OR(
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
+ISBLANK(IT_SDI__c )),
+
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Institution&#39;),
+ISBLANK( IT_Office_Code__c )),
+
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
+ISBLANK( IT_SDI__c ))))</errorConditionFormula>
+        <errorMessage>SDI mandatory at Financial Center level</errorMessage>
+    </validationRules>
+</CustomObject>

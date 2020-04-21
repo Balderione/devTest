@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Trainer_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Trainer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CERETTI Alice</fullName>
+                    <default>false</default>
+                    <label>CERETTI Alice</label>
+                </value>
+                <value>
+                    <fullName>FEDELI Alessia</fullName>
+                    <default>false</default>
+                    <label>FEDELI Alessia</label>
+                </value>
+                <value>
+                    <fullName>LONGO Alessandra</fullName>
+                    <default>false</default>
+                    <label>LONGO Alessandra</label>
+                </value>
+                <value>
+                    <fullName>SGARZI Federica</fullName>
+                    <default>false</default>
+                    <label>SGARZI Federica</label>
+                </value>
+                <value>
+                    <fullName>MORLEO Veronica</fullName>
+                    <default>false</default>
+                    <label>MORLEO Veronica</label>
+                </value>
+                <value>
+                    <fullName>PIU Ilaria</fullName>
+                    <default>false</default>
+                    <label>PIU Ilaria</label>
+                </value>
+                <value>
+                    <fullName>SAITTA Chiara</fullName>
+                    <default>false</default>
+                    <label>SAITTA Chiara</label>
+                </value>
+                <value>
+                    <fullName>ZANOCCO Federica</fullName>
+                    <default>false</default>
+                    <label>ZANOCCO Federica</label>
+                </value>
+                <value>
+                    <fullName>CONTI Silvia</fullName>
+                    <default>false</default>
+                    <label>CONTI Silvia</label>
+                </value>
+                <value>
+                    <fullName>VITOLO Erica</fullName>
+                    <default>false</default>
+                    <label>VITOLO Erica</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+</CustomObject>

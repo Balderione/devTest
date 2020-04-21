@@ -1,6 +1,0 @@
-<aura:component implements="lightning:availableForFlowActions,force:hasRecordId">
-	<aura:attribute name="idRecord" type="String"/>
-	<!-- <lightning:navigation aura:id="navService"/> -->
-	<lightning:workspaceAPI aura:id="workspace"/>
-	
-</aura:component>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation><!-- 2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLAT</masterLabel>
+        <translation>FLAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLAT RetItalia</masterLabel>
+        <translation>FLAT RETITALIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF 1 LFC</masterLabel>
+        <translation>OFF 1 LFC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF 2 UTA</masterLabel>
+        <translation>OFF 2 UTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF 3</masterLabel>
+        <translation>OFF 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER BASE RI</masterLabel>
+        <translation>OFFERTA BASE RI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER BASE UTA</masterLabel>
+        <translation>OFFERTA BASE UTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F05C00</masterLabel>
+        <translation>OFFERTA RI F05C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F05C05</masterLabel>
+        <translation>OFFERTA RI F05C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F05C10</masterLabel>
+        <translation>OFFERTA RI F05C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F10C05</masterLabel>
+        <translation>OFFERTA RI F10C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F10C10</masterLabel>
+        <translation>OFFERTA RI F10C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F15C00</masterLabel>
+        <translation>OFFERTA RI F15C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F15C05</masterLabel>
+        <translation>OFFERTA RI F15C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F15C10</masterLabel>
+        <translation>OFFERTA RI F15C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F18C05</masterLabel>
+        <translation>OFFERTA RI F18C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F18C10</masterLabel>
+        <translation>OFFERTA RI F18C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F20C05</masterLabel>
+        <translation>OFFERTA RI F20C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F20C10</masterLabel>
+        <translation>OFFERTA RI F20C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F25C10</masterLabel>
+        <translation>OFFERTA RI F25C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F30C10</masterLabel>
+        <translation>OFFERTA RI F30C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER RI F35C10</masterLabel>
+        <translation>OFFERTA RI F35C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER TOTAL ERG</masterLabel>
+        <translation>OFFERTA TOTAL ERG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C02</masterLabel>
+        <translation>OFFERTA UTA F00C02</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C03</masterLabel>
+        <translation>OFFERTA UTA F00C03</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C05</masterLabel>
+        <translation>OFFERTA UTA F00C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C10</masterLabel>
+        <translation>OFFERTA UTA F00C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C15</masterLabel>
+        <translation>OFFERTA UTA F00C15</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C150</masterLabel>
+        <translation>OFFERTA UTA F00C150</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F00C35</masterLabel>
+        <translation>OFFERTA UTA F00C35</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F02C00</masterLabel>
+        <translation>OFFERTA UTA F02C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F04C00</masterLabel>
+        <translation>OFFERTA UTA F04C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F05C00</masterLabel>
+        <translation>OFFERTA UTA F05C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F05C05</masterLabel>
+        <translation>OFFERTA UTA F05C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F05C10</masterLabel>
+        <translation>OFFERTA UTA F05C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F07C00</masterLabel>
+        <translation>OFFERTA UTA F07C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F07C08</masterLabel>
+        <translation>OFFERTA UTA F07C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F08C00</masterLabel>
+        <translation>OFFERTA UTA F08C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F08C05</masterLabel>
+        <translation>OFFERTA UTA F08C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F09C00</masterLabel>
+        <translation>OFFERTA UTA F09C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F10C00</masterLabel>
+        <translation>OFFERTA UTA F10C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F10C05</masterLabel>
+        <translation>OFFERTA UTA F10C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F10C08</masterLabel>
+        <translation>OFFERTA UTA F10C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F10C10</masterLabel>
+        <translation>OFFERTA UTA F10C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F12C05</masterLabel>
+        <translation>OFFERTA UTA F12C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F12C08</masterLabel>
+        <translation>OFFERTA UTA F12C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F15C00</masterLabel>
+        <translation>OFFERTA UTA F15C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F15C05</masterLabel>
+        <translation>OFFERTA UTA F15C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F15C08</masterLabel>
+        <translation>OFFERTA UTA F15C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F15C10</masterLabel>
+        <translation>OFFERTA UTA F15C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F16C10</masterLabel>
+        <translation>OFFERTA UTA F16C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F17C05</masterLabel>
+        <translation>OFFERTA UTA F17C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F17C50</masterLabel>
+        <translation>OFFERTA UTA F17C50</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F18C00</masterLabel>
+        <translation>OFFERTA UTA F18C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F18C08</masterLabel>
+        <translation>OFFERTA UTA F18C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F18CST</masterLabel>
+        <translation>OFFERTA UTA F18CST</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F20C00</masterLabel>
+        <translation>OFFERTA UTA F20C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F20C05</masterLabel>
+        <translation>OFFERTA UTA F20C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F20C08</masterLabel>
+        <translation>OFFERTA UTA F20C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F20C10</masterLabel>
+        <translation>OFFERTA UTA F20C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F22C10</masterLabel>
+        <translation>OFFERTA UTA F22C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F23C05</masterLabel>
+        <translation>OFFERTA UTA F23C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F23C10</masterLabel>
+        <translation>OFFERTA UTA F23C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F25C00</masterLabel>
+        <translation>OFFERTA UTA F25C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F25C05</masterLabel>
+        <translation>OFFERTA UTA F25C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F25C08</masterLabel>
+        <translation>OFFERTA UTA F25C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F25C10</masterLabel>
+        <translation>OFFERTA UTA F25C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F27C10</masterLabel>
+        <translation>OFFERTA UTA F27C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F30C00</masterLabel>
+        <translation>OFFERTA UTA F30C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F30C05</masterLabel>
+        <translation>OFFERTA UTA F30C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F30C08</masterLabel>
+        <translation>OFFERTA UTA F30C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F30C10</masterLabel>
+        <translation>OFFERTA UTA F30C10</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F35C00</masterLabel>
+        <translation>OFFERTA UTA F35C00</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F35C05</masterLabel>
+        <translation>OFFERTA UTA F35C05</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F35C08</masterLabel>
+        <translation>OFFERTA UTA F35C08</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER UTA F45C10</masterLabel>
+        <translation>OFFERTA UTA F45C10</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>
