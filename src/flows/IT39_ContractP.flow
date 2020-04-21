@@ -54,41 +54,6 @@
                 <elementReference>recFC.ER_Account_Name__c</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>recCONTRACT.IT_BarcodeCheck__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>recCONTRACT.IT_Contract_Progressive__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractProgressive</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>recCONTRACT.IT_Document_Progressive__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>DocProgressive</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>recCONTRACT.IT_Contract_Number__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractNumber</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>recCONTRACT.IT_Client_Code__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>recFC.IT_Financial_Center__c</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>createContract</targetReference>
         </connector>
@@ -262,7 +227,7 @@
         <name>createContract</name>
         <label>createContract</label>
         <locationX>1160</locationX>
-        <locationY>451</locationY>
+        <locationY>449</locationY>
         <connector>
             <targetReference>EndContract</targetReference>
         </connector>
@@ -272,7 +237,7 @@
         <name>getContract</name>
         <label>getContract</label>
         <locationX>429</locationX>
-        <locationY>439</locationY>
+        <locationY>440</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>IsToutContractPresent</targetReference>
@@ -292,18 +257,6 @@
             </value>
         </filters>
         <object>Contract</object>
-        <outputAssignments>
-            <assignToReference>ContractNumber</assignToReference>
-            <field>IT_Contract_Number__c</field>
-        </outputAssignments>
-        <outputAssignments>
-            <assignToReference>ContractProgressive</assignToReference>
-            <field>IT_Contract_Progressive__c</field>
-        </outputAssignments>
-        <outputAssignments>
-            <assignToReference>DocProgressive</assignToReference>
-            <field>IT_Document_Progressive__c</field>
-        </outputAssignments>
         <outputAssignments>
             <assignToReference>ContractId</assignToReference>
             <field>Id</field>
@@ -426,7 +379,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>errorMessage</name>
-            <fieldText>&lt;p&gt;Il gruppo procacciatori non è stato allineato correttamente in Salesforce.&lt;/p&gt;&lt;p&gt;Contattare l&#39;amministratore del sistema&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Il gruppo procacciatori non è stato allineato correttamente in Salesforce.&lt;/p&gt;&lt;p&gt;Contattare l&apos;amministratore del sistema&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -500,35 +453,6 @@
     </variables>
     <variables>
         <name>ContractId</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>ContractNumber</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>ContractProgressive</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>DocProgressive</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <scale>0</scale>
-    </variables>
-    <variables>
-        <name>DocumentProgressive</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>

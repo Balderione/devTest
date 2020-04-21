@@ -3,7 +3,7 @@
     <fieldUpdates>
         <fullName>FUIT15_Benefit_Default_End_Date</fullName>
         <field>IT_Benefit_End_Date__c</field>
-        <formula>IF( ISPICKVAL( IT_Macro_Benefit__c , &#39;Reimbursement&#39;) ,IT_Plan__r.IT_Plan_End_Date__c - 7 , IT_Plan__r.IT_Plan_End_Date__c)</formula>
+        <formula>IF( ISPICKVAL( IT_Macro_Benefit__c , &apos;Reimbursement&apos;) ,IT_Plan__r.IT_Plan_End_Date__c - 7 , IT_Plan__r.IT_Plan_End_Date__c)</formula>
         <name>FUIT15_Benefit_Default_End_Date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -30,8 +30,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(NOT(ISBLANK(Name)),     
-				ISBLANK(IT_Benefit_Start_Date__c))</formula>
+        <formula>NOT( ISBLANK( Name ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

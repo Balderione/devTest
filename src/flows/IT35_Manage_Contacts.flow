@@ -3,8 +3,8 @@
     <assignments>
         <name>AssignDetailId_0_0_0</name>
         <label>AssignDetailId</label>
-        <locationX>915</locationX>
-        <locationY>772</locationY>
+        <locationX>833</locationX>
+        <locationY>773</locationY>
         <assignmentItems>
             <assignToReference>DetailId</assignToReference>
             <operator>Assign</operator>
@@ -19,8 +19,8 @@
     <assignments>
         <name>NewContactAssignment</name>
         <label>NewContactAssignment</label>
-        <locationX>692</locationX>
-        <locationY>1324</locationY>
+        <locationX>658</locationX>
+        <locationY>1323</locationY>
         <assignmentItems>
             <assignToReference>NewContact.AccountId</assignToReference>
             <operator>Assign</operator>
@@ -56,7 +56,7 @@
     <decisions>
         <name>Attivit_0_0_0</name>
         <label>Recapito?</label>
-        <locationX>903</locationX>
+        <locationX>820</locationX>
         <locationY>1068</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -121,14 +121,14 @@
             <field>IT_Delivery_Site__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
             <field>IT_Distribution_Point__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
@@ -365,7 +365,7 @@
             <field>IT_AC_Activity__c</field>
             <operator>NotEqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
@@ -727,7 +727,7 @@ CASE({!DiscountType},
     <recordCreates>
         <name>NewContactDetail_1_0</name>
         <label>NewContact</label>
-        <locationX>313</locationX>
+        <locationX>230</locationX>
         <locationY>1197</locationY>
         <connector>
             <targetReference>Attivit_Screen_0_0_0</targetReference>
@@ -740,8 +740,8 @@ CASE({!DiscountType},
     <recordCreates>
         <name>NewContactDetail_1_0_0</name>
         <label>NewContactDetail</label>
-        <locationX>1153</locationX>
-        <locationY>563</locationY>
+        <locationX>1070</locationX>
+        <locationY>566</locationY>
         <assignRecordIdToReference>DetailId</assignRecordIdToReference>
         <connector>
             <targetReference>Gestisci_Recapito_0</targetReference>
@@ -788,62 +788,13 @@ CASE({!DiscountType},
         <object>IT_Contact_Detail__c</object>
     </recordCreates>
     <recordLookups>
-        <name>getAccount</name>
-        <label>getAccount</label>
-        <locationX>315</locationX>
-        <locationY>657</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>getContactSOC</targetReference>
-        </connector>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>FCRecord.ER_Account_Name__c</elementReference>
-            </value>
-        </filters>
-        <object>Account</object>
-        <outputReference>accountRecord</outputReference>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>ER_VAT_Number__c</queriedFields>
-    </recordLookups>
-    <recordLookups>
-        <name>getContactSOC</name>
-        <label>getContactSOC</label>
-        <locationX>451</locationX>
-        <locationY>658</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Attivit_Screen_0_0_0</targetReference>
-        </connector>
-        <filters>
-            <field>AccountId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>accountRecord.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>IT_Code__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>accountRecord.ER_VAT_Number__c</elementReference>
-            </value>
-        </filters>
-        <object>Contact</object>
-        <outputReference>ContactSoc</outputReference>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>IT_Code__c</queriedFields>
-    </recordLookups>
-    <recordLookups>
         <name>getFinancialCenter</name>
         <label>getFinancialCenter</label>
-        <locationX>169</locationX>
-        <locationY>656</locationY>
+        <locationX>305</locationX>
+        <locationY>691</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>getAccount</targetReference>
+            <targetReference>Attivit_Screen_0_0_0</targetReference>
         </connector>
         <filters>
             <field>Id</field>
@@ -882,7 +833,7 @@ CASE({!DiscountType},
     <screens>
         <name>Attivit_Screen_0_0_0</name>
         <label>Recapiti Screen</label>
-        <locationX>621</locationX>
+        <locationX>541</locationX>
         <locationY>821</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -923,7 +874,7 @@ CASE({!DiscountType},
     <screens>
         <name>Crea_Recapito_0</name>
         <label>Crea Referente</label>
-        <locationX>904</locationX>
+        <locationX>821</locationX>
         <locationY>1321</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1000,7 +951,7 @@ CASE({!DiscountType},
     <screens>
         <name>Crea_Recapito_0_0</name>
         <label>Crea Recapito</label>
-        <locationX>1150</locationX>
+        <locationX>1067</locationX>
         <locationY>1075</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1099,7 +1050,7 @@ CASE({!DiscountType},
     <screens>
         <name>Duplicate</name>
         <label>Duplicate</label>
-        <locationX>133</locationX>
+        <locationX>50</locationX>
         <locationY>829</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1118,7 +1069,7 @@ CASE({!DiscountType},
     <screens>
         <name>ErroreRecapito</name>
         <label>ErroreRecapito</label>
-        <locationX>772</locationX>
+        <locationX>689</locationX>
         <locationY>277</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1135,8 +1086,8 @@ CASE({!DiscountType},
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>50</locationX>
-        <locationY>656</locationY>
+        <locationX>84</locationX>
+        <locationY>641</locationY>
         <connector>
             <targetReference>getFinancialCenter</targetReference>
         </connector>
@@ -1145,7 +1096,7 @@ CASE({!DiscountType},
     <subflows>
         <name>Gestisci_Recapito_0</name>
         <label>Gestisci_Recapito</label>
-        <locationX>914</locationX>
+        <locationX>831</locationX>
         <locationY>566</locationY>
         <connector>
             <targetReference>Attivit_Screen_0_0_0</targetReference>
@@ -1432,7 +1383,7 @@ CASE({!DiscountType},
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue/>
+            <stringValue></stringValue>
         </value>
     </variables>
     <variables>

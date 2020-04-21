@@ -16,9 +16,6 @@
     <aura:attribute name="locality" type="String"/>
     <aura:attribute name="inputLocality" type="String"/>
     <aura:attribute name="inputAddress" type="String"/>
-    <aura:attribute name="fixedCity" type="String"/>
-    <aura:attribute name="fixedStreet" type="String"/>
-    <aura:attribute name="fixedName" type="String"/>
     
     <!-- ROW FLAGS -->
     <aura:attribute name="freeTicketNaming" type="Boolean" default = "false"/>
@@ -52,15 +49,10 @@
                     <!-- TICKET NAMING START -->
                     
                     <div class="slds-grid slds-gutters">
-                        <aura:if isTrue="{!not(v.showTicketNaming)}">
+                        <aura:if isTrue="{!not(v.freeTicketNaming)}">
                             <div class="slds-col slds-size_2-of-3">
                                 <lightning:input name="input1" placeholder="Denominazione" value = '{!v.ticketNaming}' readonly = 'true'/>
                             </div>
-                            <aura:set attribute="else">
-                                <div class="slds-col slds-size_2-of-3">
-                                    <lightning:input  name="input1" placeholder="Denominazione" value = '{!v.fixedName}' readonly = 'true' />
-                                </div>
-                            </aura:set>
                         </aura:if> 
                     </div>
                     
@@ -69,74 +61,60 @@
                     <!-- ADDRESS START -->
                     
                     <div class="slds-grid slds-gutters">
-                        <aura:if isTrue="{!v.showAddress}">
+                        <aura:if isTrue="{!v.freeAddress}">
                             <div class="slds-col slds-size_2-of-3">
-                                <lightning:input  name="input1"  value = '{!v.fixedStreet}' readonly = 'true' />
+                                <lightning:input  name="input1" placeholder="Indirizzo" value = '{!v.inputAddress}' readonly = '{!v.showAddress}' maxlength="30"/>
                             </div>
-                            <aura:set attribute="else">
-                                <aura:if isTrue="{!v.freeAddress}">
-                                    <div class="slds-col slds-size_2-of-3">
-                                        <lightning:input  name="input1" placeholder="Indirizzo" value = '{!v.inputAddress}'  maxlength="30"/>
-                                    </div>
-                                </aura:if> 
-                                <aura:if isTrue="{!not(v.freeAddress)}">
-                                    <aura:if isTrue="{!v.addressList.length > 0}">
-                                        <div class="slds-col slds-size_2-of-3">
-                                            <lightning:select  label="Indirizzo" onchange="" value = "{!v.fullAddress}"  >
-                                                <aura:iteration items="{!v.addressList}" var="address">
-                                                    <option value="{!address.key}" text="{!address.key}" selected="{!address == v.fullAddress}" ></option>
-                                                </aura:iteration>
-                                            </lightning:select>
-                                        </div>
-                                        <aura:set attribute="else">
-                                            <div class="slds-col slds-size_2-of-3">
-                                                <lightning:input  name="input1"   readonly = 'true' />
-                                            </div>
-                                        </aura:set>
-                                    </aura:if>
-                                </aura:if> 
-                                <div class="slds-col slds-size_1-of-3">
-                                    <lightning:input style = "margin-top:1.25rem;" type="checkbox" label="Libero" checked = "{!v.freeAddress}" disabled="{!v.showAddress}"/>
-                                </div>
-                            </aura:set>
                         </aura:if> 
+                        <aura:if isTrue="{!not(v.freeAddress)}">
+                            <aura:if isTrue="{!v.addressList.length > 0}">
+                                <div class="slds-col slds-size_2-of-3">
+                                    <lightning:select  label="Indirizzo" onchange="" value = "{!v.fullAddress}" readonly = "{!v.showAddress}" >
+                                        <aura:iteration items="{!v.addressList}" var="address">
+                                            <option value="{!address.key}" text="{!address.key}" selected="{!address == v.fullAddress}" ></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </div>
+                                <aura:set attribute="else">
+                                    <div class="slds-col slds-size_2-of-3">
+                                        <lightning:input  name="input1" placeholder="Indirizzo" value = '{!v.inputAddress}' readonly = '{!v.showAddress}' maxlength="30"/>
+                                    </div>
+                                </aura:set>
+                            </aura:if>
+                        </aura:if> 
+                        <div class="slds-col slds-size_1-of-3">
+                            <lightning:input style = "margin-top:1.25rem;" type="checkbox" label="Libero" checked = "{!v.freeAddress}" disabled="{!v.showAddress}"/>
+                        </div>
                     </div>
                     
                     <!-- ADDRESS END -->
                     
                     <!-- LOCALITY START -->
                     <div class="slds-grid slds-gutters">
-                        <aura:if isTrue="{!v.showLocality}">
+                        <aura:if isTrue="{!v.freeLocality}">
                             <div class="slds-col slds-size_2-of-3">
-                                <lightning:input  name="input1"  value = '{!v.fixedCity}' readonly = 'true' />
+                                <lightning:input  name="input1" placeholder="Località" value = '{!v.inputLocality}' readonly = '{!v.showLocality}' maxlength="30"/>
                             </div>
-                            <aura:set attribute="else">
-                                <aura:if isTrue="{!v.freeLocality}">
-                                    <div class="slds-col slds-size_2-of-3">
-                                        <lightning:input  name="input1" placeholder="Località" value = '{!v.inputLocality}'  maxlength="30"/>
-                                    </div>
-                                </aura:if> 
-                                <aura:if isTrue="{!not(v.freeLocality)}">
-                                    <aura:if isTrue="{!v.localityList.length > 0}">
-                                        <div class="slds-col slds-size_2-of-3">
-                                            <lightning:select  label="Località" onchange="" value = "{!v.locality}" readonly = "{!v.showLocality}" >
-                                                <aura:iteration items="{!v.localityList}" var="singleLoc">
-                                                    <option value="{!singleLoc.key}" text="{!singleLoc.key}" selected="{!singleLoc == v.locality}" ></option>
-                                                </aura:iteration>
-                                            </lightning:select>
-                                        </div>
-                                        <aura:set attribute="else">
-                                            <div class="slds-col slds-size_2-of-3">
-                                                <lightning:input  name="input1" readonly = 'true'/>
-                                            </div>
-                                        </aura:set>
-                                    </aura:if>
-                                </aura:if> 
-                                <div class="slds-col slds-size_1-of-3">
-                                    <lightning:input style = "margin-top:1.25rem;" type="checkbox" label="Libero" checked = "{!v.freeLocality}" disabled="{!v.showLocality}"/>
+                        </aura:if> 
+                        <aura:if isTrue="{!not(v.freeLocality)}">
+                            <aura:if isTrue="{!v.localityList.length > 0}">
+                                <div class="slds-col slds-size_2-of-3">
+                                    <lightning:select  label="Località" onchange="" value = "{!v.locality}" readonly = "{!v.showLocality}" >
+                                        <aura:iteration items="{!v.localityList}" var="singleLoc">
+                                            <option value="{!singleLoc.key}" text="{!singleLoc.key}" selected="{!singleLoc == v.locality}" ></option>
+                                        </aura:iteration>
+                                    </lightning:select>
                                 </div>
-                            </aura:set>
-                        </aura:if>
+                                <aura:set attribute="else">
+                                    <div class="slds-col slds-size_2-of-3">
+                                        <lightning:input  name="input1" placeholder="Località" value = '{!v.inputLocality}' readonly = '{!v.showLocality}' maxlength="30"/>
+                                    </div>
+                                </aura:set>
+                            </aura:if>
+                        </aura:if> 
+                        <div class="slds-col slds-size_1-of-3">
+                            <lightning:input style = "margin-top:1.25rem;" type="checkbox" label="Libero" checked = "{!v.freeLocality}" disabled="{!v.showLocality}"/>
+                        </div>
                     </div>
                     <!-- LOCALITY END --> 
                     

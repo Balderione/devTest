@@ -1,6 +1,6 @@
 global class BAIT03_BatchPopulateCorrectLookupAccount implements Database.Batchable<Sobject>, Database.Stateful {
 
-    private String query = 'SELECT Id, IT_Account_Active__c, IT_Account_Provisioning__c, IT_Account_Closed__c, ER_Account_Name__c, IT_Client_Status__c FROM ER_Financial_Center__c WHERE (IT_Account_Active__c = null And IT_Account_Provisioning__c = null And IT_Account_Closed__c = null) Or (IT_Account_Active__c = null And (IT_Client_Status__c = \'02\')) Or (IT_Account_Provisioning__c = null And (IT_Client_Status__c = \'01\' Or IT_Client_Status__c = \'05\')) Or (IT_Account_Closed__c = null And IT_Client_Status__c != \'02\' And IT_Client_Status__c != \'05\' And IT_Client_Status__c != \'01\')';
+    private String query = 'SELECT Id, IT_Account_Active__c, IT_Account_Provisioning__c, IT_Account_Closed__c, ER_Account_Name__c, IT_Client_Status__c FROM ER_Financial_Center__c WHERE (IT_Account_Active__c = null And IT_Account_Provisioning__c = null And IT_Account_Closed__c = null) Or (IT_Account_Active__c = null And (IT_Client_Status__c = \'02\' Or IT_Client_Status__c = \'05\')) Or 	(IT_Account_Provisioning__c = null And IT_Client_Status__c = \'01\') Or (IT_Account_Closed__c = null And IT_Client_Status__c != \'02\' And IT_Client_Status__c != \'05\' And IT_Client_Status__c != \'01\')';
     List<ER_Financial_center__c> updateListFC = new List<ER_Financial_center__c>();
     Map<String, ER_Financial_Center__c> mapFCUpdateId = new Map<String, ER_Financial_Center__c>();
     
@@ -45,6 +45,5 @@ global class BAIT03_BatchPopulateCorrectLookupAccount implements Database.Batcha
     global void finish(Database.BatchableContext BC){  
         System.debug('updateListFC::: '+updateListFC);
         System.debug('updateListFC.size::: '+updateListFC.size());
-        update updateListFC;
     }     
 }

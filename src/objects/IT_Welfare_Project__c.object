@@ -1,9 +1,1480 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>IT_Welfare_Project_LP</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>IT_Trainer_2__c</fullName>
+        <fullName>IT_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Trainer</label>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Welfare Project</relationshipLabel>
+        <relationshipName>Welfare_Project</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Acquisition_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Acquisition Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Edenred</fullName>
+                    <default>true</default>
+                    <label>Edenred</label>
+                </value>
+                <value>
+                    <fullName>Marsh</fullName>
+                    <default>false</default>
+                    <label>Marsh</label>
+                </value>
+                <value>
+                    <fullName>Aggregator</fullName>
+                    <default>false</default>
+                    <label>Aggregator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Activation_Phase__c</fullName>
+        <externalId>false</externalId>
+        <label>Activation Phase</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Checkout Date Request</fullName>
+                    <default>false</default>
+                    <label>Checkout Date Request</label>
+                </value>
+                <value>
+                    <fullName>Activation kit preparation</fullName>
+                    <default>false</default>
+                    <label>Activation kit preparation</label>
+                </value>
+                <value>
+                    <fullName>Activation kit verification</fullName>
+                    <default>false</default>
+                    <label>Activation kit verification</label>
+                </value>
+                <value>
+                    <fullName>Plan configuration</fullName>
+                    <default>false</default>
+                    <label>Plan configuration</label>
+                </value>
+                <value>
+                    <fullName>Test before Go Live</fullName>
+                    <default>false</default>
+                    <label>Test before Go Live</label>
+                </value>
+                <value>
+                    <fullName>Live Plan</fullName>
+                    <default>false</default>
+                    <label>Live Plan</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Average_Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Average Age</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt; 30 years old</fullName>
+                    <default>false</default>
+                    <label>&lt; 30 years old</label>
+                </value>
+                <value>
+                    <fullName>between 30 years old and 40 years old</fullName>
+                    <default>false</default>
+                    <label>between 30 years old and 40 years old</label>
+                </value>
+                <value>
+                    <fullName>between 40 years old and 50 years old</fullName>
+                    <default>false</default>
+                    <label>between 40 years old and 50 years old</label>
+                </value>
+                <value>
+                    <fullName>&gt; 50 years old</fullName>
+                    <default>false</default>
+                    <label>&gt; 50 years old</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Beneficiaries_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Beneficiaries Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Benefit End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Benefit Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit__c</fullName>
+        <externalId>false</externalId>
+        <label>Benefit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Macro_Benefit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Medical Fees</fullName>
+                    <default>false</default>
+                    <label>Medical Fees</label>
+                </value>
+                <value>
+                    <fullName>School Fees</fullName>
+                    <default>false</default>
+                    <label>School Fees</label>
+                </value>
+                <value>
+                    <fullName>Family Care</fullName>
+                    <default>false</default>
+                    <label>Family Care</label>
+                </value>
+                <value>
+                    <fullName>Public Transport</fullName>
+                    <default>false</default>
+                    <label>Public Transport</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Paper Top Premium</fullName>
+                    <default>false</default>
+                    <label>Paper Top Premium</label>
+                </value>
+                <value>
+                    <fullName>Printable Top Premium</fullName>
+                    <default>false</default>
+                    <label>Printable Top Premium</label>
+                </value>
+                <value>
+                    <fullName>Paper Selection</fullName>
+                    <default>false</default>
+                    <label>Paper Selection</label>
+                </value>
+                <value>
+                    <fullName>Printable Selection</fullName>
+                    <default>false</default>
+                    <label>Printable Selection</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare - Packages (Portale Beneficiari)</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare - Packages (Portale Beneficiari)</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare - Integrated (Portale Titolari)</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare - Integrated (Portale Titolari)</label>
+                </value>
+                <value>
+                    <fullName>Ticket Transport (ATM)</fullName>
+                    <default>false</default>
+                    <label>Ticket Transport (ATM)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Amazon</fullName>
+                    <default>false</default>
+                    <label>Amazon</label>
+                </value>
+                <value>
+                    <fullName>Loans</fullName>
+                    <default>false</default>
+                    <label>Loans</label>
+                </value>
+                <value>
+                    <fullName>Monetization</fullName>
+                    <default>false</default>
+                    <label>Monetization</label>
+                </value>
+                <value>
+                    <fullName>Online Purchases (NO Amazon)</fullName>
+                    <default>false</default>
+                    <label>Online Purchases (NO Amazon)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Medical Fees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>School Fees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Family Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Public Transport</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Loans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fund</controllingFieldValue>
+                <valueName>Insurance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Paper Top Premium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Printable Top Premium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Paper Selection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Printable Selection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Welfare</controllingFieldValue>
+                <valueName>Ticket Welfare - Packages (Portale Beneficiari)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Welfare</controllingFieldValue>
+                <valueName>Ticket Welfare - Integrated (Portale Titolari)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Transport</controllingFieldValue>
+                <valueName>Ticket Transport (ATM)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Amazon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Monetization</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_BillingAdressNotes_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Adress Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingCityBillingCity_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingHamlet_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Hamlet</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingPostalCodeBilling_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingProvince_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingState_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingStreetNumber_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Street Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_BillingStreetSquare_form__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Street/Square</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Brochure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Brochure</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_CIG__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Financial_Center__r.IT_CIG__c</formula>
+        <label>CIG</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_CdC_Center_of_Cost__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CdC (Center of Cost)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Cessation_Residue_Management__c</fullName>
+        <externalId>false</externalId>
+        <label>Cessation Residue Management</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Circuit_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Circuit</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Circuit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Circuit</label>
+        <referenceTo>IT_Circuit__c</referenceTo>
+        <relationshipLabel>Welfare Projects</relationshipLabel>
+        <relationshipName>Welfare_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Administrative_Training__c</fullName>
+        <externalId>false</externalId>
+        <label>Client&apos;s Administrative Training</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Live</fullName>
+                    <default>false</default>
+                    <label>Live</label>
+                </value>
+                <value>
+                    <fullName>Webex</fullName>
+                    <default>false</default>
+                    <label>Webex</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Cluster_Welfare__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR(
+IT_Beneficiaries_Number__c = null,
+AND( 
+IT_Beneficiaries_Number__c &gt;= 0, 
+IT_Beneficiaries_Number__c &lt;= 30 
+)), 
+&quot;D&quot;, 
+IF( 
+AND( 
+IT_Beneficiaries_Number__c &gt;= 31, 
+IT_Beneficiaries_Number__c &lt;= 60 
+), 
+&quot;C&quot;, 
+IF( 
+AND( 
+IT_Beneficiaries_Number__c &gt;= 61, 
+IT_Beneficiaries_Number__c &lt;= 120 
+), 
+&quot;B&quot;, 
+IF( 
+AND( 
+IT_Beneficiaries_Number__c &gt;= 121, 
+IT_Beneficiaries_Number__c &lt;= 350 
+), 
+&quot;A1&quot;, 
+IF( 
+AND( 
+IT_Beneficiaries_Number__c &gt;= 351, 
+IT_Beneficiaries_Number__c &lt;= 1000 
+), 
+&quot;A2&quot;, 
+IF( 
+AND( 
+IT_Beneficiaries_Number__c &gt;= 1001, 
+IT_Beneficiaries_Number__c &lt;= 4000 
+), 
+&quot;SA1&quot;, 
+&quot;SA2&quot; 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+        <label>Cluster Welfare</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Communication_Plan_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Communication Plan Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Complexity_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Complexity Index</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Contact1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Welfare Project (Contact)</relationshipLabel>
+        <relationshipName>Welfare_Project</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Welfare Projects</relationshipLabel>
+        <relationshipName>Welfare_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contract</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Created_Task__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created Task</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Credentials__c</fullName>
+        <externalId>false</externalId>
+        <label>Credentials</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credentials vs Beneficiaries (only for Portale Titolari - not for new portal)</fullName>
+                    <default>false</default>
+                    <label>Credentials vs Beneficiaries</label>
+                </value>
+                <value>
+                    <fullName>Marsh client (send credentials base-client to Marsh)</fullName>
+                    <default>false</default>
+                    <label>Marsh client</label>
+                </value>
+                <value>
+                    <fullName>Credentials vs Beneficiaries and Marsh Client</fullName>
+                    <default>false</default>
+                    <label>Credentials vs Beneficiaries and Marsh Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Current_Welfare_feeling__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Welfare feeling</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_DEM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DEM</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Days_Customer_Training__c</fullName>
+        <externalId>false</externalId>
+        <label>Days Customer Training</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Days_communication_method__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicare se la partecipazione è obbligatoria o facoltativa, come viene reso noto l’incontro ai dipendenti</inlineHelpText>
+        <label>Days communication method</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Days_of_ambassador__c</fullName>
+        <externalId>false</externalId>
+        <label>Days of ambassador</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Days_of_meeting_with_Syndacate__c</fullName>
+        <externalId>false</externalId>
+        <label>Days of meeting with Syndacate</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Days_of_webinar__c</fullName>
+        <externalId>false</externalId>
+        <label>Days of webinar</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Denomination_and_message__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicare i messaggi chiave da veicolare concordati con il cliente, se taglio più o meno pratico, agenda di massima</inlineHelpText>
+        <label>Denomination and message</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Digitalization_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Digitalization Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Duration</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Email_Credentials__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Credentials</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Email_send_payroll__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Send Payroll</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Emotional_Video_Benefits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Emotional Video and/or Benefits</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_End_Plan_Residue_Management__c</fullName>
+        <externalId>false</externalId>
+        <label>End_Plan Residue Management</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Extra_UE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extra UE</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fee_Parent_Group__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fee Parent Group</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Welfare Projects</relationshipLabel>
+        <relationshipName>Welfare_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Sources__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Inserire le fonti di finanziamento</inlineHelpText>
+        <label>Financial Sources</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Go_Live_Project_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Go Live Project Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Customization_Form__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Graphic Customization Form</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Personalization__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Guardare negli Allegati</inlineHelpText>
+        <label>Graphic Personalization</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Health_Policy_in_being__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicare se esistono già delle polizze sanitarie in azienda, quanto sono apprezzate e utilizzate, quali sono le aree sanitarie maggiormente scoperte</inlineHelpText>
+        <label>Health Policy in being</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_IC_Referent_Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+TEXT(IT_Complexity_Index__c) = &quot;1&quot;, 0.8, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;2&quot;, 0.9, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;3&quot;, 1, 
+IF( 
+TEXT(IT_Complexity_Index__c)= &quot;4&quot;, 1.25,1.4 
+) 
+) 
+) 
+)</formula>
+        <label>IC Referent Multiplier</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Insurance_fund_registered_Population__c</fullName>
+        <externalId>false</externalId>
+        <label>% Insurance fund registered Population</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IT_Involved_Society__c</fullName>
+        <externalId>false</externalId>
+        <label>Involved Society</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Involved_locations__c</fullName>
+        <externalId>false</externalId>
+        <label>Involved locations</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Logo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Logo</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Macro_Benefit__c</fullName>
+        <externalId>false</externalId>
+        <label>Macro Benefit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Reimbursement</fullName>
+                    <default>false</default>
+                    <label>Reimbursement</label>
+                </value>
+                <value>
+                    <fullName>Fund</fullName>
+                    <default>false</default>
+                    <label>Fund</label>
+                </value>
+                <value>
+                    <fullName>Ticket Compliments</fullName>
+                    <default>false</default>
+                    <label>Ticket Compliments</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare</label>
+                </value>
+                <value>
+                    <fullName>Ticket Transport</fullName>
+                    <default>false</default>
+                    <label>Ticket Transport</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Max_Plan_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Plan End Date</label>
+        <summarizedField>IT_Plan__c.IT_Plan_End_Date__c</summarizedField>
+        <summaryForeignKey>IT_Plan__c.IT_Welfare_Project__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_Meeting_room_organisation__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting room organisation</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Membership_Choice_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Choice End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Membership_Choice_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Choice Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Membership_Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Payment Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Platform_Choice__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Packages percentage</fullName>
+                    <default>false</default>
+                    <label>Packages percentage</label>
+                </value>
+                <value>
+                    <fullName>Packages amount</fullName>
+                    <default>false</default>
+                    <label>Packages amount</label>
+                </value>
+                <value>
+                    <fullName>Free amount</fullName>
+                    <default>false</default>
+                    <label>Free amount</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Packages percentage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Packages amount</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Free amount</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Min_Plan_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Plan Start Date</label>
+        <summarizedField>IT_Plan__c.IT_Plan_Start_Date__c</summarizedField>
+        <summaryForeignKey>IT_Plan__c.IT_Welfare_Project__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_N_Months_Post_Start_Phase__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (( 
+ IT_Max_Plan_End_Date__c  -  IT_Min_Plan_Start_Date__c  )/365 *12 &lt; 1, 1, 
+(IT_Max_Plan_End_Date__c - IT_Min_Plan_Start_Date__c )/365 *12)</formula>
+        <label>N. Months Post Start Phase</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_N_Months_Pre_Start_Phase__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ((  IT_Min_Plan_Start_Date__c  -  IT_Project_Start_Date__c  )/365 * 12 &lt; 1 , 1, (IT_Min_Plan_Start_Date__c - IT_Project_Start_Date__c  ) /365*12)</formula>
+        <label>N. Months Pre Start Phase</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Newsletter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Newsletter</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Number_of_Plans_Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( 
+ IT_Number_of_Plans__c = 1, 1, 
+IF ( 
+ IT_Number_of_Plans__c = 2, 1.05, 
+IF ( 
+ IT_Number_of_Plans__c = 3, 1.1, 
+IF ( 
+ IT_Number_of_Plans__c = 4, 1.2, 1.35 ))))</formula>
+        <label>Number of Plans Multiplier</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Number_of_Plans__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Plans</label>
+        <summarizedField>IT_Plan__c.IT_Number_of_Founding_Sources__c</summarizedField>
+        <summaryForeignKey>IT_Plan__c.IT_Welfare_Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_Old_experience_feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Old experience feedback</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_PO_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>PO List</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_PO_ODA__c</fullName>
+        <externalId>false</externalId>
+        <label>PO/ODA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No PO</fullName>
+                    <default>true</default>
+                    <label>No PO</label>
+                </value>
+                <value>
+                    <fullName>Opened PO</fullName>
+                    <default>false</default>
+                    <label>Opened PO</label>
+                </value>
+                <value>
+                    <fullName>Prefattura</fullName>
+                    <default>false</default>
+                    <label>Prefattura</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Payroll_Personalization__c</fullName>
+        <externalId>false</externalId>
+        <label>Payroll Personalization</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -14,57 +1485,898 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>CERETTI Alice</fullName>
+                    <fullName>Matricola Column</fullName>
                     <default>false</default>
-                    <label>CERETTI Alice</label>
+                    <label>Matricola Column</label>
                 </value>
                 <value>
-                    <fullName>FEDELI Alessia</fullName>
+                    <fullName>Benefit Codes (provide codes)</fullName>
                     <default>false</default>
-                    <label>FEDELI Alessia</label>
+                    <label>Benefit Codes (provide codes)</label>
                 </value>
                 <value>
-                    <fullName>LONGO Alessandra</fullName>
+                    <fullName>Custom Develop (DSP)</fullName>
                     <default>false</default>
-                    <label>LONGO Alessandra</label>
+                    <label>Custom Develop (DSP)</label>
                 </value>
                 <value>
-                    <fullName>SGARZI Federica</fullName>
+                    <fullName>Plan name</fullName>
                     <default>false</default>
-                    <label>SGARZI Federica</label>
+                    <label>Plan name</label>
                 </value>
                 <value>
-                    <fullName>MORLEO Veronica</fullName>
+                    <fullName>Cessato no row</fullName>
                     <default>false</default>
-                    <label>MORLEO Veronica</label>
+                    <label>Cessato no row</label>
                 </value>
                 <value>
-                    <fullName>PIU Ilaria</fullName>
+                    <fullName>Sources</fullName>
                     <default>false</default>
-                    <label>PIU Ilaria</label>
-                </value>
-                <value>
-                    <fullName>SAITTA Chiara</fullName>
-                    <default>false</default>
-                    <label>SAITTA Chiara</label>
-                </value>
-                <value>
-                    <fullName>ZANOCCO Federica</fullName>
-                    <default>false</default>
-                    <label>ZANOCCO Federica</label>
-                </value>
-                <value>
-                    <fullName>CONTI Silvia</fullName>
-                    <default>false</default>
-                    <label>CONTI Silvia</label>
-                </value>
-                <value>
-                    <fullName>VITOLO Erica</fullName>
-                    <default>false</default>
-                    <label>VITOLO Erica</label>
+                    <label>Sources</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
-        <visibleLines>4</visibleLines>
+        <visibleLines>3</visibleLines>
     </fields>
+    <fields>
+        <fullName>IT_Payroll_for_Levels__c</fullName>
+        <externalId>false</externalId>
+        <label>Payroll for Levels</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Level 1</fullName>
+                    <default>false</default>
+                    <label>Level 1</label>
+                </value>
+                <value>
+                    <fullName>Level 2</fullName>
+                    <default>false</default>
+                    <label>Level 2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Pdf_Html_Body__c</fullName>
+        <externalId>false</externalId>
+        <label>Pdf Html Body</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Per_Capita_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Per-capita Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_Plan_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Plan_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Plan_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Platform_Choice__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform Choice</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>PDR</controllingFieldValue>
+                <valueName>Yes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PDR</controllingFieldValue>
+                <valueName>No</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Pondered_Post_Start_Weight__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Post_Start_Weight__c  *  IT_IC_Referent_Multiplier__c  *  IT_Number_of_Plans_Multiplier__c</formula>
+        <label>Pondered Post Start Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Pondered_Pre_Start_Weight__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Pre_Start_Weight__c  *  IT_IC_Referent_Multiplier__c  *  IT_Number_of_Plans_Multiplier__c</formula>
+        <label>Pondered Pre Start Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Population_that_uses_public_transport__c</fullName>
+        <externalId>false</externalId>
+        <label>% Population that uses public transport</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IT_Population_with_children__c</fullName>
+        <externalId>false</externalId>
+        <label>% Population with children</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IT_Post_Start_Weight__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+IT_Cluster_Welfare__c =&quot;D&quot;,0.5, 
+IF( 
+IT_Cluster_Welfare__c =&quot;C&quot;,0.75, 
+IF( 
+IT_Cluster_Welfare__c =&quot;B&quot;,1.13, 
+IF( 
+IT_Cluster_Welfare__c =&quot;A1&quot;,1.81, 
+IF( 
+IT_Cluster_Welfare__c =&quot;A2&quot;,2.5, 
+IF( 
+IT_Cluster_Welfare__c =&quot;S1&quot;,3.5, 
+4.75 
+))))))</formula>
+        <label>Post Start Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Poster__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Poster</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Pre_Start_Weight__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+IT_Cluster_Welfare__c =&quot;D&quot;,0.38, 
+IF( 
+IT_Cluster_Welfare__c =&quot;C&quot;,0.44, 
+IF( 
+IT_Cluster_Welfare__c =&quot;B&quot;,0.63, 
+IF( 
+IT_Cluster_Welfare__c =&quot;A1&quot;,0.88, 
+IF( 
+IT_Cluster_Welfare__c =&quot;A2&quot;,1.44, 
+IF( 
+IT_Cluster_Welfare__c =&quot;SA1&quot;,2.5, 
+3.94 
+))))))</formula>
+        <label>Pre Start Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Project_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project End date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Project_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Project_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Client</fullName>
+                    <default>false</default>
+                    <label>New Client</label>
+                </value>
+                <value>
+                    <fullName>New Plan existing Client</fullName>
+                    <default>false</default>
+                    <label>New Plan existing Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Project_board__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Project board</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Referent_presence_at_meetings__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specificare se sarà presente a tutti gli incontri o in quali, se è prevista un’introduzione del referente e/o altri tipi di interventi</inlineHelpText>
+        <label>Referent presence at meetings</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Replacement__c</fullName>
+        <externalId>false</externalId>
+        <label>Replacement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_SFTP_DSP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SFTP (DSP)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_SFTP_Flow_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>SFTP Flow Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_SFTP_DSP__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Input path</fullName>
+                    <default>false</default>
+                    <label>Input path</label>
+                </value>
+                <value>
+                    <fullName>Output Flow</fullName>
+                    <default>false</default>
+                    <label>Output Flow</label>
+                </value>
+                <value>
+                    <fullName>Input Path e Output Flow</fullName>
+                    <default>false</default>
+                    <label>Input Path e Output Flow</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Input path</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Output Flow</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Input Path e Output Flow</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Sales_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMOROSO EMANUELA</fullName>
+                    <default>false</default>
+                    <label>AMOROSO EMANUELA</label>
+                </value>
+                <value>
+                    <fullName>BARBIERO MATTEO</fullName>
+                    <default>false</default>
+                    <label>BARBIERO MATTEO</label>
+                </value>
+                <value>
+                    <fullName>BONOMO TULLIO</fullName>
+                    <default>false</default>
+                    <label>BONOMO TULLIO</label>
+                </value>
+                <value>
+                    <fullName>CALANNI MARIA ELENA</fullName>
+                    <default>false</default>
+                    <label>CALANNI MARIA ELENA</label>
+                </value>
+                <value>
+                    <fullName>CERCIELLO FRANCESCA</fullName>
+                    <default>false</default>
+                    <label>CERCIELLO FRANCESCA</label>
+                </value>
+                <value>
+                    <fullName>CORTI CLAUDIA</fullName>
+                    <default>false</default>
+                    <label>CORTI CLAUDIA</label>
+                </value>
+                <value>
+                    <fullName>DE LUCIA RAFFAELE</fullName>
+                    <default>false</default>
+                    <label>DE LUCIA RAFFAELE</label>
+                </value>
+                <value>
+                    <fullName>DI FRONZO MARCO</fullName>
+                    <default>false</default>
+                    <label>DI FRONZO MARCO</label>
+                </value>
+                <value>
+                    <fullName>FINA MAURILLIO</fullName>
+                    <default>false</default>
+                    <label>FINA MAURILLIO</label>
+                </value>
+                <value>
+                    <fullName>GALLI ALISIA</fullName>
+                    <default>false</default>
+                    <label>GALLI ALISIA</label>
+                </value>
+                <value>
+                    <fullName>HABAZAJ ELMIRA</fullName>
+                    <default>false</default>
+                    <label>HABAZAJ ELMIRA</label>
+                </value>
+                <value>
+                    <fullName>IACONA MIRKO</fullName>
+                    <default>false</default>
+                    <label>IACONA MIRKO</label>
+                </value>
+                <value>
+                    <fullName>MANFRIN GIORGIA</fullName>
+                    <default>false</default>
+                    <label>MANFRIN GIORGIA</label>
+                </value>
+                <value>
+                    <fullName>MAURILLIO FINA</fullName>
+                    <default>false</default>
+                    <label>MAURILLIO FINA</label>
+                </value>
+                <value>
+                    <fullName>MENESCALDI ANDREA</fullName>
+                    <default>false</default>
+                    <label>MENESCALDI ANDREA</label>
+                </value>
+                <value>
+                    <fullName>MIGLIORATO SIMONE</fullName>
+                    <default>false</default>
+                    <label>MIGLIORATO SIMONE</label>
+                </value>
+                <value>
+                    <fullName>MISSERE GIUSY</fullName>
+                    <default>false</default>
+                    <label>MISSERE GIUSY</label>
+                </value>
+                <value>
+                    <fullName>MONTORFANO SIMONE</fullName>
+                    <default>false</default>
+                    <label>MONTORFANO SIMONE</label>
+                </value>
+                <value>
+                    <fullName>NANI ETTORE</fullName>
+                    <default>false</default>
+                    <label>NANI ETTORE</label>
+                </value>
+                <value>
+                    <fullName>PELLEGRINI LORENZA</fullName>
+                    <default>false</default>
+                    <label>PELLEGRINI LORENZA</label>
+                </value>
+                <value>
+                    <fullName>PINATO STEFANO</fullName>
+                    <default>false</default>
+                    <label>PINATO STEFANO</label>
+                </value>
+                <value>
+                    <fullName>RANIERI ADOLFO</fullName>
+                    <default>false</default>
+                    <label>RANIERI ADOLFO</label>
+                </value>
+                <value>
+                    <fullName>RIMOLDI DANIELE</fullName>
+                    <default>false</default>
+                    <label>RIMOLDI DANIELE</label>
+                </value>
+                <value>
+                    <fullName>SALA MARCELLA</fullName>
+                    <default>false</default>
+                    <label>SALA MARCELLA</label>
+                </value>
+                <value>
+                    <fullName>STRIPPARO DONATELLA</fullName>
+                    <default>false</default>
+                    <label>STRIPPARO DONATELLA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Sanitary_Cash_Activation_Form__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sanitary Cash Activation Form</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Single_sign_on_SSO__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Single sign-on (SSO)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Split_Payment__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Account__r.IT_Split_Payment__c</formula>
+        <label>Split Payment</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Splitted_Billing_for_CDC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Splitted Billing for CDC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assigned</fullName>
+                    <default>true</default>
+                    <label>Assigned</label>
+                </value>
+                <value>
+                    <fullName>Working</fullName>
+                    <default>false</default>
+                    <label>Working</label>
+                </value>
+                <value>
+                    <fullName>Babysitting</fullName>
+                    <default>false</default>
+                    <label>Babysitting</label>
+                </value>
+                <value>
+                    <fullName>Monitoring</fullName>
+                    <default>false</default>
+                    <label>Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Storage_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CD</fullName>
+                    <default>false</default>
+                    <label>CD</label>
+                </value>
+                <value>
+                    <fullName>Storage without timestamp</fullName>
+                    <default>false</default>
+                    <label>Storage without timestamp</label>
+                </value>
+                <value>
+                    <fullName>Storage with timestamp</fullName>
+                    <default>false</default>
+                    <label>Storage with timestamp</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Support_Tools_low_digitalisation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicare se saranno erogati strumenti a supporto e.g. welfare point, pc/totem in azienda, supporto interno,…</inlineHelpText>
+        <label>Support Tools (low digitalisation)</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Syndacate_Component__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicare presenza del sindacato in azienda, sigle coinvolte, livello di coinvolgimento nel progetto welfare, posizione rispetto al progetto</inlineHelpText>
+        <label>Syndacate Component</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Syndacate_presence_at_meetings__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specificare se sarà presente a tutti gli incontri o in quali</inlineHelpText>
+        <label>Syndacate presence at meetings</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.UserRole.Name</formula>
+        <label>Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Trainer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Trainer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Welfare Project (Trainer)</relationshipLabel>
+        <relationshipName>Welfare_Project1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Tutorial_Video_and_Guides__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tutorial Video and Guides</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Type_Communication_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Communication Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Personalized</fullName>
+                    <default>false</default>
+                    <label>Personalized</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PDR</fullName>
+                    <default>false</default>
+                    <label>PDR</label>
+                </value>
+                <value>
+                    <fullName>CCNL</fullName>
+                    <default>false</default>
+                    <label>CCNL</label>
+                </value>
+                <value>
+                    <fullName>Liberality</fullName>
+                    <default>false</default>
+                    <label>Liberality</label>
+                </value>
+                <value>
+                    <fullName>Bound</fullName>
+                    <default>false</default>
+                    <label>Bound</label>
+                </value>
+                <value>
+                    <fullName>Incentive</fullName>
+                    <default>false</default>
+                    <label>Incentive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Unique_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Unique Billing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Welfare_Point_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Welfare Point Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Welfare_experience__c</fullName>
+        <externalId>false</externalId>
+        <label>Welfare experience</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First experience</fullName>
+                    <default>false</default>
+                    <label>First experience</label>
+                </value>
+                <value>
+                    <fullName>Previous experience with Edenred platform</fullName>
+                    <default>false</default>
+                    <label>Previous experience with Edenred platform</label>
+                </value>
+                <value>
+                    <fullName>Previous experience with competitor platform</fullName>
+                    <default>false</default>
+                    <label>Previous experience with competitor platform</label>
+                </value>
+                <value>
+                    <fullName>Previous experience with Edenred vouchers</fullName>
+                    <default>false</default>
+                    <label>Previous experience with Edenred vouchers</label>
+                </value>
+                <value>
+                    <fullName>Previous experience with competitor vouchers</fullName>
+                    <default>false</default>
+                    <label>Previous experience with competitor vouchers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Welfare Project</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Progetti_Personali</fullName>
+        <columns>NAME</columns>
+        <columns>IT_Circuit__c</columns>
+        <columns>IT_Go_Live_Project_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>IT_Max_Plan_End_Date__c</columns>
+        <columns>IT_Project_End_Date__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>IT_Number_of_Plans__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Progetti Personali</label>
+    </listViews>
+    <nameField>
+        <label>Welfare Project Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Welfare Project</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VRIT01_Welfare_Project_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+				IT_Project_End_Date__c  &lt;  IT_Project_Start_Date__c,
+							$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;))</errorConditionFormula>
+        <errorMessage>Project End Date must be after Project Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Welfare_Project_GoLive_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(IT_Go_Live_Project_Date__c &lt; IT_Project_Start_Date__c,
+		IT_Go_Live_Project_Date__c &gt;		IT_Project_End_Date__c), 
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$User.ER_BypassVR__c = False
+)</errorConditionFormula>
+        <errorMessage>Go Live Date must be between Project Start Date and Project End Date</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

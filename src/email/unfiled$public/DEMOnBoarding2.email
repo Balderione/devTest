@@ -98,9 +98,8 @@
 					 
 <!-- Testo DEM -->
  <tr> <td align="left" style="font-family:  &#39;Century Gothic&#39;, CenturyGothic, AppleGothic, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Arial, sans-serif;font-size:14px;color:#162056;text-align:left;line-height:20px;border-collapse:collapse;">
-<p>Ciao, <strong></strong></p><br>
-<p>abbiamo ricevuto il modulo di attivazione per il tuo piano di welfare aziendale.<br>
-<br> Grazie ai prossimi passi sarà possibile inviarci le informazioni utili per la partenza. </p></td></tr>
+<p>Ciao <strong>{!Contact.FirstName} {!Contact.LastName}</strong></p>
+<p>abbiamo ricevuto il modulo di attivazione per il tuo piano di welfare aziendale. Grazie ai prossimi passi sarà possibile inviarci le informazioni utili per la partenza. </p></td></tr>
 					 	
 					 
 <!-- Lista 1  -->	
@@ -149,7 +148,7 @@
 			<img border="0" src="https://er-italy--devam--c.visualforce.com/servlet/servlet.ImageServer?id=0150E000000u5zx&oid=00D0E000000AXQp&lastMod=1580403146000" alt="" width="125" style="border: 0;outline: none;text-decoration: none;line-height: 100%;margin: 0 auto;;max-width:125px" title="" class="fixImage"></td> 
 			<td style="border-collapse: collapse !important;">
 			 </td><td align="left" style="font-family:  &#39;Century Gothic&#39;, CenturyGothic, AppleGothic, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Segoe, &#39;Segoe UI&#39;, Arial, sans-serif;font-size:14px;color:#162056;text-align:left;line-height:20px;border-collapse:collapse;padding-left: 0px">
-Tramite questo <a href="{!$Setup.IT_LinksCustom__c.IT_formLink__c}/?caseNumber={!Case.IT_Case_Number_Cripted__c}"><b>link</b></a> inviaci i materiali compilati <strong>entro 20 giorni</strong> dalla data di partenza concordata con il Project Manager sulla base delle tue esigenze.             </tbody></table></td></tr>
+Inviaci i materiali compilati <strong>entro 20 giorni</strong> dalla data di partenza concordata con il Project Manager sulla base delle tue esigenze.             </tbody></table></td></tr>
 
 
  <tr>
@@ -167,47 +166,6 @@ Tramite questo <a href="{!$Setup.IT_LinksCustom__c.IT_formLink__c}/?caseNumber={
              <p><em>Team Easy Welfare Edenred </em> </p>
 <p>&nbsp;</p>
  <p>&nbsp;</p></td></tr>	
-<!--INIZIO FIRMA CB -->
-<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none">
-	<tbody>
-		<tr style="height:33.65pt">
-			<td rowspan="2" style="border-top:none;border-bottom:none;border-left:none;border-right:1pt solid rgb(249,37,23);padding:0cm 5.4pt;height:33.65pt" valign="top">
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR"><a data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/edenred&source=gmail&ust=1587217736600000&usg=AFQjCNE7mKHHNlCmN8bTasZXGPruhvyqaw" href="https://twitter.com/edenred" target="_blank"><span style="font-size:3pt;color:windowtext;text-decoration:none"><img border="0" class="CToWUd" data-image-whitelisted="" height="25" id="m_-843892031195854906gmail-m_-3946867416178148565Immagine_x0020_5" src="https://mail.google.com/mail/u/1?ui=2&ik=f3b677c92b&attid=0.1&permmsgid=msg-f:1664227825545776409&th=17188663cefa0d19&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-f2YZmYpevRnzSg5gV9PBuWWqEvvS8OWd7uadwoRXOUfW3eoYU5Yodx50WNbz1L26hQjXBxdhpNT9_3UgzNlp6qGnYwOmy76lpJMN6rU_uWiLlpJ2z_4f6FMc&disp=emb&realattid=17188656e625b16b21" style="width:0.25in;height:0.2583in" width="24" /></span></a></span></p>
-
-			<p class="MsoNormal"><span lang="FR" style="font-size:6pt">&nbsp;</span></p>
-
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR"><a data-saferedirecturl="https://www.google.com/url?q=https://www.linkedin.com/company-beta/3057/&source=gmail&ust=1587217736600000&usg=AFQjCNHNq08Vz5UfCKw_qsO7qxEPSg806g" href="https://www.linkedin.com/company-beta/3057/" target="_blank"><span style="font-size:3pt;color:windowtext;text-decoration:none"><img border="0" class="CToWUd" data-image-whitelisted="" height="25" id="m_-843892031195854906gmail-m_-3946867416178148565Immagine_x0020_4" src="https://mail.google.com/mail/u/1?ui=2&ik=f3b677c92b&attid=0.2&permmsgid=msg-f:1664227825545776409&th=17188663cefa0d19&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8x1aCh9hmehZKtYWSjgMGFCL-kXqNAxOXbIXQGw7yPPyKwmEFUP2fLzgwrCZupzlZ0CJmt22bezmL31Z4zDgYMdowTwQ8I0DjRXQUHOQ6RiQt7irkkypnFCrU&disp=emb&realattid=17188656e637745b42" style="width:0.25in;height:0.2583in" width="24" /></span></a></span></p>
-
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR" style="font-size:6pt">&nbsp;</span></p>
-
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR"><a data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/channel/UCkFYDT2ZIeGxAK_iqeAORRQ&source=gmail&ust=1587217736600000&usg=AFQjCNE809fyybC67a1zbTFFeJgarH_GZg" href="https://www.youtube.com/channel/UCkFYDT2ZIeGxAK_iqeAORRQ" target="_blank"><span style="font-size:3pt;color:windowtext;text-decoration:none"><img border="0" class="CToWUd" data-image-whitelisted="" height="25" id="m_-843892031195854906gmail-m_-3946867416178148565Immagine_x0020_3" src="https://mail.google.com/mail/u/1?ui=2&ik=f3b677c92b&attid=0.3&permmsgid=msg-f:1664227825545776409&th=17188663cefa0d19&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9LPTZLGiMRXPoxxAKFYyVR-Ov-fngfVWhARMYr4Nv965CxbTp_i44VkMk8X5W5LyYZ3eSmI1UZ4vHuoQd7Tn1bW9Wz0zmScvLZag6KuMOoY-hRYoUMsgELip0&disp=emb&realattid=17188656e639374b63" style="width:0.25in;height:0.2583in" width="24" /></span></a></span></p>
-
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR" style="font-size:6pt">&nbsp;</span></p>
-
-			<p align="center" class="MsoNormal" style="text-align:center"><span lang="FR"><a data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/EDENRED/&source=gmail&ust=1587217736600000&usg=AFQjCNHeBiCSTP8M_n7_auxbbYz2q_OgGw" href="https://www.instagram.com/EDENRED/" target="_blank"><span style="font-size:3pt;color:windowtext;text-decoration:none"><img border="0" class="CToWUd" data-image-whitelisted="" height="25" id="m_-843892031195854906gmail-m_-3946867416178148565Immagine_x0020_2" src="https://mail.google.com/mail/u/1?ui=2&ik=f3b677c92b&attid=0.4&permmsgid=msg-f:1664227825545776409&th=17188663cefa0d19&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8UnJ6Ki99LMU4o8Spduoo7j6Cctejy9vOCvs6fENTOKG1HE5yTVQFXiIvuU_rZ4hNe6YwM-CoRK4Z1OTROr6GC_YIgyOh9K7iveAkwFVJd-WwDMlG7cRc9VvQ&disp=emb&realattid=17188656e64afa3b84" style="width:0.25in;height:0.2583in" width="24" /></span></a></span></p>
-			</td>
-			<td style="width:346.7pt;border:none;padding:0cm 5.4pt;height:33.65pt" valign="top" width="462">
-			<p class="MsoNormal"><span lang="FR">&nbsp;</span></p>
-
-			<p class="MsoNormal"><span lang="FR"><img border="0" class="CToWUd" data-image-whitelisted="" height="50" id="m_-843892031195854906gmail-m_-3946867416178148565Immagine_x0020_1" src="https://mail.google.com/mail/u/1?ui=2&ik=f3b677c92b&attid=0.5&permmsgid=msg-f:1664227825545776409&th=17188663cefa0d19&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-nhbKBfNHQUEbiMhsOJKgwEJ2JQKdkaFgokaxvcETwReG_sbWt2tgC4WYCUkvfZqvcNNl5i4Sg5uHJ-IGiLKc2yM02UAXA-YBG-cothibV1g1so1h-MHKaBRs&disp=emb&realattid=17188656e641f3c04f5" style="width:1.725in;height:0.525in" width="166" /></span></p>
-
-			<p class="MsoNormal"><span lang="FR">&nbsp;</span></p>
-			</td>
-		</tr>
-		<tr style="height:68.75pt">
-			<td style="width:346.7pt;border:none;padding:0cm 5.4pt;height:68.75pt" valign="top" width="462">
-			<p class="MsoNormal"><b><span style="font-size:8.5pt;font-family:&quot;Century Gothic&quot;,sans-serif;color:rgb(247,39,23)">T</span></b><b><span style="font-size:8.5pt;color:rgb(247,39,23)">eam Easy Welfare Edenred</span></b></p>
-
-			<p class="MsoNormal"><span style="font-size:8.5pt;font-family:&quot;Century Gothic&quot;,sans-serif;color:rgb(127,127,127)">Numero Verde 800 912 468</span></p>
-
-			<p class="MsoNormal"><span style="font-size:8.5pt;font-family:&quot;Century Gothic&quot;,sans-serif;color:rgb(127,127,127)">Telefono + 39 02 3790 2044</span></p>
-
-			<p class="MsoNormal"><b><span style="font-size:8.5pt;font-family:&quot;Century Gothic&quot;,sans-serif;color:rgb(127,127,127)">Mail </span></b><span lang="FR" style="font-size:8.5pt;font-family:&quot;Century Gothic&quot;,sans-serif;color:rgb(127,127,127)"><a href="mailto:attivazione.welfare-IT@edenred.com" target="_blank">attivazione.welfare-IT@<wbr />edenred.com</a></span></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<!-- FINE FIRMA CB -->
 </tbody></table></td></tr>
 
 

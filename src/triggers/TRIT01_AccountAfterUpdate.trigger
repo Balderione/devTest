@@ -40,17 +40,5 @@ trigger TRIT01_AccountAfterUpdate on Account (after update) {
                 }
             }    
         }        
-    }
-    List<String> idAcc = new List<String>();
-    for(Account singleAcc : trigger.new){
-           
-        if(trigger.newMap.get(singleAcc.Id).IT_Special_Account__c != trigger.oldMap.get(singleAcc.Id).IT_Special_Account__c || 
-                    trigger.newMap.get(singleAcc.Id).Name != trigger.oldMap.get(singleAcc.Id).Name ||
-                    trigger.newMap.get(singleAcc.Id).IT_Tax_Region_c__c != trigger.oldMap.get(singleAcc.Id).IT_Tax_Region_c__c){
-                        idAcc.add(singleAcc.Id);
-        }
-    }
-    if(idAcc != NULL){
-        APIT31_UpdateAccount_Zuora.getToken(idAcc); 
     }   
 }

@@ -10,13 +10,13 @@ public class APIT09_CreatePDFController {
                 String documentHTMLTemp =  htmlContent2[0].IT_HtmlForPdf__c;
                 system.debug('htmlContent2[0].Replace_Items__r:::: '+htmlContent2[0].Replace_Items__r);
                 List<String> objectsChild = new List<String>();
-                if(htmlContent2[0].Replace_Items__r != null && htmlContent2[0].Replace_Items__r.size() > 0){
+                /*if(htmlContent2[0].Replace_Items__r != null && htmlContent2[0].Replace_Items__r.size() > 0){
                     for(IT_Replace_ItemMdt__mdt sigleItem : htmlContent2[0].Replace_Items__r){
-                        if(sigleItem.IT_Replace_Type__c == 'Child'){
+                        if(sigleItem.IT_Replace_Type__c == 'Group'){
                             objectsChild.add(sigleItem.IT_Child_Object__c);
                         }
                     }
-                }    
+                }*/    
                 documentHTML = Replacer(documentHTMLTemp, templateObjectId, templateName, objectsChild, TemplateId);
                 documentHTML = documentHTML.replace('</tr></p>', '</tr>');
                 documentHTML = documentHTML.replace('<p><tr', '<tr');
@@ -40,7 +40,7 @@ public class APIT09_CreatePDFController {
     public static void ShowPdf(String TemplateId, String recordObjectId, String recordObjectName) { 
         try{
             List<IT_PDF_TemplateMdt__mdt> htmlContent = new List<IT_PDF_TemplateMdt__mdt>();
-            htmlContent = [Select Id, DeveloperName, IT_Active__c, IT_HtmlForPdf__c, IT_Object_Name__c, (Select Id, IT_Active__c, IT_Field_Name__c, IT_Object_Name__c, IT_Placeholder__c From Replace_Items__r Where IT_Active__c = true) From IT_PDF_TemplateMdt__mdt Where IT_Active__c = true And Id =: TemplateId];
+            htmlContent = [Select Id, IT_Active__c, IT_HtmlForPdf__c, IT_Object_Name__c, (Select Id, IT_Active__c, IT_Field_Name__c, IT_Object_Name__c, IT_Placeholder__c From Replace_Items__r Where IT_Active__c = true) From IT_PDF_TemplateMdt__mdt Where IT_Active__c = true And Id =: TemplateId];
             documentHTML = htmlContent[0].IT_HtmlForPdf__c;
             system.debug('TemplateId::: '+TemplateId);
             if(htmlContent != null && htmlContent.size() > 0){
@@ -52,15 +52,8 @@ public class APIT09_CreatePDFController {
                     cv.VersionData = blob.valueOf('Testtest');
                 else
                     cv.VersionData = pageRef.getContent();
-
-                if(recordObjectName == 'ER_Financial_Center__c'){
-                    String clientCode = [Select IT_Financial_Center__c From ER_Financial_Center__c Where Id =: recordObjectId limit 1].IT_Financial_Center__c;    
-                    cv.Title = clientCode + '_' + htmlContent[0].DeveloperName + '_' + Datetime.now().format('MM_dd') + '.pdf';
-                    cv.PathOnClient = clientCode + '_' + htmlContent[0].DeveloperName + '_' + Datetime.now().format('MM_dd') + '.pdf';
-                }else{
-                    cv.Title = htmlContent[0].DeveloperName + '_' + Datetime.now().format('MM_dd') + '.pdf';
-                    cv.PathOnClient = htmlContent[0].DeveloperName + '_' + Datetime.now().format('MM_dd') + '.pdf';
-                }    
+                cv.Title = 'FlexBen' + recordObjectId + '_' + Datetime.now().format('MM_dd') + '.pdf';
+                cv.PathOnClient = 'FlexBen' + recordObjectId + '_' + Datetime.now().format('MM_dd') + '.pdf';
                 insert cv;
                 
                 Id conDoc = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:cv.Id].ContentDocumentId;
@@ -95,7 +88,7 @@ public class APIT09_CreatePDFController {
         String fieldsChild = '';
         List<String> subQueryChilds = new List<String>();
         try{
-            if(objChild != null && objChild.size() > 0){
+            /*if(objChild != null && objChild.size() > 0){
                 for(String sinString : objChild){
                     if(sinString.contains('__c'))
                         objC = sinString.replace('__c', 's__r');
@@ -122,7 +115,7 @@ public class APIT09_CreatePDFController {
                     subQueryChilds.add(fieldsChild);
                     mapApiLookup.put(sinString, objC); 
                 }          
-            }
+            }*/
 
             map<String, List<IT_Replace_ItemMdt__mdt>> replaceMap = new map<String, List<IT_Replace_ItemMdt__mdt>>();
             List<sObject> replaceObject = new List<sObject>();
@@ -170,26 +163,12 @@ public class APIT09_CreatePDFController {
                     System.debug('singleItem:::: '+singleItem);
                     String field = (String)caseHtml.get(singleItem);
                     if(!String.isBlank(field))
-                        htmlforPdf = htmlforPdf.replace(singleReplace.IT_Placeholder__c, field);
-                    else
-                        htmlforPdf = htmlforPdf.replace(singleReplace.IT_Placeholder__c, ''); 
-                            
-                }else if(singleReplace.IT_Replace_Type__c != '' && singleReplace.IT_Replace_Type__c == 'Child'){
-                    System.debug('mapApiLookup:: '+mapApiLookup);
-                    System.debug('singleReplace.IT_Child_Object__c:: '+singleReplace.IT_Child_Object__c);
-                    replaceObjectChilds = replaceObject[0].getSObjects(mapApiLookup.get(singleReplace.IT_Child_Object__c)); 
-                    List<sObject> childHtml = replaceObjectChilds;
-                    for(sObject sigleSObject : childHtml){
-                        Schema.SobjectField singleItemC = Schema.getGlobalDescribe().get(singleReplace.IT_Object_Name__c).getDescribe().fields.getMap().get(singleReplace.IT_Field_Name__c);
-                        String fieldChild = (String) String.valueOf(sigleSObject.get(singleItemC));
-                        if(!String.isBlank(fieldChild))
-                            htmlforPdf = htmlforPdf.replace(singleReplace.IT_Placeholder__c, fieldChild);      
-                    }        
+                        htmlforPdf = htmlforPdf.replace(singleReplace.IT_Placeholder__c, field);  
                 }/*else if(singleReplace.IT_Replace_Type__c != '' && singleReplace.IT_Replace_Type__c == 'Group'){   
                     replaceObjectChilds = replaceObject[0].getSObjects(mapApiLookup.get(singleReplace.IT_Child_Object__c)); 
 
                     List<sObject> childHtml = replaceObjectChilds;
-                    List<IT_Replace_ItemMdt__mdt> replaceItemChields = replaceMap.get('Child'); 
+                    List<IT_Replace_ItemMdt__mdt> replaceItemChields = replaceMap.get('Child');
                     String tableComplete = '';
                     for(sObject sigleSObject : childHtml){
                         //String htmlTemp = '<tr> <td style="width:33%">{!PlanNeme}</td> <td style="width:33%">{!PlanStartDate}</td> <td style="text-align:right; width:34%">{!PlanEndDate}</td></tr>';

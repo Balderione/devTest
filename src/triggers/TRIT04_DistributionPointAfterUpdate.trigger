@@ -11,7 +11,7 @@ trigger TRIT04_DistributionPointAfterUpdate on ER_Distribution_Point__c (after u
                 System.debug('trigger.new:: '+trigger.new.size());
                 if(trigger.new[0].IT_Change_Address__c){
                     APIT12_CallOutbound.createRequestAddress(trigger.new, 'ER_Distribution_Point__c');
-                }else if(trigger.new.size() == 1 && trigger.newMap.get(trigger.new[0].Id).IT_Change_Address__c == trigger.oldMap.get(trigger.new[0].Id).IT_Change_Address__c && trigger.newMap.get(trigger.new[0].Id).IT_AC_Activity__c == trigger.oldMap.get(trigger.new[0].Id).IT_AC_Activity__c){
+                }else if(trigger.new.size() == 1 && trigger.newMap.get(trigger.new[0].Id).IT_Change_Address__c == trigger.oldMap.get(trigger.new[0].Id).IT_Change_Address__c){
                     List<String> idDistributionPoint = new List<String>();
                     List<String> idDeliverySite = new List<String>();
                     List<ER_Distribution_Point__c> listDP = new List<ER_Distribution_Point__c>();
@@ -72,48 +72,5 @@ trigger TRIT04_DistributionPointAfterUpdate on ER_Distribution_Point__c (after u
                 }
             }
         }
-    }else{
-        if(Trigger.isAfter) {
-            String profileName = [Select Name From Profile Where Id =: UserInfo.getProfileId() limit 1].Name;
-            List<ER_Distribution_Point__c> singleListDP = new List<ER_Distribution_Point__c>();
-            //if(profileName == 'IT System Integration'){
-                for(ER_Distribution_Point__c sinDis : trigger.new){
-                    if(trigger.newMap.get(sinDis.Id).IT_AC_Activity__c != trigger.oldMap.get(sinDis.Id).IT_AC_Activity__c && String.isblank(trigger.oldMap.get(sinDis.Id).IT_AC_Activity__c)){
-                        if(!String.isBlank(sinDis.IT_Data_Type_To_Display_2__c) || !String.isBlank(sinDis.IT_Data_To_Display_2__c)){
-                            ER_Distribution_Point__c ticketActivity2 = new ER_Distribution_Point__c();
-                            ticketActivity2 = sinDis.clone(true, true, false, false);
-                            ticketActivity2.IT_Data_Type_To_Display__c = sinDis.IT_Data_Type_To_Display_2__c;
-                            ticketActivity2.IT_Data_To_Display__c = sinDis.IT_Data_To_Display_2__c;
-                            ticketActivity2.IT_Raw_Number_for_Display__c = 2;
-                            singleListDP = new List<ER_Distribution_Point__c>();
-                            singleListDP.add(ticketActivity2);
-                            APIT12_CallOutbound.createRequestDistributionPoint(singleListDP, null, null, 'Update', trigger.oldMap);   
-                        }
-                        if(!String.isBlank(sinDis.IT_Data_Type_To_Display_3__c) || !String.isBlank(sinDis.IT_Data_To_Display_3__c)){
-                            ER_Distribution_Point__c ticketActivity3 = new ER_Distribution_Point__c();
-                            ticketActivity3 = sinDis.clone(true, true, false, false);
-                            ticketActivity3.IT_Data_Type_To_Display__c = sinDis.IT_Data_Type_To_Display_3__c;
-                            ticketActivity3.IT_Data_To_Display__c = sinDis.IT_Data_To_Display_3__c;
-                            ticketActivity3.IT_Free_Description_to_Display__c = sinDis.IT_Free_Description_to_Display_2__c;
-                            ticketActivity3.IT_Raw_Number_for_Display__c = 3;                           
-                            singleListDP = new List<ER_Distribution_Point__c>();
-                            singleListDP.add(ticketActivity3);
-                            APIT12_CallOutbound.createRequestDistributionPoint(singleListDP, null, null, 'Update', trigger.oldMap);
-                        }
-                        if(!String.isBlank(sinDis.IT_Data_Type_To_Display_4__c) || !String.isBlank(sinDis.IT_Data_To_Display_4__c)){
-                            ER_Distribution_Point__c ticketActivity4 = new ER_Distribution_Point__c();
-                            ticketActivity4 = sinDis.clone(true, true, false, false);
-                            ticketActivity4.IT_Data_Type_To_Display__c = sinDis.IT_Data_Type_To_Display_4__c;
-                            ticketActivity4.IT_Data_To_Display__c = sinDis.IT_Data_To_Display_4__c;
-                            ticketActivity4.IT_Free_Description_to_Display__c = sinDis.IT_Free_Description_to_Display_3__c;
-                            ticketActivity4.IT_Raw_Number_for_Display__c = 4;
-                            singleListDP = new List<ER_Distribution_Point__c>();
-                            singleListDP.add(ticketActivity4);
-                            APIT12_CallOutbound.createRequestDistributionPoint(singleListDP, null, null, 'Update', trigger.oldMap);
-                        }        
-                    } 
-                }
-            //}    
-        }    
     }
 }

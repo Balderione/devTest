@@ -1,38 +1,6 @@
 trigger TRIT10_CaseBeforeInsert on Case (before insert, before update, after insert, after update) {
     if(trigger.isInsert && trigger.isBefore){
-        //AD encrypt case number
-        IT_Custom_Control__c mhc = IT_Custom_Control__c.getInstance('KeyCaseNumber'); 
-        String stringKey = ''; 
-        if (!test.isRunningTest())  {
-            stringKey = mhc.IT_Custom_Text__c;
-        }
-        else{
-            stringKey = '1v4XI+JZGajcDlmOaZnpmpXQfvMOZH+u63nPV9G0XZE=';
-        }
-        Blob keyEn = EncodingUtil.base64Decode(stringKey);
-        String caseAuto = '';
-        if (test.isRunningTest())  {
-            caseAuto = '00000001';
-        }else{
-            caseAuto = [select CaseNumber From Case Order by CaseNumber desc limit 1].CaseNumber;
-        }
-        Integer newCaseNumbercount = 1;
-        for(Case singleCase : trigger.new){
-            Integer newCaseNumber = Integer.valueOf(caseAuto) + newCaseNumbercount;
-            Integer numTemp = 8 - String.valueOf(newCaseNumber).length();
-            String caseNumberOk = '';
-            for(integer i=0; i<numTemp; i++){
-                caseNumberOk = caseNumberOk+='0';
-            }
-            caseNumberOk = caseNumberOk += String.valueOf(newCaseNumber);
-            system.debug('caseNumberOk:: '+caseNumberOk);
-            Blob caseNum = Blob.valueOf(caseNumberOk);
-            Blob codeEncrypt =  Crypto.encryptWithManagedIV('AES256', keyEn, caseNum);
-            singleCase.IT_Case_Number_Cripted__c = EncodingUtil.urlEncode(EncodingUtil.base64Encode(codeEncrypt), 'UTF-8');
-            newCaseNumbercount++;
-        }   
-        //AD encrypt case number - END
-        APIT15_CaseTriggerHandler.CaseToContractLink(Trigger.New);
+        String strinCode = APIT15_CaseTriggerHandler.CaseToContractLink(Trigger.New);
         string result = Schema.getGlobalDescribe().get('Case').getDescribe().getRecordTypeInfosById().get(trigger.new[0].RecordTypeId).getDeveloperName();
         if(result == 'IT_Client_Welfare_Provisioning_Case_RT'){
             List<Entitlement> entList= [SELECT id FROM Entitlement Where Name = 'Provisioning Flexben'];
@@ -56,7 +24,8 @@ trigger TRIT10_CaseBeforeInsert on Case (before insert, before update, after ins
             String codeEncrypted = encryptIstance.encrypt();
             trigger.New[0].IT_Incentive_URL__c = codeEncrypted;
         }
-        APIT15_CaseTriggerHandler.CaseEntitlementLink(Trigger.New);
+        
+		APIT15_CaseTriggerHandler.CaseEntitlementLink(Trigger.New);
     }
     if(trigger.isAfter && trigger.isUpdate){
         APIT15_CaseTriggerHandler.MilestoneAutoComplete(Trigger.New);

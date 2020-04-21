@@ -520,7 +520,7 @@
     <assignments>
         <name>AssignVisibilityValues</name>
         <label>AssignVisibilityValuesTRUE</label>
-        <locationX>4272</locationX>
+        <locationX>4322</locationX>
         <locationY>2050</locationY>
         <assignmentItems>
             <assignToReference>isCheckBankBlank</assignToReference>
@@ -720,8 +720,8 @@
     <assignments>
         <name>Contract_Assignment_0_0</name>
         <label>Contract Assignment</label>
-        <locationX>4714</locationX>
-        <locationY>2315</locationY>
+        <locationX>4521</locationX>
+        <locationY>2372</locationY>
         <assignmentItems>
             <assignToReference>contractRecord.IT_Sign_Sending_date__c</assignToReference>
             <operator>Assign</operator>
@@ -750,13 +750,6 @@
                 <elementReference>Inizio_Validit_Contratto_0_0</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>contractRecord.IT_SDD_Payment__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>In_attesa_di_SEPA_0</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Sign_Date_Populated_0</targetReference>
         </connector>
@@ -764,8 +757,8 @@
     <assignments>
         <name>Contract_Assignment_0_0_0</name>
         <label>Contract Assignment</label>
-        <locationX>4604</locationX>
-        <locationY>2218</locationY>
+        <locationX>4651</locationX>
+        <locationY>2253</locationY>
         <assignmentItems>
             <assignToReference>contractRecord.IT_Sign_Sending_date__c</assignToReference>
             <operator>Assign</operator>
@@ -801,13 +794,6 @@
                 <elementReference>Inizio_Validit_Contratto_0_0</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>contractRecord.IT_SDD_Payment__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>In_attesa_di_SEPA_0</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Sign_Date_Populated_0</targetReference>
         </connector>
@@ -836,7 +822,7 @@
         <name>Correct_Code_Assignment_0</name>
         <label>Correct Code Assignment</label>
         <locationX>6990</locationX>
-        <locationY>1722</locationY>
+        <locationY>1687</locationY>
         <assignmentItems>
             <assignToReference>FCRecord.IT_SDI__c</assignToReference>
             <operator>Assign</operator>
@@ -866,38 +852,6 @@
         </assignmentItems>
         <connector>
             <targetReference>Existing_Group</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>counterassoc1</name>
-        <label>counterassoc1</label>
-        <locationX>6372</locationX>
-        <locationY>1382</locationY>
-        <assignmentItems>
-            <assignToReference>counterAssociations</assignToReference>
-            <operator>AssignCount</operator>
-            <value>
-                <elementReference>counterassoc</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>assoc_existing</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>counterOrdersFlag</name>
-        <label>counterOrdersFlag</label>
-        <locationX>6602</locationX>
-        <locationY>1472</locationY>
-        <assignmentItems>
-            <assignToReference>counterflags</assignToReference>
-            <operator>AssignCount</operator>
-            <value>
-                <elementReference>countordersflag</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>order_flag</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -1063,7 +1017,7 @@
             <assignToReference>deliveryId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -1079,7 +1033,7 @@
             <assignToReference>deliveryId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -1123,7 +1077,7 @@
             <assignToReference>deliveryId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -1336,8 +1290,8 @@
     <assignments>
         <name>IBAN</name>
         <label>IBAN</label>
-        <locationX>4923</locationX>
-        <locationY>1955</locationY>
+        <locationX>4934</locationX>
+        <locationY>1993</locationY>
         <assignmentItems>
             <assignToReference>recordBankAccount.ER_IBAN__c</assignToReference>
             <operator>Assign</operator>
@@ -1415,8 +1369,8 @@
     <assignments>
         <name>IBAN_0</name>
         <label>IBAN</label>
-        <locationX>5115</locationX>
-        <locationY>2004</locationY>
+        <locationX>5030</locationX>
+        <locationY>2008</locationY>
         <assignmentItems>
             <assignToReference>recordBankAccount.IT_ABI__c</assignToReference>
             <operator>Assign</operator>
@@ -1558,22 +1512,6 @@
         </assignmentItems>
         <connector>
             <targetReference>NewContactDetail_1_0</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>NonVerificato</name>
-        <label>NonVerificato</label>
-        <locationX>4244</locationX>
-        <locationY>2169</locationY>
-        <assignmentItems>
-            <assignToReference>recordBankAccount.IT_SDD_Authorized__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>0</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Contratto_Spedizione_0_0</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2409,22 +2347,6 @@
         </connector>
     </assignments>
     <assignments>
-        <name>sdd_payment_assigment</name>
-        <label>sdd payment assigment</label>
-        <locationX>4407</locationX>
-        <locationY>2039</locationY>
-        <assignmentItems>
-            <assignToReference>recordBankAccount.IT_Payment_Code__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>recordBankAccount.IT_SDD_Payment_Code__c</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Autorizzato1</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Status_Assignment</name>
         <label>Status Assignment</label>
         <locationX>8833</locationX>
@@ -2690,31 +2612,6 @@
         </rules>
     </decisions>
     <decisions>
-        <name>assoc_existing</name>
-        <label>assoc existing</label>
-        <locationX>6498</locationX>
-        <locationY>1383</locationY>
-        <defaultConnector>
-            <targetReference>Attivit_0</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Esito predefinito</defaultConnectorLabel>
-        <rules>
-            <name>existing_0</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>counterAssociations</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>1.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>getAssociation</targetReference>
-            </connector>
-            <label>existing</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Attivit</name>
         <label>Attività?</label>
         <locationX>5188</locationX>
@@ -2757,8 +2654,8 @@
     <decisions>
         <name>Attivit_0</name>
         <label>Recapito?</label>
-        <locationX>6093</locationX>
-        <locationY>1782</locationY>
+        <locationX>6014</locationX>
+        <locationY>1755</locationY>
         <defaultConnector>
             <targetReference>Attivit_Screen_0_0</targetReference>
         </defaultConnector>
@@ -2854,38 +2751,6 @@
                 <targetReference>AssignDetailId_0_0_0</targetReference>
             </connector>
             <label>Aggiorna recapito</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Autorizzato1</name>
-        <label>Autorizzato s</label>
-        <locationX>4376</locationX>
-        <locationY>2235</locationY>
-        <defaultConnector>
-            <targetReference>Contratto_Spedizione_0_0</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Autorizzato_si</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>recordBankAccount.IT_SDD_Authorized__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>CheckBanck</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>NonVerificato</targetReference>
-            </connector>
-            <label>Autorizzato si</label>
         </rules>
     </decisions>
     <decisions>
@@ -3111,12 +2976,12 @@
         <defaultConnectorLabel>Esito predefinito</defaultConnectorLabel>
         <rules>
             <name>Ente1</name>
-            <conditionLogic>or</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>accountRecord.IT_Company_Type__c</leftValueReference>
-                <operator>EqualTo</operator>
+                <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>Institution</stringValue>
+                    <stringValue>Private</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3136,7 +3001,7 @@
         <defaultConnectorLabel>Esito predefinito</defaultConnectorLabel>
         <rules>
             <name>Private</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>accountRecord.IT_Company_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -3151,26 +3016,26 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>accountRecord.IT_Company_Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Private (work for Institution)</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Private1</targetReference>
             </connector>
-            <label>Private_or_Private_for_Institution</label>
+            <label>Private</label>
         </rules>
         <rules>
-            <name>Institution</name>
-            <conditionLogic>and</conditionLogic>
+            <name>Institution_or_Private_for_Institution</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
             <conditions>
                 <leftValueReference>accountRecord.IT_Company_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Institution</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>accountRecord.IT_Company_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Private (work for Institution)</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -3181,9 +3046,9 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Institution0</targetReference>
+                <targetReference>Institution_or_Private_for_Inst</targetReference>
             </connector>
-            <label>Institution</label>
+            <label>Institution or Private for Institution</label>
         </rules>
     </decisions>
     <decisions>
@@ -3393,10 +3258,10 @@
             <name>Incorrect_Waiting_for_SEPA</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>LoopContract.IT_SDD_Payment__c</leftValueReference>
+                <leftValueReference>LoopContract.IT_Waiting_for_SEPA__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <elementReference>ContractHeadRecord.IT_SDD_Payment__c</elementReference>
+                    <elementReference>ContractHeadRecord.IT_Waiting_for_SEPA__c</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -3649,7 +3514,7 @@
                 <leftValueReference>deliveryId</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue/>
+                    <stringValue></stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3671,7 +3536,7 @@
                 <leftValueReference>deliveryId</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue/>
+                    <stringValue></stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3696,7 +3561,7 @@
                 <leftValueReference>deliveryId</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue/>
+                    <stringValue></stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3818,7 +3683,7 @@
         <locationX>4682</locationX>
         <locationY>1904</locationY>
         <defaultConnector>
-            <targetReference>sepa1</targetReference>
+            <targetReference>Contratto_Spedizione_0_0</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>NO</defaultConnectorLabel>
         <rules>
@@ -4024,7 +3889,7 @@
                 <leftValueReference>CheckBanck</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue/>
+                    <stringValue></stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -4202,38 +4067,13 @@
                 <leftValueReference>FCRecord.IT_Office_Code__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue/>
+                    <stringValue></stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>Ente_0</targetReference>
             </connector>
             <label>KO</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>order_flag</name>
-        <label>order flag</label>
-        <locationX>6563</locationX>
-        <locationY>1570</locationY>
-        <defaultConnector>
-            <targetReference>flag</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Esito predefinito</defaultConnectorLabel>
-        <rules>
-            <name>existing</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>counterflags</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>1.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Attivit_0</targetReference>
-            </connector>
-            <label>existing</label>
         </rules>
     </decisions>
     <decisions>
@@ -4608,8 +4448,8 @@
     <decisions>
         <name>riba1</name>
         <label>riba sepa or null</label>
-        <locationX>4746</locationX>
-        <locationY>2072</locationY>
+        <locationX>4788</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>Attivit_Screen</targetReference>
         </defaultConnector>
@@ -4635,6 +4475,13 @@
             <conditions>
                 <leftValueReference>recordBankAccount.IT_SDD_Payment_Code__c</leftValueReference>
                 <operator>NotEqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordBankAccount.IT_SDD_Payment_Code__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
             </conditions>
             <conditions>
                 <leftValueReference>recordBankAccount.IT_SDD_Payment_Code__c</leftValueReference>
@@ -4716,35 +4563,6 @@
                 <targetReference>flagerror</targetReference>
             </connector>
             <label>No flagh</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>sepa1</name>
-        <label>sepa</label>
-        <locationX>4445</locationX>
-        <locationY>1915</locationY>
-        <defaultConnector>
-            <targetReference>Contratto_Spedizione_0_0</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Esito predefinito</defaultConnectorLabel>
-        <rules>
-            <name>sepa_0</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>recordBankAccount.IT_SDD_Payment_Code__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-            </conditions>
-            <conditions>
-                <leftValueReference>recordBankAccount.IT_SDD_Payment_Code__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>sdd_payment_assigment</targetReference>
-            </connector>
-            <label>sepa</label>
         </rules>
     </decisions>
     <decisions>
@@ -6256,8 +6074,8 @@
     <decisions>
         <name>VAT_Assignment_0</name>
         <label>VAT Assignment</label>
-        <locationX>4311</locationX>
-        <locationY>2404</locationY>
+        <locationX>4299</locationX>
+        <locationY>2319</locationY>
         <defaultConnector>
             <targetReference>ServiceTypeNotStd_0</targetReference>
         </defaultConnector>
@@ -6294,14 +6112,14 @@
             <field>IT_Delivery_Site__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
             <field>IT_Distribution_Point__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
@@ -6547,7 +6365,7 @@
             <field>IT_AC_Activity__c</field>
             <operator>NotEqualTo</operator>
             <value>
-                <stringValue/>
+                <stringValue></stringValue>
             </value>
         </filters>
         <filters>
@@ -6684,14 +6502,6 @@
         <picklistField>IT_Delivery_Type__c</picklistField>
         <picklistObject>ER_Delivery_Site__c</picklistObject>
     </dynamicChoiceSets>
-    <dynamicChoiceSets>
-        <name>validit_SDD</name>
-        <dataType>Picklist</dataType>
-        <displayField xsi:nil="true"/>
-        <object xsi:nil="true"/>
-        <picklistField>IT_SDD_Authorized__c</picklistField>
-        <picklistObject>ER_Bank_Account__c</picklistObject>
-    </dynamicChoiceSets>
     <formulas>
         <name>AccountId15</name>
         <dataType>String</dataType>
@@ -6797,36 +6607,6 @@ TODAY())</expression>
 &quot;02&quot;,&quot;SENZA TACITO RINNOVO&quot;,
 &quot;03&quot;,&quot;TEMPORANEO&quot;,
 &quot;04&quot;,&quot;RINNOVABILE&quot;,
-&quot;&quot;)</expression>
-    </formulas>
-    <formulas>
-        <name>FRMSDD_Payment</name>
-        <dataType>String</dataType>
-        <expression>CASE({!recordBankAccount.IT_SDD_Payment_Code__c},
-&quot;218&quot;,&quot;0 SDD B2B DAYS INVOICE DATE&quot;,
-&quot;153&quot;,&quot;60 SEPA DD DATE INVOICE + 15&quot;,
-&quot;223&quot;,&quot;SDD B2B 150 DAYS INVOICE DATE&quot;,
-&quot;221&quot;,&quot;SDD CORE 0 DAYS INVOICE DATE&quot;,
-&quot;222&quot;,&quot;SDD CORE 30 DAYS INVOICE DATE END OF THE MONTH&quot;,
-&quot;152&quot;,&quot;SEPA 120 DAYS INVOICE DATE&quot;,
-&quot;156&quot;,&quot;SEPA 15 DAYS INVOICE DATE&quot;,
-&quot;134&quot;,&quot;SEPA 30 DAYS INVOICE DATE&quot;,
-&quot;145&quot;,&quot;SEPA 30 DAYS INVOICE DATE END OF THE MONTH&quot;,
-&quot;179&quot;,&quot;SEPA 30 DAYS OF RECEIPT OF INVOICE&quot;,
-&quot;157&quot;,&quot;SEPA 45 DAYS INVOICE DATE&quot;,
-&quot;181&quot;,&quot;SEPA 45 DAYS INVOICE DATE END OF THE MONTH&quot;,
-&quot;169&quot;,&quot;SEPA 45 DAYS INVOICE RECEPTION&quot;,
-&quot;148&quot;,&quot;SEPA 5TH DAYS OF NEXT MONTH 3rd. INVOICE DATE&quot;,
-&quot;144&quot;,&quot;SEPA 60 DAYS INVOICE DATE&quot;,
-&quot;146&quot;,&quot;SEPA 60 DAYS INVOICE DATE END OF THE MONTH&quot;,
-&quot;155&quot;,&quot;SEPA 8 DAYS INVOICE DATE&quot;,
-&quot;149&quot;,&quot;SEPA 90 DAYS INVOICE DATE&quot;,
-&quot;150&quot;,&quot;SEPA 90 DAYS INVOICE DATE END OF THE MONTH&quot;,
-&quot;147&quot;,&quot;SEPA A 30 DAY BILLING MONTH&quot;,
-&quot;209&quot;,&quot;SEPA DD DT 45 BILL END MONTH 10 + GG&quot;,
-&quot;213&quot;,&quot;SEPA DD DT 60 BILL END MONTH 10 + GG&quot;,
-&quot;226&quot;,&quot;SDD B2B 60 GG INVOICE DATE END MONTH&quot;,
-&quot;227&quot;,&quot;SDD B2B 30 GG INVOICE DATE&quot;,
 &quot;&quot;)</expression>
     </formulas>
     <formulas>
@@ -7043,7 +6823,7 @@ TODAY())</expression>
 &quot;148&quot;,&quot;SEPA AL 5° GG DEL 3° MESE SUCC. DATA FATTURA&quot;,
 &quot;149&quot;,&quot;SEPA 90 GIORNI DATA FATTURA&quot;,
 &quot;150&quot;,&quot;SEPA 90 GIORNI DATA FATTURA FINE MESE&quot;,
-&quot;151&quot;,&quot;PAGAMENTO ANTICIPATO ALL&#39;ORDINE A MEZZO CARTA DI CREDITO&quot;,
+&quot;151&quot;,&quot;PAGAMENTO ANTICIPATO ALL&apos;ORDINE A MEZZO CARTA DI CREDITO&quot;,
 &quot;152&quot;,&quot;SEPA 120 GIORNI DATA FATTURA&quot;,
 &quot;153&quot;,&quot;SEPA 60 GG DATA FATTURA + 15&quot;,
 &quot;154&quot;,&quot;BONIFICO A 210 GG DATA FATTURA&quot;,
@@ -7052,7 +6832,7 @@ TODAY())</expression>
 &quot;157&quot;,&quot;SEPA 45 GIORNI DATA FATTURA&quot;,
 &quot;158&quot;,&quot;RICEVUTA BANCARIA 45 GIORNI DATA FATTURA&quot;,
 &quot;159&quot;,&quot;BONIFICO A 45 GIORNI RICEVIMENTO FATTURA&quot;,
-&quot;160&quot;,&quot;BONIFICO ANTICIPATO ALL&#39;ORDINE&quot;,
+&quot;160&quot;,&quot;BONIFICO ANTICIPATO ALL&apos;ORDINE&quot;,
 &quot;162&quot;,&quot;BONIFICO A 30 GIORNI RICEVIMENTO FATTURA&quot;,
 &quot;163&quot;,&quot;BONIFICO A 60 GIORNI RICEVIMENTO FATTURA&quot;,
 &quot;164&quot;,&quot;BONIFICO A 90 GIORNI RICEVIMENTO FATTURA&quot;,
@@ -7110,7 +6890,7 @@ TODAY())</expression>
 &quot;211&quot;,&quot;RICEVUTA BANCARIA A 5° GG MESE SUCC.DT FATTURA&quot;,
 &quot;212&quot;,&quot;COMPENSAZIONE CLIENTI/FORNITORI&quot;,
 &quot;213&quot;,&quot;SEPA 60 GG DT FATTURA FINE MESE + 10 GG&quot;,
-&quot;214&quot;,&quot;PAGAMENTO ANTICIPATO ALL&#39;ORDINE A MEZZO PAYPAL&quot;,
+&quot;214&quot;,&quot;PAGAMENTO ANTICIPATO ALL&apos;ORDINE A MEZZO PAYPAL&quot;,
 &quot;215&quot;,&quot;BONIFICO 5 GIORNI DATA FATTURA&quot;,
 &quot;216&quot;,&quot;BONIFICO A 30 GIORNI DATA FATTURA FINE MESE + 2 GG&quot;,
 &quot;217&quot;,&quot;BONIFICO A 65 GIORNI RICEVIMENTO FATTURA FINE MESE&quot;,
@@ -7140,37 +6920,37 @@ TODAY())</expression>
         <name>RIBA</name>
         <dataType>Boolean</dataType>
         <expression>OR(
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;138&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;137&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;189&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;176&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;184&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;094&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;177&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;192&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;190&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;175&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;135&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;158&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;193&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;168&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;185&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;095&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;183&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;178&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;131&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;132&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;196&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;074&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;124&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;211&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;075&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;073&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;139&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;194&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;186&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;099&#39;),
-ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &#39;187&#39;))</expression>
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;138&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;137&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;189&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;176&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;184&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;094&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;177&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;192&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;190&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;175&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;135&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;158&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;193&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;168&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;185&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;095&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;183&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;178&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;131&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;132&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;196&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;074&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;124&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;211&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;075&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;073&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;139&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;194&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;186&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;099&apos;),
+ISPICKVAL ({!recordBankAccount.IT_Payment_Code__c} , &apos;187&apos;))</expression>
     </formulas>
     <formulas>
         <name>ServiceTypeVAT</name>
@@ -7475,7 +7255,7 @@ CASE({!DiscountType},
         <queriedFields>IT_Renewal_Type__c</queriedFields>
         <queriedFields>IT_Expiration_Contract_Date__c</queriedFields>
         <queriedFields>IT_No_Exclusivity__c</queriedFields>
-        <queriedFields>IT_SDD_Payment__c</queriedFields>
+        <queriedFields>IT_Waiting_for_SEPA__c</queriedFields>
         <queriedFields>IT_Multidiscount__c</queriedFields>
         <queriedFields>IT_Date_presence__c</queriedFields>
         <queriedFields>IT_No_Date_presence__c</queriedFields>
@@ -7539,7 +7319,7 @@ CASE({!DiscountType},
         <queriedFields>IT_Renewal_Type__c</queriedFields>
         <queriedFields>IT_Expiration_Contract_Date__c</queriedFields>
         <queriedFields>IT_No_Exclusivity__c</queriedFields>
-        <queriedFields>IT_SDD_Payment__c</queriedFields>
+        <queriedFields>IT_Waiting_for_SEPA__c</queriedFields>
         <queriedFields>IT_Extradiscount__c</queriedFields>
         <queriedFields>IT_Multidiscount__c</queriedFields>
         <queriedFields>IT_Date_presence__c</queriedFields>
@@ -7770,65 +7550,10 @@ CASE({!DiscountType},
         <queriedFields>Id</queriedFields>
     </recordLookups>
     <recordLookups>
-        <name>getAssociation</name>
-        <label>getAssociation</label>
-        <locationX>6401</locationX>
-        <locationY>1495</locationY>
-        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>counterOrdersFlag</targetReference>
-        </connector>
-        <filters>
-            <field>IT_Financial_Center__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>FCRecord.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>IT_Order_Confirm_Address__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <object>IT_Contact_Association__c</object>
-        <outputReference>countordersflag</outputReference>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>IT_Order_Confirm_Address__c</queriedFields>
-    </recordLookups>
-    <recordLookups>
-        <name>getAssociation_0</name>
-        <label>getAssociation</label>
-        <locationX>6223</locationX>
-        <locationY>1421</locationY>
-        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>counterassoc1</targetReference>
-        </connector>
-        <filters>
-            <field>IT_Financial_Center__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>FCRecord.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <object>IT_Contact_Association__c</object>
-        <outputReference>counterassoc</outputReference>
-        <queriedFields>Id</queriedFields>
-    </recordLookups>
-    <recordLookups>
         <name>getBankAccount</name>
         <label>getBankAccount</label>
-        <locationX>4034</locationX>
-        <locationY>1615</locationY>
+        <locationX>4076</locationX>
+        <locationY>1635</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>AssiBankCheck</targetReference>
@@ -7912,7 +7637,7 @@ CASE({!DiscountType},
         <queriedFields>IT_Not_Standard_VAT__c</queriedFields>
         <queriedFields>IT_Commission_Discount_Percentage__c</queriedFields>
         <queriedFields>IT_No_Exclusivity__c</queriedFields>
-        <queriedFields>IT_SDD_Payment__c</queriedFields>
+        <queriedFields>IT_Waiting_for_SEPA__c</queriedFields>
         <queriedFields>IT_No_Massive_Print__c</queriedFields>
         <queriedFields>StartDate</queriedFields>
         <queriedFields>IT_Contract_Number__c</queriedFields>
@@ -8545,7 +8270,7 @@ CASE({!DiscountType},
                     <leftValueReference>ErrorTxt</leftValueReference>
                     <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue/>
+                        <stringValue></stringValue>
                     </rightValue>
                 </conditions>
                 <conditions>
@@ -8733,13 +8458,13 @@ CASE({!DiscountType},
     <screens>
         <name>Attivit_Screen_0</name>
         <label>Recapiti Screen</label>
-        <locationX>5916</locationX>
-        <locationY>1836</locationY>
+        <locationX>5905</locationX>
+        <locationY>1841</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>getAssociation_0</targetReference>
+            <targetReference>Attivit_0</targetReference>
         </connector>
         <fields>
             <name>ManageDetail</name>
@@ -9295,8 +9020,8 @@ ISBLANK({!Data_Firma_del_Contratto}),
     <screens>
         <name>Contratto_Spedizione_0_0</name>
         <label>Contratto&amp;Spedizione</label>
-        <locationX>4603</locationX>
-        <locationY>2097</locationY>
+        <locationX>4503</locationX>
+        <locationY>2060</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -9587,7 +9312,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
         </fields>
         <fields>
             <name>SDDPAymen</name>
-            <fieldText>&lt;p&gt;SDD Codice Pagamento&lt;/p&gt;&lt;p&gt;{!FRMSDD_Payment}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;SDD Codice Pagamento&lt;/p&gt;&lt;p&gt;{!recordBankAccount.IT_SDD_Payment_Code__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <visibilityRule>
                 <conditionLogic>1</conditionLogic>
@@ -9609,10 +9334,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <fieldText>ABI</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <validationRule>
-                <errorMessage>&lt;p&gt;-Lunghezza ABI = 5&lt;/p&gt;</errorMessage>
-                <formulaExpression>LEN({!ABI}) == 5</formulaExpression>
-            </validationRule>
             <visibilityRule>
                 <conditionLogic>1 OR 2</conditionLogic>
                 <conditions>
@@ -9640,10 +9361,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <fieldText>CAB</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <validationRule>
-                <errorMessage>&lt;p&gt;-Lunghezza CAB =5&lt;/p&gt;</errorMessage>
-                <formulaExpression>LEN({!CAB}) == 5</formulaExpression>
-            </validationRule>
             <visibilityRule>
                 <conditionLogic>1 OR 2</conditionLogic>
                 <conditions>
@@ -9671,10 +9388,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <fieldText>CC</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <validationRule>
-                <errorMessage>&lt;p&gt;-Lunghezza CC =12&lt;/p&gt;</errorMessage>
-                <formulaExpression>LEN({!CC}) == 12</formulaExpression>
-            </validationRule>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -9695,10 +9408,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <fieldText>CIN</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <validationRule>
-                <errorMessage>&lt;p&gt;Lunghezza CIN = 1&lt;/p&gt;</errorMessage>
-                <formulaExpression>LEN({!CIN}) == 1</formulaExpression>
-            </validationRule>
             <visibilityRule>
                 <conditionLogic>1</conditionLogic>
                 <conditions>
@@ -9739,10 +9448,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <fieldText>Check IBAN</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <validationRule>
-                <errorMessage>&lt;p&gt;Lunghezza Check IBAN = 2&lt;/p&gt;</errorMessage>
-                <formulaExpression>LEN({!Check_IBAN}) == 2</formulaExpression>
-            </validationRule>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -9815,21 +9520,6 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             </visibilityRule>
         </fields>
         <fields>
-            <name>Autorizzato</name>
-            <fieldText>&lt;p&gt;Autorizzato:&lt;/p&gt;&lt;p&gt;{!recordBankAccount.IT_SDD_Authorized__c}&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>CheckBanck</leftValueReference>
-                    <operator>IsNull</operator>
-                    <rightValue>
-                        <booleanValue>false</booleanValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>Particolarit_Contrattuali_0</name>
             <fieldText>&lt;p&gt;&lt;b&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Particolarità Contrattuali&lt;/b&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
@@ -9858,7 +9548,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
             <name>In_attesa_di_SEPA_0</name>
             <dataType>Boolean</dataType>
             <defaultValue>
-                <elementReference>contractRecord.IT_SDD_Payment__c</elementReference>
+                <elementReference>contractRecord.IT_Waiting_for_SEPA__c</elementReference>
             </defaultValue>
             <fieldText>In attesa di SEPA</fieldText>
             <fieldType>InputField</fieldType>
@@ -9995,7 +9685,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
     <screens>
         <name>Crea_Recapito</name>
         <label>Crea Recapito</label>
-        <locationX>6146</locationX>
+        <locationX>6196</locationX>
         <locationY>1607</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -10729,26 +10419,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
         <allowPause>false</allowPause>
         <fields>
             <name>ExistingRequest</name>
-            <fieldText>&lt;p&gt;&lt;b style=&quot;color: rgb(255, 0, 0);&quot;&gt;Impossibile procedere con l&#39;attivazione! Esiste una richiesta di modifica condizioni per un componente del gruppo!&lt;/b&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
-        <name>flag</name>
-        <label>flag</label>
-        <locationX>6445</locationX>
-        <locationY>1623</locationY>
-        <allowBack>false</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <connector>
-            <targetReference>Attivit_Screen_0</targetReference>
-        </connector>
-        <fields>
-            <name>flagerror1</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Attenzione! Per poter continuare, è necessario che almeno un recapito abbia il flag relativo agli ordini!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;color: rgb(255, 0, 0);&quot;&gt;Impossibile procedere con l&apos;attivazione! Esiste una richiesta di modifica condizioni per un componente del gruppo!&lt;/b&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -10819,8 +10490,8 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
         <showHeader>false</showHeader>
     </screens>
     <screens>
-        <name>Institution0</name>
-        <label>Institution</label>
+        <name>Institution_or_Private_for_Inst</name>
+        <label>Institution or Private for Inst</label>
         <locationX>7109</locationX>
         <locationY>1659</locationY>
         <allowBack>false</allowBack>
@@ -10831,7 +10502,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
         </connector>
         <fields>
             <name>ErrorOfficeCode_0</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Attenzione! Per un cliente di tipo Ente il campo corretto da valorizzare è il Codice Univoco Ufficio! Il campo SDI verrà sbiancato!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Attenzione! Per un cliente di tipo Ente o Privato che lavora per Ente il campo corretto da valorizzare è il Codice Univoco Ufficio! Il campo SDI verrà sbiancato!&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -10861,7 +10532,7 @@ ISBLANK({!Data_Firma_del_Contratto_0_0}),
         </connector>
         <fields>
             <name>ActivatedCodz</name>
-            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;E&#39; necessario confermare l&#39;indirizzo per Fatturazione, Attività e Consegna.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;E&apos; necessario confermare l&apos;indirizzo per Fatturazione, Attività e Consegna.&lt;/b&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -11887,8 +11558,8 @@ NOT(ISBLANK({!Email_PEC}))
     <subflows>
         <name>Gestisci_Recapito</name>
         <label>Gestisci_Recapito</label>
-        <locationX>5882</locationX>
-        <locationY>1641</locationY>
+        <locationX>5885</locationX>
+        <locationY>1654</locationY>
         <connector>
             <targetReference>Attivit_Screen_0</targetReference>
         </connector>
@@ -11943,8 +11614,8 @@ NOT(ISBLANK({!Email_PEC}))
     <subflows>
         <name>ManageContact</name>
         <label>ManageContact</label>
-        <locationX>6157</locationX>
-        <locationY>2016</locationY>
+        <locationX>6215</locationX>
+        <locationY>1973</locationY>
         <connector>
             <targetReference>Attivit_Screen_0_0</targetReference>
         </connector>
@@ -11999,8 +11670,8 @@ NOT(ISBLANK({!Email_PEC}))
     <subflows>
         <name>UpdateDelivery_Site</name>
         <label>UpdateDelivery Site</label>
-        <locationX>6069</locationX>
-        <locationY>1307</locationY>
+        <locationX>6259</locationX>
+        <locationY>1399</locationY>
         <flowName>IT30_Update_Delivery_Site</flowName>
         <inputAssignments>
             <name>recordId</name>
@@ -12242,36 +11913,6 @@ NOT(ISBLANK({!Email_PEC}))
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>counterassoc</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>IT_Contact_Association__c</objectType>
-    </variables>
-    <variables>
-        <name>counterAssociations</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <scale>0</scale>
-        <value>
-            <numberValue>0.0</numberValue>
-        </value>
-    </variables>
-    <variables>
-        <name>counterflags</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <scale>0</scale>
-        <value>
-            <numberValue>0.0</numberValue>
-        </value>
-    </variables>
-    <variables>
         <name>counterTOOMANYSOQL</name>
         <dataType>Number</dataType>
         <isCollection>false</isCollection>
@@ -12297,14 +11938,6 @@ NOT(ISBLANK({!Email_PEC}))
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <scale>0</scale>
-    </variables>
-    <variables>
-        <name>countordersflag</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>IT_Contact_Association__c</objectType>
     </variables>
     <variables>
         <name>CountQuadriScelti</name>
@@ -12370,7 +12003,7 @@ NOT(ISBLANK({!Email_PEC}))
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue/>
+            <stringValue></stringValue>
         </value>
     </variables>
     <variables>
@@ -12884,13 +12517,6 @@ NOT(ISBLANK({!Email_PEC}))
     <variables>
         <name>testId</name>
         <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>ValiditSDD</name>
-        <dataType>Picklist</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>

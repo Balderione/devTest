@@ -1,47 +1,390 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>IT_Compliments_Easy</fullName>
-        <description>IT_Compliments Easy</description>
+        <fullName>ER_Email_Notifiaction_for_Case_Team</fullName>
+        <description>Email Notifiaction for Case Team</description>
         <protected>false</protected>
         <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
+            <recipient>Merchant Support</recipient>
+            <type>caseTeam</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>IT_Compliments/IT_Compliments_Easy</template>
+        <template>Customer_Service_Template/ER_Case_Team</template>
     </alerts>
-    <alerts>
-        <fullName>IT_Compliments_Selection</fullName>
-        <description>IT Compliments Selection</description>
+    <fieldUpdates>
+        <fullName>FUER01_Subject_field</fullName>
+        <field>Subject</field>
+        <formula>TEXT(ER_Reason__c)+&quot;-&quot;+TEXT( ER_CaseReason2__c )</formula>
+        <name>Subject field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>IT_Compliments/IT_Compliments_Selection</template>
-    </alerts>
-    <alerts>
-        <fullName>IT_Compliments_Spesa</fullName>
-        <description>IT Compliments Spesa</description>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUER02_Subject_field</fullName>
+        <field>Subject</field>
+        <formula>Asset.Name + &quot;/&quot; + (TEXT(ER_Reason__c)+&quot;/&quot;+TEXT( ER_CaseReason2__c ))</formula>
+        <name>Subject field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>IT_Compliments/IT_Compliments_Spesa</template>
-    </alerts>
-    <alerts>
-        <fullName>IT_Compliments_Top_Premium</fullName>
-        <description>IT Compliments Top Premium</description>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT01_Case_Populate_Email</fullName>
+        <field>IT_IVR_Number_Email_Address__c</field>
+        <formula>Source:EmailMessage.ToAddress</formula>
+        <name>FUIT01_Case_Populate_Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
-        <recipients>
-            <field>ContactEmail</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>IT_Compliments/IT_Compliments_Top_Premium</template>
-    </alerts>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT01_UpdatePhone</fullName>
+        <field>IT_Call_Phone__c</field>
+        <formula>IF(
+ NOT(ISBLANK(SuppliedPhone)),
+ SuppliedPhone,
+ Contact.Phone
+)</formula>
+        <name>FUIT01_UpdatePhone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT01_Update_Consip_Phase</fullName>
+        <field>IT_ConsipFase__c</field>
+        <formula>IT_ConsipFase__c + 1</formula>
+        <name>Update Consip Phase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT07_Case_ChangeStatus</fullName>
+        <field>Status</field>
+        <literalValue>In_Progress</literalValue>
+        <name>FUIT07_Case_ChangeStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT08_Case_EscalateStatus</fullName>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>FUIT08_Case_EscalateStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT09_Case_isEscalated</fullName>
+        <field>IsEscalated</field>
+        <literalValue>1</literalValue>
+        <name>FUIT09_Case_isEscalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT16_Case_Change_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>IT_PROVISIONING_RED</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>FUIT16_Case_Change_Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT30_Assign_White</fullName>
+        <field>OwnerId</field>
+        <lookupValue>IT_PROVISIONING_WHITE</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>FUIT30_Assign_White</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT31_Subject</fullName>
+        <field>Subject</field>
+        <formula>&quot;Caso Provisioning Consip&quot;  &amp; IF( Subject &lt;&gt; &apos;&apos;, &apos; - &apos; &amp; Subject,&apos;&apos;)</formula>
+        <name>FUIT31_Subject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT36_IVR_Changed</fullName>
+        <field>IT_IVR_Changed_c__c</field>
+        <literalValue>1</literalValue>
+        <name>FUIT36 IVR Changed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT36_RequestSent</fullName>
+        <field>IT_Approval__c</field>
+        <literalValue>Approval request sent</literalValue>
+        <name>RequestSent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT37_Approved</fullName>
+        <field>IT_Approval__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT38_Rejected</fullName>
+        <field>IT_Approval__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT44_ProvisioningEnd</fullName>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>FUIT44_ProvisioningEnd</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT_Update_Consip_Phase_2</fullName>
+        <field>IT_ConsipFase__c</field>
+        <formula>IT_ConsipFase__c + 2</formula>
+        <name>Update Consip Phase 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IT_Milestone_Status_Alert</fullName>
+        <field>IT_Milestone_Status__c</field>
+        <formula>&quot;2&quot;</formula>
+        <name>Milestone Status Alert</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IT_Milestone_Status_Complete</fullName>
+        <field>IT_Milestone_Status__c</field>
+        <formula>&quot;4&quot;</formula>
+        <name>Milestone Status Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IT_Milestone_Status_Violation</fullName>
+        <field>IT_Milestone_Status__c</field>
+        <formula>&quot;3&quot;</formula>
+        <name>Milestone Status Violation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IT_Provisioning_status_Take_in_charge</fullName>
+        <field>IT_Provisioning__c</field>
+        <literalValue>Take Charge</literalValue>
+        <name>IT Provisioning status Take in charge</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>WFER01_Case_RT_User</fullName>
+        <actions>
+            <name>FUER02_Subject_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.ER_Reason__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.ER_CaseReason2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ER User Case RT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ER_BypassWF__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Subject field as a synthesis of fields: category, sub-category, motive</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFER02_Case_RT_ClientMerchant</fullName>
+        <actions>
+            <name>FUER01_Subject_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.ER_Reason__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.ER_CaseReason2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>ER User Case RT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ER_BypassWF__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Subject field for Client and Merchant as a synthesis of fields: category, sub-category</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT01_Case_Insert</fullName>
+        <actions>
+            <name>FUIT01_Case_Populate_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT04_Case_OnOwnerChange</fullName>
+        <actions>
+            <name>FUIT07_Case_ChangeStatus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED(OwnerId) &amp;&amp; ISPICKVAL(Status, &apos;New&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT05_Case_OwnerIsBackOffice</fullName>
+        <actions>
+            <name>FUIT08_Case_EscalateStatus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FUIT09_Case_isEscalated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Owner:Queue.DeveloperName = &apos;IT_BackOffice&apos;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT13_Case_Assignment</fullName>
+        <actions>
+            <name>FUIT16_Case_Change_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( 					ISPICKVAL( IT_Provisioning__c , &apos;Activation Kit Verification&apos;), 				OR(	 	Account.IT_TOP__c, 									ISPICKVAL(Account.ER_Segment__c,&apos;S&apos;) 								) 					)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT14_CasePhone</fullName>
+        <actions>
+            <name>FUIT01_UpdatePhone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true /*NOT(ISBLANK(SuppliedPhone))*/</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT16 Case Creation</fullName>
+        <actions>
+            <name>IT_Provisioning_status_Take_in_charge</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(CONTAINS(RecordType.DeveloperName, &quot;Consip&quot;))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT30_Case_Assignment_White</fullName>
+        <actions>
+            <name>FUIT30_Assign_White</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISPICKVAL( IT_Provisioning__c , &apos;Activation Kit Verification&apos;), 				 NOT(Account.IT_TOP__c), NOT(ISPICKVAL(Account.ER_Segment__c,&apos;S&apos;))  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT36 Case IVR Changed</fullName>
+        <actions>
+            <name>FUIT36_IVR_Changed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(  ISCHANGED(IT_IVR_Level_1__c),  ISCHANGED(IT_IVR_Level_2__c),  ISCHANGED(IT_IVR_Level_3__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT43_Subject</fullName>
+        <actions>
+            <name>FUIT31_Subject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>IT Client Consip Case RT</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT44_ProvisioningEnd</fullName>
+        <actions>
+            <name>FUIT44_ProvisioningEnd</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IT_Provisioning__c</field>
+            <operation>equals</operation>
+            <value>End</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

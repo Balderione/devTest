@@ -1,9 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>IT_Benefit_CL</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>IT_Benefit_CL</fullName>
+        <fields>Name</fields>
+        <fields>IT_Free_Tax__c</fields>
+        <fields>IT_Acquisition_Channel__c</fields>
+        <fields>IT_Benefit_Start_Date__c</fields>
+        <fields>IT_Benefit_End_Date__c</fields>
+        <label>IT Benefit CL</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>IT_Medical_Fees_Email__c</fullName>
+        <fullName>IT_Acquisition_Channel__c</fullName>
         <externalId>false</externalId>
-        <label>Email cassa sanitaria</label>
+        <formula>IF(  ISPICKVAL(IT_Benefit__c, &apos;Medical Fees&apos; ) , &apos;Marsh&apos; ,  TEXT(IT_Plan__r.IT_Welfare_Project__r.IT_Acquisition_Channel__c))</formula>
+        <label>Acquisition Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Anagraphical_Groups_limited_visib__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Anagraphical Groups limited visibility</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>From</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Benefit__c</fullName>
+        <externalId>false</externalId>
+        <label>Benefit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Macro_Benefit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Medical Fees</fullName>
+                    <default>false</default>
+                    <label>Medical Fees</label>
+                </value>
+                <value>
+                    <fullName>School Fees</fullName>
+                    <default>false</default>
+                    <label>School Fees</label>
+                </value>
+                <value>
+                    <fullName>Family Care</fullName>
+                    <default>false</default>
+                    <label>Family Care</label>
+                </value>
+                <value>
+                    <fullName>Public Transport</fullName>
+                    <default>false</default>
+                    <label>Public Transport</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Paper Top Premium</fullName>
+                    <default>false</default>
+                    <label>Paper Top Premium</label>
+                </value>
+                <value>
+                    <fullName>Printable Top Premium</fullName>
+                    <default>false</default>
+                    <label>Printable Top Premium</label>
+                </value>
+                <value>
+                    <fullName>Paper Selection</fullName>
+                    <default>false</default>
+                    <label>Paper Selection</label>
+                </value>
+                <value>
+                    <fullName>Printable Selection</fullName>
+                    <default>false</default>
+                    <label>Printable Selection</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare1</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare - Packages (Portale Beneficiari)</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare - Integrated (Portale Titolari)</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare - Integrated (Portale Titolari)</label>
+                </value>
+                <value>
+                    <fullName>Ticket Transport (ATM)</fullName>
+                    <default>false</default>
+                    <label>Ticket Transport (ATM)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Amazon</fullName>
+                    <default>false</default>
+                    <label>Amazon</label>
+                </value>
+                <value>
+                    <fullName>Loans</fullName>
+                    <default>false</default>
+                    <label>Loans</label>
+                </value>
+                <value>
+                    <fullName>Monetization</fullName>
+                    <default>false</default>
+                    <label>Monetization</label>
+                </value>
+                <value>
+                    <fullName>Online Purchases (NO Amazon)</fullName>
+                    <default>false</default>
+                    <label>Online Purchases (NO Amazon)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Medical Fees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>School Fees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Family Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Public Transport</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Reimbursement</controllingFieldValue>
+                <valueName>Loans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fund</controllingFieldValue>
+                <valueName>Insurance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Paper Top Premium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Printable Top Premium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Paper Selection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Compliments</controllingFieldValue>
+                <valueName>Printable Selection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Welfare</controllingFieldValue>
+                <valueName>Ticket Welfare1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Welfare</controllingFieldValue>
+                <valueName>Ticket Welfare - Integrated (Portale Titolari)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Transport</controllingFieldValue>
+                <valueName>Ticket Transport (ATM)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Amazon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Monetization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Online Purchases (NO Amazon)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Cash_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Benefit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sanint Marsh</fullName>
+                    <default>false</default>
+                    <label>Sanint Marsh</label>
+                </value>
+                <value>
+                    <fullName>Easy Welfare</fullName>
+                    <default>false</default>
+                    <label>Easy Welfare</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <valueName>Sanint Marsh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <valueName>Easy Welfare</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Configuration_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If specific Benefits, indicate the title and configuration notes</inlineHelpText>
+        <label>Configuration Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -11,9 +424,94 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>IT_Medical_Fees_Name__c</fullName>
+        <fullName>IT_Free_Tax__c</fullName>
         <externalId>false</externalId>
-        <label>Nome cassa sanitaria</label>
+        <label>Free Tax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Benefit__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Monetization</controllingFieldValue>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <controllingFieldValue>Ticket Welfare1</controllingFieldValue>
+                <valueName>Yes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <controllingFieldValue>Ticket Welfare1</controllingFieldValue>
+                <valueName>No</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Link_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Link 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Link_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Link 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Link_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Link 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Link_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Link 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Link_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Link 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Name_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Name 1</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -22,9 +520,9 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>IT_Medical_Fees_Surname__c</fullName>
+        <fullName>IT_Fund_Name_2__c</fullName>
         <externalId>false</externalId>
-        <label>Cognome cassa sanitaria</label>
+        <label>Fund Name 2</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -32,4 +530,367 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>IT_Fund_Name_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Name 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Name_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Name 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Fund_Name_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Fund Name 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Group_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify group reference visibility!</inlineHelpText>
+        <label>Group Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Macro_Benefit__c</fullName>
+        <externalId>false</externalId>
+        <label>Macro Benefit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Reimbursement</fullName>
+                    <default>false</default>
+                    <label>Reimbursement</label>
+                </value>
+                <value>
+                    <fullName>Fund</fullName>
+                    <default>false</default>
+                    <label>Fund</label>
+                </value>
+                <value>
+                    <fullName>Ticket Compliments</fullName>
+                    <default>false</default>
+                    <label>Ticket Compliments</label>
+                </value>
+                <value>
+                    <fullName>Ticket Welfare</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare</label>
+                </value>
+                <value>
+                    <fullName>Ticket Transport</fullName>
+                    <default>false</default>
+                    <label>Ticket Transport</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Other_Fund_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Fund Link</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Other_Fund_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Fund Name</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_End_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity End Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_End_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity End Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_End_Date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity End Date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_Start_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity Start Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_Start_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity Start Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Periodicity_Start_Date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodicity Start Date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan</label>
+        <referenceTo>IT_Plan__c</referenceTo>
+        <relationshipName>IT_Plan_Component</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>IT_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Benefit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Already stipulated fund</fullName>
+                    <default>false</default>
+                    <label>Already stipulated fund</label>
+                </value>
+                <value>
+                    <fullName>Company agreement (name and link)</fullName>
+                    <default>false</default>
+                    <label>Company agreement (name and link)</label>
+                </value>
+                <value>
+                    <fullName>Home to Work</fullName>
+                    <default>false</default>
+                    <label>Home to Work</label>
+                </value>
+                <value>
+                    <fullName>Integrated Home to Work (integration is born by the client)</fullName>
+                    <default>false</default>
+                    <label>Integrated Home to Work (integration is born by the client)</label>
+                </value>
+                <value>
+                    <fullName>Stipulated fund and Company agreement (name and link)</fullName>
+                    <default>false</default>
+                    <label>Stipulated fund and Company agreement (name and link)</label>
+                </value>
+                <value>
+                    <fullName>Contribution charged to Employee</fullName>
+                    <default>false</default>
+                    <label>Contribution charged to Employee</label>
+                </value>
+                <value>
+                    <fullName>Contribution charged to Company</fullName>
+                    <default>false</default>
+                    <label>Contribution charged to Company</label>
+                </value>
+                <value>
+                    <fullName>Free Amount</fullName>
+                    <default>false</default>
+                    <label>Free Amount</label>
+                </value>
+                <value>
+                    <fullName>Packages</fullName>
+                    <default>false</default>
+                    <label>Packages</label>
+                </value>
+                <value>
+                    <fullName>Sanint Marsh or Easy Welfare</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Sanint Marsh or Easy Welfare</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Ticket Transport (ATM)</controllingFieldValue>
+                <valueName>Home to Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ticket Transport (ATM)</controllingFieldValue>
+                <valueName>Integrated Home to Work (integration is born by the client)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Monetization</controllingFieldValue>
+                <valueName>Free Amount</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Monetization</controllingFieldValue>
+                <valueName>Packages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <valueName>Contribution charged to Employee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medical Fees</controllingFieldValue>
+                <valueName>Contribution charged to Company</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <valueName>Already stipulated fund</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <valueName>Company agreement (name and link)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <valueName>Stipulated fund and Company agreement (name and link)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Benefit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Benefit-{0000}</displayFormat>
+        <label>Benefit</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Benefits</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>VRIT01_Benefit_Plan_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+OR( IT_Benefit_Start_Date__c  &lt; IT_Plan__r.IT_Plan_Start_Date__c, 
+IT_Benefit_End_Date__c  &gt; IT_Plan__r.IT_Plan_End_Date__c ))</errorConditionFormula>
+        <errorMessage>Benefit&apos;s dates must be included in Plan&apos;s dates!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Benefit_Start_and_End</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+IT_Benefit_End_Date__c &lt;  IT_Benefit_Start_Date__c)</errorConditionFormula>
+        <errorMessage>Benefit End Date must be after Benefit Start Date!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Periodicity_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+OR(
+
+ IT_Periodicity_Start_Date_1__c  &lt;  IT_Benefit_Start_Date__c ,
+ IT_Periodicity_Start_Date_2__c  &lt;  IT_Benefit_Start_Date__c ,
+ IT_Periodicity_Start_Date_3__c  &lt;  IT_Benefit_Start_Date__c ,
+
+ IT_Periodicity_End_Date_1__c  &gt;  IT_Benefit_End_Date__c ,
+ IT_Periodicity_End_Date_2__c  &gt;  IT_Benefit_End_Date__c ,
+ IT_Periodicity_End_Date_3__c  &gt;  IT_Benefit_End_Date__c ,
+
+ IT_Periodicity_Start_Date_1__c  &gt;  IT_Benefit_End_Date__c ,
+ IT_Periodicity_Start_Date_2__c  &gt;  IT_Benefit_End_Date__c ,
+ IT_Periodicity_Start_Date_3__c  &gt;  IT_Benefit_End_Date__c ,
+
+ IT_Periodicity_End_Date_1__c  &lt;  IT_Benefit_Start_Date__c ,
+ IT_Periodicity_End_Date_2__c  &lt;  IT_Benefit_Start_Date__c ,
+ IT_Periodicity_End_Date_3__c  &lt;  IT_Benefit_Start_Date__c 
+ 
+ 
+
+))</errorConditionFormula>
+        <errorMessage>Periodicity Start and End Dates must be included in Benefit Start and End Dates!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_Fund_Name_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+TEXT(IT_Macro_Benefit__c) = &quot;Fund&quot; ,   
+IT_Fund_Name_1__c  = null,
+NOT(ISPICKVAL((IT_Type__c), &apos;Already stipulated fund&apos;)
+))</errorConditionFormula>
+        <errorMessage>Macro Benefit is Fund so insert almost a fund name!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

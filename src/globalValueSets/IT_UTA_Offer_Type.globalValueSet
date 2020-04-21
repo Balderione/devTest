@@ -380,11 +380,6 @@
         <default>false</default>
         <label>OFFER UTA F07C08</label>
     </customValue>
-    <customValue>
-        <fullName>077</fullName>
-        <default>false</default>
-        <label>OFFER UTA F00C02</label>
-    </customValue>
     <masterLabel>IT UTA Offer Type</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

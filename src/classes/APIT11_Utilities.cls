@@ -163,7 +163,7 @@ public without sharing class APIT11_Utilities {
                         upsertBAMethod.IT_Bank_Account_Code__c = '';
                         upsertBAMethod.IT_ABI__c = '';
                         upsertBAMethod.IT_CAB__c = '';
-                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
+                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && !controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
                         upsertBAMethod.IT_Check_Iban__c  = '';
                         upsertBAMethod.IT_SDD_Subscription_Date__c = null;
                         upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
@@ -172,7 +172,7 @@ public without sharing class APIT11_Utilities {
                         upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
                         upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
                         upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
+                        upsertBAMethod.IT_CAB__c = '';
                     }else{
                         upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
                         upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;
@@ -360,7 +360,7 @@ public without sharing class APIT11_Utilities {
                         upsertBAMethod.IT_Bank_Account_Code__c = '';
                         upsertBAMethod.IT_ABI__c = '';
                         upsertBAMethod.IT_CAB__c = '';
-                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
+                    }else if(!String.isBlank(requestObj.IT_Payment_Code__c) && !controlPaymentCode.contains(requestObj.IT_Payment_Code__c)){
                         upsertBAMethod.IT_Check_Iban__c  = '';
                         upsertBAMethod.IT_SDD_Subscription_Date__c = null;
                         upsertBAMethod.IT_SDD_Fiscal_Code__c = '';
@@ -369,7 +369,7 @@ public without sharing class APIT11_Utilities {
                         upsertBAMethod.IT_CC__c = requestObj.IT_CC__c;
                         upsertBAMethod.IT_Bank_Account_Code__c = requestObj.IT_Bank_Account_Code__c;
                         upsertBAMethod.IT_ABI__c = requestObj.IT_ABI__c;
-                        upsertBAMethod.IT_CAB__c = requestObj.IT_CAB__c;
+                        upsertBAMethod.IT_CAB__c = '';
                     }else{
                         upsertBAMethod.IT_Check_Iban__c  = requestObj.IT_Check_Iban__c ;
                         upsertBAMethod.IT_SDD_Subscription_Date__c = requestObj.IT_SDD_Subscription_Date__c;

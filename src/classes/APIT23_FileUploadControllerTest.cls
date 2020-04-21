@@ -18,8 +18,21 @@ public class APIT23_FileUploadControllerTest {
     
         Test.startTest();
         	String actual = APIT23_FileUploadController.attachPic();
+            //String actual = null;//HttpClass.updateCustomObject();
         Test.stopTest();
     
-        //System.assertEquals(null, actual, 'Value is incorrect');
+        //System.assertEquals('expected value', actual, 'Value is incorrect');
+    }
+    
+    public class MdaForm implements HttpCalloutMock {
+        public HTTPResponse respond(HTTPRequest request) {
+            // Create a fake response
+            HttpResponse response = new HttpResponse();
+            response.setHeader('Content-Type', 'application/java');
+            response.setBody('{ "meta": {"messages":[],"status":"succeeded"},"data":[{"abbreviation":"AG", "chief_town_istat_code":"084001", "istat_code":"084", "name":"AGRIGENTO", "name_display":"Agrigento", "province_ref":"38000000022", "region_ref":"38000000020"}]}');
+            response.setStatusCode(200);
+            return response; 
+        }
+        
     }
 }

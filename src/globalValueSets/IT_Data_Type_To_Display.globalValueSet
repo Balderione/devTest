@@ -13,7 +13,7 @@
     <customValue>
         <fullName>0002</fullName>
         <default>false</default>
-        <label>RIGA PLACE &#39;</label>
+        <label>RIGA PLACE &apos;</label>
     </customValue>
     <customValue>
         <fullName>0003</fullName>
@@ -418,7 +418,7 @@
     <customValue>
         <fullName>0138</fullName>
         <default>false</default>
-        <label>26 - WOMEN&#39;S UNIFORM (cod. 0138)</label>
+        <label>26 - WOMEN&apos;S UNIFORM (cod. 0138)</label>
     </customValue>
     <customValue>
         <fullName>0139</fullName>
@@ -688,7 +688,7 @@
     <customValue>
         <fullName>0204</fullName>
         <default>false</default>
-        <label>94 - BONUS BABY &#39;(cod. 0204)</label>
+        <label>94 - BONUS BABY &apos;(cod. 0204)</label>
     </customValue>
     <customValue>
         <fullName>0205</fullName>
@@ -708,7 +708,7 @@
     <customValue>
         <fullName>0208</fullName>
         <default>false</default>
-        <label>51 - BONUS BABY &#39;(cod. 0208)</label>
+        <label>51 - BONUS BABY &apos;(cod. 0208)</label>
     </customValue>
     <customValue>
         <fullName>0209</fullName>
@@ -936,10 +936,10 @@
         <label>36 - GIFT CARDS (cod. 0253)</label>
     </customValue>
     <customValue>
-        <fullName>DENOMINAZIONE SULL&#39;INDIRIZZO</fullName>
+        <fullName>DENOMINAZIONE SULL&apos;INDIRIZZO</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>DENOMINAZIONE SULL&#39;INDIRIZZO</label>
+        <label>DENOMINAZIONE SULL&apos;INDIRIZZO</label>
     </customValue>
     <masterLabel>IT Data Type To Display</masterLabel>
     <sorted>false</sorted>

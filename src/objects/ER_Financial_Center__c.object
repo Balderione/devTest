@@ -1,9 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Financial_Center_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ER_Financial_Center_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ER_Financial_Center_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <label>Financial Center Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>IT_Fax__c</fullName>
+        <fullName>ER_Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Fax</label>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Accounting_System_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Accounting System ID</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -13,11 +187,25 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>IT_Mandate_Reference__c</fullName>
+        <fullName>ER_Bank_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <formula>&#39;C8829N832&#39; + IT_Financial_Center__c</formula>
+        <label>Bank Account</label>
+        <referenceTo>ER_Bank_Account__c</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers_BankAccount</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner:User.ER_Business_Unit__c)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Mandate Reference</label>
+        <label>Business Unit</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -25,11 +213,236 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>IT_Product_Name__c</fullName>
+        <fullName>ER_Card_MO__c</fullName>
         <externalId>false</externalId>
-        <formula>IT_Product2__r.Name</formula>
+        <label>Card Middle Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Middle_Office</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.ER_Account_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers_Contact</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Creation_date_in_OS__c</fullName>
+        <description>Use as a reference for EDG data creation</description>
+        <externalId>false</externalId>
+        <label>Creation date in OS</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Secondary_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoicing Site ?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoicing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoicing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_Region_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoicing Region/State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoicing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoicing Zip Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_LastModifiedBy__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( DATEVALUE(LastModifiedDate) &gt;= DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1)
++
+( 14 - CASE( MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1) - DATE (1900,1,7),7))
+)
+
+&amp;&amp;
+
+DATEVALUE(LastModifiedDate) &lt; DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) +
+(
+7-
+CASE( MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) - DATE (1900,1,7),7))
+),
+
+/*check if the last modified by is filled */
+IF( ER_Last_Modified_By_Functional_user__c  != null, 
+
+/* if true */
+
+HYPERLINK(LEFT($Api.Partner_Server_URL_420, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_420)) + 
+               &apos;/lightning/r/User/&apos; + ER_Last_Modified_By_Functional_user__c + &apos;/view&apos;,ER_Last_Modified_By_Functional_user__r.FirstName  + &apos; &apos; + ER_Last_Modified_By_Functional_user__r.LastName) +  &apos;, &apos; + 
+               TEXT(DAY(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;/&apos; +  
+               TEXT(MONTH(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;/&apos; + 
+               TEXT(YEAR(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos; &apos; +  
+               TEXT(HOUR(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;:&apos; +  
+               TEXT(MINUTE(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))), 
+
+/* else */
+&apos;&apos;) 
+
+,
+
+
+/*check if the last modified by is filled */
+IF(ER_Last_Modified_By_Functional_user__c != null, 
+
+/* if true */
+
+HYPERLINK(LEFT($Api.Partner_Server_URL_420, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_420)) + 
+               &apos;/lightning/r/User/&apos; + ER_Last_Modified_By_Functional_user__c + &apos;/view&apos;,ER_Last_Modified_By_Functional_user__r.FirstName + &apos; &apos; + ER_Last_Modified_By_Functional_user__r.LastName) +  &apos;, &apos; + 
+               TEXT(DAY(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;/&apos; +  
+               TEXT(MONTH(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;/&apos; + 
+               TEXT(YEAR(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos; &apos; +  
+               TEXT(HOUR(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;:&apos; +  
+               TEXT(MINUTE(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))), 
+
+/* else */
+&apos;&apos;)
+
+)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product Name</label>
+        <label>Last Modified By Functional User</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -37,32 +450,1819 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>IT_Street__c</fullName>
+        <fullName>ER_Last_Modified_By_Functional_user__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <formula>IT_Toponym__c &amp; &quot; &quot; &amp; ER_Street__c</formula>
+        <label>Last Modified By Functional user</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_Modified_Date_Functional_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Modified Date Functional User</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_Synchronization_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Synchronization Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Paper_MO__c</fullName>
+        <externalId>false</externalId>
+        <label>Paper Middle Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Middle_Office</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Paper_Operational_System_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Paper Operational System ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Payment_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Payment Site ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing State/ Province</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Sync_result__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync result</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_WS_result_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Error</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_WS_result__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(ER_Sync_result__c, 
+&quot;1&quot;, IMAGE(&quot;/resource/SRER01_WebServiceHandler/Success_Img.png&quot;, &quot;Success&quot;,40,40), 
+&quot;2&quot;, IMAGE(&quot;/resource/SRER01_WebServiceHandler/Error_Img.png&quot;, &quot;Error&quot;,40,40),
+&quot;&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Street</label>
+        <label>Sync Status</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>ER_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Zip Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Accepts_New_Billing_System_PA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Accepts New Billing System PA</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Accepts_New_Billing_System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Accepts New Billing System</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Account_Active__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account (Active)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Centers (Active)</relationshipLabel>
+        <relationshipName>Financial_Centers1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Account_Closed__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account (Closed)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Centers (Closed)</relationshipLabel>
+        <relationshipName>Financial_Centers2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Account_Provisioning__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account (Provisioning)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Centers (Provisioning)</relationshipLabel>
+        <relationshipName>Financial_Centers3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Additional_Locality__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Locality</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Address_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Address AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Editing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Editing Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>AT</fullName>
+                    <default>false</default>
+                    <label>AT</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Validity End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Validity Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Admin_Data_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Admin Data AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Admin_Data_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Admin Data Validity End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Admin_Data_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Admin Data Validity Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Associated_Client__c</fullName>
+        <externalId>true</externalId>
+        <label>Associated Client</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Beneficiary_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Beneficiary Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Beneficiary_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Company_Name_R1__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Company Name R1</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Company_Name_R2__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Company Name R2</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Company_Name_R3__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Company Name R3</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_CIG__c</fullName>
+        <externalId>false</externalId>
+        <label>CIG</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_CUP_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>CUP Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Change_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Change Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Circuit_Code__c</fullName>
+        <externalId>true</externalId>
+        <label>Circuit Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Circuit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Circuit</label>
+        <referenceTo>IT_Circuit__c</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_City_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>City Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Activation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Activation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Situation__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Situation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>NORMAL</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>ADMINISTRATION OF CONTROLLED</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>COMPULSORY IN ADMINISTRATION</label>
+                </value>
+                <value>
+                    <fullName>04</fullName>
+                    <default>false</default>
+                    <label>IN EXTRAORDINARY ADMINISTRATION</label>
+                </value>
+                <value>
+                    <fullName>05</fullName>
+                    <default>false</default>
+                    <label>IN LIQUIDATION</label>
+                </value>
+                <value>
+                    <fullName>06</fullName>
+                    <default>false</default>
+                    <label>IN COMPULSORY WINDING</label>
+                </value>
+                <value>
+                    <fullName>07</fullName>
+                    <default>false</default>
+                    <label>AGREED IN QUOTE</label>
+                </value>
+                <value>
+                    <fullName>08</fullName>
+                    <default>false</default>
+                    <label>FAILURE</label>
+                </value>
+                <value>
+                    <fullName>09</fullName>
+                    <default>false</default>
+                    <label>IN COMPULSORY WINDING AMM.VA</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>IN LIQUIDATION AND CONCORD. PREV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>00</fullName>
+                    <default>false</default>
+                    <label>PROVISIONAL CUSTOMER</label>
+                </value>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>IN DEFINITION</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>IN DEFINING ONLINE</label>
+                </value>
+                <value>
+                    <fullName>05</fullName>
+                    <default>false</default>
+                    <label>TO ACTIVATE</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>ACTIVE</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>CANCELED</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>CANCELED NON-PAYMENT</label>
+                </value>
+                <value>
+                    <fullName>04</fullName>
+                    <default>false</default>
+                    <label>SUSPENDED</label>
+                </value>
+                <value>
+                    <fullName>06</fullName>
+                    <default>false</default>
+                    <label>TO ARRANGE</label>
+                </value>
+                <value>
+                    <fullName>07</fullName>
+                    <default>false</default>
+                    <label>POTENTIAL ESPADA</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>CLIENTS WAITING FOR THE CODE 6</label>
+                </value>
+                <value>
+                    <fullName>98</fullName>
+                    <default>false</default>
+                    <label>CUSTOMERS IN DEF. PROBABLE DELETE</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>TO CANCEL</label>
+                </value>
+                <value>
+                    <fullName>08</fullName>
+                    <default>false</default>
+                    <label>DEFINITELY CANCELED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>Complex Client</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Simple Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Concurrency__c</fullName>
+        <externalId>false</externalId>
+        <label>Concurrency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Concurrency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Confirm_Flow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Confirm Flow</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contract_Expiraction_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contract__r.IT_Expiration_Contract_Date__c</formula>
+        <label>Contract Expiraction Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contractual_Particularities__c</fullName>
+        <externalId>false</externalId>
+        <label>Contractual Particularities</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Count_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>Count Request</label>
+        <summaryFilterItems>
+            <field>IT_Request__c.IT_Request_Status__c</field>
+            <operation>equals</operation>
+            <value>AUTHORIZED</value>
+        </summaryFilterItems>
+        <summaryForeignKey>IT_Request__c.IT_Financial_Center__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_DEMO_FEE__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IT_DEMO_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>DEMO_Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_DEMO_Maintenance__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_DEMO_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_DEMO_Start_Up__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Up</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_Derived_CIG__c</fullName>
+        <externalId>false</externalId>
+        <label>Derived CIG</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contract__r.IT_Commission_Discount_Percentage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT_Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IT_Don_t_Send_Debt_Note__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Don&apos;t Send Debt Note</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_EORI_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>EORI Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic Validity End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic Validity Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Employee_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Employee Number</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Extended_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Extended Company Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Extra_Urban_Specifications__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra-Urban Specifications</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Toponym__c &amp; &quot; &quot; &amp; ER_Street__c  &amp; BR() &amp; 
+ ER_City__c &amp; &quot; &quot; &amp; IT_Additional_Locality__c &amp; BR() &amp; 
+ ER_Zip_Code__c  &amp; &quot; &quot; &amp;  IT_Province__c</formula>
+        <label>Billing Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <externalId>true</externalId>
+        <label>Client Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Fused_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Fused Client</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Address</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Economic_Conditions__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Economic Conditions</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_FC__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change FC</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_GeoRef_Loc_X__c</fullName>
+        <externalId>false</externalId>
+        <label>GeoRef Loc X</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GeoRef_Loc_Y__c</fullName>
+        <externalId>false</externalId>
+        <label>GeoRef Loc Y</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Hamlet_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Hamlet Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Hamlet__c</fullName>
+        <externalId>false</externalId>
+        <label>Hamlet</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Invoice_Detraction__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Detraction</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>NO DETRACTION</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>0,5 % DETRACTION TO BE SHOWN</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>0,5 % DETRACTION ON THE TOTAL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Invoice_Register_Wording__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoice Register Wording</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_MetRef_Loc_X__c</fullName>
+        <externalId>false</externalId>
+        <label>MetRef Loc X</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_MetRef_Loc_Y__c</fullName>
+        <externalId>false</externalId>
+        <label>MetRef Loc Y</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Name_and_Circuit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name + &quot; (&quot; + IT_Circuit__r.IT_Circuit_Code__c + &quot;)&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Name and Circuit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Name_and_Legal_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name + &quot; (&quot; + ER_Account_Name__r.Name + &quot;)&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Name and Legal Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_New_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>New Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Note_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Note Validity End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Note_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Note Validity Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Office_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Opening_Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Opening Outcome</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Opening</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Emission_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Emission Frequency</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_PEC_Mail__c</fullName>
+        <externalId>false</externalId>
+        <label>PEC Mail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Particularities_Progressive_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Particularities Progressive Number</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Payment_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Term</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Payment_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Previous_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Pricing__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>P</fullName>
+                    <default>false</default>
+                    <label>P</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Product2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Financial Centers</relationshipLabel>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Region_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Region code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Road_Arch_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Arch Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_SDI__c</fullName>
+        <externalId>false</externalId>
+        <label>SDI</label>
+        <length>7</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Sales_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Account</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Financial Centers (Sales Account)</relationshipLabel>
+        <relationshipName>Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Sales_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(IT_Contact_Code__c,
+&quot;230&quot;,&quot;ALTOBELLI MATTEO&quot;,
+&quot;315&quot;,&quot;LATTE SAVERIO&quot;,
+&quot;245&quot;,&quot;MACCHINI SILVIA&quot;,
+&quot;332&quot;,&quot;CALANNI MARIA ELENA&quot;,
+&quot;266&quot;,&quot;GRILLO SERENA&quot;,
+&quot;465&quot;,&quot;MAZZARETTO SIMONA&quot;,
+&quot;286&quot;,&quot;CARMANNINI LEONARDO&quot;,
+&quot;308&quot;,&quot;MANFRIN GIORGIA&quot;,
+&quot;481&quot;,&quot;MONTORFANO SIMONE&quot;,
+&quot;370&quot;,&quot;STRIPPARO DONATELLA&quot;,
+&quot;482&quot;,&quot;IACONA MIRKO&quot;,
+&quot;387&quot;,&quot;RANIERI ADOLFO&quot;,
+&quot;083&quot;,&quot;BUZZONI ALESSANDRO&quot;,
+&quot;480&quot;,&quot;BARBIERO MATTEO&quot;,
+&quot;247&quot;,&quot;DE GIORGI FABIANA&quot;,
+&quot;016&quot;,&quot;CASTIGLIONE ALESSANDRO&quot;,
+&quot;301&quot;,&quot;DE MARCHI ROBERTA&quot;,
+&quot;211&quot;,&quot;GISMANI FEDERICO&quot;,
+&quot;464&quot;,&quot;DI FRONZO MARCO&quot;,
+&quot;080&quot;,&quot;CREMONA SAUL&quot;,
+&quot;467&quot;,&quot;VULTAGGIO ALESSANDRA&quot;,
+
+IT_Contact_Code__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Sales_Manager_txt__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Send_SUT_Printout__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send SUT Printout</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Service</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Sestiere_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sestiere Code</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Short_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Address</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Company Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Simple_Client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Simple Client</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Single_Client_Multiactivity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Single Client Multiactivity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_SkipActivation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SkipActivation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Special_Billing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Billing Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>X</fullName>
+                    <default>false</default>
+                    <label>ACTUAL - INCLUDING VAT</label>
+                </value>
+                <value>
+                    <fullName>Z</fullName>
+                    <default>false</default>
+                    <label>BILL OF MENS. FATT CONS VAT AG</label>
+                </value>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>EMISS. MONTH-END INCLUDING VAT</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>ISSUE - INCLUDING VAT</label>
+                </value>
+                <value>
+                    <fullName>W</fullName>
+                    <default>false</default>
+                    <label>FATT.EM END OF THE MONTH IN VAT AGG.</label>
+                </value>
+                <value>
+                    <fullName>*</fullName>
+                    <default>false</default>
+                    <label>FATT. ACTUAL VAT AGG.</label>
+                </value>
+                <value>
+                    <fullName>$</fullName>
+                    <default>false</default>
+                    <label>A BILLING REPORTING</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>NO QUANTITY &apos;/ CUTTING IN BILL</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>VALUE CHARGED EMPL.COMPANY(A)</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>VALUE CHARGED EMPL.COMPANY (B)</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>VALUE CHARGED EMPL.COMPANY (C)</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>VALUE CHARGED EMPL.COMPANY (D)</label>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>ALL EMPLOYEE CHARGED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_State_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>State Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Province_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Street_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Street Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Naming__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Naming</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Per_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Per Day</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Toponym__c</fullName>
+        <externalId>false</externalId>
+        <label>Toponym</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_VAT_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Warrant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Warrant</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Welfare_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Welfare Project</label>
+        <referenceTo>IT_Welfare_Project__c</referenceTo>
+        <relationshipLabel>Financial Center</relationshipLabel>
+        <relationshipName>IT_Financial_Centers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Zone</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Financial Center</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ER_Account_Name__c</columns>
+        <columns>ER_Type__c</columns>
+        <columns>ER_Bank_Account__c</columns>
+        <columns>ER_City__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>IT_Client_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Financial Center Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Financial Centers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ER_Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ER_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ER_Bank_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ER_City__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>ER_Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ER_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ER_Bank_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ER_City__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ER_Business_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>VRER01_FinancialC_Mandatory_Fields</fullName>
+        <active>false</active>
+        <description>At least one of those fields need to be checked : Invoicing Site ? or &quot;Payment Site ?&quot;</description>
+        <errorConditionFormula>AND( 
+$User.ER_BypassVR__c = False,
+NOT(OR(ER_Invoicing_Site__c = true,  ER_Payment_Site__c = true))
+)</errorConditionFormula>
+        <errorMessage>At least one of those fields need to be checked : &quot;Invoicing Site ?&quot; or &quot;Payment Site ?&quot;</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>VRIT01_CIG_Institution</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
 NOT(ISCHANGED(IT_SkipActivation__c)),
 
-
-OR(
-ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c ,&#39;Private&#39;),
-ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;)),
-
-
-
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c ,&apos;Private&apos;),
 OR(
 NOT(ISBLANK( IT_CIG__c )),
 NOT(ISBLANK( IT_Derived_CIG__c ))
@@ -70,18 +2270,170 @@ NOT(ISBLANK( IT_Derived_CIG__c ))
         <errorMessage>Company = Private, Delete CIG and Derived CIG</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>VRIT02_Financial_Center_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISCHANGED(Name),
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)))</errorConditionFormula>
+        <errorMessage>Impossible to modify Financial Center name!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Billing_Company_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+OR(
+
+CONTAINS ( IT_Short_Name__c  ,&apos;À&apos;),
+CONTAINS ( IT_Short_Name__c  ,&apos;È&apos;),
+CONTAINS ( IT_Short_Name__c  ,&apos;Ì&apos;),
+CONTAINS ( IT_Short_Name__c  ,&apos;Ò&apos;),
+CONTAINS ( IT_Short_Name__c  ,&apos;Ù&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Á&apos;),
+CONTAINS ( IT_Short_Name__c  ,&apos;É&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Í&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ó&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ú&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ä&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ë&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ï&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ö&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;Ü&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;°&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;€&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;¿&apos;),
+CONTAINS ( IT_Short_Name__c ,&apos;|&apos;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;À&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;È&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ì&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ò&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ù&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Á&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;É&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Í&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ó&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ú&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ä&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ë&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ï&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ö&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;Ü&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;°&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;€&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;¿&apos;),
+CONTAINS ( IT_Billing_Company_Name_R1__c,&apos;|&apos;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;À&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;È&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ì&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ò&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ù&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Á&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;É&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Í&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ó&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ú&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ä&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ë&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ï&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ö&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;Ü&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;°&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;€&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;¿&apos;),
+CONTAINS ( IT_Billing_Company_Name_R2__c,&apos;|&apos;),
+
+
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;À&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;È&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ì&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ò&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ù&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Á&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;É&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Í&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ó&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ú&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ä&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ë&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ï&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ö&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;Ü&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;°&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;€&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;¿&apos;),
+CONTAINS ( IT_Billing_Company_Name_R3__c,&apos;|&apos;)
+))</errorConditionFormula>
+        <errorMessage>The Billing Company Name can&apos;t contains special charactes:
+ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜ°€¿|</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_IT_Company_Type</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+
+OR(
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c , &apos;Private&apos;),
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &apos;Private (work for Institution)&apos;),
+
+AND(
+ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &apos;Institution&apos;),
+IT_Accepts_New_Billing_System_PA__c = False)
+),
+			
+OR(
+ISCHANGED( IT_Office_Code__c ),
+ISCHANGED( IT_CUP_Code__c ),
+ISCHANGED( IT_Order_Code__c ),
+ISCHANGED(  IT_EORI_Code__c ),
+ISCHANGED(  IT_PEC_Mail__c ),
+ISCHANGED(  IT_Invoice_Register_Wording__c )
+)
+)</errorConditionFormula>
+        <errorMessage>The fields:
+-Office Code; 
+-CUP Code; 
+-Order Code;
+-EORI Code;
+-PEC Mail;
+-Invoice Register Wording;
+are possible to be changed only for Institution that Accepted the billing system for PA!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT05_Special_Billing</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+ ISCHANGED( IT_Special_Billing_Type__c ),
+  ISPICKVAL( IT_Service__c , &apos;I&apos;) 
+
+)</errorConditionFormula>
+        <errorMessage>Special Billing Type cannot be modifed for Service &quot;Good Holiday&quot;!</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>VRIT06_Unique_Office_Code_Pec</fullName>
         <active>true</active>
         <errorConditionFormula>AND (
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
 NOT(ISCHANGED(IT_SkipActivation__c)),
 
-IT_Accepts_New_Billing_System__c  =true,
-
-OR(
-ISPICKVAL (ER_Account_Name__r.IT_Company_Type__c ,&#39;Private&#39;) ,
- ISPICKVAL( ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;)),
+				 IT_Accepts_New_Billing_System__c  =true,
+				  ISPICKVAL (ER_Account_Name__r.IT_Company_Type__c ,&apos;Private&apos;) ,
 				 
 				
  ISBLANK( IT_PEC_Mail__c), 
@@ -92,21 +2444,164 @@ ISPICKVAL (ER_Account_Name__r.IT_Company_Type__c ,&#39;Private&#39;) ,
         <errorMessage>PEC Mail or Unique Office Code has to be populated!</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>VRIT07_Debt_Notes_Sending</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+ ISCHANGED( IT_Don_t_Send_Debt_Note__c ),
+ 
+ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Institution&apos;)
+
+
+)</errorConditionFormula>
+        <errorMessage>Debt Notes Sending is possible to modify only for Private company type!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT08_InvoiceDetail</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+
+OR (
+ ISPICKVAL( IT_Service__c , &apos;1L&apos;) ,
+ ISPICKVAL( IT_Service__c , &apos;1M&apos;),
+ ISPICKVAL( IT_Service__c , &apos;1N&apos;),
+ ISPICKVAL( IT_Service__c , &apos;1O&apos;),
+ ISPICKVAL( IT_Service__c , &apos;1X&apos;),
+ ISPICKVAL( IT_Service__c , &apos;2X&apos;)),
+
+OR(
+(ISPICKVAL( IT_Contract__r.IT_Invoice_Detail__c , &apos;0&apos;)), 
+
+(ISPICKVAL(IT_Contract__r.IT_Invoice_Detail__c , &apos;1&apos;)) , 
+
+(ISPICKVAL(IT_Contract__r.IT_Invoice_Detail__c , &apos;4&apos;))
+
+))</errorConditionFormula>
+        <errorMessage>test</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT09_Billing_System_PA</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ ISCHANGED( IT_Accepts_New_Billing_System_PA__c ),
+
+OR(
+ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c , &apos;Private&apos;),
+ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c , &apos;Private (work for Institution)&apos;)))</errorConditionFormula>
+        <errorMessage>Billing System for PA is possible to modify only for Institution company type!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT10_Billing_System</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+ISCHANGED( IT_Accepts_New_Billing_System__c ),
+
+
+ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c , &apos;Institution&apos;)
+)</errorConditionFormula>
+        <errorMessage>Billing System (not for PA) is impossible to modify for Institution company type!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT11_Modify</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+ $User.ER_BypassVR__c = False,
+ ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+ $Profile.Name != &apos;IT System Integration&apos;,
+ NOT(
+  OR(
+   ISPICKVAL( IT_Service__c , &apos;1B&apos;),
+   ISPICKVAL( IT_Service__c , &apos;1X&apos;),
+   ISPICKVAL( IT_Service__c , &apos;2X&apos;),
+   ISPICKVAL( IT_Service__c , &apos;0G&apos;),
+   ISPICKVAL( IT_Service__c , &apos;0F&apos;),
+   ISPICKVAL( IT_Service__c , &apos;0H&apos;),
+   ISPICKVAL( IT_Service__c , &apos;0P&apos;),
+   ISPICKVAL( IT_Service__c , &apos;0Q&apos;),
+   ISPICKVAL( IT_Service__c , &apos;1W&apos;),
+ ISPICKVAL( IT_Service__c , &apos;2F&apos;),
+						ISPICKVAL( IT_Service__c , &apos;2G&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1D&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1L&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1M&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1N&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1O&apos;),
+						ISPICKVAL( IT_Service__c , &apos;1E&apos;),
+							ISPICKVAL( IT_Service__c , &apos;1Y&apos;),
+							ISPICKVAL( IT_Service__c , &apos;1H&apos;),
+							ISPICKVAL( IT_Service__c , &apos;2J&apos;),
+							ISPICKVAL( IT_Service__c , &apos;2X&apos;),
+ISPICKVAL( IT_Service__c , &apos;2C&apos;)/*,
+   AND(
+    NOT(ISBLANK(IT_DEMO_Financial_Center__c)),
+    ISPICKVAL( IT_DEMO_Financial_Center__r.IT_Service__c , &apos;1B&apos;)
+   )*/
+  )
+ ))</errorConditionFormula>
+        <errorMessage>Impossible to modify for this type of service</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT12_Status_Based_Change_Block</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_Count_Request__c)),				
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+$Profile.Name != &apos;IT System Integration&apos;,
+
+OR(
+ISPICKVAL (PRIORVALUE( IT_Client_Status__c), &apos;00&apos;),
+ISPICKVAL (PRIORVALUE( IT_Client_Status__c), &apos;03&apos;),
+ISPICKVAL (PRIORVALUE( IT_Client_Status__c), &apos;10&apos;)
+)
+
+)</errorConditionFormula>
+        <errorMessage>Impossible to modify fields for this client status!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT13_No_Payment_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+ISPICKVAL( ER_Bank_Account__r.IT_Payment_Code__c , &apos;&apos;)
+
+)</errorConditionFormula>
+        <errorMessage>Missing Payment Code!</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>VRIT14_SDI_and_Unique_Office_Code</fullName>
         <active>true</active>
         <errorConditionFormula>AND (
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
 
 OR(
 
-AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Institution&#39;),
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Institution&apos;),
  IT_SDI__c != null),
 
-AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
-IT_Office_Code__c != null),
+AND( ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Private (work for Institution)&apos;),
+ IT_SDI__c != null),
 
-AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Private&apos;),
  IT_Office_Code__c != null)
 )
 )</errorConditionFormula>
@@ -117,11 +2612,10 @@ AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
         <active>true</active>
         <errorConditionFormula>AND (
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
-OR(
-LEN( IT_Office_Code__c ) &gt; 6,
-LEN( IT_Office_Code__c ) &lt; 6),
-IT_Office_Code__c != null
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ LEN( IT_Office_Code__c ) &gt; 6
+
 )</errorConditionFormula>
         <errorMessage>Unique Office Code must contains only 6 characters!</errorMessage>
     </validationRules>
@@ -130,22 +2624,36 @@ IT_Office_Code__c != null
         <active>true</active>
         <errorConditionFormula>AND (
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
 OR(
-ISPICKVAL( IT_Client_Status__c ,&#39;02&#39;),
-ISPICKVAL( IT_Client_Status__c ,&#39;05&#39;)),
+ISPICKVAL( IT_Client_Status__c ,&apos;02&apos;),
+ISPICKVAL( IT_Client_Status__c ,&apos;05&apos;)),
 
 ER_Account_Name__r.IT_Send_Client_Billing_SDI__c = true,
 
 OR(
-AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private&#39;),
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Private&apos;),
 ISBLANK(IT_SDI__c )),
 
-AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Institution&#39;),
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Institution&apos;),
 ISBLANK( IT_Office_Code__c )),
 
-AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
-ISBLANK( IT_SDI__c ))))</errorConditionFormula>
+AND(ISPICKVAL(ER_Account_Name__r.IT_Company_Type__c, &apos;Private (work for Institution)&apos;),
+ISBLANK( IT_Office_Code__c ))))</errorConditionFormula>
         <errorMessage>SDI mandatory at Financial Center level</errorMessage>
     </validationRules>
+        <validationRules>
+        <fullName>VRIT17_SDILen</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+OR(
+LEN( IT_SDI__c ) &gt; 7,
+LEN( IT_SDI__c ) &lt; 7),
+IT_SDI__c != null
+)</errorConditionFormula>
+        <errorMessage>SDI must contains only 7 characters!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

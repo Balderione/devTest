@@ -1,5 +1,556 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Distribution_Point_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AccountIdFlow__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Delivery_Site__r.ER_Financial_Center__r.ER_Account_Name__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AccountIdFlow</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Delivery_Site__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Site</label>
+        <referenceTo>ER_Delivery_Site__c</referenceTo>
+        <relationshipLabel>Distribution Points</relationshipLabel>
+        <relationshipName>Distribution_Points</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ER_Paper_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Paper Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ER_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip Code</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_AC_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>AC Activity</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Activity_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Additional_Locality__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Locality</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Address_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Address AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Editing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Editing Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>AT</fullName>
+                    <default>false</default>
+                    <label>AT</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Validity End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Validity Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Address_to_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Address to Display</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Reactivation_User_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedBy.IT_AC_User_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Authorization Reactivation User Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Reactivation_User_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Authorization Reactivation User Text</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Reactivation_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Authorization Reactivation User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Distribution_Points1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Suspension_User_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedBy.IT_AC_User_Code__c</formula>
+        <label>Authorization Suspension User Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Suspension_User_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Authorization Suspension User Text</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Authorization_Suspension_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Authorization Suspension User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Distribution_Points</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Autonumber_Code__c</fullName>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>IT_Autonumber_Code</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>IT_Cancellation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancellation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Cancellation_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Cancellation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cancellation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Change_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Change Address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_City_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>City Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Code_and_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_AC_Activity__c  + &apos; - &apos; + Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Code and Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contract_Line_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract Line Item</label>
+        <referenceTo>ER_ContractLineItem__c</referenceTo>
+        <relationshipLabel>Distribution Points</relationshipLabel>
+        <relationshipName>Distribution_Points</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Cost_Center_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Cost_Center__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>IT_Data_To_Display_2__c</fullName>
         <externalId>false</externalId>
@@ -73,21 +624,994 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>IT_Free_Description_to_Display_2__c</fullName>
+        <fullName>IT_Data_Type_to_Display_Test__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Type to Display</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>02 - EDUCATIONAL ASSIST. SERVICE</fullName>
+                    <default>false</default>
+                    <label>02 - EDUCATIONAL ASSIST. SERVICE</label>
+                </value>
+                <value>
+                    <fullName>03 - NURSING SERVICES CHILDHOOD</fullName>
+                    <default>false</default>
+                    <label>03 - NURSING SERVICES CHILDHOOD</label>
+                </value>
+                <value>
+                    <fullName>04 - SERVICES FOR MEDIATION</fullName>
+                    <default>false</default>
+                    <label>04 - SERVICES FOR MEDIATION</label>
+                </value>
+                <value>
+                    <fullName>00 - STATIONERY SCHOOL SERVICES</fullName>
+                    <default>false</default>
+                    <label>00 - STATIONERY SCHOOL SERVICES</label>
+                </value>
+                <value>
+                    <fullName>00 - TRAINING ORGANIZATIONS</fullName>
+                    <default>false</default>
+                    <label>00 - TRAINING ORGANIZATIONS</label>
+                </value>
+                <value>
+                    <fullName>00 - PARITARIA SCHOOL</fullName>
+                    <default>false</default>
+                    <label>00 - PARITARIA SCHOOL</label>
+                </value>
+                <value>
+                    <fullName>06 - FEES NURSERY</fullName>
+                    <default>false</default>
+                    <label>06 - FEES NURSERY</label>
+                </value>
+                <value>
+                    <fullName>07 - SERV. SOCIAL AND EMPLOYMENT</fullName>
+                    <default>false</default>
+                    <label>07 - SERV. SOCIAL AND EMPLOYMENT</label>
+                </value>
+                <value>
+                    <fullName>08 - INTEGRATED CENTERS DAYTIME</fullName>
+                    <default>false</default>
+                    <label>08 - INTEGRATED CENTERS DAYTIME</label>
+                </value>
+                <value>
+                    <fullName>09 - RELIEF-EP INTERVENTIONS</fullName>
+                    <default>false</default>
+                    <label>09 - RELIEF-EP INTERVENTIONS</label>
+                </value>
+                <value>
+                    <fullName>10 - RESIDENTIAL INT.SOLLIEVO</fullName>
+                    <default>false</default>
+                    <label>10 - RESIDENTIAL INT.SOLLIEVO</label>
+                </value>
+                <value>
+                    <fullName>90 - SUPPORT FOR PARENTHOOD</fullName>
+                    <default>false</default>
+                    <label>90 - SUPPORT FOR PARENTHOOD</label>
+                </value>
+                <value>
+                    <fullName>11 - ASA-RELIEF MEASURES</fullName>
+                    <default>false</default>
+                    <label>11 - ASA-RELIEF MEASURES</label>
+                </value>
+                <value>
+                    <fullName>91 - DISCOUNT PREPAID</fullName>
+                    <default>false</default>
+                    <label>91 - DISCOUNT PREPAID</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Data_to_Display__c</fullName>
+        <externalId>false</externalId>
+        <label>Data to Display</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Delivery_Site_Filtered__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Delivery Site Filtered</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ER_Delivery_Site__c.ER_Financial_Center__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.IT_Financial_Center__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ER_Delivery_Site__c</referenceTo>
+        <relationshipLabel>Distribution Points (Delivery Site Filtered)</relationshipLabel>
+        <relationshipName>Distribution_Points1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Distribution_Point_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Toponym__c &amp; &quot; &quot; &amp; ER_Street__c &amp; BR() &amp; 
+ER_City__c &amp; &quot; &quot; &amp; IT_Additional_Locality__c &amp; BR() &amp; 
+ER_Zip_Code__c &amp; &quot; &quot; &amp; IT_Province__c</formula>
+        <label>Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Do_not_send_circular_to_the_activity__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Free Description to Display 2</label>
+        <label>Do not send circular to the activity</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>IT_Free_Description_to_Display_3__c</fullName>
+        <fullName>IT_Employees_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Employees Number</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Extra_Urban_Specifications__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra-Urban Specifications</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Distribution Points</relationshipLabel>
+        <relationshipName>Distribution_Points</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Forcing__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Free Description to Display 3</label>
+        <label>Forcing</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>IT_Free_Description_to_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Free Description to Display</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Address</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Distribution_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Distribution Point</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_GeoRef_Loc_X__c</fullName>
+        <externalId>false</externalId>
+        <label>GeoRef Loc X</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GeoRef_Loc_Y__c</fullName>
+        <externalId>false</externalId>
+        <label>GeoRef Loc Y</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Hamlet_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Hamlet Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Hamlet__c</fullName>
+        <externalId>false</externalId>
+        <label>Hamlet</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Locality_to_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Locality to Display</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_MetRef_Loc_X__c</fullName>
+        <externalId>false</externalId>
+        <label>MetRef Loc X</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_MetRef_Loc_Y__c</fullName>
+        <externalId>false</externalId>
+        <label>MetRef Loc Y</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Name_Address_Cost_Center__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Cost_Center__c + BR()+
+Name + &apos; &apos; + &apos;-&apos; + &apos; &apos; +  IT_AC_Activity__c + BR()+
+IT_Distribution_Point_Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Name Address Cost Center</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Name_and_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name + &apos; &apos; +  IT_Distribution_Point_Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Name and Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Naming_to_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Naming to Display</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Note_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Note Validity End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Note_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Note Validity Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Notes_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Notes_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>40768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Raw_Number_for_Display_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Raw Number for Display 2</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Raw_Number_for_Display_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Raw Number for Display 3</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Raw_Number_for_Display_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Raw Number for Display 4</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Raw_Number_for_Display__c</fullName>
+        <externalId>false</externalId>
+        <label>Raw Number for Display</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Region_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Region code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Return_Generic_Ticket__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Return generic Ticket</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Road_Arch_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Arch Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_SF_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>SF Activity</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Sales_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Distribution Points</relationshipLabel>
+        <relationshipName>Distribution_Points</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Sestiere_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sestiere Code</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Short_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Address</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_State_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>State Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Province_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Street_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Street Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Suspension_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Suspension End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Suspension_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Suspension Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>001</fullName>
+                    <default>false</default>
+                    <label>INSOLVENT</label>
+                </value>
+                <value>
+                    <fullName>002</fullName>
+                    <default>false</default>
+                    <label>OCCASIONAL USE</label>
+                </value>
+                <value>
+                    <fullName>003</fullName>
+                    <default>false</default>
+                    <label>SALTUAL ORDERS</label>
+                </value>
+                <value>
+                    <fullName>004</fullName>
+                    <default>false</default>
+                    <label>IRREPERIBLE COMPANY</label>
+                </value>
+                <value>
+                    <fullName>005</fullName>
+                    <default>false</default>
+                    <label>DISCLOSURE</label>
+                </value>
+                <value>
+                    <fullName>006</fullName>
+                    <default>false</default>
+                    <label>ORGANIC DISMISSAL</label>
+                </value>
+                <value>
+                    <fullName>007</fullName>
+                    <default>false</default>
+                    <label>ACTIVITY CLOSED</label>
+                </value>
+                <value>
+                    <fullName>008</fullName>
+                    <default>false</default>
+                    <label>PELLEGRINI COMPETITION</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Suspension_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Suspension Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Suspension__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Suspension</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Technical_Data_Progressive__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Data Progressive</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Naming__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Naming</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_view__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(IT_Financial_Center__r.IT_Service__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ticket View</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Toponym__c</fullName>
+        <externalId>false</externalId>
+        <label>Toponym</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Zone</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Distribution Point</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>IT_Financial_Center__c</columns>
+        <columns>IT_Client_Code__c</columns>
+        <columns>IT_Cost_Center__c</columns>
+        <columns>ER_Delivery_Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Distribution Point Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Distribution Points</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>VRIT01_Activity_Editing_in_AC</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (NOT (ISNEW()) , 
+					IT_AC_Activity__c  == null,
+					$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+ ISPICKVAL ( ER_Delivery_Site__r.ER_Financial_Center__r.IT_Client_Status__c  ,&apos;ATTIVO&apos;)
+				)</errorConditionFormula>
+        <errorMessage>Sincronizzazione Anagrafica Clienti in corso: non è possibile modificare l&apos;Attività!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Exposition_Data</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+
+OR(
+
+AND(
+
+OR(
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1H&apos;),
+
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1Z&apos;)),
+
+OR
+(
+ISCHANGED(IT_Raw_Number_for_Display__c) &amp;&amp; PRIORVALUE(IT_Raw_Number_for_Display__c) != 0,
+ISCHANGED( IT_Address_to_Display__c ) &amp;&amp; PRIORVALUE(IT_Address_to_Display__c ) = true,
+ISCHANGED(IT_Naming_to_Display__c ) &amp;&amp; PRIORVALUE(IT_Naming_to_Display__c ) = true,
+ISCHANGED( IT_Locality_to_Display__c ) &amp;&amp; PRIORVALUE(IT_Locality_to_Display__c ) = true)),
+
+ISCHANGED( IT_Locality_to_Display__c ) &amp;&amp; PRIORVALUE(IT_Locality_to_Display__c ) = true,
+
+OR(
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;4&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0I&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;E&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;6&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;M&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0N&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0Z&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0R&apos;),
+ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0S&apos;)
+)),
+
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;))</errorConditionFormula>
+        <errorMessage>It&apos;s impossibile to modify these fields</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_NO_Locality</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+				OR(
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;4&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;0I&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;E&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;6&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;M&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;0N&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;0Z&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;0R&apos; ),
+				ISPICKVAL(IT_Financial_Center__r.IT_Service__c ,&apos;0S&apos; )
+),
+IT_Locality_to_Display__c =true,
+							$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+ISPICKVAL ( ER_Delivery_Site__r.ER_Financial_Center__r.IT_Client_Status__c   ,&apos;02&apos;)
+				)</errorConditionFormula>
+        <errorMessage>Locality to dispaly on the ticket must not be managed by the Cleanway and Ticket Service customers!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_Free_Description_to_Display</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(OR(
+IT_Raw_Number_for_Display__c != 0,
+IT_Address_to_Display__c = true
+),
+				 IT_Free_Description_to_Display__c =true,
+$User.ER_BypassVR__c = False,
+
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+ISPICKVAL ( ER_Delivery_Site__r.ER_Financial_Center__r.IT_Client_Status__c   ,&apos;02&apos;)
+				)</errorConditionFormula>
+        <errorMessage>This field cannot be changed if is set Raw Number of Display or Address to Display</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT05_Modify</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(
+OR( 
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1X&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;2X&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;0G&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0F&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0H&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0P&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0Q&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1W&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2F&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2G&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1D&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1L&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1M&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1N&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1O&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1E&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1Y&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1H&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;2J&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2X&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2C&apos;)/*,
+AND(
+NOT(ISBLANK(IT_Financial_Center__r.IT_DEMO_Financial_Center__c )),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;)
+)*/
+)
+))</errorConditionFormula>
+        <errorMessage>Impossible to modify for this type of service</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT06_Status_Based_Change_Block</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+
+OR(
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;10&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;00&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Client_Status__c , &apos;03&apos;)
+)
+)</errorConditionFormula>
+        <errorMessage>Impossible to modify fields for this client status!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT07_Single_Activity</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ IT_Financial_Center__r.IT_Single_Client_Multiactivity__c = false,
+
+OR(
+ISCHANGED( IT_Naming_to_Display__c ),
+ISCHANGED( IT_Address_to_Display__c ),
+ISCHANGED( IT_Locality_to_Display__c ),
+ISCHANGED( IT_Data_to_Display__c ),
+ISCHANGED( IT_Data_Type_to_Display__c ),
+ISCHANGED( IT_Free_Description_to_Display__c ),
+ISCHANGED( IT_Raw_Number_for_Display__c ),
+ISCHANGED( IT_Cancellation__c ),
+ISCHANGED( IT_Suspension__c ),
+ISCHANGED( IT_Cancellation_Type__c ),
+ISCHANGED( IT_Suspension_Start_Date__c),
+ISCHANGED( IT_Suspension_End_Date__c )
+))</errorConditionFormula>
+        <errorMessage>Impossible to modify Technical Data for single activity client!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT08_Active_Client_Suspension_Reactiv</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ISCHANGED ( IT_Suspension__c ),
+
+OR(
+ IT_Future_Change_Address__c != null,
+ IT_Future_Change_Distribution_Point__c != null,
+
+NOT(ISPICKVAL ( ER_Delivery_Site__r.ER_Financial_Center__r.IT_Client_Status__c ,&apos;02&apos;))
+))</errorConditionFormula>
+        <errorMessage>Client is inactive or there are future variations! You cannot suspend/reactivate the activity!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT09_Suspended_Activity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+PRIORVALUE(IT_Suspension__c) = true,
+
+ IT_Suspension__c = true,
+
+OR(
+ISCHANGED ( IT_Suspension_Reason__c ),
+ISCHANGED ( IT_Suspension_Start_Date__c ),
+ISCHANGED ( IT_Authorization_Suspension_User__c )
+
+)
+)</errorConditionFormula>
+        <errorMessage>The activity is suspended! To reactivate, click on &quot;Reactivation&quot;!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT10_Activity_Not_Suspended</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ IT_Suspension__c = false,
+
+OR(
+ISCHANGED( IT_Suspension_End_Date__c ),
+ISCHANGED( IT_Authorization_Reactivation_User__c )
+
+)
+)</errorConditionFormula>
+        <errorMessage>The activity is not suspended! Impossible to reactivate it!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT11_Close_Cost_Center</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,   
+ISCHANGED( IT_Cost_Center_End_Date__c ),
+
+OR(
+NOT(ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c ,&apos;02&apos;)),
+
+IT_Financial_Center__r.IT_Single_Client_Multiactivity__c =false,
+
+ IT_Cost_Center__c = null
+
+))</errorConditionFormula>
+        <errorMessage>cost center end date cannot be changed for this type of customer status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT12_Cost_Center_Update</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+ISCHANGED(  IT_Cost_Center__c  ),
+IT_Cost_Center__c != &apos;0&apos;,
+NOT(ISNEW()),
+OR(
+NOT( ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c ,&apos;02&apos;)),
+
+IT_Financial_Center__r.IT_Single_Client_Multiactivity__c =false
+)
+)</errorConditionFormula>
+        <errorMessage>The cost center can only be updated for active customers with multiple activities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT13_Cancellation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+				 NOT( ISCHANGED(IT_Cancellation__c)) ,
+				IT_Cancellation__c )</errorConditionFormula>
+        <errorMessage>fields cannot be edited because the activity is canceled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT14_ChangeDeliverySite</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(ISNEW()),
+ISCHANGED( ER_Delivery_Site__c ))</errorConditionFormula>
+        <errorMessage>you cannot change the delivery</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

@@ -15,17 +15,13 @@
                 component.set('v.showTicketNaming',singleDP.IT_Naming_to_Display__c);
                 component.set('v.showAddress',singleDP.IT_Address_to_Display__c);
                 component.set('v.showLocality',singleDP.IT_Locality_to_Display__c);
-                component.set('v.freeAddress',singleDP.IT_Free_Description_to_Display_2__c);
-                component.set('v.freeLocality',singleDP.IT_Free_Description_to_Display_3__c);
-                
+                if(singleDP.IT_Locality_to_Display__c && singleDP.IT_Data_to_Display__c != null){
+                    component.set('v.freeLocality',true);
+                }
                 component.set('v.accountName',singleDP.IT_Financial_Center__r.ER_Account_Name__r.Name);
                 component.set('v.ticketNaming',singleDP.IT_Financial_Center__r.IT_Short_Name__c);
                 component.set('v.locality',singleDP.IT_Data_Type_To_Display_4__c);
                 component.set('v.inputLocality',singleDP.IT_Data_To_Display_4__c);
-                
-                component.set('v.fixedCity',singleDP.ER_City__c);
-                component.set('v.fixedStreet',singleDP.ER_Street__c);
-                component.set('v.fixedName',singleDP.IT_Ticket_Naming__c);
                 
                 component.set('v.fullAddress',singleDP.IT_Data_Type_To_Display_3__c);
                 component.set('v.inputAddress',singleDP.IT_Data_To_Display_3__c);
@@ -44,13 +40,13 @@
                     component.set('v.showTicketNaming',true);
                     component.set('v.showAddress',true);
                     component.set('v.showLocality',true);
-                }
+                }*/
                 if(singleDP.IT_Data_To_Display_4__c != null && singleDP.IT_Data_To_Display_4__c != undefined){
                     component.set('v.freeLocality',true);
                 }
                 if(singleDP.IT_Data_To_Display_3__c != null && singleDP.IT_Data_To_Display_3__c != undefined){
                     component.set('v.freeAddress',true);
-                }*/
+                }
             }
             var action2 = component.get('c.fetchDataType');
             action2.setParams({
@@ -75,11 +71,11 @@
                     });
                     component.set('v.addressList' , row3);
                     if(!(row3.length > 0)){
-                        //component.set('v.freeAddress' ,true);
+                        component.set('v.freeAddress' ,true);
                     }
                     component.set('v.localityList' , row4);
                     if(!(row4.length > 0)){
-                        //component.set('v.freeLocality' ,true);
+                        component.set('v.freeLocality' ,true);
                     }
                 }
                 
@@ -105,8 +101,6 @@
         sObj.IT_Naming_to_Display__c = component.get('v.showTicketNaming');
         sObj.IT_Address_to_Display__c = component.get('v.showAddress');
         sObj.IT_Locality_to_Display__c = component.get('v.showLocality');
-		sObj.IT_Free_Description_to_Display_2__c = component.get('v.freeAddress');
-        sObj.IT_Free_Description_to_Display_3__c = component.get('v.freeLocality');
         if(component.get('v.validityStartDate') != component.get('v.validityStartDateOLD')){
             sObj.IT_Validity_Start_Date__c = component.get('v.validityStartDate');
         }
@@ -189,9 +183,9 @@
     },
     returnToGeneric : function(component, event, helper) {
         if(component.get('v.returnGeneric')){
-            component.set('v.showTicketNaming',true);
-            component.set('v.showAddress',true);
-            component.set('v.showLocality',true);
+            component.set('v.ticketNaming',null);
+            component.set('v.inputLocality',null);
+            component.set('v.inputAddress',null);
             component.set('v.returnGeneric',false);
         }
     },

@@ -1550,10 +1550,10 @@ global class WSIT03_ACWS  {
                     newDistributionPoint.IT_Locality_to_Display__c = true;
                 else    
                     newDistributionPoint.IT_Locality_to_Display__c = false; 
-                //if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1')
-                    //newDistributionPoint.IT_Naming_to_Display__c = true;
-                //else    
-                    //newDistributionPoint.IT_Naming_to_Display__c = false; 
+                if(!String.isBlank(singleDistributionPoint.IT_Free_Description_to_Display) && singleDistributionPoint.IT_Free_Description_to_Display == '1')
+                    newDistributionPoint.IT_Naming_to_Display__c = true;
+                else    
+                    newDistributionPoint.IT_Naming_to_Display__c = false; 
                 
                 newDistributionPoint.IT_Raw_Number_for_Display__c = singleDistributionPoint.IT_Raw_Number_for_Display;
                 newDistributionPoint.IT_Data_to_Display__c = singleDistributionPoint.IT_Data_to_Display;
@@ -1570,21 +1570,13 @@ global class WSIT03_ACWS  {
                     if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).Keyset().contains(3)){
                         newDistributionPoint.IT_Data_to_Display_3__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(3).IT_Data_to_Display;
                         newDistributionPoint.IT_Data_Type_to_Display_3__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(3).IT_Data_Type_to_Display;
-                        if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(3).IT_Free_Description_to_Display == '1') 
-                            newDistributionPoint.IT_Free_Description_to_Display_2__c = true; 
-                        else    
-                            newDistributionPoint.IT_Free_Description_to_Display_2__c = false;
                     }
                     if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).Keyset().contains(4)){
                         newDistributionPoint.IT_Data_to_Display_4__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(4).IT_Data_to_Display;
                         newDistributionPoint.IT_Data_Type_to_Display_4__c = multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(4).IT_Data_Type_to_Display;
-                        if(multiDistribution.get(singleDistributionPoint.IT_AC_Activity).get(4).IT_Free_Description_to_Display == '1') 
-                            newDistributionPoint.IT_Free_Description_to_Display_3__c = true;
-                        else
-                            newDistributionPoint.IT_Free_Description_to_Display_3__c = false;  
                     }
                 } 
-                newDistributionPoint.IT_AC_User__c = singleDistributionPoint.IT_AC_User;
+                newDistributionPoint.IT_AC_User__c = singleDistributionPoint.IT_AC_User; 
                 if(singleDistributionPoint.IT_Validity_Start_Date != null) 
                     newDistributionPoint.IT_Validity_Start_Date__c = singleDistributionPoint.IT_Validity_Start_Date;
                 if(singleDistributionPoint.IT_Validity_End_Date != null)

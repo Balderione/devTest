@@ -436,7 +436,7 @@ global without sharing class APIT12_CallOutbound {
             for(ER_Distribution_Point__c singleDistributionPoint : sinDistPointQuery){
                 activities reqDistPointSingle = new activities(singleDistributionPoint, ac_User, maDPOld);
                 activities.add(reqDistPointSingle);
-                if(sinDSQuery != null && (typeDml == 'Insert' || singleDistributionPoint.ER_Delivery_Site__c != maDPOld.get(singleDistributionPoint.Id).ER_Delivery_Site__c)){
+                if(typeDml == 'Insert' || singleDistributionPoint.ER_Delivery_Site__c != maDPOld.get(singleDistributionPoint.Id).ER_Delivery_Site__c){
                     addresses reqAddressDP = new addresses(singleDistributionPoint, 'ER_Distribution_Point__c', ac_User);
                     addresses.add(reqAddressDP);
                     for(ER_Delivery_Site__c singleDeliverySite : sinDSQuery){
@@ -687,19 +687,13 @@ global without sharing class APIT12_CallOutbound {
             additional_expenses = new List<additional_expenses>();
             notes = new List<notes>();
             Set<String> controlContact = new Set<String>();
-            Set<String> controlContactSoc = new Set<String>();
             for(IT_Contact_Association__c singleConASS : contactAssQuery){
                 contacts_association reqConAssSingle = new contacts_association(singleConASS, ac_User);
                 contacts_association.add(reqConAssSingle);
-                if(!controlContact.contains(singleConASS.IT_Contact_Detail__r.IT_Contact__c) && singleConASS.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c == 'Ref'){
+                if(!controlContact.contains(singleConASS.IT_Contact_Detail__r.IT_Contact__c)){
                     contacts reqConSingle = new contacts(singleConASS, ac_User);
                     contacts.add(reqConSingle);
                     controlContact.add(singleConASS.IT_Contact_Detail__r.IT_Contact__c);
-                }
-                else if(!controlContactSoc.contains(singleConASS.IT_Contact_Detail__r.IT_Contact__c+singleConASS.IT_Client_Code__c) && singleConASS.IT_Contact_Detail__r.IT_Contact__r.IT_Type__c == 'Soc'){
-                    contacts reqConSingle = new contacts(singleConASS, ac_User);
-                    contacts.add(reqConSingle);
-                    controlContactSoc.add(singleConASS.IT_Contact_Detail__r.IT_Contact__c+singleConASS.IT_Client_Code__c);
                 }    
             }        
         }

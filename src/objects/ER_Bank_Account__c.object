@@ -1,16 +1,792 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Bank_Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ER_Bank_Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ER_Bank_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>ER_Bank_Account_Status__c</fields>
+        <label>Bank Account Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CZ_Specific_symbol__c</fullName>
+        <externalId>false</externalId>
+        <label>Specific symbol</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZ_Variable_symbol__c</fullName>
+        <externalId>false</externalId>
+        <label>Variable symbol</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_BIC__c</fullName>
+        <externalId>false</externalId>
+        <label>BIC</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Account_Number_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Number Key</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Account_Number_Prefix__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Number Prefix</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Account_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Owner</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Account_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Close</fullName>
+                    <default>false</default>
+                    <label>Close</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Bank_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Owner:User.ER_Business_Unit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Bank Accounts</relationshipLabel>
+        <relationshipName>Bank_Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_IBAN__c</fullName>
+        <externalId>false</externalId>
+        <label>IBAN</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ER_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_ABI__c</fullName>
+        <externalId>false</externalId>
+        <label>ABI</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Authorized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Authorized</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Bank_Account_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Bank_Account_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_CAB__c</fullName>
+        <externalId>false</externalId>
+        <label>CAB</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_CC__c</fullName>
+        <externalId>false</externalId>
+        <label>CC</label>
+        <length>16</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Check_Iban__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Iban</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Cin__c</fullName>
+        <externalId>false</externalId>
+        <label>CIN</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic Validity End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Economic_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Economic Validity Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Bank_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Bank Account</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_SDD__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change SDD</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Payment_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Payment_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_SDD_Authorized__c</fullName>
+        <externalId>false</externalId>
+        <label>SDD Authorized</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_SDD_Authorized</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_SDD_Contract_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>SDD Contract Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_SDD_Fiscal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>SDD Fiscal Code</label>
+        <length>16</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_SDD_Payment_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>SDD Payment Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>218</fullName>
+                    <default>false</default>
+                    <label>0 SDD B2B DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>153</fullName>
+                    <default>false</default>
+                    <label>60 SEPA DD DATE INVOICE + 15</label>
+                </value>
+                <value>
+                    <fullName>223</fullName>
+                    <default>false</default>
+                    <label>SDD B2B 150 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>227</fullName>
+                    <default>false</default>
+                    <label>SDD B2B 30 GG INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>226</fullName>
+                    <default>false</default>
+                    <label>SDD B2B 60 GG INVOICE DATE END MONTH</label>
+                </value>
+                <value>
+                    <fullName>221</fullName>
+                    <default>false</default>
+                    <label>SDD CORE 0 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>222</fullName>
+                    <default>false</default>
+                    <label>SDD CORE 30 DAYS INVOICE DATE END OF THE MONTH</label>
+                </value>
+                <value>
+                    <fullName>152</fullName>
+                    <default>false</default>
+                    <label>SEPA 120 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>156</fullName>
+                    <default>false</default>
+                    <label>SEPA 15 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>134</fullName>
+                    <default>false</default>
+                    <label>SEPA 30 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>145</fullName>
+                    <default>false</default>
+                    <label>SEPA 30 DAYS INVOICE DATE END OF THE MONTH</label>
+                </value>
+                <value>
+                    <fullName>179</fullName>
+                    <default>false</default>
+                    <label>SEPA 30 DAYS OF RECEIPT OF INVOICE</label>
+                </value>
+                <value>
+                    <fullName>157</fullName>
+                    <default>false</default>
+                    <label>SEPA 45 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>181</fullName>
+                    <default>false</default>
+                    <label>SEPA 45 DAYS INVOICE DATE END OF THE MONTH</label>
+                </value>
+                <value>
+                    <fullName>169</fullName>
+                    <default>false</default>
+                    <label>SEPA 45 DAYS INVOICE RECEPTION</label>
+                </value>
+                <value>
+                    <fullName>148</fullName>
+                    <default>false</default>
+                    <label>SEPA 5TH DAYS OF NEXT MONTH 3rd. INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>144</fullName>
+                    <default>false</default>
+                    <label>SEPA 60 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>146</fullName>
+                    <default>false</default>
+                    <label>SEPA 60 DAYS INVOICE DATE END OF THE MONTH</label>
+                </value>
+                <value>
+                    <fullName>155</fullName>
+                    <default>false</default>
+                    <label>SEPA 8 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>149</fullName>
+                    <default>false</default>
+                    <label>SEPA 90 DAYS INVOICE DATE</label>
+                </value>
+                <value>
+                    <fullName>150</fullName>
+                    <default>false</default>
+                    <label>SEPA 90 DAYS INVOICE DATE END OF THE MONTH</label>
+                </value>
+                <value>
+                    <fullName>147</fullName>
+                    <default>false</default>
+                    <label>SEPA A 30 DAY BILLING MONTH</label>
+                </value>
+                <value>
+                    <fullName>209</fullName>
+                    <default>false</default>
+                    <label>SEPA DD DT 45 BILL END MONTH 10 + GG</label>
+                </value>
+                <value>
+                    <fullName>213</fullName>
+                    <default>false</default>
+                    <label>SEPA DD DT 60 BILL END MONTH 10 + GG</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_SDD_Subscription_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>SDD Subscription Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_SEPA_Original_Module__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SEPA Original Module</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_SkipActivation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SkipActivation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Bank Account</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Bank Account Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Bank Accounts</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ER_Bank_Account_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ER_IBAN__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ER_Bank_Account_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ER_IBAN__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ER_Bank_Account_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ER_IBAN__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ER_Bank_Account_Status__c</searchFilterFields>
+        <searchFilterFields>ER_IBAN__c</searchFilterFields>
+        <searchResultsAdditionalFields>ER_Bank_Account_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ER_IBAN__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>VRER01_BankAccount_IBANFormat</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+NOT(REGEX(ER_IBAN__c, &quot;[A-Z]{2}[0-9]{2}[A-Z]{4}[0-9]{14}&quot;))
+)</errorConditionFormula>
+        <errorDisplayField>ER_IBAN__c</errorDisplayField>
+        <errorMessage>IBAN Format is not correct</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRHU06_IBAN_Hungarian_Format</fullName>
+        <active>true</active>
+        <description>This validation rule will control the IBAN format to ensure it fit Hungarian format, as following : 
+
+00000000-00000000-00000000 (8 digits - dash separator - 8 digits - dash separator / 8 digits)</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+ER_Business_Unit__c =&apos;HU&apos;,  
+NOT( 
+OR( 
+LEN( ER_IBAN__c ) = 0, 
+REGEX( ER_IBAN__c , &quot;[0-9]{8}-[0-9]{8}-[0-9]{8}&quot;)
+)))</errorConditionFormula>
+        <errorDisplayField>ER_IBAN__c</errorDisplayField>
+        <errorMessage>The format of the IBAN must be equal to Hungarian format, as following : 
+
+00000000-00000000-00000000 (8 digits / dash separator / 8 digits / dash separator / 8 digits)</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>VRIT01_PaymentConditions</fullName>
         <active>true</active>
         <errorConditionFormula>AND( 
 $User.ER_BypassVR__c = False,
-ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
 NOT(ISCHANGED(IT_SkipActivation__c)),
-$Profile.Name &lt;&gt; &#39;IT CRM&#39;,
-
-NOT(TEXT(IT_Payment_Code__c) = TEXT ( IT_SDD_Payment_Code__c )),
-
+$Profile.Name &lt;&gt; &apos;IT CRM&apos;,
 
 NOT (ISNEW()),
 
@@ -19,26 +795,293 @@ NOT (ISNEW()),
 OR(
 
 AND(
-(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;151&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;214&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;160&#39;))),
+(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;151&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;214&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;160&apos;))),
 
 AND(
-(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;214&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;151&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;160&#39;))),
+(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;214&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;151&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;160&apos;))),
 
 AND(
-(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;160&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;214&#39;)),
-NOT(ISPICKVAL(IT_Payment_Code__c, &#39;151&#39;))),
+(ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;160&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;214&apos;)),
+NOT(ISPICKVAL(IT_Payment_Code__c, &apos;151&apos;))),
 
 AND(
-NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;151&#39;))),
-NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;160&#39;))),
-NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&#39;214&#39;))))
+NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;151&apos;))),
+NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;160&apos;))),
+NOT((ISPICKVAL(PRIORVALUE( IT_Payment_Code__c),&apos;214&apos;))))
 
 ))</errorConditionFormula>
-        <errorMessage>It&#39;s possible to modify Payment Conditions only if the new value is Credit Card, Bank Transfer or Paypal!</errorMessage>
+        <errorMessage>It&apos;s possible to modify Payment Conditions only if the new value is Credit Card, Bank Transfer or Paypal!</errorMessage>
     </validationRules>
+    <validationRules>
+        <fullName>VRIT02_SDD_Payment</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+NOT(ISNULL(TEXT( IT_SDD_Payment_Code__c ))),
+NOT(ISPICKVAL(IT_SDD_Payment_Code__c, &apos;&apos;)),
+
+OR(
+ISBLANK( IT_ABI__c ),
+ISBLANK( IT_CAB__c ),
+ISBLANK( IT_CC__c ),
+ISBLANK( IT_Cin__c ),
+ISBLANK( IT_SDD_Contract_Code__c ),
+ISBLANK( IT_SDD_Fiscal_Code__c ),
+ISBLANK( IT_SDD_Subscription_Date__c ),
+ISBLANK( IT_Check_Iban__c )
+)			
+)</errorConditionFormula>
+        <errorMessage>Fields must be entered: ABI, CAB, CC, Cin</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Bank_Required_Payment</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ $User.ER_BypassVR__c=False,
+ ISPICKVAL($User.ER_Business_Unit__c,&apos;IT&apos;),
+ ISPICKVAL(ER_Financial_Center__r.IT_Client_Status__c,&apos;02&apos;),
+ ISPICKVAL(IT_Bank_Account_Code__c, &apos;&apos;),
+ NOT(AND(
+ISPICKVAL(IT_Payment_Code__c, &apos;&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;075&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;076&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;077&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;078&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;079&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;074&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;094&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;095&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;096&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;097&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;098&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;099&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;115&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;196&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;131&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;132&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;134&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;135&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;137&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;138&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;144&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;145&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;146&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;147&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;148&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;149&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;150&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;151&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;152&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;153&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;155&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;156&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;157&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;158&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;168&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;169&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;170&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;172&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;173&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;175&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;176&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;177&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;178&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;179&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;180&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;181&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;183&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;184&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;185&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;186&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;187&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;189&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;190&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;192&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;193&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;194&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;004&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;012&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;015&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;016&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;017&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;018&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;019&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;020&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;021&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;022&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;023&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;024&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;025&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;026&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;027&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;028&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;209&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;211&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;212&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;213&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;214&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;218&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;220&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;221&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;222&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;223&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;226&apos;),
+ISPICKVAL(IT_Payment_Code__c,&apos;227&apos;))
+)
+)</errorConditionFormula>
+        <errorMessage>The Bank Account Code is required for the Payment Condition selected!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_Modify</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(
+OR( 
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;1B&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;1X&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;2X&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c , &apos;0G&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;0F&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;0H&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;0P&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;0Q&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;1W&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &apos;2F&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &apos;2G&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;1D&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;1L&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;1M&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &apos;1N&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;1O&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &apos;1E&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c , &apos;1Y&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;1H&apos;),
+ISPICKVAL(ER_Financial_Center__r.IT_Service__c  , &apos;2J&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;2X&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c  , &apos;2C&apos;)/*,
+AND( 
+NOT(ISBLANK(ER_Financial_Center__r.IT_DEMO_Financial_Center__c )),
+ISPICKVAL( ER_Financial_Center__r.IT_Service__c , &apos;1B&apos;)
+)*/
+)
+))</errorConditionFormula>
+        <errorMessage>Impossible to modify for this type of service</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT05_Status_Based_Change_Block</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+ISBLANK(  IT_Future_Change_Bank_Account__c ),
+ISBLANK(  IT_Future_Change_SDD__c ),
+
+
+OR(
+ISPICKVAL( ER_Financial_Center__r.IT_Client_Status__c , &apos;10&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Client_Status__c , &apos;00&apos;),
+ISPICKVAL( ER_Financial_Center__r.IT_Client_Status__c , &apos;03&apos;)
+)
+)</errorConditionFormula>
+        <errorMessage>Impossible to modify fields for this client status!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT06_Authorized</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+OR(
+ AND(
+  NOT(ISCHANGED(IT_SkipActivation__c)),
+  ISPICKVAL(IT_SDD_Authorized__c, &apos;2&apos;),
+  OR(
+   ISNULL(TEXT( IT_SDD_Payment_Code__c )),
+   ISPICKVAL(IT_SDD_Payment_Code__c, &apos;&apos;),
+   ISBLANK( IT_SDD_Contract_Code__c ),
+   ISBLANK( IT_SDD_Fiscal_Code__c ),
+   ISBLANK( IT_SDD_Subscription_Date__c )
+  )
+ ),
+ AND(
+  ISCHANGED(IT_SkipActivation__c),
+  ISPICKVAL(IT_SDD_Authorized__c, &apos;2&apos;),
+  OR(
+   ISNULL(TEXT( IT_SDD_Payment_Code__c )),
+   ISPICKVAL(IT_SDD_Payment_Code__c, &apos;&apos;),
+   ISBLANK( IT_SDD_Contract_Code__c ),
+   ISBLANK( IT_SDD_Fiscal_Code__c ),
+   ISBLANK( IT_SDD_Subscription_Date__c )
+  )
+ )
+)
+)</errorConditionFormula>
+        <errorMessage>Authorized can be set only if SDD field are populated!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT07_No_Payment_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ISPICKVAL( IT_Payment_Code__c , &apos;&apos;)
+
+)</errorConditionFormula>
+        <errorMessage>Missing Payment Code!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT09_Insert_Payment</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+$Profile.Name &lt;&gt; &apos;IT System Integration&apos;,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED( IT_SkipActivation__c )),
+ISPICKVAL( IT_SDD_Authorized__c , &apos;2&apos;),
+TEXT( IT_Payment_Code__c) &lt;&gt; TEXT(IT_SDD_Payment_Code__c ))</errorConditionFormula>
+        <errorMessage>You have to change also payment code with the same value of SDD Payment!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT10_Bank_Must_Be_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+$Profile.Name &lt;&gt; &apos;IT System Integration&apos;,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISCHANGED( IT_SkipActivation__c )),
+ISPICKVAL( IT_SDD_Authorized__c , &apos;2&apos;),
+NOT(ISPICKVAL( IT_Bank_Account_Code__c, &apos;&apos; ))
+)</errorConditionFormula>
+        <errorMessage>Bank Account must be blank!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT_08_SDD_Authorized</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+
+NOT($User.ER_BypassVR__c),
+$Profile.Name &lt;&gt; &quot;IT CRM&quot;,
+$Profile.Name != &apos;IT System Integration&apos;,
+
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+ISCHANGED( IT_SDD_Authorized__c ),
+NOT(ISCHANGED( IT_SkipActivation__c )))</errorConditionFormula>
+        <errorMessage>User not allowed to edit this field</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>
