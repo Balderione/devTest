@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>043</fullName>
+        <default>false</default>
+        <label>NOTES FOR AN EXTENSION</label>
+    </customValue>
+    <customValue>
+        <fullName>001</fullName>
+        <default>false</default>
+        <label>INFORMATION REQUEST (code 001)</label>
+    </customValue>
+    <customValue>
+        <fullName>002</fullName>
+        <default>false</default>
+        <label>ORDER CORRECTION (code 002)</label>
+    </customValue>
+    <customValue>
+        <fullName>003</fullName>
+        <default>false</default>
+        <label>TEMPORARY CHANGE DELIVERY</label>
+    </customValue>
+    <customValue>
+        <fullName>004</fullName>
+        <default>false</default>
+        <label>NOTES OLD MASTER FILE</label>
+    </customValue>
+    <customValue>
+        <fullName>005</fullName>
+        <default>false</default>
+        <label>BILLING NOTES</label>
+    </customValue>
+    <customValue>
+        <fullName>010</fullName>
+        <default>false</default>
+        <label>CUSTOMER COMPLAINTS NOTES</label>
+    </customValue>
+    <customValue>
+        <fullName>011</fullName>
+        <default>false</default>
+        <label>NOTES PROPOSED CLAIMS</label>
+    </customValue>
+    <customValue>
+        <fullName>012</fullName>
+        <default>false</default>
+        <label>NOTES ACTION CLAIMS</label>
+    </customValue>
+    <customValue>
+        <fullName>013</fullName>
+        <default>false</default>
+        <label>REPORTING OF LETTERS</label>
+    </customValue>
+    <customValue>
+        <fullName>014</fullName>
+        <default>false</default>
+        <label>LABELS SHIPPING BILL</label>
+    </customValue>
+    <customValue>
+        <fullName>015</fullName>
+        <default>false</default>
+        <label>LABELS DELIVERY</label>
+    </customValue>
+    <customValue>
+        <fullName>016</fullName>
+        <default>false</default>
+        <label>LABELS ACTIVITIES &apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>017</fullName>
+        <default>false</default>
+        <label>ORDER CORRECTION (code 017)</label>
+    </customValue>
+    <customValue>
+        <fullName>018</fullName>
+        <default>false</default>
+        <label>INFORMATION REQUEST (code 018)</label>
+    </customValue>
+    <customValue>
+        <fullName>019</fullName>
+        <default>false</default>
+        <label>NOTES FOR PRODUCTION OFFICE</label>
+    </customValue>
+    <customValue>
+        <fullName>020</fullName>
+        <default>false</default>
+        <label>CONTRACT NOTES</label>
+    </customValue>
+    <customValue>
+        <fullName>021</fullName>
+        <default>false</default>
+        <label>OLD MASTER FILE ACTIVITY &apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>030</fullName>
+        <default>false</default>
+        <label>SUSPENSION OF NOTES</label>
+    </customValue>
+    <customValue>
+        <fullName>031</fullName>
+        <default>false</default>
+        <label>NOTES TO SUSPEND ACTIVITIES &apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>032</fullName>
+        <default>false</default>
+        <label>CONTRACT CLOSING REMARKS</label>
+    </customValue>
+    <customValue>
+        <fullName>033</fullName>
+        <default>false</default>
+        <label>NOTES CANCELING ACTIVITIES &apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>034</fullName>
+        <default>false</default>
+        <label>MATERIAL REQUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>035</fullName>
+        <default>false</default>
+        <label>NOTE FOR CUSTOMERS OFFICE (code 035)</label>
+    </customValue>
+    <customValue>
+        <fullName>036</fullName>
+        <default>false</default>
+        <label>NOTE FOR CUSTOMERS OFFICE (code 036)</label>
+    </customValue>
+    <customValue>
+        <fullName>037</fullName>
+        <default>false</default>
+        <label>NOTES DELIVERY CHARGES</label>
+    </customValue>
+    <customValue>
+        <fullName>038</fullName>
+        <default>false</default>
+        <label>NOTES ASSOCIATION GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>039</fullName>
+        <default>false</default>
+        <label>NOTES CESSATION GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>040</fullName>
+        <default>false</default>
+        <label>NOTES ANOMALIES POTENTIAL FROM ES</label>
+    </customValue>
+    <customValue>
+        <fullName>041</fullName>
+        <default>false</default>
+        <label>FAULTS NOTES CUSTOMER TKEXPRES</label>
+    </customValue>
+    <customValue>
+        <fullName>042</fullName>
+        <default>false</default>
+        <label>FAULTS CUSTOMER Ristochef</label>
+    </customValue>
+    <customValue>
+        <fullName>044</fullName>
+        <default>false</default>
+        <label>INIDIRIZZI, QUITTING FROM PORTAL</label>
+    </customValue>
+    <masterLabel>IT Notes Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

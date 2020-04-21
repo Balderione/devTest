@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Progetto Welfare</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Progetti Welfare</value>
+    </caseValues>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Account__c</name>
+        <relationshipLabel>Progetto Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Canale di Acquisizione</label>
+        <name>IT_Acquisition_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Aggregator</masterLabel>
+            <translation>Aggregatore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edenred</masterLabel>
+            <translation><!-- Edenred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marsh</masterLabel>
+            <translation><!-- Marsh --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Fase Attivazione</label>
+        <name>IT_Activation_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Activation kit preparation</masterLabel>
+            <translation>Preparazione Kit di Attivazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activation kit verification</masterLabel>
+            <translation>Verifica Kit di Attivazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkout Date Request</masterLabel>
+            <translation>Data Partenza Richiesta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Plan</masterLabel>
+            <translation>Piano Live</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan configuration</masterLabel>
+            <translation>Configurazione Piano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test before Go Live</masterLabel>
+            <translation>Test prima del Go Live</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Età media</label>
+        <name>IT_Average_Age__c</name>
+        <picklistValues>
+            <masterLabel>&lt; 30 years old</masterLabel>
+            <translation>&lt; 30 anni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 50 years old</masterLabel>
+            <translation>&gt; 50 anni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>between 30 years old and 40 years old</masterLabel>
+            <translation>tra 30 e 40 anni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>between 40 years old and 50 years old</masterLabel>
+            <translation>tra 40 e 50 anni</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Numero Beneficiari</label>
+        <name>IT_Beneficiaries_Number__c</name>
+    </fields>
+    <fields>
+        <label>Data fine Benefit</label>
+        <name>IT_Benefit_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data inizio Benefit</label>
+        <name>IT_Benefit_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit --></label>
+        <name>IT_Benefit__c</name>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Care</masterLabel>
+            <translation><!-- Family Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loans</masterLabel>
+            <translation><!-- Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Fees</masterLabel>
+            <translation><!-- Medical Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monetization</masterLabel>
+            <translation><!-- Monetization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Purchases (NO Amazon)</masterLabel>
+            <translation><!-- Online Purchases (NO Amazon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper Selection</masterLabel>
+            <translation><!-- Paper Selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper Top Premium</masterLabel>
+            <translation><!-- Paper Top Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printable Selection</masterLabel>
+            <translation><!-- Printable Selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printable Top Premium</masterLabel>
+            <translation><!-- Printable Top Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Transport</masterLabel>
+            <translation><!-- Public Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Fees</masterLabel>
+            <translation><!-- School Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Transport (ATM)</masterLabel>
+            <translation><!-- Ticket Transport (ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare - Integrated (Portale Titolari)</masterLabel>
+            <translation><!-- Ticket Welfare - Integrated (Portale Titolari) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare - Packages (Portale Beneficiari)</masterLabel>
+            <translation><!-- Ticket Welfare - Packages (Portale Beneficiari) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Note indirizzo</label>
+        <name>IT_BillingAdressNotes_form__c</name>
+    </fields>
+    <fields>
+        <label>Città</label>
+        <name>IT_BillingCityBillingCity_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hamlet --></label>
+        <name>IT_BillingHamlet_form__c</name>
+    </fields>
+    <fields>
+        <label>Codice postale</label>
+        <name>IT_BillingPostalCodeBilling_form__c</name>
+    </fields>
+    <fields>
+        <label>Provincia</label>
+        <name>IT_BillingProvince_form__c</name>
+    </fields>
+    <fields>
+        <label>Paese</label>
+        <name>IT_BillingState_form__c</name>
+    </fields>
+    <fields>
+        <label>Numero civico</label>
+        <name>IT_BillingStreetNumber_form__c</name>
+    </fields>
+    <fields>
+        <label>Via/Piazza</label>
+        <name>IT_BillingStreetSquare_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brochure --></label>
+        <name>IT_Brochure__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIG --></label>
+        <name>IT_CIG__c</name>
+    </fields>
+    <fields>
+        <label>CdC (Centro di Costo)</label>
+        <name>IT_CdC_Center_of_Cost__c</name>
+    </fields>
+    <fields>
+        <label>Gestione dei residui</label>
+        <name>IT_Cessation_Residue_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit --></label>
+        <name>IT_Circuit_Text__c</name>
+    </fields>
+    <fields>
+        <label>Circuito</label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel>Progetti Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Formazione Amministrativa del Cliente</label>
+        <name>IT_Client_Administrative_Training__c</name>
+        <picklistValues>
+            <masterLabel>Live</masterLabel>
+            <translation><!-- Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webex</masterLabel>
+            <translation><!-- Webex --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cluster Welfare --></label>
+        <name>IT_Cluster_Welfare__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione Piano di Comunicazione</label>
+        <name>IT_Communication_Plan_Description__c</name>
+    </fields>
+    <fields>
+        <label>Indice di Complessità</label>
+        <name>IT_Complexity_Index__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Referente</label>
+        <name>IT_Contact1__c</name>
+        <relationshipLabel>Progetto Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Contact__c</name>
+        <relationshipLabel>Progetti Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contratto Sottoscritto</label>
+        <name>IT_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Task Creato</label>
+        <name>IT_Created_Task__c</name>
+    </fields>
+    <fields>
+        <label>Credenziali</label>
+        <name>IT_Credentials__c</name>
+        <picklistValues>
+            <masterLabel>Credentials vs Beneficiaries</masterLabel>
+            <translation>Credenziali vs Beneficiari</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials vs Beneficiaries and Marsh Client</masterLabel>
+            <translation>Credenziali vs Beneficiari e Cliente Marsh</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marsh client</masterLabel>
+            <translation>Clienti Marsh</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Percezione attuale del Welfare</label>
+        <name>IT_Current_Welfare_feeling__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEM --></label>
+        <name>IT_DEM__c</name>
+    </fields>
+    <fields>
+        <label>N. gg formazione frontale</label>
+        <name>IT_Days_Customer_Training__c</name>
+    </fields>
+    <fields>
+        <help>Indicare se la partecipazione è obbligatoria o facoltativa, come viene reso noto l’incontro ai dipendenti</help>
+        <label>Metodo di comunicazione delle giornate</label>
+        <name>IT_Days_communication_method__c</name>
+    </fields>
+    <fields>
+        <label>N. gg ambassador</label>
+        <name>IT_Days_of_ambassador__c</name>
+    </fields>
+    <fields>
+        <label>N. gg incontro sindacale</label>
+        <name>IT_Days_of_meeting_with_Syndacate__c</name>
+    </fields>
+    <fields>
+        <label>N. gg webinar</label>
+        <name>IT_Days_of_webinar__c</name>
+    </fields>
+    <fields>
+        <help>Indicare i messaggi chiave da veicolare concordati con il cliente, se taglio più o meno pratico, agenda di massima</help>
+        <label>Taglio e messaggio</label>
+        <name>IT_Denomination_and_message__c</name>
+    </fields>
+    <fields>
+        <label>Livello Digitalizzazione</label>
+        <name>IT_Digitalization_Level__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Basso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>Medio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Durata Sessione in ore</label>
+        <name>IT_Duration__c</name>
+    </fields>
+    <fields>
+        <label>Email invio Credenziali Portale Clienti</label>
+        <name>IT_Email_Credentials__c</name>
+    </fields>
+    <fields>
+        <label>Email invio flussi payroll</label>
+        <name>IT_Email_send_payroll__c</name>
+    </fields>
+    <fields>
+        <label>Video Emozionale e/o Vantaggi</label>
+        <name>IT_Emotional_Video_Benefits__c</name>
+    </fields>
+    <fields>
+        <label>Gesitone dei residui</label>
+        <name>IT_End_Plan_Residue_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra UE --></label>
+        <name>IT_Extra_UE__c</name>
+    </fields>
+    <fields>
+        <label>Fee Capogruppo</label>
+        <name>IT_Fee_Parent_Group__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel>Progetti Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Inserire le fonti di finanziamento --></help>
+        <label>Fonti di finanziamento</label>
+        <name>IT_Financial_Sources__c</name>
+    </fields>
+    <fields>
+        <label>Data Go Live Progetto</label>
+        <name>IT_Go_Live_Project_Date__c</name>
+    </fields>
+    <fields>
+        <label>Modulo Personalizzazione Grafica</label>
+        <name>IT_Graphic_Customization_Form__c</name>
+    </fields>
+    <fields>
+        <help>Guardare negli Allegati</help>
+        <label>Personalizzazione Grafica</label>
+        <name>IT_Graphic_Personalization__c</name>
+    </fields>
+    <fields>
+        <help>Indicare se esistono già delle polizze sanitarie in azienda, quanto sono apprezzate e utilizzate, quali sono le aree sanitarie maggiormente scoperte</help>
+        <label>Polizza sanitaria in essere</label>
+        <name>IT_Health_Policy_in_being__c</name>
+    </fields>
+    <fields>
+        <label>Moltiplicatore Referente IC</label>
+        <name>IT_IC_Referent_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label>% Popolaz. iscritta fondo previdenziale</label>
+        <name>IT_Insurance_fund_registered_Population__c</name>
+    </fields>
+    <fields>
+        <label>Società Coinvolte</label>
+        <name>IT_Involved_Society__c</name>
+    </fields>
+    <fields>
+        <label>Sedi coinvolte</label>
+        <name>IT_Involved_locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logo --></label>
+        <name>IT_Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Macro Benefit --></label>
+        <name>IT_Macro_Benefit__c</name>
+        <picklistValues>
+            <masterLabel>Fund</masterLabel>
+            <translation><!-- Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement</masterLabel>
+            <translation><!-- Reimbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Compliments</masterLabel>
+            <translation><!-- Ticket Compliments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Transport</masterLabel>
+            <translation><!-- Ticket Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare</masterLabel>
+            <translation><!-- Ticket Welfare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Fine Piano Maggiore</label>
+        <name>IT_Max_Plan_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Note organizzative (sala e durata)</label>
+        <name>IT_Meeting_room_organisation__c</name>
+    </fields>
+    <fields>
+        <label>Data fine scelta PDR</label>
+        <name>IT_Membership_Choice_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data inizio scelta PDR</label>
+        <name>IT_Membership_Choice_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Modalita di pagamento</label>
+        <name>IT_Membership_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Free amount</masterLabel>
+            <translation><!-- Free amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages amount</masterLabel>
+            <translation><!-- Packages amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages percentage</masterLabel>
+            <translation><!-- Packages percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Inizio Piano Minore</label>
+        <name>IT_Min_Plan_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Mesi Fase Pre Avvio</label>
+        <name>IT_N_Months_Post_Start_Phase__c</name>
+    </fields>
+    <fields>
+        <label>Mesi Fase Post Avvio</label>
+        <name>IT_N_Months_Pre_Start_Phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter --></label>
+        <name>IT_Newsletter__c</name>
+    </fields>
+    <fields>
+        <label>Moltiplicatore Numero Piani</label>
+        <name>IT_Number_of_Plans_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label>Numero Piani</label>
+        <name>IT_Number_of_Plans__c</name>
+    </fields>
+    <fields>
+        <label>Feedback esperienza precedente</label>
+        <name>IT_Old_experience_feedback__c</name>
+    </fields>
+    <fields>
+        <label>Altro</label>
+        <name>IT_Other__c</name>
+    </fields>
+    <fields>
+        <label>Elenco PO</label>
+        <name>IT_PO_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO/ODA --></label>
+        <name>IT_PO_ODA__c</name>
+        <picklistValues>
+            <masterLabel>No PO</masterLabel>
+            <translation>Nessun PO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened PO</masterLabel>
+            <translation>PO Aperto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefattura</masterLabel>
+            <translation><!-- Prefattura --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Personalizzazione Payroll</label>
+        <name>IT_Payroll_Personalization__c</name>
+        <picklistValues>
+            <masterLabel>Benefit Codes (provide codes)</masterLabel>
+            <translation>Benefit (Indicare i Codici)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cessato no row</masterLabel>
+            <translation>No riga cessato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Develop (DSP)</masterLabel>
+            <translation>Custom (DSP)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matricola Column</masterLabel>
+            <translation>Matricola</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan name</masterLabel>
+            <translation>Nome piano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sources</masterLabel>
+            <translation>Fonti</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Separazione Payroll per Livelli</label>
+        <name>IT_Payroll_for_Levels__c</name>
+        <picklistValues>
+            <masterLabel>Level 1</masterLabel>
+            <translation>Livello 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2</masterLabel>
+            <translation>Livello 2</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pdf Html Body --></label>
+        <name>IT_Pdf_Html_Body__c</name>
+    </fields>
+    <fields>
+        <label>Capitale pro capite</label>
+        <name>IT_Per_Capita_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione piano</label>
+        <name>IT_Plan_Description__c</name>
+    </fields>
+    <fields>
+        <label>Data inizio piano</label>
+        <name>IT_Plan_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data fine piano</label>
+        <name>IT_Plan_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Scelta piattaforma</label>
+        <name>IT_Platform_Choice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Peso Post Avvio Ponderato</label>
+        <name>IT_Pondered_Post_Start_Weight__c</name>
+    </fields>
+    <fields>
+        <label>Peso Pre Avvio Ponderato</label>
+        <name>IT_Pondered_Pre_Start_Weight__c</name>
+    </fields>
+    <fields>
+        <label>% Popolazione che usa mezzi pubblici</label>
+        <name>IT_Population_that_uses_public_transport__c</name>
+    </fields>
+    <fields>
+        <label>% Popolazione con figli</label>
+        <name>IT_Population_with_children__c</name>
+    </fields>
+    <fields>
+        <label>Peso Post Avvio</label>
+        <name>IT_Post_Start_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poster --></label>
+        <name>IT_Poster__c</name>
+    </fields>
+    <fields>
+        <label>Peso Pre Avvio</label>
+        <name>IT_Pre_Start_Weight__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Progetto</label>
+        <name>IT_Project_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Progetto</label>
+        <name>IT_Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Progetto</label>
+        <name>IT_Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>New Client</masterLabel>
+            <translation>Nuovo Cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Plan existing Client</masterLabel>
+            <translation>Nuovo Piano Cliente Esistente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Scheda Progetto</label>
+        <name>IT_Project_board__c</name>
+    </fields>
+    <fields>
+        <help>Specificare se sarà presente a tutti gli incontri o in quali, se è prevista un’introduzione del referente e/o altri tipi di interventi</help>
+        <label>Presenza referente aziendale</label>
+        <name>IT_Referent_presence_at_meetings__c</name>
+    </fields>
+    <fields>
+        <label>Conservazione sostitutiva</label>
+        <name>IT_Replacement__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFTP (DSP) --></label>
+        <name>IT_SFTP_DSP__c</name>
+    </fields>
+    <fields>
+        <label>Tipologia Flussi SFTP</label>
+        <name>IT_SFTP_Flow_Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Path e Output Flow</masterLabel>
+            <translation>Tracciati Input e Flussi Output</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Input path</masterLabel>
+            <translation>Tracciati Input</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output Flow</masterLabel>
+            <translation>Flussi Output</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label>Modulo di Attivazione Cassa Sanitaria</label>
+        <name>IT_Sanitary_Cash_Activation_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single sign-on (SSO) --></label>
+        <name>IT_Single_sign_on_SSO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Payment --></label>
+        <name>IT_Split_Payment__c</name>
+    </fields>
+    <fields>
+        <label>Separazione Fatturazione per CDC</label>
+        <name>IT_Splitted_Billing_for_CDC__c</name>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>IT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>Assegnato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Babysitting</masterLabel>
+            <translation><!-- Babysitting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Chiuso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation>Monitoraggio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working</masterLabel>
+            <translation>In Lavorazione</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Archiviazione</label>
+        <name>IT_Storage_Type__c</name>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage with timestamp</masterLabel>
+            <translation>Archiviazione con marcatura temporale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage without timestamp</masterLabel>
+            <translation>Archiviazione senza marcatura temporale</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indicare se saranno erogati strumenti a supporto e.g. welfare point, pc/totem in azienda, supporto interno,…</help>
+        <label>Strumenti a supporto (bassa digitalizz.)</label>
+        <name>IT_Support_Tools_low_digitalisation__c</name>
+    </fields>
+    <fields>
+        <help>Indicare presenza del sindacato in azienda, sigle coinvolte, livello di coinvolgimento nel progetto welfare, posizione rispetto al progetto</help>
+        <label>Componente sindacale</label>
+        <name>IT_Syndacate_Component__c</name>
+    </fields>
+    <fields>
+        <help>Specificare se sarà presente a tutti gli incontri o in quali</help>
+        <label>Presenza rappresentanze sindacali</label>
+        <name>IT_Syndacate_presence_at_meetings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>IT_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer --></label>
+        <name>IT_Trainer__c</name>
+        <relationshipLabel>Progetto Welfare</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Video Tutorial e Guide</label>
+        <name>IT_Tutorial_Video_and_Guides__c</name>
+    </fields>
+    <fields>
+        <label>Tipologia Piano di Comunicazione</label>
+        <name>IT_Type_Communication_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Personalized</masterLabel>
+            <translation>Personalizzato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipologia</label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bound</masterLabel>
+            <translation><!-- Bound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCNL</masterLabel>
+            <translation><!-- CCNL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive</masterLabel>
+            <translation><!-- Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberality</masterLabel>
+            <translation><!-- Liberality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDR</masterLabel>
+            <translation><!-- PDR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Fatturazione Unica</label>
+        <name>IT_Unique_Billing__c</name>
+    </fields>
+    <fields>
+        <label>Numero Sportelli</label>
+        <name>IT_Welfare_Point_Number__c</name>
+    </fields>
+    <fields>
+        <label>Esperienza in ambito Welfare</label>
+        <name>IT_Welfare_experience__c</name>
+        <picklistValues>
+            <masterLabel>First experience</masterLabel>
+            <translation>Prima esperienza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous experience with Edenred platform</masterLabel>
+            <translation>Precedente esperienza con piattaforma Edenred</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous experience with Edenred vouchers</masterLabel>
+            <translation>Precedente esperienza con buoni Edenred</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous experience with competitor platform</masterLabel>
+            <translation>Precedente esperienza con piattaforma competitor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous experience with competitor vouchers</masterLabel>
+            <translation>Precedente esperienza con buoni competitor</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Welfare_Project_Layout</layout>
+        <sections>
+            <label>Peso Attività</label>
+            <section>Activity Weight</section>
+        </sections>
+        <sections>
+            <label>Allegati</label>
+            <section>Attachments</section>
+        </sections>
+        <sections>
+            <label>Informazioni Comunicazione</label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label>Contabilizzazione</label>
+            <section>Contabilization</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Personalizzazioni Tecniche</label>
+            <section>Technical Personalization</section>
+        </sections>
+        <sections>
+            <label>Formazione &gt; Benefit</label>
+            <section>Training &gt; Benefit</section>
+        </sections>
+        <sections>
+            <label>Formazione &gt; Taglio e messaggio</label>
+            <section>Training &gt; Denomination and message</section>
+        </sections>
+        <sections>
+            <label>Formazione &gt; Logistica</label>
+            <section>Training &gt; Logistic</section>
+        </sections>
+        <sections>
+            <label>Formazione &gt; Informazioni sulla popolazione</label>
+            <section>Training &gt; Population Information</section>
+        </sections>
+        <sections>
+            <label>Formazione &gt; Conoscenza e percezione del Welfare</label>
+            <section>Training &gt; Welfare consciousness and feeling</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome Progetto Welfare</nameFieldLabel>
+    <quickActions>
+        <label>Aggiungi Codici</label>
+        <name>Add_Codes</name>
+    </quickActions>
+    <quickActions>
+        <label>Crea PDF</label>
+        <name>IT_Create_PDF</name>
+    </quickActions>
+    <quickActions>
+        <label>Nuovo Evento</label>
+        <name>IT_New_Event</name>
+    </quickActions>
+    <quickActions>
+        <label>Nuova Operazione</label>
+        <name>IT_New_Task</name>
+    </quickActions>
+    <quickActions>
+        <label>Dettaglio Progetto</label>
+        <name>IT_Project_Detail</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La data di fine Progetto deve avvenire dopo la data di inizio</errorMessage>
+        <name>VRIT01_Welfare_Project_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once populated the sales manager, it can no longer be changed --></errorMessage>
+        <name>VRIT02_Sales_Manager_not_editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La data di Go Live deve essere compresa tra la data di inizio e quella di fine progetto</errorMessage>
+        <name>VRIT02_Welfare_Project_GoLive_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

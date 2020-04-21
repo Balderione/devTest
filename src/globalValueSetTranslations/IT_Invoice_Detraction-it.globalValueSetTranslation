@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>DETRAZIONE 0,5% DA ESPORRE</masterLabel>
+        <translation><!-- DETRAZIONE 0,5% DA ESPORRE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NO DETRACTION</masterLabel>
+        <translation>NO DETRAZIONE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

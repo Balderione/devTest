@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AG.</masterLabel>
+        <translation>AG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASSOCIATION</masterLabel>
+        <translation>ASSOCIAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSORTIUM</masterLabel>
+        <translation>CONSORZIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOP.SOC.</masterLabel>
+        <translation>COOP.SOC.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOPERATIVE</masterLabel>
+        <translation><!-- COOPERATIVE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COURSES</masterLabel>
+        <translation>CORSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FOUNDATION</masterLabel>
+        <translation>FONDAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GMBH</masterLabel>
+        <translation>GMBH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INC.</masterLabel>
+        <translation>INC.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INDIVIDUAL</masterLabel>
+        <translation>INDIVIDUALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LTD</masterLabel>
+        <translation>LTD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MORAL AUTHORITY</masterLabel>
+        <translation>ENTE MORALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>N.V.</masterLabel>
+        <translation>N.V.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NA</masterLabel>
+        <translation>NA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NV/SA</masterLabel>
+        <translation>NV/SA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONLUS</masterLabel>
+        <translation>ONLUS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>P.L.C.</masterLabel>
+        <translation>P.L.C.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROFESSIONAL STUDIES</masterLabel>
+        <translation>STUDI PROFESSIONALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC AUTHORITY</masterLabel>
+        <translation>ENTE PUBLICO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.A.</masterLabel>
+        <translation>S.A.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.A.P.A.</masterLabel>
+        <translation>S.A.P.A.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.A.S</masterLabel>
+        <translation>S.A.S.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.C.A.R.L.</masterLabel>
+        <translation>S.C.A.R.L.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.C.P.A.</masterLabel>
+        <translation>S.C.P.A.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.D.F</masterLabel>
+        <translation>S.D.F.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.N.C.</masterLabel>
+        <translation>S.N.C.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.P.A.</masterLabel>
+        <translation>S.P.A.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.R.L.</masterLabel>
+        <translation>S.R.L.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>S.R.L.U.</masterLabel>
+        <translation>S.R.L.U.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SA/NV</masterLabel>
+        <translation>SA/NV</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOC.RESPONS.LIMIT.SEMPLIFICATA</masterLabel>
+        <translation>SOC.RESPONS.LIMIT.SEMPLIFICATA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOCIETAS EUROPAEA</masterLabel>
+        <translation>SOCIETAS EUROPAEA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPRL</masterLabel>
+        <translation>SPRL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TO BE DEFINED</masterLabel>
+        <translation>DA ADEFINIRE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VAPOR BARRIER</masterLabel>
+        <translation>B.V.</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

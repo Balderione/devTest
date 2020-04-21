@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>011</fullName>
+        <default>false</default>
+        <label>PAPER (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>021</fullName>
+        <default>false</default>
+        <label>FAX WITH OPERATOR</label>
+    </customValue>
+    <customValue>
+        <fullName>022</fullName>
+        <default>false</default>
+        <label>FAX AUTO (Tr.ord.aut.)</label>
+    </customValue>
+    <customValue>
+        <fullName>023</fullName>
+        <default>false</default>
+        <label>SUBSCRIPTION (Tr.ord.aut.)</label>
+    </customValue>
+    <customValue>
+        <fullName>030</fullName>
+        <default>false</default>
+        <label>TELEPHONE OPERATOR WITH</label>
+    </customValue>
+    <customValue>
+        <fullName>040</fullName>
+        <default>false</default>
+        <label>TELEF.HELLO TICKET (Tr.or.aut)</label>
+    </customValue>
+    <customValue>
+        <fullName>051</fullName>
+        <default>false</default>
+        <label>TAPE VIA MAIL (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>052</fullName>
+        <default>false</default>
+        <label>TAPE VIA MAIL (Tr. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>053</fullName>
+        <default>false</default>
+        <label>TAPE VIA MAIL (Tr.120)</label>
+    </customValue>
+    <customValue>
+        <fullName>054</fullName>
+        <default>false</default>
+        <label>TAPE VIA MAIL (Tr. 128)</label>
+    </customValue>
+    <customValue>
+        <fullName>055</fullName>
+        <default>false</default>
+        <label>TAPE VIA MAIL (Tr. 160)</label>
+    </customValue>
+    <customValue>
+        <fullName>061</fullName>
+        <default>false</default>
+        <label>TAPE VIA COURIER (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>062</fullName>
+        <default>false</default>
+        <label>TAPE VIA COURIER (Tr. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>063</fullName>
+        <default>false</default>
+        <label>TAPE COURIER VIA (Tr.120)</label>
+    </customValue>
+    <customValue>
+        <fullName>064</fullName>
+        <default>false</default>
+        <label>TAPE VIA COURIER (Tr. 128)</label>
+    </customValue>
+    <customValue>
+        <fullName>065</fullName>
+        <default>false</default>
+        <label>TAPE VIA COURIER (Tr. 160)</label>
+    </customValue>
+    <customValue>
+        <fullName>071</fullName>
+        <default>false</default>
+        <label>MODEM (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>072</fullName>
+        <default>false</default>
+        <label>MODEM (Tr. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>073</fullName>
+        <default>false</default>
+        <label>MODEM (Tr. 120)</label>
+    </customValue>
+    <customValue>
+        <fullName>074</fullName>
+        <default>false</default>
+        <label>MODEM (Tr. 128)</label>
+    </customValue>
+    <customValue>
+        <fullName>075</fullName>
+        <default>false</default>
+        <label>MODEM (Tr. 160)</label>
+    </customValue>
+    <customValue>
+        <fullName>081</fullName>
+        <default>false</default>
+        <label>DISK VIA MAIL (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>082</fullName>
+        <default>false</default>
+        <label>DISKETTE VIA MAIL (Tr. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>083</fullName>
+        <default>false</default>
+        <label>DISK VIA MAIL (Tr. 120)</label>
+    </customValue>
+    <customValue>
+        <fullName>084</fullName>
+        <default>false</default>
+        <label>DISKETTE VIA MAIL (Tr. 128)</label>
+    </customValue>
+    <customValue>
+        <fullName>085</fullName>
+        <default>false</default>
+        <label>DISKETTE VIA MAIL (Tr. 160)</label>
+    </customValue>
+    <customValue>
+        <fullName>087</fullName>
+        <default>false</default>
+        <label>DISCH.VIA MAIL (TR.NON CONFORMITY)</label>
+    </customValue>
+    <customValue>
+        <fullName>091</fullName>
+        <default>false</default>
+        <label>DISK VIA COURIER (Tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>092</fullName>
+        <default>false</default>
+        <label>DISK VIA COURIER (Tr. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>093</fullName>
+        <default>false</default>
+        <label>DISK VIA COURIER (Tr.120)</label>
+    </customValue>
+    <customValue>
+        <fullName>094</fullName>
+        <default>false</default>
+        <label>DISK VIA COURIER (Tr.128)</label>
+    </customValue>
+    <customValue>
+        <fullName>095</fullName>
+        <default>false</default>
+        <label>DISK VIA COURIER (Tr.160)</label>
+    </customValue>
+    <customValue>
+        <fullName>096</fullName>
+        <default>false</default>
+        <label>DISCH.VIA CORR. (TR.NON CONFORMITY)</label>
+    </customValue>
+    <customValue>
+        <fullName>100</fullName>
+        <default>false</default>
+        <label>INTERNET (tr. 40)</label>
+    </customValue>
+    <customValue>
+        <fullName>101</fullName>
+        <default>false</default>
+        <label>INTERNET (TR. 41)</label>
+    </customValue>
+    <customValue>
+        <fullName>102</fullName>
+        <default>false</default>
+        <label>INTERNET (tr. 120)</label>
+    </customValue>
+    <customValue>
+        <fullName>103</fullName>
+        <default>false</default>
+        <label>INTERNET (TR. 128)</label>
+    </customValue>
+    <customValue>
+        <fullName>104</fullName>
+        <default>false</default>
+        <label>INTERNET (TR. 160)</label>
+    </customValue>
+    <customValue>
+        <fullName>105</fullName>
+        <default>false</default>
+        <label>INTERNET (TR. NONCONFORMING)</label>
+    </customValue>
+    <customValue>
+        <fullName>110</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.40)</label>
+    </customValue>
+    <customValue>
+        <fullName>111</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.41)</label>
+    </customValue>
+    <customValue>
+        <fullName>112</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.120)</label>
+    </customValue>
+    <customValue>
+        <fullName>113</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.128)</label>
+    </customValue>
+    <customValue>
+        <fullName>114</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.160)</label>
+    </customValue>
+    <customValue>
+        <fullName>115</fullName>
+        <default>false</default>
+        <label>E-MAIL (TR.NON CONFORMITY)</label>
+    </customValue>
+    <customValue>
+        <fullName>116</fullName>
+        <default>false</default>
+        <label>INTERNET (TICKET EXPRESS)</label>
+    </customValue>
+    <masterLabel>IT Order Receipts Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

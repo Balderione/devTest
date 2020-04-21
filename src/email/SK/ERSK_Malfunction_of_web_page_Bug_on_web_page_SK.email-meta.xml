@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ERSK_Customer_care_letterhead</letterhead>
+    <name>ERSK Malfunction of web page / Bug on web page SK</name>
+    <style>formalLetter</style>
+    <subject>Nefunkčnosť stránky/chyba na stránke</subject>
+    <textOnly>Dobrý deň {!Case.Contact},
+
+
+Na stránke www.mojedenred.sk pri kontrole zostatku a transakcií evidujeme chybovosť, za čo sa ospravedlňujeme. Na odstránení chybovosti už aktívne pracujeme.
+
+
+Ďakujeme za pochopenie
+
+
+
+
+Operator ID: {!Case.OwnerId}
+
+Case ID: {!Case.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

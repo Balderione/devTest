@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>DISTRIBUTORS / AGENTS / CLIENTS</masterLabel>
+        <translation>TERZIDISTRIBUTORI/AGENTI/CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMPLOYEES</masterLabel>
+        <translation>DIPENDENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FINAL CONSUMER (OP. PRIZE)</masterLabel>
+        <translation>CONSUMATORI FINALI (OP. A PREMI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER (FOR VARIOUS REASONS FOR USE)</masterLabel>
+        <translation>ALTRO (UTILIZZO PER VARI MOTIVI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESPONDENTS</masterLabel>
+        <translation>INTERVISTATI</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

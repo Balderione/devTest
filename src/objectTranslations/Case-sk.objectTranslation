@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Acceptor --></label>
+        <name>ER_Acceptor__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BU --></label>
+        <name>ER_BUPicklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Number --></label>
+        <name>ER_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Detailed Reason --></label>
+        <name>ER_CaseReason2__c</name>
+        <picklistValues>
+            <masterLabel>Acceptance</masterLabel>
+            <translation>Neakceptovanie papierových poukážok &amp; kariet prevádzkou</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acceptance Network</masterLabel>
+            <translation>Akceptačná sieť</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account statement</masterLabel>
+            <translation><!-- Account statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activation</masterLabel>
+            <translation><!-- Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App</masterLabel>
+            <translation><!-- App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apple Pay</masterLabel>
+            <translation><!-- Apple Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto enrollment check</masterLabel>
+            <translation><!-- Auto enrollment check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance inquiry</masterLabel>
+            <translation><!-- Balance inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank account modification</masterLabel>
+            <translation><!-- Bank account modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelation of voucher order</masterLabel>
+            <translation>Zrušenie objednávky papierové poulážky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation of card or load order</masterLabel>
+            <translation>Zrušenie objednávky karty &amp; kreditov</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card &amp; vouchers order</masterLabel>
+            <translation>Objednávka papierových poukážok&amp;kariet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card acceptance issue</masterLabel>
+            <translation><!-- Card acceptance issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card activation</masterLabel>
+            <translation>Aktivácia karty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card and/or load order</masterLabel>
+            <translation>Objednávka kariet&amp;kreditov</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card not received</masterLabel>
+            <translation><!-- Card not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card reissuance (damaged)</masterLabel>
+            <translation>Prevydanie karty (poškodenie)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card reissuance (lost or stolen)</masterLabel>
+            <translation>Prevydanie karty (strata alebo krádež)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Characteristic</masterLabel>
+            <translation><!-- Characteristic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - assistance</masterLabel>
+            <translation>Klient Extranet - podpora</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - connection issues</masterLabel>
+            <translation>Klient Extranet - problém s prístupom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - forgotten credentials</masterLabel>
+            <translation>Klient Extranet - strata prístupov</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection</masterLabel>
+            <translation><!-- Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection letter reaction</masterLabel>
+            <translation><!-- Collection letter reaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company change</masterLabel>
+            <translation><!-- Company change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Modification</masterLabel>
+            <translation>Modifikácia zmluvy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract modification following VAT / CRN change</masterLabel>
+            <translation>Modifikácia zmluvy DPH/ IČO zmena</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract set-up</masterLabel>
+            <translation>Zadanie zmluvy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract termination</masterLabel>
+            <translation><!-- Contract termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy of contract</masterLabel>
+            <translation><!-- Copy of contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country Specific contract set-up</masterLabel>
+            <translation><!-- Country Specific contract set-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials</masterLabel>
+            <translation><!-- Credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Notes</masterLabel>
+            <translation>Dobropisy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cross-Sale offer</masterLabel>
+            <translation><!-- Cross-Sale offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged asset</masterLabel>
+            <translation>Skartované papierové poukážky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay</masterLabel>
+            <translation><!-- Delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete account - GDPR</masterLabel>
+            <translation><!-- Delete account - GDPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation>Dodanie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery of cards</masterLabel>
+            <translation>Dodanie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired asset</masterLabel>
+            <translation>Splatnosť papierových poukážok</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired load</masterLabel>
+            <translation>Splatnosť kariet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face value</masterLabel>
+            <translation>Nominálna hodnota</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed transaction</masterLabel>
+            <translation><!-- Failed transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Topic</masterLabel>
+            <translation><!-- Financial Topic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forgotten PIN</masterLabel>
+            <translation><!-- Forgotten PIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Pay</masterLabel>
+            <translation><!-- Google Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete delivery</masterLabel>
+            <translation>Neúplné dodanie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect amount on invoice</masterLabel>
+            <translation>Nesprávna suma na faktúre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect data on invoice</masterLabel>
+            <translation>Nesprávne údaje na faktúre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect delivery address</masterLabel>
+            <translation>Nesprávna dodacia adresa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect packaging</masterLabel>
+            <translation>Nesprávne balenie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect printing</masterLabel>
+            <translation>Nesprávna tlač</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information concerning a card</masterLabel>
+            <translation>Informácie o karte/ zamestnanec</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inscription</masterLabel>
+            <translation><!-- Inscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation><!-- Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing</masterLabel>
+            <translation><!-- Invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low printing quality</masterLabel>
+            <translation>Nízka kvalita tlače</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - assistance</masterLabel>
+            <translation><!-- Merchant Extranet - assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - connection issues</masterLabel>
+            <translation><!-- Merchant Extranet - connection issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - forgotten credentials</masterLabel>
+            <translation><!-- Merchant Extranet - forgotten credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing loads</masterLabel>
+            <translation>Chýbajúci kredit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Payment</masterLabel>
+            <translation><!-- Mobile Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myedenred</masterLabel>
+            <translation><!-- Myedenred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navigation</masterLabel>
+            <translation><!-- Navigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need Financial Department assistance</masterLabel>
+            <translation><!-- Need Financial Department assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New vouchers issue</masterLabel>
+            <translation><!-- New vouchers issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Payment</masterLabel>
+            <translation><!-- Online Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation</masterLabel>
+            <translation><!-- Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other local Extranet</masterLabel>
+            <translation><!-- Other local Extranet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation>Iné</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIN Reset</masterLabel>
+            <translation><!-- PIN Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Topics</masterLabel>
+            <translation><!-- Payment Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment status</masterLabel>
+            <translation>Stav platby</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanently block card</masterLabel>
+            <translation>Trvalá blokácia karty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Data</masterLabel>
+            <translation><!-- Personal Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question regarding amount</masterLabel>
+            <translation><!-- Question regarding amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question regarding delay</masterLabel>
+            <translation><!-- Question regarding delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports on beneficiaries expired cards inactive cards</masterLabel>
+            <translation>Reporty užívateľov, expirované karty, neaktívne karty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request duplicate invoice</masterLabel>
+            <translation>Žiadosť o kópiu faktúry</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send materials (logo, window stickers, dummy cards or vouchers)</masterLabel>
+            <translation><!-- Send materials (logo, window stickers, dummy cards or vouchers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send missing invoice</masterLabel>
+            <translation><!-- Send missing invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution information</masterLabel>
+            <translation>Informácie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special requests (reports, GDPR)</masterLabel>
+            <translation><!-- Special requests (reports, GDPR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status of loads</masterLabel>
+            <translation>Stav objednávky kreditov</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation><!-- Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store creation</masterLabel>
+            <translation><!-- Store creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store locator</masterLabel>
+            <translation><!-- Store locator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store termination</masterLabel>
+            <translation><!-- Store termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspicion of fraud</masterLabel>
+            <translation><!-- Suspicion of fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporarily block card</masterLabel>
+            <translation>Doćasná blokácia karty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal activation</masterLabel>
+            <translation><!-- Terminal activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms and conditions</masterLabel>
+            <translation>Všeobecné obchodné podmienky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unblock</masterLabel>
+            <translation><!-- Unblock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unblock card</masterLabel>
+            <translation><!-- Unblock card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update user data</masterLabel>
+            <translation><!-- Update user data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Extranet - assistance</masterLabel>
+            <translation>Užívateľ Extranet - podpora</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Extranet - forgotten credentials</masterLabel>
+            <translation><!-- User Extranet - forgotten credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity</masterLabel>
+            <translation>Splatnosť</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity of assets</masterLabel>
+            <translation>Platnosť papierových poukážok</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity of loads</masterLabel>
+            <translation>Platnoť kreditov</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vouchers order</masterLabel>
+            <translation>Objednávka papierových poukážok</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web search/maps</masterLabel>
+            <translation><!-- Web search/maps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome letter</masterLabel>
+            <translation><!-- Welcome letter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Reopened --></label>
+        <name>ER_Case_Reopened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>ER_Contract__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Site --></label>
+        <name>ER_Delivery_Site__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distribution Point --></label>
+        <name>ER_Distribution_Point__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>ER_Employee__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Individual --></label>
+        <name>ER_Individual__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Reason --></label>
+        <name>ER_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation>Kartové aktivity</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card acceptance</masterLabel>
+            <translation><!-- Card acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company changes</masterLabel>
+            <translation><!-- Company changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation>Reklamácie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract &amp; modification</masterLabel>
+            <translation>Zmluvy &amp; Modifikácie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extranet</masterLabel>
+            <translation>Online podpora</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Information</masterLabel>
+            <translation>Všeobecné Informácie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing</masterLabel>
+            <translation>Faktúry</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile App</masterLabel>
+            <translation><!-- Mobile App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online support</masterLabel>
+            <translation><!-- Online support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order &amp; Delivery</masterLabel>
+            <translation>Stav objednávky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation>Iné</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement</masterLabel>
+            <translation><!-- Reimbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity</masterLabel>
+            <translation>Splatnosť</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher</masterLabel>
+            <translation><!-- Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution Time (in hours) --></label>
+        <name>ER_Resolution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>ER_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store --></label>
+        <name>ER_Store__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>ER Client Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merchant Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant Details --></label>
+            <section>Merchant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merchant Client Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Client --></label>
+            <section>Client</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant --></label>
+            <section>Merchant</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER User Case Layout</layout>
+        <sections>
+            <label><!-- Cardholder Demand --></label>
+            <section>Cardholder Demand</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER User Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <section>User Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Client Case PL</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Client Provisioning Case PL</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Assign --></label>
+        <name>Assign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Case --></label>
+        <name>ER_Case_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Additional Request --></label>
+        <name>IT_Additional_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Additional Request --></label>
+        <name>IT_Additional_Request_Prov</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Details --></label>
+        <name>IT_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Details Email --></label>
+        <name>IT_Details_Email</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Internal Comments --></label>
+        <name>IT_Internal_Comments</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nuovo caso secondario --></label>
+        <name>IT_NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Status --></label>
+        <name>IT_Update_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- X --></label>
+        <name>IT_X_Action</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Record Type for the Client Case --></description>
+        <label><!-- ER Client Case RT --></label>
+        <name>ER_Client_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for the Merchant Case --></description>
+        <label><!-- ER Merchant Case RT --></label>
+        <name>ER_Merchant_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for the User Case --></description>
+        <label><!-- ER User Case RT --></label>
+        <name>ER_User_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Support Case RT --></label>
+        <name>IT_Client_Support_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Welfare Provisioning Case RT --></label>
+        <name>IT_Client_Welfare_Provisioning_Case_RT</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- These required fields must be completed: Case Reason, Case Detailed Reason --></errorMessage>
+        <name>VRER01_Case_CheckCaseReasonOnClose</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot use this Business Unit --></errorMessage>
+        <name>VRER02_Case_BusinessUnit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Information about Asset is obligatory in order to register the Case --></errorMessage>
+        <name>VRER03_Asset_Case_Spam</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t change Provisioning Status in this way --></errorMessage>
+        <name>VRIT01_Block_Provisioning_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to enter the field Case Reason --></errorMessage>
+        <name>VRIT02_Case_Closed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ER_Case_Accept --></label>
+        <name>ER_Case_Accept</name>
+    </webLinks>
+</CustomObjectTranslation>

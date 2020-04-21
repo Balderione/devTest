@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Cod_Cli_Dett__c</fullName>
+        <externalId>false</externalId>
+        <label>Cod_Cli_Dett</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Subscription Product &amp; Charges</relationshipLabel>
+        <relationshipName>Subscription_Product_Charges</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Ordered_Value_num__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(IT_Ordered_Value__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordered Value num</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ordered_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Ordered Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Rate_to_Be_Invoice__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate to Be Invoice</label>
+        <summarizedField>IT_Usage__c.IT_Percentage__c</summarizedField>
+        <summaryFilterItems>
+            <field>IT_Usage__c.IT_Invoice_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </summaryFilterItems>
+        <summaryForeignKey>IT_Usage__c.IT_Subscription_Product_Charge__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_Residual__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( CONTAINS(Zuora__UOM_formula__c, &#39;Rate&#39;), 
+(VALUE(IT_Ordered_Value__c) -  (VALUE(IT_Ordered_Value__c)*(IT_Sum_Percentage__c))),
+(VALUE(IT_Ordered_Value__c) - IT_sum_UsedQuantity__c))</formula>
+        <label>Residual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Sum_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum Percentage</label>
+        <summarizedField>IT_Usage__c.IT_Percentage__c</summarizedField>
+        <summaryForeignKey>IT_Usage__c.IT_Subscription_Product_Charge__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_sum_UsedQuantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum Used Quantity</label>
+        <summarizedField>IT_Usage__c.IT_Used_Quantity__c</summarizedField>
+        <summaryForeignKey>IT_Usage__c.IT_Subscription_Product_Charge__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_Total_Used__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CONTAINS( IT_Usage_Type__c, &#39;Rate&#39;),
+TEXT(IT_Sum_Percentage__c * 100)&amp; &quot;%&quot;, 
+TEXT(IT_sum_UsedQuantity__c)
+)</formula>
+        <label>Total Used</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_To_Be_Invoiced__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity To Be Invoiced</label>
+        <summarizedField>IT_Usage__c.IT_Used_Quantity__c</summarizedField>
+        <summaryFilterItems>
+            <field>IT_Usage__c.IT_Invoice_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </summaryFilterItems>
+        <summaryForeignKey>IT_Usage__c.IT_Subscription_Product_Charge__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_To_Invoice__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(IT_Usage_Type__c ,&#39;Rate&#39;),
+TEXT(IT_Rate_to_Be_Invoice__c*100)&amp;&quot;%&quot;,
+TEXT(IT_To_Be_Invoiced__c) )</formula>
+        <label>To Be Invoice</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Usage_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Zuora__UOM_formula__c</formula>
+        <label>Usage Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Welfare_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Welfare Project</label>
+        <referenceTo>IT_Welfare_Project__c</referenceTo>
+        <relationshipLabel>Subscription Product &amp; Charges</relationshipLabel>
+        <relationshipName>Subscription_Product_Charges</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

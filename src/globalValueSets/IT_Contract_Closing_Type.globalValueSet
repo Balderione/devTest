@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>056</fullName>
+        <default>false</default>
+        <label>COMPETITION: MIG LUNCH</label>
+    </customValue>
+    <customValue>
+        <fullName>055</fullName>
+        <default>false</default>
+        <label>LIMIT CAMPAIGN</label>
+    </customValue>
+    <customValue>
+        <fullName>001</fullName>
+        <default>false</default>
+        <label>DISCONTINUED ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>002</fullName>
+        <default>false</default>
+        <label>COMPETITION: JOINED A CONSIP</label>
+    </customValue>
+    <customValue>
+        <fullName>003</fullName>
+        <default>false</default>
+        <label>UNKNOWN COMPETITION</label>
+    </customValue>
+    <customValue>
+        <fullName>004</fullName>
+        <default>false</default>
+        <label>TERM WORK</label>
+    </customValue>
+    <customValue>
+        <fullName>005</fullName>
+        <default>false</default>
+        <label>ORGANIC DISMISSAL</label>
+    </customValue>
+    <customValue>
+        <fullName>006</fullName>
+        <default>false</default>
+        <label>CONVENTION DIRECT</label>
+    </customValue>
+    <customValue>
+        <fullName>007</fullName>
+        <default>false</default>
+        <label>MENSA USE</label>
+    </customValue>
+    <customValue>
+        <fullName>008</fullName>
+        <default>false</default>
+        <label>FINANCIAL PROBLEMS</label>
+    </customValue>
+    <customValue>
+        <fullName>010</fullName>
+        <default>false</default>
+        <label>TRANSFERRED</label>
+    </customValue>
+    <customValue>
+        <fullName>011</fullName>
+        <default>false</default>
+        <label>ALLOWANCE&apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>012</fullName>
+        <default>false</default>
+        <label>DISCLOSURE</label>
+    </customValue>
+    <customValue>
+        <fullName>016</fullName>
+        <default>false</default>
+        <label>LETTER AGREEMENT CHANGES</label>
+    </customValue>
+    <customValue>
+        <fullName>017</fullName>
+        <default>false</default>
+        <label>CHANGING CONDITIONS AGREEMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>018</fullName>
+        <default>false</default>
+        <label>COMPETITION: AGAPE</label>
+    </customValue>
+    <customValue>
+        <fullName>019</fullName>
+        <default>false</default>
+        <label>COMPETITION: ITAL TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>020</fullName>
+        <default>false</default>
+        <label>COMPETITION: LUNCHTIME</label>
+    </customValue>
+    <customValue>
+        <fullName>021</fullName>
+        <default>false</default>
+        <label>COMPETITION: PASS FOOD</label>
+    </customValue>
+    <customValue>
+        <fullName>022</fullName>
+        <default>false</default>
+        <label>COMPETITION: BREAK-TIME</label>
+    </customValue>
+    <customValue>
+        <fullName>023</fullName>
+        <default>false</default>
+        <label>COMPETITION: SODEXHO</label>
+    </customValue>
+    <customValue>
+        <fullName>024</fullName>
+        <default>false</default>
+        <label>COMPETITION: PASTOCECK</label>
+    </customValue>
+    <customValue>
+        <fullName>025</fullName>
+        <default>false</default>
+        <label>COMPETITION: PELLEGRINI</label>
+    </customValue>
+    <customValue>
+        <fullName>026</fullName>
+        <default>false</default>
+        <label>COMPETITION: HERE TICKET SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>028</fullName>
+        <default>false</default>
+        <label>COMPETITION: DAY</label>
+    </customValue>
+    <customValue>
+        <fullName>029</fullName>
+        <default>false</default>
+        <label>COMPETITION: RISTOMAT</label>
+    </customValue>
+    <customValue>
+        <fullName>030</fullName>
+        <default>false</default>
+        <label>COMPETITION: SMA</label>
+    </customValue>
+    <customValue>
+        <fullName>031</fullName>
+        <default>false</default>
+        <label>COMPETITION: SOGART</label>
+    </customValue>
+    <customValue>
+        <fullName>032</fullName>
+        <default>false</default>
+        <label>COMPETITION: Trimalcione</label>
+    </customValue>
+    <customValue>
+        <fullName>033</fullName>
+        <default>false</default>
+        <label>COMPETITION: BLUE TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>034</fullName>
+        <default>false</default>
+        <label>COMPETITION: SORECA</label>
+    </customValue>
+    <customValue>
+        <fullName>035</fullName>
+        <default>false</default>
+        <label>COMPETITION: REPAS</label>
+    </customValue>
+    <customValue>
+        <fullName>036</fullName>
+        <default>false</default>
+        <label>COMPETITION: TICKET RESTAURANT</label>
+    </customValue>
+    <customValue>
+        <fullName>037</fullName>
+        <default>false</default>
+        <label>COMPETITION: CITY TIME</label>
+    </customValue>
+    <customValue>
+        <fullName>038</fullName>
+        <default>false</default>
+        <label>COMPETITION: NEW AGENCY</label>
+    </customValue>
+    <customValue>
+        <fullName>039</fullName>
+        <default>false</default>
+        <label>COMPETITION: CIR</label>
+    </customValue>
+    <customValue>
+        <fullName>040</fullName>
+        <default>false</default>
+        <label>COMPETITION: SAGIFI</label>
+    </customValue>
+    <customValue>
+        <fullName>042</fullName>
+        <default>false</default>
+        <label>COMPETITION: EP</label>
+    </customValue>
+    <customValue>
+        <fullName>043</fullName>
+        <default>false</default>
+        <label>COMPETITION: TICKET MAX</label>
+    </customValue>
+    <customValue>
+        <fullName>044</fullName>
+        <default>false</default>
+        <label>COMPETITION: GOLD TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>045</fullName>
+        <default>false</default>
+        <label>COMPETITION: ALL SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>046</fullName>
+        <default>false</default>
+        <label>INFORMATION PURSUANT CONSIP</label>
+    </customValue>
+    <customValue>
+        <fullName>047</fullName>
+        <default>false</default>
+        <label>COMPETITION: TICKET Gemeaz</label>
+    </customValue>
+    <customValue>
+        <fullName>048</fullName>
+        <default>false</default>
+        <label>COMPETITION: MIGROS</label>
+    </customValue>
+    <customValue>
+        <fullName>049</fullName>
+        <default>false</default>
+        <label>INFORMATION - MOD.PAG MODIFICATION</label>
+    </customValue>
+    <customValue>
+        <fullName>051</fullName>
+        <default>false</default>
+        <label>COMPETITION: MEAL Ristochef</label>
+    </customValue>
+    <customValue>
+        <fullName>052</fullName>
+        <default>false</default>
+        <label>COMPETITION: CLUB Ristochef</label>
+    </customValue>
+    <customValue>
+        <fullName>053</fullName>
+        <default>false</default>
+        <label>COMPETITION: TICKET CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>054</fullName>
+        <default>false</default>
+        <label>COMPETITION: SMART TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>062</fullName>
+        <default>false</default>
+        <label>CONCORR .: CITY TIME PLUS SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>061</fullName>
+        <default>false</default>
+        <label>MERGER</label>
+    </customValue>
+    <customValue>
+        <fullName>057</fullName>
+        <default>false</default>
+        <label>COMPETITION: E-SMART LUNCH</label>
+    </customValue>
+    <customValue>
+        <fullName>058</fullName>
+        <default>false</default>
+        <label>COMPETITION: E-TICKET LUNCH</label>
+    </customValue>
+    <customValue>
+        <fullName>060</fullName>
+        <default>false</default>
+        <label>COMPETITION: TICKET MAX SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>009</fullName>
+        <default>false</default>
+        <label>GASTRONOMIE</label>
+    </customValue>
+    <customValue>
+        <fullName>013</fullName>
+        <default>false</default>
+        <label>DISSATISFACTION</label>
+    </customValue>
+    <customValue>
+        <fullName>014</fullName>
+        <default>false</default>
+        <label>GROUP PASSED A COMPETITION</label>
+    </customValue>
+    <customValue>
+        <fullName>015</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>027</fullName>
+        <default>false</default>
+        <label>COMPETITION: BONCHEF</label>
+    </customValue>
+    <customValue>
+        <fullName>041</fullName>
+        <default>false</default>
+        <label>COMPETITION: Queek TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>050</fullName>
+        <default>false</default>
+        <label>COMPETITION: E-LUNCH</label>
+    </customValue>
+    <customValue>
+        <fullName>098</fullName>
+        <default>false</default>
+        <label>NOT ordaining</label>
+    </customValue>
+    <customValue>
+        <fullName>099</fullName>
+        <default>false</default>
+        <label>AUTO LOCK</label>
+    </customValue>
+    <customValue>
+        <fullName>059</fullName>
+        <default>false</default>
+        <label>COMPETITION: E-CARD LUNCH</label>
+    </customValue>
+    <customValue>
+        <fullName>097</fullName>
+        <default>false</default>
+        <label>NOT PAYING</label>
+    </customValue>
+    <masterLabel>IT Contract Closing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

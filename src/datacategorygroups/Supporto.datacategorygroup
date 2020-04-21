@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>PIATTAFORMA-CREDENZIALI E REGISTRAZIONE</label>
+            <name>PIATTAFORMA_CREDENZIALI_E_REGISTRAZIONE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>PIATTAFORMA-FUNZIONALITA&apos;</label>
+            <name>PIATTAFORMA_FUNZIONALITA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>PIATTAFORMA-MANCATO FUNZIONAMENTO</label>
+            <name>PIATTAFORMA_MANCATO_FUNZIONAMENTO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>AGGIORNAMENTO ANAGRAFICA</label>
+            <name>AGGIORNAMENTO_ANAGRAFICA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CASSA SANITARIA-MARSH</label>
+            <name>CASSA_SANITARIA_MARSH</name>
+        </dataCategory>
+        <dataCategory>
+            <label>VERIFICA PRATICA</label>
+            <name>VERIFICA_PRATICA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CASH WELFARE</label>
+            <name>CASH_WELFARE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>NON DI COMPETENZA</label>
+            <name>NON_DI_COMPETENZA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>ERRATA FATTURAZIONE</label>
+            <name>ERRATA_FATTURAZIONE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>INFO PAGAMENTO FATTURE</label>
+            <name>INFO_PAGAMENTO_FATTURE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FLUSSI / REPORT-DATI NON COERENTI</label>
+            <name>FLUSSI_REPORT_DATI_NON_COERENTI</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FLUSSI / REPORT-MANCATA RICEZIONE</label>
+            <name>FLUSSI_REPORT_MANCATA_RICEZIONE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>METODO DI PAGAMENTO</label>
+            <name>METODO_DI_PAGAMENTO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MODIFICA CONDIZIONI ECONOMICHE/CONTRATTU</label>
+            <name>MODIFICA_CONDIZIONI_ECONOMICHE_CONTRATTU</name>
+        </dataCategory>
+        <dataCategory>
+            <label>ESITO CARICAMENTO TRACCIATO</label>
+            <name>ESITO_CARICAMENTO_TRACCIATO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>ESITO LANCIO CATALOGATO</label>
+            <name>ESITO_LANCIO_CATALOGATO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MODIFICHE PIANO</label>
+            <name>MODIFICHE_PIANO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>PREVIDENZA</label>
+            <name>PREVIDENZA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>PROSPECT</label>
+            <name>PROSPECT</name>
+        </dataCategory>
+        <dataCategory>
+            <label>RECLAMO</label>
+            <name>RECLAMO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>INFO REGOLAMENTO</label>
+            <name>INFO_REGOLAMENTO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>INFO RIMBORSI</label>
+            <name>INFO_RIMBORSI</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET COMPLIMENTS-CONSEGNA</label>
+            <name>TICKET_COMPLIMENTS_CONSEGNA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET COMPLIMENTS-VERIFICA UTILIZZO</label>
+            <name>TICKET_COMPLIMENTS_VERIFICA_UTILIZZO</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET COMPLIMENTS-RIEMISSIONE</label>
+            <name>TICKET_COMPLIMENTS_RIEMISSIONE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET COMPLIMENTS-SPENDIBILITA&apos;</label>
+            <name>TICKET_COMPLIMENTS_SPENDIBILITA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET TRASPORTO-STATO RICHIESTA</label>
+            <name>TICKET_TRASPORTO_STATO_RICHIESTA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TICKET TRASPORTO-INVIO FLUSSI</label>
+            <name>TICKET_TRASPORTO_INVIO_FLUSSI</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TRACCIATI-SUPPORTO</label>
+            <name>TRACCIATI_SUPPORTO</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Supporto</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

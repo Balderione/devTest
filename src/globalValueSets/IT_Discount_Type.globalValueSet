@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>DISCOUNT WITH N. CREDIT PART A</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>DISCOUNT ON BILL</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>DISCOUNT ON BILL ON VAL.BUONO</label>
+    </customValue>
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>PERIODIC ANNUAL DISCOUNT</label>
+    </customValue>
+    <customValue>
+        <fullName>B</fullName>
+        <default>false</default>
+        <label>DISCOUNT BI-MONTHLY MAGAZINE</label>
+    </customValue>
+    <customValue>
+        <fullName>Q</fullName>
+        <default>false</default>
+        <label>DISCOUNT MAGAZINE QUADRIMESTRAL</label>
+    </customValue>
+    <customValue>
+        <fullName>S</fullName>
+        <default>false</default>
+        <label>DISCOUNT PERIODIC HALF</label>
+    </customValue>
+    <customValue>
+        <fullName>T</fullName>
+        <default>false</default>
+        <label>DISCOUNT QUARTERLY MAGAZINE</label>
+    </customValue>
+    <masterLabel>IT Discount Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

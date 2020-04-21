@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Expired --></label>
+        <name>ER_Contract_Expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract External ID --></label>
+        <name>ER_Contract_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creation date in OS --></label>
+        <name>ER_Creation_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>ER_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indexation Index --></label>
+        <name>ER_Indexation_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indexation --></label>
+        <name>ER_Indexation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Frequency --></label>
+        <name>ER_InvoicingFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last date of Sync --></label>
+        <name>ER_Last_date_of_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indexation --></label>
+        <name>ER_OppIndexation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>ER_OpportunityId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>ER_PaymentMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>ER_PaymentTerms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>ER_QuoteId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Term --></label>
+        <name>ER_ReimbursementTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terminated Date --></label>
+        <name>ER_Terminated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Reason --></label>
+        <name>ER_TerminationReason__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation><!-- Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy / Closure</masterLabel>
+            <translation><!-- Bankruptcy / Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costs</masterLabel>
+            <translation><!-- Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to direct competition</masterLabel>
+            <translation><!-- Lost to direct competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to indirect competition</masterLabel>
+            <translation><!-- Lost to indirect competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to internal competition</masterLabel>
+            <translation><!-- Lost to internal competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality of service</masterLabel>
+            <translation><!-- Quality of service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled end date</masterLabel>
+            <translation><!-- Scheduled end date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination for legal reasons</masterLabel>
+            <translation><!-- Termination for legal reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To little volume</masterLabel>
+            <translation><!-- To little volume --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformation of the company</masterLabel>
+            <translation><!-- Transformation of the company --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Termination date in OS --></label>
+        <name>ER_Termination_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>ER_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Message --></label>
+        <name>ER_WS_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status Code --></label>
+        <name>ER_WS_StatusCode__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>ER_WS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- 136 Email Address --></label>
+        <name>IT_136_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- 136 Email Sending Data --></label>
+        <name>IT_136_Email_Sending_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- 136 Send Email --></label>
+        <name>IT_136_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- 136 User Sender --></label>
+        <name>IT_136_User_Sender__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User Doc --></label>
+        <name>IT_AC_User_Doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepts Privacy --></label>
+        <name>IT_Accepts_Privacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Potential --></label>
+        <name>IT_Annual_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Type --></label>
+        <name>IT_Attendance_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode 2 --></label>
+        <name>IT_Barcode_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode 3 --></label>
+        <name>IT_Barcode_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode Warrant --></label>
+        <name>IT_Barcode_Warrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode --></label>
+        <name>IT_Barcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency (UTA) --></label>
+        <name>IT_Billing_Frequency_UTA__c</name>
+        <picklistValues>
+            <masterLabel>FORTNIGHTLY</masterLabel>
+            <translation><!-- FORTNIGHTLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEEKLY</masterLabel>
+            <translation><!-- WEEKLY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bond (UTA) --></label>
+        <name>IT_Bond_UTA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign End Date --></label>
+        <name>IT_Campaign_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Start Date --></label>
+        <name>IT_Campaign_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Cost Billing Frequency --></label>
+        <name>IT_Card_Cost_Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>ANNUAL (31/12)</masterLabel>
+            <translation><!-- ANNUAL (31/12) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HALF (30/6; 31/12)</masterLabel>
+            <translation><!-- HALF (30/6; 31/12) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSUE (IN THE ORDER OF GOOD)</masterLabel>
+            <translation><!-- ISSUE (IN THE ORDER OF GOOD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTHLY (end of month)</masterLabel>
+            <translation><!-- MONTHLY (end of month) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVER</masterLabel>
+            <translation><!-- NEVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY (31/3, 30/6, 30/9, 31/12)</masterLabel>
+            <translation><!-- QUARTERLY (31/3, 30/6, 30/9, 31/12) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Cost Billing Rules --></label>
+        <name>IT_Card_Cost_Billing_Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Cost Billing Type --></label>
+        <name>IT_Card_Cost_Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>FINAL</masterLabel>
+            <translation><!-- FINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSUE (VOUCHER ORDER)</masterLabel>
+            <translation><!-- ISSUE (VOUCHER ORDER) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Cost --></label>
+        <name>IT_Card_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Contract --></label>
+        <name>IT_Change_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Document --></label>
+        <name>IT_Change_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Economic Conditions --></label>
+        <name>IT_Change_Economic_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>IT_Client_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial --></label>
+        <name>IT_Commercial__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commission/Discount Percentage --></label>
+        <name>IT_Commission_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission/Discount Type --></label>
+        <name>IT_Commission_Discount_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Percentage --></label>
+        <name>IT_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Type --></label>
+        <name>IT_Commission_Type__c</name>
+        <picklistValues>
+            <masterLabel>COMMISSION-FREE</masterLabel>
+            <translation><!-- COMMISSION-FREE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXISTING COMMISSION</masterLabel>
+            <translation><!-- EXISTING COMMISSION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Communication --></label>
+        <name>IT_Communication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Activity Status --></label>
+        <name>IT_Contract_Activity_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Closing Type --></label>
+        <name>IT_Contract_Closing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Duration --></label>
+        <name>IT_Contract_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>IT_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Progressive --></label>
+        <name>IT_Contract_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Renewal Type --></label>
+        <name>IT_Contract_Renewal_Type__c</name>
+        <picklistValues>
+            <masterLabel>AUTOMATIC RENEWAL</masterLabel>
+            <translation><!-- AUTOMATIC RENEWAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO AUTOMATIC RENEWAL</masterLabel>
+            <translation><!-- NO AUTOMATIC RENEWAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENEWABLE</masterLabel>
+            <translation><!-- RENEWABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEMPORARY</masterLabel>
+            <translation><!-- TEMPORARY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Sign Date --></label>
+        <name>IT_Contract_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Status --></label>
+        <name>IT_Contract_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>IT_Contract_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contractual Particularities --></label>
+        <name>IT_Contractual_Particularities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prodotto --></label>
+        <name>IT_DEMO_Product__c</name>
+        <relationshipLabel><!-- Contratti (Prodotto) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date presence --></label>
+        <name>IT_Date_presence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Notes Effective Date --></label>
+        <name>IT_Debt_Notes_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Notes Locale Type --></label>
+        <name>IT_Debt_Notes_Locale_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Notes Percentage --></label>
+        <name>IT_Debt_Notes_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Notes --></label>
+        <name>IT_Debt_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date Bond --></label>
+        <name>IT_Delivery_Date_Bond__c</name>
+        <picklistValues>
+            <masterLabel>FIRST DAY OF MONTH CALCULATION</masterLabel>
+            <translation><!-- FIRST DAY OF MONTH CALCULATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSERTION DATE CALCULATION</masterLabel>
+            <translation><!-- INSERTION DATE CALCULATION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Fixed Day --></label>
+        <name>IT_Delivery_Fixed_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Term --></label>
+        <name>IT_Delivery_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage 2 --></label>
+        <name>IT_Discount_Percentage_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage 3 --></label>
+        <name>IT_Discount_Percentage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage --></label>
+        <name>IT_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Type --></label>
+        <name>IT_Discount_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Validity Date 2 --></label>
+        <name>IT_Discount_Validity_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Validity Date 3 --></label>
+        <name>IT_Discount_Validity_Date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Progressive --></label>
+        <name>IT_Document_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Protocol --></label>
+        <name>IT_Document_Protocol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>IT_Document_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Sending Date --></label>
+        <name>IT_Email_Sending_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>IT_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Contract date --></label>
+        <name>IT_End_Contract_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Validity Date --></label>
+        <name>IT_End_Validity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expendia Card Amount --></label>
+        <name>IT_Expendia_Card_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expendia Monthly Fee --></label>
+        <name>IT_Expendia_Monthly_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expendia Startup Cost --></label>
+        <name>IT_Expendia_Startup_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Contract Date --></label>
+        <name>IT_Expiration_Contract_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extradiscount Percentage --></label>
+        <name>IT_Extradiscount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extradiscount --></label>
+        <name>IT_Extradiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage 2 --></label>
+        <name>IT_FRM_Discount_Percentage_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage 3 --></label>
+        <name>IT_FRM_Discount_Percentage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extradiscount Percentage --></label>
+        <name>IT_FRM_Extradiscount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center Name --></label>
+        <name>IT_Financial_Center_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fine Interest type --></label>
+        <name>IT_Fine_Interest_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Day Type --></label>
+        <name>IT_Fixed_Day_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation><!-- BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation><!-- SOLAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Flexben Fee Cost --></label>
+        <name>IT_Flexben_Fee_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flexben Fee Frequency --></label>
+        <name>IT_Flexben_Fee_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>ANNUAL</masterLabel>
+            <translation><!-- ANNUAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIENNIAL</masterLabel>
+            <translation><!-- BIENNIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECENNIAL</masterLabel>
+            <translation><!-- DECENNIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIVE YEAR</masterLabel>
+            <translation><!-- FIVE YEAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORTNIGHTLY</masterLabel>
+            <translation><!-- FORTNIGHTLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HALF-YEARLY</masterLabel>
+            <translation><!-- HALF-YEARLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUADRENNIAL</masterLabel>
+            <translation><!-- QUADRENNIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY</masterLabel>
+            <translation><!-- QUARTERLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIENNIAL</masterLabel>
+            <translation><!-- TRIENNIAL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Flexben Start Fee Date --></label>
+        <name>IT_Flexben_Start_Fee_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flexben Startup Cost --></label>
+        <name>IT_Flexben_Startup_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flexben Startup Date --></label>
+        <name>IT_Flexben_Startup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Framework Barcode --></label>
+        <name>IT_Framework_Barcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Framework Head Code --></label>
+        <name>IT_Framework_Head_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Framework Warrant --></label>
+        <name>IT_Framework_Warrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Contract --></label>
+        <name>IT_Future_Change_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Documents --></label>
+        <name>IT_Future_Change_Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Economic Conditions --></label>
+        <name>IT_Future_Change_Economic_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- GetDoc Link 2 --></label>
+        <name>IT_GetDoc_Link_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- GetDoc Link 3 --></label>
+        <name>IT_GetDoc_Link_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- GetDoc Link Framework --></label>
+        <name>IT_GetDoc_Link_Framework__c</name>
+    </fields>
+    <fields>
+        <label><!-- GetDoc Link Warrant --></label>
+        <name>IT_GetDoc_Link_Warrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- GetDoc Link --></label>
+        <name>IT_GetDoc_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Detail --></label>
+        <name>IT_Invoice_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multidiscount --></label>
+        <name>IT_Multidiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Cost Reason --></label>
+        <name>IT_No_Cost_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Date presence --></label>
+        <name>IT_No_Date_presence__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Exclusivity --></label>
+        <name>IT_No_Exclusivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Massive Print --></label>
+        <name>IT_No_Massive_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Sign Activation Authorization --></label>
+        <name>IT_No_Sign_Activation_Authorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Standard VAT --></label>
+        <name>IT_Not_Standard_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Expendia cards --></label>
+        <name>IT_Number_of_Expendia_cards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Only Client Copy --></label>
+        <name>IT_Only_Client_Copy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Code --></label>
+        <name>IT_Opportunity_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Reception Term Type --></label>
+        <name>IT_Order_Reception_Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation><!-- BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation><!-- SOLAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Reception Term --></label>
+        <name>IT_Order_Reception_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Code --></label>
+        <name>IT_Payment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Conditions --></label>
+        <name>IT_Payment_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Penal Presence --></label>
+        <name>IT_Penal_Presence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Code --></label>
+        <name>IT_Promo_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prova VR --></label>
+        <name>IT_Prova_VR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reception Type --></label>
+        <name>IT_Reception_Type__c</name>
+        <picklistValues>
+            <masterLabel>FAX RECEIVED BY BRANCH</masterLabel>
+            <translation><!-- FAX RECEIVED BY BRANCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAX RECEIVED BY CUSTOMER</masterLabel>
+            <translation><!-- FAX RECEIVED BY CUSTOMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORIGINAL returned</masterLabel>
+            <translation><!-- ORIGINAL returned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registration Date --></label>
+        <name>IT_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Reason --></label>
+        <name>IT_Renewal_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Type --></label>
+        <name>IT_Renewal_Type__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE PRODUCT</masterLabel>
+            <translation><!-- CHANGE PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE VAT</masterLabel>
+            <translation><!-- CHANGE VAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGING CONDITIONS OF VAT A PARITY</masterLabel>
+            <translation><!-- CHANGING CONDITIONS OF VAT A PARITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGING ECONOMIC CONDITIONS</masterLabel>
+            <translation><!-- CHANGING ECONOMIC CONDITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRACT RENEWAL WITH THE SAME &apos;CONDITIONS</masterLabel>
+            <translation><!-- CONTRACT RENEWAL WITH THE SAME &apos;CONDITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXTENSION</masterLabel>
+            <translation><!-- EXTENSION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLEX BENEFIT</masterLabel>
+            <translation><!-- FLEX BENEFIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTISCONTO</masterLabel>
+            <translation><!-- MULTISCONTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW CONTRACT</masterLabel>
+            <translation><!-- NEW CONTRACT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REOPENING CODE - conditions change</masterLabel>
+            <translation><!-- REOPENING CODE - conditions change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REOPENING CODE - equal conditions</masterLabel>
+            <translation><!-- REOPENING CODE - equal conditions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SDD Payment --></label>
+        <name>IT_SDD_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scan Date --></label>
+        <name>IT_Scan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email --></label>
+        <name>IT_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service 2 --></label>
+        <name>IT_Service_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service 3 --></label>
+        <name>IT_Service_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Sending date --></label>
+        <name>IT_Sign_Sending_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SkipActivation --></label>
+        <name>IT_SkipActivation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stamp Expense --></label>
+        <name>IT_Stamp_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Validity Date --></label>
+        <name>IT_Start_Validity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supply Conditions --></label>
+        <name>IT_Supply_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term Type --></label>
+        <name>IT_Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation><!-- BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation><!-- SOLAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transport Cost --></label>
+        <name>IT_Transport_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Extradiscount --></label>
+        <name>IT_Type_Extradiscount__c</name>
+        <picklistValues>
+            <masterLabel>AT THE END OF THE YEAR</masterLabel>
+            <translation><!-- AT THE END OF THE YEAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UTA Monthly Limit --></label>
+        <name>IT_UTA_Monthly_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTA Offer Type --></label>
+        <name>IT_UTA_Offer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTA Vehicles Number --></label>
+        <name>IT_UTA_Vehicles_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date EC --></label>
+        <name>IT_Validity_End_Date_EC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date EC --></label>
+        <name>IT_Validity_Start_Date_EC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting for SEPA --></label>
+        <name>IT_Waiting_for_SEPA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Note Frequency --></label>
+        <name>SK_Credit_Note_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms Voucher --></label>
+        <name>SK_Payment_Terms_Voucher__c</name>
+    </fields>
+    <layouts>
+        <layout>ER Contract Layout V2.1</layout>
+        <sections>
+            <label><!-- Financial Conditions --></label>
+            <section>Financial Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Information --></label>
+            <section>Synchronization Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HU Contract Layout</layout>
+        <sections>
+            <label><!-- Synchronization Information --></label>
+            <section>Synchronization Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Contract PL</layout>
+        <sections>
+            <label><!-- Card Economic Information --></label>
+            <section>Card Economic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Particularities --></label>
+            <section>Contract Particularities</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debt Notes Informations (Nn Std Billing) --></label>
+            <section>Debt Notes Informations (Nn Std Billing)</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Information --></label>
+            <section>Delivery Information</section>
+        </sections>
+        <sections>
+            <label><!-- Document Information --></label>
+            <section>Document Information</section>
+        </sections>
+        <sections>
+            <label><!-- Economic Conditions --></label>
+            <section>Economic Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Flexben Economic Information --></label>
+            <section>Flexben Economic Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Interest Information --></label>
+            <section>Interest Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Activate Contract --></label>
+        <name>ERHU_Activate_Contract</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Activate Contract --></label>
+        <name>ER_Activate_Contract</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Amend Contract --></label>
+        <name>ER_AmendContract</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Contract --></label>
+        <name>IT_Change_Contract</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Contract2 --></label>
+        <name>IT_Change_Contract2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract1 UA --></label>
+        <name>IT_Contact1_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contact5 UA --></label>
+        <name>IT_Contact5_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract1 UA --></label>
+        <name>IT_Contract1_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract2 UA --></label>
+        <name>IT_Contract2_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract3 UA --></label>
+        <name>IT_Contract3_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract4 UA --></label>
+        <name>IT_Contract4_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Contract Doc UA --></label>
+        <name>IT_Contract_Doc_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Contract Request --></label>
+        <name>IT_Contract_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Economic1 UA --></label>
+        <name>IT_Economic1_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Economic2 UA --></label>
+        <name>IT_Economic2_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Economic3 UA --></label>
+        <name>IT_Economic3_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Economic4 UA --></label>
+        <name>IT_Economic4_UA</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Client --></label>
+        <name>ER_Client_Contract_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Merchant --></label>
+        <name>ER_Merchant_Contract_RT</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Start Date when the contract is Activated. --></errorMessage>
+        <name>VRER01_ActiveContractStartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot perform this Action --></errorMessage>
+        <name>VRER02_ContractStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The end date cannot be before the start date. --></errorMessage>
+        <name>VRER03_ContractEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Warning! The type of discount is valid only for Ticket Meal! --></errorMessage>
+        <name>VRIT01_Discount_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For the type of service, it&apos;s possible to select only no cut invoice detail! --></errorMessage>
+        <name>VRIT02_InvoiceDetail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tipo di contratto Quadro non è possibile modificare i seguenti campi: Giorno Limite Consegna; Giorno Limite Consegna; Giorno Limite Ricezione Ordine; Tipo Giorno Limite; Tipo Giorno Fisso; Tipo Giorno Limite Ricezione Ord.</errorMessage>
+        <name>VRIT03_Contract_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fields &quot;Delivery Term&quot;, &quot;Term Type&quot;, &quot;Delivery Fixed Day&quot;, &quot;Order Reception Term&quot;, &quot;Order Reception Term Type&quot;, &quot;Fixed Day Type&quot; aren&apos;t possible to change if it&apos;s blank the &quot;Delivery Date Bond&quot; field! --></errorMessage>
+        <name>VRIT04_Delivery_Date_Bond</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Flexben Start Fee Date&apos;  cannot be in the past --></errorMessage>
+        <name>VRIT05_Flexben_Start_Fee_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For the selected Service, Stamp Expense cannot be change! --></errorMessage>
+        <name>VRIT06_Stamp_Expense</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s mandatory to insert a value of Debt Notes Percentage and Debt Notes Locale Type if Debt Notes is populated! --></errorMessage>
+        <name>VRIT07_Debt_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sign Sending Date could be populated only if the contract status is &quot;In Definition&quot;! --></errorMessage>
+        <name>VRIT08_Sign_Sending_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Sign date could be populated only if Contract Status is &quot;Sent for Signature&quot;! --></errorMessage>
+        <name>VRIT09_Contract_Sign_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiration Date cannot be before Contract Start Date! --></errorMessage>
+        <name>VRIT10_Contract_Expiration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Client Copy cannot be populated if contract status is &quot;Sent for Signature&quot;! --></errorMessage>
+        <name>VRIT11_Only_Client_Copy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract type is &apos;Campagna Incentive&apos;! insert &apos;Annual Potential&apos; field! --></errorMessage>
+        <name>VRIT12_Annual_Potential</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Extradiscount&apos;, &apos;Multidiscount&apos; and &apos;Exclusivity&apos; field cannot be evaluated for contracts status equal &apos;NO STANDARD&apos; or &apos;QUADRO&apos;! --></errorMessage>
+        <name>VRIT13_Multidiscount_Extradiscount_Exclu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Sign Sending date&apos; must be greater than &apos;StartDate&apos; --></errorMessage>
+        <name>VRIT14_Sign_Sending_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Sign Date must be greater than Sign Sending date --></errorMessage>
+        <name>VRIT15_Sign_Sign_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Sign Date must be greater than Sign Sending date --></errorMessage>
+        <name>VRIT15_Sign_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is necessary to insert the &apos;StartDate&apos; field --></errorMessage>
+        <name>VRIT16_StartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Previous Code&apos; and &apos;Contract Closing Type&apos; are populated, Contract Renewal Type cannot be changed --></errorMessage>
+        <name>VRIT17_Contract_Renewal_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to apply a discount cause of Special Billing Type selected! --></errorMessage>
+        <name>VRIT18_Special_Billing_Discount_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Flexben Startup Date must be greater than Flexben Startup Date inserted in creation --></errorMessage>
+        <name>VRIT19_Flexben_Startup_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Flexben Fee Cost cannot be less than or equal to 0 --></errorMessage>
+        <name>VRIT20_Flexben_Fee_Cost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT21_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify fields for this client status! --></errorMessage>
+        <name>VRIT22_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Sign Date cannot be populated if Sign Sending Date is not populated! --></errorMessage>
+        <name>VRIT23_Contract_Sign_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attendance Type and Contract Renewal type must be populated! --></errorMessage>
+        <name>VRIT24_Contract_Renewal_Attendance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Missing Payment Code! --></errorMessage>
+        <name>VRIT25_No_Payment_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field --></errorMessage>
+        <name>VRIT26_Document_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Barcode:
+-the length must be 11
+-can not contain lowercase characters
+-The first character must be &apos;K&apos;
+-the last character must be a letter --></errorMessage>
+        <name>VRIT27_Barcode</name>
+    </validationRules>
+</CustomObjectTranslation>

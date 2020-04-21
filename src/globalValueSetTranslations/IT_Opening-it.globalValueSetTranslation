@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>COURSES</masterLabel>
+        <translation>CORSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER RIORDINANTE</masterLabel>
+        <translation>CLIENTE RIORDINANTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCLOSURE</masterLabel>
+        <translation>INFORMATIVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EX CNC ELECTRONIC SIGNATURES</masterLabel>
+        <translation>FIRME EX CNC ELETTRONICO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EX-SIGNATURES AND LUNCH</masterLabel>
+        <translation>FIRME EX E-LUNCH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOOD NAMES FORMER CLUB Ristochef</masterLabel>
+        <translation>FIRME EX BUONO CLUB RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INDUCED</masterLabel>
+        <translation>INDOTTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NAMES FORMER GOOD MEAL Ristochef</masterLabel>
+        <translation>FIRME EX BUONO PASTO RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NEW CUSTOMER</masterLabel>
+        <translation>CLIENTE NUOVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NEW POSITION THE SAME LINE</masterLabel>
+        <translation>NUOVA POSIZIONE STESSA LINEA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RACES EX CNC</masterLabel>
+        <translation>GARE EX CNC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REBRANDING INFORMATION</masterLabel>
+        <translation>INFORMATIVA REBRANDING</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES AND EX-LUNCH CARD</masterLabel>
+        <translation>FIRME EX E-LUNCH CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES AND EX-LUNCH SMART</masterLabel>
+        <translation>FIRME EX E-LUNCH SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES AND EX-LUNCH TICKET</masterLabel>
+        <translation>FIRME EX E-LUNCH TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES CARD EX Ristochef</masterLabel>
+        <translation>FIRME EX RISTOCHEF CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES CARD EX-T</masterLabel>
+        <translation>FIRME EX T-CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES COMPETITION EX-CONSIP</masterLabel>
+        <translation>FIRME EX CONCORRENZA-CONSIP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX CT</masterLabel>
+        <translation>FIRME EX CT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX PPL-LUNCH-SMART</masterLabel>
+        <translation>FIRME EX PPL-LUNCH-SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX T-MAX</masterLabel>
+        <translation>FIRME EX T-SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX T-MAX SMART</masterLabel>
+        <translation>FIRME EX T-MAX SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX T-SMART</masterLabel>
+        <translation>FIRME EX T-SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX TR</masterLabel>
+        <translation>FIRME EX TR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX-CONSIP Edenred</masterLabel>
+        <translation>FIRME EX CONSIP-EDENRED</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES EX-T GOLD</masterLabel>
+        <translation>FIRME EX T-GOLD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES ON PAPER EX CNC</masterLabel>
+        <translation>FIRME EX CNC CARTACEO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES PRIVATE</masterLabel>
+        <translation>FIRME PRIVATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIGNATURES RACES</masterLabel>
+        <translation>FIRME GARE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TEST</masterLabel>
+        <translation>PROVA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

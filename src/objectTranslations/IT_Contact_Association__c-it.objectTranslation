@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dettaglio Contatto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dettagli Contatto</value>
+    </caseValues>
+    <fields>
+        <label>Utente AC</label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Account__c</name>
+        <relationshipLabel>Recapiti</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Attività AC</label>
+        <name>IT_Activity_AC__c</name>
+    </fields>
+    <fields>
+        <label>Attività SF</label>
+        <name>IT_Activity_SF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apparatus Type --></label>
+        <name>IT_Apparatus_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail PEC</masterLabel>
+            <translation><!-- Mail PEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Codice Associazione</label>
+        <name>IT_Association_Code__c</name>
+    </fields>
+    <fields>
+        <label>Nome Associazione</label>
+        <name>IT_Association_Naming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Association Progressive --></label>
+        <name>IT_Association_Progressive__c</name>
+    </fields>
+    <fields>
+        <label>Associazione</label>
+        <name>IT_Association__c</name>
+    </fields>
+    <fields>
+        <label>Fatture</label>
+        <name>IT_Billing_Confirm_Address__c</name>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Code__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Associazione</label>
+        <name>IT_Contact_Association_Type__c</name>
+    </fields>
+    <fields>
+        <label>Dettaglio Contatto</label>
+        <name>IT_Contact_Detail__c</name>
+        <relationshipLabel>Associazioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Id --></label>
+        <name>IT_Contact_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Info --></label>
+        <name>IT_Contact_Info__c</name>
+    </fields>
+    <fields>
+        <label>Nome Referente</label>
+        <name>IT_Contact__c</name>
+        <relationshipLabel><!-- Dettagli Contatto --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Consegna AC</label>
+        <name>IT_Delivery_AC__c</name>
+    </fields>
+    <fields>
+        <label>Consegna SF</label>
+        <name>IT_Delivery_SF__c</name>
+    </fields>
+    <fields>
+        <label>Consegna</label>
+        <name>IT_Delivery_Site__c</name>
+        <relationshipLabel>Recapiti</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IT_Detail_Type__c --></label>
+        <name>IT_Detail_Type_c__c</name>
+        <picklistValues>
+            <masterLabel>001</masterLabel>
+            <translation><!-- 001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002</masterLabel>
+            <translation><!-- 002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003</masterLabel>
+            <translation><!-- 003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004</masterLabel>
+            <translation><!-- 004 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005</masterLabel>
+            <translation><!-- 005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006</masterLabel>
+            <translation><!-- 006 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Attività</label>
+        <name>IT_Distribution_Point__c</name>
+        <relationshipLabel>Recapiti</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fatture --></label>
+        <name>IT_Fatture__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel>Referenti Financial Center</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Future Change Contact Association --></label>
+        <name>IT_Future_Change_Contact_Association__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Contact --></label>
+        <name>IT_Main_Contact__c</name>
+    </fields>
+    <fields>
+        <label>Comunicazioni</label>
+        <name>IT_Notifications__c</name>
+    </fields>
+    <fields>
+        <label>Ordini</label>
+        <name>IT_Order_Confirm_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ordini --></label>
+        <name>IT_Ordini__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recapito --></label>
+        <name>IT_Recapito__c</name>
+    </fields>
+    <fields>
+        <label>SUT</label>
+        <name>IT_Send_SUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tipo Apparato --></label>
+        <name>IT_Tipo_Apparato__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>IT_Type__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Contact Association Layout</layout>
+        <sections>
+            <label>Dettaglio Comunicazioni</label>
+            <section>Communications Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Id</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>I campi relativi all&apos;invio SUT e le Comunicazioni non possono essere impostati se il tipo recapito è il telefono o il fax!</errorMessage>
+        <name>VRIT01_Send_SUT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il campo relativo al Recapito Conferma Ordini non può essere impostato se il tipo recapito telefono!</errorMessage>
+        <name>VRIT02_Order_Confirm_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile modificare i dati relativi a questo tipo di Servizio</errorMessage>
+        <name>VRIT03_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare i campi per questo stato del cliente!</errorMessage>
+        <name>VRIT04_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Referente è di tipo &quot;Ref&quot;, non è possibile cambiare nessun flag!</errorMessage>
+        <name>VRIT05_FlagsForRef</name>
+    </validationRules>
+</CustomObjectTranslation>

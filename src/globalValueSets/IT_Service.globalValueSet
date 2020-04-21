@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0V</fullName>
+        <default>false</default>
+        <label>FLEX TICKET RESTAURANT</label>
+    </customValue>
+    <customValue>
+        <fullName>1G</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS PREMIUM PROMO</label>
+    </customValue>
+    <customValue>
+        <fullName>1F</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS SELECTION PROMO</label>
+    </customValue>
+    <customValue>
+        <fullName>1A</fullName>
+        <default>false</default>
+        <label>POSTEPAY LUNCH SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>0O</fullName>
+        <default>false</default>
+        <label>FLEX TICKET SERVICE CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>1B</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT</label>
+    </customValue>
+    <customValue>
+        <fullName>0W</fullName>
+        <default>false</default>
+        <label>E-LUNCH SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>TICKET SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>C</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>CLEAN WAY</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>GRANT FRIEND</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>TICKET TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>B</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT GOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>D</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT MAX</label>
+    </customValue>
+    <customValue>
+        <fullName>F</fullName>
+        <default>false</default>
+        <label>DOMI PHONE</label>
+    </customValue>
+    <customValue>
+        <fullName>G</fullName>
+        <default>false</default>
+        <label>PEOPLE ONE</label>
+    </customValue>
+    <customValue>
+        <fullName>R</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>S</fullName>
+        <default>false</default>
+        <label>SMART CITY TIME</label>
+    </customValue>
+    <customValue>
+        <fullName>T</fullName>
+        <default>false</default>
+        <label>GOOD VIRTUAL SCHOOL VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>U</fullName>
+        <default>false</default>
+        <label>TICKET SERVICE CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>N</fullName>
+        <default>false</default>
+        <label>TICKET SCHOOL</label>
+    </customValue>
+    <customValue>
+        <fullName>K</fullName>
+        <default>false</default>
+        <label>TICKET SERVICE SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>0A</fullName>
+        <default>false</default>
+        <label>EXPENDIA SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>X</fullName>
+        <default>false</default>
+        <label>E-LUNCH CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>0B</fullName>
+        <default>false</default>
+        <label>E-LUNCH TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>0G</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS PREMIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>0F</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS SELECTION</label>
+    </customValue>
+    <customValue>
+        <fullName>0H</fullName>
+        <default>false</default>
+        <label>VIRTUAL COMPLIMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>0I</fullName>
+        <default>false</default>
+        <label>TICKET SERVICE CARNET</label>
+    </customValue>
+    <customValue>
+        <fullName>W</fullName>
+        <default>false</default>
+        <label>RISTOCHEF CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>0P</fullName>
+        <default>false</default>
+        <label>TICKET FAMILY</label>
+    </customValue>
+    <customValue>
+        <fullName>0Q</fullName>
+        <default>false</default>
+        <label>TICKET CULTURE</label>
+    </customValue>
+    <customValue>
+        <fullName>Z1</fullName>
+        <default>false</default>
+        <label>Edenred CUSTOMER ACCOUNTS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z2</fullName>
+        <default>false</default>
+        <label>Ristochef CUSTOMER ACCOUNTS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z3</fullName>
+        <default>false</default>
+        <label>E-LUNCH ACCOUNTING CLIENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>1W</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT REIMBURSMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>1X</fullName>
+        <default>false</default>
+        <label>TICKET WELFARE</label>
+    </customValue>
+    <customValue>
+        <fullName>2A</fullName>
+        <default>false</default>
+        <label>RETEITALIA CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>2B</fullName>
+        <default>false</default>
+        <label>UTA CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>2F</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS SELECTION eVouchers</label>
+    </customValue>
+    <customValue>
+        <fullName>2G</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS PREMIUM E-VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>1D</fullName>
+        <default>false</default>
+        <label>TICKET TRANSPORT SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>1V</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT MAX SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>0J</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS SPENDING</label>
+    </customValue>
+    <customValue>
+        <fullName>1N</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT SKILL</label>
+    </customValue>
+    <customValue>
+        <fullName>1Q</fullName>
+        <default>false</default>
+        <label>FLEX TICKET SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>1R</fullName>
+        <default>false</default>
+        <label>TICKET RESTAURANT DIGITAL</label>
+    </customValue>
+    <customValue>
+        <fullName>1Y</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT ALLOCATION OF FUNDS</label>
+    </customValue>
+    <customValue>
+        <fullName>1P</fullName>
+        <default>false</default>
+        <label>DRIVE</label>
+    </customValue>
+    <customValue>
+        <fullName>1T</fullName>
+        <default>false</default>
+        <label>CITY TIME PLUS (PRODUCT CARD)</label>
+    </customValue>
+    <customValue>
+        <fullName>1S</fullName>
+        <default>false</default>
+        <label>CITY TIME PLUS SMART</label>
+    </customValue>
+    <customValue>
+        <fullName>2K</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS SEL. EASY eVouchers</label>
+    </customValue>
+    <customValue>
+        <fullName>1Z</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS EXPERIENCE PROMO</label>
+    </customValue>
+    <customValue>
+        <fullName>2J</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS EXPENSE E-VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0K</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS EASY SELECTION</label>
+    </customValue>
+    <customValue>
+        <fullName>2C</fullName>
+        <default>false</default>
+        <label>PARTNER ONLINE</label>
+    </customValue>
+    <customValue>
+        <fullName>2X</fullName>
+        <default>false</default>
+        <label>VAT TICKET WELFARE</label>
+    </customValue>
+    <customValue>
+        <fullName>1H</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS EXPERIENCE</label>
+    </customValue>
+    <customValue>
+        <fullName>1L</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT CHECK</label>
+    </customValue>
+    <customValue>
+        <fullName>1M</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>1O</fullName>
+        <default>false</default>
+        <label>FLEXBENEFIT FUN</label>
+    </customValue>
+    <customValue>
+        <fullName>0Z</fullName>
+        <default>false</default>
+        <label>CRS VOUCHER EDENRED</label>
+    </customValue>
+    <customValue>
+        <fullName>E</fullName>
+        <default>false</default>
+        <label>TICKET DOMI</label>
+    </customValue>
+    <customValue>
+        <fullName>H</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS UPIM</label>
+    </customValue>
+    <customValue>
+        <fullName>I</fullName>
+        <default>false</default>
+        <label>GOOD HOLIDAY</label>
+    </customValue>
+    <customValue>
+        <fullName>L</fullName>
+        <default>false</default>
+        <label>FORAGORA</label>
+    </customValue>
+    <customValue>
+        <fullName>M</fullName>
+        <default>false</default>
+        <label>TICKET TO THE PAPER</label>
+    </customValue>
+    <customValue>
+        <fullName>1E</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS DIGITAL</label>
+    </customValue>
+    <customValue>
+        <fullName>O</fullName>
+        <default>false</default>
+        <label>TRAINING VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>P</fullName>
+        <default>false</default>
+        <label>GOOD SCHOOL VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>CITY TIME</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>CITY TIME CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>V</fullName>
+        <default>false</default>
+        <label>VIRTUAL TRAINING VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>J</fullName>
+        <default>false</default>
+        <label>PURCHASE VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>Z</fullName>
+        <default>false</default>
+        <label>SERVICES VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0D</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS BOX</label>
+    </customValue>
+    <customValue>
+        <fullName>0E</fullName>
+        <default>false</default>
+        <label>E-TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>Y</fullName>
+        <default>false</default>
+        <label>RISTOCHEF CARD SOCIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>0N</fullName>
+        <default>false</default>
+        <label>ALL RIGHT RISTOCHEF VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0M</fullName>
+        <default>false</default>
+        <label>CLUB RISTOCHEF VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0L</fullName>
+        <default>false</default>
+        <label>MEAL RISTOCHEF VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0R</fullName>
+        <default>false</default>
+        <label>ALL RIGHT VOGHERA VOUCHER</label>
+    </customValue>
+    <customValue>
+        <fullName>0S</fullName>
+        <default>false</default>
+        <label>CRS VOUCHER CLASSIC</label>
+    </customValue>
+    <customValue>
+        <fullName>0U</fullName>
+        <default>false</default>
+        <label>CRS VOUCHER Ristochef</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>TICKET PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Q</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS UNIVERSEL</label>
+    </customValue>
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS TICKET PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>TOP PREMIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>0C</fullName>
+        <default>false</default>
+        <label>COMPLIMENTS BOX (NON USATO)</label>
+    </customValue>
+    <customValue>
+        <fullName>0T</fullName>
+        <default>false</default>
+        <label>BUONO ALL RIGHT CLASSICO</label>
+    </customValue>
+    <customValue>
+        <fullName>1C</fullName>
+        <default>false</default>
+        <label>BUONI CONSIP 2014</label>
+    </customValue>
+    <customValue>
+        <fullName>1U</fullName>
+        <default>false</default>
+        <label>CITY TIME PLUS DIGITAL</label>
+    </customValue>
+    <masterLabel>IT Service</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

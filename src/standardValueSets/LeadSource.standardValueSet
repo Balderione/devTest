@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Manual Input</fullName>
+        <default>true</default>
+        <label>Manual Input</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webform</fullName>
+        <default>false</default>
+        <label>Webform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Import</fullName>
+        <default>false</default>
+        <label>Import</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Agency</fullName>
+        <default>false</default>
+        <label>Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead provider</fullName>
+        <default>false</default>
+        <label>Lead provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chat</fullName>
+        <default>false</default>
+        <label>Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social</fullName>
+        <default>false</default>
+        <label>Social</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case</fullName>
+        <default>false</default>
+        <label>Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POS providers</fullName>
+        <default>false</default>
+        <label>POS providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketplace</fullName>
+        <default>false</default>
+        <label>Marketplace</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unmatched MCC</fullName>
+        <default>false</default>
+        <label>Unmatched MCC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracting webform</fullName>
+        <default>false</default>
+        <label>Contracting webform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CPL Provider</fullName>
+        <default>false</default>
+        <label>CPL Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External provider</fullName>
+        <default>false</default>
+        <label>External provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Adwords</fullName>
+        <default>false</default>
+        <label>Adwords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral Programm</fullName>
+        <default>false</default>
+        <label>Referral Programm</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public tender</fullName>
+        <default>false</default>
+        <label>Public tender</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-mailing</fullName>
+        <default>false</default>
+        <label>E-mailing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail</fullName>
+        <default>false</default>
+        <label>Direct Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fax Mailing</fullName>
+        <default>false</default>
+        <label>Fax Mailing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incoming call</fullName>
+        <default>false</default>
+        <label>Incoming call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEO</fullName>
+        <default>false</default>
+        <label>SEO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MQL (Marketing Qualified Lead)</fullName>
+        <default>false</default>
+        <label>MQL (Marketing Qualified Lead)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Fairs</fullName>
+        <default>false</default>
+        <label>Trade Fairs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Display</fullName>
+        <default>false</default>
+        <label>Display</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct order without contract</fullName>
+        <default>false</default>
+        <label>Direct order without contract</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing campaigns (precise)</fullName>
+        <default>false</default>
+        <label>Marketing campaigns (precise)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Content marketing</fullName>
+        <default>false</default>
+        <label>Content marketing</label>
+    </standardValue>
+</StandardValueSet>

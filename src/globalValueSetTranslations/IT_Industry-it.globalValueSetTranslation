@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>*** ENTERPRISES TOURISM PROMOTION</masterLabel>
+        <translation>***AZIENDE PROMOZIONE TURISTICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>*** IACP</masterLabel>
+        <translation><!-- *** IACP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>*** INAIL</masterLabel>
+        <translation><!-- *** INAIL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>*** INPS</masterLabel>
+        <translation><!-- *** INPS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>*** MUNICIPALITIES, COMMUNITY &apos;MONTANE</masterLabel>
+        <translation>***AMMINISTRAZIONI COMUNALI, COMUNITA&apos; MONTANE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>**** MINISTRIES</masterLabel>
+        <translation>****MINISTERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>A.C.I.</masterLabel>
+        <translation><!-- A.C.I. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACCOMMODATION</masterLabel>
+        <translation>ALLOGGIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES AUXILIARY TO FINANCIAL SERVICES AND ACTIVITIES ASSICU</masterLabel>
+        <translation>ATTIVITÀ AUSILIARIE DEI SERVIZI FINANZIARI E ATTIVITÀ ASSICU</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES OF CATERING SERVICES</masterLabel>
+        <translation>ATTIVITÀ DEI SERVIZI DI RISTORAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES OF EXTRACTION OF SUPPORT SERVICES</masterLabel>
+        <translation>ATTIVITÀ DEI SERVIZI DI SUPPORTO ALL&apos;ESTRAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES OF INFORMATION SERVICES OTHER SERVICES INFORMATIC</masterLabel>
+        <translation>ATTIVITÀ DEI SERVIZI D&apos;INFORMAZIONE ALTRI SERVIZI INFORMATIC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES OF LIBRARIES, ARCHIVES, MUSEUMS AND OTHER ACTIVITIES CULT</masterLabel>
+        <translation>ATTIVITÀ DI BIBLIOTECHE,ARCHIVI,MUSEI ED ALTRE ATTIVITÀ CULT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES OF MEMBERSHIP ORGANIZATION</masterLabel>
+        <translation>ATTIVITÀ DI ORGANIZZAZIONI ASSOCIATIVE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ACTIVITIES REGARDING THE LOTTERIES, BETTING, GAMING CASE</masterLabel>
+        <translation>ATTIVITÀ RIGUARDANTI LE LOTTERIE,LE SCOMMESSE,CASE DA GIOCO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADVERTISING AGENCIES &apos;</masterLabel>
+        <translation>AGENZIE DI PUBBLICITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADVERTISING AND MARKET RESEARCH</masterLabel>
+        <translation>PUBBLICITÀ E RICERCHE DI MERCATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AIRLINE COMPANIES</masterLabel>
+        <translation>COMPAGNIE AEREE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AIRPLANE TRANSPORT</masterLabel>
+        <translation>TRASPORTO AEREO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL OTHER MILITARY</masterLabel>
+        <translation>TUTTI GLI ALTRI MILITARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AND SEMI-PRECIOUS STONES</masterLabel>
+        <translation>PIETRE PREZIOSE E SEMIPREZIOSE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ARTICLES OF PAPER AND CARDBOARD</masterLabel>
+        <translation>ARTICOLI DI CARTA E CARTONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASL</masterLabel>
+        <translation>ASL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASL (17Q)</masterLabel>
+        <translation><!-- ASL (17Q) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASSOCIATIONS</masterLabel>
+        <translation>CONSORZI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ATT.PROD.CINEMATOGRAFICA, VIDEO, PROGR.TELEV.REGISTR.MUSIC.SON</masterLabel>
+        <translation>ATT.PROD.CINEMATOGRAFICA,VIDEO,PROGR.TELEV.REGISTR.MUSIC.SON</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ATTIV.RACCOLTA, PROCESSING WASTE DISPOSAL, RECOVERY MATE</masterLabel>
+        <translation>ATTIV.RACCOLTA,TRATTAMENTO SMALTIMENTO RIFIUTI;RECUPERO MATE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ATTIV.SUPPORTO FOR OFFICE FUNCTIONS, SERVICES SUPP.IMP</masterLabel>
+        <translation>ATTIV.SUPPORTO PER FUNZIONI D&apos;UFFICIO,ALTRI SERVIZI SUPP.IMP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKS AND CREDIT INSTITUTIONS</masterLabel>
+        <translation>BANCHE E ISTITUTI DI CREDITO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BEACH SPORTS, CAMPING</masterLabel>
+        <translation>ATTREZZATURE SPORTIVE, CAMPING</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BEVERAGE INDUSTRY</masterLabel>
+        <translation>INDUSTRIA DELLE BEVANDE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BINDING, BROSSURA, COPYING AND PRINTING</masterLabel>
+        <translation>RILEGATURA, BROSSURA, FOTOCOPIE E STAMPA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUILDING CONSTRUCTION</masterLabel>
+        <translation>COSTRUZIONE DI EDIFICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUSINESS FINANCIAL SERVICES (NO Assicuraz. AND PENSION FUNDS)</masterLabel>
+        <translation>ATTIVITÀ SERVIZI FINANZIARI (NO ASSICURAZ. E FONDI PENSIONI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUSINESS SERVICES TRAVEL AGENCIES, TOUR OPERATORS, SERV.PRENOT</masterLabel>
+        <translation>ATTIVITÀ SERVIZI AGENZIE VIAGGIO,TOUR OPERATOR,SERV.PRENOT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUSINESS STUDIES ARCHITECTURE AND ENGINEERING, TESTING ANAL.TEC</masterLabel>
+        <translation>ATTIVITÀ STUDI ARCHITETTURA E D&apos;INGEGNERIA;COLLAUDO ANAL.TEC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>C.R.I.</masterLabel>
+        <translation><!-- C.R.I. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHAMBER OF COMMERCE</masterLabel>
+        <translation>CAMERA DI COMMERCIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHAMBERS OF COMMERCE (17F)</masterLabel>
+        <translation>CAMERE DI COMMERCIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CIVIL ENGINEERING</masterLabel>
+        <translation>INGEGNERIA CIVILE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLEANING COMPANIES AND SERVICES</masterLabel>
+        <translation>IMPRESE DI PULIZIA E SERVIZI VARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLINICAL / PRIVATE HOSPITALS / NURSING HOMES</masterLabel>
+        <translation>CLINICHE / OSPEDALI PRIVATI / CASE DI CURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLOTHING, CLOTHING, CLOTHES, FASHION ACCESSORIES</masterLabel>
+        <translation>INDUMENTI, ABBIGLIAMENTO, BIANCHERIA, ACCESSORI MODA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CNR</masterLabel>
+        <translation><!-- CNR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COAL MINING (EXCLUDING PEAT)</masterLabel>
+        <translation>ESTRAZIONE DI CARBONE (ESCLUSA TORBA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CODE AREA EXIST</masterLabel>
+        <translation>CODICE SETTORE INESISTENTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COLLECTION, TREATMENT AND WATER SUPPLY</masterLabel>
+        <translation>ESTRAZIONE DI CARBONE (ESCLUSA TORBA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COLT.AGRICOLE AND PROD. ANIMAL PRODUCTS, HUNTING, SERV.CONNESSI</masterLabel>
+        <translation>COLT.AGRICOLE E PROD. PRODOTTI ANIMALI,CACCIA,SERV.CONNESSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMM.E DISTRIB.PRODOT. INDUSTRY, OFFICES, BUILDING INDUSTRY, HEALTH CARE</masterLabel>
+        <translation>COMM.E DISTRIB.PRODOT. PER INDUSTRIA,UFFICI,EDILIZIA,SANITA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMMERCIAL SERVICES</masterLabel>
+        <translation>SERVIZI COMMERCIALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMMON</masterLabel>
+        <translation>COMUNI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMMON (17C)</masterLabel>
+        <translation>COMUNI (17C)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPANIES &apos;FINANCIAL LEASING AND FACTORING</masterLabel>
+        <translation>SOCIETA&apos; FINANZIARIE, LEASING E FACTORING</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONFEZ.ARTICOLI CLOTHING; CONFEZ.ARTIC. LEATHER, FUR</masterLabel>
+        <translation>CONFEZ.ARTICOLI ABBIGLIAMENTO;CONFEZ.ARTIC. PELLE,PELLICCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSTRUCTION AND SERVICES AUXILIARY</masterLabel>
+        <translation>COSTRUZIONI EDILI E SERVIZI AUSILIARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSTRUCTION MACHINERY AND EQUIPMENT INDUSTRY</masterLabel>
+        <translation>COSTRUZIONE MACCHINE E ATTREZZATURE PER L&apos;INDUSTRIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CORK AND WOOD PRODUCTS</masterLabel>
+        <translation>PRODOTTI DI LEGNO E SUGHERO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CORPORATE MANAGEMENT AND MANAGEMENT CONSULTANCY</masterLabel>
+        <translation>ATTIVITÀ DI DIREZIONE AZIENDALE E DI CONSULENZA GESTIONALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COSMETICS, PERFUMES, SOAP AND DETERGENTS</masterLabel>
+        <translation>COSMETICI, PROFUMI, SAPONI E DETERSIVI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CRAFTS</masterLabel>
+        <translation>ARTIGIANATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREATIVE ACTIVITIES, ARTS AND ENTERTAINMENT</masterLabel>
+        <translation>ATTIVITÀ CREATIVE, ARTISTICHE E DI INTRATTENIMENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Computer engineering NUCLEAR INSTALLATIONS AND EQUIPMENT</masterLabel>
+        <translation>INGENGERIA NUCLEARE, INSTALLAZIONI E APPARECCHIATURE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DEPARTMENT STORES</masterLabel>
+        <translation>GRANDI MAGAZZINI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DOMESTIC APPLIANCES</masterLabel>
+        <translation>ELETTRODOMESTICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DRINKS</masterLabel>
+        <translation>BEVANDE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ELECTRICAL AND ELECTRONIC CONTROL</masterLabel>
+        <translation>APPARECCHI ELETTRICI ED ELETTRONICI DI COMANDO E CONTROLLO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ELECTRICITY, GAS, STEAM, AIR Conditioners</masterLabel>
+        <translation>FORNITURA DI ENERGIA ELETTRICA, GAS, VAPORE,ARIA CONDIZIONAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENERGY PUBLIC ENTERPRISES</masterLabel>
+        <translation>AZIENDE ENERGIA PUBBLICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENTERPRISES PUBLIC TRANSPORT</masterLabel>
+        <translation>AZIENDE TRASPORTO PUBBLICO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENVIRONMENTAL PUBLIC ENTERPRISES</masterLabel>
+        <translation>AZIENDE AMBIENTE PUBBLICO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EQUIPMENT AND PLANTS OF ELECTRICITY DISTRIBUTION</masterLabel>
+        <translation>APPARECCHIATURE E IMPIANTI DI DISTRIBUZIONE DI ELETTRICITA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EQUIPMENT AND PRECISION TOOLS</masterLabel>
+        <translation>APPARECCHIATURE E STRUMENTI DI PRECISIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EXTRACTION OF CRUDE PETROLEUM AND NATURAL GAS</masterLabel>
+        <translation>ESTRAZIONE DI PETROLIO GREGGIO E DI GAS NATURALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EXTRATERRITORIAL ORGANIZATIONS AND BODIES</masterLabel>
+        <translation>ORGANIZZAZIONI ED ORGANISMI EXTRATERRITORIALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Embassies, Consulates</masterLabel>
+        <translation>AMBASCIATE, CONSOLATI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAB.APPAREC. ELECTRIC UNIT. DOMESTIC NO ELECTRIC</masterLabel>
+        <translation>FAB.APPAREC. ELETTRICHE,APPAREC. USO DOMESTICO NO ELETTRICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAB.COMPUTER, PROD.ELETTRONICA, OPTICAL, APPAR.ELETTROMEDICALI</masterLabel>
+        <translation>FAB.COMPUTER,PROD.ELETTRONICA,OTTICA,APPAR.ELETTROMEDICALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FABRICS YARN, CARPETS AND CURTAINS</masterLabel>
+        <translation>TESSUTI, FILATI, TAPPETI E TENDAGGI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAIR BOARD</masterLabel>
+        <translation>ENTE FIERA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAIRS, EVENTS</masterLabel>
+        <translation>FIERE, MANIFESTAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAMILY ACTIVITIES, UNDIFFERENTIATED HOW TO WORK FOR EMPLOYERS PERS.DOM</masterLabel>
+        <translation>ATTIVITÀ FAMIGLIE,CONVIVENZE COME DATORI LAVORO PER PERS.DOM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FEDERATIONS, ASSOCIATIONS, UNIONS, RELIGIOUS</masterLabel>
+        <translation>FEDERAZIONI, ASSOCIAZIONI, SINDACATI, RELIGIOSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FILM INDUSTRY AND RECORDINGS</masterLabel>
+        <translation>INDUSTRIA CINEMATOGRAFICA E DISCOGRAFIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FISHERIES AND AQUACULTURE</masterLabel>
+        <translation>PESCA E ACQUACOLTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FOOD AND TOBACCO</masterLabel>
+        <translation>PRODOTTI ALIMENTARI E TABACCO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FOOD INDUSTRIES</masterLabel>
+        <translation>INDUSTRIE ALIMENTARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FORESTRY AND USE OF LOGGING</masterLabel>
+        <translation>SILVICOLTURA ED UTILIZZO DI AREE FORESTALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FORWARDING, FREIGHT</masterLabel>
+        <translation>CORRIERI, SPEDIZIONIERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FURNITURE AND FURNISHINGS</masterLabel>
+        <translation>MOBILI E ARREDAMENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HEALTH CARE</masterLabel>
+        <translation>ASSISTENZA SANITARIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HIGHWAYS MANAGEMENT</masterLabel>
+        <translation>GESTIONE AUTOSTRADE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HORTICULTURE</masterLabel>
+        <translation>ORTICULTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HOSPITAL (PUBLIC)</masterLabel>
+        <translation>AZIENDE OSPEDALIERE (PUBBLICHE)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HOTELS, RESTAURANTS, RESTAURANTS, CONFERENCE CENTERS</masterLabel>
+        <translation>ALBERGHI, RISTORANTI, MENSE, CENTRI CONGRESSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IACP / ALER</masterLabel>
+        <translation><!-- IACP / ALER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IMP. HYDRAULIC, PNEUMATIC, COMPRESSORS, AIR CONDITIONING</masterLabel>
+        <translation>IMP. IDRAULICI,PNEUMATICI,COMPRESSORI,DI CONDIZIONAMENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IMPORT / EXPORT, BROKERS</masterLabel>
+        <translation><!-- IMPORT / EXPORT, BROKERS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INAIL</masterLabel>
+        <translation><!-- INAIL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IND.LEGNO, PROD.IN WOOD AND CORK (NO FURNITURE); FABB.ART.PAGLIA</masterLabel>
+        <translation>IND.LEGNO,PROD.IN LEGNO,SUGHERO(NO MOBILI);FABB.ART.PAGLIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INPS</masterLabel>
+        <translation><!-- INPS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INSTALLATIONS</masterLabel>
+        <translation>INSTALLAZIONE IMPIANTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INSTRUCTION</masterLabel>
+        <translation>ISTRUZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INSURANCE COMPANIES</masterLabel>
+        <translation>COMPAGNIE DI ASSICURAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INSURANCE, BOARD RIASSICURAZ.FONDI (NO ASSIC.SOC.OBBL)</masterLabel>
+        <translation>ASSICURAZIONI,RIASSICURAZ.FONDI PENSIONE (NO ASSIC.SOC.OBBL)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IRON AND STEEL PRODUCTS</masterLabel>
+        <translation>PRODOTTI ACCIAIO E FERRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ISU</masterLabel>
+        <translation><!-- ISU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LAND TRANSPORT AND TRANSPORT BY PIPELINE</masterLabel>
+        <translation>TRASPORTO TERRESTRE E TRASPORTO MEDIANTE CONDOTTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LEATHER, SKINS AND THEIR PRODUCTS</masterLabel>
+        <translation>CUOIO, PELLI E LORO PRODOTTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LEGAL AND ACCOUNTING ACTIVITIES</masterLabel>
+        <translation>ATTIVITÀ LEGALI E CONTABILITÀ</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LIGHTING EQUIPMENT</masterLabel>
+        <translation>APPARECCHI DI ILLUMINAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LOCAL ENTERPRISES</masterLabel>
+        <translation>AZIENDE TERRITORIALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUDIC ACTIVITIES</masterLabel>
+        <translation>ATTIVITÀ LUDICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lithographic printing, SCREEN PRINTS, ENGRAVINGS AND Fotoincisioni</masterLabel>
+        <translation>TIPOLITOGRAFIE, SERIGRAFIE,INCISIONI E FOTOINCISIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MAIL ORDER</masterLabel>
+        <translation>VENDITA PER CORRISPONDENZA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MAKING METAL PRODUCTS (NO machinery and equipment;</masterLabel>
+        <translation>FABBRICAZIONE PRODOTTI IN METALLO (NO MACCHINARI E ATTREZZAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANAGEMENT OF SEWAGE NETWORKS</masterLabel>
+        <translation>GESTIONE DELLE RETI FOGNARIE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF CHEMICALS</masterLabel>
+        <translation>FABBRICAZIONE DI PRODOTTI CHIMICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF COKE AND REVENUE FROM RAFF.PETROLIO</masterLabel>
+        <translation>FABBRICAZIONE DI COKE E PRODOTTI DERIVANTI DA RAFF.PETROLIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF FURNITURE</masterLabel>
+        <translation>FABBRICAZIONE DI MOBILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF LEATHER AND THE LIKE</masterLabel>
+        <translation>FABBRICAZIONE DI ARTICOLI IN PELLE E SIMILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF MACHINERY AND EQUIPMENT NEC</masterLabel>
+        <translation>FABBRICAZIONE DI MACCHINARI ED APPARECCHIATURE NCA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF MOTOR VEHICLES, TRAILERS</masterLabel>
+        <translation>FABBRICAZIONE DI AUTOVEICOLI, RIMORCHI E SEMIRIMORCHI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF OTHER TRANSPORT</masterLabel>
+        <translation>FABBRICAZIONE DI ALTRI MEZZI DI TRASPORTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURE OF RUBBER AND PLASTIC</masterLabel>
+        <translation>FABBRICAZIONE DI ARTICOLI IN GOMMA E MATERIE PLASTICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURING OTHER PRODUCTS MINERAL PROCESSING NOT METALL</masterLabel>
+        <translation>FABBRICAZIONE ALTRI PRODOTTI LAVORAZIONE MINERALI NON METALL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANUFACTURING PHARMACEUTICAL PRODUCTS BASIC AND PREPARATIONS FARM</masterLabel>
+        <translation>FABBRICAZIONE PRODOTTI FARMACEUTICI DI BASE E PREPARATI FARM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MARITIME TRANSPORT AND WATERWAYS</masterLabel>
+        <translation>TRASPORTO MARITTIMO E PER VIE D&apos;ACQUA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MARKET RESEARCH, MARKETING, PUBLIC RELATIONS</masterLabel>
+        <translation>RICERCHE DI MERCATO, MARKETING, PUBBLICHE RELAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MECHANICAL CONSTRUCTION FOR THIRD PARTIES</masterLabel>
+        <translation>COSTRUZIONI MECCANICHE PER CONTO TERZI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MEDICAL AND SURGICAL INSTRUMENTS</masterLabel>
+        <translation>STRUMENTI MEDICI E CHIRURGICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>METAL PRODUCTS AND ARTICLES</masterLabel>
+        <translation>PRODOTTI E ARTICOLI METALLICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>METALLIC MINERALS MINING</masterLabel>
+        <translation>ESTRAZIONE DI MINERALI METALLIFERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>METALLURGY</masterLabel>
+        <translation>METALLURGIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MINES AND METALLIFEROUS METALLIFEROUS, CAVE</masterLabel>
+        <translation>MINIERE METALLIFERE E NON METALLIFERE,CAVE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MINISTRIES</masterLabel>
+        <translation>MINISTERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MINISTRIES (16B)</masterLabel>
+        <translation>MINISTERI (16B)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MOUNTAIN COMMUNITIES</masterLabel>
+        <translation>COMUNITÀ MONTANE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MUNICIPAL ENTERPRISES</masterLabel>
+        <translation>AZIENDE MUNICIPALIZZATE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MUSICAL INSTRUMENTS</masterLabel>
+        <translation>STRUMENTI MUSICALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT ENCODED</masterLabel>
+        <translation>NON CODIFICATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OPTICAL INSTRUMENTS AND LENSES</masterLabel>
+        <translation>STRUMENTI OTTICI E LENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORDERS AND PROFESSIONAL COLLEGES</masterLabel>
+        <translation>ORDINI E COLLEGI PROFESSIONALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORGANIC CHEMICALS AND INORGANIC</masterLabel>
+        <translation>PRODOTTI CHIMICI ORGANICI E INORGANICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORGANIZATIONS AND CONSULTING COMPANY, AUDITORS</masterLabel>
+        <translation>CONSULENZE E ORGANIZZAZIONI AZIENDALI,REVISORI CONTABILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER ACTIVITIES OF MINING TO CAVE AND MINES</masterLabel>
+        <translation>ALTRE ATTIVITÀ DI ESTRAZIONE DI MINERALI DA CAVE E MINIERE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER ACTIVITIES OF THE PERSON FOR SERVICES</masterLabel>
+        <translation>ALTRE ATTIVITÀ DI SERVIZI PER LA PERSONA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER MANUFACTURING</masterLabel>
+        <translation>ALTRE INDUSTRIE MANIFATTURIERE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER PROFESSIONAL, SCIENTIFIC AND TECHNICAL</masterLabel>
+        <translation>ALTRE ATTIVITÀ PROFESSIONALI, SCIENTIFICHE E TECNICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER SERVICES FOR COMPANIES</masterLabel>
+        <translation>SERVIZI DIVERSI PER LE AZIENDE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAINTS, VARNISHES, ENAMELS AND SOLVENTS</masterLabel>
+        <translation>PITTURE, VERNICI, SMALTI E SOLVENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAPER MANUFACTURING AND PAPER PRODUCTS</masterLabel>
+        <translation>FABBRICAZIONE DI CARTA E DI PRODOTTI DI CARTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PARKS</masterLabel>
+        <translation>PARCHI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PHARMACEUTICALS AND Paraharmaceuticals</masterLabel>
+        <translation>PRODOTTI FARMACEUTICI E PARAFARMACEUTICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PHOTOGRAPHIC EQUIPMENT AND MATERIALS</masterLabel>
+        <translation>APPARECCHIATURE E MATERIALI FOTOGRAFICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POLICE</masterLabel>
+        <translation>CARABINIERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POLITICAL PARTIES</masterLabel>
+        <translation>PARTITI POLITICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PORT AUTHORITY</masterLabel>
+        <translation>AUTORITÀ PORTUALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POST AND TELECOMMUNICATIONS</masterLabel>
+        <translation>POSTE E TELECOMUNICAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POSTAL AND COURIER ACTIVITIES</masterLabel>
+        <translation>SERVIZI POSTALI E ATTIVITÀ DI CORRIERE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PRINTING AND REPRODUCTION OF RECORDED MEDIA</masterLabel>
+        <translation>STAMPA E RIPRODUZIONE DI SUPPORTI REGISTRATI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PRIVATE HOMES</masterLabel>
+        <translation>CASE DI RIPOSO PRIVATE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROD.BENI AND SERVICES UNDIFFERENTIATED OWN USE FAM.CONV.</masterLabel>
+        <translation>PROD.BENI E SERVIZI INDIFFERENZIATI USO PROPRIO DA FAM.CONV.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PRODUCTION SOFTWARE, CONSULTING RELATED ACTIVITIES</masterLabel>
+        <translation>PRODUZIONE SOFTWARE,CONSULENZA INFORMATICA ATTIVITÀ CONNESSE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PRODUCTS FROM PETROLEUM REFINING</masterLabel>
+        <translation>PRODOTTI DELLA RAFFINAZIONE DEL PETROLIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROFESSIONAL ASSOCIATIONS</masterLabel>
+        <translation>ORDINI PROFESSIONALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROFESSIONAL STUDIES</masterLabel>
+        <translation>STUDI PROFESSIONALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROFESSIONALS</masterLabel>
+        <translation>LIBERI PROFESSIONISTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROGRAM ACTIVITIES AND TRANSMISSION</masterLabel>
+        <translation>ATTIVITÀ DI PROGRAMMAZIONE E TRASMISSIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROMOTION OF TOURIST ENTERPRISES</masterLabel>
+        <translation>AZIENDE DI PROMOZIONE TURISTICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROVINCES</masterLabel>
+        <translation>PROVINCE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROVINCES (17B)</masterLabel>
+        <translation>PROVINCE (17B)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC ADMINISTRATION AND DEFENSE; COMPULSORY SOCIAL OBB.</masterLabel>
+        <translation>AMMINISTRAZIONE PUBBLICA E DIFESA;ASSICURAZIONE SOCIALE OBB.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC RETIREMENT HOMES</masterLabel>
+        <translation>CASE DI RIPOSO PUBBLICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC SCHOOLS OF EVERY ORDER AND GRADE, canteens</masterLabel>
+        <translation>SCUOLE PUBBLICHE DI OGNI ORDINE E GRADO,REFETTORI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC TRANSPORT</masterLabel>
+        <translation>MEZZI DI TRASPORTO PUBBLICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLIC WORKS</masterLabel>
+        <translation>LAVORI PUBBLICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLISHERS AND RECORD</masterLabel>
+        <translation>CASE EDITRICI E DISCOGRAFICHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUBLISHING ACTIVITIES</masterLabel>
+        <translation>ATTIVITÀ EDITORIALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RAI</masterLabel>
+        <translation><!-- RAI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REAL ESTATE</masterLabel>
+        <translation>IMMOBILIARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REAL ESTATE ACTIVITIES</masterLabel>
+        <translation>ATTIVITÀ IMMOBILIARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REGIONS</masterLabel>
+        <translation>REGIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REGIONS (17A)</masterLabel>
+        <translation>REGIONI (17A)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REGULATORY SERVICES AND INVESTIGATION</masterLabel>
+        <translation>SERVIZI DI VIGILANZA E INVESTIGAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REHABILITATION ACTIVITIES AND OTHER WASTE MANAGEMENT SERVICES</masterLabel>
+        <translation>ATTIVITÀ DI RISANAMENTO E ALTRI SERVIZI DI GESTIONE RIFIUTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RENTAL AND LEASING OPERATING ACTIVITIES</masterLabel>
+        <translation>ATTIVITÀ DI NOLEGGIO E LEASING OPERATIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REPAIR AND GOODS FOR THE PERSONAL AND HOUSEHOLD</masterLabel>
+        <translation>RIPARAZIONE COMPUTER E BENI PER USO PERSONALE E PER LA CASA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REPAIR, MAINTENANCE AND INSTALLATION MACHINES MACHINE</masterLabel>
+        <translation>RIPARAZIONE,MANUTENZIONE INSTALLAZIONE MACCHINE ED APPARECCH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESEARCH AND DEVELOPMENT</masterLabel>
+        <translation>RICERCA SCIENTIFICA E SVILUPPO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESEARCH, SELECTION AND TRAINING OF PERSONNEL</masterLabel>
+        <translation>RICERCA, SELEZIONE E FORMAZIONE DEL PERSONALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESEARCH, SELECTION, PROVISION OF PERSONNEL</masterLabel>
+        <translation>ATTIVITÀ DI RICERCA, SELEZIONE, FORNITURA DI PERSONALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RETAIL TRADE (EXCEPT FOR MOTOR VEHICLES AND MOTORCYCLES)</masterLabel>
+        <translation>COMMERCIO AL DETTAGLIO (ESCLUSO AUTOVEICOLI E DI MOTOCICLI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RUBBER AND PLASTIC</masterLabel>
+        <translation>ARTICOLI IN GOMMA E PLASTICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCHOOLS, CENTERS FORM. PROFES., ISTIT.DIRITTO STUDIO</masterLabel>
+        <translation>SCUOLE,CENTRI FORM. PROFES.,ISTIT.DIRITTO STUDIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SECURITY AND SURVEILLANCE SERVICES, PRIVATE INVESTIGATIONS</masterLabel>
+        <translation>SERVIZI DI SICUREZZA E VIGILANZA, INVESTIGAZIONI PRIVATE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICE OPERATIONS FOR BUILDINGS AND LANDSCAPE</masterLabel>
+        <translation>ATTIVITÀ DI SERVIZI PER EDIFICI E PAESAGGIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICES AND HEALTH SPECIALIST social welfare</masterLabel>
+        <translation>SERVIZI SOCIOASSISTENZIALI E SANITARI SPECIALISTICI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICES CONTACT EXPRESS, TAXI, CAR RENTALS</masterLabel>
+        <translation>SERVIZI RECAPITI ESPRESSI, TAXI, AUTONOLEGGI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICES OF SOCIAL RESIDENTIAL</masterLabel>
+        <translation>SERVIZI DI ASSISTENZA SOCIALE RESIDENZIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICES SUBSIDIARY TO CONSTRUCTION</masterLabel>
+        <translation>SERVIZI SUSSIDIARI ALLE COSTRUZIONI EDILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SHIPYARDS, HARBORS AIRPORTS, BODY</masterLabel>
+        <translation>CANTIERI NAVALI, PORTI AEROPORTI,CARROZZERIE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOCIAL NON-RESIDENTIAL</masterLabel>
+        <translation>ASSISTENZA SOCIALE NON RESIDENZIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOLAR POWER PLANTS</masterLabel>
+        <translation>IMPIANTI DI ENERGIA SOLARE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPECIALIZED CONSTRUCTION WORK</masterLabel>
+        <translation>LAVORI DI COSTRUZIONE SPECIALIZZATI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPORTS AND RECREATION</masterLabel>
+        <translation>IMPIANTI SPORTIVI E RICREATIVI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPORTS, ENTERTAINMENT AND RECREATION</masterLabel>
+        <translation>ATTIVITÀ SPORTIVE, DI INTRATTENIMENTO E DI DIVERTIMENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>STATE RAILWAYS</masterLabel>
+        <translation>FERROVIE DELLO STATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>STATIONERY ITEMS</masterLabel>
+        <translation>ARTICOLI DI CANCELLERIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SYSTEMS AND EQUIPMENT FOR COMPUTER</masterLabel>
+        <translation>IMPIANTI E ATTREZZATURE PER L&apos;INFORMATICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TECHNICAL SERVICES FOR COMPANIES, ENGINEERING</masterLabel>
+        <translation>SERVIZI TECNICI PER LE IMPRESE,ENGINEERING</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELECOMMUNICATIONS</masterLabel>
+        <translation>TELECOMUNICAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELECOMMUNICATIONS, RADIO AND TELEVISION</masterLabel>
+        <translation>TELECOMUNICAZIONI, RADIO E TELEVISIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TEXTILE INDUSTRIES</masterLabel>
+        <translation>INDUSTRIE TESSILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>THEATERS</masterLabel>
+        <translation>TEATRI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>THEATERS (11F)</masterLabel>
+        <translation>TEATRI (11F)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TIRES AND TUBES</masterLabel>
+        <translation>PNEUMATICI E CAMERE D&apos;ARIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TOBACCO INDUSTRY</masterLabel>
+        <translation>INDUSTRIA DEL TABACCO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRAINING, EDUCATION AND TRAINING</masterLabel>
+        <translation>ADDESTRAMENTO, FORMAZIONE E PERFEZIONAMENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSFORMERS, BATTERY, BATTERIES AND BATTERY</masterLabel>
+        <translation>TRASFORMATORI, ACCUMULATORI, BATTERIE E PILE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSPORTATION RAILWAY, LAND, SEA, AIR</masterLabel>
+        <translation>MEZZI DI TRASPORTO FERROVIARI,TERRESTRI, MARITTIMI, AEREI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRAVEL AGENCIES</masterLabel>
+        <translation>AGENZIE DI VIAGGI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNIVERSIT</masterLabel>
+        <translation>UNIVERSITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNIVERSITY</masterLabel>
+        <translation>UNIVERSITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VETERINARY SERVICES</masterLabel>
+        <translation>SERVIZI VETERINARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WAREHOUSING AND SUPPORT ACTIVITIES TO TRANSPORT</masterLabel>
+        <translation>MAGAZZINAGGIO E ATTIVITÀ DI SUPPORTO AI TRASPORTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WATCHES, JEWELRY, JEWELRY</masterLabel>
+        <translation>OROLOGERIA, BIGIOTTERIA, GIOIELLERIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WHOLESALE AND DISTRIBUTION, CONSUMPTION Spirals</masterLabel>
+        <translation>COMMERCIO ALL&apos;INGROSSO E DISTRIBUZIONE,PROD.DI CONSUMO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WHOLESALE AND RETAIL TRADE AND REPAIR OF AUTOV.MOTOCI</masterLabel>
+        <translation>COMMERCIO INGROSSO E DETTAGLIO E RIPARAZIONE DI AUTOV.MOTOCI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WHOLESALE TRADE (EXCEPT OF MOTOR VEHICLES AND MOTORCYCLES)</masterLabel>
+        <translation>COMMERCIO INGROSSO (ESCLUSO AUTOVEICOLI E DI MOTOCICLI)</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

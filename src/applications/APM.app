@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>EdenredIconClientCare</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <label>APM</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Back Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Demo Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Front Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT PM Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Provisioning Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Support_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Support_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>System Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Back Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Demo Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Front Office Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT PM Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>IT Provisioning Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>System Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IT_Client_Welfare_Provisioning_Case_LP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.IT_Client_Welfare_Provisioning_Case_RT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>ER_Loop__c</tabs>
+    <tabs>ER_MCC__c</tabs>
+    <tabs>ER_MCC_to_Loop__c</tabs>
+    <tabs>ER_Acceptor__c</tabs>
+    <tabs>ER_Acceptor_to_Loop__c</tabs>
+    <tabs>ER_Store__c</tabs>
+    <tabs>ER_Store_to_Loop__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>ER_Account_to_Loop__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>APM_UtilityBar</utilityBar>
+</CustomApplication>

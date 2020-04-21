@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Acceptor --></label>
+        <name>ER_Acceptor__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BU --></label>
+        <name>ER_BUPicklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Number --></label>
+        <name>ER_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Detailed Reason --></label>
+        <name>ER_CaseReason2__c</name>
+        <picklistValues>
+            <masterLabel>Acceptance</masterLabel>
+            <translation><!-- Acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acceptance Network</masterLabel>
+            <translation><!-- Acceptance Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account statement</masterLabel>
+            <translation><!-- Account statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activation</masterLabel>
+            <translation><!-- Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App</masterLabel>
+            <translation><!-- App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apple Pay</masterLabel>
+            <translation><!-- Apple Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto enrollment check</masterLabel>
+            <translation><!-- Auto enrollment check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance inquiry</masterLabel>
+            <translation><!-- Balance inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank account modification</masterLabel>
+            <translation><!-- Bank account modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelation of voucher order</masterLabel>
+            <translation><!-- Cancelation of voucher order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation of card or load order</masterLabel>
+            <translation><!-- Cancellation of card or load order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card &amp; vouchers order</masterLabel>
+            <translation><!-- Card &amp; vouchers order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card acceptance issue</masterLabel>
+            <translation><!-- Card acceptance issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card activation</masterLabel>
+            <translation><!-- Card activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card and/or load order</masterLabel>
+            <translation><!-- Card and/or load order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card not received</masterLabel>
+            <translation><!-- Card not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card reissuance (damaged)</masterLabel>
+            <translation><!-- Card reissuance (damaged) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card reissuance (lost or stolen)</masterLabel>
+            <translation><!-- Card reissuance (lost or stolen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Characteristic</masterLabel>
+            <translation><!-- Characteristic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - assistance</masterLabel>
+            <translation><!-- Client Extranet - assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - connection issues</masterLabel>
+            <translation><!-- Client Extranet - connection issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Extranet - forgotten credentials</masterLabel>
+            <translation><!-- Client Extranet - forgotten credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection</masterLabel>
+            <translation><!-- Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection letter reaction</masterLabel>
+            <translation><!-- Collection letter reaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company change</masterLabel>
+            <translation><!-- Company change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Modification</masterLabel>
+            <translation><!-- Contract Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract modification following VAT / CRN change</masterLabel>
+            <translation><!-- Contract modification following VAT / CRN change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract set-up</masterLabel>
+            <translation><!-- Contract set-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract termination</masterLabel>
+            <translation><!-- Contract termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy of contract</masterLabel>
+            <translation><!-- Copy of contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country Specific contract set-up</masterLabel>
+            <translation><!-- Country Specific contract set-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials</masterLabel>
+            <translation><!-- Credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Notes</masterLabel>
+            <translation><!-- Credit Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cross-Sale offer</masterLabel>
+            <translation><!-- Cross-Sale offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged asset</masterLabel>
+            <translation><!-- Damaged asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay</masterLabel>
+            <translation><!-- Delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete account - GDPR</masterLabel>
+            <translation><!-- Delete account - GDPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation><!-- Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery of cards</masterLabel>
+            <translation><!-- Delivery of cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired asset</masterLabel>
+            <translation><!-- Expired asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired load</masterLabel>
+            <translation><!-- Expired load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face value</masterLabel>
+            <translation><!-- Face value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed transaction</masterLabel>
+            <translation><!-- Failed transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Topic</masterLabel>
+            <translation><!-- Financial Topic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forgotten PIN</masterLabel>
+            <translation><!-- Forgotten PIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Pay</masterLabel>
+            <translation><!-- Google Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete delivery</masterLabel>
+            <translation><!-- Incomplete delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect amount on invoice</masterLabel>
+            <translation><!-- Incorrect amount on invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect data on invoice</masterLabel>
+            <translation><!-- Incorrect data on invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect delivery address</masterLabel>
+            <translation><!-- Incorrect delivery address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect packaging</masterLabel>
+            <translation><!-- Incorrect packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect printing</masterLabel>
+            <translation><!-- Incorrect printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information concerning a card</masterLabel>
+            <translation><!-- Information concerning a card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inscription</masterLabel>
+            <translation><!-- Inscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation><!-- Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing</masterLabel>
+            <translation><!-- Invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low printing quality</masterLabel>
+            <translation><!-- Low printing quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - assistance</masterLabel>
+            <translation><!-- Merchant Extranet - assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - connection issues</masterLabel>
+            <translation><!-- Merchant Extranet - connection issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Extranet - forgotten credentials</masterLabel>
+            <translation><!-- Merchant Extranet - forgotten credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing loads</masterLabel>
+            <translation><!-- Missing loads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Payment</masterLabel>
+            <translation><!-- Mobile Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myedenred</masterLabel>
+            <translation><!-- Myedenred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navigation</masterLabel>
+            <translation><!-- Navigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need Financial Department assistance</masterLabel>
+            <translation><!-- Need Financial Department assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New vouchers issue</masterLabel>
+            <translation><!-- New vouchers issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Payment</masterLabel>
+            <translation><!-- Online Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation</masterLabel>
+            <translation><!-- Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other local Extranet</masterLabel>
+            <translation><!-- Other local Extranet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIN Reset</masterLabel>
+            <translation><!-- PIN Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Topics</masterLabel>
+            <translation><!-- Payment Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment status</masterLabel>
+            <translation><!-- Payment status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanently block card</masterLabel>
+            <translation><!-- Permanently block card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Data</masterLabel>
+            <translation><!-- Personal Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question regarding amount</masterLabel>
+            <translation><!-- Question regarding amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question regarding delay</masterLabel>
+            <translation><!-- Question regarding delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports on beneficiaries expired cards inactive cards</masterLabel>
+            <translation><!-- Reports on beneficiaries expired cards inactive cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request duplicate invoice</masterLabel>
+            <translation><!-- Request duplicate invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send materials (logo, window stickers, dummy cards or vouchers)</masterLabel>
+            <translation><!-- Send materials (logo, window stickers, dummy cards or vouchers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send missing invoice</masterLabel>
+            <translation><!-- Send missing invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution information</masterLabel>
+            <translation><!-- Solution information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special requests (reports, GDPR)</masterLabel>
+            <translation><!-- Special requests (reports, GDPR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status of loads</masterLabel>
+            <translation><!-- Status of loads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation><!-- Stolen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store creation</masterLabel>
+            <translation><!-- Store creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store locator</masterLabel>
+            <translation><!-- Store locator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store termination</masterLabel>
+            <translation><!-- Store termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspicion of fraud</masterLabel>
+            <translation><!-- Suspicion of fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporarily block card</masterLabel>
+            <translation><!-- Temporarily block card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal activation</masterLabel>
+            <translation><!-- Terminal activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms and conditions</masterLabel>
+            <translation><!-- Terms and conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unblock</masterLabel>
+            <translation><!-- Unblock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unblock card</masterLabel>
+            <translation><!-- Unblock card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update user data</masterLabel>
+            <translation><!-- Update user data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Extranet - assistance</masterLabel>
+            <translation><!-- User Extranet - assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Extranet - forgotten credentials</masterLabel>
+            <translation><!-- User Extranet - forgotten credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity</masterLabel>
+            <translation><!-- Validity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity of assets</masterLabel>
+            <translation><!-- Validity of assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity of loads</masterLabel>
+            <translation><!-- Validity of loads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vouchers order</masterLabel>
+            <translation><!-- Vouchers order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web search/maps</masterLabel>
+            <translation><!-- Web search/maps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome letter</masterLabel>
+            <translation><!-- Welcome letter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Reopened --></label>
+        <name>ER_Case_Reopened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>ER_Contract__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Site --></label>
+        <name>ER_Delivery_Site__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distribution Point --></label>
+        <name>ER_Distribution_Point__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>ER_Employee__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Individual --></label>
+        <name>ER_Individual__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Argomento</label>
+        <name>ER_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card acceptance</masterLabel>
+            <translation><!-- Card acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company changes</masterLabel>
+            <translation><!-- Company changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract &amp; modification</masterLabel>
+            <translation><!-- Contract &amp; modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extranet</masterLabel>
+            <translation><!-- Extranet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Information</masterLabel>
+            <translation><!-- General Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing</masterLabel>
+            <translation><!-- Invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile App</masterLabel>
+            <translation><!-- Mobile App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online support</masterLabel>
+            <translation><!-- Online support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order &amp; Delivery</masterLabel>
+            <translation><!-- Order &amp; Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement</masterLabel>
+            <translation><!-- Reimbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validity</masterLabel>
+            <translation><!-- Validity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher</masterLabel>
+            <translation><!-- Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution Time (in hours) --></label>
+        <name>ER_Resolution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>ER_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store --></label>
+        <name>ER_Store__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Web Contact First Name --></label>
+        <name>ER_SuppliedContactFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Contact Last Name --></label>
+        <name>ER_SuppliedContactLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web CRN --></label>
+        <name>ER_Web_CRN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Milestone --></label>
+        <name>IT_Active_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount OdA (VAT Excluded) --></label>
+        <name>IT_Amount_OdA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval --></label>
+        <name>IT_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approval request sent</masterLabel>
+            <translation>Richiesta di Approvazione inviata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rifiutata</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CT7 Agent Id --></label>
+        <name>IT_CT7_Agent_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTI Call Id --></label>
+        <name>IT_CTI_Call_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT_CTI_MediaId --></label>
+        <name>IT_CTI_MediaId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Phone --></label>
+        <name>IT_Call_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT CaseNumber OLD --></label>
+        <name>IT_CaseNumber_OLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Detailed Reason --></label>
+        <name>IT_Case_Detailed_Reason__c</name>
+        <picklistValues>
+            <masterLabel>test</masterLabel>
+            <translation><!-- test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Reason Closure --></label>
+        <name>IT_Case_Reason_Closure__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Email</masterLabel>
+            <translation><!-- Waiting for Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Argomento</label>
+        <name>IT_Case_Reason__c</name>
+        <picklistValues>
+            <masterLabel>CASH WELFARE</masterLabel>
+            <translation>CASH WELFARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATALOGUED LAUNCH RESULT</masterLabel>
+            <translation>ESITO LANCIO CATALOGATO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE ECONOMIC/CONTRACTUAL CONDITIONS</masterLabel>
+            <translation>MODIFICA CONDIZIONI ECONOMICHE/CONTRATTUALI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGES TO THE PLAN</masterLabel>
+            <translation>MODIFICHE PIANO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAINT</masterLabel>
+            <translation>RECLAMO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLOWS / REPORT-NO RECEPTION</masterLabel>
+            <translation>FLUSSI / REPORT-MANCATA RICEZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INCONSISTENT / REPORT-DATA STREAMS</masterLabel>
+            <translation>FLUSSI / REPORT-MANCATA RICEZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INCORRECT INVOICING</masterLabel>
+            <translation>ERRATA FATTURAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INFO REFUNDS</masterLabel>
+            <translation>INFO RIMBORSI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INFO REGULATION</masterLabel>
+            <translation>INFO REGOLAMENTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSURANCE</masterLabel>
+            <translation>PREVIDENZA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVOICES PAYMENT INFO</masterLabel>
+            <translation>INFO PAGAMENTO FATTURE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT OF COMPETENCE</masterLabel>
+            <translation>NON DI COMPETENZA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATH LOADING RESULT</masterLabel>
+            <translation>ESITO CARICAMENTO TRACCIATO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYMENT METHOD</masterLabel>
+            <translation>METODO DI PAGAMENTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-CREDENTIALS AND RECORDING</masterLabel>
+            <translation>PIATTAFORMA-CREDENZIALI E REGISTRAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-FAILURE IN OPERATION</masterLabel>
+            <translation>PIATTAFORMA-MANCATO FUNZIONAMENTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-FUNCTIONALITY</masterLabel>
+            <translation>PIATTAFORMA-FUNZIONALITA&apos;</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRACTICAL VERIFICATION</masterLabel>
+            <translation>VERIFICA PRATICA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROSPECT</masterLabel>
+            <translation>PROSPECT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SICKNESS FUND-MARSH</masterLabel>
+            <translation><!-- SICKNESS FUND-MARSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPAM ( self-compliation )</masterLabel>
+            <translation>SPAM ( autocompliazione )</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-DELIVERY</masterLabel>
+            <translation>TICKET COMPLIMENTS-CONSEGNA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-MARKETABILITY</masterLabel>
+            <translation>TICKET COMPLIMENTS-SPENDIBILITA&apos;</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-RE-ISSUE</masterLabel>
+            <translation>TICKET COMPLIMENTS-RIEMISSIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-VERIFICATION OF USE</masterLabel>
+            <translation>TICKET COMPLIMENTS-VERIFICA UTILIZZO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET TRANSPORT-SENDING FLOWS</masterLabel>
+            <translation>TICKET TRASPORTO-INVIO FLUSSI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET TRANSPORT-STATE REQUIRED</masterLabel>
+            <translation>TICKET TRASPORTO-STATO RICHIESTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRACKS-SUPPORT</masterLabel>
+            <translation>TRACCIATI-SUPPORTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPDATE OF THE REGISTER</masterLabel>
+            <translation>AGGIORNAMENTO ANAGRAFICA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Study --></label>
+        <name>IT_Case_Study__c</name>
+        <picklistValues>
+            <masterLabel>CIG incorrect or missing</masterLabel>
+            <translation>CIG errato o mancante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change company data</masterLabel>
+            <translation>Cambio dati societari</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount Difference</masterLabel>
+            <translation>Differenza Sconto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extra-sconto</masterLabel>
+            <translation>Extra-sconto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect value meals</masterLabel>
+            <translation>Valore pasti errato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intent</masterLabel>
+            <translation>Dichiarazione Intenti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoices no fatt</masterLabel>
+            <translation>Fatture no fatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order incorrect or missing</masterLabel>
+            <translation>Ordine errato o mancante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Billing</masterLabel>
+            <translation>Fatturazione Separata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Split</masterLabel>
+            <translation>Split</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theft or scam</masterLabel>
+            <translation>Furto o truffa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT wrong</masterLabel>
+            <translation>Iva errata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withholding Tax</masterLabel>
+            <translation>Ritenuta d’acconto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cards Take</masterLabel>
+            <translation>Costo carte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>expenses</masterLabel>
+            <translation>Spese</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Team --></label>
+        <name>IT_Case_Team__c</name>
+        <picklistValues>
+            <masterLabel>Centro - Sud</masterLabel>
+            <translation><!-- Centro - Sud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distant</masterLabel>
+            <translation><!-- Distant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lombardia - Emilia</masterLabel>
+            <translation><!-- Lombardia - Emilia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nord - Est</masterLabel>
+            <translation><!-- Nord - Est --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nord - Ovest</masterLabel>
+            <translation><!-- Nord - Ovest --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Circuit --></label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IT CloseDate OLD --></label>
+        <name>IT_CloseDate_OLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT CloseDate --></label>
+        <name>IT_CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>IT_Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint --></label>
+        <name>IT_Complaint__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConsipFase --></label>
+        <name>IT_ConsipFase__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT CreatedDate OLD --></label>
+        <name>IT_CreatedDate_OLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT CreatedDate --></label>
+        <name>IT_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cut Off Line --></label>
+        <name>IT_Cut_Off_Line__c</name>
+    </fields>
+    <fields>
+        <label>Scarico già effettuato</label>
+        <name>IT_Discharge_already_carried_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Number --></label>
+        <name>IT_Document_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document --></label>
+        <name>IT_Document__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Documentation Outcome --></label>
+        <name>IT_Documentation_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused</masterLabel>
+            <translation><!-- Refused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IT IVR Changed --></label>
+        <name>IT_IVR_Changed_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- IVR Level 1 --></label>
+        <name>IT_IVR_Level_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- IVR Level 2 --></label>
+        <name>IT_IVR_Level_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- IVR Level 3 --></label>
+        <name>IT_IVR_Level_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- IVR Number / Email Address --></label>
+        <name>IT_IVR_Number_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jira Code --></label>
+        <name>IT_Jira_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level closing case --></label>
+        <name>IT_Level_Closing_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level opening case --></label>
+        <name>IT_Level_Opening_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link To --></label>
+        <name>IT_Link_To_Portal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Opportunity WON --></label>
+        <name>IT_Merchant_Opportunity_WON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Status --></label>
+        <name>IT_Milestone_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Customer Code --></label>
+        <name>IT_New_Customer_Code__c</name>
+        <relationshipLabel><!-- Cases (New Customer Code) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>NO Fatturazione Elettronica</label>
+        <name>IT_No_Electronic_invoicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- ODA --></label>
+        <name>IT_ODA__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Operazione</label>
+        <name>IT_Operation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cancellation and Re-issue</masterLabel>
+            <translation>Storno e Ri-emissione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Refund</masterLabel>
+            <translation>Rimborso Acconto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document SOLA VAT</masterLabel>
+            <translation>Documento SOLA IVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elimination Total</masterLabel>
+            <translation>Storno Totale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDIM</masterLabel>
+            <translation>NDIM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Note Refund Credit Ticket</masterLabel>
+            <translation>Rimborso Nota Credito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Note Repayment Credit Edenred ITALY FIN</masterLabel>
+            <translation><!-- Note Repayment Credit Edenred ITALY FIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Note Repayment Credit UTA</masterLabel>
+            <translation><!-- Note Repayment Credit UTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Note Repayment Credit Welfare</masterLabel>
+            <translation><!-- Note Repayment Credit Welfare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only Issue Credit Note (eg. For difference discount)</masterLabel>
+            <translation>Solo Emissione Nota Credito (es. per differenza sconto)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only Issue Invoice (eg. Invoice no fat)</masterLabel>
+            <translation>Solo Emissione Fattura (es. fattura no fat)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Reversal</masterLabel>
+            <translation>Storno Parziale</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>IT_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Feedback Waiting</masterLabel>
+            <translation><!-- Internal Feedback Waiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reopened</masterLabel>
+            <translation><!-- Reopened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Client&apos;s Response</masterLabel>
+            <translation><!-- Waiting for Client&apos;s Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working</masterLabel>
+            <translation><!-- Working --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Penalty --></label>
+        <name>IT_Penalty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>IT_Priorit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>IT_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductTest --></label>
+        <name>IT_ProductTest__c</name>
+        <picklistValues>
+            <masterLabel>Flexbenefit</masterLabel>
+            <translation><!-- Flexbenefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Restaurant</masterLabel>
+            <translation><!-- Ticket Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Restaurant Smart</masterLabel>
+            <translation><!-- Ticket Restaurant Smart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare</masterLabel>
+            <translation><!-- Ticket Welfare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>IT_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provisioning Status --></label>
+        <name>IT_Provisioning__c</name>
+        <picklistValues>
+            <masterLabel>Activation Kit Verification</masterLabel>
+            <translation><!-- Activation Kit Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circuit Configuration</masterLabel>
+            <translation><!-- Circuit Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comunication To Client Sending</masterLabel>
+            <translation><!-- Comunication To Client Sending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creation of a new Code</masterLabel>
+            <translation><!-- Creation of a new Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Details Plan Definition</masterLabel>
+            <translation><!-- Details Plan Definition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Order Cards</masterLabel>
+            <translation><!-- First Order Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Order Ticket</masterLabel>
+            <translation><!-- First Order Ticket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Order Ticket/Cards</masterLabel>
+            <translation><!-- First Order Ticket/Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forms Acceptance</masterLabel>
+            <translation><!-- Forms Acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Data Activation</masterLabel>
+            <translation><!-- Master Data Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Configuration</masterLabel>
+            <translation><!-- Plan Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Take Charge</masterLabel>
+            <translation><!-- Take Charge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Importo</label>
+        <name>IT_Refund_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Riemissione</label>
+        <name>IT_Reissue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requests --></label>
+        <name>IT_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Payment --></label>
+        <name>IT_Split_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement --></label>
+        <name>IT_Statement__c</name>
+        <picklistValues>
+            <masterLabel>Consip BP 8</masterLabel>
+            <translation><!-- Consip BP 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consip BPE 1</masterLabel>
+            <translation><!-- Consip BPE 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Targetdate Milestone --></label>
+        <name>IT_Targetdate_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team closing case --></label>
+        <name>IT_Team_Closing_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team opening case --></label>
+        <name>IT_Team_Opening_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Today --></label>
+        <name>IT_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Number --></label>
+        <name>IT_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welfare Project --></label>
+        <name>IT_Welfare_Project__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>ER Client Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Client Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merchant Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merchant Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant Details --></label>
+            <section>Merchant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merchant Client Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Client --></label>
+            <section>Client</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant --></label>
+            <section>Merchant</section>
+        </sections>
+        <sections>
+            <label><!-- Request Information --></label>
+            <section>Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER User Case Layout</layout>
+        <sections>
+            <label><!-- Cardholder Demand --></label>
+            <section>Cardholder Demand</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER User Case Layout 2.1</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hidden --></label>
+            <section>Hidden</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level --></label>
+            <section>Service Level</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <section>User Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Client Case PL</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Consip --></label>
+            <section>Consip</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Client Provisioning Case PL</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Consip --></label>
+            <section>Consip</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Parent Case --></label>
+        <name>Add_Parent_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Assign --></label>
+        <name>Assign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Case --></label>
+        <name>ER_Case_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Parent Case --></label>
+        <name>IT_Add_Parent_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Additional Request --></label>
+        <name>IT_Additional_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Additional Request --></label>
+        <name>IT_Additional_Request_Prov</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Commenti Interni --></label>
+        <name>IT_Commenti_Interni</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Consip --></label>
+        <name>IT_Consip</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Details --></label>
+        <name>IT_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Details Email --></label>
+        <name>IT_Details_Email</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Finance --></label>
+        <name>IT_Finance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Food and Meal --></label>
+        <name>IT_Food_and_Meal</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Internal Comments --></label>
+        <name>IT_Internal_Comments</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Child Case --></label>
+        <name>IT_NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Status --></label>
+        <name>IT_Update_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Status --></label>
+        <name>IT_Update_Status_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- X --></label>
+        <name>IT_X_Action</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Record Type for the Client Case --></description>
+        <label><!-- ER Client Case RT --></label>
+        <name>ER_Client_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for the Merchant Case --></description>
+        <label><!-- ER Merchant Case RT --></label>
+        <name>ER_Merchant_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for the User Case --></description>
+        <label><!-- ER User Case RT --></label>
+        <name>ER_User_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Card Provisioning Case RT --></label>
+        <name>IT_Client_Card_Provisioning_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Consip Case RT --></label>
+        <name>IT_Client_Consip_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Support Case RT --></label>
+        <name>IT_Client_Support_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Ticket Provisioning Case RT --></label>
+        <name>IT_Client_Ticket_Provisioning_Case_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IT Client Welfare Provisioning Case RT --></label>
+        <name>IT_Client_Welfare_Provisioning_Case_RT</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- These required fields must be completed: Case Reason, Case Detailed Reason --></errorMessage>
+        <name>VRER01_Case_CheckCaseReasonOnClose</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot use this Business Unit --></errorMessage>
+        <name>VRER02_Case_BusinessUnit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Information about Asset is obligatory in order to register the Case --></errorMessage>
+        <name>VRER03_Asset_Case_Spam</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non puoi cambiare lo stato del Provisioning in questo modo!</errorMessage>
+        <name>VRIT01_Block_Provisioning_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per chiudere il caso è necessario valorizzare il campo Argomento</errorMessage>
+        <name>VRIT02_Case_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t change field &apos;Origin&apos; --></errorMessage>
+        <name>VRIT03_Case_Origin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &apos;Documentation Outcome&apos; field must be populated --></errorMessage>
+        <name>VRIT04_Documentation_Outcome</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- the &apos;Documentation Outcome&apos; field is Refused or empty, you can&apos;t change status --></errorMessage>
+        <name>VRIT05_Refused</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is necessary to insert the &apos;Statement&apos; --></errorMessage>
+        <name>VRIT05_Statement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If &apos;reissue&apos; field is flagged,you have to enter &apos;New Customer Code&apos; type --></errorMessage>
+        <name>VRIT06_New_Customer_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is necessary to insert the &apos;Statement&apos; --></errorMessage>
+        <name>VRIT07_ReasonforSupport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the &apos;Documentation Outcome&apos; in this Provisioning Status --></errorMessage>
+        <name>VRIT08_Documentation_Outcome</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ER_Case_Accept --></label>
+        <name>ER_Case_Accept</name>
+    </webLinks>
+</CustomObjectTranslation>

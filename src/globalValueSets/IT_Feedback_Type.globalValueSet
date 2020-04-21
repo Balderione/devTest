@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>01</fullName>
+        <default>false</default>
+        <label>NAME / SERIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>02</fullName>
+        <default>false</default>
+        <label>PROGRESSIVE TICKET</label>
+    </customValue>
+    <masterLabel>IT Feedback Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

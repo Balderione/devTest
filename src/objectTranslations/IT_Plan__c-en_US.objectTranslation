@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age Groups Description --></label>
+        <name>IT_Age_Groups_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age Groups --></label>
+        <name>IT_Age_Groups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentials --></label>
+        <name>IT_Credentials__c</name>
+        <picklistValues>
+            <masterLabel>Credentials vs Beneficiaries</masterLabel>
+            <translation><!-- Credentials vs Beneficiaries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials vs Beneficiaries and Distant Client</masterLabel>
+            <translation><!-- Credentials vs Beneficiaries and Distant Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credentials vs Beneficiaries and Marsh Client</masterLabel>
+            <translation><!-- Credentials vs Beneficiaries and Marsh Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marsh client</masterLabel>
+            <translation><!-- Marsh client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FB01 --></label>
+        <name>IT_FB01__c</name>
+    </fields>
+    <fields>
+        <label><!-- FB02 --></label>
+        <name>IT_FB02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Founding Sources --></label>
+        <name>IT_Number_of_Founding_Sources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Codes --></label>
+        <name>IT_Payroll_Codes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan End Date --></label>
+        <name>IT_Plan_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Start Date --></label>
+        <name>IT_Plan_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Working Date --></label>
+        <name>IT_Planned_Working_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>IT_Policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provisioning Case --></label>
+        <name>IT_Provisioning_Case__c</name>
+        <relationshipLabel><!-- Piani --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TW01 --></label>
+        <name>IT_TW01__c</name>
+    </fields>
+    <fields>
+        <label><!-- TW02 --></label>
+        <name>IT_TW02__c</name>
+    </fields>
+    <fields>
+        <label><!-- TW03 --></label>
+        <name>IT_TW03__c</name>
+    </fields>
+    <fields>
+        <label><!-- TW04 --></label>
+        <name>IT_TW04__c</name>
+    </fields>
+    <fields>
+        <label><!-- TW05 --></label>
+        <name>IT_TW05__c</name>
+    </fields>
+    <fields>
+        <label><!-- TW06 --></label>
+        <name>IT_TW06__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welfare Project --></label>
+        <name>IT_Welfare_Project__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>IT_Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Paths and Attachments --></label>
+            <section>Paths and Attachments</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Contacts --></label>
+        <name>IT_Add_Contacts</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create PDF --></label>
+        <name>IT_Create_PDF</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Plan End Date can&apos;t be next Project End Date --></errorMessage>
+        <name>VRIT01_Plan_End_Date_and_Project_End_Dat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan End Date can&apos;t be before Project Start Date --></errorMessage>
+        <name>VRIT02_Plan_End_Date_and_Project_Start_D</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan Start Date can&apos;t be before Project Start Date --></errorMessage>
+        <name>VRIT03_Plan_Start_Date_and_Project_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan Start Date can&apos;t be next Project End Date --></errorMessage>
+        <name>VRIT04_Plan_Start_Date_and_Project_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan Start Date can&apos;t be next Plan End Date --></errorMessage>
+        <name>VRIT05_Plan_Start_Date_and_Plan_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field Planned Working Date is mandatory --></errorMessage>
+        <name>VRIT06_IT_Planned_Working_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The fields FB01 and TW01 or FB02 and TW04 cannot be selected both --></errorMessage>
+        <name>VRIT07_FB01_TW01</name>
+    </validationRules>
+</CustomObjectTranslation>

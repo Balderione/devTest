@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Contact_Detail_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact__r.IT_Contact_Type__c + &quot; &quot; +
+
+CASE(IT_Apparatus_Type__c,
+&quot;001&quot;, &quot;Telefono&quot;,
+&quot;002&quot;, &quot;Fax&quot;,
+&quot;005&quot;, &quot;Mail&quot;,
+&quot;007&quot;, &quot;Mail PEC&quot;,
+
+&quot;&quot;)
+
++ &quot; &quot; + Name</formula>
+        <label>Contact Detail Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>VRIT07_Fax_Length</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL( $User.ER_Business_Unit__c , &#39;IT&#39;),
+ISPICKVAL( IT_Apparatus_Type__c,&#39;002&#39;),
+LEN(Name) &gt; 16  
+  
+)</errorConditionFormula>
+        <errorMessage>Fax cannot be longer than 16 characters.</errorMessage>
+    </validationRules>
+</CustomObject>

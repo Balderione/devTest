@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Center</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Centers</value>
+    </caseValues>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>ER_Account_Name__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accounting System ID --></label>
+        <name>ER_Accounting_System_ID__c</name>
+    </fields>
+    <fields>
+        <label>Banca</label>
+        <name>ER_Bank_Account__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Middle Office --></label>
+        <name>ER_Card_MO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label>Località</label>
+        <name>ER_City__c</name>
+    </fields>
+    <fields>
+        <label>Referente</label>
+        <name>ER_Contact__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>ER_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creation date in OS --></label>
+        <name>ER_Creation_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ER_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing City --></label>
+        <name>ER_Invoicing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Country --></label>
+        <name>ER_Invoicing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Region/State --></label>
+        <name>ER_Invoicing_Region_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Site ? --></label>
+        <name>ER_Invoicing_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Street --></label>
+        <name>ER_Invoicing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Zip Code --></label>
+        <name>ER_Invoicing_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional User --></label>
+        <name>ER_LastModifiedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional user --></label>
+        <name>ER_Last_Modified_By_Functional_user__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date Functional User --></label>
+        <name>ER_Last_Modified_Date_Functional_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Synchronization Date --></label>
+        <name>ER_Last_Synchronization_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Middle Office --></label>
+        <name>ER_Paper_MO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Site ? --></label>
+        <name>ER_Payment_Site__c</name>
+    </fields>
+    <fields>
+        <label>Provincia</label>
+        <name>ER_State_Province__c</name>
+    </fields>
+    <fields>
+        <label>Via</label>
+        <name>ER_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync result --></label>
+        <name>ER_Sync_result__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>ER_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Error --></label>
+        <name>ER_WS_result_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>ER_WS_result__c</name>
+    </fields>
+    <fields>
+        <label>CAP</label>
+        <name>ER_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label>Adesione Nuovo Sist. Fatt. PA</label>
+        <name>IT_Accepts_New_Billing_System_PA__c</name>
+    </fields>
+    <fields>
+        <label>Adesione Nuovo Sist. Fatt.</label>
+        <name>IT_Accepts_New_Billing_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account (Active) --></label>
+        <name>IT_Account_Active__c</name>
+        <relationshipLabel>Codici Attivi</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account (Closed) --></label>
+        <name>IT_Account_Closed__c</name>
+        <relationshipLabel>Codici Chiusi</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account (Provisioning) --></label>
+        <name>IT_Account_Provisioning__c</name>
+        <relationshipLabel>Codici In Definizione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Località Aggiuntiva</label>
+        <name>IT_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label>Utente AC Indirizzo</label>
+        <name>IT_Address_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Tipologia Modifica Indirizzo</label>
+        <name>IT_Address_Editing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Fine Validità Indirizzo</label>
+        <name>IT_Address_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità Indirizzo</label>
+        <name>IT_Address_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Utente AC</label>
+        <name>IT_Admin_Data_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Admin_Data_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità</label>
+        <name>IT_Admin_Data_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Cliente Associato</label>
+        <name>IT_Associated_Client__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Beneficiario</label>
+        <name>IT_Beneficiary_Type__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura Riga 1</label>
+        <name>IT_Billing_Company_Name_R1__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura Riga 2</label>
+        <name>IT_Billing_Company_Name_R2__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura Riga 3</label>
+        <name>IT_Billing_Company_Name_R3__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura</label>
+        <name>IT_Billing_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIG --></label>
+        <name>IT_CIG__c</name>
+    </fields>
+    <fields>
+        <label>Codice CUP</label>
+        <name>IT_CUP_Code__c</name>
+    </fields>
+    <fields>
+        <label>Cambio Indirizzo</label>
+        <name>IT_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label>Codice Circuito</label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label>Circuito</label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codice Città</label>
+        <name>IT_City_Code__c</name>
+    </fields>
+    <fields>
+        <label>Data di Attivazione</label>
+        <name>IT_Client_Activation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Situazione Cliente</label>
+        <name>IT_Client_Situation__c</name>
+        <picklistValues>
+            <masterLabel>ADMINISTRATION OF CONTROLLED</masterLabel>
+            <translation>IN AMMINISTRAZIONE CONTROLLATA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGREED IN QUOTE</masterLabel>
+            <translation>IN CONCORDATO PREVENTIVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPULSORY IN ADMINISTRATION</masterLabel>
+            <translation>IN AMMINISTRAZIONE COATTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation>FALLIMENTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN COMPULSORY WINDING</masterLabel>
+            <translation>IN LIQUIDAZIONE COATTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN COMPULSORY WINDING AMM.VA</masterLabel>
+            <translation>IN LIQUIDAZIONE COATTA AMM.VA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN EXTRAORDINARY ADMINISTRATION</masterLabel>
+            <translation>IN AMMINISTRAZIONE STRAORDINARIA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN LIQUIDATION</masterLabel>
+            <translation>IN LIQUIDAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN LIQUIDATION AND CONCORD. PREV</masterLabel>
+            <translation>IN LIQUIDAZIONE E CONCORD. PREV</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORMAL</masterLabel>
+            <translation>NORMALE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Stato Cliente</label>
+        <name>IT_Client_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation>ATTIVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELED</masterLabel>
+            <translation>ANNULLATO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELED NON-PAYMENT</masterLabel>
+            <translation>ANNULLATO MANCATO PAGAMENTO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENTS WAITING FOR THE CODE 6</masterLabel>
+            <translation>CLIENTI IN ATTESA DEL CODICE 6</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMERS IN DEF. PROBABLE DELETE</masterLabel>
+            <translation>CLIENTI IN DEF. PROBABILE CANC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEFINITELY CANCELED</masterLabel>
+            <translation>ANNULLATO DEFINITIVAMENTE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN DEFINING ONLINE</masterLabel>
+            <translation>IN DEFINIZIONE ONLINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN DEFINITION</masterLabel>
+            <translation>IN DEFINIZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POTENTIAL ESPADA</masterLabel>
+            <translation>POTENZIALE DA ESPADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROVISIONAL CUSTOMER</masterLabel>
+            <translation>CLIENTE PROVVISORIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUSPENDED</masterLabel>
+            <translation>SOSPESO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO ACTIVATE</masterLabel>
+            <translation>DA ATTIVARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO ARRANGE</masterLabel>
+            <translation>DA SISTEMARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO CANCEL</masterLabel>
+            <translation>DA CANCELLARE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Cliente</label>
+        <name>IT_Client_Type__c</name>
+        <picklistValues>
+            <masterLabel>Complex Client</masterLabel>
+            <translation>Cliente Complesso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple Client</masterLabel>
+            <translation>Cliente Semplice</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label>Concorrenza</label>
+        <name>IT_Concurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirm Flow --></label>
+        <name>IT_Confirm_Flow__c</name>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Contact_Code__c</name>
+    </fields>
+    <fields>
+        <label>Data Scadenza</label>
+        <name>IT_Contract_Expiraction_Date__c</name>
+    </fields>
+    <fields>
+        <label>Contratto</label>
+        <name>IT_Contract__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Particolarità Contrattuali</label>
+        <name>IT_Contractual_Particularities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Request --></label>
+        <name>IT_Count_Request__c</name>
+    </fields>
+    <fields>
+        <label>Sconto/Commissione</label>
+        <name>IT_DEMO_FEE__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_DEMO_Financial_Center__c</name>
+        <relationshipLabel>Codici Figli</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mantenimento</label>
+        <name>IT_DEMO_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <name>IT_DEMO_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Up --></label>
+        <name>IT_DEMO_Start_Up__c</name>
+    </fields>
+    <fields>
+        <label>CIG Derivato</label>
+        <name>IT_Derived_CIG__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto/Commissione</label>
+        <name>IT_Discount__c</name>
+    </fields>
+    <fields>
+        <label>Non Inviare Nota Debito</label>
+        <name>IT_Don_t_Send_Debt_Note__c</name>
+    </fields>
+    <fields>
+        <label>Codice EORI</label>
+        <name>IT_EORI_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic AC User --></label>
+        <name>IT_Economic_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity End Date --></label>
+        <name>IT_Economic_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity Start Date --></label>
+        <name>IT_Economic_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Numero Dipendenti</label>
+        <name>IT_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura Riga 3</label>
+        <name>IT_Extended_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label>Specifiche Extra-Urbane</label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo di Fatturazione</label>
+        <name>IT_Financial_Center_Address__c</name>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Financial_Center__c</name>
+    </fields>
+    <fields>
+        <label>Cliente Fuso</label>
+        <name>IT_Fused_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Address --></label>
+        <name>IT_Future_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Economic Conditions --></label>
+        <name>IT_Future_Change_Economic_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change FC --></label>
+        <name>IT_Future_Change_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc X --></label>
+        <name>IT_GeoRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc Y --></label>
+        <name>IT_GeoRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label>Codice Frazione</label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label>Frazione</label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label>Detrazione su Fattura</label>
+        <name>IT_Invoice_Detraction__c</name>
+        <picklistValues>
+            <masterLabel>0,5 % DETRACTION ON THE TOTAL</masterLabel>
+            <translation>DETRAZIONE 0,5% SUL TOTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0,5 % DETRACTION TO BE SHOWN</masterLabel>
+            <translation>DETRAZIONE 0,5% DA ESPORRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO DETRACTION</masterLabel>
+            <translation>NO DETRAZIONE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dicitura Registro Fatture</label>
+        <name>IT_Invoice_Register_Wording__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc X --></label>
+        <name>IT_MetRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc Y --></label>
+        <name>IT_MetRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Name and Circuit --></label>
+        <name>IT_Name_and_Circuit__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Name and Legal Name --></label>
+        <name>IT_Name_and_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Codice Ordinante</label>
+        <name>IT_New_Code__c</name>
+    </fields>
+    <fields>
+        <label>Fine Validità Nota</label>
+        <name>IT_Note_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Inizio Validità Nota</label>
+        <name>IT_Note_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Codice Univoco Ufficio</label>
+        <name>IT_Office_Code__c</name>
+    </fields>
+    <fields>
+        <label>Esito Apertura</label>
+        <name>IT_Opening_Outcome__c</name>
+    </fields>
+    <fields>
+        <label>Codice Commessa</label>
+        <name>IT_Order_Code__c</name>
+    </fields>
+    <fields>
+        <label>Frequenza Emissioni Ordini</label>
+        <name>IT_Order_Emission_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- PEC Mail --></label>
+        <name>IT_PEC_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Particularities Progressive Number --></label>
+        <name>IT_Particularities_Progressive_Number__c</name>
+    </fields>
+    <fields>
+        <label>Termini di Pagamento</label>
+        <name>IT_Payment_Term__c</name>
+    </fields>
+    <fields>
+        <label>Codice Precedente</label>
+        <name>IT_Previous_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing --></label>
+        <name>IT_Pricing__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Servizio</label>
+        <name>IT_Product2__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Provincia</label>
+        <name>IT_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region code --></label>
+        <name>IT_Region_code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Arcostradale</label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDI --></label>
+        <name>IT_SDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Account --></label>
+        <name>IT_Sales_Account__c</name>
+        <relationshipLabel>Codici Fatturazione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Manager_txt__c</name>
+    </fields>
+    <fields>
+        <label>Inviare Tabulato SUT</label>
+        <name>IT_Send_SUT_Printout__c</name>
+    </fields>
+    <fields>
+        <label>Servizio</label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label>Codice Sestiere</label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo Abbreviato</label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Carnet</label>
+        <name>IT_Short_Name__c</name>
+    </fields>
+    <fields>
+        <label>Cliente Semplice</label>
+        <name>IT_Simple_Client__c</name>
+    </fields>
+    <fields>
+        <label>Cliente Singolo MultiAttività</label>
+        <name>IT_Single_Client_Multiactivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SkipActivation --></label>
+        <name>IT_SkipActivation__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Fatturazione Speciale</label>
+        <name>IT_Special_Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A BILLING REPORTING</masterLabel>
+            <translation><!-- A BILLING REPORTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACTUAL - INCLUDING VAT</masterLabel>
+            <translation>A CONSUNTIVO - IVA COMPRESA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALL EMPLOYEE CHARGED</masterLabel>
+            <translation><!-- ALL EMPLOYEE CHARGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BILL OF MENS. FATT CONS VAT AG</masterLabel>
+            <translation>DISTINTA MENS. FATT CONS IVA AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMISS. MONTH-END INCLUDING VAT</masterLabel>
+            <translation>EMISS. FINE MESE-IVA COMPRESA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATT. ACTUAL VAT AGG.</masterLabel>
+            <translation>FATT. A CONSUNTIVO IVA AGG.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATT.EM END OF THE MONTH IN VAT AGG.</masterLabel>
+            <translation>FATT.EM FINE MESE IVA IN AGG.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSUE - INCLUDING VAT</masterLabel>
+            <translation>EMISSIONE - COMPRENSIVO IVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO QUANTITY &apos;/ CUTTING IN BILL</masterLabel>
+            <translation><!-- NO QUANTITY &apos;/ CUTTING IN BILL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (B)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (B) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (C)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (C) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (D)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (D) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY(A)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY(A) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Codice Provincia</label>
+        <name>IT_State_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Via</label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label>Denominazione sul Ticket</label>
+        <name>IT_Ticket_Naming__c</name>
+    </fields>
+    <fields>
+        <label>Ticket Giorno</label>
+        <name>IT_Ticket_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label>Titolo</label>
+        <name>IT_Title__c</name>
+    </fields>
+    <fields>
+        <label>Toponimo</label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label>P. IVA</label>
+        <name>IT_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label>Mandato</label>
+        <name>IT_Warrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welfare Project --></label>
+        <name>IT_Welfare_Project__c</name>
+        <relationshipLabel><!-- Financial Center --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zona</label>
+        <name>IT_Zone__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>ER Financial Center Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Status with Operational System --></label>
+            <section>Synchronization Status with Operational System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Financial Center Layout V2.1</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Center Billing Address --></label>
+            <section>Financial Center Billing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Invoicing Information --></label>
+            <section>Invoicing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Status with Operational System --></label>
+            <section>Synchronization Status with Operational System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Financial Center PL</layout>
+        <sections>
+            <label>Informazioni Contratto</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazioni Fatturazione Elettronica</label>
+            <section>Electronic invoicing information</section>
+        </sections>
+        <sections>
+            <label>Informazioni di Pagamento</label>
+            <section>Invoice information</section>
+        </sections>
+        <sections>
+            <label>Dati Amministrativi Principali</label>
+            <section>Principal Administrative Data</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome Financial Center</nameFieldLabel>
+    <quickActions>
+        <label>Chiudi Codice</label>
+        <name>IT_Close_Code</name>
+    </quickActions>
+    <quickActions>
+        <label>Attiva</label>
+        <name>IT_DEMO_Quick_Activation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Address --></label>
+        <name>IT_Edit_Address</name>
+    </quickActions>
+    <quickActions>
+        <label>Gestisci Indirizzi</label>
+        <name>IT_Edit_Address_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Financial center --></label>
+        <name>IT_Financial_Center</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Financial Center Update --></label>
+        <name>IT_Financial_Center_Update</name>
+    </quickActions>
+    <quickActions>
+        <label>Aggiungi Attività</label>
+        <name>IT_New_Delivery_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Notes Labels Shipping Invoicing --></label>
+        <name>IT_Notes_Labels_Shipping_Invoicing</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- At least one of those fields need to be checked : &quot;Invoicing Site ?&quot; or &quot;Payment Site ?&quot; --></errorMessage>
+        <name>VRER01_FinancialC_Mandatory_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>CIG e CIG Derivato possono essere valorizzati solo per clienti pubblici!</errorMessage>
+        <name>VRIT01_CIG_Institution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare il nome del Financial Center!</errorMessage>
+        <name>VRIT02_Financial_Center_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La Ragione Sociale non può contenere i seguenti caratteri speciali: ^ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜ°€¿|</errorMessage>
+        <name>VRIT03_Billing_Company_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>I campi: Codice Univoco, CUP, Commessa, EORI, Registro Fatture e Mail PEC sono modificabili solo per clienti di tipo &quot;Ente&quot; che hanno aderito alla fatturazione elettronica per PA!</errorMessage>
+        <name>VRIT04_IT_Company_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La fatturazione Speciale non può essere modificata per i clienti con servizio &quot;Buoni Vacanze&quot;!</errorMessage>
+        <name>VRIT05_Special_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aggiornare almeno un valore tra PEC e il codice univoco ufficio (SDI)!</errorMessage>
+        <name>VRIT06_Unique_Office_Code_Pec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>L&apos;invio delle note debito è modificabile soltanto per i privati!</errorMessage>
+        <name>VRIT07_Debt_Notes_Sending</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- test --></errorMessage>
+        <name>VRIT08_InvoiceDetail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il campo &quot;Adesione Nuovo Sist. Fatt. PA&quot; può essere impostato solo per clienti di tipo &quot;Ente&quot;!</errorMessage>
+        <name>VRIT09_Billing_System_PA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per i clienti di tipo Ente, deve essere impostato il campo di &quot;Adesione Nuovo Sist. Fatt. PA&quot;!</errorMessage>
+        <name>VRIT10_Billing_System</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile modificare i dati relativi a questo tipo di Servizio</errorMessage>
+        <name>VRIT11_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare campi per questo stato del cliente!</errorMessage>
+        <name>VRIT12_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Manca il codice pagamento!</errorMessage>
+        <name>VRIT13_No_Payment_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il cliente è di tipo Ente bisogna popolare il Codice Univoco Ufficio, se Privato, popolare lo SDI!</errorMessage>
+        <name>VRIT14_SDI_and_Unique_Office_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il Codice Univoco Ufficio può contenere al massimo 6 caratteri!</errorMessage>
+        <name>VRIT15_Unique_Office_Code_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SDI obbligatorio a livello di Financial Center</errorMessage>
+        <name>VRIT16_SDI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lo SDI deve contenere 7 caratteri!</errorMessage>
+        <name>VRIT17_SDILen</name>
+    </validationRules>
+</CustomObjectTranslation>

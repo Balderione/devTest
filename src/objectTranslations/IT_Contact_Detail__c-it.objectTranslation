@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recapito Referente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recapiti Referenti</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT_Account_Id --></label>
+        <name>IT_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Account__c</name>
+        <relationshipLabel>Recapiti Referente</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address Progressive --></label>
+        <name>IT_Address_Progressive__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>IT_Apparatus_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail PEC</masterLabel>
+            <translation><!-- Mail PEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Associazione</label>
+        <name>IT_Association_Type__c</name>
+    </fields>
+    <fields>
+        <label>Conferma invio Fatture</label>
+        <name>IT_Billing_Confirm_Address__c</name>
+    </fields>
+    <fields>
+        <label>Codice CDC</label>
+        <name>IT_CDC_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Code__c</name>
+    </fields>
+    <fields>
+        <label>Tipo e Nome</label>
+        <name>IT_Contact_Detail_Type__c</name>
+    </fields>
+    <fields>
+        <label>Informazioni di Contatto</label>
+        <name>IT_Contact_Info__c</name>
+    </fields>
+    <fields>
+        <label>Referente</label>
+        <name>IT_Contact__c</name>
+        <relationshipLabel>Recapiti Referente</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Progressivo Recapito</label>
+        <name>IT_Contact_progressive__c</name>
+    </fields>
+    <fields>
+        <label>Credenziali</label>
+        <name>IT_Credentials__c</name>
+    </fields>
+    <fields>
+        <label>Codice Consegna</label>
+        <name>IT_Delivery_Code__c</name>
+    </fields>
+    <fields>
+        <label>Consegna</label>
+        <name>IT_Delivery_Site__c</name>
+        <relationshipLabel>Recapiti Referente</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codice Recapito</label>
+        <name>IT_Detail_Code__c</name>
+    </fields>
+    <fields>
+        <label>Attività</label>
+        <name>IT_Distribution_Point__c</name>
+        <relationshipLabel>Recapiti Referente</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codice di Fatturazione</label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel>Recapiti Referente</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Future Change Contact Detail --></label>
+        <name>IT_Future_Change_Contact_Detail__c</name>
+    </fields>
+    <fields>
+        <label>Principale</label>
+        <name>IT_Main_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Name and Detail --></label>
+        <name>IT_Name_and_Detail__c</name>
+    </fields>
+    <fields>
+        <label>Comunicazioni Generali</label>
+        <name>IT_Notifications__c</name>
+    </fields>
+    <fields>
+        <label>Configurazione Ordini</label>
+        <name>IT_Order_Configuration__c</name>
+    </fields>
+    <fields>
+        <label>Conferma Ordini</label>
+        <name>IT_Order_Confirm_Address__c</name>
+    </fields>
+    <fields>
+        <label>Ordini</label>
+        <name>IT_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll --></label>
+        <name>IT_Payroll__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>IT_Plan__c</name>
+        <relationshipLabel><!-- Recapiti del Piano --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Residui</label>
+        <name>IT_Residue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Type --></label>
+        <name>IT_Salesforce_Type__c</name>
+    </fields>
+    <fields>
+        <label>Invio Fatture</label>
+        <name>IT_Sending_Invoices__c</name>
+    </fields>
+    <fields>
+        <label>Spedizione Pagamento</label>
+        <name>IT_Shipping_Payment__c</name>
+    </fields>
+    <fields>
+        <label>Invio SUT</label>
+        <name>IT_Sut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date --></label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date --></label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Contact_Detail_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Sezione relativa al Progetto Welfare</label>
+            <section>Welfare Section</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Recapito</nameFieldLabel>
+    <quickActions>
+        <label>Crea Associazioni</label>
+        <name>IT_Create_Associations</name>
+    </quickActions>
+    <quickActions>
+        <label>Aggiungi associazione</label>
+        <name>IT_New_Contact_Association</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Impossibile modificare il campo Tipo!</errorMessage>
+        <name>VRIT01_Apparatus_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile inserire i seguenti caratteri speciali: &amp;,@@,&gt;,&lt; e lo spazio!</errorMessage>
+        <name>VRIT02_Contact_Detail_Special_Characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il tipo Recapito è obbligatorio!</errorMessage>
+        <name>VRIT03_Apparatus_Type_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il recapito deve essere un numero se il tipo è telefono!</errorMessage>
+        <name>VRIT04_Contact_Detail_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per un referente di tipo Soc non è possibile impostare il recapito come principale!</errorMessage>
+        <name>VRIT05_SOC_Contact_Detail_Not_Main</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il tipo Apparato è mail, inserire un indirizzo valido!</errorMessage>
+        <name>VRIT06_Mail_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il fax non può avere più di 16 caratteri!</errorMessage>
+        <name>VRIT07_Fax_Length</name>
+    </validationRules>
+</CustomObjectTranslation>

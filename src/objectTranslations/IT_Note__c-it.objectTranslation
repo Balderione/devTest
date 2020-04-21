@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Notes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC Activity --></label>
+        <name>IT_AC_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC Delivery --></label>
+        <name>IT_AC_Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Site --></label>
+        <name>IT_Delivery_Site__c</name>
+        <relationshipLabel><!-- Note --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distribution Point --></label>
+        <name>IT_Distribution_Point__c</name>
+        <relationshipLabel><!-- Note --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Note --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo Nota</label>
+        <name>IT_Note_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progressive --></label>
+        <name>IT_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Activity --></label>
+        <name>IT_SF_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Delivery --></label>
+        <name>IT_SF_Delivery__c</name>
+    </fields>
+    <fields>
+        <label>Testo Nota</label>
+        <name>IT_Text_Notes__c</name>
+    </fields>
+    <fields>
+        <label>Titolo</label>
+        <name>IT_Title__c</name>
+    </fields>
+    <fields>
+        <label>Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Inizio Validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Note_PL</layout>
+        <sections>
+            <label>Relativo a</label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Titolo</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Il &apos;Titolo&apos; ammette massimo 40 caratteri</errorMessage>
+        <name>VRIT01_Title</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Edenred</letterhead>
+    <name>Opportunity Approval Process</name>
+    <style>freeForm</style>
+    <subject>Salesforce : A new Quote has been submitted for Approval</subject>
+    <textOnly>Hello {!User.Manager},
+
+{!User.FirstName} {!User.LastName} has generated a new Quote in Salesforce for the Account {!Quote.BillingName}
+
+Your approval is mandatory. Hereafter you will find more information about the Quote :
+
+Customer : {!Quote.BillingName}
+Creation Date : {!Quote.CreatedDate}
+Commission Fee : {!Quote.ER_Commission_Fee__c} %
+Product : {!Quote.Product__c}
+
+You can access to the detailed page via this link : https://login.salesforce.com/{!Quote.Id}
+
+Please approve* or reject* this Quote.
+Regards,
+Your Salesforce Administrator
+
+
+*To approve a Quote, you can answer to this email, and indicate Yes in the first line of your email. All text after the Yes will be used as a comment of your approval.
+
+*To approve a Quote, you can answer to this email, and indicate No in the first line of your email. All text after the No will be used as a comment of your approval.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

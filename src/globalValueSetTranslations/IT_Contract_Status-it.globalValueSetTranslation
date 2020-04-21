@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CONTRACT ACTIVATED</masterLabel>
+        <translation>CONTRATTO ATTIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTRACT ENDED</masterLabel>
+        <translation>CONTRATTO CHIUSO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IN DEFINITION</masterLabel>
+        <translation>IN DEFINIZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SENT FOR SIGNATURE</masterLabel>
+        <translation>INVIATO ALLA FIRMA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

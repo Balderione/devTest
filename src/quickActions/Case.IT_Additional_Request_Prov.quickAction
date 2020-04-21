@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>AccountId</field>
+        <formula>Case.IT_Financial_Center__r.ER_Account_Name__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>IT_Circuit__c</field>
+        <formula>Case.IT_Financial_Center__r.IT_Circuit__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Origin</field>
+        <formula>TEXT (Case.Parent.Origin)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>ParentId</field>
+        <formula>Case.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+    </fieldOverrides>
+    <label>Additional Request</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>IT_Financial_Center__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>IT_Case_Reason__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <targetParentField>Parent</targetParentField>
+    <targetRecordType>Case.IT_Client_Welfare_Provisioning_Case_RT</targetRecordType>
+    <type>Create</type>
+</QuickAction>

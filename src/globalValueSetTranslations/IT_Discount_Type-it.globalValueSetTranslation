@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>DISCOUNT BI-MONTHLY MAGAZINE</masterLabel>
+        <translation>SCONTO PERIODICO BIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT MAGAZINE QUADRIMESTRAL</masterLabel>
+        <translation>SCONTO PERIODICO QUADRIMESTRAL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT ON BILL</masterLabel>
+        <translation>SCONTO IN FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT ON BILL ON VAL.BUONO</masterLabel>
+        <translation>SCONTO IN FATTURA SU VAL.BUONO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT PERIODIC HALF</masterLabel>
+        <translation>SCONTO PERIODICO SEMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT QUARTERLY MAGAZINE</masterLabel>
+        <translation>SCONTO PERIODICO TRIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCOUNT WITH N. CREDIT PART A</masterLabel>
+        <translation>SCONTO CON N. CREDITO A PARTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PERIODIC ANNUAL DISCOUNT</masterLabel>
+        <translation>SCONTO PERIODICO ANNUALE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

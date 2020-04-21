@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1 NAPLES AND PROVINCE</masterLabel>
+        <translation>NAPOLI 1 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1 ROME AND PROVINCE (LA)</masterLabel>
+        <translation>ROMA 1 E PROVINCIA (LA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1 TURIN AND PROVINCE</masterLabel>
+        <translation>TORINO 1 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 NAPLES AND PROVINCE</masterLabel>
+        <translation>NAPOLI 2 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 ROME AND PROVINCE (LA)</masterLabel>
+        <translation>ROMA 2 E PROVINCIA (LA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 TURIN AND PROVINCE</masterLabel>
+        <translation>TORINO 2 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3 ROME AND PROVINCE (ABA)</masterLabel>
+        <translation>ROMA 3 E PROVINCIA (ABA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 ROME AND PROVINCE (ABA)</masterLabel>
+        <translation>ROMA 4 E PROVINCIA (ABA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6 ROME AND PROVINCE (FDG)</masterLabel>
+        <translation>ROMA 6 E PROVINCIA (FDG)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7 ROME AND PROVINCE (LA)</masterLabel>
+        <translation>ROMA 7 E PROVINCIA (LA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8 ROME (MF)</masterLabel>
+        <translation>ROMA 8 (MF)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ABROAD</masterLabel>
+        <translation>ESTERO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AGRIGENTO PROVINCE</masterLabel>
+        <translation>AGRIGENTO E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALEXANDRIA AND PROVINCE</masterLabel>
+        <translation>ALESSANDRIA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AOSTA PROVINCE</masterLabel>
+        <translation>AOSTA PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASCOLI PICENO</masterLabel>
+        <translation>ASCOLI PICENO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASTI PROVINCE</masterLabel>
+        <translation>ASTI PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AVELLINO PROVINCE</masterLabel>
+        <translation>AVELLINO PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Abruzzo (AQ)</masterLabel>
+        <translation>Abruzzo (AQ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Abruzzo (CH - PE)</masterLabel>
+        <translation>Abruzzo (CH - PE)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BASILICATA</masterLabel>
+        <translation>BASILICATA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BELLUNO PROVINCE</masterLabel>
+        <translation>BELLUNO PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BENEVENTO PROVINCE</masterLabel>
+        <translation>BENEVENTO PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BENEVENTO PROVINCE (135)</masterLabel>
+        <translation>PROVINCIA DI BENEVENTO (135)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BERGAMO AND PROVINCE</masterLabel>
+        <translation>BERGAMO E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BIELLA AND PROVINCE</masterLabel>
+        <translation>BIELLA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOLOGNA (121 to 124- 125 to 127- 128 to 132) AND PROVINCE</masterLabel>
+        <translation>BOLOGNA  (da 121 a 124- da 125 a 127- da 128 a 132)  E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOLOGNA (133 to 141) PROVINCE</masterLabel>
+        <translation>BOLOGNA  (133 a 141)  E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOLOGNA BRANCH 20</masterLabel>
+        <translation>FILIALE BOLOGNA 20</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOLZANO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI BOLZANO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2007</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2007</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2007 L1</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2007 L1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2007 L2</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2007 L2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2017 M1</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2017 M1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2017 M2</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2017 M2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2018 M3</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2018 M3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH CUSTOMERS CONSIP 2018 M4</masterLabel>
+        <translation>FILIALE CLIENTI CONSIP 2018 M4</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRANCH VENETO 76</masterLabel>
+        <translation>FILIALE VENETO 76</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BRESCIA</masterLabel>
+        <translation>BRESCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CALABRIA</masterLabel>
+        <translation>CALABRIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CALTANISSETTA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI CALTANISSETTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASERTA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI CASERTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CATANIA</masterLabel>
+        <translation>CATANIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI COMO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREMONA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI CREMONA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CROTONE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI CROTONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUNEO</masterLabel>
+        <translation>CUNEO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER CARE</masterLabel>
+        <translation>SERVIZIO CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER LOYALTY</masterLabel>
+        <translation>FIDELIZZAZIONE CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER SMALL NAPLES</masterLabel>
+        <translation>CLIENTI PICCOLI NAPOLI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER SMALL TURIN</masterLabel>
+        <translation>CLIENTI PICCOLI TORINO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMILIA ROMAGNA</masterLabel>
+        <translation>EMILIA ROMAGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENNA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI ENNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FERRARA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI FERRARA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FILIALE BRESCIA 44</masterLabel>
+        <translation>FILIALE BRESCIA 44</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FILIALE MILANO 44</masterLabel>
+        <translation>FILIALE MILANO 44</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLORENCE (010 to 069- 124- 127-from 133 to 145)</masterLabel>
+        <translation>FIRENZE (da010a069-124-127-da 133 a 145)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLORENCE (121 to 123- 125 - 126- 129 to 132)</masterLabel>
+        <translation>FIRENZE (da121a123-125-126-da 129 a 132)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLORENCE SMALL CUSTOMERS</masterLabel>
+        <translation>CLIENTI PICCOLI FIRENZE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FOGGIA PROVINCE</masterLabel>
+        <translation><!-- FOGGIA PROVINCE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FORLI CESENA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI FORLI CESENA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FROSINONE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI FROSINONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GENOA WEST PROVINCE (GP)</masterLabel>
+        <translation>GENOVA OVEST PROVINCIA (GP)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GORIZIA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI GORIZIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IMPERIA (GP)</masterLabel>
+        <translation>IMPERIA (GP)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITALIAN TERRITORY (General Administration)</masterLabel>
+        <translation>TERRITORIO ITALIA (DIREZIONE GENERALE)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITALIAN TERRITORY (code 031)</masterLabel>
+        <translation>TERRITORIO ITALIA (cod 031)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITALIAN TERRITORY (code 117)</masterLabel>
+        <translation>TERRITORIO ITALIA (cod 117)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITALIAN TERRITORY (code 143)</masterLabel>
+        <translation>TERRITORIO ITALIA (cod 143)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In expectation of correction</masterLabel>
+        <translation>In attesa di correzione</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LA SPEZIA AND PROVINCE (RP)</masterLabel>
+        <translation>LA SPEZIA E PROVINCIA (RP)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LATINA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI LATINA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LECCO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI LECCO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LEVANTE GENOA PROVINCE (RP)</masterLabel>
+        <translation>GENOVA LEVANTE E PROVINCIA (RP)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LIGURIA</masterLabel>
+        <translation>LIGURIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LODI PROVINCE</masterLabel>
+        <translation>PROVINCIA DI LODI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANTUA PROVINCE</masterLabel>
+        <translation>MANTOVA PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MARCHE (AN - MC)</masterLabel>
+        <translation>MARCHE (AN - MC)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MARCHE (PU)</masterLabel>
+        <translation>MARCHE (PU)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MESSINA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI MESSINA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN</masterLabel>
+        <translation>MILANO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (122-127)</masterLabel>
+        <translation>MILANO (122-127)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (123-151-153)</masterLabel>
+        <translation>MILANO (123-151-153)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (125-137-138-141)</masterLabel>
+        <translation>MILANO (125-137-138-141)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (142-143)</masterLabel>
+        <translation>MILANO (142-143)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (144-145-146-147-148-149)</masterLabel>
+        <translation>MILANO (144-145-146-147-148-149)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (CB) (129-131-132-133-134-135-136-139)</masterLabel>
+        <translation>MILANO (CB) (129-131-132-133-134-135-136-139)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (DP) (162-161)</masterLabel>
+        <translation>MILANO (DB) (162-161)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (FC) (152)</masterLabel>
+        <translation>MIANO (FC) (152)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (MP) (124)</masterLabel>
+        <translation>MILANO (MP) (124)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (OS) (126-128-156-157-158-155)</masterLabel>
+        <translation>MILANO (OS) (126-128-156-157-158-155)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (RO) (121)</masterLabel>
+        <translation>MILANO (RO) (121)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN (SMZ) (154-159)</masterLabel>
+        <translation>MILANO (SMZ) (154-159)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE</masterLabel>
+        <translation>PROVINCIA DI MILANO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (CB)</masterLabel>
+        <translation>PROVINCIA DI MILANO (CB)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (DP)</masterLabel>
+        <translation>PROVINCIA DI MILANO (DB)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (FC)</masterLabel>
+        <translation>PROVINCIA DI MILANO (FC)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (FD)</masterLabel>
+        <translation>PROVINCIA DI MILANO (FD)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (GENERIC) (code 003)</masterLabel>
+        <translation>PROVINCIA DI MILANO (GENERICA) (cod 003)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (GENERIC) (code 136)</masterLabel>
+        <translation>MILANO PROVINCIA (GENERICA) (cod 136)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (LT)</masterLabel>
+        <translation>PROVINCIA DI MILANO (LT)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (MS)</masterLabel>
+        <translation>PROVINCIA DI MILANO (MS)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (OS)</masterLabel>
+        <translation>PROVINCIA DI MILANO (OS)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (SM)</masterLabel>
+        <translation>PROVINCIA DI MILANO (SM)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILAN PROVINCE (SMZ)</masterLabel>
+        <translation>PROVINCIA DI MILANO (SMZ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MILANO PROVINCIA (RF)</masterLabel>
+        <translation>PROVINCIA DI MILANO (RF)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODENA AND PROVINCE</masterLabel>
+        <translation>MODENA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Molise (CAMPOBASSO)</masterLabel>
+        <translation>MOLISE (CAMPOBASSO)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Molise (ISERNIA)</masterLabel>
+        <translation>MOLISE (ISERNIA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NAPLES (121-125-127-128-129- 131 to 134)</masterLabel>
+        <translation>NAPOLI (121-125-127-128-129-131 a 134)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NAPLES (122-123-124-126 - from 135 to 139)</masterLabel>
+        <translation>NAPOLI (122-123-124-126 - da 135 a 139)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NAPLES (141 to 147)</masterLabel>
+        <translation>NAPOLI (141 a 147)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NORTH AREA (TRIVENETO)</masterLabel>
+        <translation>AREA NORD (TRIVENETO)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NORTH ZONE AREA</masterLabel>
+        <translation>ZONE AREA NORD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOVARA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI NOVARA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONE PEOPLE</masterLabel>
+        <translation>PEOPLE ONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>P.A. DIRECT CONVENTIONS</masterLabel>
+        <translation>P.A. CONVENZIONI DIRETTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PADUA (121 to 124- 129 139- 131 to 141 to 143) (RZ)</masterLabel>
+        <translation>PADOVA (121a124-129-139a131-141a143)(RZ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PADUA (from 35125 to 35128) (AB)</masterLabel>
+        <translation>PADOVA (da 35125 a 35128) (AB)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PADUA PROVINCE (AB)</masterLabel>
+        <translation>PADOVA PROVINCIA (AB)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PADUA PROVINCE (RZ)</masterLabel>
+        <translation>PADOVA PROVINCIA (RZ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PALERMO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI PALERMO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PARMA AND PROVINCE</masterLabel>
+        <translation>PARMA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAVIA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI PAVIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PIACENZA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI PIACENZA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PORDENONE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI PORDENONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROVINCIA DI VARESE 2</masterLabel>
+        <translation>PROVINCIA DI VARESE 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUGLIA</masterLabel>
+        <translation>PUGLIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RAGUSA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI RAGUSA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RAVENNA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI RAVENNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REGGIO EMILIA PROVINCE</masterLabel>
+        <translation>PROVINCIA DI REGGIO EMILIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RIETI PROVINCE</masterLabel>
+        <translation>PROVINCIA DI RIETI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RIMINI PROVINCE</masterLabel>
+        <translation>PROVINCIA DI RIMINI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (ABA) (135-136, 188 to 199)</masterLabel>
+        <translation>ROMA (ABA) (135-136, 188 a 199)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (ABA) (empty)</masterLabel>
+        <translation>ROMA (ABA) (vuoto)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (AC) (from 128 to 129 142 to 148)</masterLabel>
+        <translation>ROMA (AC) (da 128 A 129 142 a 148)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (FDG) (from 131 to 134, 168 to 177)</masterLabel>
+        <translation>ROMA (FDG) (da 131 a 134, 168 a 177)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (LA) (from 118 to 122, 137 to 141, from 155 to 159)</masterLabel>
+        <translation>ROMA (LA) (da 118 a 122, 137 a 141, da 155 a 159)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (MAT) (181 to 185)</masterLabel>
+        <translation>ROMA (MAT) (181 a 185)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (MAT) (empty)</masterLabel>
+        <translation>ROMA (MAT) (vuoto)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (PR) (from 149 to 154, 163 to 167)</masterLabel>
+        <translation>ROMA (PR) (da 149 a 154, 163 a 167)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (ST) (123 to 127,161-162-178-179-186-187)</masterLabel>
+        <translation>ROMA (ST) (123 a 127, 161-162--178-179-186-187)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (empty) (code 178)</masterLabel>
+        <translation>ROMA (VUOTO) (cod 178)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (empty) (code 181)</masterLabel>
+        <translation>ROMA (VUOTO) (cod 181)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (empty) (code 184)</masterLabel>
+        <translation>ROMA (VUOTO) (cod 184)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME (empty) (code 189)</masterLabel>
+        <translation>ROMA (VUOTO) (cod 189)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME AND PROVINCE 5 (FDG)</masterLabel>
+        <translation>ROMA 5 E PROVINCIA  (FDG)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROME SMALL CUSTOMERS</masterLabel>
+        <translation>CLIENTI PICCOLI ROMA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROVIGO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI ROVIGO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SALERNO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI SALERNO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARDINIA (Prov .: CA - OR - CI - MD)</masterLabel>
+        <translation>SARDEGNA (Prov.: CA - OR - CI - MD)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARDINIA (Prov .: OG - SS - NU - OT)</masterLabel>
+        <translation>SARDEGNA (Prov.: OG - SS - NU - OT)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAVONA PROVINCE (GP)</masterLabel>
+        <translation>PROVINCIA DI SALERNO (GP)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SICILY (Prov .: CT - SR - RG - EN)</masterLabel>
+        <translation>SICILA (Prov. : CT - SR - RG - EN)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SICILY (Prov .: ME - PA)</masterLabel>
+        <translation>SICILA (Prov. : ME - PA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SICILY (Prov .: TP - AG - CL)</masterLabel>
+        <translation>SICILA (Prov. : TP - AG - CL)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMALL CUSTOMERS BARI</masterLabel>
+        <translation>PICCOLI CLIENTI BARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMALL CUSTOMERS GENOA</masterLabel>
+        <translation>PICCOLI CLIENTI GENOVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMALL CUSTOMERS PADUA</masterLabel>
+        <translation>PICCOLI CLIENTI PADOVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMALL CUSTOMERS TRENTO</masterLabel>
+        <translation>PICCOLI CLIENTI TRENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOCIAL AREA</masterLabel>
+        <translation>AREA SOCIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SONDRIO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI SONDRIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SYRACUSE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI SIRACUSA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELESHOPPING (code 104)</masterLabel>
+        <translation>TELEVENDITA (cod 104)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELESHOPPING (code 194)</masterLabel>
+        <translation>TELEVENDITA (cod 194)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERAMO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI TERAMO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERRITORY ITALIAN CUSTOMER CARD</masterLabel>
+        <translation>TERRITORIO ITALIA CLIENTI CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERRITORY Lombardy (PUBLIC)</masterLabel>
+        <translation>TERRITORIO LOMBARDIA (ENTI PUBBLICI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERRITORY Lombardy (code 152)</masterLabel>
+        <translation>TERRITORIO LOMBARDIA (cod 152)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERRITORY Lombardy (code 153)</masterLabel>
+        <translation>TERRITORIO LOMBARDIA (cod 153)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERRITORY Lombardy (code 192)</masterLabel>
+        <translation>TERRITORIO LOMBARDIA (cod 192)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET EXPRESS</masterLabel>
+        <translation>TICKET EXPRESS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TORINO (121 to 124, 141 to 143 129-131-133-138-139, 145-146) DR</masterLabel>
+        <translation>TORINO (121 a 124, 141 a 143 139-131-133-138-139, 145-146) DR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TORINO (from 125 to 128 from 134 to 137)</masterLabel>
+        <translation>TORINO (da 125 a 128 da 134 a 137)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TORINO 4 E PROVINCIA</masterLabel>
+        <translation>TORINO 4 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TORINO E PROVINCIA 2 (ABA)</masterLabel>
+        <translation>TORINO E PROVINCIA (ABA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRAPANI PROVINCE</masterLabel>
+        <translation>PROVINCIA DI TRAPANI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRENTO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI TRENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TREVISO PROVINCE</masterLabel>
+        <translation>PROVINCIA DI TREVISO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRIESTE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI TRIESTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TURIN (132-144 from 147 to 156) OM</masterLabel>
+        <translation>TORINO (132-144 da 147 a 156) OM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TURIN 3 PROVINCE</masterLabel>
+        <translation>TORINO 3 E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TUSCANY (Prov .: AR - LU - PO - PT)</masterLabel>
+        <translation>TOSCANA (Prov.: AR - LU -PO - PT)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TUSCANY (Prov .: GR - PI - SI)</masterLabel>
+        <translation>TOSCANA (Prov.: GR - PI - SI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TUSCANY (Prov .: LI - MS)</masterLabel>
+        <translation>TOSCANA (Prov.: LI . MS)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UDINE PROVINCE</masterLabel>
+        <translation>PROVINCIA DI UDINE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UMBRIA (PERUGIA)</masterLabel>
+        <translation>UMBRIA (PERUGIA)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Umbria (TERNI)</masterLabel>
+        <translation>UMBRIA (TERNI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VARESE</masterLabel>
+        <translation>VARESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VENICE PROVINCE</masterLabel>
+        <translation>VENEZIA PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VERBANIA PROVINCE</masterLabel>
+        <translation>VERBANIA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VERCELLI PROVINCE</masterLabel>
+        <translation>VERCELLI E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VERONA PROVINCE</masterLabel>
+        <translation>VERONA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VICENZA PROVINCE</masterLabel>
+        <translation>VICENZA E PROVINCIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VITERBO PROVINCE</masterLabel>
+        <translation>VITERBO E PROVINCIA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

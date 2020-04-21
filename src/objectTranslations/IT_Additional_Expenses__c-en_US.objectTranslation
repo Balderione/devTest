@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Additional Expenses</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Additional Expenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Importo</label>
+        <name>IT_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Quantity&quot; is selected, the amount will be calculated based on the quantity in the contract line items --></help>
+        <label>Tipo Calcolo</label>
+        <name>IT_Calculation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation>Fisso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>A quantità</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Code__c</name>
+        <picklistValues>
+            <masterLabel>CONSIDERATION CUSTOM PACKAGING (FOR BOOKLET)</masterLabel>
+            <translation>CORRISPETTIVO CONFEZIONAMENTO PERSONALIZZATO (PER CARNET)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION CUSTOM PACKAGING (FOR COST CENTERS)</masterLabel>
+            <translation>CORRISPETTIVO CONFEZIONAMENTO PERSONALIZZATO (PER CENTRI DI COSTO)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION CUSTOM PACKAGING (FOR QUANTITY &apos;)</masterLabel>
+            <translation>CORRISPETTIVO CONFEZIONAMENTO PERSONALIZZATO (PER QUANTITA&apos;)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR DRIVING LOCAL AFFILIATES</masterLabel>
+            <translation>CORRISPETTIVO PER GUIDA LOCALI AFFILIATI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR EDUCATION PRACTICE</masterLabel>
+            <translation>CORRISPETTIVO PER ISTRUZIONE PRATICA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR MANAGEMENT ORDER</masterLabel>
+            <translation>CORRISPETTIVO PER GESTIONE ORDINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR PORT GOOD / VOUCHER</masterLabel>
+            <translation>CORRISPETTIVO PER PORTA BUONI / VOUCHER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR PRACTICE EDUCATION RETURNS</masterLabel>
+            <translation>CORRISPETTIVO PER ISTRUZIONE PRATICA RESI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR PRODUCTION CARDS</masterLabel>
+            <translation>CORRISPETTIVO PER PRODUZIONE CARTE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION FOR REISSUE</masterLabel>
+            <translation>CORRISPETTIVO PER RIEMISSIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSIDERATION PRODUCTION PERSONALIZED</masterLabel>
+            <translation>CORRISPETTIVO PRODUZIONE PERSONALIZZATA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEE FOR DELIVERY</masterLabel>
+            <translation>CORRISPETTIVO PER CONSEGNA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEE FOR DELIVERY replay</masterLabel>
+            <translation>CORRISPETTIVO PER RIESECUZIONE CONSEGNA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORAGE FEE</masterLabel>
+            <translation>CORRISPETTIVO GIACENZA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>URGENT CONSIDERATION PRODUCTION</masterLabel>
+            <translation>CORRISPETTIVO PRODUZIONE URGENTE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel>Additional Expenses</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Progressivo</label>
+        <name>IT_Progressive__c</name>
+    </fields>
+    <fields>
+        <help><!-- The service does correspond to the financial center service --></help>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>IT_Additional_Expenses_PL</layout>
+        <sections>
+
+            <label><!-- Type --></label>
+            <section>Type</section>
+        </sections>
+
+    </layouts>
+
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If calculation type is fixed, the amount cannot be zero --></errorMessage>
+        <name>VRIT01_Calculation_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The service does not correspond to the financial center service --></errorMessage>
+        <name>VRIT02_Service</name>
+    </validationRules>
+</CustomObjectTranslation>

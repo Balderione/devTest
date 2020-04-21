@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/4c1d9e0f-5c27-4228-a35a-de7b4083ff7b/</issuer>
+    <loginUrl>https://login.microsoftonline.com/4c1d9e0f-5c27-4228-a35a-de7b4083ff7b/saml2</loginUrl>
+    <logoutUrl>https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0</logoutUrl>
+    <name>sts</name>
+    <oauthTokenEndpoint>https://er-italy--uat.my.salesforce.com/services/oauth2/token?so=00D1w0000008fzf</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11w0000000Ov9</requestSigningCertId>
+    <salesforceLoginUrl>https://er-italy--uat.my.salesforce.com?so=00D1w0000008fzf</salesforceLoginUrl>
+    <samlEntityId>https://er-italy--uat.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.microsoftonline.com/4c1d9e0f-5c27-4228-a35a-de7b4083ff7b/saml2</singleLogoutUrl>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQOsiZKu3GzJxESsViDaH9azANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0xOTEwMTExMjM4MDZaFw0yMjEwMTExMjM4MDZaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Abh0viF0Iv1P5REu4btXD044EEQp80pwliuL4LJQ5OTyGvQmAXT6BbdPNfO3Po/lFnXX0gdsZ2j5ORhtrkhRL7mChazYjbeD3SRYfiztGjOSGAsoccHZP7GSpphPHn4+xLZoYjhSLxu+LfpC4ZNN3XRPWX3Ytsc0Y3OJs1Pd2QZfkFWJzriUO6LqQ3UHC9xm9wxuY+2zJPUpWHkc6IBoHSgQ4aLHnuouFEmYi/On2cvZcfRnC3qsdX/3WnbExEOg/4b0aVUOzcTzbQd7QFLk95tE4kz21HCGHHbGg0bVd9IloeTd6IO5OfpAY9CNXc+czjBmv7Mo/LnfC/Bd2RAEwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQClzfSj31yKWtNOks1N02OLdf3kVTBPAOw3u2hUKBFIL/ugBK43kW8L7wEoJw8aSADPTsRWANy6tOo7gcrtGunX7zyz/7scYgA2deNfn7vH5czmfw9ggEmPk/iPNTB9acUOk5QSKj5gbRIwSIEm8vAzImvO8bYiqOmvSAsem7hQ3nSXto2eqNDlsLoUpc3ROR4F25yMemlQL50WYvwCy2Je7gy9wibaIW28jl/JMChr5GGmQafTapp8Xv6k8FPikswzqtgmMiCzzfxjt0ct5XNVUxj8yY6BM5+MVlNpj2+iM/+x8hXCNHAw8DR6xaele44Pmmlk3Hv1iOEa8q0+x04p</validationCert>
+</SamlSsoConfig>

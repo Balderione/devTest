@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Status --></label>
+        <name>ER_Contract_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>ER_Contract__c</name>
+        <relationshipLabel><!-- Contract Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Creation date in OS --></label>
+        <name>ER_Creation_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Description --></label>
+        <name>ER_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>ER_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>ER_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>ER_IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last date of Sync --></label>
+        <name>ER_Last_date_of_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Number --></label>
+        <name>ER_LineNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Price --></label>
+        <name>ER_ListPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Fee --></label>
+        <name>ER_Minimum_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Approval ? --></label>
+        <name>ER_NeedApproval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage --></label>
+        <name>ER_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Book Entry ID --></label>
+        <name>ER_PricebookEntryId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Service --></label>
+        <name>ER_Product2__c</name>
+        <relationshipLabel><!-- Contract Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>ER_ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>ER_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>ER_Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Price --></label>
+        <name>ER_UnitPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Exception --></label>
+        <name>IT_Activity_Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Row display --></label>
+        <name>IT_Address_Row_display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Display --></label>
+        <name>IT_Amount_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>IT_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Association Font Type --></label>
+        <name>IT_Business_Association_Font_Type__c</name>
+        <picklistValues>
+            <masterLabel>FONT 2</masterLabel>
+            <translation><!-- FONT 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 3</masterLabel>
+            <translation><!-- FONT 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 4</masterLabel>
+            <translation><!-- FONT 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 5</masterLabel>
+            <translation><!-- FONT 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 6</masterLabel>
+            <translation><!-- FONT 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 7</masterLabel>
+            <translation><!-- FONT 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 8</masterLabel>
+            <translation><!-- FONT 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FONT 9</masterLabel>
+            <translation><!-- FONT 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Association Logo Code --></label>
+        <name>IT_Business_Association_Logo_Code__c</name>
+        <picklistValues>
+            <masterLabel>BREAK TIME</masterLabel>
+            <translation><!-- BREAK TIME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOGO WITH LOVE BIG</masterLabel>
+            <translation><!-- LOGO WITH LOVE BIG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNCH</masterLabel>
+            <translation><!-- LUNCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEAL TICKET</masterLabel>
+            <translation><!-- MEAL TICKET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEAL TICKET SERVICE DAY</masterLabel>
+            <translation><!-- MEAL TICKET SERVICE DAY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Association Logo Type --></label>
+        <name>IT_Business_Association_Logo_Type__c</name>
+        <picklistValues>
+            <masterLabel>LOGO ON COVER</masterLabel>
+            <translation><!-- LOGO ON COVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOGO ON COVER AND TICKET</masterLabel>
+            <translation><!-- LOGO ON COVER AND TICKET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOGO ON TICKET</masterLabel>
+            <translation><!-- LOGO ON TICKET --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>IT_Card_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data on Address Row --></label>
+        <name>IT_Data_on_Address_Row__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Active Name --></label>
+        <name>IT_Display_Active_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Address --></label>
+        <name>IT_Display_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Locale --></label>
+        <name>IT_Display_Locale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emitted Ticket Copies Number --></label>
+        <name>IT_Emitted_Ticket_Copies_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Envelope --></label>
+        <name>IT_Envelope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Request --></label>
+        <name>IT_Feedback_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Type --></label>
+        <name>IT_Feedback_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Sending Authorization --></label>
+        <name>IT_File_Sending_Authorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Contract Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Font Type --></label>
+        <name>IT_Font_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Front and Back Printout --></label>
+        <name>IT_Front_and_Back_Printout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Contract Line Item --></label>
+        <name>IT_Future_Change_Contract_Line_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Background Back --></label>
+        <name>IT_Graphic_Background_Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Background Front --></label>
+        <name>IT_Graphic_Background_Front__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Layer Back --></label>
+        <name>IT_Graphic_Layer_Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Layer Front --></label>
+        <name>IT_Graphic_Layer_Front__c</name>
+    </fields>
+    <fields>
+        <label><!-- Itinerant Client --></label>
+        <name>IT_Itinerant_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logo Code --></label>
+        <name>IT_Logo_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logo Type --></label>
+        <name>IT_Logo_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Ads --></label>
+        <name>IT_No_Ads__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Insert --></label>
+        <name>IT_No_Insert__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Logo --></label>
+        <name>IT_No_Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Frequence Type --></label>
+        <name>IT_Order_Frequence_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Receipts Type --></label>
+        <name>IT_Order_Receipts_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printout/Employee Copies Number --></label>
+        <name>IT_Printout_Employee_Copies_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>IT_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Series Emission --></label>
+        <name>IT_Single_Series_Emission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Orders --></label>
+        <name>IT_Stock_Orders__c</name>
+        <picklistValues>
+            <masterLabel>CUSTOMER IS NOT A STOCK</masterLabel>
+            <translation><!-- CUSTOMER IS NOT A STOCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMER ORDER WITH EITHER TRADITIONAL FROM STOCK</masterLabel>
+            <translation><!-- CUSTOMER ORDER WITH EITHER TRADITIONAL FROM STOCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUMMY FOR CUSTOMER ORDER STOCK</masterLabel>
+            <translation><!-- DUMMY FOR CUSTOMER ORDER STOCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITH ONLY A CUSTOMER ORDER STOCK</masterLabel>
+            <translation><!-- WITH ONLY A CUSTOMER ORDER STOCK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Data Progressive --></label>
+        <name>IT_Technical_Data_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Display --></label>
+        <name>IT_Ticket_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Return Request --></label>
+        <name>IT_Ticket_Return_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Type --></label>
+        <name>IT_Ticket_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Value --></label>
+        <name>IT_Ticket_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date --></label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date --></label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Enabling Level --></label>
+        <name>IT_Web_Enabling_Level__c</name>
+    </fields>
+    <layouts>
+        <layout>Contract Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Contract Line Item PL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Display Information --></label>
+            <section>Display Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Graphic Information --></label>
+            <section>Graphic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Options --></label>
+            <section>Options</section>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <section>Orders</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ticket Value --></label>
+            <section>Ticket Value</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Technical Data --></label>
+        <name>IT_Technical_Data</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot update this record. --></errorMessage>
+        <name>VRER01_BlockUpdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If ticket type equals &apos;GOOD COMPANY&apos; Ticket Display cannot be evaluated --></errorMessage>
+        <name>VRIT01_Ticket_Type_and_Ticket_Display</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the fields Display_Address and Address Row display are valued,
+the field Data on Address Row cannot be changed! --></errorMessage>
+        <name>VRIT02_Data_on_Address_Row</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If &apos;Service&apos; equals = COMPLIMENTS EXPERIENCE or COMPLIMENTS EXPERIENCE PROMO,the fields:
+Display Active Name, Display Address, Display Locale, Address Row display cannot be changed --></errorMessage>
+        <name>VRIT03_Service_and_Contract_Line_Item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s impossible to modify Technical Data if there are existing future change! --></errorMessage>
+        <name>VRIT04_Future_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Locality management must not be managed by Clean Way and Ticket Service&apos;s client! --></errorMessage>
+        <name>VRIT05_Locality_CleanWay_TicketService</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Single Series Emission must be true for this type of service (Clean Way)! --></errorMessage>
+        <name>VRIT06_CleanWay_SingleSeriesEmission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This type of service requires that &quot;Single Series Emission&quot; field is set only if the product is a Custom Carnet! --></errorMessage>
+        <name>VRIT07_Service_SingleSeriesEmission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ticket Type must be &apos;GOOD MEAL&apos; if  Ticket Display equals true --></errorMessage>
+        <name>VRIT08_Ticket_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Insert Order Receipts Type! --></errorMessage>
+        <name>VRIT09_Order_Receipts_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stock Orders cannot be modified for the Service Type --></errorMessage>
+        <name>VRIT10_Stock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Emitted Ticket Copies Number cannot be modified for the Service Type --></errorMessage>
+        <name>VRIT11_Ticket</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT12_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify fields for this client status! --></errorMessage>
+        <name>VRIT13_Status_Based_Change_Block</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funding Source</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funding Sources</value>
+    </caseValues>
+    <fields>
+        <label><!-- Beneficiaries Member --></label>
+        <name>IT_Beneficiaries_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiaries --></label>
+        <name>IT_Beneficiaries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cessation Residue Management --></label>
+        <name>IT_Cessation_Residue_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Amount --></label>
+        <name>IT_Effective_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Plan Residue Management --></label>
+        <name>IT_End_Plan_Residue_Management__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the incentive in euros --></help>
+        <label><!-- Incentive for Membership --></label>
+        <name>IT_Incentive_for_Membership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loaded Cash/Welfare Amounts --></label>
+        <name>IT_Loaded_Cash_Welfare_Amounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>IT_Membership_Choice_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>IT_Membership_Choice_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify any packages provided for the agreement --></help>
+        <label><!-- Membership Payment Type Notes --></label>
+        <name>IT_Membership_Payment_Type_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Payment Type --></label>
+        <name>IT_Membership_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Free amount</masterLabel>
+            <translation><!-- Free amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages amount</masterLabel>
+            <translation><!-- Packages amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages percentage</masterLabel>
+            <translation><!-- Packages percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Entries Introduction --></label>
+        <name>IT_New_Entries_Introduction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per-capita Amount --></label>
+        <name>IT_Per_capita_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>IT_Plan__c</name>
+        <relationshipLabel><!-- Funding Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Platform Choice --></label>
+        <name>IT_Platform_Choice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Amount --></label>
+        <name>IT_Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate of accession --></label>
+        <name>IT_Rate_of_accession__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bound</masterLabel>
+            <translation><!-- Bound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCNL</masterLabel>
+            <translation><!-- CCNL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive</masterLabel>
+            <translation><!-- Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberality</masterLabel>
+            <translation><!-- Liberality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDR</masterLabel>
+            <translation><!-- PDR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate the incentive in percentual --></help>
+        <label><!-- Incentive for Membership percentage --></label>
+        <name>Incentive_for_Membership_percentage__c</name>
+    </fields>
+    <layouts>
+        <layout>IT_Funding_Source_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Entrances and Terminations --></label>
+            <section>Entrances and Terminations</section>
+        </sections>
+        <sections>
+            <label><!-- Membership Choice (only for PDR) --></label>
+            <section>Membership Choice (only for PDR)</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Funding Source&apos;s dates must be included in Plan&apos;s dates --></errorMessage>
+        <name>VRIT01_Funding_Plan_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Membership Choice End Date must be after Membership Choice Start Date! --></errorMessage>
+        <name>VRIT02_Funding_Start_and_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Beneficiaries member cannot be more than Beneficiaries! --></errorMessage>
+        <name>VRIT03_Beneficiaries</name>
+    </validationRules>
+</CustomObjectTranslation>

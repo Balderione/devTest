@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>104</fullName>
+        <default>false</default>
+        <label>ASL</label>
+    </customValue>
+    <customValue>
+        <fullName>107</fullName>
+        <default>false</default>
+        <label>CHAMBER OF COMMERCE</label>
+    </customValue>
+    <customValue>
+        <fullName>100</fullName>
+        <default>false</default>
+        <label>COMMON</label>
+    </customValue>
+    <customValue>
+        <fullName>103</fullName>
+        <default>false</default>
+        <label>MINISTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>106</fullName>
+        <default>false</default>
+        <label>NOT ENCODED</label>
+    </customValue>
+    <customValue>
+        <fullName>101</fullName>
+        <default>false</default>
+        <label>PROVINCES</label>
+    </customValue>
+    <customValue>
+        <fullName>102</fullName>
+        <default>false</default>
+        <label>REGIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>55</fullName>
+        <default>false</default>
+        <label>ACCOMMODATION</label>
+    </customValue>
+    <customValue>
+        <fullName>08</fullName>
+        <default>false</default>
+        <label>OTHER ACTIVITIES OF MINING TO CAVE AND MINES</label>
+    </customValue>
+    <customValue>
+        <fullName>96</fullName>
+        <default>false</default>
+        <label>OTHER ACTIVITIES OF THE PERSON FOR SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>74</fullName>
+        <default>false</default>
+        <label>OTHER PROFESSIONAL, SCIENTIFIC AND TECHNICAL</label>
+    </customValue>
+    <customValue>
+        <fullName>32</fullName>
+        <default>false</default>
+        <label>OTHER MANUFACTURING</label>
+    </customValue>
+    <customValue>
+        <fullName>84</fullName>
+        <default>false</default>
+        <label>PUBLIC ADMINISTRATION AND DEFENSE; COMPULSORY SOCIAL OBB.</label>
+    </customValue>
+    <customValue>
+        <fullName>65</fullName>
+        <default>false</default>
+        <label>INSURANCE, BOARD RIASSICURAZ.FONDI (NO ASSIC.SOC.OBBL)</label>
+    </customValue>
+    <customValue>
+        <fullName>86</fullName>
+        <default>false</default>
+        <label>HEALTH CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>88</fullName>
+        <default>false</default>
+        <label>SOCIAL NON-RESIDENTIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>66</fullName>
+        <default>false</default>
+        <label>ACTIVITIES AUXILIARY TO FINANCIAL SERVICES AND ACTIVITIES ASSICU</label>
+    </customValue>
+    <customValue>
+        <fullName>90</fullName>
+        <default>false</default>
+        <label>CREATIVE ACTIVITIES, ARTS AND ENTERTAINMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>56</fullName>
+        <default>false</default>
+        <label>ACTIVITIES OF CATERING SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>09</fullName>
+        <default>false</default>
+        <label>ACTIVITIES OF EXTRACTION OF SUPPORT SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>63</fullName>
+        <default>false</default>
+        <label>ACTIVITIES OF INFORMATION SERVICES OTHER SERVICES INFORMATIC</label>
+    </customValue>
+    <customValue>
+        <fullName>91</fullName>
+        <default>false</default>
+        <label>ACTIVITIES OF LIBRARIES, ARCHIVES, MUSEUMS AND OTHER ACTIVITIES CULT</label>
+    </customValue>
+    <customValue>
+        <fullName>70</fullName>
+        <default>false</default>
+        <label>CORPORATE MANAGEMENT AND MANAGEMENT CONSULTANCY</label>
+    </customValue>
+    <customValue>
+        <fullName>77</fullName>
+        <default>false</default>
+        <label>RENTAL AND LEASING OPERATING ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>94</fullName>
+        <default>false</default>
+        <label>ACTIVITIES OF MEMBERSHIP ORGANIZATION</label>
+    </customValue>
+    <customValue>
+        <fullName>60</fullName>
+        <default>false</default>
+        <label>PROGRAM ACTIVITIES AND TRANSMISSION</label>
+    </customValue>
+    <customValue>
+        <fullName>78</fullName>
+        <default>false</default>
+        <label>RESEARCH, SELECTION, PROVISION OF PERSONNEL</label>
+    </customValue>
+    <customValue>
+        <fullName>39</fullName>
+        <default>false</default>
+        <label>REHABILITATION ACTIVITIES AND OTHER WASTE MANAGEMENT SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>81</fullName>
+        <default>false</default>
+        <label>SERVICE OPERATIONS FOR BUILDINGS AND LANDSCAPE</label>
+    </customValue>
+    <customValue>
+        <fullName>58</fullName>
+        <default>false</default>
+        <label>PUBLISHING ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>97</fullName>
+        <default>false</default>
+        <label>FAMILY ACTIVITIES, UNDIFFERENTIATED HOW TO WORK FOR EMPLOYERS PERS.DOM</label>
+    </customValue>
+    <customValue>
+        <fullName>68</fullName>
+        <default>false</default>
+        <label>REAL ESTATE ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>69</fullName>
+        <default>false</default>
+        <label>LEGAL AND ACCOUNTING ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>92</fullName>
+        <default>false</default>
+        <label>ACTIVITIES REGARDING THE LOTTERIES, BETTING, GAMING CASE</label>
+    </customValue>
+    <customValue>
+        <fullName>79</fullName>
+        <default>false</default>
+        <label>BUSINESS SERVICES TRAVEL AGENCIES, TOUR OPERATORS, SERV.PRENOT</label>
+    </customValue>
+    <customValue>
+        <fullName>64</fullName>
+        <default>false</default>
+        <label>BUSINESS FINANCIAL SERVICES (NO Assicuraz. AND PENSION FUNDS)</label>
+    </customValue>
+    <customValue>
+        <fullName>93</fullName>
+        <default>false</default>
+        <label>SPORTS, ENTERTAINMENT AND RECREATION</label>
+    </customValue>
+    <customValue>
+        <fullName>71</fullName>
+        <default>false</default>
+        <label>BUSINESS STUDIES ARCHITECTURE AND ENGINEERING, TESTING ANAL.TEC</label>
+    </customValue>
+    <customValue>
+        <fullName>38</fullName>
+        <default>false</default>
+        <label>ATTIV.RACCOLTA, PROCESSING WASTE DISPOSAL, RECOVERY MATE</label>
+    </customValue>
+    <customValue>
+        <fullName>82</fullName>
+        <default>false</default>
+        <label>ATTIV.SUPPORTO FOR OFFICE FUNCTIONS, SERVICES SUPP.IMP</label>
+    </customValue>
+    <customValue>
+        <fullName>59</fullName>
+        <default>false</default>
+        <label>ATT.PROD.CINEMATOGRAFICA, VIDEO, PROGR.TELEV.REGISTR.MUSIC.SON</label>
+    </customValue>
+    <customValue>
+        <fullName>01</fullName>
+        <default>false</default>
+        <label>COLT.AGRICOLE AND PROD. ANIMAL PRODUCTS, HUNTING, SERV.CONNESSI</label>
+    </customValue>
+    <customValue>
+        <fullName>47</fullName>
+        <default>false</default>
+        <label>RETAIL TRADE (EXCEPT FOR MOTOR VEHICLES AND MOTORCYCLES)</label>
+    </customValue>
+    <customValue>
+        <fullName>45</fullName>
+        <default>false</default>
+        <label>WHOLESALE AND RETAIL TRADE AND REPAIR OF AUTOV.MOTOCI</label>
+    </customValue>
+    <customValue>
+        <fullName>46</fullName>
+        <default>false</default>
+        <label>WHOLESALE TRADE (EXCEPT OF MOTOR VEHICLES AND MOTORCYCLES)</label>
+    </customValue>
+    <customValue>
+        <fullName>14</fullName>
+        <default>false</default>
+        <label>CONFEZ.ARTICOLI CLOTHING; CONFEZ.ARTIC. LEATHER, FUR</label>
+    </customValue>
+    <customValue>
+        <fullName>41</fullName>
+        <default>false</default>
+        <label>BUILDING CONSTRUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>05</fullName>
+        <default>false</default>
+        <label>COAL MINING (EXCLUDING PEAT)</label>
+    </customValue>
+    <customValue>
+        <fullName>07</fullName>
+        <default>false</default>
+        <label>METALLIC MINERALS MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>06</fullName>
+        <default>false</default>
+        <label>EXTRACTION OF CRUDE PETROLEUM AND NATURAL GAS</label>
+    </customValue>
+    <customValue>
+        <fullName>27</fullName>
+        <default>false</default>
+        <label>FAB.APPAREC. ELECTRIC UNIT. DOMESTIC NO ELECTRIC</label>
+    </customValue>
+    <customValue>
+        <fullName>23</fullName>
+        <default>false</default>
+        <label>MANUFACTURING OTHER PRODUCTS MINERAL PROCESSING NOT METALL</label>
+    </customValue>
+    <customValue>
+        <fullName>30</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF OTHER TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>22</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF RUBBER AND PLASTIC</label>
+    </customValue>
+    <customValue>
+        <fullName>15</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF LEATHER AND THE LIKE</label>
+    </customValue>
+    <customValue>
+        <fullName>29</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF MOTOR VEHICLES, TRAILERS</label>
+    </customValue>
+    <customValue>
+        <fullName>17</fullName>
+        <default>false</default>
+        <label>PAPER MANUFACTURING AND PAPER PRODUCTS</label>
+    </customValue>
+    <customValue>
+        <fullName>19</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF COKE AND REVENUE FROM RAFF.PETROLIO</label>
+    </customValue>
+    <customValue>
+        <fullName>28</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF MACHINERY AND EQUIPMENT NEC</label>
+    </customValue>
+    <customValue>
+        <fullName>31</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF FURNITURE</label>
+    </customValue>
+    <customValue>
+        <fullName>20</fullName>
+        <default>false</default>
+        <label>MANUFACTURE OF CHEMICALS</label>
+    </customValue>
+    <customValue>
+        <fullName>21</fullName>
+        <default>false</default>
+        <label>MANUFACTURING PHARMACEUTICAL PRODUCTS BASIC AND PREPARATIONS FARM</label>
+    </customValue>
+    <customValue>
+        <fullName>25</fullName>
+        <default>false</default>
+        <label>MAKING METAL PRODUCTS (NO machinery and equipment;</label>
+    </customValue>
+    <customValue>
+        <fullName>26</fullName>
+        <default>false</default>
+        <label>FAB.COMPUTER, PROD.ELETTRONICA, OPTICAL, APPAR.ELETTROMEDICALI</label>
+    </customValue>
+    <customValue>
+        <fullName>35</fullName>
+        <default>false</default>
+        <label>ELECTRICITY, GAS, STEAM, AIR Conditioners</label>
+    </customValue>
+    <customValue>
+        <fullName>37</fullName>
+        <default>false</default>
+        <label>MANAGEMENT OF SEWAGE NETWORKS</label>
+    </customValue>
+    <customValue>
+        <fullName>16</fullName>
+        <default>false</default>
+        <label>IND.LEGNO, PROD.IN WOOD AND CORK (NO FURNITURE); FABB.ART.PAGLIA</label>
+    </customValue>
+    <customValue>
+        <fullName>12</fullName>
+        <default>false</default>
+        <label>TOBACCO INDUSTRY</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>BEVERAGE INDUSTRY</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>FOOD INDUSTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>13</fullName>
+        <default>false</default>
+        <label>TEXTILE INDUSTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>42</fullName>
+        <default>false</default>
+        <label>CIVIL ENGINEERING</label>
+    </customValue>
+    <customValue>
+        <fullName>85</fullName>
+        <default>false</default>
+        <label>INSTRUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>43</fullName>
+        <default>false</default>
+        <label>SPECIALIZED CONSTRUCTION WORK</label>
+    </customValue>
+    <customValue>
+        <fullName>52</fullName>
+        <default>false</default>
+        <label>WAREHOUSING AND SUPPORT ACTIVITIES TO TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>24</fullName>
+        <default>false</default>
+        <label>METALLURGY</label>
+    </customValue>
+    <customValue>
+        <fullName>99</fullName>
+        <default>false</default>
+        <label>EXTRATERRITORIAL ORGANIZATIONS AND BODIES</label>
+    </customValue>
+    <customValue>
+        <fullName>03</fullName>
+        <default>false</default>
+        <label>FISHERIES AND AQUACULTURE</label>
+    </customValue>
+    <customValue>
+        <fullName>98</fullName>
+        <default>false</default>
+        <label>PROD.BENI AND SERVICES UNDIFFERENTIATED OWN USE FAM.CONV.</label>
+    </customValue>
+    <customValue>
+        <fullName>62</fullName>
+        <default>false</default>
+        <label>PRODUCTION SOFTWARE, CONSULTING RELATED ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>73</fullName>
+        <default>false</default>
+        <label>ADVERTISING AND MARKET RESEARCH</label>
+    </customValue>
+    <customValue>
+        <fullName>36</fullName>
+        <default>false</default>
+        <label>COLLECTION, TREATMENT AND WATER SUPPLY</label>
+    </customValue>
+    <customValue>
+        <fullName>72</fullName>
+        <default>false</default>
+        <label>RESEARCH AND DEVELOPMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>95</fullName>
+        <default>false</default>
+        <label>REPAIR AND GOODS FOR THE PERSONAL AND HOUSEHOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>33</fullName>
+        <default>false</default>
+        <label>REPAIR, MAINTENANCE AND INSTALLATION MACHINES MACHINE</label>
+    </customValue>
+    <customValue>
+        <fullName>87</fullName>
+        <default>false</default>
+        <label>SERVICES OF SOCIAL RESIDENTIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>80</fullName>
+        <default>false</default>
+        <label>REGULATORY SERVICES AND INVESTIGATION</label>
+    </customValue>
+    <customValue>
+        <fullName>53</fullName>
+        <default>false</default>
+        <label>POSTAL AND COURIER ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>75</fullName>
+        <default>false</default>
+        <label>VETERINARY SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>02</fullName>
+        <default>false</default>
+        <label>FORESTRY AND USE OF LOGGING</label>
+    </customValue>
+    <customValue>
+        <fullName>18</fullName>
+        <default>false</default>
+        <label>PRINTING AND REPRODUCTION OF RECORDED MEDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>61</fullName>
+        <default>false</default>
+        <label>TELECOMMUNICATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>51</fullName>
+        <default>false</default>
+        <label>AIRPLANE TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>50</fullName>
+        <default>false</default>
+        <label>MARITIME TRANSPORT AND WATERWAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>49</fullName>
+        <default>false</default>
+        <label>LAND TRANSPORT AND TRANSPORT BY PIPELINE</label>
+    </customValue>
+    <customValue>
+        <fullName>105</fullName>
+        <default>false</default>
+        <label>UNIVERSIT</label>
+    </customValue>
+    <customValue>
+        <fullName>15I</fullName>
+        <default>false</default>
+        <label>TRAVEL AGENCIES</label>
+    </customValue>
+    <customValue>
+        <fullName>15L</fullName>
+        <default>false</default>
+        <label>CLEANING COMPANIES AND SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>15M</fullName>
+        <default>false</default>
+        <label>OTHER SERVICES FOR COMPANIES</label>
+    </customValue>
+    <customValue>
+        <fullName>15N</fullName>
+        <default>false</default>
+        <label>COMMERCIAL SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>15P</fullName>
+        <default>false</default>
+        <label>TRAINING, EDUCATION AND TRAINING</label>
+    </customValue>
+    <customValue>
+        <fullName>16A</fullName>
+        <default>false</default>
+        <label>LUDIC ACTIVITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>16B</fullName>
+        <default>false</default>
+        <label>MINISTRIES (16B)</label>
+    </customValue>
+    <customValue>
+        <fullName>16C</fullName>
+        <default>false</default>
+        <label>POLICE</label>
+    </customValue>
+    <customValue>
+        <fullName>16D</fullName>
+        <default>false</default>
+        <label>ALL OTHER MILITARY</label>
+    </customValue>
+    <customValue>
+        <fullName>171</fullName>
+        <default>false</default>
+        <label>PROFESSIONAL ASSOCIATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>172</fullName>
+        <default>false</default>
+        <label>THEATERS</label>
+    </customValue>
+    <customValue>
+        <fullName>173</fullName>
+        <default>false</default>
+        <label>RAI</label>
+    </customValue>
+    <customValue>
+        <fullName>174</fullName>
+        <default>false</default>
+        <label>POST AND TELECOMMUNICATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>17A</fullName>
+        <default>false</default>
+        <label>REGIONS (17A)</label>
+    </customValue>
+    <customValue>
+        <fullName>17B</fullName>
+        <default>false</default>
+        <label>PROVINCES (17B)</label>
+    </customValue>
+    <customValue>
+        <fullName>17C</fullName>
+        <default>false</default>
+        <label>COMMON (17C)</label>
+    </customValue>
+    <customValue>
+        <fullName>17D</fullName>
+        <default>false</default>
+        <label>MOUNTAIN COMMUNITIES</label>
+    </customValue>
+    <customValue>
+        <fullName>17E</fullName>
+        <default>false</default>
+        <label>IACP / ALER</label>
+    </customValue>
+    <customValue>
+        <fullName>17F</fullName>
+        <default>false</default>
+        <label>CHAMBERS OF COMMERCE (17F)</label>
+    </customValue>
+    <customValue>
+        <fullName>17G</fullName>
+        <default>false</default>
+        <label>PROMOTION OF TOURIST ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>17H</fullName>
+        <default>false</default>
+        <label>MUNICIPAL ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>17I</fullName>
+        <default>false</default>
+        <label>PORT AUTHORITY</label>
+    </customValue>
+    <customValue>
+        <fullName>17J</fullName>
+        <default>false</default>
+        <label>LOCAL ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>17K</fullName>
+        <default>false</default>
+        <label>PUBLIC SCHOOLS OF EVERY ORDER AND GRADE, canteens</label>
+    </customValue>
+    <customValue>
+        <fullName>17L</fullName>
+        <default>false</default>
+        <label>UNIVERSITY</label>
+    </customValue>
+    <customValue>
+        <fullName>17M</fullName>
+        <default>false</default>
+        <label>ISU</label>
+    </customValue>
+    <customValue>
+        <fullName>17N</fullName>
+        <default>false</default>
+        <label>INAIL</label>
+    </customValue>
+    <customValue>
+        <fullName>17O</fullName>
+        <default>false</default>
+        <label>INPS</label>
+    </customValue>
+    <customValue>
+        <fullName>17P</fullName>
+        <default>false</default>
+        <label>CNR</label>
+    </customValue>
+    <customValue>
+        <fullName>17Q</fullName>
+        <default>false</default>
+        <label>ASL (17Q)</label>
+    </customValue>
+    <customValue>
+        <fullName>17R</fullName>
+        <default>false</default>
+        <label>HOSPITAL (PUBLIC)</label>
+    </customValue>
+    <customValue>
+        <fullName>17S</fullName>
+        <default>false</default>
+        <label>PARKS</label>
+    </customValue>
+    <customValue>
+        <fullName>17T</fullName>
+        <default>false</default>
+        <label>FAIR BOARD</label>
+    </customValue>
+    <customValue>
+        <fullName>17U</fullName>
+        <default>false</default>
+        <label>ENVIRONMENTAL PUBLIC ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>17V</fullName>
+        <default>false</default>
+        <label>ENERGY PUBLIC ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>17W</fullName>
+        <default>false</default>
+        <label>A.C.I.</label>
+    </customValue>
+    <customValue>
+        <fullName>17X</fullName>
+        <default>false</default>
+        <label>PUBLIC RETIREMENT HOMES</label>
+    </customValue>
+    <customValue>
+        <fullName>17Y</fullName>
+        <default>false</default>
+        <label>C.R.I.</label>
+    </customValue>
+    <customValue>
+        <fullName>17Z</fullName>
+        <default>false</default>
+        <label>ENTERPRISES PUBLIC TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>999</fullName>
+        <default>false</default>
+        <label>CODE AREA EXIST</label>
+    </customValue>
+    <customValue>
+        <fullName>01A</fullName>
+        <default>false</default>
+        <label>FOOD AND TOBACCO</label>
+    </customValue>
+    <customValue>
+        <fullName>01B</fullName>
+        <default>false</default>
+        <label>DRINKS</label>
+    </customValue>
+    <customValue>
+        <fullName>01C</fullName>
+        <default>false</default>
+        <label>HORTICULTURE</label>
+    </customValue>
+    <customValue>
+        <fullName>02A</fullName>
+        <default>false</default>
+        <label>FABRICS YARN, CARPETS AND CURTAINS</label>
+    </customValue>
+    <customValue>
+        <fullName>02B</fullName>
+        <default>false</default>
+        <label>CLOTHING, CLOTHING, CLOTHES, FASHION ACCESSORIES</label>
+    </customValue>
+    <customValue>
+        <fullName>02C</fullName>
+        <default>false</default>
+        <label>LEATHER, SKINS AND THEIR PRODUCTS</label>
+    </customValue>
+    <customValue>
+        <fullName>03A</fullName>
+        <default>false</default>
+        <label>CORK AND WOOD PRODUCTS</label>
+    </customValue>
+    <customValue>
+        <fullName>03B</fullName>
+        <default>false</default>
+        <label>FURNITURE AND FURNISHINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>04A</fullName>
+        <default>false</default>
+        <label>ARTICLES OF PAPER AND CARDBOARD</label>
+    </customValue>
+    <customValue>
+        <fullName>04B</fullName>
+        <default>false</default>
+        <label>STATIONERY ITEMS</label>
+    </customValue>
+    <customValue>
+        <fullName>05A</fullName>
+        <default>false</default>
+        <label>ORGANIC CHEMICALS AND INORGANIC</label>
+    </customValue>
+    <customValue>
+        <fullName>05B</fullName>
+        <default>false</default>
+        <label>PHARMACEUTICALS AND Paraharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>05C</fullName>
+        <default>false</default>
+        <label>PRODUCTS FROM PETROLEUM REFINING</label>
+    </customValue>
+    <customValue>
+        <fullName>05D</fullName>
+        <default>false</default>
+        <label>COSMETICS, PERFUMES, SOAP AND DETERGENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>05E</fullName>
+        <default>false</default>
+        <label>PAINTS, VARNISHES, ENAMELS AND SOLVENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>05F</fullName>
+        <default>false</default>
+        <label>TIRES AND TUBES</label>
+    </customValue>
+    <customValue>
+        <fullName>05G</fullName>
+        <default>false</default>
+        <label>RUBBER AND PLASTIC</label>
+    </customValue>
+    <customValue>
+        <fullName>06A</fullName>
+        <default>false</default>
+        <label>PUBLIC WORKS</label>
+    </customValue>
+    <customValue>
+        <fullName>06B</fullName>
+        <default>false</default>
+        <label>CONSTRUCTION AND SERVICES AUXILIARY</label>
+    </customValue>
+    <customValue>
+        <fullName>06C</fullName>
+        <default>false</default>
+        <label>INSTALLATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>06D</fullName>
+        <default>false</default>
+        <label>HIGHWAYS MANAGEMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>06E</fullName>
+        <default>false</default>
+        <label>SERVICES SUBSIDIARY TO CONSTRUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>07A</fullName>
+        <default>false</default>
+        <label>MINES AND METALLIFEROUS METALLIFEROUS, CAVE</label>
+    </customValue>
+    <customValue>
+        <fullName>07B</fullName>
+        <default>false</default>
+        <label>AND SEMI-PRECIOUS STONES</label>
+    </customValue>
+    <customValue>
+        <fullName>07C</fullName>
+        <default>false</default>
+        <label>IRON AND STEEL PRODUCTS</label>
+    </customValue>
+    <customValue>
+        <fullName>07D</fullName>
+        <default>false</default>
+        <label>METAL PRODUCTS AND ARTICLES</label>
+    </customValue>
+    <customValue>
+        <fullName>07E</fullName>
+        <default>false</default>
+        <label>CONSTRUCTION MACHINERY AND EQUIPMENT INDUSTRY</label>
+    </customValue>
+    <customValue>
+        <fullName>07F</fullName>
+        <default>false</default>
+        <label>EQUIPMENT AND PRECISION TOOLS</label>
+    </customValue>
+    <customValue>
+        <fullName>07G</fullName>
+        <default>false</default>
+        <label>MECHANICAL CONSTRUCTION FOR THIRD PARTIES</label>
+    </customValue>
+    <customValue>
+        <fullName>07H</fullName>
+        <default>false</default>
+        <label>IMP. HYDRAULIC, PNEUMATIC, COMPRESSORS, AIR CONDITIONING</label>
+    </customValue>
+    <customValue>
+        <fullName>08A</fullName>
+        <default>false</default>
+        <label>EQUIPMENT AND PLANTS OF ELECTRICITY DISTRIBUTION</label>
+    </customValue>
+    <customValue>
+        <fullName>08B</fullName>
+        <default>false</default>
+        <label>TRANSFORMERS, BATTERY, BATTERIES AND BATTERY</label>
+    </customValue>
+    <customValue>
+        <fullName>08C</fullName>
+        <default>false</default>
+        <label>ELECTRICAL AND ELECTRONIC CONTROL</label>
+    </customValue>
+    <customValue>
+        <fullName>08D</fullName>
+        <default>false</default>
+        <label>LIGHTING EQUIPMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>08E</fullName>
+        <default>false</default>
+        <label>DOMESTIC APPLIANCES</label>
+    </customValue>
+    <customValue>
+        <fullName>08F</fullName>
+        <default>false</default>
+        <label>SYSTEMS AND EQUIPMENT FOR COMPUTER</label>
+    </customValue>
+    <customValue>
+        <fullName>08G</fullName>
+        <default>false</default>
+        <label>Computer engineering NUCLEAR INSTALLATIONS AND EQUIPMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>08H</fullName>
+        <default>false</default>
+        <label>SOLAR POWER PLANTS</label>
+    </customValue>
+    <customValue>
+        <fullName>09A</fullName>
+        <default>false</default>
+        <label>ASSOCIATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>09B</fullName>
+        <default>false</default>
+        <label>*** MUNICIPALITIES, COMMUNITY &apos;MONTANE</label>
+    </customValue>
+    <customValue>
+        <fullName>09C</fullName>
+        <default>false</default>
+        <label>Embassies, Consulates</label>
+    </customValue>
+    <customValue>
+        <fullName>09D</fullName>
+        <default>false</default>
+        <label>*** INAIL</label>
+    </customValue>
+    <customValue>
+        <fullName>09E</fullName>
+        <default>false</default>
+        <label>*** INPS</label>
+    </customValue>
+    <customValue>
+        <fullName>09F</fullName>
+        <default>false</default>
+        <label>*** IACP</label>
+    </customValue>
+    <customValue>
+        <fullName>09G</fullName>
+        <default>false</default>
+        <label>FEDERATIONS, ASSOCIATIONS, UNIONS, RELIGIOUS</label>
+    </customValue>
+    <customValue>
+        <fullName>09H</fullName>
+        <default>false</default>
+        <label>*** ENTERPRISES TOURISM PROMOTION</label>
+    </customValue>
+    <customValue>
+        <fullName>09I</fullName>
+        <default>false</default>
+        <label>STATE RAILWAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>09L</fullName>
+        <default>false</default>
+        <label>PRIVATE HOMES</label>
+    </customValue>
+    <customValue>
+        <fullName>09M</fullName>
+        <default>false</default>
+        <label>CLINICAL / PRIVATE HOSPITALS / NURSING HOMES</label>
+    </customValue>
+    <customValue>
+        <fullName>09N</fullName>
+        <default>false</default>
+        <label>SERVICES AND HEALTH SPECIALIST social welfare</label>
+    </customValue>
+    <customValue>
+        <fullName>09O</fullName>
+        <default>false</default>
+        <label>SCHOOLS, CENTERS FORM. PROFES., ISTIT.DIRITTO STUDIO</label>
+    </customValue>
+    <customValue>
+        <fullName>09P</fullName>
+        <default>false</default>
+        <label>**** MINISTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>10A</fullName>
+        <default>false</default>
+        <label>Lithographic printing, SCREEN PRINTS, ENGRAVINGS AND Fotoincisioni</label>
+    </customValue>
+    <customValue>
+        <fullName>10B</fullName>
+        <default>false</default>
+        <label>BINDING, BROSSURA, COPYING AND PRINTING</label>
+    </customValue>
+    <customValue>
+        <fullName>10C</fullName>
+        <default>false</default>
+        <label>PUBLISHERS AND RECORD</label>
+    </customValue>
+    <customValue>
+        <fullName>11A</fullName>
+        <default>false</default>
+        <label>SPORTS AND RECREATION</label>
+    </customValue>
+    <customValue>
+        <fullName>11B</fullName>
+        <default>false</default>
+        <label>BEACH SPORTS, CAMPING</label>
+    </customValue>
+    <customValue>
+        <fullName>11C</fullName>
+        <default>false</default>
+        <label>MUSICAL INSTRUMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>11D</fullName>
+        <default>false</default>
+        <label>CRAFTS</label>
+    </customValue>
+    <customValue>
+        <fullName>11E</fullName>
+        <default>false</default>
+        <label>FILM INDUSTRY AND RECORDINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>11F</fullName>
+        <default>false</default>
+        <label>THEATERS (11F)</label>
+    </customValue>
+    <customValue>
+        <fullName>11G</fullName>
+        <default>false</default>
+        <label>WATCHES, JEWELRY, JEWELRY</label>
+    </customValue>
+    <customValue>
+        <fullName>11H</fullName>
+        <default>false</default>
+        <label>PHOTOGRAPHIC EQUIPMENT AND MATERIALS</label>
+    </customValue>
+    <customValue>
+        <fullName>11I</fullName>
+        <default>false</default>
+        <label>OPTICAL INSTRUMENTS AND LENSES</label>
+    </customValue>
+    <customValue>
+        <fullName>11L</fullName>
+        <default>false</default>
+        <label>MEDICAL AND SURGICAL INSTRUMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>12A</fullName>
+        <default>false</default>
+        <label>TRANSPORTATION RAILWAY, LAND, SEA, AIR</label>
+    </customValue>
+    <customValue>
+        <fullName>12B</fullName>
+        <default>false</default>
+        <label>PUBLIC TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>12C</fullName>
+        <default>false</default>
+        <label>AIRLINE COMPANIES</label>
+    </customValue>
+    <customValue>
+        <fullName>12D</fullName>
+        <default>false</default>
+        <label>FORWARDING, FREIGHT</label>
+    </customValue>
+    <customValue>
+        <fullName>12E</fullName>
+        <default>false</default>
+        <label>SERVICES CONTACT EXPRESS, TAXI, CAR RENTALS</label>
+    </customValue>
+    <customValue>
+        <fullName>12F</fullName>
+        <default>false</default>
+        <label>SHIPYARDS, HARBORS AIRPORTS, BODY</label>
+    </customValue>
+    <customValue>
+        <fullName>12G</fullName>
+        <default>false</default>
+        <label>TELECOMMUNICATIONS, RADIO AND TELEVISION</label>
+    </customValue>
+    <customValue>
+        <fullName>13A</fullName>
+        <default>false</default>
+        <label>IMPORT / EXPORT, BROKERS</label>
+    </customValue>
+    <customValue>
+        <fullName>13B</fullName>
+        <default>false</default>
+        <label>DEPARTMENT STORES</label>
+    </customValue>
+    <customValue>
+        <fullName>13C</fullName>
+        <default>false</default>
+        <label>MAIL ORDER</label>
+    </customValue>
+    <customValue>
+        <fullName>13D</fullName>
+        <default>false</default>
+        <label>WHOLESALE AND DISTRIBUTION, CONSUMPTION Spirals</label>
+    </customValue>
+    <customValue>
+        <fullName>13E</fullName>
+        <default>false</default>
+        <label>COMM.E DISTRIB.PRODOT. INDUSTRY, OFFICES, BUILDING INDUSTRY, HEALTH CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>14A</fullName>
+        <default>false</default>
+        <label>BANKS AND CREDIT INSTITUTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>14B</fullName>
+        <default>false</default>
+        <label>COMPANIES &apos;FINANCIAL LEASING AND FACTORING</label>
+    </customValue>
+    <customValue>
+        <fullName>14C</fullName>
+        <default>false</default>
+        <label>INSURANCE COMPANIES</label>
+    </customValue>
+    <customValue>
+        <fullName>14D</fullName>
+        <default>false</default>
+        <label>REAL ESTATE</label>
+    </customValue>
+    <customValue>
+        <fullName>14E</fullName>
+        <default>false</default>
+        <label>PROFESSIONALS</label>
+    </customValue>
+    <customValue>
+        <fullName>14F</fullName>
+        <default>false</default>
+        <label>ORDERS AND PROFESSIONAL COLLEGES</label>
+    </customValue>
+    <customValue>
+        <fullName>14G</fullName>
+        <default>false</default>
+        <label>POLITICAL PARTIES</label>
+    </customValue>
+    <customValue>
+        <fullName>14H</fullName>
+        <default>false</default>
+        <label>PROFESSIONAL STUDIES</label>
+    </customValue>
+    <customValue>
+        <fullName>15A</fullName>
+        <default>false</default>
+        <label>MARKET RESEARCH, MARKETING, PUBLIC RELATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>15B</fullName>
+        <default>false</default>
+        <label>RESEARCH, SELECTION AND TRAINING OF PERSONNEL</label>
+    </customValue>
+    <customValue>
+        <fullName>15C</fullName>
+        <default>false</default>
+        <label>ADVERTISING AGENCIES &apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>15D</fullName>
+        <default>false</default>
+        <label>ORGANIZATIONS AND CONSULTING COMPANY, AUDITORS</label>
+    </customValue>
+    <customValue>
+        <fullName>15E</fullName>
+        <default>false</default>
+        <label>TECHNICAL SERVICES FOR COMPANIES, ENGINEERING</label>
+    </customValue>
+    <customValue>
+        <fullName>15F</fullName>
+        <default>false</default>
+        <label>SECURITY AND SURVEILLANCE SERVICES, PRIVATE INVESTIGATIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>15G</fullName>
+        <default>false</default>
+        <label>FAIRS, EVENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>15H</fullName>
+        <default>false</default>
+        <label>HOTELS, RESTAURANTS, RESTAURANTS, CONFERENCE CENTERS</label>
+    </customValue>
+    <masterLabel>IT Industry</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

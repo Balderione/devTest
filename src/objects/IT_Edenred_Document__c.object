@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>IT_Accepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Accepted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Financial_Center__r.ER_Account_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Company Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_CIG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CIG</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Documenti Richiesti</relationshipLabel>
+        <relationshipName>Documents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Discharge_already_carried_out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discharge already carried out</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Document_In_Out__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(TEXT( IT_Document_Origin__c ),
+&quot;In&quot;, &apos;               &apos;+IMAGE(&quot;/resource/1580719457000/InFinance&quot;,&quot;In&quot;,18,18) ,
+&quot;Out&quot;, IMAGE(&quot;/resource/1580719429000/OutFinance?&quot;,&quot;Out&quot;,18,18),
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Document In/Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Document_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Document_OUT__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Document OUT</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Documenti Prodotti</relationshipLabel>
+        <relationshipName>Documents1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Document_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Origin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In</fullName>
+                    <default>false</default>
+                    <label>In</label>
+                </value>
+                <value>
+                    <fullName>Out</fullName>
+                    <default>false</default>
+                    <label>Out</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Documents</relationshipLabel>
+        <relationshipName>Documents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_IPA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IPA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Is_Last_Version__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Last Version</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Latest_Version__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Latest Version</label>
+        <referenceTo>IT_Edenred_Document__c</referenceTo>
+        <relationshipLabel>Previous Versions</relationshipLabel>
+        <relationshipName>Documents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_NO_Electronic_invoicing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>NO Electronic invoicing</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Operation_Type_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Operation Type Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fattura</fullName>
+                    <default>false</default>
+                    <label>Fattura</label>
+                </value>
+                <value>
+                    <fullName>Nota Credito</fullName>
+                    <default>false</default>
+                    <label>Nota Credito</label>
+                </value>
+                <value>
+                    <fullName>Nota Debito</fullName>
+                    <default>false</default>
+                    <label>Nota Debito</label>
+                </value>
+                <value>
+                    <fullName>NDIM (Interessi di Mora)</fullName>
+                    <default>false</default>
+                    <label>NDIM (Interessi di Mora)</label>
+                </value>
+                <value>
+                    <fullName>Documento Sola IVA</fullName>
+                    <default>false</default>
+                    <label>Documento Sola IVA</label>
+                </value>
+                <value>
+                    <fullName>Autofattura</fullName>
+                    <default>false</default>
+                    <label>Autofattura</label>
+                </value>
+                <value>
+                    <fullName>FCI (Fuori Campo IVA)</fullName>
+                    <default>false</default>
+                    <label>FCI (Fuori Campo IVA)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Operation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Operation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Elimination Total</fullName>
+                    <default>false</default>
+                    <label>Elimination Total</label>
+                </value>
+                <value>
+                    <fullName>Partial Reversal</fullName>
+                    <default>false</default>
+                    <label>Partial Reversal</label>
+                </value>
+                <value>
+                    <fullName>Cancellation and Re-issue</fullName>
+                    <default>false</default>
+                    <label>Cancellation and Re-issue</label>
+                </value>
+                <value>
+                    <fullName>Document SOLA VAT</fullName>
+                    <default>false</default>
+                    <label>Document SOLA VAT</label>
+                </value>
+                <value>
+                    <fullName>NDIM</fullName>
+                    <default>false</default>
+                    <label>NDIM</label>
+                </value>
+                <value>
+                    <fullName>Only Issue Invoice (eg. Invoice no fat)</fullName>
+                    <default>false</default>
+                    <label>Only Issue Invoice (eg. Invoice no fat)</label>
+                </value>
+                <value>
+                    <fullName>Only Issue Credit Note (eg. For difference discount)</fullName>
+                    <default>false</default>
+                    <label>Only Issue Credit Note (eg. For difference discount)</label>
+                </value>
+                <value>
+                    <fullName>Note Refund Credit Ticket</fullName>
+                    <default>false</default>
+                    <label>Note Refund Credit Ticket</label>
+                </value>
+                <value>
+                    <fullName>Note Repayment Credit Welfare</fullName>
+                    <default>false</default>
+                    <label>Note Repayment Credit Welfare</label>
+                </value>
+                <value>
+                    <fullName>Note Repayment Credit UTA</fullName>
+                    <default>false</default>
+                    <label>Note Repayment Credit UTA</label>
+                </value>
+                <value>
+                    <fullName>Note Repayment Credit Edenred ITALY FIN</fullName>
+                    <default>false</default>
+                    <label>Note Repayment Credit Edenred ITALY FIN</label>
+                </value>
+                <value>
+                    <fullName>Deposit Refund</fullName>
+                    <default>false</default>
+                    <label>Deposit Refund</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Recieved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Recieved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Record_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;/lightning/r/IT_Edenred_Document__c/&apos; + Id + &apos;/view&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Refund_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Refund Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_Reissue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reissue</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Conforme</fullName>
+                    <default>false</default>
+                    <label>Conforme</label>
+                </value>
+                <value>
+                    <fullName>Non Conforme</fullName>
+                    <default>false</default>
+                    <label>Non Conforme</label>
+                </value>
+                <value>
+                    <fullName>Accettato</fullName>
+                    <default>false</default>
+                    <label>Accettato</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alpha</fullName>
+                    <default>false</default>
+                    <label>Alpha</label>
+                </value>
+                <value>
+                    <fullName>ODA</fullName>
+                    <default>false</default>
+                    <label>ODA</label>
+                </value>
+                <value>
+                    <fullName>RDA</fullName>
+                    <default>false</default>
+                    <label>RDA</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Version__c</fullName>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Document</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Document Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Documents</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>IT_Consip_Document</fullName>
+        <active>true</active>
+        <label>Consip Document</label>
+        <picklistValues>
+            <picklist>IT_Document_Origin__c</picklist>
+            <values>
+                <fullName>In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Operation_Type_Out__c</picklist>
+            <values>
+                <fullName>Autofattura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documento Sola IVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCI %28Fuori Campo IVA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fattura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDIM %28Interessi di Mora%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nota Credito</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nota Debito</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Operation_Type__c</picklist>
+            <values>
+                <fullName>Cancellation and Re-issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Document SOLA VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elimination Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDIM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Refund Credit Ticket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit Edenred ITALY FIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit UTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit Welfare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Only Issue Credit Note %28eg%2E For difference discount%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Only Issue Invoice %28eg%2E Invoice no fat%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Reversal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Status__c</picklist>
+            <values>
+                <fullName>Accettato</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conforme</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Conforme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Type__c</picklist>
+            <values>
+                <fullName>Alpha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RDA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>IT_Finance_Document</fullName>
+        <active>true</active>
+        <label>Finance Document</label>
+        <picklistValues>
+            <picklist>IT_Document_Origin__c</picklist>
+            <values>
+                <fullName>In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Operation_Type_Out__c</picklist>
+            <values>
+                <fullName>Autofattura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documento Sola IVA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCI %28Fuori Campo IVA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fattura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDIM %28Interessi di Mora%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nota Credito</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nota Debito</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Operation_Type__c</picklist>
+            <values>
+                <fullName>Cancellation and Re-issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Document SOLA VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elimination Total</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDIM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Refund Credit Ticket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit Edenred ITALY FIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit UTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Note Repayment Credit Welfare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Only Issue Credit Note %28eg%2E For difference discount%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Only Issue Invoice %28eg%2E Invoice no fat%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Reversal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Status__c</picklist>
+            <values>
+                <fullName>Accettato</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conforme</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Conforme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Type__c</picklist>
+            <values>
+                <fullName>Alpha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RDA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>IT_New_Finance_IN</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Finance IN</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/flow/IT34_Document?recordId={!Case.Id}&amp;docType=In&amp;retURL={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>IT_New_Finance_OUT</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Finance OUT</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/flow/IT34_Document?recordId={!Case.Id}&amp;docType=Out&amp;retURL={!Case.Id}</url>
+    </webLinks>
+</CustomObject>

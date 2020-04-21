@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Delivery Site</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Delivery Sites</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountIdFlow --></label>
+        <name>AccountIdFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>ER_Account_Name__c</name>
+        <relationshipLabel><!-- Delivery Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>ER_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>ER_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Contact --></label>
+        <name>ER_Delivery_Contact__c</name>
+        <relationshipLabel><!-- Delivery Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>ER_Financial_Center__c</name>
+        <relationshipLabel><!-- Delivery Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>ER_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street (additionnal) --></label>
+        <name>ER_Street_additionnal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>ER_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity AC --></label>
+        <name>IT_Activity_AC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity SF --></label>
+        <name>IT_Activity_SF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address AC User --></label>
+        <name>IT_Address_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Editing Type --></label>
+        <name>IT_Address_Editing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Validity End Date --></label>
+        <name>IT_Address_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Validity Start Date --></label>
+        <name>IT_Address_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT_Autonumber_Code --></label>
+        <name>IT_Autonumber_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>IT_Branch__c</name>
+        <picklistValues>
+            <masterLabel>BRANCH IN GENOA</masterLabel>
+            <translation><!-- BRANCH IN GENOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF BARI</masterLabel>
+            <translation><!-- BRANCH OF BARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF BOLOGNA</masterLabel>
+            <translation><!-- BRANCH OF BOLOGNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF FLORENCE</masterLabel>
+            <translation><!-- BRANCH OF FLORENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF NAPLES</masterLabel>
+            <translation><!-- BRANCH OF NAPLES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF PADUA</masterLabel>
+            <translation><!-- BRANCH OF PADUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF ROME</masterLabel>
+            <translation><!-- BRANCH OF ROME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF TRENT</masterLabel>
+            <translation><!-- BRANCH OF TRENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF TURIN</masterLabel>
+            <translation><!-- BRANCH OF TURIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OF VENETO</masterLabel>
+            <translation><!-- BRANCH OF VENETO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH OFFICE IN MILAN</masterLabel>
+            <translation><!-- BRANCH OFFICE IN MILAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRESCIA BRANCH</masterLabel>
+            <translation><!-- BRESCIA BRANCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREDIT RECOVERY DIRECTION</masterLabel>
+            <translation><!-- CREDIT RECOVERY DIRECTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEADQUARTERS NEW PRODUCTS</masterLabel>
+            <translation><!-- HEADQUARTERS NEW PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAZZARETTO BRANCH</masterLabel>
+            <translation><!-- LAZZARETTO BRANCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILAN FAMAGOSTA BRANCH</masterLabel>
+            <translation><!-- MILAN FAMAGOSTA BRANCH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Address --></label>
+        <name>IT_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City Code --></label>
+        <name>IT_City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Delivery Code Name --></label>
+        <name>IT_Client_Delivery_Code_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code and Name --></label>
+        <name>IT_Code_and_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Distribution Point --></label>
+        <name>IT_Count_Distribution_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery AC --></label>
+        <name>IT_Delivery_AC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery AC and Name --></label>
+        <name>IT_Delivery_AC_and_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Location --></label>
+        <name>IT_Delivery_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Number --></label>
+        <name>IT_Delivery_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Point --></label>
+        <name>IT_Delivery_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery SF --></label>
+        <name>IT_Delivery_SF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>IT_Delivery_Site_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Type --></label>
+        <name>IT_Delivery_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra-Urban Specifications --></label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forcing --></label>
+        <name>IT_Forcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Address --></label>
+        <name>IT_Future_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change DS --></label>
+        <name>IT_Future_Change_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc X --></label>
+        <name>IT_GeoRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc Y --></label>
+        <name>IT_GeoRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet Code --></label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet --></label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label Notes --></label>
+        <name>IT_Label_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Delivery --></label>
+        <name>IT_Matched_Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc X --></label>
+        <name>IT_MetRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc Y --></label>
+        <name>IT_MetRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name and Address --></label>
+        <name>IT_Name_and_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity End Date --></label>
+        <name>IT_Note_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity Start Date --></label>
+        <name>IT_Note_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes Type --></label>
+        <name>IT_Notes_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>IT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>IT_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>IT_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region code --></label>
+        <name>IT_Region_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Arch Code --></label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sestiere Code --></label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Address --></label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Service --></label>
+        <name>IT_Special_Service__c</name>
+        <picklistValues>
+            <masterLabel>12 HOUR SPECIAL</masterLabel>
+            <translation><!-- 12 HOUR SPECIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXTRACEE DOCUMENTS</masterLabel>
+            <translation><!-- EXTRACEE DOCUMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDDAY HOURS 12 INTERNATIONAL EEC</masterLabel>
+            <translation><!-- MIDDAY HOURS 12 INTERNATIONAL EEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROAD EXPRESS INT&apos;L VIA TRUCK</masterLabel>
+            <translation><!-- ROAD EXPRESS INT&apos;L VIA TRUCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>StartDay 9 AM INTERNATIONAL EEC</masterLabel>
+            <translation><!-- StartDay 9 AM INTERNATIONAL EEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITHIN 12 A.M.</masterLabel>
+            <translation><!-- WITHIN 12 A.M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITHIN 9 A.M.</masterLabel>
+            <translation><!-- WITHIN 9 A.M. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>IT_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Code --></label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text --></label>
+        <name>IT_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Naming --></label>
+        <name>IT_Ticket_Naming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toponym --></label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport Cost --></label>
+        <name>IT_Transport_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date --></label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date --></label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Forcing --></label>
+        <name>IT_Vehicle_Forcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>IT_Vehicle__c</name>
+        <picklistValues>
+            <masterLabel>DHL</masterLabel>
+            <translation><!-- DHL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL Lombardy</masterLabel>
+            <translation><!-- DHL Lombardy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL Lombardy CONTEXT</masterLabel>
+            <translation><!-- DHL Lombardy CONTEXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL P.A.</masterLabel>
+            <translation><!-- DHL P.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPOSITO MARIO</masterLabel>
+            <translation><!-- ESPOSITO MARIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLS</masterLabel>
+            <translation><!-- GLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRT-DHL</masterLabel>
+            <translation><!-- PRT-DHL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRT-TNT - TRAFFIC B2C</masterLabel>
+            <translation><!-- PRT-TNT - TRAFFIC B2C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRT-TNT GLOBAL EXPRESS</masterLabel>
+            <translation><!-- PRT-TNT GLOBAL EXPRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECURPOL</masterLabel>
+            <translation><!-- SECURPOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET SERVICES</masterLabel>
+            <translation><!-- TICKET SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT - TRAFFIC B2C</masterLabel>
+            <translation><!-- TNT - TRAFFIC B2C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT GLOBAL EXPRESS</masterLabel>
+            <translation><!-- TNT GLOBAL EXPRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITHDRAWAL BY CUSTOMER</masterLabel>
+            <translation><!-- WITHDRAWAL BY CUSTOMER --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>IT_Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>ER Delivery Point Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Delivery Site Layout V2.1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Delivery Site PL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Branch --></label>
+        <name>IT_Branch</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Note Label --></label>
+        <name>IT_Note_Label</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Other Addres --></label>
+        <name>IT_Other_Addres</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Other Address --></label>
+        <name>IT_Other_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Delivery Site --></label>
+        <name>IT_Update_Delivery_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Vehicle --></label>
+        <name>IT_Vehicle</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Delivery Site can only be created on Client Financial Center --></errorMessage>
+        <name>VRER01_DeliverCenterOnlyClientFCenter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sincronizzazione Anagrafica Clienti in corso: non è possibile modificare la consegna! --></errorMessage>
+        <name>VRIT02_Delivery_Site_Editing_in_AC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT03_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify fields for this client status! --></errorMessage>
+        <name>VRIT04_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify Note fields for this client status! --></errorMessage>
+        <name>VRIT05_Modify_Note</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- fields cannot be edited because the associated activity is canceled --></errorMessage>
+        <name>VRIT06_Delivery_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- you cannot change the Account Name --></errorMessage>
+        <name>VRIT07_ChangeAccountName</name>
+    </validationRules>
+</CustomObjectTranslation>

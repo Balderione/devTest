@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>IT_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>IT_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center Code --></label>
+        <name>IT_Financial_Center_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forcing --></label>
+        <name>IT_Forcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Billing Administrative Data --></label>
+        <name>IT_Group_Billing_Administrative_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Code --></label>
+        <name>IT_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Type --></label>
+        <name>IT_Group_Type__c</name>
+        <picklistValues>
+            <masterLabel>CONVENZIONE</masterLabel>
+            <translation><!-- CONVENZIONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRUPPO STAT.COMMERCIALE</masterLabel>
+            <translation><!-- GRUPPO STAT.COMMERCIALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCHANT ECONOMIC CONDITIONS</masterLabel>
+            <translation><!-- MERCHANT ECONOMIC CONDITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STESSO CLIENTE CON + PRODOTTI</masterLabel>
+            <translation><!-- STESSO CLIENTE CON + PRODOTTI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Group --></label>
+        <name>IT_Key_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Company Client --></label>
+        <name>IT_Parent_Company_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Company --></label>
+        <name>IT_Parent_Company__c</name>
+        <relationshipLabel><!-- Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date --></label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date --></label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT01_Modify</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- IT_New_Group --></label>
+        <name>IT_New_Group</name>
+    </webLinks>
+</CustomObjectTranslation>

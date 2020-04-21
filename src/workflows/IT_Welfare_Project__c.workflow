@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FUIT11_WelfareProject_StatusBabysitting</fullName>
+        <field>IT_Status__c</field>
+        <literalValue>Babysitting</literalValue>
+        <name>FUIT11_WelfareProject_StatusBabysitting</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT12_WelfareProject_StatusMonitoring</fullName>
+        <field>IT_Status__c</field>
+        <name>FUIT12_WelfareProject_StatusMonitoring</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT13_WelfareProject_StatusClosed</fullName>
+        <field>IT_Status__c</field>
+        <name>FUIT13_WelfareProject_StatusClosed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT14_WelfareProject_StatusWorking</fullName>
+        <field>IT_Status__c</field>
+        <name>FUIT14_WelfareProject_StatusWorking</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>WFIT06_WelfareProject_StatusBabysitting</fullName>
+        <actions>
+            <name>FUIT11_WelfareProject_StatusBabysitting</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(TODAY()&gt;= IT_Min_Plan_Start_Date__c ,TODAY()&lt; ( IT_Min_Plan_Start_Date__c +30))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT07_WelfareProject_StatusMonitoring</fullName>
+        <actions>
+            <name>FUIT12_WelfareProject_StatusMonitoring</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(TODAY()&gt;=( IT_Min_Plan_Start_Date__c +30),TODAY()&lt; IT_Max_Plan_End_Date__c )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT08_WelfareProject_StatusClosed</fullName>
+        <actions>
+            <name>FUIT13_WelfareProject_StatusClosed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TODAY()&gt;= IT_Max_Plan_End_Date__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT09_WelfareProject_StatusWorking</fullName>
+        <actions>
+            <name>FUIT14_WelfareProject_StatusWorking</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TODAY()&lt; IT_Min_Plan_Start_Date__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

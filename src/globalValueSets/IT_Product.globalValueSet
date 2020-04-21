@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>C0</fullName>
+        <default>false</default>
+        <label>CARNET NO CUSTOM (C0)</label>
+    </customValue>
+    <customValue>
+        <fullName>C1</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND NORMAL TICKET (C1)</label>
+    </customValue>
+    <customValue>
+        <fullName>C2</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER AND SERIAL NORMAL TICKET (C2)</label>
+    </customValue>
+    <customValue>
+        <fullName>C3</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (C3)</label>
+    </customValue>
+    <customValue>
+        <fullName>C4</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER NAMED (C4)</label>
+    </customValue>
+    <customValue>
+        <fullName>C5</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER AND SERIAL (C5)</label>
+    </customValue>
+    <customValue>
+        <fullName>C6</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER NAMED - TICKET SERIAL (C6)</label>
+    </customValue>
+    <customValue>
+        <fullName>C7</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (C7)</label>
+    </customValue>
+    <customValue>
+        <fullName>C8</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER AND NAMES AND SERIAL (C8)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CB</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE NAMES (CB)</label>
+    </customValue>
+    <customValue>
+        <fullName>CC</fullName>
+        <default>false</default>
+        <label>TICKET SERIAL LOOSE (CC)</label>
+    </customValue>
+    <customValue>
+        <fullName>CD</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE NAMES AND SERIAL (CD)</label>
+    </customValue>
+    <customValue>
+        <fullName>CZ</fullName>
+        <default>false</default>
+        <label>CARD (CZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>T0</fullName>
+        <default>false</default>
+        <label>CARNET NO CUSTOM (T0)</label>
+    </customValue>
+    <customValue>
+        <fullName>T1</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND NORMAL TICKET (T1)</label>
+    </customValue>
+    <customValue>
+        <fullName>T2</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER AND SERIAL NORMAL TICKET (T2)</label>
+    </customValue>
+    <customValue>
+        <fullName>T3</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (T3)</label>
+    </customValue>
+    <customValue>
+        <fullName>T4</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER NAMED (T4)</label>
+    </customValue>
+    <customValue>
+        <fullName>T5</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER AND SERIAL (T5)</label>
+    </customValue>
+    <customValue>
+        <fullName>T6</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER NAMED - TICKET SERIAL (T6)</label>
+    </customValue>
+    <customValue>
+        <fullName>T7</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (T7)</label>
+    </customValue>
+    <customValue>
+        <fullName>T8</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER AND NAMES AND SERIAL (T8)</label>
+    </customValue>
+    <customValue>
+        <fullName>T9</fullName>
+        <default>false</default>
+        <label>CARNET TICKET WITH COVER AND ANONYMOUS (T9)</label>
+    </customValue>
+    <customValue>
+        <fullName>TA</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE (TA)</label>
+    </customValue>
+    <customValue>
+        <fullName>TB</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE NAMES (TB)</label>
+    </customValue>
+    <customValue>
+        <fullName>TC</fullName>
+        <default>false</default>
+        <label>TICKET SERIAL LOOSE (TC)</label>
+    </customValue>
+    <customValue>
+        <fullName>TD</fullName>
+        <default>false</default>
+        <label>TICKET LOOSE NAMES AND SERIAL (TD)</label>
+    </customValue>
+    <customValue>
+        <fullName>TE</fullName>
+        <default>false</default>
+        <label>BOOKLET COVER BY NAME AND NORMAL TICKET Ristochef (TE)</label>
+    </customValue>
+    <customValue>
+        <fullName>TF</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER NAMED Ristochef (TF)</label>
+    </customValue>
+    <customValue>
+        <fullName>TG</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER AND NAMES AND SERIAL Ristochef (TG)</label>
+    </customValue>
+    <customValue>
+        <fullName>TZ</fullName>
+        <default>false</default>
+        <label>CARD (TZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>TL</fullName>
+        <default>false</default>
+        <label>NORMAL TICKET BOOKLET COVER BY NAME AND CITY-NO-NO IND (TL)</label>
+    </customValue>
+    <customValue>
+        <fullName>TM</fullName>
+        <default>false</default>
+        <label>TICKET BOOKLET COVER NAMED CITY-NO-NO IND (TM)</label>
+    </customValue>
+    <masterLabel>IT Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

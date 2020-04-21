@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Card</fullName>
+        <default>false</default>
+        <label>Card</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Offert</fullName>
+        <default>false</default>
+        <label>Commercial Offert</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Mobile App</fullName>
+        <default>false</default>
+        <label>Mobile App</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Mobile Payment</fullName>
+        <default>false</default>
+        <label>Mobile Payment</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>MyEdenred</fullName>
+        <default>false</default>
+        <label>MyEdenred</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Accounting</fullName>
+        <default>false</default>
+        <label>Accounting</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoicing</fullName>
+        <default>false</default>
+        <label>Invoicing</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reimbursement</fullName>
+        <default>false</default>
+        <label>Reimbursement</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

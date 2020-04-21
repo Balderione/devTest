@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ADMINISTRATION</masterLabel>
+        <translation>AMMINISTRAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKS</masterLabel>
+        <translation>BANCHE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUSINESS TEMPORARY GROUPED</masterLabel>
+        <translation>RAGGR. TEMPORANEO IMPRESA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHAMBERS OF COMMERCE</masterLabel>
+        <translation>CAMERE DI COMMERCIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CODE CHANGING</masterLabel>
+        <translation>SOSTITUZIONE CODICE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP 2017</masterLabel>
+        <translation><!-- CONSIP 2017 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP 2018</masterLabel>
+        <translation><!-- CONSIP 2018 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP MINISTRIES (code 07)</masterLabel>
+        <translation>CONSIP MINISTERI (cod 07)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP MINISTRIES (code 11)</masterLabel>
+        <translation>CONSIP MINISTERI (cod 11)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP MINISTRIES 2007</masterLabel>
+        <translation>CONSIP MINISTERI 2007</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP PUBLIC ADMIN. 2007</masterLabel>
+        <translation>CONSIP AMMINISTR. PUBBL. 2007</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP PUBLIC ADMINISTRATIONS (code 08)</masterLabel>
+        <translation>CONSIP AMMINISTRAZIONI PUBBLIC (cod 08)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP PUBLIC ADMINISTRATIONS (code 12)</masterLabel>
+        <translation>CONSIP AMMINISTRAZIONI PUBBLIC (cod 12)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONVENTION</masterLabel>
+        <translation>CONVENZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER ACCOUNTING</masterLabel>
+        <translation>CONTABILITA CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENTREPRENEURIAL ASSOCIATIONS</masterLabel>
+        <translation>ASSOCIAZIONI IMPRENDITORIALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EX TR CONS DIRECT RELIANCES</masterLabel>
+        <translation>AFFIDAMENTI DIRETTI EX TR CONS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FRAMEWORK CONTRACT</masterLabel>
+        <translation>QUADRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GROUP INAIL</masterLabel>
+        <translation>GRUPPO INAIL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GROUPING DELIVERIES</masterLabel>
+        <translation>RAGGRUPPAMENTO CONSEGNE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INDUCED CONSIP</masterLabel>
+        <translation>INDOTTI CONSIP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MERCHANT ECONOMIC CONDITIONS</masterLabel>
+        <translation>CONDIZIONI ECONOMICHE AFFILIAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MINISTRIES</masterLabel>
+        <translation>MINISTERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAME CUSTOMER WITH + PRODUCTS</masterLabel>
+        <translation>STESSO CLIENTE CON + PRODOTTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>STAT. ADMINISTRATIVE GROUP</masterLabel>
+        <translation>GRUPPO STAT.AMMINISTRATIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>STAT. COMMERCIAL GROUP</masterLabel>
+        <translation>GRUPPO STAT.COMMERCIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TEMPORARY INSTITUTION RELIANCE</masterLabel>
+        <translation>AFFIDAMENTO PROVVISORIO ENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TEMPORARY MINISTRIES RELIANCE</masterLabel>
+        <translation>AFFIDAMENTO PROVV. MINISTERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TOURIST PROMOTION COMPANY</masterLabel>
+        <translation>AZIENDA PROMOZIONE TURISTICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>U.S.S.L.</masterLabel>
+        <translation><!-- U.S.S.L. --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

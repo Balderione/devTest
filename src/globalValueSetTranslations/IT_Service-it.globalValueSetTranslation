@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ALL RIGHT RISTOCHEF VOUCHER</masterLabel>
+        <translation>BUONO ALL RIGHT RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL RIGHT VOGHERA VOUCHER</masterLabel>
+        <translation>BUONO ALL RIGHT VOGHERA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUONI CONSIP 2014</masterLabel>
+        <translation><!-- BUONI CONSIP 2014 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BUONO ALL RIGHT CLASSICO</masterLabel>
+        <translation><!-- BUONO ALL RIGHT CLASSICO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CITY TIME</masterLabel>
+        <translation>CITY TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CITY TIME CARD</masterLabel>
+        <translation><!-- CITY TIME CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CITY TIME PLUS (PRODUCT CARD)</masterLabel>
+        <translation>CITY TIME PLUS (PRODOTTO CARTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CITY TIME PLUS DIGITAL</masterLabel>
+        <translation><!-- CITY TIME PLUS DIGITAL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CITY TIME PLUS SMART</masterLabel>
+        <translation><!-- CITY TIME PLUS SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLEAN WAY</masterLabel>
+        <translation><!-- CLEAN WAY --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLUB RISTOCHEF VOUCHER</masterLabel>
+        <translation>BUONO CLUB RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS BOX</masterLabel>
+        <translation><!-- COMPLIMENTS BOX --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS BOX (NON USATO)</masterLabel>
+        <translation><!-- COMPLIMENTS BOX (NON USATO) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS DIGITAL</masterLabel>
+        <translation><!-- COMPLIMENTS DIGITAL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS EASY SELECTION</masterLabel>
+        <translation><!-- COMPLIMENTS EASY SELECTION --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS EXPENSE E-VOUCHER</masterLabel>
+        <translation><!-- COMPLIMENTS EXPENSE E-VOUCHER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS EXPERIENCE</masterLabel>
+        <translation><!-- COMPLIMENTS EXPERIENCE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS EXPERIENCE PROMO</masterLabel>
+        <translation><!-- COMPLIMENTS EXPERIENCE PROMO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS PREMIUM</masterLabel>
+        <translation><!-- COMPLIMENTS PREMIUM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS PREMIUM E-VOUCHER</masterLabel>
+        <translation><!-- COMPLIMENTS PREMIUM E-VOUCHER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS PREMIUM PROMO</masterLabel>
+        <translation>COMPLIMENTS PREMIUM PROMO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS SEL. EASY eVouchers</masterLabel>
+        <translation><!-- COMPLIMENTS SEL. EASY eVouchers --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS SELECTION</masterLabel>
+        <translation><!-- COMPLIMENTS SELECTION --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS SELECTION PROMO</masterLabel>
+        <translation><!-- COMPLIMENTS SELECTION PROMO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS SELECTION eVouchers</masterLabel>
+        <translation><!-- COMPLIMENTS SELECTION eVouchers --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS SPENDING</masterLabel>
+        <translation><!-- COMPLIMENTS SPENDING --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS TICKET PLUS</masterLabel>
+        <translation><!-- COMPLIMENTS TICKET PLUS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS UNIVERSEL</masterLabel>
+        <translation><!-- COMPLIMENTS UNIVERSEL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPLIMENTS UPIM</masterLabel>
+        <translation><!-- COMPLIMENTS UPIM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CRS VOUCHER CLASSIC</masterLabel>
+        <translation><!-- CRS VOUCHER CLASSIC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CRS VOUCHER EDENRED</masterLabel>
+        <translation><!-- CRS VOUCHER EDENRED --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CRS VOUCHER Ristochef</masterLabel>
+        <translation><!-- CRS VOUCHER Ristochef --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DOMI PHONE</masterLabel>
+        <translation><!-- DOMI PHONE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DRIVE</masterLabel>
+        <translation><!-- DRIVE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-LUNCH ACCOUNTING CLIENTS</masterLabel>
+        <translation>E-LUNCH CONTABILITA CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-LUNCH CARD</masterLabel>
+        <translation><!-- E-LUNCH CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-LUNCH SMART</masterLabel>
+        <translation><!-- E-LUNCH SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-LUNCH TICKET</masterLabel>
+        <translation><!-- E-LUNCH TICKET --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-TICKET</masterLabel>
+        <translation><!-- E-TICKET --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EXPENDIA SMART</masterLabel>
+        <translation><!-- EXPENDIA SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Edenred CUSTOMER ACCOUNTS</masterLabel>
+        <translation>EDENRED CONTABILITA CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEX TICKET RESTAURANT</masterLabel>
+        <translation><!-- FLEX TICKET RESTAURANT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEX TICKET SERVICE</masterLabel>
+        <translation><!-- FLEX TICKET SERVICE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEX TICKET SERVICE CARD</masterLabel>
+        <translation><!-- FLEX TICKET SERVICE CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT</masterLabel>
+        <translation><!-- FLEXBENEFIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT ALLOCATION OF FUNDS</masterLabel>
+        <translation><!-- FLEXBENEFIT ALLOCATION OF FUNDS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT CARE</masterLabel>
+        <translation><!-- FLEXBENEFIT CARE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT CHECK</masterLabel>
+        <translation><!-- FLEXBENEFIT CHECK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT FUN</masterLabel>
+        <translation><!-- FLEXBENEFIT FUN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT REIMBURSMENT</masterLabel>
+        <translation>FLEXBENEFIT RIMBORSO SPESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FLEXBENEFIT SKILL</masterLabel>
+        <translation><!-- FLEXBENEFIT SKILL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FORAGORA</masterLabel>
+        <translation><!-- FORAGORA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOOD HOLIDAY</masterLabel>
+        <translation><!-- GOOD HOLIDAY --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOOD SCHOOL VOUCHER</masterLabel>
+        <translation><!-- GOOD SCHOOL VOUCHER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOOD VIRTUAL SCHOOL VOUCHER</masterLabel>
+        <translation><!-- GOOD VIRTUAL SCHOOL VOUCHER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GRANT FRIEND</masterLabel>
+        <translation><!-- GRANT FRIEND --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MEAL RISTOCHEF VOUCHER</masterLabel>
+        <translation>BUONO PASTO RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PARTNER ONLINE</masterLabel>
+        <translation><!-- PARTNER ONLINE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PEOPLE ONE</masterLabel>
+        <translation><!-- PEOPLE ONE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POSTEPAY LUNCH SMART</masterLabel>
+        <translation><!-- POSTEPAY LUNCH SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PURCHASE VOUCHER</masterLabel>
+        <translation>VOUCHER BUONO ACQUISTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RETEITALIA CARD</masterLabel>
+        <translation>CARTA RETEITALIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RISTOCHEF CARD</masterLabel>
+        <translation><!-- RISTOCHEF CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RISTOCHEF CARD SOCIAL</masterLabel>
+        <translation><!-- RISTOCHEF CARD SOCIAL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ristochef CUSTOMER ACCOUNTS</masterLabel>
+        <translation>RISTOCHEF CONTABILITA CLIENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SERVICES VOUCHER</masterLabel>
+        <translation>VOUCHER BUONO SERVIZI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMART CITY TIME</masterLabel>
+        <translation><!-- SMART CITY TIME --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET CULTURE</masterLabel>
+        <translation><!-- TICKET CULTURE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET DOMI</masterLabel>
+        <translation><!-- TICKET DOMI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET FAMILY</masterLabel>
+        <translation><!-- TICKET FAMILY --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET PLUS</masterLabel>
+        <translation><!-- TICKET PLUS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT</masterLabel>
+        <translation><!-- TICKET RESTAURANT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT CARD</masterLabel>
+        <translation><!-- TICKET RESTAURANT CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT DIGITAL</masterLabel>
+        <translation><!-- TICKET RESTAURANT DIGITAL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT GOLD</masterLabel>
+        <translation><!-- TICKET RESTAURANT GOLD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT MAX</masterLabel>
+        <translation><!-- TICKET RESTAURANT MAX --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT MAX SMART</masterLabel>
+        <translation><!-- TICKET RESTAURANT MAX SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET RESTAURANT SMART</masterLabel>
+        <translation><!-- TICKET RESTAURANT SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SCHOOL</masterLabel>
+        <translation>TICKET SCUOLA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERVICE</masterLabel>
+        <translation><!-- TICKET SERVICE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERVICE CARD</masterLabel>
+        <translation><!-- TICKET SERVICE CARD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERVICE CARNET</masterLabel>
+        <translation><!-- TICKET SERVICE CARNET --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERVICE SMART</masterLabel>
+        <translation><!-- TICKET SERVICE SMART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET TO THE PAPER</masterLabel>
+        <translation>TICKET ALLA CARTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET TRANSPORT</masterLabel>
+        <translation><!-- TICKET TRANSPORT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET TRANSPORT SMART</masterLabel>
+        <translation>TICKET TRASPORTO SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET WELFARE</masterLabel>
+        <translation><!-- TICKET WELFARE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TOP PREMIUM</masterLabel>
+        <translation><!-- TOP PREMIUM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRAINING VOUCHER</masterLabel>
+        <translation><!-- TRAINING VOUCHER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UTA CARD</masterLabel>
+        <translation>CARTA UTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VAT TICKET WELFARE</masterLabel>
+        <translation>TICKET WELFARE IVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VIRTUAL COMPLIMENTS</masterLabel>
+        <translation><!-- VIRTUAL COMPLIMENTS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VIRTUAL TRAINING VOUCHER</masterLabel>
+        <translation>VOUCHER FORMAZIONE VIRTUALE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

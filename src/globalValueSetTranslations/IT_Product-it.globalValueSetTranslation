@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER AND SERIAL NORMAL TICKET (C2)</masterLabel>
+        <translation>CARNET COPERTINA MATRIC E TICKET NORMALI (C2)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER AND SERIAL NORMAL TICKET (T2)</masterLabel>
+        <translation>CARNET COPERTINA MATRIC E TICKET NORMALI (T2)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND NORMAL TICKET (C1)</masterLabel>
+        <translation>CARNET COPERTINA NOMIN. E TICKET NORMALI (C1)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND NORMAL TICKET (T1)</masterLabel>
+        <translation>CARNET COPERTINA NOMIN. E TICKET NORMALI (T1)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND NORMAL TICKET Ristochef (TE)</masterLabel>
+        <translation>CARN COPERT NOMIN TICKET NORM Ristochef (TE)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (C3)</masterLabel>
+        <translation>CARNET COPERT NOMIN E MATR - TICKET MATR (C3)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (C7)</masterLabel>
+        <translation>CARNET COPERT NOMIN E MATR - TICKET MATR (C7)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (T3)</masterLabel>
+        <translation>CARNET COPERT NOMIN E MATR - TICKET MATR (T3)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER BY NAME AND SERIAL NUMBER - NORMAL TICKET (T7)</masterLabel>
+        <translation>CARNET COPERT NOMIN E MATR - TICKET MATR (T7)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER NAMED - TICKET SERIAL (C6)</masterLabel>
+        <translation>CARNET COPERTINA NOMINATIVA TICKET MATR (C6)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BOOKLET COVER NAMED - TICKET SERIAL (T6)</masterLabel>
+        <translation>CARNET COPERTINA NOMINATIVA TICKET MATR (T6)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARD (CZ)</masterLabel>
+        <translation>CARD (CZ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARD (TZ)</masterLabel>
+        <translation>CARD (TZ)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARNET NO CUSTOM (C0)</masterLabel>
+        <translation>CARNET NON PERSONALIZZATI (C0)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARNET NO CUSTOM (T0)</masterLabel>
+        <translation>CARNET NON PERSONALIZZATI (T0)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARNET TICKET WITH COVER AND ANONYMOUS (T9)</masterLabel>
+        <translation>CARNET CON COPERTINA E TICKET ANONIMI (T9)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NORMAL TICKET BOOKLET COVER BY NAME AND CITY-NO-NO IND (TL)</masterLabel>
+        <translation>CARN COPERT NOM,TICK NORM-NO CIT-NO IND (TL)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER AND NAMES AND SERIAL (C8)</masterLabel>
+        <translation>CARNET COPERTINA E TICKET NOMIN E MATR (C8)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER AND NAMES AND SERIAL (T8)</masterLabel>
+        <translation>CARNET COPERTINA E TICKET NOMIN E MATR (T8)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER AND NAMES AND SERIAL Ristochef (TG)</masterLabel>
+        <translation>CARN COPER TICKET NOMIN E MATR Ristochef (TG)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER AND SERIAL (C5)</masterLabel>
+        <translation>CARNET COPERTINA E TICKET MATRICOLA (C5)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER AND SERIAL (T5)</masterLabel>
+        <translation>CARNET COPERTINA E TICKET MATRICOLA (T5)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER NAMED (C4)</masterLabel>
+        <translation>CARNET COPERTINA TICKET NOMINATIVI (C4)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER NAMED (T4)</masterLabel>
+        <translation>CARNET COPERTINA TICKET NOMINATIVI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER NAMED CITY-NO-NO IND (TM)</masterLabel>
+        <translation>CARN COPERT TICKET NOMIN-NO CITTA-NO IND (TM)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET BOOKLET COVER NAMED Ristochef (TF)</masterLabel>
+        <translation>CARNET COPERTINA TICKET NOMIN RISTOCHEF (TF)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE (CA)</masterLabel>
+        <translation>TICKET SCIOLTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE (TA)</masterLabel>
+        <translation>TICKET SCIOLTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE NAMES (CB)</masterLabel>
+        <translation>TICKET SCIOLTI NOMINATIVI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE NAMES (TB)</masterLabel>
+        <translation>TICKET SCIOLTI NOMINATIVI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE NAMES AND SERIAL (CD)</masterLabel>
+        <translation>TICKET SCIOLTI NOMINATIVI E MATRICOLA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET LOOSE NAMES AND SERIAL (TD)</masterLabel>
+        <translation>TICKET SCIOLTI NOMINATIVI E MATRICOLA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERIAL LOOSE (CC)</masterLabel>
+        <translation>TICKET SCIOLTI MATRICOLA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET SERIAL LOOSE (TC)</masterLabel>
+        <translation>TICKET SCIOLTI MATRICOLA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

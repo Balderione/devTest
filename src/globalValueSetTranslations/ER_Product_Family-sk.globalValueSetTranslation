@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Corporate Payment</masterLabel>
+        <translation><!-- Corporate Payment --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Edenred Culture &amp; Sport Card</masterLabel>
+        <translation><!-- Edenred Culture &amp; Sport Card --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Edenred Gift Card</masterLabel>
+        <translation><!-- Edenred Gift Card --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Edenred Schooling Card</masterLabel>
+        <translation><!-- Edenred Schooling Card --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Employee benefits quality of life</masterLabel>
+        <translation>Zamestnanecké benefity</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fleet</masterLabel>
+        <translation><!-- Fleet --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gift</masterLabel>
+        <translation><!-- Gift --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Incentive</masterLabel>
+        <translation><!-- Incentive --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Incentives &amp; rewards</masterLabel>
+        <translation><!-- Incentives &amp; rewards --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mobility</masterLabel>
+        <translation><!-- Mobility --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Public Social Programs</masterLabel>
+        <translation><!-- Public Social Programs --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spendeo</masterLabel>
+        <translation><!-- Spendeo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sport and Culture</masterLabel>
+        <translation><!-- Sport and Culture --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TR</masterLabel>
+        <translation><!-- TR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ticket Restaurant Food</masterLabel>
+        <translation><!-- Ticket Restaurant Food --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ticket Restaurant Meal</masterLabel>
+        <translation><!-- Ticket Restaurant Meal --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>BILLING NOTES</masterLabel>
+        <translation>NOTE FATTURAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTRACT CLOSING REMARKS</masterLabel>
+        <translation>NOTE CHIUSURA CONTRATTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTRACT NOTES</masterLabel>
+        <translation>NOTE CONTRATTUALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CUSTOMER COMPLAINTS NOTES</masterLabel>
+        <translation>NOTE RECLAMI CLIENTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAULTS CUSTOMER Ristochef</masterLabel>
+        <translation>ANOMALIE CLIENTE RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAULTS NOTES CUSTOMER TKEXPRES</masterLabel>
+        <translation>NOTE ANOMALIE CLIENTE TKEXPRES</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INFORMATION REQUEST (code 001)</masterLabel>
+        <translation>RICHIESTA INFORMAZIONI (cod 001)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INFORMATION REQUEST (code 018)</masterLabel>
+        <translation>RICHIESTA INFORMAZIONI (cod 018)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INIDIRIZZI, QUITTING FROM PORTAL</masterLabel>
+        <translation>INDIRIZZI ANOMALI DA PORTALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LABELS ACTIVITIES &apos;</masterLabel>
+        <translation>ETICHETTE ATTIVITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LABELS DELIVERY</masterLabel>
+        <translation>ETICHETTE CONSEGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LABELS SHIPPING BILL</masterLabel>
+        <translation>ETICHETTE SPEDIZIONE FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MATERIAL REQUEST</masterLabel>
+        <translation>RICHIESTA MATERIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTE FOR CUSTOMERS OFFICE (code 035)</masterLabel>
+        <translation>NOTE PER UFFICIO CLIENTI (cod 035)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTE FOR CUSTOMERS OFFICE (code 036)</masterLabel>
+        <translation>NOTE PER UFFICIO CLIENTI (cod 036)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES ACTION CLAIMS</masterLabel>
+        <translation>NOTE INTERVENTI RECLAMI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES ANOMALIES POTENTIAL FROM ES</masterLabel>
+        <translation>NOTE ANOMALIE POTENZIALE DA ES</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES ASSOCIATION GROUP</masterLabel>
+        <translation>NOTE ASSOCIAZIONE GRUPPO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES CANCELING ACTIVITIES &apos;</masterLabel>
+        <translation>NOTE ANNULLAMENTO ATTIVITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES CESSATION GROUP</masterLabel>
+        <translation>NOTE ASSOCIAZIONE GRUPPO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES DELIVERY CHARGES</masterLabel>
+        <translation>NOTE SPESE CONSEGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES FOR AN EXTENSION</masterLabel>
+        <translation>NOTE DI PROROGA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES FOR PRODUCTION OFFICE</masterLabel>
+        <translation>NOTE PER UFFICIO PRODUZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES OLD MASTER FILE</masterLabel>
+        <translation>NOTE VECCHIA ANAGRAFICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES PROPOSED CLAIMS</masterLabel>
+        <translation>NOTE PROPOSTE RECLAMI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOTES TO SUSPEND ACTIVITIES &apos;</masterLabel>
+        <translation>NOTE DI SOSPENSIONE ATTIVITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OLD MASTER FILE ACTIVITY &apos;</masterLabel>
+        <translation>VECCHIA ANAGRAFICA ATTIVITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORDER CORRECTION (code 002)</masterLabel>
+        <translation>CORREZIONE ORDINI (cod 002)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORDER CORRECTION (code 017)</masterLabel>
+        <translation>CORREZIONE ORDINI (cod 017)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REPORTING OF LETTERS</masterLabel>
+        <translation>LETTERE DI RENDICONTAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SUSPENSION OF NOTES</masterLabel>
+        <translation>NOTE DI SOSPENSIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TEMPORARY CHANGE DELIVERY</masterLabel>
+        <translation>CAMBIO TEMPORANEO CONSEGNA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

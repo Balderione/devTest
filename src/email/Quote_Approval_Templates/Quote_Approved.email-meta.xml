@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Edenred</letterhead>
+    <name>Quote Approved</name>
+    <style>freeForm</style>
+    <subject>Salesforce : Your Quote has been approved by the manager</subject>
+    <textOnly>Hello {!Quote.CreatedBy},
+
+Your Quote {!Quote.Name} has been aproved by your manager.
+
+From now, you can start prepare the PDF proposal et send it by email to your customer.
+
+To start working on it, you can open the related quote by clicking on this link : https://login/salesforce/.com/{!Quote.Id}
+
+Regards,
+Your Salesforce administrator
+
+
+Note : This email has been sent automatically. Do not answer to it.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>McDonald&apos;s</fullName>
+        <default>false</default>
+        <label>McDonald&apos;s</label>
+    </customValue>
+    <customValue>
+        <fullName>Burger King</fullName>
+        <default>false</default>
+        <label>Burger King</label>
+    </customValue>
+    <customValue>
+        <fullName>Tim Hortons</fullName>
+        <default>false</default>
+        <label>Tim Hortons</label>
+    </customValue>
+    <customValue>
+        <fullName>KFC</fullName>
+        <default>false</default>
+        <label>KFC</label>
+    </customValue>
+    <customValue>
+        <fullName>Pizza Hut</fullName>
+        <default>false</default>
+        <label>Pizza Hut</label>
+    </customValue>
+    <customValue>
+        <fullName>Taco Bell</fullName>
+        <default>false</default>
+        <label>Taco Bell</label>
+    </customValue>
+    <customValue>
+        <fullName>Domino&apos;s Pizza</fullName>
+        <default>false</default>
+        <label>Domino&apos;s Pizza</label>
+    </customValue>
+    <customValue>
+        <fullName>Starbucks</fullName>
+        <default>false</default>
+        <label>Starbucks</label>
+    </customValue>
+    <customValue>
+        <fullName>Subway</fullName>
+        <default>false</default>
+        <label>Subway</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour</fullName>
+        <default>false</default>
+        <label>Carrefour</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour Market</fullName>
+        <default>false</default>
+        <label>Carrefour Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour Express</fullName>
+        <default>false</default>
+        <label>Carrefour Express</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour Bio</fullName>
+        <default>false</default>
+        <label>Carrefour Bio</label>
+    </customValue>
+    <customValue>
+        <fullName>EESS</fullName>
+        <default>false</default>
+        <label>EESS</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour Contact</fullName>
+        <default>false</default>
+        <label>Carrefour Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Bon App!</fullName>
+        <default>false</default>
+        <label>Bon App!</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour VoyaDEs</fullName>
+        <default>false</default>
+        <label>Carrefour VoyaDEs</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour Bank</fullName>
+        <default>false</default>
+        <label>Carrefour Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrefour.fr</fullName>
+        <default>false</default>
+        <label>Carrefour.fr</label>
+    </customValue>
+    <customValue>
+        <fullName>Lidl</fullName>
+        <default>false</default>
+        <label>Lidl</label>
+    </customValue>
+    <customValue>
+        <fullName>Kaufland</fullName>
+        <default>false</default>
+        <label>Kaufland</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldi</fullName>
+        <default>false</default>
+        <label>Aldi</label>
+    </customValue>
+    <customValue>
+        <fullName>Delhaize</fullName>
+        <default>false</default>
+        <label>Delhaize</label>
+    </customValue>
+    <customValue>
+        <fullName>Albert Heijn</fullName>
+        <default>false</default>
+        <label>Albert Heijn</label>
+    </customValue>
+    <customValue>
+        <fullName>Bol.com</fullName>
+        <default>false</default>
+        <label>Bol.com</label>
+    </customValue>
+    <customValue>
+        <fullName>Albert</fullName>
+        <default>false</default>
+        <label>Albert</label>
+    </customValue>
+    <customValue>
+        <fullName>AB</fullName>
+        <default>false</default>
+        <label>AB</label>
+    </customValue>
+    <customValue>
+        <fullName>ENA</fullName>
+        <default>false</default>
+        <label>ENA</label>
+    </customValue>
+    <customValue>
+        <fullName>Pingo Doce</fullName>
+        <default>false</default>
+        <label>Pingo Doce</label>
+    </customValue>
+    <customValue>
+        <fullName>Mega Image</fullName>
+        <default>false</default>
+        <label>Mega Image</label>
+    </customValue>
+    <customValue>
+        <fullName>Auchan</fullName>
+        <default>false</default>
+        <label>Auchan</label>
+    </customValue>
+    <customValue>
+        <fullName>Atac</fullName>
+        <default>false</default>
+        <label>Atac</label>
+    </customValue>
+    <customValue>
+        <fullName>Simply</fullName>
+        <default>false</default>
+        <label>Simply</label>
+    </customValue>
+    <customValue>
+        <fullName>Hipersimply</fullName>
+        <default>false</default>
+        <label>Hipersimply</label>
+    </customValue>
+    <customValue>
+        <fullName>Ipersimply</fullName>
+        <default>false</default>
+        <label>Ipersimply</label>
+    </customValue>
+    <customValue>
+        <fullName>Cityper</fullName>
+        <default>false</default>
+        <label>Cityper</label>
+    </customValue>
+    <customValue>
+        <fullName>SMA</fullName>
+        <default>false</default>
+        <label>SMA</label>
+    </customValue>
+    <customValue>
+        <fullName>A2Pas</fullName>
+        <default>false</default>
+        <label>A2Pas</label>
+    </customValue>
+    <customValue>
+        <fullName>Coeur de NaTRre</fullName>
+        <default>false</default>
+        <label>Coeur de NaTRre</label>
+    </customValue>
+    <customValue>
+        <fullName>Auchan Bio</fullName>
+        <default>false</default>
+        <label>Auchan Bio</label>
+    </customValue>
+    <customValue>
+        <fullName>Jumbo</fullName>
+        <default>false</default>
+        <label>Jumbo</label>
+    </customValue>
+    <customValue>
+        <fullName>Pao de Açuca</fullName>
+        <default>false</default>
+        <label>Pao de Açuca</label>
+    </customValue>
+    <customValue>
+        <fullName>Al Campo</fullName>
+        <default>false</default>
+        <label>Al Campo</label>
+    </customValue>
+    <customValue>
+        <fullName>Lillapois</fullName>
+        <default>false</default>
+        <label>Lillapois</label>
+    </customValue>
+    <customValue>
+        <fullName>In Extenso</fullName>
+        <default>false</default>
+        <label>In Extenso</label>
+    </customValue>
+    <customValue>
+        <fullName>Real</fullName>
+        <default>false</default>
+        <label>Real</label>
+    </customValue>
+    <customValue>
+        <fullName>MyAuchan</fullName>
+        <default>false</default>
+        <label>MyAuchan</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronodrive.fr</fullName>
+        <default>false</default>
+        <label>Chronodrive.fr</label>
+    </customValue>
+    <customValue>
+        <fullName>Auchandrive.fr</fullName>
+        <default>false</default>
+        <label>Auchandrive.fr</label>
+    </customValue>
+    <customValue>
+        <fullName>Auchandirect.</fullName>
+        <default>false</default>
+        <label>Auchandirect.</label>
+    </customValue>
+    <customValue>
+        <fullName>Tesco</fullName>
+        <default>false</default>
+        <label>Tesco</label>
+    </customValue>
+    <customValue>
+        <fullName>Tesco Express</fullName>
+        <default>false</default>
+        <label>Tesco Express</label>
+    </customValue>
+    <customValue>
+        <fullName>Tesco Extra</fullName>
+        <default>false</default>
+        <label>Tesco Extra</label>
+    </customValue>
+    <customValue>
+        <fullName>Tesco Homeplus</fullName>
+        <default>false</default>
+        <label>Tesco Homeplus</label>
+    </customValue>
+    <customValue>
+        <fullName>Resco OP</fullName>
+        <default>false</default>
+        <label>Resco OP</label>
+    </customValue>
+    <customValue>
+        <fullName>Zabka</fullName>
+        <default>false</default>
+        <label>Zabka</label>
+    </customValue>
+    <customValue>
+        <fullName>Metro</fullName>
+        <default>false</default>
+        <label>Metro</label>
+    </customValue>
+    <customValue>
+        <fullName>Saturn</fullName>
+        <default>false</default>
+        <label>Saturn</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Markt</fullName>
+        <default>false</default>
+        <label>Media Markt</label>
+    </customValue>
+    <customValue>
+        <fullName>Cora</fullName>
+        <default>false</default>
+        <label>Cora</label>
+    </customValue>
+    <customValue>
+        <fullName>Match</fullName>
+        <default>false</default>
+        <label>Match</label>
+    </customValue>
+    <customValue>
+        <fullName>Smatch</fullName>
+        <default>false</default>
+        <label>Smatch</label>
+    </customValue>
+    <customValue>
+        <fullName>Louis Delhaize</fullName>
+        <default>false</default>
+        <label>Louis Delhaize</label>
+    </customValue>
+    <customValue>
+        <fullName>Delitraiteur</fullName>
+        <default>false</default>
+        <label>Delitraiteur</label>
+    </customValue>
+    <customValue>
+        <fullName>Profi</fullName>
+        <default>false</default>
+        <label>Profi</label>
+    </customValue>
+    <customValue>
+        <fullName>Truffaut</fullName>
+        <default>false</default>
+        <label>Truffaut</label>
+    </customValue>
+    <customValue>
+        <fullName>Rewe</fullName>
+        <default>false</default>
+        <label>Rewe</label>
+    </customValue>
+    <customValue>
+        <fullName>Rewe Center</fullName>
+        <default>false</default>
+        <label>Rewe Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Rewe City</fullName>
+        <default>false</default>
+        <label>Rewe City</label>
+    </customValue>
+    <customValue>
+        <fullName>Rewe Nahkauf</fullName>
+        <default>false</default>
+        <label>Rewe Nahkauf</label>
+    </customValue>
+    <customValue>
+        <fullName>Rewe to go</fullName>
+        <default>false</default>
+        <label>Rewe to go</label>
+    </customValue>
+    <customValue>
+        <fullName>Billa</fullName>
+        <default>false</default>
+        <label>Billa</label>
+    </customValue>
+    <customValue>
+        <fullName>Bipa</fullName>
+        <default>false</default>
+        <label>Bipa</label>
+    </customValue>
+    <customValue>
+        <fullName>Glockenbacherei</fullName>
+        <default>false</default>
+        <label>Glockenbacherei</label>
+    </customValue>
+    <customValue>
+        <fullName>Penny Market</fullName>
+        <default>false</default>
+        <label>Penny Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Promkt</fullName>
+        <default>false</default>
+        <label>Promkt</label>
+    </customValue>
+    <customValue>
+        <fullName>Toom</fullName>
+        <default>false</default>
+        <label>Toom</label>
+    </customValue>
+    <customValue>
+        <fullName>Uni</fullName>
+        <default>false</default>
+        <label>Uni</label>
+    </customValue>
+    <customValue>
+        <fullName>XXL Megadiscount</fullName>
+        <default>false</default>
+        <label>XXL Megadiscount</label>
+    </customValue>
+    <customValue>
+        <fullName>Ikea</fullName>
+        <default>false</default>
+        <label>Ikea</label>
+    </customValue>
+    <customValue>
+        <fullName>Ikea restaurant</fullName>
+        <default>false</default>
+        <label>Ikea restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>Ikea Bistro</fullName>
+        <default>false</default>
+        <label>Ikea Bistro</label>
+    </customValue>
+    <customValue>
+        <fullName>Bershka</fullName>
+        <default>false</default>
+        <label>Bershka</label>
+    </customValue>
+    <customValue>
+        <fullName>Massimo Dutti</fullName>
+        <default>false</default>
+        <label>Massimo Dutti</label>
+    </customValue>
+    <customValue>
+        <fullName>Oysho</fullName>
+        <default>false</default>
+        <label>Oysho</label>
+    </customValue>
+    <customValue>
+        <fullName>Pull &amp; Bear</fullName>
+        <default>false</default>
+        <label>Pull &amp; Bear</label>
+    </customValue>
+    <customValue>
+        <fullName>Stradivarius</fullName>
+        <default>false</default>
+        <label>Stradivarius</label>
+    </customValue>
+    <customValue>
+        <fullName>Uterque</fullName>
+        <default>false</default>
+        <label>Uterque</label>
+    </customValue>
+    <customValue>
+        <fullName>Zara</fullName>
+        <default>false</default>
+        <label>Zara</label>
+    </customValue>
+    <customValue>
+        <fullName>Aki</fullName>
+        <default>false</default>
+        <label>Aki</label>
+    </customValue>
+    <customValue>
+        <fullName>Baumax</fullName>
+        <default>false</default>
+        <label>Baumax</label>
+    </customValue>
+    <customValue>
+        <fullName>Brico Center</fullName>
+        <default>false</default>
+        <label>Brico Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Bricomart</fullName>
+        <default>false</default>
+        <label>Bricomart</label>
+    </customValue>
+    <customValue>
+        <fullName>Castorama</fullName>
+        <default>false</default>
+        <label>Castorama</label>
+    </customValue>
+    <customValue>
+        <fullName>Leroy Merlin</fullName>
+        <default>false</default>
+        <label>Leroy Merlin</label>
+    </customValue>
+    <customValue>
+        <fullName>Weldom</fullName>
+        <default>false</default>
+        <label>Weldom</label>
+    </customValue>
+    <customValue>
+        <fullName>B&amp;Q</fullName>
+        <default>false</default>
+        <label>B&amp;Q</label>
+    </customValue>
+    <customValue>
+        <fullName>Bricostore</fullName>
+        <default>false</default>
+        <label>Bricostore</label>
+    </customValue>
+    <customValue>
+        <fullName>Koctas</fullName>
+        <default>false</default>
+        <label>Koctas</label>
+    </customValue>
+    <customValue>
+        <fullName>Praktiker</fullName>
+        <default>false</default>
+        <label>Praktiker</label>
+    </customValue>
+    <customValue>
+        <fullName>Screwfix</fullName>
+        <default>false</default>
+        <label>Screwfix</label>
+    </customValue>
+    <customValue>
+        <fullName>Brico Depot</fullName>
+        <default>false</default>
+        <label>Brico Depot</label>
+    </customValue>
+    <customValue>
+        <fullName>FNAC</fullName>
+        <default>false</default>
+        <label>FNAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Datart</fullName>
+        <default>false</default>
+        <label>Datart</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanden Borre</fullName>
+        <default>false</default>
+        <label>Vanden Borre</label>
+    </customValue>
+    <customValue>
+        <fullName>Darty</fullName>
+        <default>false</default>
+        <label>Darty</label>
+    </customValue>
+    <customValue>
+        <fullName>Comet</fullName>
+        <default>false</default>
+        <label>Comet</label>
+    </customValue>
+    <customValue>
+        <fullName>Marks &amp; Spencer</fullName>
+        <default>false</default>
+        <label>Marks &amp; Spencer</label>
+    </customValue>
+    <customValue>
+        <fullName>Banana Republic</fullName>
+        <default>false</default>
+        <label>Banana Republic</label>
+    </customValue>
+    <customValue>
+        <fullName>Gap</fullName>
+        <default>false</default>
+        <label>Gap</label>
+    </customValue>
+    <customValue>
+        <fullName>Decathlon</fullName>
+        <default>false</default>
+        <label>Decathlon</label>
+    </customValue>
+    <customValue>
+        <fullName>IBIS</fullName>
+        <default>false</default>
+        <label>IBIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Novotel</fullName>
+        <default>false</default>
+        <label>Novotel</label>
+    </customValue>
+    <customValue>
+        <fullName>Adagio</fullName>
+        <default>false</default>
+        <label>Adagio</label>
+    </customValue>
+    <customValue>
+        <fullName>Pullman</fullName>
+        <default>false</default>
+        <label>Pullman</label>
+    </customValue>
+    <customValue>
+        <fullName>Sofitel</fullName>
+        <default>false</default>
+        <label>Sofitel</label>
+    </customValue>
+    <customValue>
+        <fullName>Amazon</fullName>
+        <default>false</default>
+        <label>Amazon</label>
+    </customValue>
+    <masterLabel>Brand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

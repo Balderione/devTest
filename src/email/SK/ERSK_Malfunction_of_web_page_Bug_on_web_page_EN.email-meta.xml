@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ERSK_Customer_care_letterhead</letterhead>
+    <name>ERSK Malfunction of web page / Bug on web page EN</name>
+    <style>formalLetter</style>
+    <subject>ERSK Malfunction of web page / Bug on web page EN</subject>
+    <textOnly>Dear {!Contact.Name},
+
+Within the control of our web page www.mojedenred.sk we spotted a bug.
+
+We are so sorry about this and we work hard at this moment to make it work again.
+
+
+Thank you for understanding.
+
+Best regards,
+
+Operator ID: {!Case.OwnerId}
+Case ID: {!Case.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

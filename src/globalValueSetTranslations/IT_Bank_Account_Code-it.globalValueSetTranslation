@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>BANCA 121 SPA – 5617</masterLabel>
+        <translation><!-- BANCA 121 SPA – 5617 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA AGRICOLA MANTOVANA – 5681</masterLabel>
+        <translation><!-- BANCA AGRICOLA MANTOVANA – 5681 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA CARIGE SPA – 5656</masterLabel>
+        <translation><!-- BANCA CARIGE SPA – 5656 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA DI BERGAMO SPA – 5659</masterLabel>
+        <translation><!-- BANCA DI BERGAMO SPA – 5659 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA DI MILANO</masterLabel>
+        <translation>BANCA POPOLARE DI MILANO - 5676</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA ETRURIA POP AND LAZIO</masterLabel>
+        <translation>BANCA POP DELL&apos;ETRURIA E LAZIO - 5635</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA INTESA SANPAOLO</masterLabel>
+        <translation>BANCA INTESA SANPAOLO - 5685</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA INTESA SANPAOLO – 5686</masterLabel>
+        <translation><!-- BANCA INTESA SANPAOLO – 5686 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA MONTE DEI PASCHI DI SIENA SPA – 5619</masterLabel>
+        <translation><!-- BANCA MONTE DEI PASCHI DI SIENA SPA – 5619 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA NAZIONALE DEL LAVORO – 5669</masterLabel>
+        <translation><!-- BANCA NAZIONALE DEL LAVORO – 5669 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA NAZIONALE DEL LAVORO – 5670</masterLabel>
+        <translation><!-- BANCA NAZIONALE DEL LAVORO – 5670 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA NAZIONALE DELL&apos;AGRICOLTURA – 5675</masterLabel>
+        <translation><!-- BANCA NAZIONALE DELL&apos;AGRICOLTURA – 5675 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POP Puglia and Basilicata</masterLabel>
+        <translation>BANCA POP PUGLIA E BASILICATA - 5622</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DELL&apos;EMILIA ROMAGNA – 5595</masterLabel>
+        <translation><!-- BANCA POPOLARE DELL&apos;EMILIA ROMAGNA – 5595 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DI CREMA – 5623</masterLabel>
+        <translation><!-- BANCA POPOLARE DI CREMA – 5623 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DI INTRA S.P.A. - 5672</masterLabel>
+        <translation><!-- BANCA POPOLARE DI INTRA S.P.A. - 5672 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DI MILANO</masterLabel>
+        <translation><!-- BANCA POPOLARE DI MILANO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DI NOVARA SCRL – 5624</masterLabel>
+        <translation><!-- BANCA POPOLARE DI NOVARA SCRL – 5624 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE DI NOVARA – 5625</masterLabel>
+        <translation><!-- BANCA POPOLARE DI NOVARA – 5625 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA POPOLARE FRIULADRIA – 5697</masterLabel>
+        <translation><!-- BANCA POPOLARE FRIULADRIA – 5697 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA REGIONALE EUROPEA – 5641</masterLabel>
+        <translation><!-- BANCA REGIONALE EUROPEA – 5641 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA SAN PAOLO DI BRESCIA SPA – 5671</masterLabel>
+        <translation><!-- BANCA SAN PAOLO DI BRESCIA SPA – 5671 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCA TOSCANA – 5654</masterLabel>
+        <translation><!-- BANCA TOSCANA – 5654 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI BRESCIA – 5644</masterLabel>
+        <translation><!-- BANCO DI BRESCIA – 5644 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI DESIO E DELLA BRIANZA</masterLabel>
+        <translation>BANCO DI DESIO E DELLA BRIANZA - 5673</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI DESIO E DELLA BRIANZA (code 5664)</masterLabel>
+        <translation>BANCO DI DESIO E DELLA BRIANZA - 5664</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI NAPOLI – 5629</masterLabel>
+        <translation><!-- BANCO DI NAPOLI – 5629 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI SARDEGNA S.P.A. - 5655</masterLabel>
+        <translation><!-- BANCO DI SARDEGNA S.P.A. - 5655 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO DI SICILIA S.P.A. - 5665</masterLabel>
+        <translation><!-- BANCO DI SICILIA S.P.A. - 5665 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANCO POPOLARE DI VERONA E DI NOVARA – 5677</masterLabel>
+        <translation><!-- BANCO POPOLARE DI VERONA E DI NOVARA – 5677 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK BOVIO CALDERARI</masterLabel>
+        <translation>BANCA BOVIO CALDERARI - 5610</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK OF PIACENZA</masterLabel>
+        <translation>BANCA DI PIACENZA - 5637</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK VOLKSBANK</masterLabel>
+        <translation>BANCA VOLKSBANK - 5615</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BENCH MAIL</masterLabel>
+        <translation>BANCO POSTA - 5614</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BIPOP - CARIRE SPA – 5636</masterLabel>
+        <translation><!-- BIPOP - CARIRE SPA – 5636 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BNP PARIBAS – 5683</masterLabel>
+        <translation><!-- BNP PARIBAS – 5683 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Banco Desio RIBA</masterLabel>
+        <translation>BANCO DI DESIO E DELLA BRIANZA RIBA - 5662</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Banco Desio SPA Vouch</masterLabel>
+        <translation>BANCO DI DESIO E DELLA BRIANZA SPA VOUCH - 5667</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CALYON CORP. AND INVESTMENT BANK – 5682</masterLabel>
+        <translation><!-- CALYON CORP. AND INVESTMENT BANK – 5682 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CALYON CORP. AND INVESTMENT BANK – 5698</masterLabel>
+        <translation><!-- CALYON CORP. AND INVESTMENT BANK – 5698 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASH SAVINGS OF RIMINI - CARIM</masterLabel>
+        <translation>CASSA RISPARMIO DI RIMINI - CARIM - 5692</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA DI RISPARMIO DI FIRENZE – 5694</masterLabel>
+        <translation><!-- CASSA DI RISPARMIO DI FIRENZE – 5694 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA DI RISPARMIO DI PARMA E PIACENZA – 5638</masterLabel>
+        <translation><!-- CASSA DI RISPARMIO DI PARMA E PIACENZA – 5638 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA DI RISPARMIO DI SAVONA SPA – 5594</masterLabel>
+        <translation><!-- CASSA DI RISPARMIO DI SAVONA SPA – 5594 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA LOMBARDA S.P.A. - 5658</masterLabel>
+        <translation><!-- CASSA LOMBARDA S.P.A. - 5658 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA RAIFFEISEN CENTRAL SOUTH TYROL</masterLabel>
+        <translation>CASSA CENTR. RAIFFEISEN DELL&apos;ALTO ADIGE - 5611</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSA RISP.DI PESCARA E LORETO APRUTINO – 5693</masterLabel>
+        <translation><!-- CASSA RISP.DI PESCARA E LORETO APRUTINO – 5693 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTO CORRENTE POSTALE C/SCUOLA – 5613</masterLabel>
+        <translation><!-- CONTO CORRENTE POSTALE C/SCUOLA – 5613 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDEM</masterLabel>
+        <translation>CREDEM - 5643</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDITO ARTIGIANO S.P.A. - 5650</masterLabel>
+        <translation><!-- CREDITO ARTIGIANO S.P.A. - 5650 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDITO BERGAMASCO S.P.A. - 5652</masterLabel>
+        <translation><!-- CREDITO BERGAMASCO S.P.A. - 5652 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDITO BERGAMASCO SPA CASH POOLING INT. - 5653</masterLabel>
+        <translation><!-- CREDITO BERGAMASCO SPA CASH POOLING INT. - 5653 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDITO EMILIANO SPA – 5543</masterLabel>
+        <translation><!-- CREDITO EMILIANO SPA – 5543 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDITO LOMBARDO SPA – 5684</masterLabel>
+        <translation><!-- CREDITO LOMBARDO SPA – 5684 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DEUTSCHE BANK</masterLabel>
+        <translation>DEUTSCHE BANK - 5621</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMILIANO CREDIT</masterLabel>
+        <translation>CREDITO EMILIANO - 5645</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EX BANCA NAZIONALE DEL LAVORO – 5592</masterLabel>
+        <translation><!-- EX BANCA NAZIONALE DEL LAVORO – 5592 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HSBC BANK PLC – 5687</masterLabel>
+        <translation><!-- HSBC BANK PLC – 5687 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTESA SANPAOLO</masterLabel>
+        <translation>INTESA SAN PAOLO - 5689</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTESASANPAOLO (RETE SANPAOLO) – 5661</masterLabel>
+        <translation><!-- INTESASANPAOLO (RETE SANPAOLO) – 5661 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MONTE PASCHI SIENA SPA – 5618</masterLabel>
+        <translation><!-- MONTE PASCHI SIENA SPA – 5618 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Monte dei Paschi di Siena (code 5642)</masterLabel>
+        <translation>MONTE DEI PASCHI DI SIENA - 5642</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Monte dei Paschi di Siena (code 5695)</masterLabel>
+        <translation>MONTE DEI PASCHI DI SIENA - 5695</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NATIONAL BANK OF WORK</masterLabel>
+        <translation>BANCA NAZIONALE DEL LAVORO - 5666</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OF BANCO DESIO</masterLabel>
+        <translation>BANCO DI DESIO - 5668</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OF VOLTERRA SPA CASH SAVINGS</masterLabel>
+        <translation>CASSA DI RISPARMIO DI VOLTERRA SPA - 5696</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSADORE BANK</masterLabel>
+        <translation>BANCA PASSADORE - 5699</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POPULAR BANK VOLKSBANK</masterLabel>
+        <translation>BANCA POPOLARE VOLKSBANK - 5616</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POSTE ITALIANE SPA – 5620</masterLabel>
+        <translation><!-- POSTE ITALIANE SPA – 5620 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPARKASSE BANK</masterLabel>
+        <translation>BANCA SPARKASSE - 5608</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UBI BANCA S.P.A. (Code 5678)</masterLabel>
+        <translation>UBI BANCA S.P.A. - 5678</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UBI BANCA S.P.A. (Code 5679)</masterLabel>
+        <translation>UBI BANCA S.P.A. - 5679</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UBI BANCA SPA (code 5690)</masterLabel>
+        <translation>UBI BANCA SPA - 5690</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UBI BANCA SPA (code 5691)</masterLabel>
+        <translation>UBI BANCA SPA - 5691</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNICREDIT BANCA</masterLabel>
+        <translation>UNICREDIT BANCA - 5657</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNICREDIT BANCA D&apos;IMPRESA SPA – 5674</masterLabel>
+        <translation><!-- UNICREDIT BANCA D&apos;IMPRESA SPA – 5674 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNICREDIT CORPORATE BANKING – 5660</masterLabel>
+        <translation><!-- UNICREDIT CORPORATE BANKING – 5660 --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

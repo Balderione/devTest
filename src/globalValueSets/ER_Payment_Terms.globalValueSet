@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>At reception of invoice</fullName>
+        <default>false</default>
+        <label>At reception of invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>3 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>3 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>5 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>5 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>7 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>7 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>10 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>10 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>14 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>14 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>20 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>20 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>30 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>30 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>45 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>45 days after invoice issuance</label>
+    </customValue>
+    <customValue>
+        <fullName>60 days after invoice issuance</fullName>
+        <default>false</default>
+        <label>60 days after invoice issuance</label>
+    </customValue>
+    <masterLabel>Payment Terms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

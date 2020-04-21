@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Logic__c</fullName>
+        <description>Logic to insert with AND and OR operators basing fields on CMIT01_Entitlement_Fields</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Example: A01 AND A02 OR (A02 AND A03)</inlineHelpText>
+        <label>Logic</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Entitlement Logic</label>
+    <pluralLabel>Entitlement Logics</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

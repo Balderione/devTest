@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PDF Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PDF Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>IT_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- HtmlForPdf --></label>
+        <name>IT_HtmlForPdf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>IT_Object_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT_Welfare_Project__c</masterLabel>
+            <translation><!-- IT_Welfare_Project__c --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>PDF Template Layout</layout>
+        <sections>
+            <label><!-- Link personalizzati --></label>
+            <section>Link personalizzati</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

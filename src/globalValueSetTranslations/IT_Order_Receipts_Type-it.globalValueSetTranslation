@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>DISCH.VIA CORR. (TR.NON CONFORMITY)</masterLabel>
+        <translation>DISCH.VIA CORR.(TR.NON CONFOR)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCH.VIA MAIL (TR.NON CONFORMITY)</masterLabel>
+        <translation>DISCH.VIA POSTA(TR.NON CONFOR)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA COURIER (Tr. 40)</masterLabel>
+        <translation>DISCHETTO VIA CORRIERE(Tr. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA COURIER (Tr. 41)</masterLabel>
+        <translation>DISCHETTO VIA CORRIERE(Tr. 41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA COURIER (Tr.120)</masterLabel>
+        <translation>DISCHETTO VIA CORRIERE(Tr. 120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA COURIER (Tr.128)</masterLabel>
+        <translation>DISCHETTO VIA CORRIERE(Tr. 128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA COURIER (Tr.160)</masterLabel>
+        <translation>DISCHETTO VIA CORRIERE(Tr. 160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA MAIL (Tr. 120)</masterLabel>
+        <translation>DISCHETTO VIA POSTA (Tr. 120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISK VIA MAIL (Tr. 40)</masterLabel>
+        <translation>DISCHETTO VIA POSTA (Tr. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISKETTE VIA MAIL (Tr. 128)</masterLabel>
+        <translation>DISCHETTO VIA POSTA (Tr. 128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISKETTE VIA MAIL (Tr. 160)</masterLabel>
+        <translation>DISCHETTO VIA POSTA (Tr. 160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISKETTE VIA MAIL (Tr. 41)</masterLabel>
+        <translation>DISCHETTO VIA POSTA (Tr. 41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.120)</masterLabel>
+        <translation>E-MAIL (TR.120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.128)</masterLabel>
+        <translation>E-MAIL (TR.128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.160)</masterLabel>
+        <translation>E-MAIL (TR.160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.40)</masterLabel>
+        <translation>E-MAIL (TR.40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.41)</masterLabel>
+        <translation>E-MAIL (TR.41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-MAIL (TR.NON CONFORMITY)</masterLabel>
+        <translation>E-MAIL (TR.NON CONFOR)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAX AUTO (Tr.ord.aut.)</masterLabel>
+        <translation>FAX AUTOMATICO(Tr.ord.aut.)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAX WITH OPERATOR</masterLabel>
+        <translation>FAX CON OPERATORE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (TICKET EXPRESS)</masterLabel>
+        <translation>INTERNET (TICKET EXPRESS)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (TR. 128)</masterLabel>
+        <translation>INTERNET (TR. 128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (TR. 160)</masterLabel>
+        <translation>INTERNET (TR. 160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (TR. 41)</masterLabel>
+        <translation>INTERNET (TR. 41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (TR. NONCONFORMING)</masterLabel>
+        <translation>INTERNET (TR. NON CONFORMI)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (tr. 120)</masterLabel>
+        <translation>INTERNET (TR. 120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INTERNET (tr. 40)</masterLabel>
+        <translation>INTERNET (TR. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODEM (Tr. 120)</masterLabel>
+        <translation>MODEM (Tr. 120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODEM (Tr. 128)</masterLabel>
+        <translation>MODEM (Tr. 128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODEM (Tr. 160)</masterLabel>
+        <translation>MODEM (Tr. 160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODEM (Tr. 40)</masterLabel>
+        <translation>MODEM (Tr. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MODEM (Tr. 41)</masterLabel>
+        <translation>MODEM (Tr. 41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAPER (Tr. 40)</masterLabel>
+        <translation>CARTACEO (Tr. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SUBSCRIPTION (Tr.ord.aut.)</masterLabel>
+        <translation>ABBONAMENTO(Tr.ord.aut.)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE COURIER VIA (Tr.120)</masterLabel>
+        <translation>NASTRO VIA CORRIERE (Tr.120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA COURIER (Tr. 128)</masterLabel>
+        <translation>NASTRO VIA CORRIERE (Tr.128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA COURIER (Tr. 160)</masterLabel>
+        <translation>NASTRO VIA CORRIERE (Tr.160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA COURIER (Tr. 40)</masterLabel>
+        <translation>NASTRO VIA CORRIERE (Tr.40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA COURIER (Tr. 41)</masterLabel>
+        <translation>NASTRO VIA CORRIERE (Tr.41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA MAIL (Tr. 128)</masterLabel>
+        <translation>NASTRO VIA POSTA (Tr. 128)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA MAIL (Tr. 160)</masterLabel>
+        <translation>NASTRO VIA POSTA (Tr. 160)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA MAIL (Tr. 40)</masterLabel>
+        <translation>NASTRO VIA POSTA (Tr. 40)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA MAIL (Tr. 41)</masterLabel>
+        <translation>NASTRO VIA POSTA (Tr. 41)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAPE VIA MAIL (Tr.120)</masterLabel>
+        <translation>NASTRO VIA POSTA (Tr. 120)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELEF.HELLO TICKET (Tr.or.aut)</masterLabel>
+        <translation>TELEF.HELLO TICKET (Tr.or.aut)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TELEPHONE OPERATOR WITH</masterLabel>
+        <translation>TELEFONICO CON OPERATORE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Replace Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Replace Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>IT_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Object --></label>
+        <name>IT_Child_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>IT_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>IT_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>IT_Object_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT_Plan__c</masterLabel>
+            <translation><!-- IT_Plan__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT_Welfare_Project__c</masterLabel>
+            <translation><!-- IT_Welfare_Project__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PDF Template --></label>
+        <name>IT_PDF_Template__c</name>
+        <relationshipLabel><!-- Replace Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Placeholder --></label>
+        <name>IT_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replace Type --></label>
+        <name>IT_Replace_Type__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation><!-- Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Replace Item Layout</layout>
+        <sections>
+            <label><!-- Link personalizzati --></label>
+            <section>Link personalizzati</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

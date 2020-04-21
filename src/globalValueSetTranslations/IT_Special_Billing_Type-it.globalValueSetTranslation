@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ACTUAL - INCLUDING VAT</masterLabel>
+        <translation>A CONSUNTIVO - IVA COMPRESA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BILL OF MENS. FATT CONS VAT AG</masterLabel>
+        <translation>DISTINTA MENS.FATT CONS IVA AG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMISS. MONTH-END INCLUDING VAT</masterLabel>
+        <translation>EMISS. FINE MESE-IVA COMPRESA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FATT. ACTUAL VAT AGG.</masterLabel>
+        <translation>FATTUR. A CONSUNTIVO IVA AGG,</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FATT.EM END OF THE MONTH IN VAT AGG.</masterLabel>
+        <translation>FATT.EM. FINE MESE IVA IN AGG.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ISSUE - INCLUDING VAT</masterLabel>
+        <translation>EMISSIONE - COMPRENSIVO IVA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

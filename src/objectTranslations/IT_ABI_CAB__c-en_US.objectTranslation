@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ABI/CAB</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ABI/CAB</value>
+    </caseValues>
+    <fields>
+        <label><!-- ABI --></label>
+        <name>IT_ABI__c</name>
+    </fields>
+    <fields>
+        <label><!-- AbiCab --></label>
+        <name>IT_AbiCab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account --></label>
+        <name>IT_Bank_Account__c</name>
+        <relationshipLabel><!-- ABI/CAB --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bank Address --></label>
+        <name>IT_Bank_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank CAP --></label>
+        <name>IT_Bank_CAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank City --></label>
+        <name>IT_Bank_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank --></label>
+        <name>IT_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAB --></label>
+        <name>IT_CAB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Bank Name --></label>
+        <name>IT_Short_Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swift Code --></label>
+        <name>IT_Swift_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Window --></label>
+        <name>IT_Window__c</name>
+    </fields>
+    <layouts>
+        <layout>IT_ABI/CAB Layout</layout>
+        <sections>
+            <label><!-- Link personalizzati --></label>
+            <section>Link personalizzati</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Group Code --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Group Code --></value>
+    </caseValues>
+    <fields>
+        <label>Financial Center</label>
+        <name>ER_Financial_Center__c</name>
+        <relationshipLabel>Codici Clienti per il Gruppo</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Importo</label>
+        <name>IT_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto Commissione</label>
+        <name>IT_Commission_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione</label>
+        <name>IT_Description__c</name>
+    </fields>
+    <fields>
+        <label>Forzatura</label>
+        <name>IT_Forcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Group Code --></label>
+        <name>IT_Future_Change_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label>Dati Amministrativi fatturazione gruppo</label>
+        <name>IT_Group_Billing_Administrative_Data__c</name>
+    </fields>
+    <fields>
+        <label>Codice Gruppo</label>
+        <name>IT_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label>Tipologia Gruppo</label>
+        <name>IT_Group_Type__c</name>
+    </fields>
+    <fields>
+        <label>Group</label>
+        <name>IT_Group__c</name>
+        <relationshipLabel>Codici Clienti per il Gruppo</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key_GroupCode --></label>
+        <name>IT_Key_GroupCode__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label>Cliente Capogruppo</label>
+        <name>IT_Parent_Company_Client__c</name>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Account__c</name>
+    </fields>
+    <fields>
+        <label>Servizio</label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>IT_Status__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>IT_Group_Code_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Group Code Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage>Non è possibile modificare i dati relativi a questo tipo di Servizio</errorMessage>
+        <name>VRIT01_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare i campi per questo stato del cliente!</errorMessage>
+        <name>VRIT02_Status_Based_Change_Block</name>
+    </validationRules>
+    <webLinks>
+        <label>Aggiungi Codice</label>
+        <name>IT_Create_Group_Code</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ALL CARDS MADE (excluding BEFORE PROVISION and automatic reissues inoperative / faulty)</masterLabel>
+        <translation>TUTTE LE CARTE PRODOTTE (esclusa PRIMA FORNITURA e riemissioni automatiche non funzionanti/guaste)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL CARDS MADE (excluding all types of automatic reissues)</masterLabel>
+        <translation>TUTTE LE CARTE PRODOTTE (escluse tutte le tipologie di riemissioni automatiche)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL CARDS MADE (excluding automatic reissues cards not working / faulty)</masterLabel>
+        <translation>TUTTE LE CARTE PRODOTTE (escluse le riemissioni automatiche da carte non funzionanti/guaste)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL CARDS MADE (including all types of automatic reissues)</masterLabel>
+        <translation>TUTTE LE CARTE PRODOTTE (comprese tutte le tipologie di riemissioni automatiche)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL MADE CARDS (excluding auto theft reissues cards / loss)</masterLabel>
+        <translation>TUTTE LE CARTE PRODOTTE (escluse le riemissioni automatiche carte furto/smarrimento)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>JUST BEFORE PROVISION (activation of the service)</masterLabel>
+        <translation>SOLO PRIMA FORNITURA (all&apos;attivazione del servizio)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NEVER</masterLabel>
+        <translation>MAI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONLY FIRST ISSUE EMPLOYEE CARD (not applicable to the &quot;anonymous&quot; cards)</masterLabel>
+        <translation>SOLO EMISSIONE PRIMA CARTA DIPENDENTE (non applicabile alle carte &quot;anonime&quot;)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONLY automatic reissues for not working / faulty</masterLabel>
+        <translation>SOLO LE RIEMISSIONI automatiche per non funzionanti/guaste</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONLY automatic reissues for theft / loss</masterLabel>
+        <translation>SOLO LE RIEMISSIONI automatiche per furto/smarrimento</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONLY reissues (automatic - both for theft / loss for non-functional / defective)</masterLabel>
+        <translation>SOLO LE RIEMISSIONI (automatiche - sia per furto/smarrimento che per non funzionanti/guaste)</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Electronic Invoicing Information</fullName>
+        <default>false</default>
+        <label>Electronic Invoicing Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Access and Assistance</fullName>
+        <default>false</default>
+        <label>Portal Access and Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>TW Initiative Activation and Management</fullName>
+        <default>false</default>
+        <label>TW Initiative Activation and Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll Order Flows</fullName>
+        <default>false</default>
+        <label>Payroll Order Flows</label>
+    </customValue>
+    <customValue>
+        <fullName>Invoicing and Financial Documents</fullName>
+        <default>false</default>
+        <label>Invoicing and Financial Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Functionality and Other Information</fullName>
+        <default>false</default>
+        <label>Service Functionality and Other Information</label>
+    </customValue>
+    <masterLabel>IT Case Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

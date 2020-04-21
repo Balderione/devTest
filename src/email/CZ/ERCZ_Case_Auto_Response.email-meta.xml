@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Case Auto-Response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Edenred</letterhead>
+    <name>Case Auto-Response</name>
+    <style>freeForm</style>
+    <subject>Edenred – přijetí požadavku {!Case.CaseNumber}</subject>
+    <textOnly>Vážený kliente, partnere
+
+dìkujeme Vám, že jste kontaktovali naše Zákaznické centrum a tímto potvrzujeme pøijetí Vašeho e-mailu.
+
+Váš požadavek {!Case.CaseNumber} bude zpracován v nejbližším možném termínu.
+
+V pøípadì dalších dotazù nás mùžete kontaktovat telefonicky na èísle 234 662 340. Jsme tu pro Vás každý všední den od 8 – 17 hodin.
+
+Pøi komunikaci, prosím, uvádìjte Váš kód klienta (nebo IÈ) a pro rychlejší komunikaci i èíslo požadavku.
+
+S pøátelským pozdravem,
+
+
+Zákaznické centrum Edenred
+Tel. 234 662 340
+Pernerova 691/42
+186 00 Praha 8 - Karlín</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

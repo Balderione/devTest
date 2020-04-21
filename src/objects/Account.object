@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_Special_Account__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>IT_Special_Account</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Tax_Region_c__c</fullName>
+        <defaultValue>&quot;NoValue&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Tax_Region_c</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>VRIT08_SDILen</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ $User.ER_BypassVR__c = False,
+ ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+
+ IT_VAT_Group_SDI__c != null,
+
+ OR(
+  AND(
+  
+    ISPICKVAL ( IT_Company_Type__c , &#39;Institution&#39;),
+   OR(
+    LEN (IT_VAT_Group_SDI__c) &lt; 6,
+    LEN (IT_VAT_Group_SDI__c) &gt; 6
+   )
+  ),
+  AND(
+OR(
+  ISPICKVAL( IT_Company_Type__c, &#39;Private (work for Institution)&#39;),
+   ISPICKVAL ( IT_Company_Type__c , &#39;Private&#39;)),
+   OR(
+    LEN (IT_VAT_Group_SDI__c) &lt; 7,
+    LEN (IT_VAT_Group_SDI__c) &gt; 7
+   )
+  )
+ )
+)</errorConditionFormula>
+        <errorMessage>If Company Type is Institution or Private works for Institution, VAT Group SDI must contains 6 characters!
+If Company Type is Private, VAT Group SDI must contains 7 characters!</errorMessage>
+    </validationRules>
+</CustomObject>

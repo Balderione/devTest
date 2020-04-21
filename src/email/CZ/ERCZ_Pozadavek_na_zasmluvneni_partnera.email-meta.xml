@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Pozadavek na zasmluvneni partnera</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Edenred</letterhead>
+    <name>Pozadavek-na-zasmluvneni-partnera</name>
+    <style>freeForm</style>
+    <subject>Pozadavek na zasmluvneni partnera</subject>
+    <textOnly>Dobrý den,
+
+Váš požadavek byl pøedán na obchodní oddìlení pro navázání spolupráce. V pøípadì úspìšného jednání bude provozovna pøidána do našeho seznamu provozoven.
+
+S pozdravem,
+
+{!User.FirstName} {!User.LastName}
+
+Zákaznické centrum Edenred
+Tel. 234 662 340
+Pernerova 691/42
+186 00 Praha 8 - Karlín</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

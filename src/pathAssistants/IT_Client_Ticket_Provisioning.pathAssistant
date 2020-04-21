@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>IT_Provisioning__c</fieldName>
+    <masterLabel>IT Client Ticket Provisioning</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>IT_Financial_Center__c</fieldNames>
+        <picklistValueName>Activation Kit Verification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>IT_ODA__c</fieldNames>
+        <picklistValueName>First Order Ticket</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>IT_Financial_Center__c</fieldNames>
+        <picklistValueName>Master Data Activation</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>IT_Client_Ticket_Provisioning_Case_RT</recordTypeName>
+</PathAssistant>

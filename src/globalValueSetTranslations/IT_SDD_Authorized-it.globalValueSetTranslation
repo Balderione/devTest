@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>No Authorized Credit</masterLabel>
+        <translation>NO AUTORIZZATO ACCREDITO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Verified</masterLabel>
+        <translation>NON VERIFICATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Verified for Contribution</masterLabel>
+        <translation>NON VERIFICATO PER CONFERIMENTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sent Back to the Bank</masterLabel>
+        <translation>INVIATO DI NUOVO ALLA BANCA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes Authorized Credit</masterLabel>
+        <translation>SI AUTORIZZATO ACCREDITO</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

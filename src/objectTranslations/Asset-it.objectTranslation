@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Carta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Carte</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Accesso carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_access</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Livello di accesso carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_access_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Referente carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Valuta carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_currency</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Campo personalizzato carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Campi personalizzati carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Dati carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_data</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Descrizione carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_description</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Link dettagli carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_detail_link</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Divisione carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_division</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Modifica dell&apos;carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_edit</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Campo carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Campi carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Cronologia carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Cronologie carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID cronologia carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_history_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Informazioni carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Informazioni carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Data installazione carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_installdate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte è un prodotto concorrente</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_iscompetitorproduct</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte interno</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_isinternal</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Livello carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Nome carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Nomi carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Titolare carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Titolari carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alias titolare carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte controllante</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_parent</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID carte controllante</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_parent_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Prezzo carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_price</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Prodotto carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_product</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte fornito da</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_providedby_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID carte fornito da</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_providedby_account_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Data di acquisto carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_purchasedate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Quantità carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_quantity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Tipo di record carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Tipi di record carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte radice</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_root</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID carte radice</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_root_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Numero di serie carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_serialnumber</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte servito da</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_servicedby_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID carte servito da</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_servicedby_account_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Stato carte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asset_status</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Data fine utilizzo carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_usageenddate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Visualizzazione carte</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Visualizzazioni carte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>asset_view</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Carte concorrente</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>competitor_asset</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT Asset PL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

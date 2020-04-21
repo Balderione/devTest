@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>false</active>
+    <description>SK
+
+DO NOT ACTIVATE THIS PROCESS!
+Please clone and activate the new one.</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosedOnCreate</field>
+        <operation>equals</operation>
+        <value>false</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>true</isVersionDefault>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Support 2nd Level</milestoneName>
+        <minutesToComplete>240</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;,
+Account.ER_VIP__c,
+IF ( 
+CASE (  ER_CaseReason2__c ,
+&apos;Vouchers Order&apos;, &apos;1&apos;,
+&apos;Card Vouchers Order&apos;, &apos;1&apos;,
+&apos;Cancelation Of Voucher Order&apos;, &apos;1&apos;,
+&apos;Card and or load order&apos;, &apos;1&apos;,
+&apos;Cancellation of card or load order&apos;, &apos;1&apos;,
+&apos;Delivery of cards&apos;, &apos;1&apos;,
+&apos;Status of loads&apos;, &apos;1&apos;,
+&apos;Missing loads&apos;, &apos;1&apos;,
+&apos;Incomplete delivery&apos;, &apos;1&apos;,
+&apos;Incorrect delivery address&apos;, &apos;1&apos;,
+&apos;Request duplicate invoice&apos;, &apos;1&apos;,
+&apos;Payment status&apos;, &apos;1&apos;,
+&apos;Incorrect data on invoice&apos;, &apos;1&apos;,
+&apos;Incorrect amount on invoice&apos;, &apos;1&apos;,
+&apos;Credit Notes&apos;, &apos;1&apos;,
+&apos;Card activation&apos;, &apos;1&apos;,
+&apos;Permanently block card&apos;, &apos;1&apos;,
+&apos;Temporarily block card&apos;, &apos;1&apos;,
+&apos;Unblock card&apos;, &apos;1&apos;,
+&apos;Card reissuance lost or stolen&apos;, &apos;1&apos;,
+&apos;Card reissuance damaged&apos;, &apos;1&apos;,
+&apos;Information concerning a card&apos;, &apos;1&apos;,
+&apos;Expired asset&apos;, &apos;1&apos;,
+&apos;Expired load&apos;, &apos;1&apos;,
+&apos;Client Extranet connection issues&apos;, &apos;1&apos;,
+&apos;Client Extranet forgotten credentials&apos;, &apos;1&apos;,
+&apos;Client Extranet assistance&apos;, &apos;1&apos;,
+&apos;Other local Extranet&apos;, &apos;1&apos;,
+&apos;Face value&apos;, &apos;1&apos;,
+&apos;Terms and conditions&apos;, &apos;1&apos;,
+&apos;Validity of assets&apos;, &apos;1&apos;,
+&apos;Validity of loads&apos;, &apos;1&apos;,
+&apos;Solution information&apos;, &apos;1&apos;,
+&apos;Acceptance Network&apos;, &apos;1&apos;,
+&apos;Others&apos;, &apos;1&apos;,
+&apos;Apple Pay&apos;, &apos;1&apos;,
+&apos;Google Pay&apos;, &apos;1&apos;,
+&apos;0&apos; ) == &apos;1&apos;
+, true, false )
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>300</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;, 
+Account.ER_VIP__c, 
+IF ( 
+CASE ( ER_CaseReason2__c , 
+&apos;Contract set up&apos;, &apos;1&apos;, 
+&apos;Contract Modification&apos;, &apos;1&apos;, 
+&apos;Contract modification following VAT CRN change&apos;, &apos;1&apos;, 
+&apos;0&apos; ) == &apos;1&apos; 
+, true, false ) 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>420</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;, 
+IF ( 
+CASE ( ER_CaseReason2__c , 
+&apos;Vouchers Order&apos;, &apos;1&apos;, 
+&apos;Card Vouchers Order&apos;, &apos;1&apos;, 
+&apos;Cancelation Of Voucher Order&apos;, &apos;1&apos;, 
+&apos;Card and or load order&apos;, &apos;1&apos;, 
+&apos;Cancellation of card or load order&apos;, &apos;1&apos;, 
+&apos;0&apos; ) == &apos;1&apos; 
+, true, false ) 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>1440</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;, 
+IF ( 
+CASE ( ER_CaseReason2__c , 
+&apos;Damaged asset&apos;, &apos;1&apos;, 
+&apos;Reports on beneficiaries expired cards inactive cards&apos;, &apos;1&apos;, 
+&apos;0&apos; ) == &apos;1&apos; 
+, true, false ) 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>2880</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;, 
+IF ( 
+CASE ( ER_CaseReason2__c , 
+&apos;Status of loads&apos;, &apos;1&apos;, 
+&apos;Missing loads&apos;, &apos;1&apos;, 
+&apos;Incomplete delivery&apos;, &apos;1&apos;, 
+&apos;Incorrect delivery address&apos;, &apos;1&apos;, 
+&apos;Request duplicate invoice&apos;, &apos;1&apos;, 
+&apos;Payment status&apos;, &apos;1&apos;, 
+&apos;Incorrect data on invoice&apos;, &apos;1&apos;, 
+&apos;Incorrect amount on invoice&apos;, &apos;1&apos;, 
+&apos;Credit Notes&apos;, &apos;1&apos;, 
+&apos;Card activation&apos;, &apos;1&apos;,  
+&apos;Permanently block card&apos;, &apos;1&apos;, 
+&apos;Temporarily block card&apos;, &apos;1&apos;, 
+&apos;Unblock card&apos;, &apos;1&apos;, 
+&apos;Card reissuance lost or stolen&apos;, &apos;1&apos;, 
+&apos;Card reissuance damaged&apos;, &apos;1&apos;, 
+&apos;Information concerning a card&apos;, &apos;1&apos;, 
+&apos;Expired asset&apos;, &apos;1&apos;, 
+&apos;Expired load&apos;, &apos;1&apos;, 
+&apos;Client Extranet connection issues&apos;, &apos;1&apos;, 
+&apos;Client Extranet forgotten credentials&apos;, &apos;1&apos;, 
+&apos;Client Extranet assistance&apos;, &apos;1&apos;,
+&apos;User Extranet assistance&apos;, &apos;1&apos;, 
+&apos;Other local Extranet&apos;, &apos;1&apos;, 
+&apos;Face value&apos;, &apos;1&apos;, 
+&apos;Terms and conditions&apos;, &apos;1&apos;, 
+&apos;Validity of assets&apos;, &apos;1&apos;, 
+&apos;Validity of loads&apos;, &apos;1&apos;, 
+&apos;Solution information&apos;, &apos;1&apos;, 
+&apos;Acceptance Network&apos;, &apos;1&apos;, 
+&apos;Others&apos;, &apos;1&apos;, 
+&apos;Apple Pay&apos;, &apos;1&apos;, 
+&apos;Google Pay&apos;, &apos;1&apos;, 
+&apos;0&apos; ) == &apos;1&apos; 
+, true, false ) 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>2880</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+TEXT(ER_BUPicklist__c) =&apos;SK&apos;, 
+IF ( 
+CASE ( ER_CaseReason2__c , 
+&apos;Acceptance&apos;, &apos;1&apos;, 
+&apos;Delivery&apos;, &apos;1&apos;, 
+&apos;Incorrect printing&apos;, &apos;1&apos;, 
+&apos;Low printing quality&apos;, &apos;1&apos;, 
+&apos;Incorrect packaging&apos;, &apos;1&apos;, 
+&apos;Validity&apos;, &apos;1&apos;, 
+&apos;0&apos; ) == &apos;1&apos; 
+, true, false ) 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>43200</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>ERSK_EntitlementProcess_v3_0</name>
+    <versionMaster>5521w0000008Pd0</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

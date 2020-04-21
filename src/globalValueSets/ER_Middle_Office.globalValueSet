@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>TRI1</fullName>
+        <default>false</default>
+        <label>TRI1</label>
+    </customValue>
+    <customValue>
+        <fullName>TRI2</fullName>
+        <default>false</default>
+        <label>TRI2</label>
+    </customValue>
+    <customValue>
+        <fullName>CMO</fullName>
+        <default>false</default>
+        <label>CMO</label>
+    </customValue>
+    <customValue>
+        <fullName>NEMO</fullName>
+        <default>false</default>
+        <label>NEMO</label>
+    </customValue>
+    <customValue>
+        <fullName>BON</fullName>
+        <default>false</default>
+        <label>BON</label>
+    </customValue>
+    <masterLabel>Middle Office</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

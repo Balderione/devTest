@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ANNUAL</masterLabel>
+        <translation>ANNUALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BIENNIAL</masterLabel>
+        <translation>BIENNALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DECENNIAL</masterLabel>
+        <translation>DECENNALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>QUADRENNIAL</masterLabel>
+        <translation>QUADRIENNALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>QUARTERLY</masterLabel>
+        <translation>TRIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>QUINQUENNIAL</masterLabel>
+        <translation>QUINQUENNALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEMIANNUAL</masterLabel>
+        <translation>SEMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRIENNIAL</masterLabel>
+        <translation>TRIENNALE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

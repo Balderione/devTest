@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Academic Title --></label>
+        <name>CZ_AcademicTitle__c</name>
+        <picklistValues>
+            <masterLabel>Bc.</masterLabel>
+            <translation><!-- Bc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BcA.</masterLabel>
+            <translation><!-- BcA. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSc.</masterLabel>
+            <translation><!-- CSc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSc.</masterLabel>
+            <translation><!-- DSc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DiS.</masterLabel>
+            <translation><!-- DiS. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dr.</masterLabel>
+            <translation><!-- Dr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DrSc.</masterLabel>
+            <translation><!-- DrSc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ing.</masterLabel>
+            <translation><!-- Ing. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ing. arch.</masterLabel>
+            <translation><!-- Ing. arch. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JUDr.</masterLabel>
+            <translation><!-- JUDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDDr.</masterLabel>
+            <translation><!-- MDDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSDr.</masterLabel>
+            <translation><!-- MSDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUDr.</masterLabel>
+            <translation><!-- MUDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MVDr.</masterLabel>
+            <translation><!-- MVDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MgA.</masterLabel>
+            <translation><!-- MgA. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mgr.</masterLabel>
+            <translation><!-- Mgr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PaedDr.</masterLabel>
+            <translation><!-- PaedDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ph.D.</masterLabel>
+            <translation><!-- Ph.D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhDr.</masterLabel>
+            <translation><!-- PhDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhMr.</masterLabel>
+            <translation><!-- PhMr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PharmDr.</masterLabel>
+            <translation><!-- PharmDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDr.</masterLabel>
+            <translation><!-- RCDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNDr.</masterLabel>
+            <translation><!-- RNDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSDr.</masterLabel>
+            <translation><!-- RSDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTDr.</masterLabel>
+            <translation><!-- RTDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Th.D.</masterLabel>
+            <translation><!-- Th.D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ThDr.</masterLabel>
+            <translation><!-- ThDr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ThLic.</masterLabel>
+            <translation><!-- ThLic. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ThMgr.</masterLabel>
+            <translation><!-- ThMgr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>as.</masterLabel>
+            <translation><!-- as. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>doc.</masterLabel>
+            <translation><!-- doc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>odb. as.</masterLabel>
+            <translation><!-- odb. as. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>p.</masterLabel>
+            <translation><!-- p. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pan</masterLabel>
+            <translation><!-- pan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>paní</masterLabel>
+            <translation><!-- paní --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pi</masterLabel>
+            <translation><!-- pi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>prof.</masterLabel>
+            <translation><!-- prof. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pí</masterLabel>
+            <translation><!-- pí --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pí.</masterLabel>
+            <translation><!-- pí. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Address Sync --></label>
+        <name>ER_Account_Address_Sync__c</name>
+        <picklistValues>
+            <masterLabel>Not Synchronized with Account legal address</masterLabel>
+            <translation><!-- Not Synchronized with Account legal address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synchronized with Account legal address</masterLabel>
+            <translation><!-- Synchronized with Account legal address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bulk Email --></label>
+        <name>ER_Bulk_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>ER_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead provider</masterLabel>
+            <translation><!-- Lead provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade association</masterLabel>
+            <translation><!-- Trade association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmatched</masterLabel>
+            <translation><!-- Unmatched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Card Operational System ID --></label>
+        <name>ER_Client_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Paper Operational System ID --></label>
+        <name>ER_Client_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department Family --></label>
+        <name>ER_Department_Family__c</name>
+        <picklistValues>
+            <masterLabel>Facility services</masterLabel>
+            <translation><!-- Facility services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing</masterLabel>
+            <translation><!-- Purchasing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do Not Mail --></label>
+        <name>ER_Do_Not_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Contact --></label>
+        <name>ER_Do_not_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edenred Newsletter --></label>
+        <name>ER_Edenred_Newsletter__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>ER_FinancialCenter__c</name>
+        <relationshipLabel>Referenti</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inactive Reason --></label>
+        <name>ER_Inactive_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Left the company</masterLabel>
+            <translation><!-- Left the company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maternity Leave</masterLabel>
+            <translation><!-- Maternity Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Reason</masterLabel>
+            <translation><!-- Other Reason --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inactive date --></label>
+        <name>ER_Inactive_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>ER_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional User --></label>
+        <name>ER_LastModifiedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional user --></label>
+        <name>ER_Last_Modified_By_Functional_user__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date Functional User --></label>
+        <name>ER_Last_Modified_Date_Functional_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last date of Sync --></label>
+        <name>ER_Last_date_of_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last inbound contact date --></label>
+        <name>ER_Last_inbound_contact_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS --></label>
+        <name>ER_NPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label>Ruolo</label>
+        <name>ER_Role__c</name>
+        <picklistValues>
+            <masterLabel>Assistant</masterLabel>
+            <translation><!-- Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Management</masterLabel>
+            <translation><!-- Middle Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store manager</masterLabel>
+            <translation><!-- Store manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Management</masterLabel>
+            <translation><!-- Top Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>ER_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Utente AC</label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Codice SF</label>
+        <name>IT_Autonumber_Code__c</name>
+    </fields>
+    <fields>
+        <label>Riceve Fattura Cliente</label>
+        <name>IT_Client_Billing_Recepits__c</name>
+    </fields>
+    <fields>
+        <label>Codice</label>
+        <name>IT_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Contact --></label>
+        <name>IT_Future_Change_Contact__c</name>
+    </fields>
+    <fields>
+        <label>Cognome</label>
+        <name>IT_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mail PEC --></label>
+        <name>IT_Mail_PEC__c</name>
+    </fields>
+    <fields>
+        <label>Effettua Ordini</label>
+        <name>IT_Order_Making__c</name>
+    </fields>
+    <fields>
+        <label><!-- PEC --></label>
+        <name>IT_PEC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referent Progressive --></label>
+        <name>IT_Referent_Progressive__c</name>
+    </fields>
+    <fields>
+        <label>Riceve Ticket</label>
+        <name>IT_Ticket_Receipts__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attv</masterLabel>
+            <translation><!-- Attv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cli</masterLabel>
+            <translation><!-- Cli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ref</masterLabel>
+            <translation><!-- Ref --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soc</masterLabel>
+            <translation><!-- Soc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vons</masterLabel>
+            <translation><!-- Vons --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>ER Contact Layout</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Contact Layout 2.1</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Contact PL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Gestisci Abilitazioni --></label>
+        <name>IT_Add_Role</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Contact Roles --></label>
+        <name>IT_Contact_Roles</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Business Contact --></label>
+        <name>ER_Contact_RT</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- E-mail or Phone/Mobile phone number are required. --></errorMessage>
+        <name>VRER01_Email_OR_PhoneNumber_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The first name information is mandatory to create a contact --></errorMessage>
+        <name>VRER03_Contact_Mandatory_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The format of the Mobile Phone Number must be equal to Hungarian format, as following : 
++36-11-111-1111 (mobile phones) --></errorMessage>
+        <name>VRHU04_Mobile_Number_Hungarian_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The format of the Phone Number must be equal to Hungarian format, as following : 
++36-1-111-1111 (capital city)
++36-11-111-111 (countryside) --></errorMessage>
+        <name>VRHU05_Phone_Number_Hungarian_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- E-mail or Phone/Mobile phone number are required. --></errorMessage>
+        <name>VRHU10_Email_OR_PhoneNumber_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>I caratteri del telefono devono essere esclusivamente numeri!</errorMessage>
+        <name>VRIT01_Contact_Detail_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cliente di tipo &apos;Soc&apos; non è possibile fare modifiche</errorMessage>
+        <name>VRIT02_Client_SOC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- E-mail or Phone/Mobile phone number are required. --></errorMessage>
+        <name>VRPL01_Email_Or_PhoneNumber_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

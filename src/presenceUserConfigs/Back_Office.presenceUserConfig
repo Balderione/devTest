@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>IT Back Office Profile</profile>
+        </profiles>
+        <users>
+            <user>alessandro.feliziani@edenred</user>
+            <user>giancarlo.lobartolo@edenred</user>
+            <user>vanessa.farina@edenred</user>
+        </users>
+    </assignments>
+    <capacity>3</capacity>
+    <enableAutoAccept>true</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>Back Office</label>
+</PresenceUserConfig>

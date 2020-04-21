@@ -1,0 +1,7 @@
+Hi Dear User,<br>
+Follow this link to fill the form<br>
+<===================================================><br>
+
+https://er-italy--devam--c.visualforce.com/apex/VFIT02_MDA_Form?caseNumber={!Case.CaseNumber}<br>
+
+<===================================================><br>

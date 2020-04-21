@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AGREEMENTS</masterLabel>
+        <translation>ACCORDI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ATTACK CNC</masterLabel>
+        <translation>ATTACCO CNC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTRACT EXTENSION</masterLabel>
+        <translation>PROROGA CONTRATTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CROSSING CITY TIME</masterLabel>
+        <translation>PASSAGGIO A CITY TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CROSSING CITY TIME PLUS SMART</masterLabel>
+        <translation>PASSAGGIO A CITY TIME PLUS SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCLOSURE</masterLabel>
+        <translation>INFORMATIVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LOYALTY</masterLabel>
+        <translation>FIDELIZZAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MULTISCONTO</masterLabel>
+        <translation>MULTISCONTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER</masterLabel>
+        <translation>ALTRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASS A GOOD CLUB Ristochef</masterLabel>
+        <translation>PASSAGGIO A BUONO CLUB RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASS A GOOD MEAL Ristochef</masterLabel>
+        <translation>PASSAGGIO A BUONO PASTO RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE AND LUNCH-SMART</masterLabel>
+        <translation>PASSAGGIO A E-LUNCH SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET CARD</masterLabel>
+        <translation>PASSAGGIO A TICKET CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET GOLD</masterLabel>
+        <translation>PASSAGGIO A TICKET GOLD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET MAX</masterLabel>
+        <translation>PASSAGGIO A TICKET MAX</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET MAX SMART</masterLabel>
+        <translation>PASSAGGIO A TICKET MAX SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET RESTAURANT</masterLabel>
+        <translation>PASSAGGIO A TICKET RESTAURANT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASSAGE TICKET SMART</masterLabel>
+        <translation>PASSAGGIO A TICKET SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSITION TO LUNCH E-CARD</masterLabel>
+        <translation>PASSAGGIO A E-LUNCH CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSITION TO LUNCH E-TICKET</masterLabel>
+        <translation>PASSAGGIO A E-LUNCH TICKET</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

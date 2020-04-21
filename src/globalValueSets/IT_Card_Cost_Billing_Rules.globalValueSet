@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>ONLY reissues (automatic - both for theft / loss for non-functional / defective)</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>ONLY automatic reissues for theft / loss</label>
+    </customValue>
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>ONLY automatic reissues for not working / faulty</label>
+    </customValue>
+    <customValue>
+        <fullName>0</fullName>
+        <default>false</default>
+        <label>NEVER</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>ALL CARDS MADE (excluding all types of automatic reissues)</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>ALL CARDS MADE (including all types of automatic reissues)</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>ALL CARDS MADE (excluding automatic reissues cards not working / faulty)</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>ALL MADE CARDS (excluding auto theft reissues cards / loss)</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>JUST BEFORE PROVISION (activation of the service)</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>ONLY FIRST ISSUE EMPLOYEE CARD (not applicable to the &quot;anonymous&quot; cards)</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>ALL CARDS MADE (excluding BEFORE PROVISION and automatic reissues inoperative / faulty)</label>
+    </customValue>
+    <masterLabel>IT Card Cost Billing Rules</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

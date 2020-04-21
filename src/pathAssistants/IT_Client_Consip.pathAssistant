@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>IT_Provisioning__c</fieldName>
+    <masterLabel>IT Client Consip</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>IT_Financial_Center__c</fieldNames>
+        <fieldNames>IT_Circuit__c</fieldNames>
+        <info>&lt;p&gt;Creazione e attivazione su SmartCard&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Circuit Configuration</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Kit di Attivazione&lt;/li&gt;&lt;li&gt;Tabella esercizi convenzionati&lt;/li&gt;&lt;li&gt;Credenziali portale&lt;/li&gt;&lt;li&gt;Tracciati&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Comunication To Client Sending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>IT_ODA__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Inserimento OdA&lt;/li&gt;&lt;li&gt;Creazione opportunità in E.six&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Creation of a new Code</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>IT_Link_To_Portal__c</fieldNames>
+        <info>&lt;p&gt;Utilizzare il link al portale nell&amp;#39;apposita Sezione&lt;/p&gt;</info>
+        <picklistValueName>First Order Ticket/Cards</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>IT_Documentation_Outcome__c</fieldNames>
+        <fieldNames>IT_Amount_OdA__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Inserimento OdA&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Inserimento documenti tramite componente dedicato&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Forms Acceptance</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>IT_Financial_Center__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Pulsante Attiva su Financial Center&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Richiesta Geolocalizzazione in E.six&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Master Data Activation</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>IT_Client_Consip_Case_RT</recordTypeName>
+</PathAssistant>

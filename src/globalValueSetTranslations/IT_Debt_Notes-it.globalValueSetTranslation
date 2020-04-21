@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>No Debt Issue Notes</masterLabel>
+        <translation>No Emissione Note Debito</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Notes Debt Issuance printout Only</masterLabel>
+        <translation>Emissione Note Debito Solo Tabulato</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes Debt Issue Notes</masterLabel>
+        <translation>Sì Emissione Note Debito</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

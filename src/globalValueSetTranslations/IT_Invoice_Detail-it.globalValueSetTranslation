@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>No detail (no cut)</masterLabel>
+        <translation>No dettaglio (senza taglio)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>No details on the invoice</masterLabel>
+        <translation>No dettaglio in fattura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes detail on invoice activities</masterLabel>
+        <translation>Sì dettaglio attività in fattura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes detail on invoice activities (yes subtotals)</masterLabel>
+        <translation>Sì dettaglio attività in fattura (sì subtotali)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes detailed activities (no cut)</masterLabel>
+        <translation>Sì dettaglio attività (senza taglio)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yes detailed activities (uncut) (yes subtotals)</masterLabel>
+        <translation>Sì dettaglio attività (senza taglio) (sì subtotali)</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

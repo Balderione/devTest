@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Entitlement Logic</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Entitlement Logics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>IT_Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Example: A01 AND A02 OR (A02 AND A03) --></help>
+        <label><!-- Logic --></label>
+        <name>IT_Logic__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>5635</fullName>
+        <default>false</default>
+        <label>BANCA ETRURIA POP AND LAZIO</label>
+    </customValue>
+    <customValue>
+        <fullName>5621</fullName>
+        <default>false</default>
+        <label>DEUTSCHE BANK</label>
+    </customValue>
+    <customValue>
+        <fullName>5642</fullName>
+        <default>false</default>
+        <label>Monte dei Paschi di Siena (code 5642)</label>
+    </customValue>
+    <customValue>
+        <fullName>5643</fullName>
+        <default>false</default>
+        <label>CREDEM</label>
+    </customValue>
+    <customValue>
+        <fullName>5614</fullName>
+        <default>false</default>
+        <label>BENCH MAIL</label>
+    </customValue>
+    <customValue>
+        <fullName>5662</fullName>
+        <default>false</default>
+        <label>Banco Desio RIBA</label>
+    </customValue>
+    <customValue>
+        <fullName>5657</fullName>
+        <default>false</default>
+        <label>UNICREDIT BANCA</label>
+    </customValue>
+    <customValue>
+        <fullName>5678</fullName>
+        <default>false</default>
+        <label>UBI BANCA S.P.A. (Code 5678)</label>
+    </customValue>
+    <customValue>
+        <fullName>5699</fullName>
+        <default>false</default>
+        <label>PASSADORE BANK</label>
+    </customValue>
+    <customValue>
+        <fullName>5667</fullName>
+        <default>false</default>
+        <label>Banco Desio SPA Vouch</label>
+    </customValue>
+    <customValue>
+        <fullName>5668</fullName>
+        <default>false</default>
+        <label>OF BANCO DESIO</label>
+    </customValue>
+    <customValue>
+        <fullName>5679</fullName>
+        <default>false</default>
+        <label>UBI BANCA S.P.A. (Code 5679)</label>
+    </customValue>
+    <customValue>
+        <fullName>5691</fullName>
+        <default>false</default>
+        <label>UBI BANCA SPA (code 5691)</label>
+    </customValue>
+    <customValue>
+        <fullName>5689</fullName>
+        <default>false</default>
+        <label>INTESA SANPAOLO</label>
+    </customValue>
+    <customValue>
+        <fullName>5666</fullName>
+        <default>false</default>
+        <label>NATIONAL BANK OF WORK</label>
+    </customValue>
+    <customValue>
+        <fullName>5690</fullName>
+        <default>false</default>
+        <label>UBI BANCA SPA (code 5690)</label>
+    </customValue>
+    <customValue>
+        <fullName>5637</fullName>
+        <default>false</default>
+        <label>BANK OF PIACENZA</label>
+    </customValue>
+    <customValue>
+        <fullName>5645</fullName>
+        <default>false</default>
+        <label>EMILIANO CREDIT</label>
+    </customValue>
+    <customValue>
+        <fullName>5692</fullName>
+        <default>false</default>
+        <label>CASH SAVINGS OF RIMINI - CARIM</label>
+    </customValue>
+    <customValue>
+        <fullName>5696</fullName>
+        <default>false</default>
+        <label>OF VOLTERRA SPA CASH SAVINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>5676</fullName>
+        <default>false</default>
+        <label>BANCA DI MILANO</label>
+    </customValue>
+    <customValue>
+        <fullName>5695</fullName>
+        <default>false</default>
+        <label>Monte dei Paschi di Siena (code 5695)</label>
+    </customValue>
+    <customValue>
+        <fullName>5622</fullName>
+        <default>false</default>
+        <label>BANCA POP Puglia and Basilicata</label>
+    </customValue>
+    <customValue>
+        <fullName>5608</fullName>
+        <default>false</default>
+        <label>SPARKASSE BANK</label>
+    </customValue>
+    <customValue>
+        <fullName>5610</fullName>
+        <default>false</default>
+        <label>BANK BOVIO CALDERARI</label>
+    </customValue>
+    <customValue>
+        <fullName>5611</fullName>
+        <default>false</default>
+        <label>CASSA RAIFFEISEN CENTRAL SOUTH TYROL</label>
+    </customValue>
+    <customValue>
+        <fullName>5615</fullName>
+        <default>false</default>
+        <label>BANK VOLKSBANK</label>
+    </customValue>
+    <customValue>
+        <fullName>5616</fullName>
+        <default>false</default>
+        <label>POPULAR BANK VOLKSBANK</label>
+    </customValue>
+    <customValue>
+        <fullName>5685</fullName>
+        <default>false</default>
+        <label>BANCA INTESA SANPAOLO</label>
+    </customValue>
+    <customValue>
+        <fullName>5673</fullName>
+        <default>false</default>
+        <label>BANCO DI DESIO E DELLA BRIANZA</label>
+    </customValue>
+    <customValue>
+        <fullName>5664</fullName>
+        <default>false</default>
+        <label>BANCO DI DESIO E DELLA BRIANZA (code 5664)</label>
+    </customValue>
+    <customValue>
+        <fullName>5680</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DI MILANO</label>
+    </customValue>
+    <customValue>
+        <fullName>5543</fullName>
+        <default>false</default>
+        <label>CREDITO EMILIANO SPA – 5543</label>
+    </customValue>
+    <customValue>
+        <fullName>5592</fullName>
+        <default>false</default>
+        <label>EX BANCA NAZIONALE DEL LAVORO – 5592</label>
+    </customValue>
+    <customValue>
+        <fullName>5594</fullName>
+        <default>false</default>
+        <label>CASSA DI RISPARMIO DI SAVONA SPA – 5594</label>
+    </customValue>
+    <customValue>
+        <fullName>5595</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DELL&apos;EMILIA ROMAGNA – 5595</label>
+    </customValue>
+    <customValue>
+        <fullName>5613</fullName>
+        <default>false</default>
+        <label>CONTO CORRENTE POSTALE C/SCUOLA – 5613</label>
+    </customValue>
+    <customValue>
+        <fullName>5617</fullName>
+        <default>false</default>
+        <label>BANCA 121 SPA – 5617</label>
+    </customValue>
+    <customValue>
+        <fullName>5618</fullName>
+        <default>false</default>
+        <label>MONTE PASCHI SIENA SPA – 5618</label>
+    </customValue>
+    <customValue>
+        <fullName>5619</fullName>
+        <default>false</default>
+        <label>BANCA MONTE DEI PASCHI DI SIENA SPA – 5619</label>
+    </customValue>
+    <customValue>
+        <fullName>5620</fullName>
+        <default>false</default>
+        <label>POSTE ITALIANE SPA – 5620</label>
+    </customValue>
+    <customValue>
+        <fullName>5623</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DI CREMA – 5623</label>
+    </customValue>
+    <customValue>
+        <fullName>5624</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DI NOVARA SCRL – 5624</label>
+    </customValue>
+    <customValue>
+        <fullName>5625</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DI NOVARA – 5625</label>
+    </customValue>
+    <customValue>
+        <fullName>5629</fullName>
+        <default>false</default>
+        <label>BANCO DI NAPOLI – 5629</label>
+    </customValue>
+    <customValue>
+        <fullName>5636</fullName>
+        <default>false</default>
+        <label>BIPOP - CARIRE SPA – 5636</label>
+    </customValue>
+    <customValue>
+        <fullName>5638</fullName>
+        <default>false</default>
+        <label>CASSA DI RISPARMIO DI PARMA E PIACENZA – 5638</label>
+    </customValue>
+    <customValue>
+        <fullName>5641</fullName>
+        <default>false</default>
+        <label>BANCA REGIONALE EUROPEA – 5641</label>
+    </customValue>
+    <customValue>
+        <fullName>5644</fullName>
+        <default>false</default>
+        <label>BANCO DI BRESCIA – 5644</label>
+    </customValue>
+    <customValue>
+        <fullName>5650</fullName>
+        <default>false</default>
+        <label>CREDITO ARTIGIANO S.P.A. - 5650</label>
+    </customValue>
+    <customValue>
+        <fullName>5652</fullName>
+        <default>false</default>
+        <label>CREDITO BERGAMASCO S.P.A. - 5652</label>
+    </customValue>
+    <customValue>
+        <fullName>5653</fullName>
+        <default>false</default>
+        <label>CREDITO BERGAMASCO SPA CASH POOLING INT. - 5653</label>
+    </customValue>
+    <customValue>
+        <fullName>5654</fullName>
+        <default>false</default>
+        <label>BANCA TOSCANA – 5654</label>
+    </customValue>
+    <customValue>
+        <fullName>5655</fullName>
+        <default>false</default>
+        <label>BANCO DI SARDEGNA S.P.A. - 5655</label>
+    </customValue>
+    <customValue>
+        <fullName>5656</fullName>
+        <default>false</default>
+        <label>BANCA CARIGE SPA – 5656</label>
+    </customValue>
+    <customValue>
+        <fullName>5658</fullName>
+        <default>false</default>
+        <label>CASSA LOMBARDA S.P.A. - 5658</label>
+    </customValue>
+    <customValue>
+        <fullName>5659</fullName>
+        <default>false</default>
+        <label>BANCA DI BERGAMO SPA – 5659</label>
+    </customValue>
+    <customValue>
+        <fullName>5660</fullName>
+        <default>false</default>
+        <label>UNICREDIT CORPORATE BANKING – 5660</label>
+    </customValue>
+    <customValue>
+        <fullName>5661</fullName>
+        <default>false</default>
+        <label>INTESASANPAOLO (RETE SANPAOLO) – 5661</label>
+    </customValue>
+    <customValue>
+        <fullName>5665</fullName>
+        <default>false</default>
+        <label>BANCO DI SICILIA S.P.A. - 5665</label>
+    </customValue>
+    <customValue>
+        <fullName>5669</fullName>
+        <default>false</default>
+        <label>BANCA NAZIONALE DEL LAVORO – 5669</label>
+    </customValue>
+    <customValue>
+        <fullName>5670</fullName>
+        <default>false</default>
+        <label>BANCA NAZIONALE DEL LAVORO – 5670</label>
+    </customValue>
+    <customValue>
+        <fullName>5671</fullName>
+        <default>false</default>
+        <label>BANCA SAN PAOLO DI BRESCIA SPA – 5671</label>
+    </customValue>
+    <customValue>
+        <fullName>5672</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE DI INTRA S.P.A. - 5672</label>
+    </customValue>
+    <customValue>
+        <fullName>5674</fullName>
+        <default>false</default>
+        <label>UNICREDIT BANCA D&apos;IMPRESA SPA – 5674</label>
+    </customValue>
+    <customValue>
+        <fullName>5675</fullName>
+        <default>false</default>
+        <label>BANCA NAZIONALE DELL&apos;AGRICOLTURA – 5675</label>
+    </customValue>
+    <customValue>
+        <fullName>5677</fullName>
+        <default>false</default>
+        <label>BANCO POPOLARE DI VERONA E DI NOVARA – 5677</label>
+    </customValue>
+    <customValue>
+        <fullName>5681</fullName>
+        <default>false</default>
+        <label>BANCA AGRICOLA MANTOVANA – 5681</label>
+    </customValue>
+    <customValue>
+        <fullName>5682</fullName>
+        <default>false</default>
+        <label>CALYON CORP. AND INVESTMENT BANK – 5682</label>
+    </customValue>
+    <customValue>
+        <fullName>5683</fullName>
+        <default>false</default>
+        <label>BNP PARIBAS – 5683</label>
+    </customValue>
+    <customValue>
+        <fullName>5684</fullName>
+        <default>false</default>
+        <label>CREDITO LOMBARDO SPA – 5684</label>
+    </customValue>
+    <customValue>
+        <fullName>5686</fullName>
+        <default>false</default>
+        <label>BANCA INTESA SANPAOLO – 5686</label>
+    </customValue>
+    <customValue>
+        <fullName>5687</fullName>
+        <default>false</default>
+        <label>HSBC BANK PLC – 5687</label>
+    </customValue>
+    <customValue>
+        <fullName>5693</fullName>
+        <default>false</default>
+        <label>CASSA RISP.DI PESCARA E LORETO APRUTINO – 5693</label>
+    </customValue>
+    <customValue>
+        <fullName>5694</fullName>
+        <default>false</default>
+        <label>CASSA DI RISPARMIO DI FIRENZE – 5694</label>
+    </customValue>
+    <customValue>
+        <fullName>5697</fullName>
+        <default>false</default>
+        <label>BANCA POPOLARE FRIULADRIA – 5697</label>
+    </customValue>
+    <customValue>
+        <fullName>5698</fullName>
+        <default>false</default>
+        <label>CALYON CORP. AND INVESTMENT BANK – 5698</label>
+    </customValue>
+    <masterLabel>IT Bank Account Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

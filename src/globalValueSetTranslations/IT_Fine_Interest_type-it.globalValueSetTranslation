@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>B.C.E. RATE</masterLabel>
+        <translation>TASSO B.C.E.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EURIBOR RATE TO 12 MONTHS</masterLabel>
+        <translation>TASSO EURIBOR A 12 MESI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LEGAL RATE</masterLabel>
+        <translation>TASSO LEGALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NO INTEREST</masterLabel>
+        <translation>NO INTERESSI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RATE ABI</masterLabel>
+        <translation>TASSO ABI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RATE CALCULATED ACCORDING TO DATE AND TYPE CONTRACT</masterLabel>
+        <translation><!-- RATE CALCULATED ACCORDING TO DATE AND TYPE CONTRACT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RATE DECREE 231/02</masterLabel>
+        <translation>TASSO DECRETO LEGGE 231/02</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>THE PERCENTAGE INDICATED</masterLabel>
+        <translation>ALLA PERCENTUALE INDICATA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

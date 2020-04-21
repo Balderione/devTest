@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>Cancellato</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation>Chiuso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escalated</masterLabel>
+        <translation>Riassegnato</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Feedback Sent</masterLabel>
+        <translation>In attesa risposta cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In Progress</masterLabel>
+        <translation>In lavorazione</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation>Nuovo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending</masterLabel>
+        <translation>In attesa feedback interno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reopen</masterLabel>
+        <translation>Riaperto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Resolved</masterLabel>
+        <translation>Chiuso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spam</masterLabel>
+        <translation>Spam</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting</masterLabel>
+        <translation>In attesa</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

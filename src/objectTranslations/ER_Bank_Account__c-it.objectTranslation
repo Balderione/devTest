@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Banca</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Banche</value>
+    </caseValues>
+    <fields>
+        <label><!-- Specific symbol --></label>
+        <name>CZ_Specific_symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variable symbol --></label>
+        <name>CZ_Variable_symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIC --></label>
+        <name>ER_BIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number Key --></label>
+        <name>ER_Bank_Account_Number_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number Prefix --></label>
+        <name>ER_Bank_Account_Number_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>ER_Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Owner --></label>
+        <name>ER_Bank_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Status --></label>
+        <name>ER_Bank_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank City --></label>
+        <name>ER_Bank_City__c</name>
+    </fields>
+    <fields>
+        <label>Nome Banca</label>
+        <name>ER_Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>ER_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>ER_Country__c</name>
+    </fields>
+    <fields>
+        <label>Codice Fatturazione</label>
+        <name>ER_Financial_Center__c</name>
+        <relationshipLabel>Banche</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IBAN --></label>
+        <name>ER_IBAN__c</name>
+    </fields>
+    <fields>
+        <label>Via</label>
+        <name>ER_Street__c</name>
+    </fields>
+    <fields>
+        <label>CAP</label>
+        <name>ER_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- ABI --></label>
+        <name>IT_ABI__c</name>
+    </fields>
+    <fields>
+        <label>Autorizzato (OLD)</label>
+        <name>IT_Authorized__c</name>
+    </fields>
+    <fields>
+        <label>Codice Banca</label>
+        <name>IT_Bank_Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAB --></label>
+        <name>IT_CAB__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC --></label>
+        <name>IT_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Iban --></label>
+        <name>IT_Check_Iban__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIN --></label>
+        <name>IT_Cin__c</name>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic AC User --></label>
+        <name>IT_Economic_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity End Date --></label>
+        <name>IT_Economic_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity Start Date --></label>
+        <name>IT_Economic_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Bank Account --></label>
+        <name>IT_Future_Change_Bank_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change SDD --></label>
+        <name>IT_Future_Change_SDD__c</name>
+    </fields>
+    <fields>
+        <label>Codice Pagamento</label>
+        <name>IT_Payment_Code__c</name>
+    </fields>
+    <fields>
+        <label>Autorizzato</label>
+        <name>IT_SDD_Authorized__c</name>
+    </fields>
+    <fields>
+        <label>Codice Contratto SEPA</label>
+        <name>IT_SDD_Contract_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Fiscale SEPA</label>
+        <name>IT_SDD_Fiscal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Pagamento SEPA</label>
+        <name>IT_SDD_Payment_Code__c</name>
+        <picklistValues>
+            <masterLabel>0 SDD B2B DAYS INVOICE DATE</masterLabel>
+            <translation>SDD B2B 0 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 SEPA DD DATE INVOICE + 15</masterLabel>
+            <translation>SEPA 60 GG DATA FATTURA + 15</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 150 DAYS INVOICE DATE</masterLabel>
+            <translation>SDD B2B 150 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 30 GG INVOICE DATE</masterLabel>
+            <translation>SDD B2B 30 GG DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 60 GG INVOICE DATE END MONTH</masterLabel>
+            <translation>SDD B2B 60 GG DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD CORE 0 DAYS INVOICE DATE</masterLabel>
+            <translation>SDD CORE 0 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD CORE 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 30 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 120 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 120 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 15 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 15 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 30 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SDD CORE 30 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS OF RECEIPT OF INVOICE</masterLabel>
+            <translation>SEPA 30 GIORNI RICEVIMENTO FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 45 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 45 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE RECEPTION</masterLabel>
+            <translation>SEPA 45 GIORNI RICEVIMENTO FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 5TH DAYS OF NEXT MONTH 3rd. INVOICE DATE</masterLabel>
+            <translation>SEPA AL 5° GG DEL 3° MESE SUCC. DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 60 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 60 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 60 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 8 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 8 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 90 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 90 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 90 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA A 30 DAY BILLING MONTH</masterLabel>
+            <translation>SEPA A 30 GIORNO MESE DI FATTURAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA DD DT 45 BILL END MONTH 10 + GG</masterLabel>
+            <translation>SEPA 45 GG DT FATTURA FINE MESE + 10 GG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA DD DT 60 BILL END MONTH 10 + GG</masterLabel>
+            <translation>SEPA 60 GG DT FATTURA FINE MESE + 10 GG</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Mandato Sottoscrizione SEPA</label>
+        <name>IT_SDD_Subscription_Date__c</name>
+    </fields>
+    <fields>
+        <label>Modulo SEPA Originale</label>
+        <name>IT_SEPA_Original_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- SkipActivation --></label>
+        <name>IT_SkipActivation__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>ER Bank Account Layout</layout>
+        <sections>
+            <label><!-- Bank Account Detail --></label>
+            <section>Bank Account Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Account Owner --></label>
+            <section>Bank Account Owner</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Information --></label>
+            <section>Bank Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Bank Account</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Informazioni SEPA</label>
+            <section>SDD Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Banca</nameFieldLabel>
+    <quickActions>
+        <label><!-- Bank Request Change --></label>
+        <name>IT_Bank_Request_Change</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Bank Account --></label>
+        <name>IT_Change_Bank_Account</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- IBAN Format is not correct --></errorMessage>
+        <name>VRER01_BankAccount_IBANFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The format of the IBAN must be equal to Hungarian format, as following : 
+
+00000000-00000000-00000000 (8 digits / dash separator / 8 digits / dash separator / 8 digits) --></errorMessage>
+        <name>VRHU06_IBAN_Hungarian_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Può essere modificato solo se si tratta di pagamento mediante CARTA DI CREDITO/BONIFICO ANTICIPATO/PAYPAL ed è possibile eventualmente cambiarlo fra uno dei tre!</errorMessage>
+        <name>VRIT01_PaymentConditions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se si tratta di Pagamento SEPA, è necessario valorizzare i campi ABI, CAB, CC, CIN, Codice Banca, Check Iban, Codice Contratto SEPA, Codice Fiscale SEPA, Data Mandato SEPA, Check Iban!</errorMessage>
+        <name>VRIT02_SDD_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il Codice della Banca è obbligatorio per la tipologia di pagamento selezionata!</errorMessage>
+        <name>VRIT03_Bank_Required_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile modificare i dati relativi a questo tipo di Servizio</errorMessage>
+        <name>VRIT04_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare i campi per questo stato del cliente!</errorMessage>
+        <name>VRIT05_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>L&apos;autorizzazione non può essere impostata se non sono stati popolati i campi relativi al pagamento SEPA!</errorMessage>
+        <name>VRIT06_Authorized</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Manca la tipologia di pagamento!</errorMessage>
+        <name>VRIT07_No_Payment_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inserire nel codice pagamento, lo stesso valore del codice pagamento SEPA!</errorMessage>
+        <name>VRIT09_Insert_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Attenzione! Sbiancare la banca!</errorMessage>
+        <name>VRIT10_Bank_Must_Be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Utente non abilitato a modificare questo campo</errorMessage>
+        <name>VRIT_08_SDD_Authorized</name>
+    </validationRules>
+</CustomObjectTranslation>

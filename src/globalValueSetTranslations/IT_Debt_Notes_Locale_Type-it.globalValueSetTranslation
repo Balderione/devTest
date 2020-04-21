@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ALL LOCAL</masterLabel>
+        <translation>TUTTI I LOCALI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL RESTAURANTS</masterLabel>
+        <translation>RISTORATORI TUTTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CANTEEN</masterLabel>
+        <translation>MENSE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CANTEEN ITEMS PAY CARD</masterLabel>
+        <translation>MENSE POSTE PAY CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gemeaz MENSA - ATOS ORIGIN SPA</masterLabel>
+        <translation>MENSA GEMEAZ - ATOS ORIGIN SPA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MENSA LOYD</masterLabel>
+        <translation>MENSA LOYD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MENSA PELLEGRINI</masterLabel>
+        <translation>MENSA PELLEGRINI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MENSA PELLEGRINI LEONI</masterLabel>
+        <translation>MENSA PELLEGRINI LEONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MENSA TORO INSURANCE</masterLabel>
+        <translation>MENSA TORO ASSICURAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESTAURANTS EXCLUDED MILANO FLOWERS</masterLabel>
+        <translation>RISTORATORI ESCLUSI MILANO FIORI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RESTAURANTS IN MILAN FLOWERS</masterLabel>
+        <translation>RISTORATORI DI MILANO FIORI</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

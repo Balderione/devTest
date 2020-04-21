@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IT_Funding_Source__c.IT_Beneficiaries_Member__c:SUM
+/IT_Funding_Source__c.IT_Beneficiaries__c:SUM *100</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Tasso di adesione</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>IT_Welfare_Project__c.Plans__r.Funding_Sources__r$IT_Beneficiaries__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>IT_Welfare_Project__c.Plans__r.Funding_Sources__r$IT_Beneficiaries_Member__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>IT_Welfare_Project__c.Plans__r.Funding_Sources__r$IT_Beneficiaries_Member__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>IT_Welfare_Project__c.Plans__r.Funding_Sources__r$IT_Beneficiaries__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IT_Welfare_Project__c$IT_Cluster_Welfare__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IT_Welfare_Project__c$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tasso di adesione</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Welfare_Project_with_Plans_with_Funding_Sources__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>IT_Welfare_Project__c$IT_Project_End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0000</fullName>
+        <default>false</default>
+        <label>NAME address</label>
+    </customValue>
+    <customValue>
+        <fullName>0001</fullName>
+        <default>false</default>
+        <label>ADDRESS LINE</label>
+    </customValue>
+    <customValue>
+        <fullName>0002</fullName>
+        <default>false</default>
+        <label>RIGA PLACE &#39;</label>
+    </customValue>
+    <customValue>
+        <fullName>0003</fullName>
+        <default>false</default>
+        <label>Expose NAME</label>
+    </customValue>
+    <customValue>
+        <fullName>0004</fullName>
+        <default>false</default>
+        <label>AT MENSA DALMINE (cod. 0004)</label>
+    </customValue>
+    <customValue>
+        <fullName>0005</fullName>
+        <default>false</default>
+        <label>AT MENSA Zambon (cod. 0005)</label>
+    </customValue>
+    <customValue>
+        <fullName>0006</fullName>
+        <default>false</default>
+        <label>HOUSE AT THE STUDENT (cod. 0006)</label>
+    </customValue>
+    <customValue>
+        <fullName>0007</fullName>
+        <default>false</default>
+        <label>COOKING CENTER (cod. 0007)</label>
+    </customValue>
+    <customValue>
+        <fullName>0008</fullName>
+        <default>false</default>
+        <label>AT MENSA ZANUSSI (cod. 0008)</label>
+    </customValue>
+    <customValue>
+        <fullName>0009</fullName>
+        <default>false</default>
+        <label>AT MENSA FINCANTIERI (cod. 0009)</label>
+    </customValue>
+    <customValue>
+        <fullName>0010</fullName>
+        <default>false</default>
+        <label>AT MENSA GALBANI (cod. 0010)</label>
+    </customValue>
+    <customValue>
+        <fullName>0011</fullName>
+        <default>false</default>
+        <label>AT MENSA GALBANI (cod. 0011)</label>
+    </customValue>
+    <customValue>
+        <fullName>0012</fullName>
+        <default>false</default>
+        <label>AT MENSA Menarini (cod. 0012)</label>
+    </customValue>
+    <customValue>
+        <fullName>0013</fullName>
+        <default>false</default>
+        <label>AT MENSA ENEL (cod. 0013)</label>
+    </customValue>
+    <customValue>
+        <fullName>0014</fullName>
+        <default>false</default>
+        <label>LUNCH AT THE COMMON (cod. 0014)</label>
+    </customValue>
+    <customValue>
+        <fullName>0015</fullName>
+        <default>false</default>
+        <label>AT MENSA ALFA STEEL (cod. 0015)</label>
+    </customValue>
+    <customValue>
+        <fullName>0016</fullName>
+        <default>false</default>
+        <label>AT MENSA ORI MARTIN (cod. 0016)</label>
+    </customValue>
+    <customValue>
+        <fullName>0017</fullName>
+        <default>false</default>
+        <label>AT MENSA MAGNETS MARELLI (cod. 0017)</label>
+    </customValue>
+    <customValue>
+        <fullName>0018</fullName>
+        <default>false</default>
+        <label>AT MENSA MANTERO (cod. 0018)</label>
+    </customValue>
+    <customValue>
+        <fullName>0019</fullName>
+        <default>false</default>
+        <label>AT MENSA FORNILEGHE (cod. 0019)</label>
+    </customValue>
+    <customValue>
+        <fullName>0020</fullName>
+        <default>false</default>
+        <label>LUNCH AT PHILIPS (cod. 0020)</label>
+    </customValue>
+    <customValue>
+        <fullName>0021</fullName>
+        <default>false</default>
+        <label>VIGIL AT MENSA BORLETTI (cod. 0021)</label>
+    </customValue>
+    <customValue>
+        <fullName>0022</fullName>
+        <default>false</default>
+        <label>AT MENSA DALMINE (cod. 0022)</label>
+    </customValue>
+    <customValue>
+        <fullName>0023</fullName>
+        <default>false</default>
+        <label>AT MENSA Zambon (cod. 0023)</label>
+    </customValue>
+    <customValue>
+        <fullName>0024</fullName>
+        <default>false</default>
+        <label>HOUSE AT THE STUDENT (cod. 0024)</label>
+    </customValue>
+    <customValue>
+        <fullName>0025</fullName>
+        <default>false</default>
+        <label>COOKING CENTER (cod. 0025)</label>
+    </customValue>
+    <customValue>
+        <fullName>0026</fullName>
+        <default>false</default>
+        <label>AT MENSA ZANUSSI (cod. 0026)</label>
+    </customValue>
+    <customValue>
+        <fullName>0027</fullName>
+        <default>false</default>
+        <label>AT MENSA FINCANTIERI (cod. 0027)</label>
+    </customValue>
+    <customValue>
+        <fullName>0028</fullName>
+        <default>false</default>
+        <label>AT MENSA GALBANI (cod. 0028)</label>
+    </customValue>
+    <customValue>
+        <fullName>0029</fullName>
+        <default>false</default>
+        <label>AT MENSA GALBANI (cod. 0029)</label>
+    </customValue>
+    <customValue>
+        <fullName>0030</fullName>
+        <default>false</default>
+        <label>AT MENSA Menarini (cod. 0030)</label>
+    </customValue>
+    <customValue>
+        <fullName>0031</fullName>
+        <default>false</default>
+        <label>AT MENSA ENEL (cod. 0031)</label>
+    </customValue>
+    <customValue>
+        <fullName>0032</fullName>
+        <default>false</default>
+        <label>LUNCH AT THE COMMON (cod. 0032)</label>
+    </customValue>
+    <customValue>
+        <fullName>0033</fullName>
+        <default>false</default>
+        <label>AT MENSA ALFA STEEL (cod. 0033)</label>
+    </customValue>
+    <customValue>
+        <fullName>0034</fullName>
+        <default>false</default>
+        <label>AT MENSA ORI MARTIN (cod. 0034)</label>
+    </customValue>
+    <customValue>
+        <fullName>0035</fullName>
+        <default>false</default>
+        <label>AT MENSA MAGNETS MARELLI (cod. 0035)</label>
+    </customValue>
+    <customValue>
+        <fullName>0036</fullName>
+        <default>false</default>
+        <label>AT MENSA MANTERO (cod. 0036)</label>
+    </customValue>
+    <customValue>
+        <fullName>0037</fullName>
+        <default>false</default>
+        <label>AT MENSA FORNILEGHE (cod. 0037)</label>
+    </customValue>
+    <customValue>
+        <fullName>0038</fullName>
+        <default>false</default>
+        <label>LUNCH AT PHILIPS (cod. 0038)</label>
+    </customValue>
+    <customValue>
+        <fullName>0039</fullName>
+        <default>false</default>
+        <label>VIGIL AT MENSA BORLETTI (cod. 0039)</label>
+    </customValue>
+    <customValue>
+        <fullName>0079</fullName>
+        <default>false</default>
+        <label>00 - SCOPE ............... ... (cod. 0079)</label>
+    </customValue>
+    <customValue>
+        <fullName>0080</fullName>
+        <default>false</default>
+        <label>80 - FOOTWEAR (cod. 0080)</label>
+    </customValue>
+    <customValue>
+        <fullName>0081</fullName>
+        <default>false</default>
+        <label>81 - POWER AND HYGIENE (cod. 0081)</label>
+    </customValue>
+    <customValue>
+        <fullName>0082</fullName>
+        <default>false</default>
+        <label>82 - PHARMACY (cod. 0082)</label>
+    </customValue>
+    <customValue>
+        <fullName>0083</fullName>
+        <default>false</default>
+        <label>83 - CLOTHING (cod. 0083)</label>
+    </customValue>
+    <customValue>
+        <fullName>0084</fullName>
+        <default>false</default>
+        <label>84 - FOOD (cod. 0084)</label>
+    </customValue>
+    <customValue>
+        <fullName>0085</fullName>
+        <default>false</default>
+        <label>85 - TRANSPORT (cod. 0085)</label>
+    </customValue>
+    <customValue>
+        <fullName>0086</fullName>
+        <default>false</default>
+        <label>86 - TINTOLAVANDERIE (cod. 0086)</label>
+    </customValue>
+    <customValue>
+        <fullName>0087</fullName>
+        <default>false</default>
+        <label>87 - CARTOLIBRERIA (cod. 0087)</label>
+    </customValue>
+    <customValue>
+        <fullName>0088</fullName>
+        <default>false</default>
+        <label>88 - TOYS (cod. 0088)</label>
+    </customValue>
+    <customValue>
+        <fullName>0089</fullName>
+        <default>false</default>
+        <label>89 - PURCHASE VOUCHER (cod. 0089)</label>
+    </customValue>
+    <customValue>
+        <fullName>0090</fullName>
+        <default>false</default>
+        <label>01 - JACKET (cod. 0090)</label>
+    </customValue>
+    <customValue>
+        <fullName>0091</fullName>
+        <default>false</default>
+        <label>02 - TROUSERS / SKIRT (cod. 0091)</label>
+    </customValue>
+    <customValue>
+        <fullName>0092</fullName>
+        <default>false</default>
+        <label>03 - SHIRT (cod. 0092)</label>
+    </customValue>
+    <customValue>
+        <fullName>0093</fullName>
+        <default>false</default>
+        <label>04 - TIE (cod. 0093)</label>
+    </customValue>
+    <customValue>
+        <fullName>0094</fullName>
+        <default>false</default>
+        <label>05 - JACKET (cod. 0094)</label>
+    </customValue>
+    <customValue>
+        <fullName>0095</fullName>
+        <default>false</default>
+        <label>06 - COAT (cod. 0095)</label>
+    </customValue>
+    <customValue>
+        <fullName>0096</fullName>
+        <default>false</default>
+        <label>07 - SUMMER JACKET EN471 / 94 (cod. 0096)</label>
+    </customValue>
+    <customValue>
+        <fullName>0097</fullName>
+        <default>false</default>
+        <label>08 - WINTER JACKET EN471 / 94 (cod. 0097)</label>
+    </customValue>
+    <customValue>
+        <fullName>0098</fullName>
+        <default>false</default>
+        <label>09 - SUMMER PANTS EN471 / 94 (cod. 0098)</label>
+    </customValue>
+    <customValue>
+        <fullName>0099</fullName>
+        <default>false</default>
+        <label>10 - PANTS INVER. EN471 / 94 (cod. 0099)</label>
+    </customValue>
+    <customValue>
+        <fullName>0100</fullName>
+        <default>false</default>
+        <label>11 - VEST EN471 / 94 (cod. 0100)</label>
+    </customValue>
+    <customValue>
+        <fullName>0101</fullName>
+        <default>false</default>
+        <label>12 - JACKET EN471 / 94 (cod. 0101)</label>
+    </customValue>
+    <customValue>
+        <fullName>0102</fullName>
+        <default>false</default>
+        <label>01 - ASSI.DOMICILIARE SERVICE (cod. 0102)</label>
+    </customValue>
+    <customValue>
+        <fullName>0103</fullName>
+        <default>false</default>
+        <label>02 - ASSIST.EDUCATIVA SERVICE (cod. 0103)</label>
+    </customValue>
+    <customValue>
+        <fullName>0104</fullName>
+        <default>false</default>
+        <label>13 - JACKET INV. + BATTERIES WORK (cod. 0104)</label>
+    </customValue>
+    <customValue>
+        <fullName>0105</fullName>
+        <default>false</default>
+        <label>14 - JACKET INV. WORK (cod. 0105)</label>
+    </customValue>
+    <customValue>
+        <fullName>0106</fullName>
+        <default>false</default>
+        <label>15 - BATTERY INSIDE JOB (cod. 0106)</label>
+    </customValue>
+    <customValue>
+        <fullName>0107</fullName>
+        <default>false</default>
+        <label>16 - JACKET EST. WORK (cod. 0107)</label>
+    </customValue>
+    <customValue>
+        <fullName>0108</fullName>
+        <default>false</default>
+        <label>17 - HIGH VIS VEST. WORK (cod. 0108)</label>
+    </customValue>
+    <customValue>
+        <fullName>0109</fullName>
+        <default>false</default>
+        <label>18 - PANTS LAV. BLUE (cod. 0109)</label>
+    </customValue>
+    <customValue>
+        <fullName>0110</fullName>
+        <default>false</default>
+        <label>19 - T-SHIRT BLUE COTTON (cod. 0110)</label>
+    </customValue>
+    <customValue>
+        <fullName>0119</fullName>
+        <default>false</default>
+        <label>00 - SCOPE ............... ... (cod. 0119)</label>
+    </customValue>
+    <customValue>
+        <fullName>0125</fullName>
+        <default>false</default>
+        <label>85 - TRANSPORT (cod. 0125)</label>
+    </customValue>
+    <customValue>
+        <fullName>0129</fullName>
+        <default>false</default>
+        <label>89 - PURCHASE VOUCHER (cod. 0129)</label>
+    </customValue>
+    <customValue>
+        <fullName>0130</fullName>
+        <default>false</default>
+        <label>01 - ASSI.DOMICILIARE SERVICE (cod. 0130)</label>
+    </customValue>
+    <customValue>
+        <fullName>0131</fullName>
+        <default>false</default>
+        <label>02 - ASSIST.EDUCATIVA SERVICE (cod. 0131)</label>
+    </customValue>
+    <customValue>
+        <fullName>0132</fullName>
+        <default>false</default>
+        <label>20 - FULL SUITS (cod. 0132)</label>
+    </customValue>
+    <customValue>
+        <fullName>0133</fullName>
+        <default>false</default>
+        <label>21 - BOMBER (cod. 0133)</label>
+    </customValue>
+    <customValue>
+        <fullName>0134</fullName>
+        <default>false</default>
+        <label>22 - OVERALL GORE (cod. 0134)</label>
+    </customValue>
+    <customValue>
+        <fullName>0135</fullName>
+        <default>false</default>
+        <label>23 - Waterproof (cod. 0135)</label>
+    </customValue>
+    <customValue>
+        <fullName>0136</fullName>
+        <default>false</default>
+        <label>24 - SCARF (cod. 0136)</label>
+    </customValue>
+    <customValue>
+        <fullName>0137</fullName>
+        <default>false</default>
+        <label>25 - UNIFORM MAN (cod. 0137)</label>
+    </customValue>
+    <customValue>
+        <fullName>0138</fullName>
+        <default>false</default>
+        <label>26 - WOMEN&#39;S UNIFORM (cod. 0138)</label>
+    </customValue>
+    <customValue>
+        <fullName>0139</fullName>
+        <default>false</default>
+        <label>27 - sanitized JACKET (cod. 0139)</label>
+    </customValue>
+    <customValue>
+        <fullName>0140</fullName>
+        <default>false</default>
+        <label>28 - PANTS sanitized (cod. 0140)</label>
+    </customValue>
+    <customValue>
+        <fullName>0141</fullName>
+        <default>false</default>
+        <label>29 - T-SHIRT EST. Sanitized (cod. 0141)</label>
+    </customValue>
+    <customValue>
+        <fullName>0142</fullName>
+        <default>false</default>
+        <label>30 - SWEATER sanitized (cod. 0142)</label>
+    </customValue>
+    <customValue>
+        <fullName>0143</fullName>
+        <default>false</default>
+        <label>31 - JACKET sanitized (cod. 0143)</label>
+    </customValue>
+    <customValue>
+        <fullName>0144</fullName>
+        <default>false</default>
+        <label>32 - SKIRT (cod. 0144)</label>
+    </customValue>
+    <customValue>
+        <fullName>0145</fullName>
+        <default>false</default>
+        <label>33 - PANTS (cod. 0145)</label>
+    </customValue>
+    <customValue>
+        <fullName>0146</fullName>
+        <default>false</default>
+        <label>34 - JERSEY (cod. 0146)</label>
+    </customValue>
+    <customValue>
+        <fullName>0147</fullName>
+        <default>false</default>
+        <label>35 - WINTER SUIT (cod. 0147)</label>
+    </customValue>
+    <customValue>
+        <fullName>0148</fullName>
+        <default>false</default>
+        <label>36 - JACKET (cod. 0148)</label>
+    </customValue>
+    <customValue>
+        <fullName>0149</fullName>
+        <default>false</default>
+        <label>37 - CLEANWAY VALUE (cod. 0149)</label>
+    </customValue>
+    <customValue>
+        <fullName>0150</fullName>
+        <default>false</default>
+        <label>03 - CHILD CARE SERVICES (cod. 0150)</label>
+    </customValue>
+    <customValue>
+        <fullName>0151</fullName>
+        <default>false</default>
+        <label>00 - SCOPE ............... ... (cod. 0151)</label>
+    </customValue>
+    <customValue>
+        <fullName>0152</fullName>
+        <default>false</default>
+        <label>01 - ASSI.DOMICILIARE SERVICE (cod. 0152)</label>
+    </customValue>
+    <customValue>
+        <fullName>0153</fullName>
+        <default>false</default>
+        <label>02 - ASSIST.EDUCATIVA SERVICE (cod. 0153)</label>
+    </customValue>
+    <customValue>
+        <fullName>0154</fullName>
+        <default>false</default>
+        <label>03 - CHILD CARE SERVICES (cod. 0154)</label>
+    </customValue>
+    <customValue>
+        <fullName>0165</fullName>
+        <default>false</default>
+        <label>04 - SERVICES FOR MEDIATION (cod. 0165)</label>
+    </customValue>
+    <customValue>
+        <fullName>0166</fullName>
+        <default>false</default>
+        <label>04 - SERVICES FOR MEDIATION (cod. 0166)</label>
+    </customValue>
+    <customValue>
+        <fullName>0167</fullName>
+        <default>false</default>
+        <label>05 - Cultural Mediation (cod. 0167)</label>
+    </customValue>
+    <customValue>
+        <fullName>0168</fullName>
+        <default>false</default>
+        <label>00 - STATIONERY SCHOOL SERVICES (cod. 0168)</label>
+    </customValue>
+    <customValue>
+        <fullName>0169</fullName>
+        <default>false</default>
+        <label>00 - TRAINING ORGANIZATIONS (cod. 0169)</label>
+    </customValue>
+    <customValue>
+        <fullName>0170</fullName>
+        <default>false</default>
+        <label>00 - PARITARIA SCHOOL (cod. 0170)</label>
+    </customValue>
+    <customValue>
+        <fullName>0171</fullName>
+        <default>false</default>
+        <label>06 - FEES NURSERY (cod. 0171)</label>
+    </customValue>
+    <customValue>
+        <fullName>0172</fullName>
+        <default>false</default>
+        <label>07 - SERV. SOCIAL AND EMPLOYMENT (cod. 0172)</label>
+    </customValue>
+    <customValue>
+        <fullName>0173</fullName>
+        <default>false</default>
+        <label>08 - DAYTIME INTEGRATED CENTERS (cod. 0173)</label>
+    </customValue>
+    <customValue>
+        <fullName>0174</fullName>
+        <default>false</default>
+        <label>09 - EP-RELIEF MEASURES (cod. 0174)</label>
+    </customValue>
+    <customValue>
+        <fullName>0175</fullName>
+        <default>false</default>
+        <label>10 - INT.SOLLIEVO RESIDENTIAL (cod. 0175)</label>
+    </customValue>
+    <customValue>
+        <fullName>0176</fullName>
+        <default>false</default>
+        <label>90 - SUPPORT FOR PARENTHOOD (cod. 0176)</label>
+    </customValue>
+    <customValue>
+        <fullName>0177</fullName>
+        <default>false</default>
+        <label>11 - ASA-RELIEF MEASURES (cod. 0177)</label>
+    </customValue>
+    <customValue>
+        <fullName>0178</fullName>
+        <default>false</default>
+        <label>91 - DISCOUNT PREPAID (cod. 0178)</label>
+    </customValue>
+    <customValue>
+        <fullName>0179</fullName>
+        <default>false</default>
+        <label>01 - DISABILITY COMPONENT (cod. 0179)</label>
+    </customValue>
+    <customValue>
+        <fullName>0180</fullName>
+        <default>false</default>
+        <label>02 - SUPPORT FOR CHOICE (cod. 0180)</label>
+    </customValue>
+    <customValue>
+        <fullName>0181</fullName>
+        <default>false</default>
+        <label>01 - DISABILITY COMPONENT (cod. 0181)</label>
+    </customValue>
+    <customValue>
+        <fullName>0182</fullName>
+        <default>false</default>
+        <label>02 - TRAINING COMPONENT (cod. 0182)</label>
+    </customValue>
+    <customValue>
+        <fullName>0183</fullName>
+        <default>false</default>
+        <label>12 - TUTORING HOME (cod. 0183)</label>
+    </customValue>
+    <customValue>
+        <fullName>0184</fullName>
+        <default>false</default>
+        <label>13 - PERFORMANCE SAD Add. (Cod. 0184)</label>
+    </customValue>
+    <customValue>
+        <fullName>0185</fullName>
+        <default>false</default>
+        <label>92 - PAY FOR UTILITIES ENIA (cod. 0185)</label>
+    </customValue>
+    <customValue>
+        <fullName>0186</fullName>
+        <default>false</default>
+        <label>00 - SCRIGNO TASTINGS (cod. 0186)</label>
+    </customValue>
+    <customValue>
+        <fullName>0187</fullName>
+        <default>false</default>
+        <label>01 - JEWEL OF DREAM (cod. 0187)</label>
+    </customValue>
+    <customValue>
+        <fullName>0188</fullName>
+        <default>false</default>
+        <label>02 - JEWEL DIAMOND (cod. 0188)</label>
+    </customValue>
+    <customValue>
+        <fullName>0189</fullName>
+        <default>false</default>
+        <label>03 - JEWEL OF LUXURY (cod. 0189)</label>
+    </customValue>
+    <customValue>
+        <fullName>0190</fullName>
+        <default>false</default>
+        <label>50 - FOOD HYGIENE AND BABY (cod. 0190)</label>
+    </customValue>
+    <customValue>
+        <fullName>0191</fullName>
+        <default>false</default>
+        <label>00 - BOX POP (cod. 0191)</label>
+    </customValue>
+    <customValue>
+        <fullName>0192</fullName>
+        <default>false</default>
+        <label>01 - BOX ROCK (cod. 0192)</label>
+    </customValue>
+    <customValue>
+        <fullName>0193</fullName>
+        <default>false</default>
+        <label>02 - BOX CLASSIC (cod. 0193)</label>
+    </customValue>
+    <customValue>
+        <fullName>0194</fullName>
+        <default>false</default>
+        <label>03 - JAZZ BOX (cod. 0194)</label>
+    </customValue>
+    <customValue>
+        <fullName>0195</fullName>
+        <default>false</default>
+        <label>00 -. (Cod. 0195)</label>
+    </customValue>
+    <customValue>
+        <fullName>0196</fullName>
+        <default>false</default>
+        <label>01 - SERVICES FOR CHILDREN (cod. 0196)</label>
+    </customValue>
+    <customValue>
+        <fullName>0197</fullName>
+        <default>false</default>
+        <label>02 - ELDERLY DISABLED SERVICES (cod. 0197)</label>
+    </customValue>
+    <customValue>
+        <fullName>0198</fullName>
+        <default>false</default>
+        <label>03 - FAMILY SUPPORT SERVICES (cod. 0198)</label>
+    </customValue>
+    <customValue>
+        <fullName>0199</fullName>
+        <default>false</default>
+        <label>04 - SERVICES ASSIST. HEALTH (cod. 0199)</label>
+    </customValue>
+    <customValue>
+        <fullName>0202</fullName>
+        <default>false</default>
+        <label>00 - STANDARD (cod. 0202)</label>
+    </customValue>
+    <customValue>
+        <fullName>0203</fullName>
+        <default>false</default>
+        <label>93 - SOCIAL CANTEEN WIDESPREAD (cod. 0203)</label>
+    </customValue>
+    <customValue>
+        <fullName>0204</fullName>
+        <default>false</default>
+        <label>94 - BONUS BABY &#39;(cod. 0204)</label>
+    </customValue>
+    <customValue>
+        <fullName>0205</fullName>
+        <default>false</default>
+        <label>05 - ASSI.DOMICILIARE SERVICE (cod. 0205)</label>
+    </customValue>
+    <customValue>
+        <fullName>0206</fullName>
+        <default>false</default>
+        <label>06 - ASSIST.EDUCATIVA SERVICE (cod. 0206)</label>
+    </customValue>
+    <customValue>
+        <fullName>0207</fullName>
+        <default>false</default>
+        <label>04 - FOOD DELIVERY (cod. 0207)</label>
+    </customValue>
+    <customValue>
+        <fullName>0208</fullName>
+        <default>false</default>
+        <label>51 - BONUS BABY &#39;(cod. 0208)</label>
+    </customValue>
+    <customValue>
+        <fullName>0209</fullName>
+        <default>false</default>
+        <label>05 - POP BOX LAST MINUTE (cod. 0209)</label>
+    </customValue>
+    <customValue>
+        <fullName>0210</fullName>
+        <default>false</default>
+        <label>06 - ROCK BOX LAST MINUTE (cod. 0210)</label>
+    </customValue>
+    <customValue>
+        <fullName>0211</fullName>
+        <default>false</default>
+        <label>07 - BOX CLASSIC LAST MINUTE (cod. 0211)</label>
+    </customValue>
+    <customValue>
+        <fullName>0212</fullName>
+        <default>false</default>
+        <label>08 - JAZZ BOX LAST MINUTE (cod. 0212)</label>
+    </customValue>
+    <customValue>
+        <fullName>0213</fullName>
+        <default>false</default>
+        <label>95 - SHOPPING CART (cod. 0213)</label>
+    </customValue>
+    <customValue>
+        <fullName>0214</fullName>
+        <default>false</default>
+        <label>95 - SHOPPING CART (cod. 0214)</label>
+    </customValue>
+    <customValue>
+        <fullName>0215</fullName>
+        <default>false</default>
+        <label>00 - BOX EXPERIENCE (cod. 0215)</label>
+    </customValue>
+    <customValue>
+        <fullName>0216</fullName>
+        <default>false</default>
+        <label>00 - BOX EXPERIENCE (cod. 0216)</label>
+    </customValue>
+    <customValue>
+        <fullName>0217</fullName>
+        <default>false</default>
+        <label>01 - SCHOOL TEXT BOOKS (cod. 0217)</label>
+    </customValue>
+    <customValue>
+        <fullName>0218</fullName>
+        <default>false</default>
+        <label>02 - SCHOOL ATTENDANCE (cod. 0218)</label>
+    </customValue>
+    <customValue>
+        <fullName>0219</fullName>
+        <default>false</default>
+        <label>03 - SCHOOL TAX (cod. 0219)</label>
+    </customValue>
+    <customValue>
+        <fullName>0220</fullName>
+        <default>false</default>
+        <label>04 - CAFETERIA / SCHOOL MEALS Scholastics (cod. 0220)</label>
+    </customValue>
+    <customValue>
+        <fullName>0221</fullName>
+        <default>false</default>
+        <label>05 - PRE / AFTER SCHOOL AND STUDIO (cod. 0221)</label>
+    </customValue>
+    <customValue>
+        <fullName>0222</fullName>
+        <default>false</default>
+        <label>06 - INTEGRATED ATT.SCOLASTICHE (cod. 0222)</label>
+    </customValue>
+    <customValue>
+        <fullName>0223</fullName>
+        <default>false</default>
+        <label>07 - BABY SITTING SERVICES (cod. 0223)</label>
+    </customValue>
+    <customValue>
+        <fullName>0224</fullName>
+        <default>false</default>
+        <label>08 - SUBSCRIPTION (cod. 0224)</label>
+    </customValue>
+    <customValue>
+        <fullName>0225</fullName>
+        <default>false</default>
+        <label>09 - HOME CARE (cod. 0225)</label>
+    </customValue>
+    <customValue>
+        <fullName>0226</fullName>
+        <default>false</default>
+        <label>10 - REST / CARE STAYS (cod. 0226)</label>
+    </customValue>
+    <customValue>
+        <fullName>0227</fullName>
+        <default>false</default>
+        <label>11 - FIELD SCOLAST.ESTATE/INV. (Cod. 0227)</label>
+    </customValue>
+    <customValue>
+        <fullName>0228</fullName>
+        <default>false</default>
+        <label>12 - E-LEARNING COURSES IN (cod. 0228)</label>
+    </customValue>
+    <customValue>
+        <fullName>0229</fullName>
+        <default>false</default>
+        <label>13 - ORIENTATION STUDIO / LAVOR (cod. 0229)</label>
+    </customValue>
+    <customValue>
+        <fullName>0230</fullName>
+        <default>false</default>
+        <label>14 - SPECIALIZED COURSES. POST LAU (cod. 0230)</label>
+    </customValue>
+    <customValue>
+        <fullName>0231</fullName>
+        <default>false</default>
+        <label>15 - PERSONAL DEVELOPMENT COURSES (cod. 0231)</label>
+    </customValue>
+    <customValue>
+        <fullName>0232</fullName>
+        <default>false</default>
+        <label>16 - LANGUAGE / ADVISED COURSES (cod. 0232)</label>
+    </customValue>
+    <customValue>
+        <fullName>0233</fullName>
+        <default>false</default>
+        <label>17 - RENT HOUSE HOLIDAY (cod. 0233)</label>
+    </customValue>
+    <customValue>
+        <fullName>0234</fullName>
+        <default>false</default>
+        <label>18 - COURSES SPORT ACTIVITIES (cod. 0234)</label>
+    </customValue>
+    <customValue>
+        <fullName>0235</fullName>
+        <default>false</default>
+        <label>19 - INFERMIERISTIC ASSISTANCE (cod. 0235)</label>
+    </customValue>
+    <customValue>
+        <fullName>0236</fullName>
+        <default>false</default>
+        <label>20 - BIGLIET. TRAIN / PLANE / SHIP (cod. 0236)</label>
+    </customValue>
+    <customValue>
+        <fullName>0237</fullName>
+        <default>false</default>
+        <label>21 - COURSES LEISURE (cod. 0237)</label>
+    </customValue>
+    <customValue>
+        <fullName>0238</fullName>
+        <default>false</default>
+        <label>22 - HOLIDAY PACKAGE (cod. 0238)</label>
+    </customValue>
+    <customValue>
+        <fullName>0239</fullName>
+        <default>false</default>
+        <label>23 - PERNOT. HOTEL / HOTEL (cod. 0239)</label>
+    </customValue>
+    <customValue>
+        <fullName>0240</fullName>
+        <default>false</default>
+        <label>24 - BOX experiential (cod. 0240)</label>
+    </customValue>
+    <customValue>
+        <fullName>0241</fullName>
+        <default>false</default>
+        <label>25 - CHECK UP (cod. 0241)</label>
+    </customValue>
+    <customValue>
+        <fullName>0242</fullName>
+        <default>false</default>
+        <label>26 - CRUISE (cod. 0242)</label>
+    </customValue>
+    <customValue>
+        <fullName>0243</fullName>
+        <default>false</default>
+        <label>27 - ADMISSIONS AND MEASURES (cod. 0243)</label>
+    </customValue>
+    <customValue>
+        <fullName>0244</fullName>
+        <default>false</default>
+        <label>28 - LABORATORY TESTS (cod. 0244)</label>
+    </customValue>
+    <customValue>
+        <fullName>0245</fullName>
+        <default>false</default>
+        <label>00 - SCOPE ............... ... (cod. 0245)</label>
+    </customValue>
+    <customValue>
+        <fullName>0246</fullName>
+        <default>false</default>
+        <label>29 - SINGLE ENTRY (cod. 0246)</label>
+    </customValue>
+    <customValue>
+        <fullName>0247</fullName>
+        <default>false</default>
+        <label>30 - INITIATIVE TO PLAY-serves H (cod. 0247)</label>
+    </customValue>
+    <customValue>
+        <fullName>0248</fullName>
+        <default>false</default>
+        <label>31 - CAR (cod. 0248)</label>
+    </customValue>
+    <customValue>
+        <fullName>0249</fullName>
+        <default>false</default>
+        <label>32 - PACKAGE INPUTS (cod. 0249)</label>
+    </customValue>
+    <customValue>
+        <fullName>0250</fullName>
+        <default>false</default>
+        <label>33 - SCHOOL TRANSPORTATION (cod. 0250)</label>
+    </customValue>
+    <customValue>
+        <fullName>0251</fullName>
+        <default>false</default>
+        <label>34 - EDUCATIONAL AND CULTURE TRAVEL (cod. 0251)</label>
+    </customValue>
+    <customValue>
+        <fullName>0252</fullName>
+        <default>false</default>
+        <label>35 - MEDICAL SPECIALISTS VISITS (cod. 0252)</label>
+    </customValue>
+    <customValue>
+        <fullName>0253</fullName>
+        <default>false</default>
+        <label>36 - GIFT CARDS (cod. 0253)</label>
+    </customValue>
+    <customValue>
+        <fullName>DENOMINAZIONE SULL&#39;INDIRIZZO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DENOMINAZIONE SULL&#39;INDIRIZZO</label>
+    </customValue>
+    <masterLabel>IT Data Type To Display</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

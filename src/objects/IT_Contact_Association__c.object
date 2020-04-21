@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>IT_Contact_Association_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>IT_Contact_Association_CL</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>IT_Contact_Association_CL</fullName>
+        <fields>IT_Contact_Association_Type__c</fields>
+        <label>IT Contact Association CL</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>IT_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contact Detail</relationshipLabel>
+        <relationshipName>Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Activity_AC__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity AC</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Activity_SF__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity SF</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Apparatus_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Apparatus Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>001</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>002</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>005</fullName>
+                    <default>false</default>
+                    <label>Mail</label>
+                </value>
+                <value>
+                    <fullName>007</fullName>
+                    <default>false</default>
+                    <label>Mail PEC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Association_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>IT_Association_Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Association_Naming__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.Name + 
+IF(NOT(ISBLANK(IT_Contact__r.FirstName)),&quot; &quot;+IT_Contact__r.FirstName,&quot; &quot;) + &quot;(&quot; + IT_Code__c + &quot;)&quot; + IT_Contact__r.LastName + &quot; &quot; + IF(IT_Order_Confirm_Address__c,&quot;- Ordini&quot;,&quot;&quot;) + IF(IT_Billing_Confirm_Address__c,&quot;- Fatture&quot;,&quot;&quot;) + IF(IT_Notifications__c,&quot;- Comunicazioni&quot;,&quot;&quot;) + IF(IT_Send_SUT__c, &quot;- Invio Sut&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT_Association_Naming</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Association_Progressive__c</fullName>
+        <externalId>false</externalId>
+        <label>Association Progressive</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Association__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( IT_Type__c ,
+&quot;AM&quot;,HYPERLINK(&quot;/&quot;&amp;IT_Financial_Center__c, IT_Financial_Center__r.Name),
+&quot;F&quot;,HYPERLINK(&quot;/&quot;&amp;IT_Financial_Center__c, IT_Financial_Center__r.Name),
+&quot;AT&quot;,HYPERLINK(&quot;/&quot;&amp;IT_Distribution_Point__r.IT_Financial_Center__c, IT_Distribution_Point__r.IT_Financial_Center__r.Name) &amp; &quot; - &quot; &amp; HYPERLINK(&quot;/&quot;&amp;IT_Distribution_Point__c, IT_Distribution_Point__r.Name),
+&quot;C&quot;,HYPERLINK(&quot;/&quot;&amp;IT_Delivery_Site__r.ER_Financial_Center__c,IT_Delivery_Site__r.ER_Financial_Center__r.Name) &amp; &quot; - &quot; &amp; HYPERLINK(&quot;/&quot;&amp;IT_Delivery_Site__c, IT_Delivery_Site__r.Name), 
+HYPERLINK(&quot;/&quot;&amp;IT_Financial_Center__c, IT_Financial_Center__r.Name)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Association</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Billing_Confirm_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Billing Confirm Address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Code__c</fullName>
+        <externalId>true</externalId>
+        <label>Client Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Association_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.IT_Contact_Detail_Type__c  + &quot; &quot; + &quot;/&quot; + &quot; &quot; +  IT_Financial_Center__r.Name  + &quot; &quot; + BR() +
+
+IT_Delivery_Site__r.IT_Name_and_Address__c + &quot; &quot; +   BR() +
+ IT_Distribution_Point__r.IT_Name_and_Address__c</formula>
+        <label>Contact Association Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Detail__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Detail</label>
+        <referenceTo>IT_Contact_Detail__c</referenceTo>
+        <relationshipLabel>Contact Detail</relationshipLabel>
+        <relationshipName>Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.IT_Contact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Info</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IT_Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Dettagli Contatto</relationshipLabel>
+        <relationshipName>IT_Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Delivery_AC__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery AC</label>
+        <length>7</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Delivery_SF__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery SF</label>
+        <length>7</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Delivery_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Delivery Site</label>
+        <referenceTo>ER_Delivery_Site__c</referenceTo>
+        <relationshipLabel>Contact Detail</relationshipLabel>
+        <relationshipName>Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Detail_Type_c__c</fullName>
+        <externalId>false</externalId>
+        <label>IT_Detail_Type__c</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>001</fullName>
+                    <default>false</default>
+                    <label>001</label>
+                </value>
+                <value>
+                    <fullName>002</fullName>
+                    <default>false</default>
+                    <label>002</label>
+                </value>
+                <value>
+                    <fullName>003</fullName>
+                    <default>false</default>
+                    <label>003</label>
+                </value>
+                <value>
+                    <fullName>004</fullName>
+                    <default>false</default>
+                    <label>004</label>
+                </value>
+                <value>
+                    <fullName>005</fullName>
+                    <default>false</default>
+                    <label>005</label>
+                </value>
+                <value>
+                    <fullName>006</fullName>
+                    <default>false</default>
+                    <label>006</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Distribution_Point__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Distribution Point</label>
+        <referenceTo>ER_Distribution_Point__c</referenceTo>
+        <relationshipLabel>Contact Detail</relationshipLabel>
+        <relationshipName>Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Fatture__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.IT_Billing_Confirm_Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fatture</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Contact Detail</relationshipLabel>
+        <relationshipName>Contact_Association</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Contact_Association__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Contact Association</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Main_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Main Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Notifications__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notifications</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Confirm_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Order Confirm Address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Ordini__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.IT_Order_Confirm_Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordini</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Recapito__c</fullName>
+        <externalId>false</externalId>
+        <formula>IT_Contact_Detail__r.IT_Contact_Info__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Recapito</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Send_SUT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send SUT</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Tipo_Apparato__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(TEXT(IT_Contact_Detail__r.IT_Apparatus_Type__c),
+&quot;001&quot;,&quot;Phone&quot;,
+&quot;002&quot;,&quot;Fax&quot;,
+&quot;005&quot;,&quot;Mail&quot;,
+&quot;007&quot;,&quot;Mail PEC&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tipo Apparato</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Contact Association</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>IT_Contact_Id__c</columns>
+        <columns>IT_Contact_Detail__c</columns>
+        <columns>IT_Recapito__c</columns>
+        <columns>IT_Code__c</columns>
+        <columns>IT_Financial_Center__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IT_Contact_Detail__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Tutto</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>Contact Association</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contact Association</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VRIT01_Send_SUT</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(		
+				$User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &apos;IT&apos;),
+				OR(
+				    ISPICKVAL( IT_Contact_Detail__r.IT_Apparatus_Type__c ,&apos;001&apos;),
+	       ISPICKVAL( IT_Contact_Detail__r.IT_Apparatus_Type__c ,&apos;002&apos;)
+								
+				),
+		  OR(
+								IT_Send_SUT__c,
+			     IT_Notifications__c
+				)
+			
+)</errorConditionFormula>
+        <errorMessage>&apos;Send SUT&apos; field or &apos;Notifications&apos; field cannot be selected because the Apparatus Type is &apos;Phone&apos; or &apos;Fax&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Order_Confirm_Address</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+						$User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &apos;IT&apos;),
+				
+								 ISPICKVAL( IT_Contact_Detail__r.IT_Apparatus_Type__c ,&apos;001&apos;),
+					 IT_Order_Confirm_Address__c )</errorConditionFormula>
+        <errorMessage>&apos;Order Confirm Address&apos; field cannot be selected because the Apparatus Type is &apos;Phone&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Modify</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(
+OR( 
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1X&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;2X&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;0G&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0F&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0H&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0P&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;0Q&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1W&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2F&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2G&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1D&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1L&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1M&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1N&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1O&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1E&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;1Y&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1H&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;2J&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2X&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;2C&apos;)/*,
+AND(
+NOT(ISBLANK(IT_Financial_Center__r.IT_DEMO_Financial_Center__c )),
+ISPICKVAL(IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;)
+)*/
+)
+))</errorConditionFormula>
+        <errorMessage>Impossible to modify for this type of service</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_Status_Based_Change_Block</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+
+OR(
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;10&apos;),
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;00&apos;),
+ISPICKVAL(IT_Financial_Center__r.IT_Client_Status__c , &apos;03&apos;)
+)
+
+)</errorConditionFormula>
+        <errorMessage>Impossible to modify fields for this client status!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT05_FlagsForRef</fullName>
+        <active>true</active>
+        <description>Blocks the change to 4 flags if the related contact is &quot;Ref&quot;</description>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISNEW()),
+ISPICKVAL(  IT_Contact_Detail__r.IT_Contact__r.IT_Type__c  , &apos;Ref&apos;),
+OR(
+ISCHANGED(IT_Send_SUT__c),
+ISCHANGED(IT_Order_Confirm_Address__c),
+ISCHANGED(IT_Notifications__c),
+ISCHANGED(IT_Billing_Confirm_Address__c)
+)
+
+)</errorConditionFormula>
+        <errorMessage>Related contact is &quot;Ref&quot;, you cannot change any flag.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

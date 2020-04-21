@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Ragione Sociale</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Ragioni Sociali</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>account_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Indirizzo sede legale</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>billing_address_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>CZ_Gift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Email --></label>
+        <name>ERPL_Additional_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Phone --></label>
+        <name>ERPL_Additional_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of information obligation --></label>
+        <name>ERPL_Date_of_information_obligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information Obligation --></label>
+        <name>ERPL_Information_Obligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Phone --></label>
+        <name>ERPL_Other_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sub-Source --></label>
+        <name>ER_Account_SubSource__c</name>
+        <picklistValues>
+            <masterLabel>Abandonned contracting</masterLabel>
+            <translation><!-- Abandonned contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adwords: Google, Bing</masterLabel>
+            <translation><!-- Adwords: Google, Bing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encore</masterLabel>
+            <translation><!-- Encore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Webform</masterLabel>
+            <translation><!-- Internal Webform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead provider</masterLabel>
+            <translation><!-- Lead provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other adwords</masterLabel>
+            <translation><!-- Other adwords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Register - list of existing companies</masterLabel>
+            <translation><!-- Public Register - list of existing companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Register - list of new created companies</masterLabel>
+            <translation><!-- Public Register - list of new created companies --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Also Client/Merchant ? --></label>
+        <name>ER_Also_Client_Merchant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_BUPicklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brands --></label>
+        <name>ER_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the unique identifier of the customer on Middle Office side. It is used to link a Salesforce record with a Middle Office record --></help>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client / Merchant --></label>
+        <name>ER_Client_Merchant__c</name>
+        <relationshipLabel><!-- Accounts (Client / Merchant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>ER_Client__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Creation date in OS --></label>
+        <name>ER_Creation_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edenred Portal creation date --></label>
+        <name>ER_Edenred_Portal_creation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ER_Email__c</name>
+    </fields>
+    <fields>
+        <label>Dipendenti</label>
+        <name>ER_Employee__c</name>
+        <relationshipLabel><!-- Individual --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enterprise Number --></label>
+        <name>ER_Enterprise_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>ER_Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Segmentation --></label>
+        <name>ER_Global_Segmentation__c</name>
+        <picklistValues>
+            <masterLabel>E-commerce</masterLabel>
+            <translation><!-- E-commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food chains</masterLabel>
+            <translation><!-- Food chains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel retailers</masterLabel>
+            <translation><!-- Fuel retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large grocery retail</masterLabel>
+            <translation><!-- Large grocery retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market places (and-or aggregators)</masterLabel>
+            <translation><!-- Market places (and-or aggregators) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non food Retail</masterLabel>
+            <translation><!-- Non food Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non food services</masterLabel>
+            <translation><!-- Non food services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil Companies</masterLabel>
+            <translation><!-- Oil Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other grocery retail</masterLabel>
+            <translation><!-- Other grocery retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others F&amp;M</masterLabel>
+            <translation><!-- Others F&amp;M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair workshops</masterLabel>
+            <translation><!-- Repair workshops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurants</masterLabel>
+            <translation><!-- Restaurants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toll operators</masterLabel>
+            <translation><!-- Toll operators --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group/Subsidiary relationship --></label>
+        <name>ER_Group_Subsidiary_relationship__c</name>
+        <relationshipLabel><!-- Related Merchant --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inactive Reason --></label>
+        <name>ER_Inactive_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Bankrupt</masterLabel>
+            <translation><!-- Bankrupt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation of Contract - Legal reasons</masterLabel>
+            <translation><!-- Cancellation of Contract - Legal reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation of Contract - by Edenred</masterLabel>
+            <translation><!-- Cancellation of Contract - by Edenred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation of Contract - by Merchant</masterLabel>
+            <translation><!-- Cancellation of Contract - by Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GDPR</masterLabel>
+            <translation><!-- GDPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No interest</masterLabel>
+            <translation><!-- No interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation ceased</masterLabel>
+            <translation><!-- Operation ceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination of Merchant activities - no written notice</masterLabel>
+            <translation><!-- Termination of Merchant activities - no written notice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination of Merchant activities - noticed</masterLabel>
+            <translation><!-- Termination of Merchant activities - noticed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformation of Company - noticed by Merchant</masterLabel>
+            <translation><!-- Transformation of Company - noticed by Merchant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Settore Merceologico</label>
+        <name>ER_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insolvency/Executed Account --></label>
+        <name>ER_Insolvency_Executed_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional User --></label>
+        <name>ER_LastModifiedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional user --></label>
+        <name>ER_Last_Modified_By_Functional_user__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date Functional User --></label>
+        <name>ER_Last_Modified_Date_Functional_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Transaction date --></label>
+        <name>ER_Last_Transaction_date__c</name>
+    </fields>
+    <fields>
+        <label>Ultima data di Sync</label>
+        <name>ER_Last_date_of_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Type --></label>
+        <name>ER_Lead_Source_Type__c</name>
+    </fields>
+    <fields>
+        <label>Forma Legale</label>
+        <name>ER_Legal_Form__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>ER_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Merchant Segmentation --></label>
+        <name>ER_Local_Merchant_Segmentation__c</name>
+        <picklistValues>
+            <masterLabel>Big retail chains</masterLabel>
+            <translation><!-- Big retail chains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global brands</masterLabel>
+            <translation><!-- Global brands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent food stores</masterLabel>
+            <translation><!-- Independent food stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent restaurants</masterLabel>
+            <translation><!-- Independent restaurants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other merchants</masterLabel>
+            <translation><!-- Other merchants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Merchants</masterLabel>
+            <translation><!-- e-Merchants --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Copy Legal to Head Office address? --></label>
+        <name>ER_Match_Legal_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant coverage --></label>
+        <name>ER_Merchant_coverage__c</name>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited</masterLabel>
+            <translation><!-- Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Regional</masterLabel>
+            <translation><!-- Multi-Regional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly redemption volume --></label>
+        <name>ER_Monthly_redemption_volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- MyEdenred acceptance date --></label>
+        <name>ER_MyEdenred_acceptance_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NACE --></label>
+        <name>ER_NACE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nace List --></label>
+        <name>ER_NaceList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nace Name List --></label>
+        <name>ER_NaceNameList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not subject to VAT --></label>
+        <name>ER_Not_subject_to_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of stores --></label>
+        <name>ER_Number_of_stores__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of transactions --></label>
+        <name>ER_Number_of_transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Account --></label>
+        <name>ER_Old_Account__c</name>
+        <relationshipLabel><!-- Accounts (Old Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opt-In Date --></label>
+        <name>ER_Opt_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt-In --></label>
+        <name>ER_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization ID --></label>
+        <name>ER_Organization_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Relationship --></label>
+        <name>ER_Other_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independant</masterLabel>
+            <translation><!-- Independant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Status --></label>
+        <name>ER_Portal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Publish/Unpublish --></label>
+        <name>ER_Publish_Unpublish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Registration Number --></label>
+        <name>ER_Registration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenues monthly --></label>
+        <name>ER_Revenues_monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Client Segmentation --></label>
+        <name>ER_Segment__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LNA</masterLabel>
+            <translation><!-- LNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LNA_KAM_001</masterLabel>
+            <translation><!-- LNA_KAM_001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LNA_KAM_002</masterLabel>
+            <translation><!-- LNA_KAM_002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LNA_KAM_003</masterLabel>
+            <translation><!-- LNA_KAM_003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_BA1</masterLabel>
+            <translation><!-- MSM_FSL_BA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_BA2</masterLabel>
+            <translation><!-- MSM_FSL_BA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_BA3</masterLabel>
+            <translation><!-- MSM_FSL_BA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_BA4</masterLabel>
+            <translation><!-- MSM_FSL_BA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_BB</masterLabel>
+            <translation><!-- MSM_FSL_BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_KE</masterLabel>
+            <translation><!-- MSM_FSL_KE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_NR</masterLabel>
+            <translation><!-- MSM_FSL_NR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_PO</masterLabel>
+            <translation><!-- MSM_FSL_PO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_TN</masterLabel>
+            <translation><!-- MSM_FSL_TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_TT</masterLabel>
+            <translation><!-- MSM_FSL_TT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM_FSL_ZA</masterLabel>
+            <translation><!-- MSM_FSL_ZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT DEFINED</masterLabel>
+            <translation><!-- NOT DEFINED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_BB</masterLabel>
+            <translation><!-- SME_BRA_BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_KE</masterLabel>
+            <translation><!-- SME_BRA_KE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_NR</masterLabel>
+            <translation><!-- SME_BRA_NR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_PO</masterLabel>
+            <translation><!-- SME_BRA_PO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_TN1</masterLabel>
+            <translation><!-- SME_BRA_TN1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_TN2</masterLabel>
+            <translation><!-- SME_BRA_TN2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_TT</masterLabel>
+            <translation><!-- SME_BRA_TT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_TT2</masterLabel>
+            <translation><!-- SME_BRA_TT2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_BRA_ZA</masterLabel>
+            <translation><!-- SME_BRA_ZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_OTH_001</masterLabel>
+            <translation><!-- SME_OTH_001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_TLS_001</masterLabel>
+            <translation><!-- SME_TLS_001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_TLS_002</masterLabel>
+            <translation><!-- SME_TLS_002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_TLS_003</masterLabel>
+            <translation><!-- SME_TLS_003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_TLS_BB</masterLabel>
+            <translation><!-- SME_TLS_BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME_TLS_KE</masterLabel>
+            <translation><!-- SME_TLS_KE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPER A</masterLabel>
+            <translation><!-- SUPER A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small merchants</masterLabel>
+            <translation><!-- Small merchants --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>ER_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation><!-- Blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No potential</masterLabel>
+            <translation><!-- No potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspect</masterLabel>
+            <translation><!-- Suspect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync result --></label>
+        <name>ER_Sync_result__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Take up rate --></label>
+        <name>ER_Take_up_rate__c</name>
+    </fields>
+    <fields>
+        <label>Partita IVA</label>
+        <name>ER_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIPLogo --></label>
+        <name>ER_VIPLogo__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIP --></label>
+        <name>ER_VIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Error --></label>
+        <name>ER_WS_result_Text__c</name>
+    </fields>
+    <fields>
+        <label>Stato Sync</label>
+        <name>ER_WS_result__c</name>
+    </fields>
+    <fields>
+        <label><!-- YTD Revenues --></label>
+        <name>ER_YTD_Revenues__c</name>
+    </fields>
+    <fields>
+        <label><!-- YTD redemption volume --></label>
+        <name>ER_YTD_redemption_volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head Office Contact --></label>
+        <name>HU_HQ_Contact__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Utente AC</label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo Sede Legale</label>
+        <name>IT_Account_Address__c</name>
+    </fields>
+    <fields>
+        <label>Località Aggiuntiva</label>
+        <name>IT_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label>Utente AC Indirizzo</label>
+        <name>IT_Address_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Modifica Indirizzo</label>
+        <name>IT_Address_Editing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Fine Validità Indirizzo</label>
+        <name>IT_Address_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità Indirizzo</label>
+        <name>IT_Address_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Cambio Indirizzo</label>
+        <name>IT_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label>Modifica Gruppo IVA</label>
+        <name>IT_Change_VAT_Group__c</name>
+    </fields>
+    <fields>
+        <label>Codice Città</label>
+        <name>IT_City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>IT_Cluster__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Company</label>
+        <name>IT_Company_Type__c</name>
+        <picklistValues>
+            <masterLabel>Institution</masterLabel>
+            <translation>Ente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation>Privato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private (work for Institution)</masterLabel>
+            <translation>Privato lavora per Ente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Esponi Gruppo IVA</label>
+        <name>IT_Display_VAT_Group__c</name>
+    </fields>
+    <fields>
+        <label>Specifiche Extra-Urbane</label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label>Codici Fatturazione (Attivi)</label>
+        <name>IT_Financial_Center_Active__c</name>
+        <relationshipLabel><!-- Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codici Fatturazione (Chiusi)</label>
+        <name>IT_Financial_Center_Closed__c</name>
+        <relationshipLabel><!-- Account (Financial Center Closed) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codici Fatturazione (In Definizione)</label>
+        <name>IT_Financial_Center_In_Definition__c</name>
+        <relationshipLabel><!-- Account (Financial Center In Definition) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Codice Fiscale</label>
+        <name>IT_Fiscal_Code__c</name>
+    </fields>
+    <fields>
+        <label>P. IVA Estera</label>
+        <name>IT_Foreign_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Account --></label>
+        <name>IT_Future_Change_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Address --></label>
+        <name>IT_Future_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change VAT Group --></label>
+        <name>IT_Future_Change_VAT_Group__c</name>
+    </fields>
+    <fields>
+        <label>P. IVA di Gruppo</label>
+        <name>IT_Group_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label>Codice Frazione</label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label>Frazione</label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label>Settore Merceologico</label>
+        <name>IT_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiative --></label>
+        <name>IT_Initiative__c</name>
+        <picklistValues>
+            <masterLabel>D/C</masterLabel>
+            <translation><!-- D/C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation><!-- Delivery --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Institution --></label>
+        <name>IT_Institution__c</name>
+    </fields>
+    <fields>
+        <label>Denominazione Fattura</label>
+        <name>IT_Invoice_Naming__c</name>
+    </fields>
+    <fields>
+        <label>Forma Legale</label>
+        <name>IT_Legal_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc X --></label>
+        <name>IT_MetRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc Y --></label>
+        <name>IT_MetRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <help>Nodo Smistamento Ordini</help>
+        <label><!-- NSO --></label>
+        <name>IT_NSO__c</name>
+    </fields>
+    <fields>
+        <label>Privato lavora per Ente</label>
+        <name>IT_Private_work_for_institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Red/White --></label>
+        <name>IT_Red_White__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region code --></label>
+        <name>IT_Region_code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Arcostradale</label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label>Invio Fatt. SDI Cliente</label>
+        <name>IT_Send_Client_Billing_SDI__c</name>
+    </fields>
+    <fields>
+        <label>Codice Sestiere</label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo Abbreviato</label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Payment --></label>
+        <name>IT_Split_Payment__c</name>
+    </fields>
+    <fields>
+        <label>Codice Provincia</label>
+        <name>IT_State_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Via</label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOP --></label>
+        <name>IT_TOP__c</name>
+    </fields>
+    <fields>
+        <label>Toponimo</label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Brand</masterLabel>
+            <translation><!-- Group Brand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Client</masterLabel>
+            <translation><!-- Merchant Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary Brand</masterLabel>
+            <translation><!-- Subsidiary Brand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Utente AC Gruppo IVA</label>
+        <name>IT_VAT_Group_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Denominazione Gruppo IVA</label>
+        <name>IT_VAT_Group_Naming__c</name>
+    </fields>
+    <fields>
+        <label>PEC Gruppo IVA</label>
+        <name>IT_VAT_Group_PEC__c</name>
+    </fields>
+    <fields>
+        <label>SDI Gruppo IVA</label>
+        <name>IT_VAT_Group_SDI__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità Gruppo IVA</label>
+        <name>IT_VAT_Group_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Validità Gruppo IVA</label>
+        <name>IT_Vat_Group_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Zona</label>
+        <name>IT_Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Individual Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Portal Information --></label>
+            <section>Portal Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Merged Account Layout 2.1</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <section>Activities</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant Financial Informations --></label>
+            <section>Merchant Financial Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Merchant Information --></label>
+            <section>Merchant Information</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Status with Operational System --></label>
+            <section>Synchronization Status with Operational System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER User Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Client Communication --></label>
+            <section>Client Communication</section>
+        </sections>
+        <sections>
+            <label><!-- User Data provided by Employee --></label>
+            <section>User Data provided by Employee</section>
+        </sections>
+        <sections>
+            <label><!-- User Data provided by Employer --></label>
+            <section>User Data provided by Employer</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Sync with Public Registers --></label>
+        <name>Acc_AresById</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Financial Center --></label>
+        <name>ER_Create_FC</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Company in Sys Ops --></label>
+        <name>HU_Create_Company</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Account UA --></label>
+        <name>IT_Account_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Address UA --></label>
+        <name>IT_Address_UA</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Account --></label>
+        <name>IT_Change_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT Child Account --></label>
+        <name>IT_Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label>Modifica Indirizzo</label>
+        <name>IT_Edit_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IT VAT Group --></label>
+        <name>IT_VAT_Group</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Account --></label>
+        <name>Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Merge of Merchant and Client Record types into Company --></description>
+        <label><!-- Company --></label>
+        <name>ER_Company_Account_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Group / Brand --></label>
+        <name>ER_Group_Brand</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The format of the Phone Number must be equal to Hungarian format, as following :
+                            +36-1-111-1111 (capital city)
+                            +36-11-111-111 (countryside)
+                            +36-11-111-1111 (mobile phones) --></errorMessage>
+        <name>VRHU01_Phone_Number_Hungarian_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The format of the VAT Number must match Hungarian format : 11 digits xxxxxxxx-x-xx --></errorMessage>
+        <name>VRHU02_VAT_Number_Hungarian_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La Ragione Sociale non può contenere i seguenti caratteri speciali: ^ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜ°€¿|</errorMessage>
+        <name>VRIT01_Legal_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>è necessario inserire almeno un valore tra la PEC del Gruppo Iva e il codice univoco (SDI)! Per il codice univoco, in assenza di mail pec, deve comunque essere censito un codice corrispondente a 0000000!</errorMessage>
+        <name>VRIT02_VAT_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare il Tipo Company da &quot;Privato&quot; o &quot;Privato che lavora per Ente&quot; a &quot;Ente&quot;!</errorMessage>
+        <name>VRIT03_Company_Type_Institution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare lo Split Payment per clienti associati ad un gruppo IVA!</errorMessage>
+        <name>VRIT04_Split_Payment_VAT_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>I campi devono essere popolati!</errorMessage>
+        <name>VRIT05_Fields_Populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT05_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SDI obbligatorio a livello di gruppo IVA</errorMessage>
+        <name>VRIT06_SDI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non puoi inserire caratteri in maiuscolo</errorMessage>
+        <name>VRIT07_SDIcharacters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per clienti di tipo ente o privato che lavora per ente, lo SDI deve avere 6 caratteri! Per cliente di tipo privato, lo SDI deve avere 7 caratteri!</errorMessage>
+        <name>VRIT08_SDILen</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CZ_Contracts_And_Solutions --></label>
+        <name>CZ_Contracts_And_Solutions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Daily</masterLabel>
+        <translation>Giornalmente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Monthly</masterLabel>
+        <translation>Mensilmente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Per order</masterLabel>
+        <translation><!-- Per order --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quaterly</masterLabel>
+        <translation>Trimestralmente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Semi-Yearly</masterLabel>
+        <translation><!-- Semi-Yearly --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Semi-monthly</masterLabel>
+        <translation><!-- Semi-monthly --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Weekly</masterLabel>
+        <translation>Settimanalmente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yearly</masterLabel>
+        <translation>Annualmente</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

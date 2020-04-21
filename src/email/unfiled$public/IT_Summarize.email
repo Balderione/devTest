@@ -1,0 +1,133 @@
+<style>
+	td {
+		vertical-align: top;
+	}
+</style>
+<div align='center'> 
+<img src="https://er-italy--devam--c.documentforce.com/servlet/servlet.ImageServer?id=0150E000000u5zi&oid=00D0E000000AXQp&lastMod=1580402682000" alt="Edenred" width="352" height="64" style="display:block;border-style:none;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;" border="0">
+</div>
+<h2 style="width:100%;text-align:center">PARTENZA PROGETTO WELFARE</h2>
+ <br/>
+<h2 style="width:100%;text-align:center">Summary</h2>
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Dati Cliente</div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:30%">
+                          <div>  P.iva :  {!Account.ER_VAT_Number__c}  </div>
+                         </td> 
+			<td style="width:30%">
+                        <div> Nome Società: {!Account.Name} </div>
+                         </td>
+			<td style="width:30%">
+                      <div> Acquisition Channel : 
+                    {!IT_Welfare_Project__c.IT_Acquisition_Channel__c}   </div>
+                       </td>
+	        	</tr>
+	</table>
+</div>
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Dati Societari e Fatturazione
+	</div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:30%">
+				<div>
+					
+					<div>PO/ODA : {!IT_Welfare_Project__c.IT_PO_ODA__c}</div>
+					<div>Unique Billing : {!IT_Welfare_Project__c.IT_Unique_Billing__c}</div>
+					<div>CdC (Center of Cost) : {!IT_Welfare_Project__c.IT_CdC_Center_of_Cost__c}</div>
+				</div>
+			</td>
+			<td style="width:30%">
+				<div>
+					<p>Struttura Societaria</p>
+					<div>Involved locations : {!IT_Welfare_Project__c.IT_Involved_locations__c}</div>
+					<div>Splitted Billing for CDC : {!IT_Welfare_Project__c.IT_Splitted_Billing_for_CDC__c }</div>
+				</div>
+			</td>
+			<td style="width:30%">
+				<div>
+             
+					<div>Involved Society : {!IT_Welfare_Project__c.IT_Involved_Society__c}</div>
+					<div>Fee Parent Group : {!IT_Welfare_Project__c.IT_Fee_Parent_Group__c}</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;"> Contatto </div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:30%">
+				<div>
+					<div>First Name : {!Contact.FirstName}</div>
+					<div>Phone : {!Contact.Phone}</div>
+					
+					<div>Last Name : {!Contact.LastName}</div>
+					
+					<div>Email: {!Contact.Email}</div>
+					
+					
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Dati Payroll</div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:50%">
+			<div>Email per l'invio flussi Payroll: {!IT_Welfare_Project__c.IT_Email_send_payroll__c}</div>
+			</td>
+			
+		</tr>
+	</table>
+</div>
+
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Dati per partenza piano</div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:50%">
+				<div>   Email per l'invio credenziali del Portale Clienti:
+                             {!IT_Welfare_Project__c.IT_Email_Credentials__c}
+                                </div>
+			</td>
+			
+		</tr>
+	</table>
+</div>
+
+<div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Altro</div>
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:30%">
+				<div>Conservazione Sostitutiva : 
+       {!IT_Welfare_Project__c.IT_Replacement__c} </div>
+			</td>
+         <td style="width:30%">
+				<div> Descrizione Piani : 
+       {!IT_Welfare_Project__c.IT_Plan_Description__c}</div>
+			</td>
+      <td style="width:30%">
+				<div> Fonti di finanziamento : 
+      {!IT_Welfare_Project__c.IT_Financial_Sources__c}</div>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- <div style="border:1px solid #0070d2; margin:5px;">
+	<div style="width: 100%; background-color:#0070d2;text-align:center;font-weight:bold;">Note aggiuntive</div> -->
+	<table style="width: 95%;margin:auto">
+		<tr>
+			<td style="width:30%">
+			
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>GOOD COMPANY</masterLabel>
+        <translation>BUONO RAGIONE SOCIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOOD MEAL</masterLabel>
+        <translation>BUONO PASTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SUPPLEMENTARY GOOD</masterLabel>
+        <translation>BUONO INTEGRATIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spendable IN COMPANY</masterLabel>
+        <translation>SPENDIBILE IN AZIENDA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

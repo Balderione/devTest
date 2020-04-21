@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Direct debit</fullName>
+        <default>false</default>
+        <label>Direct debit</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank transfer</fullName>
+        <default>false</default>
+        <label>Bank transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheque</fullName>
+        <default>false</default>
+        <label>Cheque</label>
+    </customValue>
+    <customValue>
+        <fullName>Cash</fullName>
+        <default>false</default>
+        <label>Cash</label>
+    </customValue>
+    <masterLabel>Payment Method</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

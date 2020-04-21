@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>ER_ContractLineItem_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ER_Contract_Line_Item_Compact</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ER_Contract_Line_Item_Compact</fullName>
+        <fields>Name</fields>
+        <fields>ER_Solution__c</fields>
+        <fields>ER_ProductCode__c</fields>
+        <fields>ER_Card_Operational_System_ID__c</fields>
+        <fields>ER_Creation_date_in_OS__c</fields>
+        <label>Contract Line Item Compact</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Contract__r.ER_Business_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Contract_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ER_Contract__r.Status)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Contract Line Items</relationshipLabel>
+        <relationshipName>ER_ContractLineItems</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Creation_date_in_OS__c</fullName>
+        <externalId>false</externalId>
+        <label>Creation date in OS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Item Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ER_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_IsActive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_date_of_Sync__c</fullName>
+        <externalId>false</externalId>
+        <label>Last date of Sync</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_LineNumber__c</fullName>
+        <displayFormat>{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Line Item Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ER_ListPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ER_Minimum_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_NeedApproval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Need Approval ?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Percentage</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ER_PricebookEntryId__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Book Entry ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Product2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Billable Service</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Contract Line Items</relationshipLabel>
+        <relationshipName>ContractLineItems</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_ProductCode__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Product2__r.ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>14</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Solution__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Product2__r.ER_Solution_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Solution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_UnitPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Price</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Activity_Exception__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Activity Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Address_Row_display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Address Row display</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Amount_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Amount Display</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_Business_Association_Font_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Association Font Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>06</fullName>
+                    <default>false</default>
+                    <label>FONT 6</label>
+                </value>
+                <value>
+                    <fullName>09</fullName>
+                    <default>false</default>
+                    <label>FONT 9</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>FONT 2</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>FONT 3</label>
+                </value>
+                <value>
+                    <fullName>04</fullName>
+                    <default>false</default>
+                    <label>FONT 4</label>
+                </value>
+                <value>
+                    <fullName>05</fullName>
+                    <default>false</default>
+                    <label>FONT 5</label>
+                </value>
+                <value>
+                    <fullName>08</fullName>
+                    <default>false</default>
+                    <label>FONT 8</label>
+                </value>
+                <value>
+                    <fullName>07</fullName>
+                    <default>false</default>
+                    <label>FONT 7</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Business_Association_Logo_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Association Logo Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>LOGO WITH LOVE BIG</label>
+                </value>
+                <value>
+                    <fullName>S</fullName>
+                    <default>false</default>
+                    <label>MEAL TICKET SERVICE DAY</label>
+                </value>
+                <value>
+                    <fullName>V</fullName>
+                    <default>false</default>
+                    <label>LUNCH</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>BREAK TIME</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>MEAL TICKET</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Business_Association_Logo_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Association Logo Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>00</fullName>
+                    <default>false</default>
+                    <label>LOGO ON COVER AND TICKET</label>
+                </value>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>LOGO ON TICKET</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>LOGO ON COVER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Card_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Card Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Data_on_Address_Row__c</fullName>
+        <externalId>false</externalId>
+        <label>Data on Address Row</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Display_Active_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Display Active Name</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Display_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Display Address</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Display_Locale__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Display Locale</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Emitted_Ticket_Copies_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Emitted Ticket Copies Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Envelope__c</fullName>
+        <externalId>false</externalId>
+        <label>Envelope</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Feedback_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Feedback Request</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Feedback_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Feedback_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_File_Sending_Authorization__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>File Sending Authorization</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Contract Line Items</relationshipLabel>
+        <relationshipName>Contract_Line_Items</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Font_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Font Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Font_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Front_and_Back_Printout__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Front and Back Printout</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Contract_Line_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Contract Line Item</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Background_Back__c</fullName>
+        <externalId>false</externalId>
+        <label>Graphic Background Back</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Background_Front__c</fullName>
+        <externalId>false</externalId>
+        <label>Graphic Background Front</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Layer_Back__c</fullName>
+        <externalId>false</externalId>
+        <label>Graphic Layer Back</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Graphic_Layer_Front__c</fullName>
+        <externalId>false</externalId>
+        <label>Graphic Layer Front</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Itinerant_Client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Itinerant Client</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Logo_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Logo Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Logo_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Logo Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Logo_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_No_Ads__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No Ads</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_No_Insert__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No Insert</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_No_Logo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No Logo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Frequence_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Frequence Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Order_Frequence_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Receipts_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Receipts Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Order_Receipts_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Printout_Employee_Copies_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Printout/Employee Copies Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>IT_Service__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>IT_Product</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>1V</controllingFieldValue>
+                <controllingFieldValue>1N</controllingFieldValue>
+                <controllingFieldValue>1Q</controllingFieldValue>
+                <controllingFieldValue>1R</controllingFieldValue>
+                <controllingFieldValue>1Y</controllingFieldValue>
+                <controllingFieldValue>1C</controllingFieldValue>
+                <controllingFieldValue>1U</controllingFieldValue>
+                <controllingFieldValue>1P</controllingFieldValue>
+                <controllingFieldValue>1S</controllingFieldValue>
+                <controllingFieldValue>2K</controllingFieldValue>
+                <controllingFieldValue>C</controllingFieldValue>
+                <controllingFieldValue>2J</controllingFieldValue>
+                <controllingFieldValue>2C</controllingFieldValue>
+                <controllingFieldValue>2X</controllingFieldValue>
+                <controllingFieldValue>F</controllingFieldValue>
+                <controllingFieldValue>G</controllingFieldValue>
+                <controllingFieldValue>R</controllingFieldValue>
+                <controllingFieldValue>0V</controllingFieldValue>
+                <controllingFieldValue>1A</controllingFieldValue>
+                <controllingFieldValue>0O</controllingFieldValue>
+                <controllingFieldValue>1B</controllingFieldValue>
+                <controllingFieldValue>0W</controllingFieldValue>
+                <controllingFieldValue>1L</controllingFieldValue>
+                <controllingFieldValue>1M</controllingFieldValue>
+                <controllingFieldValue>1O</controllingFieldValue>
+                <controllingFieldValue>0Z</controllingFieldValue>
+                <controllingFieldValue>U</controllingFieldValue>
+                <controllingFieldValue>K</controllingFieldValue>
+                <controllingFieldValue>L</controllingFieldValue>
+                <controllingFieldValue>0A</controllingFieldValue>
+                <controllingFieldValue>X</controllingFieldValue>
+                <controllingFieldValue>1E</controllingFieldValue>
+                <controllingFieldValue>W</controllingFieldValue>
+                <controllingFieldValue>Y</controllingFieldValue>
+                <controllingFieldValue>1W</controllingFieldValue>
+                <controllingFieldValue>1X</controllingFieldValue>
+                <controllingFieldValue>2A</controllingFieldValue>
+                <controllingFieldValue>2B</controllingFieldValue>
+                <controllingFieldValue>0S</controllingFieldValue>
+                <controllingFieldValue>2F</controllingFieldValue>
+                <controllingFieldValue>0U</controllingFieldValue>
+                <controllingFieldValue>2G</controllingFieldValue>
+                <controllingFieldValue>1D</controllingFieldValue>
+                <valueName>TZ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>5</controllingFieldValue>
+                <controllingFieldValue>0C</controllingFieldValue>
+                <controllingFieldValue>1Z</controllingFieldValue>
+                <controllingFieldValue>6</controllingFieldValue>
+                <controllingFieldValue>8</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>9</controllingFieldValue>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>1H</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>4</controllingFieldValue>
+                <controllingFieldValue>E</controllingFieldValue>
+                <controllingFieldValue>H</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>M</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <controllingFieldValue>0H</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>0P</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0D</controllingFieldValue>
+                <controllingFieldValue>Z1</controllingFieldValue>
+                <controllingFieldValue>Z2</controllingFieldValue>
+                <controllingFieldValue>Z3</controllingFieldValue>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <controllingFieldValue>7</controllingFieldValue>
+                <controllingFieldValue>Q</controllingFieldValue>
+                <valueName>T0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>5</controllingFieldValue>
+                <controllingFieldValue>6</controllingFieldValue>
+                <controllingFieldValue>8</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>9</controllingFieldValue>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>4</controllingFieldValue>
+                <controllingFieldValue>T</controllingFieldValue>
+                <controllingFieldValue>E</controllingFieldValue>
+                <controllingFieldValue>H</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>M</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <controllingFieldValue>0H</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>V</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>0P</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0E</controllingFieldValue>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <controllingFieldValue>7</controllingFieldValue>
+                <controllingFieldValue>Q</controllingFieldValue>
+                <valueName>T1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>5</controllingFieldValue>
+                <controllingFieldValue>6</controllingFieldValue>
+                <controllingFieldValue>8</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>9</controllingFieldValue>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>4</controllingFieldValue>
+                <controllingFieldValue>E</controllingFieldValue>
+                <controllingFieldValue>H</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>I</controllingFieldValue>
+                <controllingFieldValue>M</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <controllingFieldValue>0H</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>0P</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <controllingFieldValue>7</controllingFieldValue>
+                <controllingFieldValue>Q</controllingFieldValue>
+                <valueName>T4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>5</controllingFieldValue>
+                <controllingFieldValue>6</controllingFieldValue>
+                <controllingFieldValue>8</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>9</controllingFieldValue>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>4</controllingFieldValue>
+                <controllingFieldValue>E</controllingFieldValue>
+                <controllingFieldValue>H</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>M</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <controllingFieldValue>0H</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>0P</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <controllingFieldValue>7</controllingFieldValue>
+                <controllingFieldValue>Q</controllingFieldValue>
+                <valueName>T5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>5</controllingFieldValue>
+                <controllingFieldValue>6</controllingFieldValue>
+                <controllingFieldValue>8</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>9</controllingFieldValue>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>4</controllingFieldValue>
+                <controllingFieldValue>E</controllingFieldValue>
+                <controllingFieldValue>H</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>I</controllingFieldValue>
+                <controllingFieldValue>M</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <controllingFieldValue>0H</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>0P</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <controllingFieldValue>7</controllingFieldValue>
+                <controllingFieldValue>Q</controllingFieldValue>
+                <valueName>T8</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <valueName>TL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0J</controllingFieldValue>
+                <controllingFieldValue>0K</controllingFieldValue>
+                <controllingFieldValue>1G</controllingFieldValue>
+                <controllingFieldValue>1F</controllingFieldValue>
+                <controllingFieldValue>0G</controllingFieldValue>
+                <controllingFieldValue>0F</controllingFieldValue>
+                <valueName>TM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C6</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C7</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1T</controllingFieldValue>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>C8</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <valueName>T2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>N</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>O</controllingFieldValue>
+                <controllingFieldValue>P</controllingFieldValue>
+                <controllingFieldValue>J</controllingFieldValue>
+                <controllingFieldValue>Z</controllingFieldValue>
+                <controllingFieldValue>0Q</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <valueName>T3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <valueName>T6</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>B</controllingFieldValue>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <valueName>T7</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <controllingFieldValue>3</controllingFieldValue>
+                <controllingFieldValue>0B</controllingFieldValue>
+                <controllingFieldValue>0I</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <valueName>T9</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>S</controllingFieldValue>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>CZ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <valueName>TE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <valueName>TF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0N</controllingFieldValue>
+                <controllingFieldValue>0M</controllingFieldValue>
+                <controllingFieldValue>0L</controllingFieldValue>
+                <controllingFieldValue>0R</controllingFieldValue>
+                <valueName>TG</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Service</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Single_Series_Emission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Single Series Emission</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Stock_Orders__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Orders</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>CUSTOMER IS NOT A STOCK</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>DUMMY FOR CUSTOMER ORDER STOCK</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>CUSTOMER ORDER WITH EITHER TRADITIONAL FROM STOCK</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>WITH ONLY A CUSTOMER ORDER STOCK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Technical_Data_Progressive__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Data Progressive</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Display__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ticket Display</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Return_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ticket Return Request</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Ticket_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Value__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ticket Value</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Web_Enabling_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Enabling Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Web_Enabling_Level</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Contract Line Item</label>
+    <nameField>
+        <label>Contract Line Item Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contract Line Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>VRER01_BlockUpdate</fullName>
+        <active>false</active>
+        <description>Allow modification of creation date in OS only.</description>
+        <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+NOT(ISNEW()),
+NOT( ISCHANGED(ER_Last_date_of_Sync__c ))
+)</errorConditionFormula>
+        <errorMessage>You cannot update this record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT01_Ticket_Type_and_Ticket_Display</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+
+NOT(ISPICKVAL(IT_Ticket_Type__c ,&apos;1&apos;)),
+PRIORVALUE(IT_Ticket_Display__c )!=IT_Ticket_Display__c 
+
+
+)</errorConditionFormula>
+        <errorMessage>If ticket type equals &apos;GOOD COMPANY&apos; Ticket Display cannot be evaluated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Data_on_Address_Row</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR( 
+IT_Address_Row_display__c =true,
+IT_Display_Address__c =true),
+ IT_Data_on_Address_Row__c != null,
+
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;))</errorConditionFormula>
+        <errorMessage>If the fields Display_Address and Address Row display are valued,
+the field Data on Address Row cannot be changed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Service_and_Contract_Line_Item</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+	
+OR(ISPICKVAL( IT_Financial_Center__r.IT_Service__c  ,&apos;1H&apos;),
+			ISPICKVAL(IT_Service__c ,&apos;1Z&apos;)),
+OR(
+PRIORVALUE(IT_Display_Active_Name__c)!=IT_Display_Active_Name__c,
+PRIORVALUE(IT_Display_Address__c) !=IT_Display_Address__c,
+PRIORVALUE(IT_Display_Locale__c ) !=IT_Display_Locale__c,
+PRIORVALUE(IT_Address_Row_display__c)!=IT_Address_Row_display__c) 
+				)</errorConditionFormula>
+        <errorMessage>If &apos;Service&apos; equals = COMPLIMENTS EXPERIENCE or COMPLIMENTS EXPERIENCE PROMO,the fields:
+Display Active Name, Display Address, Display Locale, Address Row display cannot be changed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT04_Future_Change</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ($User.ER_BypassVR__c = False,
+ISPICKVAL( 	$User.ER_Business_Unit__c , &apos;IT&apos;),
+				IT_Future_Change_Contract_Line_Item__c != &apos;&apos;,   
+					ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;02&apos;) ,
+					OR(  ISCHANGED(IT_Product__c),  
+								ISCHANGED( IT_Ticket_Type__c ) , 
+								ISCHANGED( IT_Ticket_Display__c ) ,  
+								ISCHANGED( IT_Display_Active_Name__c ),  
+								ISCHANGED( IT_Address_Row_display__c ) , 
+								ISCHANGED( IT_Display_Locale__c )  ) )</errorConditionFormula>
+        <errorMessage>It&apos;s impossible to modify Technical Data if there are existing future change!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT05_Locality_CleanWay_TicketService</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ 
+				IT_Display_Locale__c = true , 
+				$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c ,&apos;IT&apos;),
+OR( 
+ISPICKVAL( IT_Service__c , &apos;4&apos;), 
+ISPICKVAL( IT_Service__c , &apos;0I&apos;),
+ISPICKVAL( IT_Service__c , &apos;E&apos;),
+ISPICKVAL( IT_Service__c , &apos;6&apos;),
+ISPICKVAL( IT_Service__c , &apos;M&apos;),
+ISPICKVAL( IT_Service__c , &apos;0N&apos;),
+ISPICKVAL( IT_Service__c , &apos;0Z&apos;),
+ISPICKVAL( IT_Service__c , &apos;0R&apos;),
+ISPICKVAL( IT_Service__c , &apos;0S&apos;)
+  ))</errorConditionFormula>
+        <errorMessage>Locality management must not be managed by Clean Way and Ticket Service&apos;s client!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT06_CleanWay_SingleSeriesEmission</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+ISPICKVAL( IT_Financial_Center__r.IT_Service__c , &apos;6&apos;) , 
+				ISPICKVAL(  IT_Financial_Center__r.IT_Client_Status__c  ,&apos;02&apos;),
+ IT_Single_Series_Emission__c = false,
+	$User.ER_BypassVR__c = False,
+	ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;))</errorConditionFormula>
+        <errorMessage>Single Series Emission must be true for this type of service (Clean Way)!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT07_Service_SingleSeriesEmission</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c , &apos;02&apos;),
+					$User.ER_BypassVR__c = False,
+	ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+IT_Single_Series_Emission__c = true ,
+AND( NOT(ISPICKVAL (IT_Product__c, &apos;T0&apos;)),
+NOT(ISPICKVAL (IT_Product__c, &apos;C0&apos;))),
+				AND(
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;0I&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;6&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;M&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;C&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1A&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;R&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;S&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;W&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;Y&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1M&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1L&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1O&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1NL&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1R&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1V&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1X&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;2X&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1Y&apos;)),
+NOT(ISPICKVAL ( IT_Financial_Center__r.IT_Service__c , &apos;1W&apos;)))
+)</errorConditionFormula>
+        <errorMessage>This type of service requires that &quot;Single Series Emission&quot; field is set only if the product is a Custom Carnet!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT08_Ticket_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &apos;IT&apos;),
+				
+				IT_Ticket_Display__c =true,
+	NOT( ISPICKVAL( IT_Ticket_Type__c , &apos;1&apos;) )
+				
+				)</errorConditionFormula>
+        <errorMessage>Ticket Type must be &apos;GOOD MEAL&apos; if  Ticket Display equals true</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT09_Order_Receipts_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $User.ER_BypassVR__c = False,
+ISPICKVAL( $User.ER_Business_Unit__c , &apos;IT&apos;),
+
+ISPICKVAL( IT_Financial_Center__r.IT_Client_Status__c, &apos;02&apos; ),
+ ISPICKVAL( IT_Order_Receipts_Type__c, &apos;&apos; ) 
+
+)</errorConditionFormula>
+        <errorMessage>Insert Order Receipts Type!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT10_Stock</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+					$User.ER_BypassVR__c = False,
+ISPICKVAL(	$User.ER_Business_Unit__c , &apos;IT&apos;),
+					
+					NOT(				ISPICKVAL(IT_Service__c , &apos;1G&apos;)),  
+NOT(	ISPICKVAL(IT_Service__c , &apos;1F&apos;)),
+	NOT(ISPICKVAL(IT_Service__c , &apos;0G&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;0F&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;2F&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;2G&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;0J&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;2K&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;2J&apos;)),
+NOT(	ISPICKVAL(IT_Service__c , &apos;0K&apos;)),
+					
+					 ISCHANGED(IT_Stock_Orders__c))</errorConditionFormula>
+        <errorMessage>Stock Orders cannot be modified for the Service Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT11_Ticket</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL( $User.ER_Business_Unit__c , &apos;IT&apos;),
+
+NOT( ISPICKVAL(IT_Service__c , &apos;4&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;6&apos;)),
+NOT(ISPICKVAL(IT_Service__c , &apos;E&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;0G&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;0F&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;0P&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;0Q&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;2F&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;2G&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;1E&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;2K&apos;)),
+NOT( ISPICKVAL(IT_Service__c , &apos;0K&apos;)),
+
+ISCHANGED(IT_Emitted_Ticket_Copies_Number__c))</errorConditionFormula>
+        <errorMessage>Emitted Ticket Copies Number cannot be modified for the Service Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT12_Modify</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+NOT(
+OR( 
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1B&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1X&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;2X&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;0G&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;0F&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;0H&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;0P&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;0Q&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1W&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c , &apos;2F&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;2G&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1D&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;1L&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1M&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;1N&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1O&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;1E&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c  , &apos;1Y&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;1H&apos;),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;2J&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;2X&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Service__c   , &apos;2C&apos;)/*,
+ AND(
+NOT(ISBLANK( ER_Contract__r.IT_Financial_Center__r.IT_DEMO_Financial_Center__c   )),
+ISPICKVAL(ER_Contract__r.IT_Financial_Center__r.IT_Service__c , &apos;1B&apos;)
+)*/
+)
+))</errorConditionFormula>
+        <errorMessage>Impossible to modify for this type of service</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT13_Status_Based_Change_Block</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+
+OR(
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Client_Status__c , &apos;10&apos;),
+ISPICKVAL(
+ER_Contract__r.IT_Financial_Center__r.IT_Client_Status__c , &apos;00&apos;),
+ISPICKVAL( ER_Contract__r.IT_Financial_Center__r.IT_Client_Status__c , &apos;03&apos;)
+)
+
+
+)</errorConditionFormula>
+        <errorMessage>Impossible to modify fields for this client status!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

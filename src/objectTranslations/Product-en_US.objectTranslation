@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solution and Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solutions and Services</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Order Solution or Service</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Order Solutions or Services</value>
+        </caseValues>
+        <name>order_product</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Order Solution or Service ID</value>
+        </caseValues>
+        <name>order_product_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Order Solution or Service Number</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Order Solutions or Services Numbers</value>
+        </caseValues>
+        <name>order_product_number</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Amount</value>
+        </caseValues>
+        <name>product_amount</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution and Service Catalog</value>
+        </caseValues>
+        <name>product_catalog</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Code</value>
+        </caseValues>
+        <name>product_code</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Currency</value>
+        </caseValues>
+        <name>product_currency</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution and Service Custom Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution and Service Custom Fields</value>
+        </caseValues>
+        <name>product_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Date</value>
+        </caseValues>
+        <name>product_date</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Description</value>
+        </caseValues>
+        <name>product_description</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Detail</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Details</value>
+        </caseValues>
+        <name>product_detail</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expected Solution or Service Amount</value>
+        </caseValues>
+        <name>product_expected_product_amount</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Family</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Families</value>
+        </caseValues>
+        <name>product_family</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Fields</value>
+        </caseValues>
+        <name>product_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Forecast Category</value>
+        </caseValues>
+        <name>product_forecast_category</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Stage ID</value>
+        </caseValues>
+        <name>product_history_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service ID</value>
+        </caseValues>
+        <name>product_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Information</value>
+        </caseValues>
+        <name>product_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Link</value>
+        </caseValues>
+        <name>product_link</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Names</value>
+        </caseValues>
+        <name>product_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Price</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Prices</value>
+        </caseValues>
+        <name>product_price</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Record Types</value>
+        </caseValues>
+        <name>product_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Report</value>
+        </caseValues>
+        <name>product_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Schedule</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Schedules</value>
+        </caseValues>
+        <name>product_schedule</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Selection</value>
+        </caseValues>
+        <name>product_selection</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Stage ID</value>
+        </caseValues>
+        <name>product_stage_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Total Price</value>
+        </caseValues>
+        <name>product_total_price</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service Update</value>
+        </caseValues>
+        <name>product_update</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution or Service View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution or Service Views</value>
+        </caseValues>
+        <name>product_view</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

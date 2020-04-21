@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Richiesta Modifica Condizioni</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Richieste Modifica Condizioni</value>
+    </caseValues>
+    <fields>
+        <label><!-- ABI/CAB --></label>
+        <name>IT_ABI_CAB__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ABI F --></label>
+        <name>IT_ABI_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- ABI --></label>
+        <name>IT_ABI__c</name>
+    </fields>
+    <fields>
+        <label>Utente AC</label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Utente Accettazione</label>
+        <name>IT_Acceptance_User__c</name>
+    </fields>
+    <fields>
+        <label>Data Richiesta Accettata</label>
+        <name>IT_Accepted_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>IT_Account__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Località Aggiuntiva</label>
+        <name>IT_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label>Cambio Indirizzo</label>
+        <name>IT_Address_Change__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo</label>
+        <name>IT_Address__c</name>
+    </fields>
+    <fields>
+        <label>Gruppo Amministrativo</label>
+        <name>IT_Administrative_Group__c</name>
+    </fields>
+    <fields>
+        <label>Utente Richiedente</label>
+        <name>IT_Applicant_User__c</name>
+    </fields>
+    <fields>
+        <label>Durata Contratto</label>
+        <name>IT_Attendance_Type__c</name>
+    </fields>
+    <fields>
+        <label>Data Autorizzazione</label>
+        <name>IT_Authorization_Date__c</name>
+    </fields>
+    <fields>
+        <label>Autorizzazione</label>
+        <name>IT_Authorized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Code F --></label>
+        <name>IT_Bank_Account_Code_F__c</name>
+    </fields>
+    <fields>
+        <label>Codice Banca</label>
+        <name>IT_Bank_Account_Code__c</name>
+    </fields>
+    <fields>
+        <label>Banca</label>
+        <name>IT_Bank_Account__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo Beneficiario</label>
+        <name>IT_Beneficiary_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R1 F --></label>
+        <name>IT_Billing_Company_Name_R1_F__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura R1</label>
+        <name>IT_Billing_Company_Name_R1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R2 F --></label>
+        <name>IT_Billing_Company_Name_R2_F__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura R2</label>
+        <name>IT_Billing_Company_Name_R2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R3 F --></label>
+        <name>IT_Billing_Company_Name_R3_F__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura R3</label>
+        <name>IT_Billing_Company_Name_R3__c</name>
+    </fields>
+    <fields>
+        <label>Cauzione</label>
+        <name>IT_Bond__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAB F --></label>
+        <name>IT_CAB_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAB --></label>
+        <name>IT_CAB__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC --></label>
+        <name>IT_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIG F --></label>
+        <name>IT_CIG_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIG --></label>
+        <name>IT_CIG__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIN --></label>
+        <name>IT_CIN__c</name>
+    </fields>
+    <fields>
+        <label>Fine Campagna</label>
+        <name>IT_Campaign_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Inizio Campagna</label>
+        <name>IT_Campaign_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Periodicità Fatturaz. Costo Carte</label>
+        <name>IT_Card_Cost_Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>ANNUAL (31/12)</masterLabel>
+            <translation>ANNUALE (31/12)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HALF (30/6; 31/12)</masterLabel>
+            <translation>SEMESTRALE (30/6; 31/12)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSUE (IN THE ORDER OF GOOD)</masterLabel>
+            <translation>EMISSIONE (NELL&apos;ORDINE DEI BUONI)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTHLY (end of month)</masterLabel>
+            <translation>MENSILE (fine mese)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVER</masterLabel>
+            <translation>MAI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY (31/3, 30/6, 30/9, 31/12)</masterLabel>
+            <translation>TRIMESTRALE (31/3; 30/6; 30/9; 31/12)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Costo Carte</label>
+        <name>IT_Card_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Iban --></label>
+        <name>IT_Check_Iban__c</name>
+    </fields>
+    <fields>
+        <label>Città</label>
+        <name>IT_City__c</name>
+    </fields>
+    <fields>
+        <label>Codice Cliente</label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto/Commissione</label>
+        <name>IT_Commission_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Sconto/Commissione</label>
+        <name>IT_Commission_Discount_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Percentage F --></label>
+        <name>IT_Commission_Percentage_F__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Commissione</label>
+        <name>IT_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Type F --></label>
+        <name>IT_Commission_Type_F__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Commissione</label>
+        <name>IT_Commission_Type__c</name>
+        <picklistValues>
+            <masterLabel>COMMISSION-FREE</masterLabel>
+            <translation>ESENTE DA COMMISSIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXISTING COMMISSION</masterLabel>
+            <translation>COMMISSIONE ESISTENTE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cambio Ragione Sociale</label>
+        <name>IT_Company_Name_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concurrency F --></label>
+        <name>IT_Concurrency_F__c</name>
+    </fields>
+    <fields>
+        <label>Concorrenza</label>
+        <name>IT_Concurrency__c</name>
+    </fields>
+    <fields>
+        <label>Dati Tecnici</label>
+        <name>IT_Contract_Line_Item__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Numero Contratto</label>
+        <name>IT_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label>Progressivo Contratto</label>
+        <name>IT_Contract_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Renewal Type F --></label>
+        <name>IT_Contract_Renewal_Type_F__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Rinnovo Contratto</label>
+        <name>IT_Contract_Renewal_Type__c</name>
+        <picklistValues>
+            <masterLabel>AUTOMATIC RENEWAL</masterLabel>
+            <translation>TACITO RINNOVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO AUTOMATIC RENEWAL</masterLabel>
+            <translation>SENZA TACITO RINNOVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENEWABLE</masterLabel>
+            <translation>RINNOVABILE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEMPORARY</masterLabel>
+            <translation>TEMPORANEO</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Sign Date --></label>
+        <name>IT_Contract_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Start Date F --></label>
+        <name>IT_Contract_Start_Date_F__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio</label>
+        <name>IT_Contract_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type F --></label>
+        <name>IT_Contract_Type_F__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Contratto</label>
+        <name>IT_Contract_Type__c</name>
+    </fields>
+    <fields>
+        <label>Contratto</label>
+        <name>IT_Contract__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Particolarità Contrattuali</label>
+        <name>IT_Contractual_Particularities__c</name>
+    </fields>
+    <fields>
+        <label>Paese</label>
+        <name>IT_Country__c</name>
+    </fields>
+    <fields>
+        <label>Presenza Data Iniz. nel Contratto</label>
+        <name>IT_Date_presence__c</name>
+    </fields>
+    <fields>
+        <label>Vincolo su Data Consegna</label>
+        <name>IT_Delivery_Date_Bond__c</name>
+        <picklistValues>
+            <masterLabel>FIRST DAY OF MONTH CALCULATION</masterLabel>
+            <translation>CALCOLO DAL PRIMO G. DEL MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSERTION DATE CALCULATION</masterLabel>
+            <translation>CALCOLO DA G. INSERIMENTO ORDINE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Giorno Fisso Consegna</label>
+        <name>IT_Delivery_Fixed_Day__c</name>
+    </fields>
+    <fields>
+        <label>Consegna</label>
+        <name>IT_Delivery_Site__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Giorno Limite Consegna</label>
+        <name>IT_Delivery_Term__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto 2</label>
+        <name>IT_Discount_Percentage_2__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto 3</label>
+        <name>IT_Discount_Percentage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage F --></label>
+        <name>IT_Discount_Percentage_F__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto</label>
+        <name>IT_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Type F --></label>
+        <name>IT_Discount_Type_F__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Sconto</label>
+        <name>IT_Discount_Type__c</name>
+        <picklistValues>
+            <masterLabel>DISCOUNT BI-MONTHLY MAGAZINE</masterLabel>
+            <translation>SCONTO PERIODICO BIMESTRALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT MAGAZINE QUADRIMESTRAL</masterLabel>
+            <translation>SCONTO PERIODICO QUADRIMESTRAL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT ON BILL</masterLabel>
+            <translation>SCONTO IN FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT ON BILL ON VAL.BUONO</masterLabel>
+            <translation>SCONTO IN FATTURA SU VAL.BUONO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT PERIODIC HALF</masterLabel>
+            <translation>SCONTO PERIODICO SEMESTRALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT QUARTERLY MAGAZINE</masterLabel>
+            <translation>SCONTO PERIODICO TRIMESTRALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCOUNT WITH N. CREDIT PART A</masterLabel>
+            <translation>SCONTO CON N. CREDITO A PARTE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PERIODIC ANNUAL DISCOUNT</masterLabel>
+            <translation><!-- PERIODIC ANNUAL DISCOUNT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Validità Sconto 2</label>
+        <name>IT_Discount_Validity_Date_2__c</name>
+    </fields>
+    <fields>
+        <label>Data Validità Sconto 3</label>
+        <name>IT_Discount_Validity_Date_3__c</name>
+    </fields>
+    <fields>
+        <label>Attività</label>
+        <name>IT_Distribution_Point__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Motivazione Modifiche</label>
+        <name>IT_Editing_Reason__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation><!-- 01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation><!-- 04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05</masterLabel>
+            <translation><!-- 05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06</masterLabel>
+            <translation><!-- 06 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07</masterLabel>
+            <translation><!-- 07 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08</masterLabel>
+            <translation><!-- 08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09</masterLabel>
+            <translation><!-- 09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreements</masterLabel>
+            <translation>ACCORDI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retention</masterLabel>
+            <translation>FIDELIZZAZIONE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee Number F --></label>
+        <name>IT_Employee_Number_F__c</name>
+    </fields>
+    <fields>
+        <label>Numero Dipendenti</label>
+        <name>IT_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Contract Date F --></label>
+        <name>IT_Expiration_Contract_Date_F__c</name>
+    </fields>
+    <fields>
+        <label>Data Scadenza</label>
+        <name>IT_Expiration_Contract_Date__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Fattura Riga 3</label>
+        <name>IT_Extended_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label>Specifiche Extraurbane</label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Extrasconto</label>
+        <name>IT_Extradiscount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Extrasconto</label>
+        <name>IT_Extradiscount_Type__c</name>
+    </fields>
+    <fields>
+        <label>Extrasconto</label>
+        <name>IT_Extradiscount__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto 2</label>
+        <name>IT_FRM_Discount_Percentage_2__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Sconto 3</label>
+        <name>IT_FRM_Discount_Percentage_3__c</name>
+    </fields>
+    <fields>
+        <label>Percentuale Extrasconto</label>
+        <name>IT_FRM_Extradiscount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>IT_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center_Action__c</name>
+        <relationshipLabel><!-- Richieste Modifica Condizioni (Financial Center) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel>Richiesta Modifica Condizioni (Financial Center)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo Giorno Fisso</label>
+        <name>IT_Fixed_Day_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation>LAVORATIVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation>SOLARE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Costo canone mensile (Flexben)</label>
+        <name>IT_Flexben_Fee_Cost__c</name>
+    </fields>
+    <fields>
+        <label>Frequenza canone (Flexben)</label>
+        <name>IT_Flexben_Fee_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>ANNUAL</masterLabel>
+            <translation>ANNUALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIENNIAL</masterLabel>
+            <translation>BIENNALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECENNIAL</masterLabel>
+            <translation>DECENNALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIVE YEAR</masterLabel>
+            <translation>QUINQUENNALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUADRENNIAL</masterLabel>
+            <translation>QUADRIENNALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY</masterLabel>
+            <translation>TRIMESTRALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIENNIAL</masterLabel>
+            <translation>TRIENNALE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Costo startup (Flexben)</label>
+        <name>IT_Flexben_Startup_Cost__c</name>
+    </fields>
+    <fields>
+        <label>Forzatura</label>
+        <name>IT_Forcing__c</name>
+    </fields>
+    <fields>
+        <label>Codice Capo Quadro</label>
+        <name>IT_Framework_Head_Code__c</name>
+    </fields>
+    <fields>
+        <label>Mandato Quadro</label>
+        <name>IT_Framework_Warrant__c</name>
+    </fields>
+    <fields>
+        <label>Codice Frazione</label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label>Frazione</label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label>Multisconto</label>
+        <name>IT_Multidiscount__c</name>
+    </fields>
+    <fields>
+        <label>Codice Comune</label>
+        <name>IT_Municipality_Code__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Località Aggiuntiva</label>
+        <name>IT_New_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Tipo Beneficiario</label>
+        <name>IT_New_Beneficiary_Type__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Mail PEC Fatturazione</label>
+        <name>IT_New_Billing_PEC_Mail__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Città</label>
+        <name>IT_New_City__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Cliente</label>
+        <name>IT_New_Client__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Concorrenza</label>
+        <name>IT_New_Concurrency__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Numero Dipendenti</label>
+        <name>IT_New_Employees_Number__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Fax</label>
+        <name>IT_New_Fax__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Codice Fiscale</label>
+        <name>IT_New_Fiscal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Settore Merceologico</label>
+        <name>IT_New_Industry__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Flag Ente</label>
+        <name>IT_New_Institution_Flag__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Struttura Societaria</label>
+        <name>IT_New_Legal_Form__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Ragione Sociale</label>
+        <name>IT_New_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Segmento</label>
+        <name>IT_New_Local_Client_Segmentation__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT DEFINED</masterLabel>
+            <translation>NON DEFINITO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPER A</masterLabel>
+            <translation><!-- SUPER A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nuova Email</label>
+        <name>IT_New_Mail__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Tipo Apertura</label>
+        <name>IT_New_Opening_Type__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Mail PEC</label>
+        <name>IT_New_PEC_Mail__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Telefono</label>
+        <name>IT_New_Phone__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo CAP</label>
+        <name>IT_New_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Flag Privato lavora per Ente</label>
+        <name>IT_New_Private_work_for_Institution_Flag__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo SDI</label>
+        <name>IT_New_SDI__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Commerciale</label>
+        <name>IT_New_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Servizio</label>
+        <name>IT_New_Service__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Numero Firme</label>
+        <name>IT_New_Signatures_Number__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Split Payment</label>
+        <name>IT_New_Split_Payment__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Provincia</label>
+        <name>IT_New_State__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Indirizzo</label>
+        <name>IT_New_Street_Number__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Indirizzo</label>
+        <name>IT_New_Street__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Toponimo</label>
+        <name>IT_New_Toponym__c</name>
+    </fields>
+    <fields>
+        <label>Nuovo Codice Univoco</label>
+        <name>IT_New_Unique_Office_Code__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Partita IVA</label>
+        <name>IT_New_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label>Nuova Zona</label>
+        <name>IT_New_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Cost Reason F --></label>
+        <name>IT_No_Cost_Reason_F__c</name>
+    </fields>
+    <fields>
+        <label>Motivo Assenza Spese</label>
+        <name>IT_No_Cost_Reason__c</name>
+    </fields>
+    <fields>
+        <label>Senza Data nel Contratto</label>
+        <name>IT_No_Date_presence__c</name>
+    </fields>
+    <fields>
+        <label>Senza Esclusività</label>
+        <name>IT_No_Exclusivity__c</name>
+    </fields>
+    <fields>
+        <label>No Stampa Massiva</label>
+        <name>IT_No_Massive_Print__c</name>
+    </fields>
+    <fields>
+        <label>Autorizzazione attivazione no firma</label>
+        <name>IT_No_Sign_Activation_Authorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Sign Authorization F --></label>
+        <name>IT_No_Sign_Authorization_F__c</name>
+    </fields>
+    <fields>
+        <label>No Invio Contratto</label>
+        <name>IT_Not_Send_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Solo Copia Cliente</label>
+        <name>IT_Only_Client_Copy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opening Outcome F --></label>
+        <name>IT_Opening_Outcome_F__c</name>
+    </fields>
+    <fields>
+        <label>Esito Apertura</label>
+        <name>IT_Opening_Outcome__c</name>
+    </fields>
+    <fields>
+        <label>Apertura</label>
+        <name>IT_Opening__c</name>
+    </fields>
+    <fields>
+        <label>Codice Opportunità</label>
+        <name>IT_Opportunity_Code__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Frequenza Ordini</label>
+        <name>IT_Order_Frequence_Type__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Giorno Limite Ricezione Ord.</label>
+        <name>IT_Order_Reception_Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation>LAVORATIVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation>SOLARE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Giorno Limite Ricezione Ordine</label>
+        <name>IT_Order_Reception_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Code F --></label>
+        <name>IT_Payment_Code_F__c</name>
+    </fields>
+    <fields>
+        <label>Termini di Pagamento</label>
+        <name>IT_Payment_Code__c</name>
+    </fields>
+    <fields>
+        <label>Numero Progressivo Pagamento</label>
+        <name>IT_Payment_Progressive_Number__c</name>
+    </fields>
+    <fields>
+        <label>Presenza Penale</label>
+        <name>IT_Penal_Presence__c</name>
+    </fields>
+    <fields>
+        <label>CAP</label>
+        <name>IT_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Contratto Stampato</label>
+        <name>IT_Printed_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Provincia</label>
+        <name>IT_Province__c</name>
+    </fields>
+    <fields>
+        <label>Motivazione</label>
+        <name>IT_Reason__c</name>
+    </fields>
+    <fields>
+        <label>Referente</label>
+        <name>IT_Referente__c</name>
+        <relationshipLabel><!-- Richieste --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data Registrazione</label>
+        <name>IT_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label>Utente Registrazione</label>
+        <name>IT_Registration_User__c</name>
+    </fields>
+    <fields>
+        <label>Data Riapertura</label>
+        <name>IT_Reopening_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Richiesta</label>
+        <name>IT_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Flow Control --></label>
+        <name>IT_Request_Flow_Control__c</name>
+    </fields>
+    <fields>
+        <label>Stato Richiesta</label>
+        <name>IT_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACCEPTED</masterLabel>
+            <translation>ACCETTATA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTHORIZED</masterLabel>
+            <translation>AUTORIZZATA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELLED</masterLabel>
+            <translation>ANNULLATA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REGISTERED</masterLabel>
+            <translation>REGISTRATA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Codice Arcostradale</label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDD Authorized --></label>
+        <name>IT_SDD_Authorized__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDD Contract Code F --></label>
+        <name>IT_SDD_Contract_Code_F__c</name>
+    </fields>
+    <fields>
+        <label>Codice Contratto SDD</label>
+        <name>IT_SDD_Contract_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDD Fiscal Code F --></label>
+        <name>IT_SDD_Fiscal_Code_F__c</name>
+    </fields>
+    <fields>
+        <label>Codice Fiscale SEPA</label>
+        <name>IT_SDD_Fiscal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Codice Pagamento SDD</label>
+        <name>IT_SDD_Payment_Code__c</name>
+        <picklistValues>
+            <masterLabel>0 SDD B2B DAYS INVOICE DATE</masterLabel>
+            <translation>SDD B2B 0 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 SEPA DD DATE INVOICE + 15</masterLabel>
+            <translation>SEPA 60 GG DATA FATTURA + 15</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 150 DAYS INVOICE DATE</masterLabel>
+            <translation>SDD B2B 150 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 30 GG INVOICE DATE</masterLabel>
+            <translation>SDD B2B 30 GG DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD B2B 60 GG INVOICE DATE END MONTH</masterLabel>
+            <translation>SDD B2B 60 GG DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD CORE 0 DAYS INVOICE DATE</masterLabel>
+            <translation>SDD CORE 0 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDD CORE 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SDD CORE 30 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 120 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 120 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 15 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 15 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 30 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 30 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 30 DAYS OF RECEIPT OF INVOICE</masterLabel>
+            <translation>SEPA 30 GIORNI RICEVIMENTO FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 45 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 45 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 45 DAYS INVOICE RECEPTION</masterLabel>
+            <translation>SEPA 45 GIORNI RICEVIMENTO FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 5TH DAYS OF NEXT MONTH 3rd. INVOICE DATE</masterLabel>
+            <translation>SEPA AL 5° GG DEL 3° MESE SUCC. DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 60 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 60 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 60 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 8 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 8 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 90 DAYS INVOICE DATE</masterLabel>
+            <translation>SEPA 90 GIORNI DATA FATTURA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+            <translation>SEPA 90 GIORNI DATA FATTURA FINE MESE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA A 30 DAY BILLING MONTH</masterLabel>
+            <translation>SEPA A 30 GIORNO MESE DI FATTURAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA DD DT 45 BILL END MONTH 10 + GG</masterLabel>
+            <translation>SEPA 45 GG DT FATTURA FINE MESE + 10 GG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEPA DD DT 60 BILL END MONTH 10 + GG</masterLabel>
+            <translation>SEPA 60 GG DT FATTURA FINE MESE + 10 GG</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Pagamento SDD</label>
+        <name>IT_SDD_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDD Subscription Date F --></label>
+        <name>IT_SDD_Subscription_Date_F__c</name>
+    </fields>
+    <fields>
+        <label>Data Mandato Sottoscrizione SEPA</label>
+        <name>IT_SDD_Subscription_Date__c</name>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label>Commerciale</label>
+        <name>IT_Sales_Manager_txt__c</name>
+    </fields>
+    <fields>
+        <label>Codice Sestiere</label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label>Indirizzo Abbreviato</label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Company Name F --></label>
+        <name>IT_Short_Company_Name_F__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale Carnet</label>
+        <name>IT_Short_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Sending Date --></label>
+        <name>IT_Sign_Sending_Date__c</name>
+    </fields>
+    <fields>
+        <label>Contratto Firmato</label>
+        <name>IT_Signed_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Anagrafica Standard</label>
+        <name>IT_Standard_Master_Data__c</name>
+    </fields>
+    <fields>
+        <label>Gruppo Statistico</label>
+        <name>IT_Statistic_Group__c</name>
+    </fields>
+    <fields>
+        <label>Codice Strada</label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label>Numero Strada</label>
+        <name>IT_Street_Number__c</name>
+    </fields>
+    <fields>
+        <label>Strada</label>
+        <name>IT_Street__c</name>
+    </fields>
+    <fields>
+        <label>Condizioni Generali Fornitura</label>
+        <name>IT_Supply_Conditions__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Giorno Limite</label>
+        <name>IT_Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation>LAVORATIVO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation>SOLARE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Toponimo</label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport Cost F --></label>
+        <name>IT_Transport_Cost_F__c</name>
+    </fields>
+    <fields>
+        <label>Presenza Spese Trasporto</label>
+        <name>IT_Transport_Cost_Presence__c</name>
+    </fields>
+    <fields>
+        <label>Costo Trasporto</label>
+        <name>IT_Transport_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Extradiscount --></label>
+        <name>IT_Type_Extradiscount__c</name>
+        <picklistValues>
+            <masterLabel>AT THE END OF THE YEAR</masterLabel>
+            <translation><!-- AT THE END OF THE YEAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Limite Mensile UTA</label>
+        <name>IT_UTA_Monthly_Limit__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Offerta UTA</label>
+        <name>IT_UTA_Offer_Type__c</name>
+    </fields>
+    <fields>
+        <label>Numero Veicoli UTA</label>
+        <name>IT_UTA_Vehicles_Number__c</name>
+    </fields>
+    <fields>
+        <label>Utente Autorizzazione</label>
+        <name>IT_User_Authorization_Code__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>IT_Layout_Request</layout>
+        <sections>
+            <label>Modifica Richiesta Banca</label>
+            <section>Bank Request Change</section>
+        </sections>
+        <sections>
+            <label>Modifica Richiesta Contratto</label>
+            <section>Contract Request Change</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Modifica Richiesta Financial Center</label>
+            <section>Financial Center Request Change</section>
+        </sections>
+        <sections>
+            <label>Informazioni Richiesta</label>
+            <section>Request Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Richiesta</nameFieldLabel>
+    <quickActions>
+        <label>Conferma</label>
+        <name>IT_Confirm</name>
+    </quickActions>
+    <quickActions>
+        <label>Rifiuta</label>
+        <name>IT_Reject</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>I dati bancari sono modificabili soltanto per il pagamento SEPA o per pagamento a mezzo ricevuta bancaria (modificabili soltanto Codice banca, ABI e CC)!</errorMessage>
+        <name>VRIT01_SDD_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile modificare i dati se lo stato della richiesta è &quot;Autorizzato&quot;!</errorMessage>
+        <name>VRIT02_Authorized_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per il tipo di pagamento ci sono dei codici banche dedicati!</errorMessage>
+        <name>VRIT03_Payment160</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Può essere modificato solo se si tratta di pagamento mediante CARTA DI CREDITO/BONIFICO ANTICIPATO/PAYPAL ed è possibile eventualmente cambiarlo fra uno dei tre!</errorMessage>
+        <name>VRIT04_Payment_Conditions</name>
+    </validationRules>
+</CustomObjectTranslation>

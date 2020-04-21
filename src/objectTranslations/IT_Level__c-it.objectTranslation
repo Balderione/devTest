@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Livello</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Livelli</value>
+    </caseValues>
+    <fields>
+        <label><!-- Circuit Code --></label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit Type --></label>
+        <name>IT_Circuit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parametral</masterLabel>
+            <translation><!-- Parametral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation><!-- Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Circuit --></label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel><!-- Levels --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>IT_Client__c</name>
+        <relationshipLabel><!-- Levels --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employee Type --></label>
+        <name>IT_Employee_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 1 Description --></label>
+        <name>IT_Level_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 1 --></label>
+        <name>IT_Level_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 2 Description --></label>
+        <name>IT_Level_2_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 2 --></label>
+        <name>IT_Level_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 3 --></label>
+        <name>IT_Level_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Particular Client Code --></label>
+        <name>IT_Particular_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>IT_Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Level_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Livello</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

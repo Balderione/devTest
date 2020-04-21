@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prodotto Circuito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prodotti Circuito</value>
+    </caseValues>
+    <fields>
+        <label>Codice Circuito</label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Circuito</label>
+        <name>IT_Circuit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parametral</masterLabel>
+            <translation>Parametrale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation>A Valore</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Circuito</label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel><!-- Circuits Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Circolarità</label>
+        <name>IT_Circularity__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Chiusa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened</masterLabel>
+            <translation>Aperta</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Fatturazione</label>
+        <name>IT_Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Emission</masterLabel>
+            <translation>A Emissione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Balance</masterLabel>
+            <translation>A Consuntico</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Gestione</label>
+        <name>IT_Management_Type__c</name>
+        <picklistValues>
+            <masterLabel>Online full</masterLabel>
+            <translation><!-- Online full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online light</masterLabel>
+            <translation><!-- Online light --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Servizio</label>
+        <name>IT_Service_Type__c</name>
+    </fields>
+    <fields>
+        <label>Servizio</label>
+        <name>IT_Service__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Circuit_Product_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome Circuito Prodotto</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

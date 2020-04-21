@@ -1,0 +1,31 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK">Dobrý deň {!Case.Contact},<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK">Na stránke <a href="http://www.mojedenred.sk/"><span style="color:windowtext">www.mojedenred.sk</span></a>
+pri kontrole zostatku a&nbsp;transakcií evidujeme chybovosť, za čo sa
+ospravedlňujeme. Na odstránení chybovosti už aktívne pracujeme.<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK">Ďakujeme za
+pochopenie<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK"><o:p>&nbsp;</o:p></span></p><p class="MsoPlainText" style="font-size: 12pt; line-height: 115%;"><span lang="SK"><o:p><br></o:p></span></p>
+
+<p class="MsoPlainText" style="line-height: 115%;"><span lang="SK" style="line-height: 115%; font-family: Arial, sans-serif;">Operator ID:&nbsp;{!Case.OwnerId}</span></p>
+
+<p class="MsoPlainText" style="line-height: 115%;"><span lang="SK" style="line-height: 115%; font-family: Arial, sans-serif;">Case ID:&nbsp;{!Case.Id}<span style="font-size: 10pt;"><o:p></o:p></span></span></p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

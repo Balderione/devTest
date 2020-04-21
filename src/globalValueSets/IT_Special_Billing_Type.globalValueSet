@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>X</fullName>
+        <default>false</default>
+        <label>ACTUAL - INCLUDING VAT</label>
+    </customValue>
+    <customValue>
+        <fullName>Z</fullName>
+        <default>false</default>
+        <label>BILL OF MENS. FATT CONS VAT AG</label>
+    </customValue>
+    <customValue>
+        <fullName>Y</fullName>
+        <default>false</default>
+        <label>EMISS. MONTH-END INCLUDING VAT</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>ISSUE - INCLUDING VAT</label>
+    </customValue>
+    <customValue>
+        <fullName>W</fullName>
+        <default>false</default>
+        <label>FATT.EM END OF THE MONTH IN VAT AGG.</label>
+    </customValue>
+    <customValue>
+        <fullName>*</fullName>
+        <default>false</default>
+        <label>FATT. ACTUAL VAT AGG.</label>
+    </customValue>
+    <masterLabel>IT Special Billing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

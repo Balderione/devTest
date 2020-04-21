@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0001</fullName>
+        <default>false</default>
+        <label>DHL</label>
+    </customValue>
+    <customValue>
+        <fullName>0002</fullName>
+        <default>false</default>
+        <label>TAKE AGENZIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0003</fullName>
+        <default>false</default>
+        <label>WILLY EXPRESS LOMBARDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0006</fullName>
+        <default>false</default>
+        <label>RDS</label>
+    </customValue>
+    <customValue>
+        <fullName>0007</fullName>
+        <default>false</default>
+        <label>SECURPOL</label>
+    </customValue>
+    <customValue>
+        <fullName>0008</fullName>
+        <default>false</default>
+        <label>TAKE LOMBARDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0009</fullName>
+        <default>false</default>
+        <label>LINEA EXPRESS</label>
+    </customValue>
+    <customValue>
+        <fullName>0010</fullName>
+        <default>false</default>
+        <label>WILLY EXPRESS AGENZIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0011</fullName>
+        <default>false</default>
+        <label>SERVIZI TICKET</label>
+    </customValue>
+    <customValue>
+        <fullName>0012</fullName>
+        <default>false</default>
+        <label>POSTE ITALIANE</label>
+    </customValue>
+    <customValue>
+        <fullName>0015</fullName>
+        <default>false</default>
+        <label>TNT GLOBAL EXPRESS</label>
+    </customValue>
+    <customValue>
+        <fullName>0017</fullName>
+        <default>false</default>
+        <label>ESPOSITO MARIO</label>
+    </customValue>
+    <customValue>
+        <fullName>0018</fullName>
+        <default>false</default>
+        <label>MOTAXI SDA</label>
+    </customValue>
+    <customValue>
+        <fullName>0019</fullName>
+        <default>false</default>
+        <label>PLICHI &amp; BUSTE</label>
+    </customValue>
+    <customValue>
+        <fullName>0020</fullName>
+        <default>false</default>
+        <label>RITITO DA PARTE DEL CLIENTE</label>
+    </customValue>
+    <customValue>
+        <fullName>0021</fullName>
+        <default>false</default>
+        <label>DUIMEX</label>
+    </customValue>
+    <customValue>
+        <fullName>0022</fullName>
+        <default>false</default>
+        <label>SEND ITALIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0023</fullName>
+        <default>false</default>
+        <label>DHL LOMBARDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0024</fullName>
+        <default>false</default>
+        <label>DHL LOMBARDIA CONTESTUALE</label>
+    </customValue>
+    <customValue>
+        <fullName>0025</fullName>
+        <default>false</default>
+        <label>ATTESA PAGAMENTO</label>
+    </customValue>
+    <customValue>
+        <fullName>0026</fullName>
+        <default>false</default>
+        <label>DHL P.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>0027</fullName>
+        <default>false</default>
+        <label>PPTT - POSTE ITALIANE</label>
+    </customValue>
+    <customValue>
+        <fullName>0028</fullName>
+        <default>false</default>
+        <label>TNT TRAFFICO B2C</label>
+    </customValue>
+    <customValue>
+        <fullName>0029</fullName>
+        <default>false</default>
+        <label>DHL - CONCILIAZIONE</label>
+    </customValue>
+    <customValue>
+        <fullName>0031</fullName>
+        <default>false</default>
+        <label>VETTORE ESTERNO</label>
+    </customValue>
+    <customValue>
+        <fullName>0032</fullName>
+        <default>false</default>
+        <label>GLS</label>
+    </customValue>
+    <customValue>
+        <fullName>0033</fullName>
+        <default>false</default>
+        <label>PRT-DHL</label>
+    </customValue>
+    <customValue>
+        <fullName>0034</fullName>
+        <default>false</default>
+        <label>PRT-TNT GLOBAL EXPRESS</label>
+    </customValue>
+    <customValue>
+        <fullName>0035</fullName>
+        <default>false</default>
+        <label>PRT-TNT - TRAFFICO B2C</label>
+    </customValue>
+    <customValue>
+        <fullName>0036</fullName>
+        <default>false</default>
+        <label>PRT-DHL LOMBARDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>0037</fullName>
+        <default>false</default>
+        <label>PRT-GLS</label>
+    </customValue>
+    <customValue>
+        <fullName>0038</fullName>
+        <default>false</default>
+        <label>PRT-SECURPOL</label>
+    </customValue>
+    <masterLabel>IT Provider</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

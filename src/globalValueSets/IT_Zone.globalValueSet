@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>128</fullName>
+        <default>false</default>
+        <label>MILAN (123-151-153)</label>
+    </customValue>
+    <customValue>
+        <fullName>129</fullName>
+        <default>false</default>
+        <label>MILAN (CB) (129-131-132-133-134-135-136-139)</label>
+    </customValue>
+    <customValue>
+        <fullName>130</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (CB)</label>
+    </customValue>
+    <customValue>
+        <fullName>131</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (FC)</label>
+    </customValue>
+    <customValue>
+        <fullName>132</fullName>
+        <default>false</default>
+        <label>SOCIAL AREA</label>
+    </customValue>
+    <customValue>
+        <fullName>134</fullName>
+        <default>false</default>
+        <label>CUSTOMER CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>136</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (GENERIC) (code 136)</label>
+    </customValue>
+    <customValue>
+        <fullName>137</fullName>
+        <default>false</default>
+        <label>BOLZANO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>139</fullName>
+        <default>false</default>
+        <label>CUSTOMER SMALL TURIN</label>
+    </customValue>
+    <customValue>
+        <fullName>140</fullName>
+        <default>false</default>
+        <label>ONE PEOPLE</label>
+    </customValue>
+    <customValue>
+        <fullName>141</fullName>
+        <default>false</default>
+        <label>7 ROME AND PROVINCE (LA)</label>
+    </customValue>
+    <customValue>
+        <fullName>142</fullName>
+        <default>false</default>
+        <label>TERAMO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>143</fullName>
+        <default>false</default>
+        <label>ITALIAN TERRITORY (code 143)</label>
+    </customValue>
+    <customValue>
+        <fullName>144</fullName>
+        <default>false</default>
+        <label>SAVONA PROVINCE (GP)</label>
+    </customValue>
+    <customValue>
+        <fullName>145</fullName>
+        <default>false</default>
+        <label>IMPERIA (GP)</label>
+    </customValue>
+    <customValue>
+        <fullName>146</fullName>
+        <default>false</default>
+        <label>LEVANTE GENOA PROVINCE (RP)</label>
+    </customValue>
+    <customValue>
+        <fullName>147</fullName>
+        <default>false</default>
+        <label>FOGGIA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>150</fullName>
+        <default>false</default>
+        <label>UDINE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>152</fullName>
+        <default>false</default>
+        <label>TERRITORY Lombardy (code 152)</label>
+    </customValue>
+    <customValue>
+        <fullName>153</fullName>
+        <default>false</default>
+        <label>TERRITORY Lombardy (code 153)</label>
+    </customValue>
+    <customValue>
+        <fullName>154</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2007</label>
+    </customValue>
+    <customValue>
+        <fullName>155</fullName>
+        <default>false</default>
+        <label>TERRITORY Lombardy (PUBLIC)</label>
+    </customValue>
+    <customValue>
+        <fullName>156</fullName>
+        <default>false</default>
+        <label>GORIZIA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>157</fullName>
+        <default>false</default>
+        <label>TRIESTE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>158</fullName>
+        <default>false</default>
+        <label>NAPLES (122-123-124-126 - from 135 to 139)</label>
+    </customValue>
+    <customValue>
+        <fullName>159</fullName>
+        <default>false</default>
+        <label>MILAN (RO) (121)</label>
+    </customValue>
+    <customValue>
+        <fullName>160</fullName>
+        <default>false</default>
+        <label>MILAN (125-137-138-141)</label>
+    </customValue>
+    <customValue>
+        <fullName>161</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (LT)</label>
+    </customValue>
+    <customValue>
+        <fullName>162</fullName>
+        <default>false</default>
+        <label>FLORENCE SMALL CUSTOMERS</label>
+    </customValue>
+    <customValue>
+        <fullName>163</fullName>
+        <default>false</default>
+        <label>SMALL CUSTOMERS BARI</label>
+    </customValue>
+    <customValue>
+        <fullName>164</fullName>
+        <default>false</default>
+        <label>SMALL CUSTOMERS GENOA</label>
+    </customValue>
+    <customValue>
+        <fullName>165</fullName>
+        <default>false</default>
+        <label>SMALL CUSTOMERS PADUA</label>
+    </customValue>
+    <customValue>
+        <fullName>166</fullName>
+        <default>false</default>
+        <label>ASCOLI PICENO</label>
+    </customValue>
+    <customValue>
+        <fullName>167</fullName>
+        <default>false</default>
+        <label>TORINO (from 125 to 128 from 134 to 137)</label>
+    </customValue>
+    <customValue>
+        <fullName>168</fullName>
+        <default>false</default>
+        <label>TORINO (121 to 124, 141 to 143 129-131-133-138-139, 145-146) DR</label>
+    </customValue>
+    <customValue>
+        <fullName>169</fullName>
+        <default>false</default>
+        <label>TURIN (132-144 from 147 to 156) OM</label>
+    </customValue>
+    <customValue>
+        <fullName>170</fullName>
+        <default>false</default>
+        <label>PADUA (121 to 124- 129 139- 131 to 141 to 143) (RZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>171</fullName>
+        <default>false</default>
+        <label>PADUA (from 35125 to 35128) (AB)</label>
+    </customValue>
+    <customValue>
+        <fullName>172</fullName>
+        <default>false</default>
+        <label>FLORENCE (010 to 069- 124- 127-from 133 to 145)</label>
+    </customValue>
+    <customValue>
+        <fullName>173</fullName>
+        <default>false</default>
+        <label>FLORENCE (121 to 123- 125 - 126- 129 to 132)</label>
+    </customValue>
+    <customValue>
+        <fullName>174</fullName>
+        <default>false</default>
+        <label>SARDINIA (Prov .: OG - SS - NU - OT)</label>
+    </customValue>
+    <customValue>
+        <fullName>175</fullName>
+        <default>false</default>
+        <label>NAPLES (121-125-127-128-129- 131 to 134)</label>
+    </customValue>
+    <customValue>
+        <fullName>176</fullName>
+        <default>false</default>
+        <label>NAPLES (141 to 147)</label>
+    </customValue>
+    <customValue>
+        <fullName>177</fullName>
+        <default>false</default>
+        <label>SICILY (Prov .: TP - AG - CL)</label>
+    </customValue>
+    <customValue>
+        <fullName>178</fullName>
+        <default>false</default>
+        <label>ROME (empty) (code 178)</label>
+    </customValue>
+    <customValue>
+        <fullName>179</fullName>
+        <default>false</default>
+        <label>2 ROME AND PROVINCE (LA)</label>
+    </customValue>
+    <customValue>
+        <fullName>180</fullName>
+        <default>false</default>
+        <label>ROME (ABA) (135-136, 188 to 199)</label>
+    </customValue>
+    <customValue>
+        <fullName>181</fullName>
+        <default>false</default>
+        <label>ROME (empty) (code 181)</label>
+    </customValue>
+    <customValue>
+        <fullName>182</fullName>
+        <default>false</default>
+        <label>4 ROME AND PROVINCE (ABA)</label>
+    </customValue>
+    <customValue>
+        <fullName>183</fullName>
+        <default>false</default>
+        <label>ROME (PR) (from 149 to 154, 163 to 167)</label>
+    </customValue>
+    <customValue>
+        <fullName>184</fullName>
+        <default>false</default>
+        <label>ROME (empty) (code 184)</label>
+    </customValue>
+    <customValue>
+        <fullName>185</fullName>
+        <default>false</default>
+        <label>ROME (MAT) (181 to 185)</label>
+    </customValue>
+    <customValue>
+        <fullName>186</fullName>
+        <default>false</default>
+        <label>ROME (MAT) (empty)</label>
+    </customValue>
+    <customValue>
+        <fullName>187</fullName>
+        <default>false</default>
+        <label>ROME (LA) (from 118 to 122, 137 to 141, from 155 to 159)</label>
+    </customValue>
+    <customValue>
+        <fullName>188</fullName>
+        <default>false</default>
+        <label>ROME (FDG) (from 131 to 134, 168 to 177)</label>
+    </customValue>
+    <customValue>
+        <fullName>189</fullName>
+        <default>false</default>
+        <label>ROME (empty) (code 189)</label>
+    </customValue>
+    <customValue>
+        <fullName>190</fullName>
+        <default>false</default>
+        <label>Abruzzo (AQ)</label>
+    </customValue>
+    <customValue>
+        <fullName>191</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>192</fullName>
+        <default>false</default>
+        <label>TERRITORY Lombardy (code 192)</label>
+    </customValue>
+    <customValue>
+        <fullName>193</fullName>
+        <default>false</default>
+        <label>TUSCANY (Prov .: LI - MS)</label>
+    </customValue>
+    <customValue>
+        <fullName>194</fullName>
+        <default>false</default>
+        <label>TELESHOPPING (code 194)</label>
+    </customValue>
+    <customValue>
+        <fullName>200</fullName>
+        <default>false</default>
+        <label>CUSTOMER LOYALTY</label>
+    </customValue>
+    <customValue>
+        <fullName>201</fullName>
+        <default>false</default>
+        <label>ABROAD</label>
+    </customValue>
+    <customValue>
+        <fullName>202</fullName>
+        <default>false</default>
+        <label>CUSTOMER SMALL NAPLES</label>
+    </customValue>
+    <customValue>
+        <fullName>204</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2007 L2</label>
+    </customValue>
+    <customValue>
+        <fullName>205</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2007 L1</label>
+    </customValue>
+    <customValue>
+        <fullName>206</fullName>
+        <default>false</default>
+        <label>MILAN (DP) (162-161)</label>
+    </customValue>
+    <customValue>
+        <fullName>207</fullName>
+        <default>false</default>
+        <label>MILAN (MP) (124)</label>
+    </customValue>
+    <customValue>
+        <fullName>208</fullName>
+        <default>false</default>
+        <label>SICILY (Prov .: ME - PA)</label>
+    </customValue>
+    <customValue>
+        <fullName>209</fullName>
+        <default>false</default>
+        <label>ROME (ST) (123 to 127,161-162-178-179-186-187)</label>
+    </customValue>
+    <customValue>
+        <fullName>500</fullName>
+        <default>false</default>
+        <label>ITALIAN TERRITORY (General Administration)</label>
+    </customValue>
+    <customValue>
+        <fullName>999</fullName>
+        <default>false</default>
+        <label>In expectation of correction</label>
+    </customValue>
+    <customValue>
+        <fullName>210</fullName>
+        <default>false</default>
+        <label>NORTH AREA (TRIVENETO)</label>
+    </customValue>
+    <customValue>
+        <fullName>211</fullName>
+        <default>false</default>
+        <label>Molise (CAMPOBASSO)</label>
+    </customValue>
+    <customValue>
+        <fullName>003</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (GENERIC) (code 003)</label>
+    </customValue>
+    <customValue>
+        <fullName>004</fullName>
+        <default>false</default>
+        <label>COMO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>005</fullName>
+        <default>false</default>
+        <label>LECCO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>006</fullName>
+        <default>false</default>
+        <label>VARESE</label>
+    </customValue>
+    <customValue>
+        <fullName>007</fullName>
+        <default>false</default>
+        <label>SONDRIO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>008</fullName>
+        <default>false</default>
+        <label>MILAN (142-143)</label>
+    </customValue>
+    <customValue>
+        <fullName>009</fullName>
+        <default>false</default>
+        <label>MANTUA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>010</fullName>
+        <default>false</default>
+        <label>LODI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>011</fullName>
+        <default>false</default>
+        <label>CREMONA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>012</fullName>
+        <default>false</default>
+        <label>MILAN (144-145-146-147-148-149)</label>
+    </customValue>
+    <customValue>
+        <fullName>013</fullName>
+        <default>false</default>
+        <label>PAVIA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>014</fullName>
+        <default>false</default>
+        <label>MILAN (SMZ) (154-159)</label>
+    </customValue>
+    <customValue>
+        <fullName>015</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (SMZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>016</fullName>
+        <default>false</default>
+        <label>BERGAMO AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>017</fullName>
+        <default>false</default>
+        <label>BRESCIA</label>
+    </customValue>
+    <customValue>
+        <fullName>018</fullName>
+        <default>false</default>
+        <label>1 TURIN AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>019</fullName>
+        <default>false</default>
+        <label>CUNEO</label>
+    </customValue>
+    <customValue>
+        <fullName>020</fullName>
+        <default>false</default>
+        <label>AOSTA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>021</fullName>
+        <default>false</default>
+        <label>NOVARA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>022</fullName>
+        <default>false</default>
+        <label>VERBANIA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>023</fullName>
+        <default>false</default>
+        <label>ASTI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>024</fullName>
+        <default>false</default>
+        <label>ALEXANDRIA AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>025</fullName>
+        <default>false</default>
+        <label>VERCELLI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>026</fullName>
+        <default>false</default>
+        <label>BIELLA AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>028</fullName>
+        <default>false</default>
+        <label>SICILY (Prov .: CT - SR - RG - EN)</label>
+    </customValue>
+    <customValue>
+        <fullName>029</fullName>
+        <default>false</default>
+        <label>SARDINIA (Prov .: CA - OR - CI - MD)</label>
+    </customValue>
+    <customValue>
+        <fullName>030</fullName>
+        <default>false</default>
+        <label>PADUA PROVINCE (RZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>031</fullName>
+        <default>false</default>
+        <label>ITALIAN TERRITORY (code 031)</label>
+    </customValue>
+    <customValue>
+        <fullName>032</fullName>
+        <default>false</default>
+        <label>Umbria (TERNI)</label>
+    </customValue>
+    <customValue>
+        <fullName>033</fullName>
+        <default>false</default>
+        <label>FROSINONE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>034</fullName>
+        <default>false</default>
+        <label>LATINA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>035</fullName>
+        <default>false</default>
+        <label>Abruzzo (CH - PE)</label>
+    </customValue>
+    <customValue>
+        <fullName>036</fullName>
+        <default>false</default>
+        <label>Molise (ISERNIA)</label>
+    </customValue>
+    <customValue>
+        <fullName>037</fullName>
+        <default>false</default>
+        <label>RIETI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>038</fullName>
+        <default>false</default>
+        <label>VITERBO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>040</fullName>
+        <default>false</default>
+        <label>MARCHE (AN - MC)</label>
+    </customValue>
+    <customValue>
+        <fullName>041</fullName>
+        <default>false</default>
+        <label>TUSCANY (Prov .: AR - LU - PO - PT)</label>
+    </customValue>
+    <customValue>
+        <fullName>042</fullName>
+        <default>false</default>
+        <label>1 NAPLES AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>043</fullName>
+        <default>false</default>
+        <label>CALABRIA</label>
+    </customValue>
+    <customValue>
+        <fullName>044</fullName>
+        <default>false</default>
+        <label>PUGLIA</label>
+    </customValue>
+    <customValue>
+        <fullName>045</fullName>
+        <default>false</default>
+        <label>BASILICATA</label>
+    </customValue>
+    <customValue>
+        <fullName>046</fullName>
+        <default>false</default>
+        <label>ROME (AC) (from 128 to 129 142 to 148)</label>
+    </customValue>
+    <customValue>
+        <fullName>047</fullName>
+        <default>false</default>
+        <label>1 ROME AND PROVINCE (LA)</label>
+    </customValue>
+    <customValue>
+        <fullName>048</fullName>
+        <default>false</default>
+        <label>ROME (ABA) (empty)</label>
+    </customValue>
+    <customValue>
+        <fullName>050</fullName>
+        <default>false</default>
+        <label>3 ROME AND PROVINCE (ABA)</label>
+    </customValue>
+    <customValue>
+        <fullName>051</fullName>
+        <default>false</default>
+        <label>MILAN (OS) (126-128-156-157-158-155)</label>
+    </customValue>
+    <customValue>
+        <fullName>052</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (OS)</label>
+    </customValue>
+    <customValue>
+        <fullName>053</fullName>
+        <default>false</default>
+        <label>6 ROME AND PROVINCE (FDG)</label>
+    </customValue>
+    <customValue>
+        <fullName>060</fullName>
+        <default>false</default>
+        <label>2 NAPLES AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>061</fullName>
+        <default>false</default>
+        <label>CASERTA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>062</fullName>
+        <default>false</default>
+        <label>BENEVENTO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>063</fullName>
+        <default>false</default>
+        <label>AVELLINO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>064</fullName>
+        <default>false</default>
+        <label>SALERNO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>065</fullName>
+        <default>false</default>
+        <label>VENICE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>066</fullName>
+        <default>false</default>
+        <label>PORDENONE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>067</fullName>
+        <default>false</default>
+        <label>VERONA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>068</fullName>
+        <default>false</default>
+        <label>VICENZA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>069</fullName>
+        <default>false</default>
+        <label>BELLUNO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>070</fullName>
+        <default>false</default>
+        <label>TREVISO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>071</fullName>
+        <default>false</default>
+        <label>ROVIGO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>072</fullName>
+        <default>false</default>
+        <label>TRENTO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>073</fullName>
+        <default>false</default>
+        <label>UMBRIA (PERUGIA)</label>
+    </customValue>
+    <customValue>
+        <fullName>074</fullName>
+        <default>false</default>
+        <label>2 TURIN AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>075</fullName>
+        <default>false</default>
+        <label>TURIN 3 PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>077</fullName>
+        <default>false</default>
+        <label>PADUA PROVINCE (AB)</label>
+    </customValue>
+    <customValue>
+        <fullName>078</fullName>
+        <default>false</default>
+        <label>ROME AND PROVINCE 5 (FDG)</label>
+    </customValue>
+    <customValue>
+        <fullName>079</fullName>
+        <default>false</default>
+        <label>BOLOGNA (133 to 141) PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>080</fullName>
+        <default>false</default>
+        <label>BOLOGNA (121 to 124- 125 to 127- 128 to 132) AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>081</fullName>
+        <default>false</default>
+        <label>FERRARA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>082</fullName>
+        <default>false</default>
+        <label>MODENA AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>083</fullName>
+        <default>false</default>
+        <label>PARMA AND PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>084</fullName>
+        <default>false</default>
+        <label>RAVENNA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>085</fullName>
+        <default>false</default>
+        <label>PIACENZA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>086</fullName>
+        <default>false</default>
+        <label>REGGIO EMILIA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>087</fullName>
+        <default>false</default>
+        <label>RIMINI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>088</fullName>
+        <default>false</default>
+        <label>FORLI CESENA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>089</fullName>
+        <default>false</default>
+        <label>TUSCANY (Prov .: GR - PI - SI)</label>
+    </customValue>
+    <customValue>
+        <fullName>090</fullName>
+        <default>false</default>
+        <label>GENOA WEST PROVINCE (GP)</label>
+    </customValue>
+    <customValue>
+        <fullName>091</fullName>
+        <default>false</default>
+        <label>LA SPEZIA AND PROVINCE (RP)</label>
+    </customValue>
+    <customValue>
+        <fullName>102</fullName>
+        <default>false</default>
+        <label>BRANCH VENETO 76</label>
+    </customValue>
+    <customValue>
+        <fullName>104</fullName>
+        <default>false</default>
+        <label>TELESHOPPING (code 104)</label>
+    </customValue>
+    <customValue>
+        <fullName>106</fullName>
+        <default>false</default>
+        <label>8 ROME (MF)</label>
+    </customValue>
+    <customValue>
+        <fullName>107</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (DP)</label>
+    </customValue>
+    <customValue>
+        <fullName>108</fullName>
+        <default>false</default>
+        <label>MILAN (122-127)</label>
+    </customValue>
+    <customValue>
+        <fullName>109</fullName>
+        <default>false</default>
+        <label>MILAN (FC) (152)</label>
+    </customValue>
+    <customValue>
+        <fullName>110</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (FD)</label>
+    </customValue>
+    <customValue>
+        <fullName>114</fullName>
+        <default>false</default>
+        <label>ROME SMALL CUSTOMERS</label>
+    </customValue>
+    <customValue>
+        <fullName>115</fullName>
+        <default>false</default>
+        <label>TERRITORY ITALIAN CUSTOMER CARD</label>
+    </customValue>
+    <customValue>
+        <fullName>116</fullName>
+        <default>false</default>
+        <label>NORTH ZONE AREA</label>
+    </customValue>
+    <customValue>
+        <fullName>117</fullName>
+        <default>false</default>
+        <label>ITALIAN TERRITORY (code 117)</label>
+    </customValue>
+    <customValue>
+        <fullName>118</fullName>
+        <default>false</default>
+        <label>MARCHE (PU)</label>
+    </customValue>
+    <customValue>
+        <fullName>212</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2017 M1</label>
+    </customValue>
+    <customValue>
+        <fullName>214</fullName>
+        <default>false</default>
+        <label>SMALL CUSTOMERS TRENTO</label>
+    </customValue>
+    <customValue>
+        <fullName>213</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2017 M2</label>
+    </customValue>
+    <customValue>
+        <fullName>215</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2018 M3</label>
+    </customValue>
+    <customValue>
+        <fullName>216</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP 2018 M4</label>
+    </customValue>
+    <customValue>
+        <fullName>001</fullName>
+        <default>false</default>
+        <label>MILAN</label>
+    </customValue>
+    <customValue>
+        <fullName>002</fullName>
+        <default>false</default>
+        <label>MILANO PROVINCIA (RF)</label>
+    </customValue>
+    <customValue>
+        <fullName>027</fullName>
+        <default>false</default>
+        <label>LIGURIA</label>
+    </customValue>
+    <customValue>
+        <fullName>039</fullName>
+        <default>false</default>
+        <label>EMILIA ROMAGNA</label>
+    </customValue>
+    <customValue>
+        <fullName>049</fullName>
+        <default>false</default>
+        <label>TORINO E PROVINCIA 2 (ABA)</label>
+    </customValue>
+    <customValue>
+        <fullName>076</fullName>
+        <default>false</default>
+        <label>TORINO 4 E PROVINCIA</label>
+    </customValue>
+    <customValue>
+        <fullName>100</fullName>
+        <default>false</default>
+        <label>FILIALE MILANO 44</label>
+    </customValue>
+    <customValue>
+        <fullName>101</fullName>
+        <default>false</default>
+        <label>FILIALE BRESCIA 44</label>
+    </customValue>
+    <customValue>
+        <fullName>103</fullName>
+        <default>false</default>
+        <label>BOLOGNA BRANCH 20</label>
+    </customValue>
+    <customValue>
+        <fullName>113</fullName>
+        <default>false</default>
+        <label>PROVINCIA DI VARESE 2</label>
+    </customValue>
+    <customValue>
+        <fullName>119</fullName>
+        <default>false</default>
+        <label>MESSINA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>120</fullName>
+        <default>false</default>
+        <label>SYRACUSE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>121</fullName>
+        <default>false</default>
+        <label>RAGUSA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>122</fullName>
+        <default>false</default>
+        <label>PALERMO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>123</fullName>
+        <default>false</default>
+        <label>TRAPANI PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>124</fullName>
+        <default>false</default>
+        <label>CALTANISSETTA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>125</fullName>
+        <default>false</default>
+        <label>AGRIGENTO PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>126</fullName>
+        <default>false</default>
+        <label>CATANIA</label>
+    </customValue>
+    <customValue>
+        <fullName>127</fullName>
+        <default>false</default>
+        <label>ENNA PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>133</fullName>
+        <default>false</default>
+        <label>BRANCH CUSTOMERS CONSIP</label>
+    </customValue>
+    <customValue>
+        <fullName>135</fullName>
+        <default>false</default>
+        <label>BENEVENTO PROVINCE (135)</label>
+    </customValue>
+    <customValue>
+        <fullName>138</fullName>
+        <default>false</default>
+        <label>P.A. DIRECT CONVENTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>148</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE (MS)</label>
+    </customValue>
+    <customValue>
+        <fullName>149</fullName>
+        <default>false</default>
+        <label>CROTONE PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>151</fullName>
+        <default>false</default>
+        <label>MILAN PROVINCE</label>
+    </customValue>
+    <customValue>
+        <fullName>203</fullName>
+        <default>false</default>
+        <label>TICKET EXPRESS</label>
+    </customValue>
+    <masterLabel>IT Zone</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

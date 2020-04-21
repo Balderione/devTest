@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>10% VAT ON GOOD AND 22% ON EXPENSES</masterLabel>
+        <translation>IVA 10% SU BUONI E 22% SU SPESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10% VAT ON GOOD AND EXPENSES</masterLabel>
+        <translation>IVA 10% SU BUONI E SPESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22% VAT ON GOOD AND EXPENSES</masterLabel>
+        <translation>IVA 22% SU BUONI E SPESE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

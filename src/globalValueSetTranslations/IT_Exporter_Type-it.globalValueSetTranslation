@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ART NOT TAXABLE. 71 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART. 71 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ART NOT TAXABLE. 8-8 BIS DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART. 8-8 BIS DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ART NOT TAXABLE. 9 DPR 633/72 (Z)</masterLabel>
+        <translation>NON IMPONIBILE ART. 9 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ESCL.IVA ART.2 C.3 letter a Presidential Decree 633/72</masterLabel>
+        <translation>ESCL.IVA ART.2 C.3 LETT.A DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EXCLUDING VAT ART. 15 Presidential Decree 633/72</masterLabel>
+        <translation>ESCLUSA IVA ART. 15 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FREE ART. 10 Presidential Decree 633/72</masterLabel>
+        <translation>ESENTI ART. 10 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IMP.REG.SPEC. (ASS.ORIG) A.74 C1DPR 633/72</masterLabel>
+        <translation>IMP.REG.SPEC.(ASS.ORIG)A.74 C1DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT IMP.EX ART.72DPR 633/72 art10-262/55</masterLabel>
+        <translation>NON IMP.EX ART.72DPR 633/72-ART10 262/55</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT IMPONIB. ART.8 C.1 lett.c DPR 633/72</masterLabel>
+        <translation>NON IMPONIB. ART.8 C.1 LETT.C DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT IMPONIB.ART.8 C.1 LETT. A Presidential Decree 633/72</masterLabel>
+        <translation>NON IMPONIB.ART.8 C.1 LETT. A DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT SUBJECT ART.5 LAW 08.01.78 # 533</masterLabel>
+        <translation>NON SOGGETTO ART.5 LEGGE 1/8/78 N.533</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.8 BIS - DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART. 8-8 BIS DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.8 C.2 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.8 C.2 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.8 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.8 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.8-9 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.8-9 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.9 C.2 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.9 C.2 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.9 C.2 DPR 633/72 (R)</masterLabel>
+        <translation>NON IMPONIBILE ART.9 C.2 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE ART.9 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.9 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE VAT ART.14 C.3 L.N. 49/72</masterLabel>
+        <translation>NON IMPONIBILE IVA ART.14 C.3 L.N. 49/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE VAT Art.41 LAW 427/93</masterLabel>
+        <translation>NON IMPONIBILE IVA ART.41 LEGGE 427/93</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT TAXABLE art.72 DPR 633/72</masterLabel>
+        <translation>NON IMPONIBILE ART.72 DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF VAT ART.1 PARAGRAPH 100, L.244 / 07</masterLabel>
+        <translation>FUORI CAMPO IVA ART.1 COMMA 100,L.244/07</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF VAT ARTT.2,3,4,5,7DPR 633/72</masterLabel>
+        <translation>FUORI CAMPO IVA ARTT.2,3,4,5,7DPR 633/72</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFF VAT EX ART 7 TER</masterLabel>
+        <translation>FUORI CAMPO IVA EX ART 7 TER</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TAXABLE BENEFIT NPO (SER.FAV.ONLUS</masterLabel>
+        <translation>IMPONIBILI A FAVORE ONLUS (SER.FAV.ONLUS</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>0 SDD B2B DAYS INVOICE DATE</masterLabel>
+        <translation>SDD B2B 0 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>30 DAYS BANKING RECEIPT DATE RECEIPT OF INVOICE</masterLabel>
+        <translation>RICEV. BANCARIA 30 GG DATA RICEVIM FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>60 SEPA DD DATE INVOICE + 15</masterLabel>
+        <translation>SEPA 60 GG DATA FATTURA + 15</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>A 30 DAY BANKING RECEIPT OF BILLING MONTH</masterLabel>
+        <translation>RICEVUTA BANCARIA A 30 GIORNO MESE DI FATTURAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>A BANK 0 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 0 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADVANCE PAYMENT ORDER BY CREDIT CARD</masterLabel>
+        <translation>PAG. ANTICIP ALL&apos;ORDINE CARTA DI CREDITO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADVANCE PAYMENT ORDER BY PAYPAL</masterLabel>
+        <translation>PAGAMENTO ANTICIPATO ALL&apos;ORDINE PAYPAL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 10 A DAY SECOND MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIF A 10GG SECONDO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 105 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 105 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 150 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 150 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 20 A DAY BILLING MONTH</masterLabel>
+        <translation>BONIFICO A 20 GIORNO MESE DI FATTURAZ.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 25 A DAY BILLING MONTH</masterLabel>
+        <translation>BONIFICO A 25 GIORNO MESE DI FATTURAZ.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK 5 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 5 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 10 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 10 GG MESE SUCC. DATA FATT.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 10 DAY THREE MONTH DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 10 GG TERZO MESE DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 130 GG DATE BILL</masterLabel>
+        <translation>BONIFICO A 130 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 145 DD DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 145 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 15 DAY BILLING MONTH</masterLabel>
+        <translation>BONIFICO A 15 GIORNO MESE DI FATT.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 15 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 15 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 15 DAY SECOND MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIF A 15 GG SECONDO MESE SUCC DATA FAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 16 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 16 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 20 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 20 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 210 DD DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 210 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 25 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 25 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 30 DAY BILLING MONTH</masterLabel>
+        <translation>BONIFICO A 30 GIORNO MESE DI FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 30 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 30 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 5 DAY FOUR MONTH DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 5 GG QUARTO MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 5 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 5 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 5 DAY SECOND MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIF A 5 GG SECONDO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 65 GG DATE BILL</masterLabel>
+        <translation>BONIFICO A 65 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 7 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>BONIFICO A 7 GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK A 81 GG DATE BILL</masterLabel>
+        <translation>BONIFICO A 81 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK ADVANCE ORDER</masterLabel>
+        <translation>BONIFICO ANTICIPATO ALL&apos;ORDINE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK AL 1 ^ DAY MONTH FOLLOWING DATE BILL</masterLabel>
+        <translation>BONIF AL 1^ GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK BILL TO 120-DAY RECEPTION</masterLabel>
+        <translation>BONIFICO A 120 GIORNI RICEVIMENTO FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK BILL TO 180-DAY RECEPTION</masterLabel>
+        <translation>BONIFICO A 180 GIORNI RICEVIMENTO FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK CONTEXT ON DELIVERY</masterLabel>
+        <translation>BONIFICO CONTESTUALE ALLA CONSEGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK RECEIPT TO 30 DAYS INVOICE DATE</masterLabel>
+        <translation>RICEVUTA BANCARIA A 30 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK RECEIPT TO 60 DAYS INVOICE DATE</masterLabel>
+        <translation>RICEVUTA BANCARIA A 60 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK RECEIPT TO 8 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RICEVUTA BANCARIA A 8 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 10 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 10  GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 100 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 100  GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 12 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 12 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 120 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 120 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 120 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 120 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 120 DAYS INVOICE RECEPTION END OF THE MONTH</masterLabel>
+        <translation>BONIF A 120 GG RICEVIM FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 140 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 140 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 15 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 15 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 180 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 180 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 20 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 20 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 30 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE DATE END MONTH + 2 GG</masterLabel>
+        <translation>BONIF A 30 GG DATA FATT FINE MESE + 2 GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE DATE END MONTH 10 + GG</masterLabel>
+        <translation>BONIF A 30 GG DATA FATT FINE MESE + 10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE DATE END MONTH 15 + GG</masterLabel>
+        <translation>BONIF A 30 GG DATA FATT FINE MESE + 15GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 30 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE RECEIVING END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 30 GG RICEVIM. FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 30 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>BONIFICO A 30 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 35 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 35 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 40 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 40 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 40 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 40 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS EOAP</masterLabel>
+        <translation>BONIFICO A 45 GG EOAP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 45 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS INVOICE DATE END MONTH 10 + GG</masterLabel>
+        <translation>BONIF A 45 GG DATA FATT FINE MESE + 10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 45 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS INVOICE RECEIVING END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 45 GG RICEVIM FATT. FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 45 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>BONIFICO A 45 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 50 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 45 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 50 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 50 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS</masterLabel>
+        <translation>BONIFICO BANCARIO A 60 GIORNI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS (142)</masterLabel>
+        <translation>BONIFICO A 60 GIORNI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 60 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE DATE + 15</masterLabel>
+        <translation>BONIFICO A 60 GG DATA FATTURA + 15</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE DATE END MONTH 10 + GG</masterLabel>
+        <translation>BONIF A 60 GG DATA FATT FINE MESE + 10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 60 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE RECEIVING END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 60 GG RICEVIM. FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>BONIFICO A 60 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 60 DAYS INVOICE RECEPTION VIA PEC</masterLabel>
+        <translation>BONIFICO A 60 GG RICEVIM. FATT VIA PEC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 70 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 70 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 70 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 70 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 75 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 75 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 75 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 75 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 8 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 8 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 80 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 80 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 80 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 80 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 82 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 82 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 85 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 85 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 90 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 90 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 90 DAYS INVOICE DATE END MONTH 10 + GG</masterLabel>
+        <translation>BONIF A 90 GG DATA FATT FINE MESE + 10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 90 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 90 DAYS INVOICE RECEIVING END OF THE MONTH</masterLabel>
+        <translation>BONIFICO A 90 GG RICEVIM. FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 90 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>BONIFICO A 90 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANK TO 95 DAYS INVOICE DATE</masterLabel>
+        <translation>BONIFICO A 95 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING BILL DATE RECEIVED 120 DAYS</masterLabel>
+        <translation>RICEVUTA BANCARIA 120 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT 10th DAYS OF 2ND MONTH DATE OF INVOICE</masterLabel>
+        <translation>RIC BANC AL 10° GG DEL 2° MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT 120 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIC BANCARIA 120 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT 120 GG INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIC BANCARIA 120 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT 5th GG 2ND MONTH DATE OF INVOICE</masterLabel>
+        <translation>RIC BANC AL 5°GG DEL 2°MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT A 5th GG SUCC.DT MONTH BILL</masterLabel>
+        <translation>RICEV BANCARIA A 5° GG MESE SUCC.DT FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 15 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 15 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 30 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 30 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 40 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 40 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 45 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 45 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 45 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>RICEVUTA BANCARIA 45 GG DATA RICEV. FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 60 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 60 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 75 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 75 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT DATE 90 DAYS INVOICE</masterLabel>
+        <translation>RICEVUTA BANCARIA 90 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 30 DAYS END OF THE MONTH</masterLabel>
+        <translation>RICEV BANCARIA 30 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 30 DAYS END OF THE MONTH + 10 GG.</masterLabel>
+        <translation>RIC BANC 30GG DATA FATT FINE MESE +10GG.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 40 DAYS END OF THE MONTH</masterLabel>
+        <translation>RICEV BANCARIA 40 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 45 DAYS END MONTH 10 + GG</masterLabel>
+        <translation>RIC BANC 45GG DATA FATT FINE MESE + 10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 45 DAYS END OF THE MONTH</masterLabel>
+        <translation>RICEV BANCARIA 45 GG FINE MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 60 DAYS END MONTH 10 + GG</masterLabel>
+        <translation>RIC BANC 60 GG DATA FATT FINE MESE +10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 60 DAYS END OF THE MONTH</masterLabel>
+        <translation>RICEV BANCARIA 60 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 90 DAYS END MONTH 10 + GG</masterLabel>
+        <translation>RIC BANC 90 GG DATA FATT FINE MESE +10GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT INVOICE DATE 90 DAYS END OF THE MONTH</masterLabel>
+        <translation>RICEV BANCARIA 90 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BANKING RECEIPT TO 8 DAYS INVOICE DATE</masterLabel>
+        <translation>RICEVUTA BANCARIA A 8 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPENSATION CUSTOMERS / SUPPLIERS</masterLabel>
+        <translation>COMPENSAZIONE CLIENTI/FORNITORI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONCURRENT CREDIT</masterLabel>
+        <translation>ACCREDITO CONTESTUALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>ACCREDITO 30 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>ACCREDITO 60 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 60 DAYS INVOICE DATE RECEIVING END OF THE MONTH</masterLabel>
+        <translation>ACCREDITO 60GG DATA RICEV FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 75GG MONTH END DATE OF INVOICE</masterLabel>
+        <translation>ACCREDITO 75GG FINE MESE DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 90 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 90 GIORNI  DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>ACCREDITO 90 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT A 15 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>ACCREDITO A 15GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT A 16 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>ACCREDITO A 16GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT A 27 DAY BILLING MONTH</masterLabel>
+        <translation>ACCREDITO A 27 GIORNO MESE DI FATTURAZ.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT A 30 DAY BILLING MONTH</masterLabel>
+        <translation>ACCREDITO A 30 GIORNO MESE DI FATTURAZ.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT A 30 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>ACCREDITO A 30GIORNO MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 120 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 120 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 30 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 30 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 45 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 45 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 45 DAYS INVOICE DATE RECEPTION</masterLabel>
+        <translation>ACCREDITO A 45 GG DATA RICEVIMENTO FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 60 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 60 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 60 DAYS INVOICE DATE RECEPTION</masterLabel>
+        <translation>ACCREDITO A 60 GG DATA RICEVIMENTO FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 62 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 62 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 70 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 70 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CREDIT TO 75 DAYS INVOICE DATE</masterLabel>
+        <translation>ACCREDITO A 75 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E.FACTOR 90 DAYS DATA SERVICE</masterLabel>
+        <translation>E.FACTOR 90 GIORNI DATA SERVIZIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ENEL 90 DAYS INVOICE DATE RECEPTION</masterLabel>
+        <translation>ENEL 90 GIORNI DATA RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GG 360 BANK INVOICE DATE</masterLabel>
+        <translation>BONIFICO 360 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LIEU OF PAYMENT</masterLabel>
+        <translation>CAMBIO MERCE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE CONTEXT</masterLabel>
+        <translation>MANDATO CONTESTUALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 10 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 10  GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 12 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 12  GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 120 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 120 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 15 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 15 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 25 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 25 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 30 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 30 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 40 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 40 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 50 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 50 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 60 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 60 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 65 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 65 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MANDATE TO 90 DAYS INVOICE DATE</masterLabel>
+        <translation>MANDATO A 90 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAID</masterLabel>
+        <translation>PAGATO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAYMENT POSTAL DELIVERY</masterLabel>
+        <translation>PAGAMENTO CONTRASSEGNO POSTALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT 20 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>RIM. DIRETTA 20 GG MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT 30 DAY MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>RIM. DIRETTA 30 GG MESE SUCC DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT BILLING MONTH DAY 30</masterLabel>
+        <translation>RIMESSA DIRETTA A 30 GIORNO MESE DI FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT BY CASH ON DELIVERY</masterLabel>
+        <translation>RIMESSA DIRETTA CONTANTI ALLA CONSEGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT BY GRANT CIRCULAR ON DELIVERY</masterLabel>
+        <translation>RIMESSA DIRETTA ASSEGNO CIRC ALLA CONS.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT CONTEXT ON DELIVERY</masterLabel>
+        <translation>RIMESSA DIRETTA CONTESTUALE ALLA CONS.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT FROM BANK ON DELIVERY</masterLabel>
+        <translation>RIMESSA DIRETTA BANCA ALLA CONS.</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT TO 30 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 30 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT TO 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIM. DIRETTA A 30 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECT TO 45 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 45 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 12 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 12 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 120 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 120 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 15 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 15 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 20 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 20 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 40 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 40 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 50 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 50 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 60 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 60 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIM. DIRETTA A 60 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 70 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 70 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 75 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 75 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 75 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIM. DIRETTA A 75 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 80 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 80 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 90 DAYS INVOICE DATE</masterLabel>
+        <translation>RIMESSA DIRETTA A 90 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-DIRECTED TO 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>RIM. DIRETTA A 90 GG DATA FATT FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RE-LIVE THE DAY 15 MONTH FOLLOWING THE DATE OF INVOICE</masterLabel>
+        <translation>RIM. DIRETTA 15 GG MESE SUCC. DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RECEIPT OF BANKING 5th GG 3rd MONTH DATE OF INVOICE</masterLabel>
+        <translation>RIC. BANC. AL 5°GG DEL 3°MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RECEIPT OF BANKING 5th GG 4th MONTH DATE OF INVOICE</masterLabel>
+        <translation>RIC. BANC. AL 5°GG DEL 4°MESE DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RIF.CAA.ASG.SF / P200700033 90 DAYS INVOICE DATE RECEPTION</masterLabel>
+        <translation>RIF.CAA.ASG.SF/... 90GG DATA RIC FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SDD B2B 150 DAYS INVOICE DATE</masterLabel>
+        <translation>SDD B2B 150 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SDD B2B 30 GG INVOICE DATE</masterLabel>
+        <translation>SDD B2B 30 GG DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SDD B2B 60 GG INVOICE DATE END MONTH</masterLabel>
+        <translation>SDD B2B 60 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SDD CORE 0 DAYS INVOICE DATE</masterLabel>
+        <translation>SDD CORE 0 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SDD CORE 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>SDD CORE 30 GG DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 120 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 120 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 15 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 15 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 30 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 30 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 30 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>SEPA 30 GIORNI DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 30 DAYS OF RECEIPT OF INVOICE</masterLabel>
+        <translation>SEPA 30 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 45 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 45 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 45 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>SEPA 45 GIORNI DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 45 DAYS INVOICE RECEPTION</masterLabel>
+        <translation>SEPA 45 GIORNI RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 5TH DAYS OF NEXT MONTH 3rd. INVOICE DATE</masterLabel>
+        <translation>SEPA AL 5°GG DEL 3°MESE SUCC. DATA FATT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 60 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 60 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 60 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>SEPA 60 GIORNI DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 8 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 8 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 90 DAYS INVOICE DATE</masterLabel>
+        <translation>SEPA 90 GIORNI DATA FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA 90 DAYS INVOICE DATE END OF THE MONTH</masterLabel>
+        <translation>SEPA 90 GIORNI DATA FATTURA FINE MESE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA A 30 DAY BILLING MONTH</masterLabel>
+        <translation>SEPA A 30 GIORNO MESE DI FATTURAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA DD DT 45 BILL END MONTH 10 + GG</masterLabel>
+        <translation>SEPA 45 GG DT FATTURA FINE MESE + 10 GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA DD DT 60 BILL END MONTH 10 + GG</masterLabel>
+        <translation>SEPA 60 GG DT FATTURA FINE MESE + 10 GG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEPA INVOICE RECEIPTS</masterLabel>
+        <translation>BONIFICO SEPA RICEVIMENTO FATTURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSFER TO 65 DAYS INVOICE RECEIVING END OF MONTH</masterLabel>
+        <translation>BONIFICO A 65 GG RICEVIM. FATT FINE MESE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,49 @@
+<messaging:emailTemplate subject="TEST" recipientType="user" relatedToType="Opportunity">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+
+            <p>Dear {!recipient.name},</p>
+            
+            Description: {!relatedTo.Description}
+            
+            <table border="0" >
+                <tr>
+                    <th>Solution Name</th>
+                    <th>Service Name</th>
+                    <th>Default Value</th>
+                    <th>Value</th>
+                    <th>Percent</th>
+                </tr>
+                <apex:repeat var="oli" value="{!relatedTo.OpportunityLineItems}">
+                <apex:outputPanel rendered="{!oli.ER_NeedApproval__c}">
+                    <tr>
+                        <td>{!oli.PriceBookEntry.ER_SolutionName__c}</td>
+                        <td>{!oli.PriceBookEntry.Name}</td>
+                        <td>{!oli.PriceBookEntry.UnitPrice}/{!oli.PriceBookEntry.ER_Percentage__c}</td>
+                        <td style="color:#ffb75d">{!oli.UnitPrice}</td>
+                        <td style="color:#ffb75d">{!oli.ER_Percentage__c}</td>
+                    </tr>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!(oli.ER_NeedApproval__c==false)}">
+                    <tr>
+                        <td>{!oli.PriceBookEntry.ER_SolutionName__c}</td>
+                        <td>{!oli.PriceBookEntry.Name}</td>
+                        <td>{!oli.PriceBookEntry.UnitPrice}/{!oli.PriceBookEntry.ER_Percentage__c}</td>
+                        <td>{!oli.UnitPrice}</td>
+                        <td>{!oli.ER_Percentage__c}</td>
+                    </tr>
+                </apex:outputPanel>
+                
+                </apex:repeat> 
+            </table>
+            <p/>
+            <center>
+                <apex:outputLink value="http://www.salesforce.com">
+                    For more detailed information login to Salesforce.com
+                </apex:outputLink>
+            </center>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

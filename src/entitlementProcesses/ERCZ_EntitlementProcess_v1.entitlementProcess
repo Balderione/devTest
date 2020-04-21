@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>true</active>
+    <description>CZ Entitlement</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosedOnCreate</field>
+        <operation>equals</operation>
+        <value>false</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Support 2nd Level</milestoneName>
+        <minutesToComplete>240</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.ER_Reason__c</field>
+            <operation>equals</operation>
+            <value>ER_Finance</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>1440</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.ER_CaseReason2__c</field>
+            <operation>equals</operation>
+            <value>Incorrect data on invoice, Incorrect amount on invoice</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>7200</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.ER_Reason__c</field>
+            <operation>equals</operation>
+            <value>ER_Finance</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.ER_CaseReason2__c</field>
+            <operation>notEqual</operation>
+            <value>Incorrect data on invoice, Incorrect amount on invoice</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>4320</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>ERCZ_EntitlementProcess</name>
+    <versionMaster>5521x000000CalH</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>IT_Contact_LP</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>IT_Contact_CL</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ER_Contact_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>ER_Email_Opt_Out__c</fields>
+        <fields>Email</fields>
+        <fields>ER_Status__c</fields>
+        <fields>MobilePhone</fields>
+        <fields>OwnerId</fields>
+        <label>Contact Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>IT_Contact_CL</fullName>
+        <fields>IT_Contact_Type__c</fields>
+        <label>IT Contact CL</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ER_Account_Address_Sync__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Address Sync</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Synchronized with Account legal address</fullName>
+                    <default>true</default>
+                    <label>Synchronized with Account legal address</label>
+                </value>
+                <value>
+                    <fullName>Not Synchronized with Account legal address</fullName>
+                    <default>false</default>
+                    <label>Not Synchronized with Account legal address</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Bulk_Mail__c</fullName>
+        <externalId>false</externalId>
+        <label>Bulk Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit_2__c</fullName>
+        <defaultValue>$User.ER_BUText__c</defaultValue>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Business_Unit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner.ER_Business_Unit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>User</fullName>
+                    <default>false</default>
+                    <label>User</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Lead provider</fullName>
+                    <default>false</default>
+                    <label>Lead provider</label>
+                </value>
+                <value>
+                    <fullName>Trade association</fullName>
+                    <default>false</default>
+                    <label>Trade association</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Unmatched</fullName>
+                    <default>false</default>
+                    <label>Unmatched</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Client_Card_Operational_System_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Card Operational System ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Client_Paper_Operational_System_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Paper Operational System ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Department_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Department Family</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>true</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Purchasing</fullName>
+                    <default>false</default>
+                    <label>Purchasing</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+                <value>
+                    <fullName>Facility services</fullName>
+                    <default>false</default>
+                    <label>Facility services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Do_Not_Mail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Mail</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Do_not_contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Edenred_Newsletter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Edenred Newsletter</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Email_Opt_Out__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(HasOptedOutOfEmail=true,IMAGE(&apos;/resource/ER_Email_Opt_Out&apos;,&apos;ER_Email_Opt_Out&apos;,40,40),&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email Opt Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_FinancialCenter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>ER_Financial_Center__c.ER_Account_Name__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Inactive_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Inactive Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left the company</fullName>
+                    <default>false</default>
+                    <label>Left the company</label>
+                </value>
+                <value>
+                    <fullName>Maternity Leave</fullName>
+                    <default>false</default>
+                    <label>Maternity Leave</label>
+                </value>
+                <value>
+                    <fullName>Other Reason</fullName>
+                    <default>false</default>
+                    <label>Other Reason</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Inactive_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Inactive date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_LastModifiedBy__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( DATEVALUE(LastModifiedDate) &gt;= DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1)
++
+( 14 - CASE( MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),3,1) - DATE (1900,1,7),7))
+)
+
+&amp;&amp;
+
+DATEVALUE(LastModifiedDate) &lt; DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) +
+(
+7-
+CASE( MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(LastModifiedDate)),11,1) - DATE (1900,1,7),7))
+),
+
+/*check if the last modified by is filled */
+IF(ER_Last_Modified_By_Functional_user__c != null, 
+
+/* if true */
+
+HYPERLINK(LEFT($Api.Partner_Server_URL_420, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_420)) + 
+               &apos;/lightning/r/User/&apos; + ER_Last_Modified_By_Functional_user__c + &apos;/view&apos;,ER_Last_Modified_By_Functional_user__r.FirstName  + &apos; &apos; + ER_Last_Modified_By_Functional_user__r.LastName) +  &apos;, &apos; + 
+               TEXT(DAY(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;/&apos; +  
+               TEXT(MONTH(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;/&apos; + 
+               TEXT(YEAR(DATEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos; &apos; +  
+               TEXT(HOUR(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))) + &apos;:&apos; +  
+               TEXT(MINUTE(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c + 2/24))), 
+
+/* else */
+&apos;&apos;) 
+
+,
+
+
+/*check if the last modified by is filled */
+IF(ER_Last_Modified_By_Functional_user__c != null, 
+
+/* if true */
+
+HYPERLINK(LEFT($Api.Partner_Server_URL_420, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_420)) + 
+               &apos;/lightning/r/User/&apos; + ER_Last_Modified_By_Functional_user__c + &apos;/view&apos;,ER_Last_Modified_By_Functional_user__r.FirstName + &apos; &apos; + ER_Last_Modified_By_Functional_user__r.LastName) +  &apos;, &apos; + 
+               TEXT(DAY(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;/&apos; +  
+               TEXT(MONTH(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;/&apos; + 
+               TEXT(YEAR(DATEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos; &apos; +  
+               TEXT(HOUR(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))) + &apos;:&apos; +  
+               TEXT(MINUTE(TIMEVALUE(ER_Last_Modified_Date_Functional_User__c+ 1/24))), 
+
+/* else */
+&apos;&apos;)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Modified By Functional User</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Last_Modified_By_Functional_user__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Last Modified by a functional user</description>
+        <externalId>false</externalId>
+        <label>Last Modified By Functional user</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_Modified_Date_Functional_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Modified Date Functional User</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_date_of_Sync__c</fullName>
+        <description>which hold the latest date/time when info was sent to the OS</description>
+        <externalId>false</externalId>
+        <label>Last date of Sync</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_inbound_contact_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last inbound contact date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_NPS__c</fullName>
+        <externalId>false</externalId>
+        <label>NPS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Paper_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Paper Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Top Management</fullName>
+                    <default>false</default>
+                    <label>Top Management</label>
+                </value>
+                <value>
+                    <fullName>Middle Management</fullName>
+                    <default>false</default>
+                    <label>Middle Management</label>
+                </value>
+                <value>
+                    <fullName>Decision Maker</fullName>
+                    <default>false</default>
+                    <label>Decision Maker</label>
+                </value>
+                <value>
+                    <fullName>Influencer</fullName>
+                    <default>false</default>
+                    <label>Influencer</label>
+                </value>
+                <value>
+                    <fullName>Assistant</fullName>
+                    <default>false</default>
+                    <label>Assistant</label>
+                </value>
+                <value>
+                    <fullName>Store manager</fullName>
+                    <default>false</default>
+                    <label>Store manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_AC_User__c</fullName>
+        <externalId>false</externalId>
+        <label>AC User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Autonumber_Code__c</fullName>
+        <displayFormat>SF{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>IT_Autonumber_Code</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>IT_Client_Billing_Recepits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Client Billing Recepits</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(IT_Type__c,
+&quot;Ref&quot;,&quot;[REF]&quot;,
+&quot;Soc&quot;,&quot;[SOC]&quot;,
+&quot;&quot;)
+
+&amp; &quot; &quot; &amp;
+
+CASE( IT_Type__c , 
+&quot;Ref&quot;, FirstName + &quot; &quot; + LastName, 
+&quot;Soc&quot;, FirstName + &quot; &quot; + LastName,
+&quot;&quot;)</formula>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Future_Change_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Future Change Contact</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Mail_PEC__c</fullName>
+        <externalId>false</externalId>
+        <label>Mail PEC</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Order_Making__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Order Making</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_PEC__c</fullName>
+        <externalId>false</externalId>
+        <label>PEC</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Referent_Progressive__c</fullName>
+        <externalId>false</externalId>
+        <label>Referent Progressive</label>
+        <length>11</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Ticket_Receipts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ticket Receipts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Type__c</fullName>
+        <defaultValue>&quot;Ref&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cli</fullName>
+                    <default>false</default>
+                    <label>Cli</label>
+                </value>
+                <value>
+                    <fullName>Attv</fullName>
+                    <default>false</default>
+                    <label>Attv</label>
+                </value>
+                <value>
+                    <fullName>Vons</fullName>
+                    <default>false</default>
+                    <label>Vons</label>
+                </value>
+                <value>
+                    <fullName>Ref</fullName>
+                    <default>true</default>
+                    <label>Ref</label>
+                </value>
+                <value>
+                    <fullName>Soc</fullName>
+                    <default>false</default>
+                    <label>Soc</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IT_Validity_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Validity Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Language</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CZ_AcademicTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Academic Title</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>as.</fullName>
+                    <default>false</default>
+                    <label>as.</label>
+                </value>
+                <value>
+                    <fullName>CSc.</fullName>
+                    <default>false</default>
+                    <label>CSc.</label>
+                </value>
+                <value>
+                    <fullName>DiS.</fullName>
+                    <default>false</default>
+                    <label>DiS.</label>
+                </value>
+                <value>
+                    <fullName>doc.</fullName>
+                    <default>false</default>
+                    <label>doc.</label>
+                </value>
+                <value>
+                    <fullName>Dr.</fullName>
+                    <default>false</default>
+                    <label>Dr.</label>
+                </value>
+                <value>
+                    <fullName>DrSc.</fullName>
+                    <default>false</default>
+                    <label>DrSc.</label>
+                </value>
+                <value>
+                    <fullName>DSc.</fullName>
+                    <default>false</default>
+                    <label>DSc.</label>
+                </value>
+                <value>
+                    <fullName>Ing.</fullName>
+                    <default>false</default>
+                    <label>Ing.</label>
+                </value>
+                <value>
+                    <fullName>Ing. arch.</fullName>
+                    <default>false</default>
+                    <label>Ing. arch.</label>
+                </value>
+                <value>
+                    <fullName>JUDr.</fullName>
+                    <default>false</default>
+                    <label>JUDr.</label>
+                </value>
+                <value>
+                    <fullName>MDDr.</fullName>
+                    <default>false</default>
+                    <label>MDDr.</label>
+                </value>
+                <value>
+                    <fullName>MgA.</fullName>
+                    <default>false</default>
+                    <label>MgA.</label>
+                </value>
+                <value>
+                    <fullName>Mgr.</fullName>
+                    <default>false</default>
+                    <label>Mgr.</label>
+                </value>
+                <value>
+                    <fullName>MSDr.</fullName>
+                    <default>false</default>
+                    <label>MSDr.</label>
+                </value>
+                <value>
+                    <fullName>MUDr.</fullName>
+                    <default>false</default>
+                    <label>MUDr.</label>
+                </value>
+                <value>
+                    <fullName>MVDr.</fullName>
+                    <default>false</default>
+                    <label>MVDr.</label>
+                </value>
+                <value>
+                    <fullName>odb. as.</fullName>
+                    <default>false</default>
+                    <label>odb. as.</label>
+                </value>
+                <value>
+                    <fullName>PaedDr.</fullName>
+                    <default>false</default>
+                    <label>PaedDr.</label>
+                </value>
+                <value>
+                    <fullName>Ph.D.</fullName>
+                    <default>false</default>
+                    <label>Ph.D.</label>
+                </value>
+                <value>
+                    <fullName>PharmDr.</fullName>
+                    <default>false</default>
+                    <label>PharmDr.</label>
+                </value>
+                <value>
+                    <fullName>PhDr.</fullName>
+                    <default>false</default>
+                    <label>PhDr.</label>
+                </value>
+                <value>
+                    <fullName>PhMr.</fullName>
+                    <default>false</default>
+                    <label>PhMr.</label>
+                </value>
+                <value>
+                    <fullName>prof.</fullName>
+                    <default>false</default>
+                    <label>prof.</label>
+                </value>
+                <value>
+                    <fullName>RCDr.</fullName>
+                    <default>false</default>
+                    <label>RCDr.</label>
+                </value>
+                <value>
+                    <fullName>RNDr.</fullName>
+                    <default>false</default>
+                    <label>RNDr.</label>
+                </value>
+                <value>
+                    <fullName>RSDr.</fullName>
+                    <default>false</default>
+                    <label>RSDr.</label>
+                </value>
+                <value>
+                    <fullName>RTDr.</fullName>
+                    <default>false</default>
+                    <label>RTDr.</label>
+                </value>
+                <value>
+                    <fullName>Th.D.</fullName>
+                    <default>false</default>
+                    <label>Th.D.</label>
+                </value>
+                <value>
+                    <fullName>ThDr.</fullName>
+                    <default>false</default>
+                    <label>ThDr.</label>
+                </value>
+                <value>
+                    <fullName>ThLic.</fullName>
+                    <default>false</default>
+                    <label>ThLic.</label>
+                </value>
+                <value>
+                    <fullName>ThMgr.</fullName>
+                    <default>false</default>
+                    <label>ThMgr.</label>
+                </value>
+                <value>
+                    <fullName>pi</fullName>
+                    <default>false</default>
+                    <label>pi</label>
+                </value>
+                <value>
+                    <fullName>pan</fullName>
+                    <default>false</default>
+                    <label>pan</label>
+                </value>
+                <value>
+                    <fullName>paní</fullName>
+                    <default>false</default>
+                    <label>paní</label>
+                </value>
+                <value>
+                    <fullName>p.</fullName>
+                    <default>false</default>
+                    <label>p.</label>
+                </value>
+                <value>
+                    <fullName>pí</fullName>
+                    <default>false</default>
+                    <label>pí</label>
+                </value>
+                <value>
+                    <fullName>pí.</fullName>
+                    <default>false</default>
+                    <label>pí.</label>
+                </value>
+                <value>
+                    <fullName>Bc.</fullName>
+                    <default>false</default>
+                    <label>Bc.</label>
+                </value>
+                <value>
+                    <fullName>BcA.</fullName>
+                    <default>false</default>
+                    <label>BcA.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>ERPL_Poland_All_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ER_Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>PL</value>
+        </filters>
+        <label>Poland : All Contacts</label>
+        <sharedTo>
+            <roleAndSubordinates>Poland</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Hungary_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ER_Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>HU</value>
+        </filters>
+        <label>Hungary Contacts</label>
+        <sharedTo>
+            <roleAndSubordinates>HUN</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ER_Contact_RT</fullName>
+        <active>true</active>
+        <label>Business Contact</label>
+        <picklistValues>
+            <picklist>ER_Account_Address_Sync__c</picklist>
+            <values>
+                <fullName>Not Synchronized with Account legal address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synchronized with Account legal address</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Business_Unit_2__c</picklist>
+            <values>
+                <fullName>AE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Channel__c</picklist>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade association</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unmatched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Department_Family__c</picklist>
+            <values>
+                <fullName>Facility services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Inactive_Reason__c</picklist>
+            <values>
+                <fullName>Left the company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maternity Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Reason</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Language__c</picklist>
+            <values>
+                <fullName>CZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Role__c</picklist>
+            <values>
+                <fullName>Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ER_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>IT_Type__c</picklist>
+            <values>
+                <fullName>Attv</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cli</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ref</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Soc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vons</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Adwords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPL Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracting webform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct order without contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-mailing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax Mailing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incoming call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MQL %28Marketing Qualified Lead%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Input</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing campaigns %28precise%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS providers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public tender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral Programm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Fairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unmatched MCC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webform</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CZ_AcademicTitle__c</picklist>
+            <values>
+                <fullName>Bc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BcA%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DSc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DiS%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DrSc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ing%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ing%2E arch%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JUDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MSDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MUDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MVDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MgA%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mgr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PaedDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ph%2ED%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhMr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PharmDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RTDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Th%2ED%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ThDr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ThLic%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ThMgr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>as%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>doc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>odb%2E as%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>p%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>paní</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>prof%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pí%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>VRER01_Email_OR_PhoneNumber_required</fullName>
+        <active>false</active>
+        <description>Suggestion: E-mail or Phone/Mobilephone number must be a required field.</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+AND( 
+Email == null, 
+AND (Phone == null, MobilePhone == null) 
+))</errorConditionFormula>
+        <errorMessage>E-mail or Phone/Mobile phone number are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRER03_Contact_Mandatory_Fields</fullName>
+        <active>true</active>
+        <description>The field FirstName is mandatory.</description>
+        <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+OR(
+ISBLANK (FirstName)))</errorConditionFormula>
+        <errorDisplayField>FirstName</errorDisplayField>
+        <errorMessage>The first name information is mandatory to create a contact</errorMessage>
+    </validationRules>
+    <validationRules>
+    <fullName>VRER04_Inactivation_Reason_Mandatory</fullName>
+        <active>true</active>
+        <description>When the Contact becomes inactive, the inactive reason becomes mandatory.</description>
+        <errorConditionFormula>AND(
+NOT($User.ER_BypassVR__c),
+OR( AND(ISPICKVAL( ER_Status__c ,&apos;Inactive&apos; ),
+ISBLANK( TEXT(ER_Inactive_Reason__c) )) , 
+AND(ISPICKVAL( ER_Status__c ,&apos;Active&apos; ),
+NOT(ISBLANK( TEXT(ER_Inactive_Reason__c)))) )
+)</errorConditionFormula>
+        <errorMessage>The Inactivation Reason should be filled when the contact is Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRPL01_Email_Or_PhoneNumber_Required</fullName>
+        <active>false</active>
+        <description>E-mail or Phone/Mobilephone number must be filled in.</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+ER_Business_Unit__c =&apos;PL&apos;, 
+Email == null,
+Phone == null,
+MobilePhone == null 
+)</errorConditionFormula>
+        <errorMessage>E-mail or Phone/Mobile phone number are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRHU04_Mobile_Number_Hungarian_Format</fullName>
+        <active>true</active>
+        <description>This validation rule will control the phone number format to ensure it fit Hungarian format, as following : +36-11-111-1111 (mobile phones)</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+ER_Business_Unit__c =&apos;HU&apos;,  
+NOT( 
+OR( 
+LEN( MobilePhone ) = 0, 
+REGEX( MobilePhone , &quot;[+36]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}&quot;) 
+)))</errorConditionFormula>
+        <errorDisplayField>MobilePhone</errorDisplayField>
+        <errorMessage>The format of the Mobile Phone Number must be equal to Hungarian format, as following : 
++36-11-111-1111 (mobile phones)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRHU05_Phone_Number_Hungarian_Format</fullName>
+        <active>true</active>
+        <description>This validation rule will control the phone number format to ensure it fit Hungarian format, as following : 
++36-1-111-1111 (capital city)
++36-11-111-111 (countryside)</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+ER_Business_Unit__c =&apos;HU&apos;,  
+NOT( 
+OR( 
+LEN(  Phone ) = 0, 
+REGEX(  Phone , &quot;[+36]{3}-[0-9]{1}-[0-9]{3}-[0-9]{4}&quot;),
+REGEX( Phone , &quot;[+36]{3}-[0-9]{2}-[0-9]{3}-[0-9]{3}&quot;) 
+)))</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>The format of the Phone Number must be equal to Hungarian format, as following : 
++36-1-111-1111 (capital city)
++36-11-111-111 (countryside)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRHU10_Email_OR_PhoneNumber_required</fullName>
+        <active>false</active>
+        <description>Suggestion: E-mail or Phone/Mobilephone number must be a required field.</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c), 
+ER_Business_Unit__c =&apos;HU&apos;,   
+AND(
+Email == null,
+AND (Phone == null, MobilePhone == null)  
+))</errorConditionFormula>
+        <errorMessage>E-mail or Phone/Mobile phone number are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT01_Contact_Detail_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL( $User.ER_Business_Unit__c , &apos;IT&apos;),
+NOT(ISBLANK(Phone)),
+NOT( REGEX( Phone , &quot;[\\s0-9]+&quot;))
+
+)</errorConditionFormula>
+        <errorMessage>Phone characters must be numbers!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT02_Client_SOC</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+$Profile.Name != &apos;IT System Integration&apos;,
+				 ISPICKVAL(IT_Type__c	, &apos;Soc&apos;))</errorConditionFormula>
+        <errorMessage>&apos;Soc&apos; type customer is not possible to make changes</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT03_Fax_Length</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &apos;IT&apos;),
+LEN(Fax) &gt; 16 
+ )</errorConditionFormula>
+        <errorMessage>Fax cannot be longer than 16 characters.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>

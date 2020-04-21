@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BU External Reference --></label>
+        <name>BU_External_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Synchronize --></label>
+        <name>ER_Do_Not_Synchronize__c</name>
+    </fields>
+    <fields>
+        <label><!-- EDG Product Ref --></label>
+        <name>ER_EDG_Product_Ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Hidden In PDF --></label>
+        <name>ER_Hidden_In_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Order --></label>
+        <name>ER_Line_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- MUC --></label>
+        <name>ER_MUC__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U</masterLabel>
+            <translation><!-- U --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Minimum Fee --></label>
+        <name>ER_Minimum_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Category --></label>
+        <name>ER_Service_Category__c</name>
+        <picklistValues>
+            <masterLabel>Communication on product</masterLabel>
+            <translation><!-- Communication on product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer service call</masterLabel>
+            <translation><!-- Customer service call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Layout</masterLabel>
+            <translation><!-- Invoice Layout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Publication</masterLabel>
+            <translation><!-- Invoice Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Support</masterLabel>
+            <translation><!-- Invoice Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing Payment</masterLabel>
+            <translation><!-- Invoicing Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing Payment Method</masterLabel>
+            <translation><!-- Invoicing Payment Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing Payment Term</masterLabel>
+            <translation><!-- Invoicing Payment Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing Periodicity</masterLabel>
+            <translation><!-- Invoicing Periodicity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing processing</masterLabel>
+            <translation><!-- Invoicing processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail Notification</masterLabel>
+            <translation><!-- Mail Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS / terminal</masterLabel>
+            <translation><!-- POS / terminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Campaign</masterLabel>
+            <translation><!-- Promotional Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement  Payment</masterLabel>
+            <translation><!-- Reimbursement  Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement Payment Method</masterLabel>
+            <translation><!-- Reimbursement Payment Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement Payment Term</masterLabel>
+            <translation><!-- Reimbursement Payment Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement Trigger</masterLabel>
+            <translation><!-- Reimbursement Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement processing</masterLabel>
+            <translation><!-- Reimbursement processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS Notification</masterLabel>
+            <translation><!-- SMS Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription Fee</masterLabel>
+            <translation><!-- Subscription Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Processing Fee</masterLabel>
+            <translation><!-- Transaction Processing Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Statement Layout</masterLabel>
+            <translation><!-- Transaction Statement Layout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Statement Periodicity</masterLabel>
+            <translation><!-- Transaction Statement Periodicity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Statement Publication</masterLabel>
+            <translation><!-- Transaction Statement Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Statement Support</masterLabel>
+            <translation><!-- Transaction Statement Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction processing</masterLabel>
+            <translation><!-- Transaction processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[Other / Specify]</masterLabel>
+            <translation><!-- [Other / Specify] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>ER_Service_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billable services</masterLabel>
+            <translation><!-- Billable services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card replacement service</masterLabel>
+            <translation><!-- Card replacement service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card service</masterLabel>
+            <translation><!-- Card service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crediting service</masterLabel>
+            <translation><!-- Crediting service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery service</masterLabel>
+            <translation><!-- Delivery service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice service</masterLabel>
+            <translation><!-- Invoice service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loading service</masterLabel>
+            <translation><!-- Loading service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order service</masterLabel>
+            <translation><!-- Order service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment service</masterLabel>
+            <translation><!-- Payment service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping to distribution point service</masterLabel>
+            <translation><!-- Shipping to distribution point service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping to user service</masterLabel>
+            <translation><!-- Shipping to user service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>applicable service</masterLabel>
+            <translation><!-- applicable service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solution Code --></label>
+        <name>ER_Solution_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Type --></label>
+        <name>ER_Solution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Ticket</masterLabel>
+            <translation><!-- E-Ticket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper Voucher</masterLabel>
+            <translation><!-- Paper Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>ER_Solution__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>ER_Type__c</name>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution</masterLabel>
+            <translation><!-- Solution --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Acronimo</label>
+        <name>IT_Acronym__c</name>
+        <picklistValues>
+            <masterLabel>AA</masterLabel>
+            <translation><!-- AA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AC</masterLabel>
+            <translation><!-- AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AV</masterLabel>
+            <translation><!-- AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BR</masterLabel>
+            <translation><!-- BR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV</masterLabel>
+            <translation><!-- BV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2</masterLabel>
+            <translation><!-- C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CE</masterLabel>
+            <translation><!-- CE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP</masterLabel>
+            <translation><!-- CP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPD</masterLabel>
+            <translation><!-- CPD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPS</masterLabel>
+            <translation><!-- CPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR</masterLabel>
+            <translation><!-- CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS</masterLabel>
+            <translation><!-- CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSD</masterLabel>
+            <translation><!-- CSD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTC</masterLabel>
+            <translation><!-- CTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTS</masterLabel>
+            <translation><!-- CTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CU</masterLabel>
+            <translation><!-- CU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV</masterLabel>
+            <translation><!-- CV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVC</masterLabel>
+            <translation><!-- CVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVE</masterLabel>
+            <translation><!-- CVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVR</masterLabel>
+            <translation><!-- CVR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CW</masterLabel>
+            <translation><!-- CW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DP</masterLabel>
+            <translation><!-- DP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DT</masterLabel>
+            <translation><!-- DT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDR</masterLabel>
+            <translation><!-- EDR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELC</masterLabel>
+            <translation><!-- ELC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELS</masterLabel>
+            <translation><!-- ELS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELT</masterLabel>
+            <translation><!-- ELT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EP</masterLabel>
+            <translation><!-- EP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ET</masterLabel>
+            <translation><!-- ET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXS</masterLabel>
+            <translation><!-- EXS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA</masterLabel>
+            <translation><!-- FCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCH</masterLabel>
+            <translation><!-- FCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FFU</masterLabel>
+            <translation><!-- FFU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FG</masterLabel>
+            <translation><!-- FG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FSK</masterLabel>
+            <translation><!-- FSK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO</masterLabel>
+            <translation><!-- PO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PON</masterLabel>
+            <translation><!-- PON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PP</masterLabel>
+            <translation><!-- PP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPL</masterLabel>
+            <translation><!-- PPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRD</masterLabel>
+            <translation><!-- PRD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PV</masterLabel>
+            <translation><!-- PV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCC</masterLabel>
+            <translation><!-- RCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSC</masterLabel>
+            <translation><!-- RSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTI</masterLabel>
+            <translation><!-- RTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SED</masterLabel>
+            <translation><!-- SED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF</masterLabel>
+            <translation><!-- SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFS</masterLabel>
+            <translation><!-- SFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFV</masterLabel>
+            <translation><!-- SFV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SM</masterLabel>
+            <translation><!-- SM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMD</masterLabel>
+            <translation><!-- SMD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SP</masterLabel>
+            <translation><!-- SP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST</masterLabel>
+            <translation><!-- ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SV</masterLabel>
+            <translation><!-- SV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVV</masterLabel>
+            <translation><!-- SVV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TD</masterLabel>
+            <translation><!-- TD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TF</masterLabel>
+            <translation><!-- TF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TG</masterLabel>
+            <translation><!-- TG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM</masterLabel>
+            <translation><!-- TM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMS</masterLabel>
+            <translation><!-- TMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TP</masterLabel>
+            <translation><!-- TP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR</masterLabel>
+            <translation><!-- TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRC</masterLabel>
+            <translation><!-- TRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRD</masterLabel>
+            <translation><!-- TRD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRF</masterLabel>
+            <translation><!-- TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRS</masterLabel>
+            <translation><!-- TRS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TS</masterLabel>
+            <translation><!-- TS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSC</masterLabel>
+            <translation><!-- TSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSF</masterLabel>
+            <translation><!-- TSF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSS</masterLabel>
+            <translation><!-- TSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TT</masterLabel>
+            <translation><!-- TT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TU</masterLabel>
+            <translation><!-- TU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TW</masterLabel>
+            <translation><!-- TW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWA</masterLabel>
+            <translation><!-- TWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWI</masterLabel>
+            <translation><!-- TWI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWR</masterLabel>
+            <translation><!-- TWR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWV</masterLabel>
+            <translation><!-- TWV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UP</masterLabel>
+            <translation><!-- UP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTA</masterLabel>
+            <translation><!-- UTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z1</masterLabel>
+            <translation><!-- Z1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z2</masterLabel>
+            <translation><!-- Z2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z3</masterLabel>
+            <translation><!-- Z3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card --></label>
+        <name>IT_Card__c</name>
+    </fields>
+    <fields>
+        <label>Valore Chiaro</label>
+        <name>IT_Clear_Value__c</name>
+    </fields>
+    <fields>
+        <label>Ambito</label>
+        <name>IT_Context__c</name>
+        <picklistValues>
+            <masterLabel>Compliments</masterLabel>
+            <translation><!-- Compliments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meal Ticket</masterLabel>
+            <translation>Buono Pasto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Person Service</masterLabel>
+            <translation>Servizio alla persona</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Voucher</masterLabel>
+            <translation>Voucher Sociale</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipologia dato da esporre</label>
+        <name>IT_Data_Type_to_Display__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Sconto</label>
+        <name>IT_Discount_Type__c</name>
+    </fields>
+    <fields>
+        <label>Numero Ticket Emessi</label>
+        <name>IT_Emitted_Ticket_Number__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Frequenza Ordine</label>
+        <name>IT_Frequence_Order_Type__c</name>
+    </fields>
+    <fields>
+        <label>Dettaglio Attività in Fattura</label>
+        <name>IT_Invoice_Activity_Detail__c</name>
+    </fields>
+    <fields>
+        <label>Spese Fatturazione</label>
+        <name>IT_Invoicing_Cost__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Linea</label>
+        <name>IT_Line_Type__c</name>
+        <picklistValues>
+            <masterLabel>Card</masterLabel>
+            <translation><!-- Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Management</masterLabel>
+            <translation><!-- Expense Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive</masterLabel>
+            <translation><!-- Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSP</masterLabel>
+            <translation><!-- PSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papier</masterLabel>
+            <translation><!-- Papier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Eccezione IVA</label>
+        <name>IT_Not_Standard_VAT__c</name>
+    </fields>
+    <fields>
+        <label>Tipo Apertura New</label>
+        <name>IT_Opening_Outcome_New__c</name>
+    </fields>
+    <fields>
+        <label>Stampa Contratto</label>
+        <name>IT_Print_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Numero Copie Tabulato/Dipendente</label>
+        <name>IT_Printout_Copies_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <name>IT_Product__c</name>
+    </fields>
+    <fields>
+        <label>Codice Provider</label>
+        <name>IT_Provider_Code__c</name>
+        <picklistValues>
+            <masterLabel>DHL</masterLabel>
+            <translation><!-- DHL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAKE AGENZIA</masterLabel>
+            <translation><!-- TAKE AGENZIA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cliente Singolo</label>
+        <name>IT_Single_Client__c</name>
+    </fields>
+    <fields>
+        <label>Serie Singola</label>
+        <name>IT_Single_Series__c</name>
+    </fields>
+    <fields>
+        <label>Spese Bollo</label>
+        <name>IT_Stamp_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock --></label>
+        <name>IT_Stock__c</name>
+        <picklistValues>
+            <masterLabel>CUSTOMER IS NOT A STOCK</masterLabel>
+            <translation>CLIENTE NON A STOCK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMER ORDER WITH EITHER TRADITIONAL FROM STOCK</masterLabel>
+            <translation>CLIENTE CON ORDINE SIA TRADIZIONALE CHE DA STOCK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUMMY FOR CUSTOMER ORDER STOCK</masterLabel>
+            <translation>CLIENTE FITTIZIO PER ORDINE STOCK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITH ONLY A CUSTOMER ORDER STOCK</masterLabel>
+            <translation>CLIENTE CON SOLO ORDINE A STOCK</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sospeso</label>
+        <name>IT_Suspended__c</name>
+    </fields>
+    <fields>
+        <label>Presenza Spese Trasporto</label>
+        <name>IT_Transport_Cost_Presence__c</name>
+    </fields>
+    <fields>
+        <label>Costo Trasporto</label>
+        <name>IT_Transport_Cost__c</name>
+    </fields>
+    <layouts>
+        <layout>IT Product PL</layout>
+        <sections>
+            <label>Informazioni Spese</label>
+            <section>Cost Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Informazioni Ordine</label>
+            <section>Order Information</section>
+        </sections>
+        <sections>
+            <label>Dettaglio Servizio</label>
+            <section>Service Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

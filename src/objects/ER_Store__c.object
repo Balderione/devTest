@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>LCER06_NewStoreAddress</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Store_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ER_Store_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ER_Store_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>ER_Status__c</fields>
+        <fields>ER_MerchantName__c</fields>
+        <fields>ER_Card_Operational_System_ID__c</fields>
+        <label>Store Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ER_Creation_Date_In_OS__c</fullName>
+        <description>Used as a reference for EDG data creation</description>
+        <externalId>false</externalId>
+        <label>Creation Date In OS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ER_Last_Date_Of_Sync__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Date Of Sync</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CZ_Verified_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Verified Address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Association_member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Association member</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Association_name__c</fullName>
+        <externalId>false</externalId>
+        <label>Association name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_BUPicklist__c</fullName>
+        <defaultValue>$User.ER_BUText__c</defaultValue>
+        <externalId>false</externalId>
+        <label>BU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Business_Unit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Brand</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner:User.ER_Business_Unit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Card_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Card Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Closure_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Closure Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_Closure_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Closure Reason</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Transformation of Company - noticed by Merchant</fullName>
+                    <default>false</default>
+                    <label>Transformation of Company - noticed by Merchant</label>
+                </value>
+                <value>
+                    <fullName>Termination of Merchant activities - no written notice</fullName>
+                    <default>false</default>
+                    <label>Termination of Merchant activities - no written notice</label>
+                </value>
+                <value>
+                    <fullName>Termination of Merchant activities - noticed</fullName>
+                    <default>false</default>
+                    <label>Termination of Merchant activities - noticed</label>
+                </value>
+                <value>
+                    <fullName>Cancellation of Contract - by Merchant</fullName>
+                    <default>false</default>
+                    <label>Cancellation of Contract - by Merchant</label>
+                </value>
+                <value>
+                    <fullName>Cancellation of Contract - by ER</fullName>
+                    <default>false</default>
+                    <label>Cancellation of Contract - by ER</label>
+                </value>
+                <value>
+                    <fullName>Cancellation of Contract - Legal reasons</fullName>
+                    <default>false</default>
+                    <label>Cancellation of Contract - Legal reasons</label>
+                </value>
+                <value>
+                    <fullName>Doesn’t accept any Solution</fullName>
+                    <default>false</default>
+                    <label>Doesn’t accept any Solution</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.ER_Merchant__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Stores</relationshipLabel>
+        <relationshipName>Stores</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_Do_not_publish__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do not publish</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_E_Shop__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>E-Shop</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Facebook__c</fullName>
+        <externalId>false</externalId>
+        <label>Facebook</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>ER_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Stores</relationshipLabel>
+        <relationshipName>Stores</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Franchise_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Franchise type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct</fullName>
+                    <default>false</default>
+                    <label>Direct</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Group_Of_Stores__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Group of Stores</label>
+        <referenceTo>ER_Group_of_Stores__c</referenceTo>
+        <relationshipLabel>Stores</relationshipLabel>
+        <relationshipName>Stores</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Invoicing_site__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Financial_Center__r.ER_Invoicing_Site__c</formula>
+        <label>Invoicing site ?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Latitude_Longitude__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Latitude Longitude</label>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>ER_Meal_delivery_platform_affiliate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Meal delivery platform affiliate</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_MerchantName__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Financial_Center__r.ER_Account_Name__r.Name</formula>
+        <label>Merchant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Merchant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Merchant</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Stores</relationshipLabel>
+        <relationshipName>Stores</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Paper_Operational_System_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Paper Operational System ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Payment_site__c</fullName>
+        <externalId>false</externalId>
+        <formula>ER_Financial_Center__r.ER_Payment_Site__c</formula>
+        <label>Payment site ?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Shopping_center__c</fullName>
+        <externalId>false</externalId>
+        <label>Shopping center</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ER_BUPicklist__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Avion Shopping park Brno</fullName>
+                    <default>false</default>
+                    <label>Avion Shopping park Brno</label>
+                </value>
+                <value>
+                    <fullName>Avion Shopping park Ostrava</fullName>
+                    <default>false</default>
+                    <label>Avion Shopping park Ostrava</label>
+                </value>
+                <value>
+                    <fullName>Avion Shopping park Praha</fullName>
+                    <default>false</default>
+                    <label>Avion Shopping park Praha</label>
+                </value>
+                <value>
+                    <fullName>Centro Zlín</fullName>
+                    <default>false</default>
+                    <label>Centro Zlín</label>
+                </value>
+                <value>
+                    <fullName>Centrum Babylon</fullName>
+                    <default>false</default>
+                    <label>Centrum Babylon</label>
+                </value>
+                <value>
+                    <fullName>Centrum Černý Most</fullName>
+                    <default>false</default>
+                    <label>Centrum Černý Most</label>
+                </value>
+                <value>
+                    <fullName>Centrum Olympia Teplice</fullName>
+                    <default>false</default>
+                    <label>Centrum Olympia Teplice</label>
+                </value>
+                <value>
+                    <fullName>Černá Růže</fullName>
+                    <default>false</default>
+                    <label>Černá Růže</label>
+                </value>
+                <value>
+                    <fullName>Dětský dům Shopping centre</fullName>
+                    <default>false</default>
+                    <label>Dětský dům Shopping centre</label>
+                </value>
+                <value>
+                    <fullName>Euro Park</fullName>
+                    <default>false</default>
+                    <label>Euro Park</label>
+                </value>
+                <value>
+                    <fullName>Freeport Chvalovice</fullName>
+                    <default>false</default>
+                    <label>Freeport Chvalovice</label>
+                </value>
+                <value>
+                    <fullName>Galerie Butovice</fullName>
+                    <default>false</default>
+                    <label>Galerie Butovice</label>
+                </value>
+                <value>
+                    <fullName>Galerie Dvořák</fullName>
+                    <default>false</default>
+                    <label>Galerie Dvořák</label>
+                </value>
+                <value>
+                    <fullName>Grand Pardubice</fullName>
+                    <default>false</default>
+                    <label>Grand Pardubice</label>
+                </value>
+                <value>
+                    <fullName>Hypermarket Carrefour Ústí nad Labem - Všebořice</fullName>
+                    <default>false</default>
+                    <label>Hypermarket Carrefour Ústí nad Labem - Všebořice</label>
+                </value>
+                <value>
+                    <fullName>IGY Centrum</fullName>
+                    <default>false</default>
+                    <label>IGY Centrum</label>
+                </value>
+                <value>
+                    <fullName>Metropole Zličín</fullName>
+                    <default>false</default>
+                    <label>Metropole Zličín</label>
+                </value>
+                <value>
+                    <fullName>Myslbek</fullName>
+                    <default>false</default>
+                    <label>Myslbek</label>
+                </value>
+                <value>
+                    <fullName>NC Borská Pole</fullName>
+                    <default>false</default>
+                    <label>NC Borská Pole</label>
+                </value>
+                <value>
+                    <fullName>NC Eden</fullName>
+                    <default>false</default>
+                    <label>NC Eden</label>
+                </value>
+                <value>
+                    <fullName>NC Galerie Vaňkovka</fullName>
+                    <default>false</default>
+                    <label>NC Galerie Vaňkovka</label>
+                </value>
+                <value>
+                    <fullName>NC Královo Pole</fullName>
+                    <default>false</default>
+                    <label>NC Královo Pole</label>
+                </value>
+                <value>
+                    <fullName>NC Pardubice</fullName>
+                    <default>false</default>
+                    <label>NC Pardubice</label>
+                </value>
+                <value>
+                    <fullName>NC Průhonice</fullName>
+                    <default>false</default>
+                    <label>NC Průhonice</label>
+                </value>
+                <value>
+                    <fullName>NC Stodůlky</fullName>
+                    <default>false</default>
+                    <label>NC Stodůlky</label>
+                </value>
+                <value>
+                    <fullName>Nisa Center Liberec</fullName>
+                    <default>false</default>
+                    <label>Nisa Center Liberec</label>
+                </value>
+                <value>
+                    <fullName>Obchodní dům Spektrum</fullName>
+                    <default>false</default>
+                    <label>Obchodní dům Spektrum</label>
+                </value>
+                <value>
+                    <fullName>OC Fontána</fullName>
+                    <default>false</default>
+                    <label>OC Fontána</label>
+                </value>
+                <value>
+                    <fullName>OC Futurum Brno</fullName>
+                    <default>false</default>
+                    <label>OC Futurum Brno</label>
+                </value>
+                <value>
+                    <fullName>OC Futurum Hradec Králové</fullName>
+                    <default>false</default>
+                    <label>OC Futurum Hradec Králové</label>
+                </value>
+                <value>
+                    <fullName>OC Futurum Ostrava</fullName>
+                    <default>false</default>
+                    <label>OC Futurum Ostrava</label>
+                </value>
+                <value>
+                    <fullName>OC Haná Olomouc</fullName>
+                    <default>false</default>
+                    <label>OC Haná Olomouc</label>
+                </value>
+                <value>
+                    <fullName>OC Karviná</fullName>
+                    <default>false</default>
+                    <label>OC Karviná</label>
+                </value>
+                <value>
+                    <fullName>OC Letňany</fullName>
+                    <default>false</default>
+                    <label>OC Letňany</label>
+                </value>
+                <value>
+                    <fullName>OC Nový Smíchov</fullName>
+                    <default>false</default>
+                    <label>OC Nový Smíchov</label>
+                </value>
+                <value>
+                    <fullName>OC Plzeň</fullName>
+                    <default>false</default>
+                    <label>OC Plzeň</label>
+                </value>
+                <value>
+                    <fullName>OC Silesia</fullName>
+                    <default>false</default>
+                    <label>OC Silesia</label>
+                </value>
+                <value>
+                    <fullName>OD Kotva</fullName>
+                    <default>false</default>
+                    <label>OD Kotva</label>
+                </value>
+                <value>
+                    <fullName>Olympia centrum Brno</fullName>
+                    <default>false</default>
+                    <label>Olympia centrum Brno</label>
+                </value>
+                <value>
+                    <fullName>Olympia centrum Mladá Boleslav</fullName>
+                    <default>false</default>
+                    <label>Olympia centrum Mladá Boleslav</label>
+                </value>
+                <value>
+                    <fullName>Olympia centrum Olomouc</fullName>
+                    <default>false</default>
+                    <label>Olympia centrum Olomouc</label>
+                </value>
+                <value>
+                    <fullName>Olympia centrum Plzeň</fullName>
+                    <default>false</default>
+                    <label>Olympia centrum Plzeň</label>
+                </value>
+                <value>
+                    <fullName>Atrium Flora</fullName>
+                    <default>false</default>
+                    <label>Atrium Flora</label>
+                </value>
+                <value>
+                    <fullName>Park Hostivař</fullName>
+                    <default>false</default>
+                    <label>Park Hostivař</label>
+                </value>
+                <value>
+                    <fullName>Slovanský dům</fullName>
+                    <default>false</default>
+                    <label>Slovanský dům</label>
+                </value>
+                <value>
+                    <fullName>Velký Špalíček</fullName>
+                    <default>false</default>
+                    <label>Velký Špalíček</label>
+                </value>
+                <value>
+                    <fullName>Vinohradský pavilon</fullName>
+                    <default>false</default>
+                    <label>Vinohradský pavilon</label>
+                </value>
+                <value>
+                    <fullName>OD Bílá Labuť I.</fullName>
+                    <default>false</default>
+                    <label>OD Bílá Labuť I.</label>
+                </value>
+                <value>
+                    <fullName>OD Bílá Labuť II.</fullName>
+                    <default>false</default>
+                    <label>OD Bílá Labuť II.</label>
+                </value>
+                <value>
+                    <fullName>OD Bílá Labuť III.</fullName>
+                    <default>false</default>
+                    <label>OD Bílá Labuť III.</label>
+                </value>
+                <value>
+                    <fullName>Centrum Chodov</fullName>
+                    <default>false</default>
+                    <label>Centrum Chodov</label>
+                </value>
+                <value>
+                    <fullName>OC Varyáda</fullName>
+                    <default>false</default>
+                    <label>OC Varyáda</label>
+                </value>
+                <value>
+                    <fullName>Olomouc CITY</fullName>
+                    <default>false</default>
+                    <label>Olomouc CITY</label>
+                </value>
+                <value>
+                    <fullName>OC Novodvorská Plaza</fullName>
+                    <default>false</default>
+                    <label>OC Novodvorská Plaza</label>
+                </value>
+                <value>
+                    <fullName>IBC Centrum Brno</fullName>
+                    <default>false</default>
+                    <label>IBC Centrum Brno</label>
+                </value>
+                <value>
+                    <fullName>OC Mercury</fullName>
+                    <default>false</default>
+                    <label>OC Mercury</label>
+                </value>
+                <value>
+                    <fullName>OC Šestka</fullName>
+                    <default>false</default>
+                    <label>OC Šestka</label>
+                </value>
+                <value>
+                    <fullName>Palladium</fullName>
+                    <default>false</default>
+                    <label>Palladium</label>
+                </value>
+                <value>
+                    <fullName>Bondy Centrum</fullName>
+                    <default>false</default>
+                    <label>Bondy Centrum</label>
+                </value>
+                <value>
+                    <fullName>Outlet Fashion Arena</fullName>
+                    <default>false</default>
+                    <label>Outlet Fashion Arena</label>
+                </value>
+                <value>
+                    <fullName>OC Plzeň Plaza</fullName>
+                    <default>false</default>
+                    <label>OC Plzeň Plaza</label>
+                </value>
+                <value>
+                    <fullName>Galerie Fénix</fullName>
+                    <default>false</default>
+                    <label>Galerie Fénix</label>
+                </value>
+                <value>
+                    <fullName>OC Central Most</fullName>
+                    <default>false</default>
+                    <label>OC Central Most</label>
+                </value>
+                <value>
+                    <fullName>OC City Park Jihlava</fullName>
+                    <default>false</default>
+                    <label>OC City Park Jihlava</label>
+                </value>
+                <value>
+                    <fullName>OC Palác Pardubice</fullName>
+                    <default>false</default>
+                    <label>OC Palác Pardubice</label>
+                </value>
+                <value>
+                    <fullName>OC Arkády Pankrác</fullName>
+                    <default>false</default>
+                    <label>OC Arkády Pankrác</label>
+                </value>
+                <value>
+                    <fullName>DBK Praha</fullName>
+                    <default>false</default>
+                    <label>DBK Praha</label>
+                </value>
+                <value>
+                    <fullName>OC Galerie Dvořák</fullName>
+                    <default>false</default>
+                    <label>OC Galerie Dvořák</label>
+                </value>
+                <value>
+                    <fullName>NC Géčko Liberec</fullName>
+                    <default>false</default>
+                    <label>NC Géčko Liberec</label>
+                </value>
+                <value>
+                    <fullName>OC Futurum Kolín</fullName>
+                    <default>false</default>
+                    <label>OC Futurum Kolín</label>
+                </value>
+                <value>
+                    <fullName>OC CAMPUS SQUARE</fullName>
+                    <default>false</default>
+                    <label>OC CAMPUS SQUARE</label>
+                </value>
+                <value>
+                    <fullName>OC PLAZA Liberec</fullName>
+                    <default>false</default>
+                    <label>OC PLAZA Liberec</label>
+                </value>
+                <value>
+                    <fullName>Debenhams</fullName>
+                    <default>false</default>
+                    <label>Debenhams</label>
+                </value>
+                <value>
+                    <fullName>Palác Metro</fullName>
+                    <default>false</default>
+                    <label>Palác Metro</label>
+                </value>
+                <value>
+                    <fullName>Nákupní galerie Atrium</fullName>
+                    <default>false</default>
+                    <label>Nákupní galerie Atrium</label>
+                </value>
+                <value>
+                    <fullName>Brumlovka</fullName>
+                    <default>false</default>
+                    <label>Brumlovka</label>
+                </value>
+                <value>
+                    <fullName>Dejvice Center</fullName>
+                    <default>false</default>
+                    <label>Dejvice Center</label>
+                </value>
+                <value>
+                    <fullName>Galleria Moda</fullName>
+                    <default>false</default>
+                    <label>Galleria Moda</label>
+                </value>
+                <value>
+                    <fullName>Čtyři Dvory</fullName>
+                    <default>false</default>
+                    <label>Čtyři Dvory</label>
+                </value>
+                <value>
+                    <fullName>Nákupní centrum Géčko České Budějovice</fullName>
+                    <default>false</default>
+                    <label>Nákupní centrum Géčko České Budějovice</label>
+                </value>
+                <value>
+                    <fullName>Obchodní dům Dvořák</fullName>
+                    <default>false</default>
+                    <label>Obchodní dům Dvořák</label>
+                </value>
+                <value>
+                    <fullName>Obchodní centrum Cukrovar</fullName>
+                    <default>false</default>
+                    <label>Obchodní centrum Cukrovar</label>
+                </value>
+                <value>
+                    <fullName>Palác CD Brno</fullName>
+                    <default>false</default>
+                    <label>Palác CD Brno</label>
+                </value>
+                <value>
+                    <fullName>Obchodní centrum Alej</fullName>
+                    <default>false</default>
+                    <label>Obchodní centrum Alej</label>
+                </value>
+                <value>
+                    <fullName>Galerie Liberec Plaza</fullName>
+                    <default>false</default>
+                    <label>Galerie Liberec Plaza</label>
+                </value>
+                <value>
+                    <fullName>Nákupní centrum Géčko Liberec</fullName>
+                    <default>false</default>
+                    <label>Nákupní centrum Géčko Liberec</label>
+                </value>
+                <value>
+                    <fullName>Nákupní Centrum Karolína</fullName>
+                    <default>false</default>
+                    <label>Nákupní Centrum Karolína</label>
+                </value>
+                <value>
+                    <fullName>Obchodní centrum Galerie</fullName>
+                    <default>false</default>
+                    <label>Obchodní centrum Galerie</label>
+                </value>
+                <value>
+                    <fullName>Obchodní galerie Arkáda</fullName>
+                    <default>false</default>
+                    <label>Obchodní galerie Arkáda</label>
+                </value>
+                <value>
+                    <fullName>Nákupní galerie PYRAMIDA</fullName>
+                    <default>false</default>
+                    <label>Nákupní galerie PYRAMIDA</label>
+                </value>
+                <value>
+                    <fullName>Berounka Park Plzeň</fullName>
+                    <default>false</default>
+                    <label>Berounka Park Plzeň</label>
+                </value>
+                <value>
+                    <fullName>OD Dvořák Plzeň - Slovany</fullName>
+                    <default>false</default>
+                    <label>OD Dvořák Plzeň - Slovany</label>
+                </value>
+                <value>
+                    <fullName>NC OAZA Kladno</fullName>
+                    <default>false</default>
+                    <label>NC OAZA Kladno</label>
+                </value>
+                <value>
+                    <fullName>NC Futurum Kolín</fullName>
+                    <default>false</default>
+                    <label>NC Futurum Kolín</label>
+                </value>
+                <value>
+                    <fullName>Kaskáda Zlín</fullName>
+                    <default>false</default>
+                    <label>Kaskáda Zlín</label>
+                </value>
+                <value>
+                    <fullName>Obchodní a zábavní centrum Zlaté Jablko</fullName>
+                    <default>false</default>
+                    <label>Obchodní a zábavní centrum Zlaté Jablko</label>
+                </value>
+                <value>
+                    <fullName>Galerie Harfa</fullName>
+                    <default>false</default>
+                    <label>Galerie Harfa</label>
+                </value>
+                <value>
+                    <fullName>OC Chomutovka</fullName>
+                    <default>false</default>
+                    <label>OC Chomutovka</label>
+                </value>
+                <value>
+                    <fullName>OC Skalka</fullName>
+                    <default>false</default>
+                    <label>OC Skalka</label>
+                </value>
+                <value>
+                    <fullName>Obchodní centrum Korzo</fullName>
+                    <default>false</default>
+                    <label>Obchodní centrum Korzo</label>
+                </value>
+                <value>
+                    <fullName>OC FORUM Liberec</fullName>
+                    <default>false</default>
+                    <label>OC FORUM Liberec</label>
+                </value>
+                <value>
+                    <fullName>OD FORUM Ústí nad Labem</fullName>
+                    <default>false</default>
+                    <label>OD FORUM Ústí nad Labem</label>
+                </value>
+                <value>
+                    <fullName>OC Nová Karolína</fullName>
+                    <default>false</default>
+                    <label>OC Nová Karolína</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Avion Shopping park Brno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Avion Shopping park Ostrava</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Avion Shopping park Praha</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Centro Zlín</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Centrum Babylon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Centrum Černý Most</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Centrum Olympia Teplice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Černá Růže</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Dětský dům Shopping centre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Euro Park</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Freeport Chvalovice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galerie Butovice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galerie Dvořák</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Grand Pardubice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Hypermarket Carrefour Ústí nad Labem - Všebořice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>IGY Centrum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Metropole Zličín</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Myslbek</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Borská Pole</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Eden</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Galerie Vaňkovka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Královo Pole</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Pardubice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Průhonice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Stodůlky</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nisa Center Liberec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní dům Spektrum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Fontána</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Futurum Brno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Futurum Hradec Králové</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Futurum Ostrava</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Haná Olomouc</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Karviná</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Letňany</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Nový Smíchov</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Plzeň</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Silesia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD Kotva</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Olympia centrum Brno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Olympia centrum Mladá Boleslav</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Olympia centrum Olomouc</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Olympia centrum Plzeň</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Atrium Flora</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Park Hostivař</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Slovanský dům</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Velký Špalíček</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Vinohradský pavilon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD Bílá Labuť I.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD Bílá Labuť II.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD Bílá Labuť III.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Centrum Chodov</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Varyáda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Olomouc CITY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Novodvorská Plaza</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>IBC Centrum Brno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Mercury</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Šestka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Palladium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Bondy Centrum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Outlet Fashion Arena</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Plzeň Plaza</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galerie Fénix</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Central Most</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC City Park Jihlava</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Palác Pardubice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Arkády Pankrác</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>DBK Praha</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Galerie Dvořák</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Géčko Liberec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Futurum Kolín</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC CAMPUS SQUARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC PLAZA Liberec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Debenhams</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Palác Metro</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nákupní galerie Atrium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Brumlovka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Dejvice Center</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galleria Moda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Čtyři Dvory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nákupní centrum Géčko České Budějovice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní dům Dvořák</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní centrum Cukrovar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Palác CD Brno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní centrum Alej</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galerie Liberec Plaza</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nákupní centrum Géčko Liberec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nákupní Centrum Karolína</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní centrum Galerie</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní galerie Arkáda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Nákupní galerie PYRAMIDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Berounka Park Plzeň</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD Dvořák Plzeň - Slovany</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC OAZA Kladno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>NC Futurum Kolín</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Kaskáda Zlín</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní a zábavní centrum Zlaté Jablko</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Galerie Harfa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Chomutovka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Skalka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>Obchodní centrum Korzo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC FORUM Liberec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OD FORUM Ústí nad Labem</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CZ</controllingFieldValue>
+                <valueName>OC Nová Karolína</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Solution_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution Count</label>
+        <summaryFilterItems>
+            <field>ER_Store_Line_Item__c.ER_Status__c</field>
+            <operation>equals</operation>
+            <value>Accept</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ER_Store_Line_Item__c.ER_Store__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ER_Start_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_Store_opening_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Store opening date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ER_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ER_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bakery</fullName>
+                    <default>false</default>
+                    <label>Bakery</label>
+                </value>
+                <value>
+                    <fullName>Food</fullName>
+                    <default>false</default>
+                    <label>Food</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Pizzeria</fullName>
+                    <default>false</default>
+                    <label>Pizzeria</label>
+                </value>
+                <value>
+                    <fullName>Restaurant</fullName>
+                    <default>false</default>
+                    <label>Restaurant</label>
+                </value>
+                <value>
+                    <fullName>Snack</fullName>
+                    <default>false</default>
+                    <label>Snack</label>
+                </value>
+                <value>
+                    <fullName>Hypermarket</fullName>
+                    <default>false</default>
+                    <label>Hypermarket</label>
+                </value>
+                <value>
+                    <fullName>Supermarket</fullName>
+                    <default>false</default>
+                    <label>Supermarket</label>
+                </value>
+                <value>
+                    <fullName>Convenience stores</fullName>
+                    <default>false</default>
+                    <label>Convenience stores</label>
+                </value>
+                <value>
+                    <fullName>Fast food</fullName>
+                    <default>false</default>
+                    <label>Fast food</label>
+                </value>
+                <value>
+                    <fullName>Cantine</fullName>
+                    <default>false</default>
+                    <label>Cantine</label>
+                </value>
+                <value>
+                    <fullName>Gas stations</fullName>
+                    <default>false</default>
+                    <label>Gas stations</label>
+                </value>
+                <value>
+                    <fullName>Grocery</fullName>
+                    <default>false</default>
+                    <label>Grocery</label>
+                </value>
+                <value>
+                    <fullName>Discounter</fullName>
+                    <default>false</default>
+                    <label>Discounter</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_VAT_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ER_Website_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Website URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>ER_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip Code</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CZ_Store_reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Store reference</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Store</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ER_City__c</columns>
+        <columns>ER_Merchant__c</columns>
+        <columns>ER_Type__c</columns>
+        <columns>ER_VAT_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Hungary_Stores</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ER_Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>HU</value>
+        </filters>
+        <label>Hungary Stores</label>
+        <sharedTo>
+            <roleAndSubordinates>HUN</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Store Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Stores</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>VRER01_Store_When_EShopFalse_NeedAddress</fullName>
+        <active>true</active>
+        <description>The address information must be filled for stores that are not E-shops (E-shop=False)</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+NOT(ER_E_Shop__c),
+ISBLANK (ER_Street__c)
+)</errorConditionFormula>
+        <errorDisplayField>ER_Street__c</errorDisplayField>
+        <errorMessage>The address information must be filled for stores that are not E-shops</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRER02_Store_When_EShopTrue_NeedWebsite</fullName>
+        <active>true</active>
+        <description>The website information must be filled for E-shops</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c), 
+ER_E_Shop__c=true,
+ISBLANK(ER_Website_URL__c)
+)</errorConditionFormula>
+        <errorDisplayField>ER_Website_URL__c</errorDisplayField>
+        <errorMessage>The website information must be filled for E-shops</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRER03_Store_When_AMTrue_NeedAName</fullName>
+        <active>true</active>
+        <description>When Association member is set to true, Association Name has to be filled</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c), 
+ER_Association_member__c,
+ISBLANK(ER_Association_name__c)
+)</errorConditionFormula>
+        <errorDisplayField>ER_Association_name__c</errorDisplayField>
+        <errorMessage>When Association member is set to true, Association Name has to be filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRER04_StoreOnlyMerchantFinancialCenter</fullName>
+        <active>true</active>
+        <description>Store can only be created on Merchant Financial Center</description>
+        <errorConditionFormula>AND( 
+NOT($User.ER_BypassVR__c),
+TEXT(ER_Financial_Center__r.ER_Type__c) = &quot;Client&quot;
+)</errorConditionFormula>
+        <errorMessage>Store can only be created on Merchant Financial Center</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Distribution Point</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Distribution Points</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountIdFlow --></label>
+        <name>AccountIdFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>ER_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>ER_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Site --></label>
+        <name>ER_Delivery_Site__c</name>
+        <relationshipLabel><!-- Distribution Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>ER_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>ER_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC Activity --></label>
+        <name>IT_AC_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Code --></label>
+        <name>IT_Activity_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Locality --></label>
+        <name>IT_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address AC User --></label>
+        <name>IT_Address_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Editing Type --></label>
+        <name>IT_Address_Editing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Validity End Date --></label>
+        <name>IT_Address_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Validity Start Date --></label>
+        <name>IT_Address_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address to Display --></label>
+        <name>IT_Address_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Reactivation User Code --></label>
+        <name>IT_Authorization_Reactivation_User_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Reactivation User Text --></label>
+        <name>IT_Authorization_Reactivation_User_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Reactivation User --></label>
+        <name>IT_Authorization_Reactivation_User__c</name>
+        <relationshipLabel><!-- Distribution Points (Authorization Reactivation User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Authorization Suspension User Code --></label>
+        <name>IT_Authorization_Suspension_User_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Suspension User Text --></label>
+        <name>IT_Authorization_Suspension_User_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Suspension User --></label>
+        <name>IT_Authorization_Suspension_User__c</name>
+        <relationshipLabel><!-- Distribution Points (Authorization Suspension User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IT_Autonumber_Code --></label>
+        <name>IT_Autonumber_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Type --></label>
+        <name>IT_Cancellation_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation --></label>
+        <name>IT_Cancellation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Address --></label>
+        <name>IT_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City Code --></label>
+        <name>IT_City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Client_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code and Name --></label>
+        <name>IT_Code_and_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Contact_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Line Item --></label>
+        <name>IT_Contract_Line_Item__c</name>
+        <relationshipLabel><!-- Distribution Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost Center End Date --></label>
+        <name>IT_Cost_Center_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>IT_Cost_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data To Display 2 --></label>
+        <name>IT_Data_To_Display_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data To Display 3 --></label>
+        <name>IT_Data_To_Display_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data To Display 4 --></label>
+        <name>IT_Data_To_Display_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Type To Display 2 --></label>
+        <name>IT_Data_Type_To_Display_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Type To Display 3 --></label>
+        <name>IT_Data_Type_To_Display_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Type To Display 4 --></label>
+        <name>IT_Data_Type_To_Display_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Type to Display --></label>
+        <name>IT_Data_Type_to_Display_Test__c</name>
+        <picklistValues>
+            <masterLabel>00 - PARITARIA SCHOOL</masterLabel>
+            <translation><!-- 00 - PARITARIA SCHOOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>00 - STATIONERY SCHOOL SERVICES</masterLabel>
+            <translation><!-- 00 - STATIONERY SCHOOL SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>00 - TRAINING ORGANIZATIONS</masterLabel>
+            <translation><!-- 00 - TRAINING ORGANIZATIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 - EDUCATIONAL ASSIST. SERVICE</masterLabel>
+            <translation><!-- 02 - EDUCATIONAL ASSIST. SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 - NURSING SERVICES CHILDHOOD</masterLabel>
+            <translation><!-- 03 - NURSING SERVICES CHILDHOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 - SERVICES FOR MEDIATION</masterLabel>
+            <translation><!-- 04 - SERVICES FOR MEDIATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 - FEES NURSERY</masterLabel>
+            <translation><!-- 06 - FEES NURSERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 - SERV. SOCIAL AND EMPLOYMENT</masterLabel>
+            <translation><!-- 07 - SERV. SOCIAL AND EMPLOYMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 - INTEGRATED CENTERS DAYTIME</masterLabel>
+            <translation><!-- 08 - INTEGRATED CENTERS DAYTIME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 - RELIEF-EP INTERVENTIONS</masterLabel>
+            <translation><!-- 09 - RELIEF-EP INTERVENTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - RESIDENTIAL INT.SOLLIEVO</masterLabel>
+            <translation><!-- 10 - RESIDENTIAL INT.SOLLIEVO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 - ASA-RELIEF MEASURES</masterLabel>
+            <translation><!-- 11 - ASA-RELIEF MEASURES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 - SUPPORT FOR PARENTHOOD</masterLabel>
+            <translation><!-- 90 - SUPPORT FOR PARENTHOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>91 - DISCOUNT PREPAID</masterLabel>
+            <translation><!-- 91 - DISCOUNT PREPAID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Type to Display --></label>
+        <name>IT_Data_Type_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data to Display --></label>
+        <name>IT_Data_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Site Filtered --></label>
+        <name>IT_Delivery_Site_Filtered__c</name>
+        <relationshipLabel><!-- Distribution Points (Delivery Site Filtered) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>IT_Distribution_Point_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not send circular to the activity --></label>
+        <name>IT_Do_not_send_circular_to_the_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employees Number --></label>
+        <name>IT_Employees_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra-Urban Specifications --></label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Distribution Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Forcing --></label>
+        <name>IT_Forcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Description to Display --></label>
+        <name>IT_Free_Description_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Address --></label>
+        <name>IT_Future_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Distribution Point --></label>
+        <name>IT_Future_Change_Distribution_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc X --></label>
+        <name>IT_GeoRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc Y --></label>
+        <name>IT_GeoRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet Code --></label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet --></label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locality to Display --></label>
+        <name>IT_Locality_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc X --></label>
+        <name>IT_MetRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc Y --></label>
+        <name>IT_MetRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Address Cost Center --></label>
+        <name>IT_Name_Address_Cost_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name and Address --></label>
+        <name>IT_Name_and_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Naming to Display --></label>
+        <name>IT_Naming_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity End Date --></label>
+        <name>IT_Note_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity Start Date --></label>
+        <name>IT_Note_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes Type --></label>
+        <name>IT_Notes_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>IT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>IT_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raw Number for Display 2 --></label>
+        <name>IT_Raw_Number_for_Display_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raw Number for Display 3 --></label>
+        <name>IT_Raw_Number_for_Display_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raw Number for Display 4 --></label>
+        <name>IT_Raw_Number_for_Display_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raw Number for Display --></label>
+        <name>IT_Raw_Number_for_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region code --></label>
+        <name>IT_Region_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return generic Ticket --></label>
+        <name>IT_Return_Generic_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Arch Code --></label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Activity --></label>
+        <name>IT_SF_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Sales_Manager__c</name>
+        <relationshipLabel><!-- Distribution Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sestiere Code --></label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Address --></label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>IT_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Code --></label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension End Date --></label>
+        <name>IT_Suspension_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension Reason --></label>
+        <name>IT_Suspension_Reason__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVITY CLOSED</masterLabel>
+            <translation><!-- ACTIVITY CLOSED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISCLOSURE</masterLabel>
+            <translation><!-- DISCLOSURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSOLVENT</masterLabel>
+            <translation><!-- INSOLVENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRREPERIBLE COMPANY</masterLabel>
+            <translation><!-- IRREPERIBLE COMPANY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCCASIONAL USE</masterLabel>
+            <translation><!-- OCCASIONAL USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORGANIC DISMISSAL</masterLabel>
+            <translation><!-- ORGANIC DISMISSAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PELLEGRINI COMPETITION</masterLabel>
+            <translation><!-- PELLEGRINI COMPETITION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALTUAL ORDERS</masterLabel>
+            <translation><!-- SALTUAL ORDERS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suspension Start Date --></label>
+        <name>IT_Suspension_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension --></label>
+        <name>IT_Suspension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Data Progressive --></label>
+        <name>IT_Technical_Data_Progressive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Naming --></label>
+        <name>IT_Ticket_Naming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket View --></label>
+        <name>IT_Ticket_view__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>IT_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toponym --></label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity End Date --></label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validity Start Date --></label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>IT_Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>ER Distribution Point Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Distribution Point Layout V2.1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Distribution Point PL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancellation --></label>
+        <name>IT_Cancellation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Cost Center --></label>
+        <name>IT_Close_Cost_Center</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create/Update Delivery Site --></label>
+        <name>IT_Create_Update_Delivery_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Address --></label>
+        <name>IT_Edit_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Reactivation --></label>
+        <name>IT_Reactivation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Cost Centers --></label>
+        <name>IT_Update_Cost_Centers</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Sincronizzazione Anagrafica Clienti in corso: non è possibile modificare l&apos;Attività! --></errorMessage>
+        <name>VRIT01_Activity_Editing_in_AC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s impossibile to modify these fields --></errorMessage>
+        <name>VRIT02_Exposition_Data</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Locality to dispaly on the ticket must not be managed by the Cleanway and Ticket Service customers! --></errorMessage>
+        <name>VRIT03_NO_Locality</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field cannot be changed if is set Raw Number of Display or Address to Display --></errorMessage>
+        <name>VRIT04_Free_Description_to_Display</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT05_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify fields for this client status! --></errorMessage>
+        <name>VRIT06_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify Technical Data for single activity client! --></errorMessage>
+        <name>VRIT07_Single_Activity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Client is inactive or there are future variations! You cannot suspend/reactivate the activity! --></errorMessage>
+        <name>VRIT08_Active_Client_Suspension_Reactiv</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The activity is suspended! To reactivate, click on &quot;Reactivation&quot;! --></errorMessage>
+        <name>VRIT09_Suspended_Activity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The activity is not suspended! Impossible to reactivate it! --></errorMessage>
+        <name>VRIT10_Activity_Not_Suspended</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- cost center end date cannot be changed for this type of customer status --></errorMessage>
+        <name>VRIT11_Close_Cost_Center</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The cost center can only be updated for active customers with multiple activities --></errorMessage>
+        <name>VRIT12_Cost_Center_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- fields cannot be edited because the activity is canceled --></errorMessage>
+        <name>VRIT13_Cancellation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- you cannot change the delivery --></errorMessage>
+        <name>VRIT14_ChangeDeliverySite</name>
+    </validationRules>
+</CustomObjectTranslation>

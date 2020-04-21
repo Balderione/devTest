@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACCEPT</fullName>
+        <default>false</default>
+        <label>ACCEPT</label>
+    </customValue>
+    <customValue>
+        <fullName>DECLINE</fullName>
+        <default>false</default>
+        <label>DECLINE</label>
+    </customValue>
+    <masterLabel>Behaviour</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

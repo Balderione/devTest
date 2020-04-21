@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>00 - BOX EXPERIENCE (cod. 0215)</masterLabel>
+        <translation>00 - BOX EXPERIENCE (cod. 0215)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - BOX EXPERIENCE (cod. 0216)</masterLabel>
+        <translation>00 - BOX EXPERIENCE (cod. 0216)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - BOX POP (cod. 0191)</masterLabel>
+        <translation>00 - BOX POP (cod. 0191)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - PARITARIA SCHOOL (cod. 0170)</masterLabel>
+        <translation>00 - SCUOLA PARITARIA (cod. 0170)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - SCOPE ............... ... (cod. 0079)</masterLabel>
+        <translation>00 - AMBITO ...............… (cod. 0079)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - SCOPE ............... ... (cod. 0119)</masterLabel>
+        <translation>00 - AMBITO ...............… (cod. 0119)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - SCOPE ............... ... (cod. 0151)</masterLabel>
+        <translation>00 - AMBITO ...............… (cod. 0151)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - SCOPE ............... ... (cod. 0245)</masterLabel>
+        <translation>00 - AMBITO ...............… (cod. 0245)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - SCRIGNO TASTINGS (cod. 0186)</masterLabel>
+        <translation>00 - SCRIGNO DEGUSTAZIONI (cod. 0186)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - STANDARD (cod. 0202)</masterLabel>
+        <translation>00 – STANDARD (cod. 0202)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - STATIONERY SCHOOL SERVICES (cod. 0168)</masterLabel>
+        <translation>00 - CARTOLERIE SERVIZI SCUOLA (cod. 0168)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 - TRAINING ORGANIZATIONS (cod. 0169)</masterLabel>
+        <translation>00 - ENTI DI FORMAZIONE (cod. 0169)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>00 -. (Cod. 0195)</masterLabel>
+        <translation>00 - . (cod. 0195)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - ASSI.DOMICILIARE SERVICE (cod. 0102)</masterLabel>
+        <translation>01 - SERVIZIO ASSI.DOMICILIARE (cod. 0102)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - ASSI.DOMICILIARE SERVICE (cod. 0130)</masterLabel>
+        <translation>01 - SERVIZIO ASSI.DOMICILIARE (cod. 0130)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - ASSI.DOMICILIARE SERVICE (cod. 0152)</masterLabel>
+        <translation>01 - SERVIZIO ASSI.DOMICILIARE (cod. 0152)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - BOX ROCK (cod. 0192)</masterLabel>
+        <translation>01 - BOX ROCK (cod. 0192)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - DISABILITY COMPONENT (cod. 0179)</masterLabel>
+        <translation>01 - COMPONENTE DISABILITA (cod. 0179)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - DISABILITY COMPONENT (cod. 0181)</masterLabel>
+        <translation>01 - COMPONENTE DISABILITA (cod. 0181)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - JACKET (cod. 0090)</masterLabel>
+        <translation>01 – GIACCA (cod. 0090)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - JEWEL OF DREAM (cod. 0187)</masterLabel>
+        <translation>01 - SCRIGNO DREAM (cod. 0187)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - SCHOOL TEXT BOOKS (cod. 0217)</masterLabel>
+        <translation>01 - LIBRI DI TESTO SCOLASTICI (cod. 0217)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>01 - SERVICES FOR CHILDREN (cod. 0196)</masterLabel>
+        <translation>01 - SERVIZI PER MINORI (cod. 0196)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - ASSIST.EDUCATIVA SERVICE (cod. 0103)</masterLabel>
+        <translation>02 - SERVIZIO ASSIST.EDUCATIVA (cod. 0103)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - ASSIST.EDUCATIVA SERVICE (cod. 0131)</masterLabel>
+        <translation>02 - SERVIZIO ASSIST.EDUCATIVA (cod. 0131)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - ASSIST.EDUCATIVA SERVICE (cod. 0153)</masterLabel>
+        <translation>02 - SERVIZIO ASSIST.EDUCATIVA (cod. 0153)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - BOX CLASSIC (cod. 0193)</masterLabel>
+        <translation>02 - BOX CLASSIC (cod. 0193)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - ELDERLY DISABLED SERVICES (cod. 0197)</masterLabel>
+        <translation>02 - SERVIZI ANZIANI DISABILI (cod. 0197)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - JEWEL DIAMOND (cod. 0188)</masterLabel>
+        <translation>02 - SCRIGNO DIAMOND (cod. 0188)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - SCHOOL ATTENDANCE (cod. 0218)</masterLabel>
+        <translation>02 - FREQUENZA SCOLASTICA (cod. 0218)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - SUPPORT FOR CHOICE (cod. 0180)</masterLabel>
+        <translation>02 - SOSTEGNO ALLA SCELTA (cod. 0180)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - TRAINING COMPONENT (cod. 0182)</masterLabel>
+        <translation>02 - COMPONENTE FORMAZIONE (cod. 0182)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>02 - TROUSERS / SKIRT (cod. 0091)</masterLabel>
+        <translation>02 - PANTALONE / GONNA (cod. 0091)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - CHILD CARE SERVICES (cod. 0150)</masterLabel>
+        <translation>03 - SERVIZI DI CURA INFANZIA (cod. 0150)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - CHILD CARE SERVICES (cod. 0154)</masterLabel>
+        <translation>03 - SERVIZI DI CURA INFANZIA (cod. 0154)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - FAMILY SUPPORT SERVICES (cod. 0198)</masterLabel>
+        <translation>03 - SERVIZI SUPPORTO FAMIGLIA (cod. 0198)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - JAZZ BOX (cod. 0194)</masterLabel>
+        <translation>03 - BOX JAZZ (cod. 0194)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - JEWEL OF LUXURY (cod. 0189)</masterLabel>
+        <translation>03 - SCRIGNO LUXURY (cod. 0189)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - SCHOOL TAX (cod. 0219)</masterLabel>
+        <translation>03 - TASSA SCOLASTICA (cod. 0219)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>03 - SHIRT (cod. 0092)</masterLabel>
+        <translation>03 – CAMICIA (cod. 0092)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - CAFETERIA / SCHOOL MEALS Scholastics (cod. 0220)</masterLabel>
+        <translation>04 - MENSA/REFEZIONE SCOLASTIC (cod. 0220)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - FOOD DELIVERY (cod. 0207)</masterLabel>
+        <translation>04 - SAPORI A DOMICILIO (cod. 0207)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - SERVICES ASSIST. HEALTH (cod. 0199)</masterLabel>
+        <translation>04 - SERVIZI ASSIST. SANITARIA (cod. 0199)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - SERVICES FOR MEDIATION (cod. 0165)</masterLabel>
+        <translation>04 - SERVIZI PER CONCILIAZIONE (cod. 0165)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - SERVICES FOR MEDIATION (cod. 0166)</masterLabel>
+        <translation>04 - SERVIZI PER CONCILIAZIONE (cod. 0166)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>04 - TIE (cod. 0093)</masterLabel>
+        <translation>04 – CRAVATTA (cod. 0093)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>05 - ASSI.DOMICILIARE SERVICE (cod. 0205)</masterLabel>
+        <translation>05 - SERVIZIO ASSI.DOMICILIARE (cod. 0205)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>05 - Cultural Mediation (cod. 0167)</masterLabel>
+        <translation>05 - MEDIAZIONE CULTURALE (cod. 0167)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>05 - JACKET (cod. 0094)</masterLabel>
+        <translation>05 – GIACCONE (cod. 0094)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>05 - POP BOX LAST MINUTE (cod. 0209)</masterLabel>
+        <translation>05 - BOX POP LAST MINUTE (cod. 0209)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>05 - PRE / AFTER SCHOOL AND STUDIO (cod. 0221)</masterLabel>
+        <translation>05 - PRE/DOPO SCUOLA E STUDIO (cod. 0221)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>06 - ASSIST.EDUCATIVA SERVICE (cod. 0206)</masterLabel>
+        <translation>06 - SERVIZIO ASSIST.EDUCATIVA (cod. 0206)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>06 - COAT (cod. 0095)</masterLabel>
+        <translation>06 – CAPPOTTO (cod. 0095)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>06 - FEES NURSERY (cod. 0171)</masterLabel>
+        <translation>06 - RETTA SCUOLA MATERNA (cod. 0171)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>06 - INTEGRATED ATT.SCOLASTICHE (cod. 0222)</masterLabel>
+        <translation>06 - ATT.SCOLASTICHE INTEGRATI (cod. 0222)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>06 - ROCK BOX LAST MINUTE (cod. 0210)</masterLabel>
+        <translation>06 - BOX ROCK LAST MINUTE (cod. 0210)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>07 - BABY SITTING SERVICES (cod. 0223)</masterLabel>
+        <translation>07 - SERVIZI DI BABY SITTING (cod. 0223)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>07 - BOX CLASSIC LAST MINUTE (cod. 0211)</masterLabel>
+        <translation>07 - BOX CLASSIC LAST MINUTE (cod. 0211)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>07 - SERV. SOCIAL AND EMPLOYMENT (cod. 0172)</masterLabel>
+        <translation>07 - SERV. SOCIO OCCUPAZIONALI (cod. 0172)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>07 - SUMMER JACKET EN471 / 94 (cod. 0096)</masterLabel>
+        <translation>07 - GIACCA ESTIVA EN471/94 (cod. 0096)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>08 - DAYTIME INTEGRATED CENTERS (cod. 0173)</masterLabel>
+        <translation>08 - CENTRI DIURNI INTEGRATI (cod. 0173)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>08 - JAZZ BOX LAST MINUTE (cod. 0212)</masterLabel>
+        <translation>08 - BOX JAZZ LAST MINUTE (cod. 0212)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>08 - SUBSCRIPTION (cod. 0224)</masterLabel>
+        <translation>08 – ABBONAMENTO (cod. 0224)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>08 - WINTER JACKET EN471 / 94 (cod. 0097)</masterLabel>
+        <translation>08 - GIACCA INVERNALE EN471/94 (cod. 0097)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>09 - EP-RELIEF MEASURES (cod. 0174)</masterLabel>
+        <translation>09 - INTERVENTI SOLLIEVO-EP (cod. 0174)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>09 - HOME CARE (cod. 0225)</masterLabel>
+        <translation>09 - ASSISTENZA DOMICILIARE (cod. 0225)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>09 - SUMMER PANTS EN471 / 94 (cod. 0098)</masterLabel>
+        <translation>09 - PANTALONE ESTIVO EN471/94 (cod. 0098)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10 - INT.SOLLIEVO RESIDENTIAL (cod. 0175)</masterLabel>
+        <translation>10 - INT.SOLLIEVO RESIDENZIALE (cod. 0175)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10 - PANTS INVER. EN471 / 94 (cod. 0099)</masterLabel>
+        <translation>10 - PANTALONE INVER. EN471/94 (cod. 0099)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10 - REST / CARE STAYS (cod. 0226)</masterLabel>
+        <translation>10 - SOGGIORNI RIPOSO / CURA (cod. 0226)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11 - ASA-RELIEF MEASURES (cod. 0177)</masterLabel>
+        <translation>11 - INTERVENTI SOLLIEVO-ASA (cod. 0177)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11 - FIELD SCOLAST.ESTATE/INV. (Cod. 0227)</masterLabel>
+        <translation>11 - CAMPO SCOLAST.ESTATE/INV. (cod. 0227)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11 - VEST EN471 / 94 (cod. 0100)</masterLabel>
+        <translation>11 - GILET EN471/94 (cod. 0100)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12 - E-LEARNING COURSES IN (cod. 0228)</masterLabel>
+        <translation>12 - CORSI IN E-LEARNING (cod. 0228)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12 - JACKET EN471 / 94 (cod. 0101)</masterLabel>
+        <translation>12 - GIACCA A VENTO EN471/94 (cod. 0101)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12 - TUTORING HOME (cod. 0183)</masterLabel>
+        <translation>12 - TUTORING DOMICILIARE (cod. 0183)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13 - JACKET INV. + BATTERIES WORK (cod. 0104)</masterLabel>
+        <translation>13 - GIACCA INV.+ PILE LAVORO (cod. 0104)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13 - ORIENTATION STUDIO / LAVOR (cod. 0229)</masterLabel>
+        <translation>13 - ORIENTAMENTO STUDIO/LAVOR (cod. 0229)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13 - PERFORMANCE SAD Add. (Cod. 0184)</masterLabel>
+        <translation>13 - SAD PRESTAZIONI AGGIUNT. (cod. 0184)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>14 - JACKET INV. WORK (cod. 0105)</masterLabel>
+        <translation>14 - GIACCA INV. LAVORO (cod. 0105)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>14 - SPECIALIZED COURSES. POST LAU (cod. 0230)</masterLabel>
+        <translation>14 - CORSI SPECIALIZ. POST LAU (cod. 0230)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>15 - BATTERY INSIDE JOB (cod. 0106)</masterLabel>
+        <translation>15 - PILE INTERNO LAVORO (cod. 0106)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>15 - PERSONAL DEVELOPMENT COURSES (cod. 0231)</masterLabel>
+        <translation>15 - CORSI DI SVILUPPO PERSONA (cod. 0231)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>16 - JACKET EST. WORK (cod. 0107)</masterLabel>
+        <translation>16 - GIACCA EST. LAVORO (cod. 0107)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>16 - LANGUAGE / ADVISED COURSES (cod. 0232)</masterLabel>
+        <translation>16 - CORSI DI LINGUE/INFORMATI (cod. 0232)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>17 - HIGH VIS VEST. WORK (cod. 0108)</masterLabel>
+        <translation>17 - GILET ALTA VIS. LAVORO (cod. 0108)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>17 - RENT HOUSE HOLIDAY (cod. 0233)</masterLabel>
+        <translation>17 - AFFITTO CASA VACANZA (cod. 0233)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>18 - COURSES SPORT ACTIVITIES (cod. 0234)</masterLabel>
+        <translation>18 - CORSI ATTIVITA SPORTIVE (cod. 0234)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>18 - PANTS LAV. BLUE (cod. 0109)</masterLabel>
+        <translation>18 - PANTALONE LAV. BLU (cod. 0109)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>19 - INFERMIERISTIC ASSISTANCE (cod. 0235)</masterLabel>
+        <translation>19 - ASSISTENZA INFERMIERISTIC (cod. 0235)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>19 - T-SHIRT BLUE COTTON (cod. 0110)</masterLabel>
+        <translation>19 - MAGLIETTA COTONE BLU (cod. 0110)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20 - BIGLIET. TRAIN / PLANE / SHIP (cod. 0236)</masterLabel>
+        <translation>20 - BIGLIET. TRENO/AEREO/NAVE (cod. 0236)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20 - FULL SUITS (cod. 0132)</masterLabel>
+        <translation>20 - TUTE INTEGRALI (cod. 0132)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21 - BOMBER (cod. 0133)</masterLabel>
+        <translation>21 – BOMBER (cod. 0133)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21 - COURSES LEISURE (cod. 0237)</masterLabel>
+        <translation>21 - CORSI PER IL TEMPO LIBERO (cod. 0237)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22 - HOLIDAY PACKAGE (cod. 0238)</masterLabel>
+        <translation>22 - PACCHETTO VACANZA (cod. 0238)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22 - OVERALL GORE (cod. 0134)</masterLabel>
+        <translation>22 - TUTA GORETEX (cod. 0134)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>23 - PERNOT. HOTEL / HOTEL (cod. 0239)</masterLabel>
+        <translation>23 - PERNOT. ALBERGO/HOTEL (cod. 0239)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>23 - Waterproof (cod. 0135)</masterLabel>
+        <translation>23 – IMPERMEABILE (cod. 0135)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>24 - BOX experiential (cod. 0240)</masterLabel>
+        <translation>24 - COFANETTO ESPERENZIALE (cod. 0240)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>24 - SCARF (cod. 0136)</masterLabel>
+        <translation>24 – FOULARD (cod. 0136)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>25 - CHECK UP (cod. 0241)</masterLabel>
+        <translation>25 - CHECK UP (cod. 0241)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>25 - UNIFORM MAN (cod. 0137)</masterLabel>
+        <translation>25 - UNIFORME UOMO (cod. 0137)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>26 - CRUISE (cod. 0242)</masterLabel>
+        <translation>26 – CROCIERA (cod. 0242)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>26 - WOMEN&apos;S UNIFORM (cod. 0138)</masterLabel>
+        <translation>26 - UNIFORME DONNA (cod. 0138)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>27 - ADMISSIONS AND MEASURES (cod. 0243)</masterLabel>
+        <translation>27 - RICOVERI E INTERVENTI (cod. 0243)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>27 - sanitized JACKET (cod. 0139)</masterLabel>
+        <translation>27 - GIACCA SANIFICATA (cod. 0139)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>28 - LABORATORY TESTS (cod. 0244)</masterLabel>
+        <translation>28 - ESAMI DI LABORATORIO (cod. 0244)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>28 - PANTS sanitized (cod. 0140)</masterLabel>
+        <translation>28 - PANTALONE SANIFICATO (cod. 0140)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>29 - SINGLE ENTRY (cod. 0246)</masterLabel>
+        <translation>29 - INGRESSO SINGOLO (cod. 0246)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>29 - T-SHIRT EST. Sanitized (cod. 0141)</masterLabel>
+        <translation>29 - MAGLIETTA EST. SANIFICATA (cod. 0141)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>30 - INITIATIVE TO PLAY-serves H (cod. 0247)</masterLabel>
+        <translation>30 - INIZIATIVA LUDICO-RICREAT (cod. 0247)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>30 - SWEATER sanitized (cod. 0142)</masterLabel>
+        <translation>30 - MAGLIONE SANIFICATO (cod. 0142)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>31 - CAR (cod. 0248)</masterLabel>
+        <translation>31 - NOLEGGIO AUTO (cod. 0248)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>31 - JACKET sanitized (cod. 0143)</masterLabel>
+        <translation>31 - GIACCA A VENTO SANIFICATA (cod. 0143)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>32 - PACKAGE INPUTS (cod. 0249)</masterLabel>
+        <translation>32 - PACCHETTO INGRESSI (cod. 0249)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>32 - SKIRT (cod. 0144)</masterLabel>
+        <translation>32 – GONNA (cod. 0144)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33 - PANTS (cod. 0145)</masterLabel>
+        <translation>33 – PANTALONE (cod. 0145)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33 - SCHOOL TRANSPORTATION (cod. 0250)</masterLabel>
+        <translation>33 - TRASPORTO SCOLASTICO (cod. 0250)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>34 - EDUCATIONAL AND CULTURE TRAVEL (cod. 0251)</masterLabel>
+        <translation>34 - VIAGGIO EDUCATIVO-CULTURA (cod. 0251)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>34 - JERSEY (cod. 0146)</masterLabel>
+        <translation>34 – MAGLIA (cod. 0146)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>35 - MEDICAL SPECIALISTS VISITS (cod. 0252)</masterLabel>
+        <translation>35 - VISITE MEDICO-SPECIALISTI (cod. 0252)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>35 - WINTER SUIT (cod. 0147)</masterLabel>
+        <translation>35 - TUTA INVERNALE (cod. 0147)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>36 - GIFT CARDS (cod. 0253)</masterLabel>
+        <translation>36 - GIFT CARD (cod. 0253)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>36 - JACKET (cod. 0148)</masterLabel>
+        <translation>36 – GIUBBINO (cod. 0148)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>37 - CLEANWAY VALUE (cod. 0149)</masterLabel>
+        <translation>37 - CLEANWAY VALUE (cod. 0149)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>50 - FOOD HYGIENE AND BABY (cod. 0190)</masterLabel>
+        <translation>50 - ALIMENTI E IGIENE NEONATO (cod. 0190)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>51 - BONUS BABY &apos;(cod. 0208)</masterLabel>
+        <translation>51 - BONUS BEBE&apos; (cod. 0208)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>80 - FOOTWEAR (cod. 0080)</masterLabel>
+        <translation>80 – CALZATURE (cod. 0080)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>81 - POWER AND HYGIENE (cod. 0081)</masterLabel>
+        <translation>81 - ALIMENTAZIONE E IGIENE (cod. 0081)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>82 - PHARMACY (cod. 0082)</masterLabel>
+        <translation>82 – FARMACIA (cod. 0082)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>83 - CLOTHING (cod. 0083)</masterLabel>
+        <translation>83 – ABBIGLIAMENTO (cod. 0083)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>84 - FOOD (cod. 0084)</masterLabel>
+        <translation>84 – RISTORAZIONE (cod. 0084)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>85 - TRANSPORT (cod. 0085)</masterLabel>
+        <translation>85 – TRASPORTI (cod. 0085)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>85 - TRANSPORT (cod. 0125)</masterLabel>
+        <translation>85 – TRASPORTI (cod. 0125)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>86 - TINTOLAVANDERIE (cod. 0086)</masterLabel>
+        <translation>86 – TINTOLAVANDERIE (cod. 0086)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>87 - CARTOLIBRERIA (cod. 0087)</masterLabel>
+        <translation>87 – CARTOLIBRERIA (cod. 0087)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>88 - TOYS (cod. 0088)</masterLabel>
+        <translation>88 – GIOCATTOLI (cod. 0088)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>89 - PURCHASE VOUCHER (cod. 0089)</masterLabel>
+        <translation>89 - VOUCHER DI ACQUISTO (cod. 0089)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>89 - PURCHASE VOUCHER (cod. 0129)</masterLabel>
+        <translation>89 - VOUCHER DI ACQUISTO (cod. 0129)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>90 - SUPPORT FOR PARENTHOOD (cod. 0176)</masterLabel>
+        <translation>90 - SOSTEGNO A GENITORIALITA (cod. 0176)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>91 - DISCOUNT PREPAID (cod. 0178)</masterLabel>
+        <translation>91 - BUONO SCONTO PREPAGATO (cod. 0178)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>92 - PAY FOR UTILITIES ENIA (cod. 0185)</masterLabel>
+        <translation>92 - PER PAGARE UTENZE ENIA (cod. 0185)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>93 - SOCIAL CANTEEN WIDESPREAD (cod. 0203)</masterLabel>
+        <translation>93 - MENSA SOCIALE DIFFUSA (cod. 0203)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>94 - BONUS BABY &apos;(cod. 0204)</masterLabel>
+        <translation>94 - BONUS BEBE&apos; (cod. 0204)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>95 - SHOPPING CART (cod. 0213)</masterLabel>
+        <translation>95 - CARRELLO DELLA SPESA (cod. 0213)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>95 - SHOPPING CART (cod. 0214)</masterLabel>
+        <translation>95 - CARRELLO DELLA SPESA (cod. 0214)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADDRESS LINE</masterLabel>
+        <translation>RIGA INDIRIZZO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ALFA STEEL (cod. 0015)</masterLabel>
+        <translation>PRESSO MENSA ALFA ACCIAI (cod. 0015)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ALFA STEEL (cod. 0033)</masterLabel>
+        <translation>PRESSO MENSA ALFA ACCIAI (cod. 0033)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA DALMINE (cod. 0004)</masterLabel>
+        <translation>PRESSO MENSA DALMINE (cod. 0004)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA DALMINE (cod. 0022)</masterLabel>
+        <translation>PRESSO MENSA DALMINE (cod. 0022)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ENEL (cod. 0013)</masterLabel>
+        <translation>PRESSO MENSA ENEL (cod. 0013)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ENEL (cod. 0031)</masterLabel>
+        <translation>PRESSO MENSA ENEL (cod. 0031)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA FINCANTIERI (cod. 0009)</masterLabel>
+        <translation>PRESSO MENSA FINCANTIERI (cod. 0009)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA FINCANTIERI (cod. 0027)</masterLabel>
+        <translation>PRESSO MENSA FINCANTIERI (cod. 0027)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA FORNILEGHE (cod. 0019)</masterLabel>
+        <translation>PRESSO MENSA FORNILEGHE (cod. 0019)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA FORNILEGHE (cod. 0037)</masterLabel>
+        <translation>PRESSO MENSA FORNILEGHE (cod. 0037)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA GALBANI (cod. 0010)</masterLabel>
+        <translation>PRESSO MENSA GALBANI (cod. 0010)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA GALBANI (cod. 0011)</masterLabel>
+        <translation>PRESSO MENSA GALBANI (cod. 0011)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA GALBANI (cod. 0028)</masterLabel>
+        <translation>PRESSO MENSA GALBANI (cod. 0028)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA GALBANI (cod. 0029)</masterLabel>
+        <translation>PRESSO MENSA GALBANI (cod. 0029)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA MAGNETS MARELLI (cod. 0017)</masterLabel>
+        <translation>PRESSO MENSA MAGNETI MARELLI (cod. 0017)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA MAGNETS MARELLI (cod. 0035)</masterLabel>
+        <translation>PRESSO MENSA MAGNETI MARELLI (cod. 0035)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA MANTERO (cod. 0018)</masterLabel>
+        <translation>PRESSO MENSA MANTERO (cod. 0018)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA MANTERO (cod. 0036)</masterLabel>
+        <translation>PRESSO MENSA MANTERO (cod. 0036)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA Menarini (cod. 0012)</masterLabel>
+        <translation>PRESSO MENSA MENARINI (cod. 0012)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA Menarini (cod. 0030)</masterLabel>
+        <translation>PRESSO MENSA MENARINI (cod. 0030)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ORI MARTIN (cod. 0016)</masterLabel>
+        <translation>PRESSO MENSA ORI MARTIN (cod. 0016)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ORI MARTIN (cod. 0034)</masterLabel>
+        <translation>PRESSO MENSA ORI MARTIN (cod. 0034)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ZANUSSI (cod. 0008)</masterLabel>
+        <translation>PRESSO MENSA ZANUSSI (cod. 0008)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA ZANUSSI (cod. 0026)</masterLabel>
+        <translation>PRESSO MENSA ZANUSSI (cod. 0026)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA Zambon (cod. 0005)</masterLabel>
+        <translation>PRESSO MENSA ZAMBON (cod. 0005)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AT MENSA Zambon (cod. 0023)</masterLabel>
+        <translation>PRESSO MENSA ZAMBON (cod. 0023)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOKING CENTER (cod. 0007)</masterLabel>
+        <translation>CENTRO COTTURA (cod. 0007)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOKING CENTER (cod. 0025)</masterLabel>
+        <translation>CENTRO COTTURA (cod. 0025)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expose NAME</masterLabel>
+        <translation>ESPONI DENOMINAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HOUSE AT THE STUDENT (cod. 0006)</masterLabel>
+        <translation>PRESSO CASA DELLO STUDENTE (cod. 0006)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HOUSE AT THE STUDENT (cod. 0024)</masterLabel>
+        <translation>PRESSO CASA DELLO STUDENTE (cod. 0024)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUNCH AT PHILIPS (cod. 0020)</masterLabel>
+        <translation>PRESSO MENSA PHILIPS (cod. 0020)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUNCH AT PHILIPS (cod. 0038)</masterLabel>
+        <translation>PRESSO MENSA PHILIPS (cod. 0038)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUNCH AT THE COMMON (cod. 0014)</masterLabel>
+        <translation>PRESSO MENSA COMUNE (cod. 0014)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUNCH AT THE COMMON (cod. 0032)</masterLabel>
+        <translation>PRESSO MENSA COMUNE (cod. 0032)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NAME address</masterLabel>
+        <translation>DENOMINAZIONE SULL&apos;INDIRIZZO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RIGA PLACE &apos;</masterLabel>
+        <translation>RIGA LOCALITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VIGIL AT MENSA BORLETTI (cod. 0021)</masterLabel>
+        <translation>PRESSO MENSA VEGLIA BORLETTI (cod. 0021)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VIGIL AT MENSA BORLETTI (cod. 0039)</masterLabel>
+        <translation>PRESSO MENSA VEGLIA BORLETTI (cod. 0039)</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

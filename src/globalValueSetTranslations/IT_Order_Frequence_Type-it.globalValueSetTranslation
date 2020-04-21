@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ANNUAL</masterLabel>
+        <translation>ANNUALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BIMONTHLY</masterLabel>
+        <translation>BIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DESULTORY</masterLabel>
+        <translation>SALTUARIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FORTNIGHTLY</masterLabel>
+        <translation>QUINDICINALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FOUR</masterLabel>
+        <translation>QUADRIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HALF YEARLY</masterLabel>
+        <translation>SEMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MONTHLY</masterLabel>
+        <translation>MENSILE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OCCASIONAL</masterLabel>
+        <translation>OCCASIONALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>QUARTERLY</masterLabel>
+        <translation>TRIMESTRALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WEEKLY</masterLabel>
+        <translation>SETTIMANALE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

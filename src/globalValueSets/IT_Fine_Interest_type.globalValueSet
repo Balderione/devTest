@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>B1</fullName>
+        <default>false</default>
+        <label>B.C.E. RATE</label>
+    </customValue>
+    <customValue>
+        <fullName>T0</fullName>
+        <default>false</default>
+        <label>NO INTEREST</label>
+    </customValue>
+    <customValue>
+        <fullName>T1</fullName>
+        <default>false</default>
+        <label>EURIBOR RATE TO 12 MONTHS</label>
+    </customValue>
+    <customValue>
+        <fullName>TA</fullName>
+        <default>false</default>
+        <label>RATE ABI</label>
+    </customValue>
+    <customValue>
+        <fullName>TB</fullName>
+        <default>true</default>
+        <label>RATE DECREE 231/02</label>
+    </customValue>
+    <customValue>
+        <fullName>TL</fullName>
+        <default>false</default>
+        <label>LEGAL RATE</label>
+    </customValue>
+    <customValue>
+        <fullName>TP</fullName>
+        <default>false</default>
+        <label>THE PERCENTAGE INDICATED</label>
+    </customValue>
+    <customValue>
+        <fullName>TN</fullName>
+        <default>false</default>
+        <label>RATE CALCULATED ACCORDING TO DATE AND TYPE CONTRACT</label>
+    </customValue>
+    <masterLabel>IT Fine Interest type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

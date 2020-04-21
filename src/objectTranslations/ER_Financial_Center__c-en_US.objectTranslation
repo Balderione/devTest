@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Center</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Centers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>ER_Account_Name__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accounting System ID --></label>
+        <name>ER_Accounting_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account --></label>
+        <name>ER_Bank_Account__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Middle Office --></label>
+        <name>ER_Card_MO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Operational System ID --></label>
+        <name>ER_Card_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>ER_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ER_Contact__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>ER_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creation date in OS --></label>
+        <name>ER_Creation_date_in_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ER_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing City --></label>
+        <name>ER_Invoicing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Country --></label>
+        <name>ER_Invoicing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Region/State --></label>
+        <name>ER_Invoicing_Region_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Site ? --></label>
+        <name>ER_Invoicing_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Street --></label>
+        <name>ER_Invoicing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Zip Code --></label>
+        <name>ER_Invoicing_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional User --></label>
+        <name>ER_LastModifiedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Functional user --></label>
+        <name>ER_Last_Modified_By_Functional_user__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date Functional User --></label>
+        <name>ER_Last_Modified_Date_Functional_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Synchronization Date --></label>
+        <name>ER_Last_Synchronization_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Middle Office --></label>
+        <name>ER_Paper_MO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Operational System ID --></label>
+        <name>ER_Paper_Operational_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Site ? --></label>
+        <name>ER_Payment_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State/ Province --></label>
+        <name>ER_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>ER_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync result --></label>
+        <name>ER_Sync_result__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>ER_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Error --></label>
+        <name>ER_WS_result_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>ER_WS_result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip Code --></label>
+        <name>ER_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepts New Billing System PA --></label>
+        <name>IT_Accepts_New_Billing_System_PA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepts New Billing System --></label>
+        <name>IT_Accepts_New_Billing_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account (Active) --></label>
+        <name>IT_Account_Active__c</name>
+        <relationshipLabel><!-- Financial Centers (Active) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account (Closed) --></label>
+        <name>IT_Account_Closed__c</name>
+        <relationshipLabel><!-- Financial Centers (Closed) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account (Provisioning) --></label>
+        <name>IT_Account_Provisioning__c</name>
+        <relationshipLabel><!-- Financial Centers (Provisioning) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Locality --></label>
+        <name>IT_Additional_Locality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address AC User --></label>
+        <name>IT_Address_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Editing Type --></label>
+        <name>IT_Address_Editing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Validity End Date --></label>
+        <name>IT_Address_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Validity Start Date --></label>
+        <name>IT_Address_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Data AC User --></label>
+        <name>IT_Admin_Data_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Data Validity End Date --></label>
+        <name>IT_Admin_Data_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Data Validity Start Date --></label>
+        <name>IT_Admin_Data_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Client --></label>
+        <name>IT_Associated_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Type --></label>
+        <name>IT_Beneficiary_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R1 --></label>
+        <name>IT_Billing_Company_Name_R1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R2 --></label>
+        <name>IT_Billing_Company_Name_R2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name R3 --></label>
+        <name>IT_Billing_Company_Name_R3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Name --></label>
+        <name>IT_Billing_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIG --></label>
+        <name>IT_CIG__c</name>
+    </fields>
+    <fields>
+        <label><!-- CUP Code --></label>
+        <name>IT_CUP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Address --></label>
+        <name>IT_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit Code --></label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit --></label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City Code --></label>
+        <name>IT_City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Activation Date --></label>
+        <name>IT_Client_Activation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Situation --></label>
+        <name>IT_Client_Situation__c</name>
+        <picklistValues>
+            <masterLabel>ADMINISTRATION OF CONTROLLED</masterLabel>
+            <translation><!-- ADMINISTRATION OF CONTROLLED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGREED IN QUOTE</masterLabel>
+            <translation><!-- AGREED IN QUOTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPULSORY IN ADMINISTRATION</masterLabel>
+            <translation><!-- COMPULSORY IN ADMINISTRATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation><!-- FAILURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN COMPULSORY WINDING</masterLabel>
+            <translation><!-- IN COMPULSORY WINDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN COMPULSORY WINDING AMM.VA</masterLabel>
+            <translation><!-- IN COMPULSORY WINDING AMM.VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN EXTRAORDINARY ADMINISTRATION</masterLabel>
+            <translation><!-- IN EXTRAORDINARY ADMINISTRATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN LIQUIDATION</masterLabel>
+            <translation><!-- IN LIQUIDATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN LIQUIDATION AND CONCORD. PREV</masterLabel>
+            <translation><!-- IN LIQUIDATION AND CONCORD. PREV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORMAL</masterLabel>
+            <translation><!-- NORMAL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>IT_Client_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELED</masterLabel>
+            <translation><!-- CANCELED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELED NON-PAYMENT</masterLabel>
+            <translation><!-- CANCELED NON-PAYMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENTS WAITING FOR THE CODE 6</masterLabel>
+            <translation><!-- CLIENTS WAITING FOR THE CODE 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMERS IN DEF. PROBABLE DELETE</masterLabel>
+            <translation><!-- CUSTOMERS IN DEF. PROBABLE DELETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEFINITELY CANCELED</masterLabel>
+            <translation><!-- DEFINITELY CANCELED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN DEFINING ONLINE</masterLabel>
+            <translation><!-- IN DEFINING ONLINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN DEFINITION</masterLabel>
+            <translation><!-- IN DEFINITION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POTENTIAL ESPADA</masterLabel>
+            <translation><!-- POTENTIAL ESPADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROVISIONAL CUSTOMER</masterLabel>
+            <translation><!-- PROVISIONAL CUSTOMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUSPENDED</masterLabel>
+            <translation><!-- SUSPENDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO ACTIVATE</masterLabel>
+            <translation><!-- TO ACTIVATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO ARRANGE</masterLabel>
+            <translation><!-- TO ARRANGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO CANCEL</masterLabel>
+            <translation><!-- TO CANCEL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Type --></label>
+        <name>IT_Client_Type__c</name>
+        <picklistValues>
+            <masterLabel>Complex Client</masterLabel>
+            <translation><!-- Complex Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple Client</masterLabel>
+            <translation><!-- Simple Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>IT_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concurrency --></label>
+        <name>IT_Concurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirm Flow --></label>
+        <name>IT_Confirm_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Contact_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Expiraction Date --></label>
+        <name>IT_Contract_Expiraction_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>IT_Contract__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contractual Particularities --></label>
+        <name>IT_Contractual_Particularities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Request --></label>
+        <name>IT_Count_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee --></label>
+        <name>IT_DEMO_FEE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_DEMO_Financial_Center__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maintenance --></label>
+        <name>IT_DEMO_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>IT_DEMO_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Up --></label>
+        <name>IT_DEMO_Start_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Derived CIG --></label>
+        <name>IT_Derived_CIG__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT_Discount --></label>
+        <name>IT_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Don&apos;t Send Debt Note --></label>
+        <name>IT_Don_t_Send_Debt_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- EORI Code --></label>
+        <name>IT_EORI_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic AC User --></label>
+        <name>IT_Economic_AC_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity End Date --></label>
+        <name>IT_Economic_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Economic Validity Start Date --></label>
+        <name>IT_Economic_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Number --></label>
+        <name>IT_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extended Company Name --></label>
+        <name>IT_Extended_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra-Urban Specifications --></label>
+        <name>IT_Extra_Urban_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>IT_Financial_Center_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Code --></label>
+        <name>IT_Financial_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fused Client --></label>
+        <name>IT_Fused_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Address --></label>
+        <name>IT_Future_Change_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Economic Conditions --></label>
+        <name>IT_Future_Change_Economic_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change FC --></label>
+        <name>IT_Future_Change_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc X --></label>
+        <name>IT_GeoRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoRef Loc Y --></label>
+        <name>IT_GeoRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet Code --></label>
+        <name>IT_Hamlet_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hamlet --></label>
+        <name>IT_Hamlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Detraction --></label>
+        <name>IT_Invoice_Detraction__c</name>
+        <picklistValues>
+            <masterLabel>0,5 % DETRACTION ON THE TOTAL</masterLabel>
+            <translation><!-- 0,5 % DETRACTION ON THE TOTAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0,5 % DETRACTION TO BE SHOWN</masterLabel>
+            <translation><!-- 0,5 % DETRACTION TO BE SHOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO DETRACTION</masterLabel>
+            <translation><!-- NO DETRACTION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Register Wording --></label>
+        <name>IT_Invoice_Register_Wording__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc X --></label>
+        <name>IT_MetRef_Loc_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- MetRef Loc Y --></label>
+        <name>IT_MetRef_Loc_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Name and Circuit --></label>
+        <name>IT_Name_and_Circuit__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Name and Legal Name --></label>
+        <name>IT_Name_and_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Code --></label>
+        <name>IT_New_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity End Date --></label>
+        <name>IT_Note_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Validity Start Date --></label>
+        <name>IT_Note_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Code --></label>
+        <name>IT_Office_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opening Outcome --></label>
+        <name>IT_Opening_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Code --></label>
+        <name>IT_Order_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Emission Frequency --></label>
+        <name>IT_Order_Emission_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- PEC Mail --></label>
+        <name>IT_PEC_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Particularities Progressive Number --></label>
+        <name>IT_Particularities_Progressive_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Term --></label>
+        <name>IT_Payment_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Code --></label>
+        <name>IT_Previous_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing --></label>
+        <name>IT_Pricing__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Product2__c</name>
+        <relationshipLabel><!-- Financial Centers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>IT_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region code --></label>
+        <name>IT_Region_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Arch Code --></label>
+        <name>IT_Road_Arch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDI --></label>
+        <name>IT_SDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Account --></label>
+        <name>IT_Sales_Account__c</name>
+        <relationshipLabel><!-- Financial Centers (Sales Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>IT_Sales_Manager_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send SUT Printout --></label>
+        <name>IT_Send_SUT_Printout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sestiere Code --></label>
+        <name>IT_Sestiere_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Address --></label>
+        <name>IT_Short_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Company Name --></label>
+        <name>IT_Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Simple Client --></label>
+        <name>IT_Simple_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Client Multiactivity --></label>
+        <name>IT_Single_Client_Multiactivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SkipActivation --></label>
+        <name>IT_SkipActivation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Type --></label>
+        <name>IT_Special_Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>A BILLING REPORTING</masterLabel>
+            <translation><!-- A BILLING REPORTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACTUAL - INCLUDING VAT</masterLabel>
+            <translation><!-- ACTUAL - INCLUDING VAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALL EMPLOYEE CHARGED</masterLabel>
+            <translation><!-- ALL EMPLOYEE CHARGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BILL OF MENS. FATT CONS VAT AG</masterLabel>
+            <translation><!-- BILL OF MENS. FATT CONS VAT AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMISS. MONTH-END INCLUDING VAT</masterLabel>
+            <translation><!-- EMISS. MONTH-END INCLUDING VAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATT. ACTUAL VAT AGG.</masterLabel>
+            <translation><!-- FATT. ACTUAL VAT AGG. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATT.EM END OF THE MONTH IN VAT AGG.</masterLabel>
+            <translation><!-- FATT.EM END OF THE MONTH IN VAT AGG. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISSUE - INCLUDING VAT</masterLabel>
+            <translation><!-- ISSUE - INCLUDING VAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO QUANTITY &apos;/ CUTTING IN BILL</masterLabel>
+            <translation><!-- NO QUANTITY &apos;/ CUTTING IN BILL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (B)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (B) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (C)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (C) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY (D)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY (D) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE CHARGED EMPL.COMPANY(A)</masterLabel>
+            <translation><!-- VALUE CHARGED EMPL.COMPANY(A) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>IT_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Code --></label>
+        <name>IT_Street_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Naming --></label>
+        <name>IT_Ticket_Naming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Per Day --></label>
+        <name>IT_Ticket_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>IT_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toponym --></label>
+        <name>IT_Toponym__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Number --></label>
+        <name>IT_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warrant --></label>
+        <name>IT_Warrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welfare Project --></label>
+        <name>IT_Welfare_Project__c</name>
+        <relationshipLabel><!-- Financial Center --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>IT_Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>ER Financial Center Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Status with Operational System --></label>
+            <section>Synchronization Status with Operational System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ER Financial Center Layout V2.1</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Center Billing Address --></label>
+            <section>Financial Center Billing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Invoicing Information --></label>
+            <section>Invoicing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Synchronization Status with Operational System --></label>
+            <section>Synchronization Status with Operational System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Financial Center PL</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Electronic invoicing information --></label>
+            <section>Electronic invoicing information</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice information --></label>
+            <section>Invoice information</section>
+        </sections>
+        <sections>
+            <label><!-- Principal Administrative Data --></label>
+            <section>Principal Administrative Data</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close Code --></label>
+        <name>IT_Close_Code</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Activate --></label>
+        <name>IT_DEMO_Quick_Activation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Address --></label>
+        <name>IT_Edit_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Addresses --></label>
+        <name>IT_Edit_Address_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Financial center --></label>
+        <name>IT_Financial_Center</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Financial Center Update --></label>
+        <name>IT_Financial_Center_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Activity --></label>
+        <name>IT_New_Delivery_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Notes Labels Shipping Invoicing --></label>
+        <name>IT_Notes_Labels_Shipping_Invoicing</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- At least one of those fields need to be checked : &quot;Invoicing Site ?&quot; or &quot;Payment Site ?&quot; --></errorMessage>
+        <name>VRER01_FinancialC_Mandatory_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Company = Private, Delete CIG and Derived CIG --></errorMessage>
+        <name>VRIT01_CIG_Institution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify Financial Center name! --></errorMessage>
+        <name>VRIT02_Financial_Center_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Billing Company Name can&apos;t contains special charactes:
+ÀÈÌÒÙÁÉÍÓÚÄËÏÖÜ°€¿| --></errorMessage>
+        <name>VRIT03_Billing_Company_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The fields:
+-Office Code; 
+-CUP Code; 
+-Order Code;
+-EORI Code;
+-PEC Mail;
+-Invoice Register Wording;
+are possible to be changed only for Institution that Accepted the billing system for PA! --></errorMessage>
+        <name>VRIT04_IT_Company_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Special Billing Type cannot be modifed for Service &quot;Good Holiday&quot;! --></errorMessage>
+        <name>VRIT05_Special_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PEC Mail or Unique Office Code has to be populated! --></errorMessage>
+        <name>VRIT06_Unique_Office_Code_Pec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debt Notes Sending is possible to modify only for Private company type! --></errorMessage>
+        <name>VRIT07_Debt_Notes_Sending</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- test --></errorMessage>
+        <name>VRIT08_InvoiceDetail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing System for PA is possible to modify only for Institution company type! --></errorMessage>
+        <name>VRIT09_Billing_System_PA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing System (not for PA) is impossible to modify for Institution company type! --></errorMessage>
+        <name>VRIT10_Billing_System</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify for this type of service --></errorMessage>
+        <name>VRIT11_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Impossible to modify fields for this client status! --></errorMessage>
+        <name>VRIT12_Status_Based_Change_Block</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Missing Payment Code! --></errorMessage>
+        <name>VRIT13_No_Payment_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must be populate SDI for Private Client and Unique Office Code for Institution Client! --></errorMessage>
+        <name>VRIT14_SDI_and_Unique_Office_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unique Office Code must contains only 6 characters! --></errorMessage>
+        <name>VRIT15_Unique_Office_Code_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SDI obbligatorio a livello di Financial Center</errorMessage>
+        <name>VRIT16_SDI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SDI must contains only 7 characters! --></errorMessage>
+        <name>VRIT17_SDILen</name>
+    </validationRules>
+</CustomObjectTranslation>

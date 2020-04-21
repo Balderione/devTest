@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CANCELLATIONS</masterLabel>
+        <translation>DISDETTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHANGE OF CORPORATE DATA</masterLabel>
+        <translation>CAMBIO DATI SOCIETARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CIG</masterLabel>
+        <translation>CIG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONTRACT SIGNED BY CUSTOMER</masterLabel>
+        <translation>CONTRATTO REDATTO DA CLIENTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DECLARATION OF INTENT</masterLabel>
+        <translation>DICHIARAZIONE DI INTENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCLOSURE SEPA (8 GG)</masterLabel>
+        <translation>INFORMATIVA SEPA (8 GG)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCLOSURE SEPA (DIFFERENT FROM 8 GG)</masterLabel>
+        <translation>INFORMATIVA SEPA (DIVERSO DA 8 GG)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EXTENSION</masterLabel>
+        <translation>PROROGA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FAX CONTRACT</masterLabel>
+        <translation>CONTRATTO FAX</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FIRST ORDER FORM</masterLabel>
+        <translation>MODULO PRIMO ORDINE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GENERAL TERMS OF SUPPLY</masterLabel>
+        <translation>CONDIZIONI GENERALI DI FORNITURA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LAW 136</masterLabel>
+        <translation>LEGGE 136</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LETTER FRAMEWORK</masterLabel>
+        <translation>LETTERA QUADRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LETTER TO THE FINANCIAL STATEMENTS</masterLabel>
+        <translation>LETTERA INTEGRATIVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LYNX</masterLabel>
+        <translation>LINCE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MASSIVE CONTRACT RELEASE</masterLabel>
+        <translation>CONTRATTO STAMPA MASSIVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MISCELLANEOUS CORRESPONDENCE</masterLabel>
+        <translation>CORRISPONDENZA VARIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OFFER</masterLabel>
+        <translation>OFFERTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PERMITS</masterLabel>
+        <translation>AUTORIZZAZIONI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RAG.SOC CHANGE / EXCHANGE COMPANY DATA</masterLabel>
+        <translation>CAMBIO RAG.SOC/CAMBIO DATI SOCIETARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REVOCATION STATEMENT OF INTENT</masterLabel>
+        <translation>REVOCA DICHIARAZIONE D&apos;INTENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RID</masterLabel>
+        <translation>RID</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SELF PAYMENT SPLIT</masterLabel>
+        <translation>AUTOCERTIFICAZIONE SPLIT PAYMENT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNDERWRITING MANDATE SEPA</masterLabel>
+        <translation>SOTTOSCRIZIONE MANDATO SEPA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNIQUE CODE OFFICE</masterLabel>
+        <translation>CODICE UNIVOCO UFFICIO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WITHHOLDING OF WARRANTY</masterLabel>
+        <translation>RITENUTA DI GARANZIA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>tout CONTRACT</masterLabel>
+        <translation>CONTRATTO PROCACCIATORE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>B</fullName>
+        <default>false</default>
+        <label>ESCL.IVA ART.2 C.3 letter a Presidential Decree 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>D</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.8 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>E</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.8 BIS - DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>F</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.9 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>J</fullName>
+        <default>false</default>
+        <label>ART NOT TAXABLE. 8-8 BIS DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>K</fullName>
+        <default>false</default>
+        <label>EXCLUDING VAT ART. 15 Presidential Decree 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>L</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE art.72 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>S</fullName>
+        <default>false</default>
+        <label>FREE ART. 10 Presidential Decree 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>W</fullName>
+        <default>false</default>
+        <label>OFF VAT ART.1 PARAGRAPH 100, L.244 / 07</label>
+    </customValue>
+    <customValue>
+        <fullName>X</fullName>
+        <default>false</default>
+        <label>OFF VAT ARTT.2,3,4,5,7DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>Y</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.8-9 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>I</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.9 C.2 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>C</fullName>
+        <default>false</default>
+        <label>OFF VAT EX ART 7 TER</label>
+    </customValue>
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.8 C.2 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>G</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE VAT Art.41 LAW 427/93</label>
+    </customValue>
+    <customValue>
+        <fullName>H</fullName>
+        <default>false</default>
+        <label>NOT IMPONIB.ART.8 C.1 LETT. A Presidential Decree 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>M</fullName>
+        <default>false</default>
+        <label>NOT SUBJECT ART.5 LAW 08.01.78 # 533</label>
+    </customValue>
+    <customValue>
+        <fullName>N</fullName>
+        <default>false</default>
+        <label>NOT IMPONIB. ART.8 C.1 lett.c DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>O</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE VAT ART.14 C.3 L.N. 49/72</label>
+    </customValue>
+    <customValue>
+        <fullName>P</fullName>
+        <default>false</default>
+        <label>NOT IMP.EX ART.72DPR 633/72 art10-262/55</label>
+    </customValue>
+    <customValue>
+        <fullName>R</fullName>
+        <default>false</default>
+        <label>NOT TAXABLE ART.9 C.2 DPR 633/72 (R)</label>
+    </customValue>
+    <customValue>
+        <fullName>T</fullName>
+        <default>false</default>
+        <label>IMP.REG.SPEC. (ASS.ORIG) A.74 C1DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>U</fullName>
+        <default>false</default>
+        <label>TAXABLE BENEFIT NPO (SER.FAV.ONLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>V</fullName>
+        <default>false</default>
+        <label>ART NOT TAXABLE. 71 DPR 633/72</label>
+    </customValue>
+    <customValue>
+        <fullName>Z</fullName>
+        <default>false</default>
+        <label>ART NOT TAXABLE. 9 DPR 633/72 (Z)</label>
+    </customValue>
+    <masterLabel>IT Exporter Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AT BRANCH</masterLabel>
+        <translation>PRESSO FILIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COURIER SERVICE</masterLabel>
+        <translation>CORRIERI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER DELIVERY ADDRESS</masterLabel>
+        <translation>ALTRO INDIRIZZO DI CONSEGNA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

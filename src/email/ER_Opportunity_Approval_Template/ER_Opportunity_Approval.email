@@ -1,0 +1,76 @@
+<messaging:emailTemplate subject="Request for approval" recipientType="user" relatedToType="Opportunity">
+    <messaging:plainTextEmailBody >
+        Dear {!recipient.name},
+                
+        Merchant Name: {!relatedTo.Account.Name}
+        
+        Solution Name - Service Name - Default Value - Value        
+        <apex:repeat var="oli" value="{!relatedTo.OpportunityLineItems}">
+        {!oli.PriceBookEntry.ER_SolutionName__c}-{!oli.PriceBookEntry.Name}-{!oli.PriceBookEntry.UnitPrice}/{!oli.PriceBookEntry.ER_Percentage__c}-{!oli.UnitPrice}/{!oli.ER_Percentage__c}
+        </apex:repeat>
+        
+        Regards,
+    </messaging:plainTextEmailBody>
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                
+                <p>Dear <b>{!recipient.name}</b>,</p>
+                
+                Merchant Name: <b>{!relatedTo.Account.Name}</b><br/><br/>
+                <apex:variable var="comment" value=""/>
+                <apex:variable var="ActorName" value=""/>
+                <apex:repeat var="Approval" value="{!relatedTo.ProcessSteps}">
+                    <apex:outputPanel rendered="{!Approval.StepStatus=='Started'}">
+                        <apex:variable var="comment" value="{!Approval.Comments}"/>
+                        <apex:variable var="ActorName" value="{!Approval.Actor.Name}"/> 
+                    </apex:outputPanel>
+                </apex:repeat> 
+                {!ActorName} has requested the approval of the following opportunity:<br/>
+                Approval Comment: {!comment}.<br/><br/>
+                <table border="1" >
+                    <tr>
+                        <th>Solution Name</th>
+                        <th>Service Name</th>
+                        <th>Default Value</th>
+                        <th>Value</th>
+                        <th>Unit</th>
+                    </tr>
+                    <apex:repeat var="oli" value="{!relatedTo.OpportunityLineItems}">
+                        <tr>
+                            <td>{!oli.PriceBookEntry.ER_SolutionName__c}</td>
+                            <td>{!oli.PriceBookEntry.Name}</td>
+                            
+                            <apex:outputPanel rendered="{!oli.ER_Percentage__c == null}">
+                                <td>{!oli.PriceBookEntry.UnitPrice}</td>
+                                <apex:outputPanel rendered="{!oli.ER_NeedApproval__c}">
+                                    <td style="color:#ffb75d">{!oli.UnitPrice}</td>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!(!oli.ER_NeedApproval__c)}">
+                                    <td>{!oli.UnitPrice}</td>
+                                </apex:outputPanel>
+                            
+                                <td>{!oli.CurrencyIsoCode}</td>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!oli.ER_Percentage__c != null}">
+                                <td>{!oli.PriceBookEntry.ER_Percentage__c}</td>
+                                <apex:outputPanel rendered="{!oli.ER_NeedApproval__c}">
+                                    <td style="color:#ffb75d">{!oli.ER_Percentage__c}</td>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!(!oli.ER_NeedApproval__c)}">
+                                    <td>{!oli.ER_Percentage__c}</td>
+                                </apex:outputPanel>
+                                <td>%</td>
+                            </apex:outputPanel>
+                        </tr>
+                    </apex:repeat> 
+                </table>
+                <center>
+                    
+                </center>
+                
+                Regards,
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

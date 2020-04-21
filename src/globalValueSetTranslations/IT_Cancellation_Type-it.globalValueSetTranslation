@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ALLOWANCE&apos;</masterLabel>
+        <translation>INDENNITA&apos;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AUTO LOCK</masterLabel>
+        <translation>CHIUSURA AUTOMATICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHANGING CONDITIONS AGREEMENT</masterLabel>
+        <translation>MODIFICA CONDIZIONI CONTRATTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: AGAPE</masterLabel>
+        <translation>CONCORRENZA: AGAPE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: ALL SERVICE</masterLabel>
+        <translation>CONCORRENZA: ALL SERVICE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: BLUE TICKET</masterLabel>
+        <translation>CONCORRENZA: BLU TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: BONCHEF</masterLabel>
+        <translation>CONCORRENZA: BONCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: BREAK-TIME</masterLabel>
+        <translation>CONCORRENZA: BREAK-TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: CIR</masterLabel>
+        <translation>CONCORRENZA: CIR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: CITY TIME</masterLabel>
+        <translation>CONCORRENZA: CITY TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: CLUB Ristochef</masterLabel>
+        <translation>CONCORRENZA: CLUB RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: DAY</masterLabel>
+        <translation>CONCORRENZA: DAY</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: E-CARD LUNCH</masterLabel>
+        <translation>CONCORRENZA: E-LUNCH CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: E-LUNCH</masterLabel>
+        <translation>CONCORRENZA: E-LUNCH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: E-SMART LUNCH</masterLabel>
+        <translation>CONCORRENZA: E-LUNCH SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: E-TICKET LUNCH</masterLabel>
+        <translation>CONCORRENZA: E-LUNCH TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: EP</masterLabel>
+        <translation>CONCORRENZA: EP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: GOLD TICKET</masterLabel>
+        <translation>CONCORRENZA: TICKET GOLD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: HERE TICKET SERVICE</masterLabel>
+        <translation>CONCORRENZA:QUI TICKET SERVICE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: ITAL TICKET</masterLabel>
+        <translation>CONCORRENZA: ITAL TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: JOINED A CONSIP</masterLabel>
+        <translation>CONCORRENZA: ADERITO A CONSIP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: LUNCHTIME</masterLabel>
+        <translation>CONCORRENZA: LUNCHTIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: MEAL Ristochef</masterLabel>
+        <translation>CONCORRENZA: PASTO RISTOCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: MIG LUNCH</masterLabel>
+        <translation>CONCORRENZA: MIG LUNCH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: MIGROS</masterLabel>
+        <translation>CONCORRENZA: MIGROS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: NEW AGENCY</masterLabel>
+        <translation>CONCORRENZA: NEW AGENCY</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: PASS FOOD</masterLabel>
+        <translation>CONCORRENZA: PASS FOOD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: PASTOCECK</masterLabel>
+        <translation>CONCORRENZA: PASTOCECK</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: PELLEGRINI</masterLabel>
+        <translation>CONCORRENZA: PELLEGRINI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: Queek TICKET</masterLabel>
+        <translation>CONCORRENZA: QUEEK TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: REPAS</masterLabel>
+        <translation>CONCORRENZA: REPAS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: RISTOMAT</masterLabel>
+        <translation>CONCORRENZA: RISTOMAT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SAGIFI</masterLabel>
+        <translation>CONCORRENZA: SAGIFI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SMA</masterLabel>
+        <translation>CONCORRENZA: SMA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SMART TICKET</masterLabel>
+        <translation>CONCORRENZA: TICKET SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SODEXHO</masterLabel>
+        <translation>CONCORRENZA: SODEXHO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SOGART</masterLabel>
+        <translation>CONCORRENZA: SOGART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: SORECA</masterLabel>
+        <translation>CONCORRENZA: SORECA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: TICKET CARD</masterLabel>
+        <translation>CONCORRENZA: TICKET CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: TICKET Gemeaz</masterLabel>
+        <translation>CONCORRENZA: TICKET GEMEAZ</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: TICKET MAX</masterLabel>
+        <translation>CONCORRENZA: TICKET MAX</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: TICKET MAX SMART</masterLabel>
+        <translation>CONCORRENZA: TICKET MAX SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: TICKET RESTAURANT</masterLabel>
+        <translation>CONCORRENZA: TICKET RESTAURANT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COMPETITION: Trimalcione</masterLabel>
+        <translation>CONCORRENZA: TRIMALCIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONCORR .: CITY TIME PLUS SMART</masterLabel>
+        <translation>CONCORR.: CITY TIME PLUS SMART</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONVENTION DIRECT</masterLabel>
+        <translation>CONVENZIONE DIRETTA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCLOSURE</masterLabel>
+        <translation>INFORMATIVA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISCONTINUED ACTIVITIES</masterLabel>
+        <translation>CESSATA ATTIVITA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DISSATISFACTION</masterLabel>
+        <translation>INSODDISFAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FINANCIAL PROBLEMS</masterLabel>
+        <translation>PROBLEMI FINANZIARI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GASTRONOMIE</masterLabel>
+        <translation>GASTRONOMIE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GROUP PASSED A COMPETITION</masterLabel>
+        <translation>GRUPPO PASSATO A CONCORRENZA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INFORMATION - MOD.PAG MODIFICATION</masterLabel>
+        <translation>INFORMATIVA - MODIFICA MOD.PAG</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INFORMATION PURSUANT CONSIP</masterLabel>
+        <translation>INFORMATIVA EX CONSIP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LETTER AGREEMENT CHANGES</masterLabel>
+        <translation>LETTERA VARIAZIONI CONTRATTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LIMIT CAMPAIGN</masterLabel>
+        <translation>TERMINE CAMPAGNA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MENSA USE</masterLabel>
+        <translation>UTILIZZO MENSA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MERGER</masterLabel>
+        <translation>FUSIONE PER INCORPORAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT PAYING</masterLabel>
+        <translation>NON PAGANTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOT ordaining</masterLabel>
+        <translation>NON ORDINANTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORGANIC DISMISSAL</masterLabel>
+        <translation>LICENZIAMENTO ORGANICO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER</masterLabel>
+        <translation>ALTRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TERM WORK</masterLabel>
+        <translation>TERMINE LAVORI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRANSFERRED</masterLabel>
+        <translation>TRASFERITI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNKNOWN COMPETITION</masterLabel>
+        <translation>CONCORRENZA SCONOSCIUTA</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

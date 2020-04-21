@@ -1,0 +1,10 @@
+<apex:page standardController="IT_Usage__c" recordSetVar="usa" extensions="VFCIT27_Installment_Controller" lightningStylesheets="true" standardStylesheets="false">
+      
+	<apex:pageBlock >
+        <flow:interview name="IT00_InstallmentUsage" finishLocation="/{!ID_Sub}" >
+            <!-- UsageID is flow input variable & SelectedUsageIDs is a property in the Apex controller -->
+            <apex:param name="UsageID" value="{!SelectedUsageIDs}" />
+        </flow:interview>
+    </apex:pageBlock>
+    
+</apex:page>

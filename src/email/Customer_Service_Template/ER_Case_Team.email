@@ -1,0 +1,2 @@
+Hello {!User.FirstName},
+{!Case.OwnerFullName} has assigned case team for you. Please see the case details here: {!Case.Link}

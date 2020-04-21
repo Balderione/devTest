@@ -1,0 +1,30 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="MsoPlainText" style="line-height:115%"><span lang="SK">Dear&nbsp;{!Contact.Title} {!Case.Contact},<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="line-height:115%"><span lang="EN" style="mso-ansi-language:
+EN">Within the control of our web page </span><span lang="SK"><a href="http://www.mojedenred.sk/"><span lang="EN" style="color:windowtext;
+mso-ansi-language:EN;text-decoration:none;text-underline:none">www.mojedenred.sk</span></a></span><span lang="EN" style="mso-ansi-language:EN"> we spotted a&nbsp;bug.<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="line-height:115%"><span lang="EN" style="mso-ansi-language:
+EN">We are so sorry about this and we work hard at this moment to make it work
+again.<o:p></o:p></span></p>
+
+<p class="MsoPlainText" style="line-height:115%"><span lang="EN" style="mso-ansi-language:
+EN"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoPlainText" style="line-height:115%"><span lang="EN" style="mso-ansi-language:
+EN">Thank you for understanding.<br>
+<br>
+</span><span lang="SK">Best regards,<o:p></o:p></span></p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<span lang="SK" style="line-height: 115%; font-family: Arial, sans-serif;">Operator ID:&nbsp;{!Case.OwnerId}</span><div><span lang="SK" style="line-height: 115%; font-family: Arial, sans-serif;"><span lang="SK" style="line-height: 115%;">Case ID:&nbsp;{!Case.Id}</span></span></div>]]></td>
+</tr>
+</table>

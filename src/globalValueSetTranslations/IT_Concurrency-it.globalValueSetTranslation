@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AGAPE</masterLabel>
+        <translation>AGAPE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ALL SERVICE</masterLabel>
+        <translation>ALL SERVICE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ANDROS CONSULTING</masterLabel>
+        <translation>ANDROS CONSULTING</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BLUE TICKET</masterLabel>
+        <translation>BLU TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BONCHEF</masterLabel>
+        <translation>BONCHEF</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BREAK TIME</masterLabel>
+        <translation>BREAK TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CIR</masterLabel>
+        <translation>CIR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONSIP TICKET HERE</masterLabel>
+        <translation>CONSIP QUI TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DAILY CARD</masterLabel>
+        <translation>DAILY CARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DAY</masterLabel>
+        <translation>DAY</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EP</masterLabel>
+        <translation>EP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EUROTICKET</masterLabel>
+        <translation>EUROTICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gemeaz</masterLabel>
+        <translation>GEMEAZ</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HELLO INIT</masterLabel>
+        <translation>HELLO INIT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITAL TICKET (NON ESISTE PIU)</masterLabel>
+        <translation><!-- ITAL TICKET (NON ESISTE PIU) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>KING RESTAURANT</masterLabel>
+        <translation>KING RESTAURANT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LUNCH TIME</masterLabel>
+        <translation>LUNCH TIME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MASTER TICKET</masterLabel>
+        <translation>MASTER TICKET</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MIG LUNCH</masterLabel>
+        <translation>MIG LUNCH</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NEW SERVICE AGENCY</masterLabel>
+        <translation>NEW AGENCY SERVICE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OK MEAL (SEVECOM)</masterLabel>
+        <translation>PASTO OK (SEVECOM)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASS FOOD</masterLabel>
+        <translation>PASS FOOD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PASTOCECK (NONO ESISTE PIU)</masterLabel>
+        <translation><!-- PASTOCECK (NONO ESISTE PIU) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PELLEGRINI</masterLabel>
+        <translation>PELLEGRINI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>POLIEDRA SPA</masterLabel>
+        <translation>POLIEDRA SPA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pellizzeri CATERING</masterLabel>
+        <translation>PELLIZZERI RISTORAZIONE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>QUEEK TICKET</masterLabel>
+        <translation><!-- QUEEK TICKET --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REPAS</masterLabel>
+        <translation>REPAS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RISTOMAT-COMPASS</masterLabel>
+        <translation>RISTOMAT-COMPASS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RISTOTRE</masterLabel>
+        <translation><!-- RISTOTRE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAGIFI</masterLabel>
+        <translation><!-- SAGIFI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMA</masterLabel>
+        <translation><!-- SMA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SODEXHO</masterLabel>
+        <translation><!-- SODEXHO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SOGART</masterLabel>
+        <translation><!-- SOGART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SORECA</masterLabel>
+        <translation><!-- SORECA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET HERE SERVICES</masterLabel>
+        <translation><!-- TICKET HERE SERVICES --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRIMALCIONE (NON ESISTE PIU)</masterLabel>
+        <translation><!-- TRIMALCIONE (NON ESISTE PIU) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UNKNOWN COMPETITION</masterLabel>
+        <translation><!-- UNKNOWN COMPETITION --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

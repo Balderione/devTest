@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>E-MAIL</masterLabel>
+        <translation>E-MAIL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMPLOYEE</masterLabel>
+        <translation>DIPENDENTE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FRAMEWORK CONTRACT</masterLabel>
+        <translation>QUADRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GIFTS</masterLabel>
+        <translation>OMAGGI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INCENTIVE CAMPAIGN</masterLabel>
+        <translation>CAMPAGNA INCENTIVE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INSTITUTION</masterLabel>
+        <translation>ENTI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NO STANDARD</masterLabel>
+        <translation>NO STANDARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OPEN ORDER</masterLabel>
+        <translation>ORDINE APERTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>STANDARD</masterLabel>
+        <translation>STANDARD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TICKET EXPRESS</masterLabel>
+        <translation>TICKET EXPRESS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WELFARE</masterLabel>
+        <translation>WELFARE</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

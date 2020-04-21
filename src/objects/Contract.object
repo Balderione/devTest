@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>IT_BarcodeCheck__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>BarcodeCheck</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IT_Commission_Discount_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(TEXT(IT_Discount_Type__c ))),
+CASE(TEXT( IT_Discount_Type__c),
+&quot;2&quot;,&quot;SCONTO CON N. CREDITO A PARTE&quot;,
+&quot;3&quot;,&quot;SCONTO IN FATTURA&quot;,
+&quot;4&quot;,&quot;SCONTO IN FATTURA SU VAL.BUONO&quot;,
+&quot;A&quot;,&quot;SCONTO PERIODICO ANNUALE&quot;,
+&quot;B&quot;,&quot;SCONTO PERIODICO BIMESTRALE&quot;,
+&quot;Q&quot;,&quot;SCONTO PERIODICO QUADRIMESTRALE&quot;,
+&quot;S&quot;,&quot;SCONTO PERIODICO SEMESTRALE&quot;,
+&quot;T&quot;,&quot;SCONTO PERIODICO TRIMESTRALE&quot;,
+&quot;5&quot;,&quot;SCONTO IN NATURA&quot;,
+
+&quot;&quot;),
+IF(
+NOT(ISBLANK(TEXT(IT_Commission_Type__c))),
+CASE(TEXT(IT_Commission_Type__c),
+&quot;0&quot;,&quot;Commissione Esistente&quot;,
+&quot;1&quot;,&quot;Esente da Commissione&quot;,
+&quot;&quot;),
+&#39;&#39;)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Commission/Discount Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Discount_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Discount_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_GetDoc_Link_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;http://eit-getdoc-p.edenred.net/getdoc?APPID=CB&amp;KEY1=&#39;&amp;LEFT(IT_Barcode_2__c, 10), &#39;GetDoc 2&#39; , &#39;_blank&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetDoc Link 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GetDoc_Link_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;http://eit-getdoc-p.edenred.net/getdoc?APPID=CB&amp;KEY1=&#39;&amp;LEFT(IT_Barcode_3__c,10), &#39;GetDoc 3&#39; , &#39;_blank&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetDoc Link 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GetDoc_Link_Framework__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;http://eit-getdoc-p.edenred.net/getdoc?APPID=CB&amp;KEY1=&#39;+IT_Framework_Barcode__c, &#39;GetDoc Framework&#39; , &#39;_blank&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetDoc Link Framework</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GetDoc_Link_Warrant__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;http://eit-getdoc-p.edenred.net/getdoc?APPID=CB&amp;KEY1=&#39;&amp;IT_Barcode_Warrant__c, &#39;GetDoc Warrant&#39; , &#39;_blank&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetDoc Link Warrant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_GetDoc_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;http://eit-getdoc-p.edenred.net/getdoc?APPID=CB&amp;KEY1=&#39;&amp;LEFT(IT_Barcode__c, 10), &#39;IT_Barcode__c&#39; , &#39;_blank&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetDoc Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Payment_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IT_Payment_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <validationRules>
+        <fullName>VRIT16_StartDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+ISBLANK( StartDate ),
+NOT(ISPICKVAL( IT_Document_Type__c , &#39;028&#39;)),
+ IT_BarcodeCheck__c = false
+)</errorConditionFormula>
+        <errorMessage>It is necessary to insert the &#39;StartDate&#39; field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT24_Contract_Renewal_Attendance</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+$Profile.Name != &#39;System Integration&#39;,
+IT_BarcodeCheck__c = false,
+NOT(ISPICKVAL( IT_Document_Type__c , &#39;028&#39;)),
+
+NOT(ISBLANK( IT_Contract_Number__c )),
+
+OR(
+ ISPICKVAL( IT_Attendance_Type__c, &quot;&quot; ),
+ ISPICKVAL( IT_Contract_Renewal_Type__c, &quot;&quot; ) 
+
+)
+
+
+)</errorConditionFormula>
+        <errorMessage>Attendance Type and Contract Renewal type must be populated!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VRIT25_No_Payment_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$User.ER_BypassVR__c = False,
+ISPICKVAL($User.ER_Business_Unit__c , &#39;IT&#39;),
+NOT(ISCHANGED(IT_SkipActivation__c)),
+
+NOT(ISPICKVAL( IT_Document_Type__c , &#39;028&#39;)),
+
+ISPICKVAL( IT_Payment_Code__c , &#39;&#39;),
+				IT_BarcodeCheck__c = false
+
+)</errorConditionFormula>
+        <errorMessage>Missing Payment Code!</errorMessage>
+    </validationRules>
+</CustomObject>

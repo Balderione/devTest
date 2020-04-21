@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Circuit Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Circuits Product</value>
+    </caseValues>
+    <fields>
+        <label><!-- Circuit Code --></label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit Type --></label>
+        <name>IT_Circuit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parametral</masterLabel>
+            <translation><!-- Parametral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation><!-- Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Circuit --></label>
+        <name>IT_Circuit__c</name>
+        <relationshipLabel><!-- Circuits Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Circularity --></label>
+        <name>IT_Circularity__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened</masterLabel>
+            <translation><!-- Opened --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>IT_Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Emission</masterLabel>
+            <translation><!-- Emission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Balance</masterLabel>
+            <translation><!-- Final Balance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Management Type --></label>
+        <name>IT_Management_Type__c</name>
+        <picklistValues>
+            <masterLabel>Online full</masterLabel>
+            <translation><!-- Online full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online light</masterLabel>
+            <translation><!-- Online light --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>IT_Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>IT_Service__c</name>
+    </fields>
+    <layouts>
+        <layout>IT_Circuit_Product_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

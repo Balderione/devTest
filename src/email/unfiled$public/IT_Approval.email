@@ -1,0 +1,25 @@
+Buongiorno,
+
+è richiesta l'approvazione per il caso Salesforce n° {!Case.CaseNumber}.
+Ragione Sociale: {!Account.Name}
+Codice Cliente: {!Case.IT_Financial_Center__c}
+Segmento: {!Account.ER_Segment__c}
+
+
+Commenti: {!ApprovalRequest.Comments}
+Tipologia Operazione: {!Case.IT_Operation_Type__c}
+Casistica: {!Case.IT_Case_Study__c}
+Importo: {!Case.IT_Refund_Amount__c}
+No Fatturazione Elettronica: {!IF(Case.IT_No_Electronic_invoicing__c,'Si','No')}
+Scarico già effettuato: {!IF(Case.IT_Discharge_already_carried_out__c,'Si','No')}
+Reimissione: {!IF(Case.IT_Reissue__c,'Si','No')}
+Nuovo Codice Cliente: {!Case.IT_New_Customer_Code__c}
+
+
+
+
+Approvare o rifiutare la richiesta al seguente link oppure rispondere all'email :
+- "YES" per approvare
+- "NO" per rifiutare
+
+{!ApprovalRequest.Internal_URL}

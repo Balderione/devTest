@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FUIT10_Contact_Assign_Name</fullName>
+        <field>Name</field>
+        <formula>IT_Contact_Info__c 
+
+/*CASE(TEXT(IT_Apparatus_Type__c),
+&quot;001&quot;,&quot;Phone&quot;,
+&quot;002&quot;,&quot;Fax&quot;,
+&quot;003&quot;,&quot;Mail&quot;,
+&quot;004&quot;,&quot;Mail PEC&quot;, 
+&quot;&quot;)*/</formula>
+        <name>FUIT10_Contact_Assign_Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FUIT22_Set_Code_CD</fullName>
+        <field>IT_Code__c</field>
+        <formula>IT_Contact__r.IT_Code__c</formula>
+        <name>FUIT22_Set_Code_CD</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IT_Name_to_Contact_Detail</fullName>
+        <field>IT_Contact_Info__c</field>
+        <formula>Name</formula>
+        <name>Name_to_Contact_Detail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>WFIT10_Contact_Update</fullName>
+        <actions>
+            <name>FUIT10_Contact_Assign_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT15_Contact_Detail</fullName>
+        <actions>
+            <name>IT_Name_to_Contact_Detail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WFIT27_Set_Code_Contact_Detail</fullName>
+        <actions>
+            <name>FUIT22_Set_Code_CD</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND($Profile.Name != &apos;IT System Integration&apos; , NOT(ISPICKVAL(IT_Contact__r.IT_Type__c, &apos;Cli&apos;))
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>COMMERCIAL CHOICE</masterLabel>
+        <translation>SCELTA COMMERCIALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CONDIZIONE PAGAMENTO CONTRASSEGNO POSTALE</masterLabel>
+        <translation><!-- CONDIZIONE PAGAMENTO CONTRASSEGNO POSTALE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NUOVI PRODOTTI</masterLabel>
+        <translation><!-- NUOVI PRODOTTI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>REFUSE THE CONTRIBUTION</masterLabel>
+        <translation>RIFIUTANO IL CONTRIBUTO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TYPE GROUP &quot;MINISTRIES&quot;</masterLabel>
+        <translation>TIPO GRUPPO &quot;MINISTERI&quot;</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UTILIZZANO L&apos;ABBONAMENTO</masterLabel>
+        <translation><!-- UTILIZZANO L&apos;ABBONAMENTO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WITHDRAW THEM</masterLabel>
+        <translation>RITIRANO LORO</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Per order</fullName>
+        <default>false</default>
+        <label>Per order</label>
+    </customValue>
+    <customValue>
+        <fullName>Daily</fullName>
+        <default>false</default>
+        <label>Daily</label>
+    </customValue>
+    <customValue>
+        <fullName>Weekly</fullName>
+        <default>false</default>
+        <label>Weekly</label>
+    </customValue>
+    <customValue>
+        <fullName>Monthly</fullName>
+        <default>false</default>
+        <label>Monthly</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi-monthly</fullName>
+        <default>false</default>
+        <label>Semi-monthly</label>
+    </customValue>
+    <customValue>
+        <fullName>Quaterly</fullName>
+        <default>false</default>
+        <label>Quaterly</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi-Yearly</fullName>
+        <default>false</default>
+        <label>Semi-Yearly</label>
+    </customValue>
+    <customValue>
+        <fullName>Yearly</fullName>
+        <default>false</default>
+        <label>Yearly</label>
+    </customValue>
+    <masterLabel>Invoicing Frequency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>ER_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Detailed Reason --></label>
+        <name>IT_Case_Detailed_Reason__c</name>
+        <picklistValues>
+            <masterLabel>test</masterLabel>
+            <translation><!-- test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>IT_Case_Origin__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Reason --></label>
+        <name>IT_Case_Reason__c</name>
+        <picklistValues>
+            <masterLabel>CASH WELFARE</masterLabel>
+            <translation><!-- CASH WELFARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATALOGUED LAUNCH RESULT</masterLabel>
+            <translation><!-- CATALOGUED LAUNCH RESULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE ECONOMIC/CONTRACTUAL CONDITIONS</masterLabel>
+            <translation><!-- CHANGE ECONOMIC/CONTRACTUAL CONDITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGES TO THE PLAN</masterLabel>
+            <translation><!-- CHANGES TO THE PLAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAINT</masterLabel>
+            <translation><!-- COMPLAINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic Invoicing Information</masterLabel>
+            <translation>INFO FATT ELETTRONICA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLOWS / REPORT-NO RECEPTION</masterLabel>
+            <translation><!-- FLOWS / REPORT-NO RECEPTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INCONSISTENT / REPORT-DATA STREAMS</masterLabel>
+            <translation><!-- INCONSISTENT / REPORT-DATA STREAMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INCORRECT INVOICING</masterLabel>
+            <translation><!-- INCORRECT INVOICING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INFO REFUNDS</masterLabel>
+            <translation><!-- INFO REFUNDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INFO REGULATION</masterLabel>
+            <translation><!-- INFO REGULATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSURANCE</masterLabel>
+            <translation><!-- INSURANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVOICES PAYMENT INFO</masterLabel>
+            <translation><!-- INVOICES PAYMENT INFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing and Financial Documents</masterLabel>
+            <translation>FATTURAZIONE E DOC CONTABILI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT OF COMPETENCE</masterLabel>
+            <translation><!-- NOT OF COMPETENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATH LOADING RESULT</masterLabel>
+            <translation><!-- PATH LOADING RESULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYMENT METHOD</masterLabel>
+            <translation><!-- PAYMENT METHOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-CREDENTIALS AND RECORDING</masterLabel>
+            <translation><!-- PLATFORM-CREDENTIALS AND RECORDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-FAILURE IN OPERATION</masterLabel>
+            <translation><!-- PLATFORM-FAILURE IN OPERATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATFORM-FUNCTIONALITY</masterLabel>
+            <translation><!-- PLATFORM-FUNCTIONALITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRACTICAL VERIFICATION</masterLabel>
+            <translation><!-- PRACTICAL VERIFICATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROSPECT</masterLabel>
+            <translation><!-- PROSPECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Order Flows</masterLabel>
+            <translation>FLUSSI ORDINE PAYROLL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Access and Assistance</masterLabel>
+            <translation>ACCESSO E ASSISTENZA PORTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SICKNESS FUND-MARSH</masterLabel>
+            <translation><!-- SICKNESS FUND-MARSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPAM ( self-compliation )</masterLabel>
+            <translation><!-- SPAM ( self-compliation ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Functionality and Other Information</masterLabel>
+            <translation>FUNZIONALITA&apos; SERVIZIO E ALTRE INFO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-DELIVERY</masterLabel>
+            <translation><!-- TICKET COMPLIMENTS-DELIVERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-MARKETABILITY</masterLabel>
+            <translation><!-- TICKET COMPLIMENTS-MARKETABILITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-RE-ISSUE</masterLabel>
+            <translation><!-- TICKET COMPLIMENTS-RE-ISSUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET COMPLIMENTS-VERIFICATION OF USE</masterLabel>
+            <translation><!-- TICKET COMPLIMENTS-VERIFICATION OF USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET TRANSPORT-SENDING FLOWS</masterLabel>
+            <translation><!-- TICKET TRANSPORT-SENDING FLOWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKET TRANSPORT-STATE REQUIRED</masterLabel>
+            <translation><!-- TICKET TRANSPORT-STATE REQUIRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRACKS-SUPPORT</masterLabel>
+            <translation><!-- TRACKS-SUPPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TW Initiative Activation and Management</masterLabel>
+            <translation>ATT E GESTIONE INIZIATIVA TW</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPDATE OF THE REGISTER</masterLabel>
+            <translation><!-- UPDATE OF THE REGISTER --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closing Milestone Minute --></label>
+        <name>IT_Closing_Milestone_Minute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entitlement Name Number --></label>
+        <name>IT_Entitlement_Name_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Center --></label>
+        <name>IT_Financial_Center__c</name>
+        <relationshipLabel><!-- Entitlements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IVR level 1 --></label>
+        <name>IT_IVR_level_1__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IVR level 2 --></label>
+        <name>IT_IVR_level_2__c</name>
+        <picklistValues>
+            <masterLabel>Flexbenefit Platform</masterLabel>
+            <translation>Piattaforma Flexbenefit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare Platform</masterLabel>
+            <translation>Piattaaforma Ticket Welfare</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IVR level 3 --></label>
+        <name>IT_IVR_level_3__c</name>
+        <picklistValues>
+            <masterLabel>Electronic Invoicing Information</masterLabel>
+            <translation><!-- Electronic Invoicing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoicing and Financial Documents</masterLabel>
+            <translation><!-- Invoicing and Financial Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Order Flows</masterLabel>
+            <translation><!-- Payroll Order Flows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Access and Assistance</masterLabel>
+            <translation><!-- Portal Access and Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Functionality and Other Information</masterLabel>
+            <translation><!-- Service Functionality and Other Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TW Initiative Activation and Management</masterLabel>
+            <translation><!-- TW Initiative Activation and Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone Take Over --></label>
+        <name>IT_Milestone_Take_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>IT_Product__c</name>
+        <picklistValues>
+            <masterLabel>Flexbenefit</masterLabel>
+            <translation><!-- Flexbenefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Restaurant</masterLabel>
+            <translation><!-- Ticket Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Restaurant Smart</masterLabel>
+            <translation><!-- Ticket Restaurant Smart --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CasesPerEntitlement</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ContractLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ER_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ER_Business_Unit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IT_Case_Detailed_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Detailed Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>test</fullName>
+                    <default>false</default>
+                    <label>test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Case_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Origin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Web</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Case_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electronic Invoicing Information</fullName>
+                    <default>false</default>
+                    <label>Electronic Invoicing Information</label>
+                </value>
+                <value>
+                    <fullName>Portal Access and Assistance</fullName>
+                    <default>false</default>
+                    <label>Portal Access and Assistance</label>
+                </value>
+                <value>
+                    <fullName>TW Initiative Activation and Management</fullName>
+                    <default>false</default>
+                    <label>TW Initiative Activation and Management</label>
+                </value>
+                <value>
+                    <fullName>Payroll Order Flows</fullName>
+                    <default>false</default>
+                    <label>Payroll Order Flows</label>
+                </value>
+                <value>
+                    <fullName>Invoicing and Financial Documents</fullName>
+                    <default>false</default>
+                    <label>Invoicing and Financial Documents</label>
+                </value>
+                <value>
+                    <fullName>Service Functionality and Other Information</fullName>
+                    <default>false</default>
+                    <label>Service Functionality and Other Information</label>
+                </value>
+                <value>
+                    <fullName>SPAM ( self-compliation )</fullName>
+                    <default>false</default>
+                    <label>SPAM ( self-compliation )</label>
+                </value>
+                <value>
+                    <fullName>PLATFORM-CREDENTIALS AND RECORDING</fullName>
+                    <default>false</default>
+                    <label>PLATFORM-CREDENTIALS AND RECORDING</label>
+                </value>
+                <value>
+                    <fullName>PLATFORM-FUNCTIONALITY</fullName>
+                    <default>false</default>
+                    <label>PLATFORM-FUNCTIONALITY</label>
+                </value>
+                <value>
+                    <fullName>PLATFORM-FAILURE IN OPERATION</fullName>
+                    <default>false</default>
+                    <label>PLATFORM-FAILURE IN OPERATION</label>
+                </value>
+                <value>
+                    <fullName>UPDATE OF THE REGISTER</fullName>
+                    <default>false</default>
+                    <label>UPDATE OF THE REGISTER</label>
+                </value>
+                <value>
+                    <fullName>SICKNESS FUND-MARSH</fullName>
+                    <default>false</default>
+                    <label>SICKNESS FUND-MARSH</label>
+                </value>
+                <value>
+                    <fullName>PRACTICAL VERIFICATION</fullName>
+                    <default>false</default>
+                    <label>PRACTICAL VERIFICATION</label>
+                </value>
+                <value>
+                    <fullName>CASH WELFARE</fullName>
+                    <default>false</default>
+                    <label>CASH WELFARE</label>
+                </value>
+                <value>
+                    <fullName>NOT OF COMPETENCE</fullName>
+                    <default>false</default>
+                    <label>NOT OF COMPETENCE</label>
+                </value>
+                <value>
+                    <fullName>INCORRECT INVOICING</fullName>
+                    <default>false</default>
+                    <label>INCORRECT INVOICING</label>
+                </value>
+                <value>
+                    <fullName>INVOICES PAYMENT INFO</fullName>
+                    <default>false</default>
+                    <label>INVOICES PAYMENT INFO</label>
+                </value>
+                <value>
+                    <fullName>INCONSISTENT / REPORT-DATA STREAMS</fullName>
+                    <default>false</default>
+                    <label>INCONSISTENT / REPORT-DATA STREAMS</label>
+                </value>
+                <value>
+                    <fullName>FLOWS / REPORT-NO RECEPTION</fullName>
+                    <default>false</default>
+                    <label>FLOWS / REPORT-NO RECEPTION</label>
+                </value>
+                <value>
+                    <fullName>PAYMENT METHOD</fullName>
+                    <default>false</default>
+                    <label>PAYMENT METHOD</label>
+                </value>
+                <value>
+                    <fullName>CHANGE ECONOMIC/CONTRACTUAL CONDITIONS</fullName>
+                    <default>false</default>
+                    <label>CHANGE ECONOMIC/CONTRACTUAL CONDITIONS</label>
+                </value>
+                <value>
+                    <fullName>PATH LOADING RESULT</fullName>
+                    <default>false</default>
+                    <label>PATH LOADING RESULT</label>
+                </value>
+                <value>
+                    <fullName>CATALOGUED LAUNCH RESULT</fullName>
+                    <default>false</default>
+                    <label>CATALOGUED LAUNCH RESULT</label>
+                </value>
+                <value>
+                    <fullName>CHANGES TO THE PLAN</fullName>
+                    <default>false</default>
+                    <label>CHANGES TO THE PLAN</label>
+                </value>
+                <value>
+                    <fullName>INSURANCE</fullName>
+                    <default>false</default>
+                    <label>INSURANCE</label>
+                </value>
+                <value>
+                    <fullName>PROSPECT</fullName>
+                    <default>false</default>
+                    <label>PROSPECT</label>
+                </value>
+                <value>
+                    <fullName>COMPLAINT</fullName>
+                    <default>false</default>
+                    <label>COMPLAINT</label>
+                </value>
+                <value>
+                    <fullName>INFO REGULATION</fullName>
+                    <default>false</default>
+                    <label>INFO REGULATION</label>
+                </value>
+                <value>
+                    <fullName>INFO REFUNDS</fullName>
+                    <default>false</default>
+                    <label>INFO REFUNDS</label>
+                </value>
+                <value>
+                    <fullName>TICKET COMPLIMENTS-DELIVERY</fullName>
+                    <default>false</default>
+                    <label>TICKET COMPLIMENTS-DELIVERY</label>
+                </value>
+                <value>
+                    <fullName>TICKET COMPLIMENTS-VERIFICATION OF USE</fullName>
+                    <default>false</default>
+                    <label>TICKET COMPLIMENTS-VERIFICATION OF USE</label>
+                </value>
+                <value>
+                    <fullName>TICKET COMPLIMENTS-RE-ISSUE</fullName>
+                    <default>false</default>
+                    <label>TICKET COMPLIMENTS-RE-ISSUE</label>
+                </value>
+                <value>
+                    <fullName>TICKET COMPLIMENTS-MARKETABILITY</fullName>
+                    <default>false</default>
+                    <label>TICKET COMPLIMENTS-MARKETABILITY</label>
+                </value>
+                <value>
+                    <fullName>TICKET TRANSPORT-STATE REQUIRED</fullName>
+                    <default>false</default>
+                    <label>TICKET TRANSPORT-STATE REQUIRED</label>
+                </value>
+                <value>
+                    <fullName>TICKET TRANSPORT-SENDING FLOWS</fullName>
+                    <default>false</default>
+                    <label>TICKET TRANSPORT-SENDING FLOWS</label>
+                </value>
+                <value>
+                    <fullName>TRACKS-SUPPORT</fullName>
+                    <default>false</default>
+                    <label>TRACKS-SUPPORT</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Closing_Milestone_Minute__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing Milestone Minute</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Entitlement_Name_Number__c</fullName>
+        <displayFormat>SLA{000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Entitlement Name Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>IT_Financial_Center__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Financial Center</label>
+        <referenceTo>ER_Financial_Center__c</referenceTo>
+        <relationshipLabel>Entitlements</relationshipLabel>
+        <relationshipName>Entitlements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_IVR_level_1__c</fullName>
+        <externalId>false</externalId>
+        <label>IVR level 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_IVR_level_2__c</fullName>
+        <externalId>false</externalId>
+        <label>IVR level 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ticket Welfare Platform</fullName>
+                    <default>false</default>
+                    <label>Ticket Welfare Platform</label>
+                </value>
+                <value>
+                    <fullName>Flexbenefit Platform</fullName>
+                    <default>false</default>
+                    <label>Flexbenefit Platform</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_IVR_level_3__c</fullName>
+        <externalId>false</externalId>
+        <label>IVR level 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electronic Invoicing Information</fullName>
+                    <default>false</default>
+                    <label>Electronic Invoicing Information</label>
+                </value>
+                <value>
+                    <fullName>Portal Access and Assistance</fullName>
+                    <default>false</default>
+                    <label>Portal Access and Assistance</label>
+                </value>
+                <value>
+                    <fullName>TW Initiative Activation and Management</fullName>
+                    <default>false</default>
+                    <label>TW Initiative Activation and Management</label>
+                </value>
+                <value>
+                    <fullName>Payroll Order Flows</fullName>
+                    <default>false</default>
+                    <label>Payroll Order Flows</label>
+                </value>
+                <value>
+                    <fullName>Invoicing and Financial Documents</fullName>
+                    <default>false</default>
+                    <label>Invoicing and Financial Documents</label>
+                </value>
+                <value>
+                    <fullName>Service Functionality and Other Information</fullName>
+                    <default>false</default>
+                    <label>Service Functionality and Other Information</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Milestone_Take_Over__c</fullName>
+        <externalId>false</externalId>
+        <label>Milestone Take Over</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flexbenefit</fullName>
+                    <default>false</default>
+                    <label>Flexbenefit</label>
+                </value>
+                <value>
+                    <fullName>Ticket Restaurant</fullName>
+                    <default>false</default>
+                    <label>Ticket Restaurant</label>
+                </value>
+                <value>
+                    <fullName>Ticket Restaurant Smart</fullName>
+                    <default>false</default>
+                    <label>Ticket Restaurant Smart</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsPerIncident</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RemainingCases</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServiceContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SlaProcessId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>StatusIndicator</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>All_Entitlements</fullName>
+        <columns>ENTITLEMENT.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ENTITLEMENT.STARTDATE</columns>
+        <columns>ENTITLEMENT.ENDDATE</columns>
+        <columns>ENTITLEMENT.STATUS</columns>
+        <columns>ER_Business_Unit__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Entitlements</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ENTITLEMENT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STARTDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.ENDDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STATUSINDICATOR</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STARTDATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.ENDDATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STARTDATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.ENDDATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STATUS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STARTDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.ENDDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Circuit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Circuits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>IT_Account__c</name>
+        <relationshipLabel><!-- Circuits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>IT_Agreement_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circuit Code --></label>
+        <name>IT_Circuit_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Connection Date --></label>
+        <name>IT_End_Connection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meal/Day --></label>
+        <name>IT_Meal_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Circuit Name --></label>
+        <name>IT_Receipt_Circuit_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Connection Date --></label>
+        <name>IT_Start_Connection_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>IT_Circuit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

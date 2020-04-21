@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Componente Piano</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Componenti Piano</value>
+    </caseValues>
+    <fields>
+        <label>Canale di Acquisizione</label>
+        <name>IT_Acquisition_Channel__c</name>
+    </fields>
+    <fields>
+        <label>Visibilità Limitata per Gruppi Anagraf.</label>
+        <name>IT_Anagraphical_Groups_limited_visib__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Benefit</label>
+        <name>IT_Benefit_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Benefit</label>
+        <name>IT_Benefit_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Benefit</label>
+        <name>IT_Benefit__c</name>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Care</masterLabel>
+            <translation>Cure Familiari</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation>Previdenza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loans</masterLabel>
+            <translation>Mutui</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Fees</masterLabel>
+            <translation>Spese Mediche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monetization</masterLabel>
+            <translation>Monetizzazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper Selection</masterLabel>
+            <translation>Selection CARTACEI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper Top Premium</masterLabel>
+            <translation>Top Premium CARTACEI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printable Selection</masterLabel>
+            <translation>Selection STAMPABILI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printable Top Premium</masterLabel>
+            <translation>Top Premium STAMPABILI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Transport</masterLabel>
+            <translation>Trasporto Pubblico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Fees</masterLabel>
+            <translation>Spese Scolastiche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Transport (ATM)</masterLabel>
+            <translation>Ticket Trasporto (ATM)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare - Integrated (Portale Titolari)</masterLabel>
+            <translation>Ticket Welfare - Integrato (Portale Titolari)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare - Packages (Portale Beneficiari)</masterLabel>
+            <translation>Ticket Welfare - a pacchetti (Portale Beneficiari)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo Cassa</label>
+        <name>IT_Cash_Type__c</name>
+        <picklistValues>
+            <masterLabel>Easy Welfare</masterLabel>
+            <translation><!-- Easy Welfare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanint Marsh</masterLabel>
+            <translation><!-- Sanint Marsh --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Se Benefit sono specifici, indicare il titolo e le note per la configurazione!</help>
+        <label>Note per Configurazione</label>
+        <name>IT_Configuration_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>IT_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Tax --></label>
+        <name>IT_Free_Tax__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sì</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Link Fondo 1</label>
+        <name>IT_Fund_Link_1__c</name>
+    </fields>
+    <fields>
+        <label>Link Fondo 2</label>
+        <name>IT_Fund_Link_2__c</name>
+    </fields>
+    <fields>
+        <label>Link Fondo 3</label>
+        <name>IT_Fund_Link_3__c</name>
+    </fields>
+    <fields>
+        <label>Link Fondo 4</label>
+        <name>IT_Fund_Link_4__c</name>
+    </fields>
+    <fields>
+        <label>Link Fondo 5</label>
+        <name>IT_Fund_Link_5__c</name>
+    </fields>
+    <fields>
+        <label>Nome Fondo 1</label>
+        <name>IT_Fund_Name_1__c</name>
+    </fields>
+    <fields>
+        <label>Nome Fondo 2</label>
+        <name>IT_Fund_Name_2__c</name>
+    </fields>
+    <fields>
+        <label>Nome Fondo 3</label>
+        <name>IT_Fund_Name_3__c</name>
+    </fields>
+    <fields>
+        <label>Nome Fondo 4</label>
+        <name>IT_Fund_Name_4__c</name>
+    </fields>
+    <fields>
+        <label>Nome Fondo 5</label>
+        <name>IT_Fund_Name_5__c</name>
+    </fields>
+    <fields>
+        <help>Specificare la visibilità dei gruppi anagrafici!</help>
+        <label>Note Gruppi</label>
+        <name>IT_Group_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Macro Benefit --></label>
+        <name>IT_Macro_Benefit__c</name>
+        <picklistValues>
+            <masterLabel>Fund</masterLabel>
+            <translation>Fondo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Altri Benefit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement</masterLabel>
+            <translation>Rimborso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Compliments</masterLabel>
+            <translation><!-- Ticket Compliments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Transport</masterLabel>
+            <translation>Ticket Trasporto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Welfare</masterLabel>
+            <translation><!-- Ticket Welfare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Altri Link</label>
+        <name>IT_Other_Fund_Link__c</name>
+    </fields>
+    <fields>
+        <label>Altri Fondi</label>
+        <name>IT_Other_Fund_Name__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Periodicità 1</label>
+        <name>IT_Periodicity_End_Date_1__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Periodicità 2</label>
+        <name>IT_Periodicity_End_Date_2__c</name>
+    </fields>
+    <fields>
+        <label>Data Fine Periodicità 3</label>
+        <name>IT_Periodicity_End_Date_3__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Periodicità 1</label>
+        <name>IT_Periodicity_Start_Date_1__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Periodicità 2</label>
+        <name>IT_Periodicity_Start_Date_2__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio Periodicità 3</label>
+        <name>IT_Periodicity_Start_Date_3__c</name>
+    </fields>
+    <fields>
+        <label>Piano</label>
+        <name>IT_Plan__c</name>
+        <relationshipLabel>Componenti Piano</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Already stipulated fund</masterLabel>
+            <translation>Fondo già stipulato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company agreement (name and link)</masterLabel>
+            <translation>Convenzione Aziendale (nome e link)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contribution charged to Company</masterLabel>
+            <translation>Contributo a carico dell&apos;azienda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contribution charged to Employee</masterLabel>
+            <translation>Contributo a carico del dipendente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Amount</masterLabel>
+            <translation>Importo Libero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home to Work</masterLabel>
+            <translation>Casa Lavoro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated Home to Work (integration is born by the client)</masterLabel>
+            <translation>Casa Lavoro Integrato (integrazione a carico del dipendente)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages</masterLabel>
+            <translation>A pacchetti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stipulated fund and Company agreement (name and link)</masterLabel>
+            <translation>Fondo stipulato e Convenzione Aziendale</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>IT_Benefit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazioni Fondo</label>
+            <section>Fund Information</section>
+        </sections>
+        <sections>
+            <label>Periodicità</label>
+            <section>Periodicity</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Componente Piano</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Le date di inizio e fine Benefit devono rientrare tra le date di inizio e fine piano!</errorMessage>
+        <name>VRIT01_Benefit_Plan_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La data di fine Benefit deve avvenire dopo la data di inizio!</errorMessage>
+        <name>VRIT02_Benefit_Start_and_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le date di inzio e fine periodicità devono rientrare tra le date di inizio e fine benefit!</errorMessage>
+        <name>VRIT03_Periodicity_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il Macro Benefit è &quot;Fondo&quot;, è necessario inserire almeno un Nome Fondo!</errorMessage>
+        <name>VRIT04_Fund_Name_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

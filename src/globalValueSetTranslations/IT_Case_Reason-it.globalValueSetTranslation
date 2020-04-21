@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Electronic Invoicing Information</masterLabel>
+        <translation>INFO FATT ELETTRONICA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Invoicing and Financial Documents</masterLabel>
+        <translation>FATTURAZIONE E DOC CONTABILI</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Payroll Order Flows</masterLabel>
+        <translation>FLUSSI ORDINE PAYROLL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Portal Access and Assistance</masterLabel>
+        <translation>ACCESSO E ASSISTENZA PORTALE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Service Functionality and Other Information</masterLabel>
+        <translation>FUNZIONALITA&apos; SERVIZIO E ALTRE INFO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TW Initiative Activation and Management</masterLabel>
+        <translation>ATT E GESTIONE INIZIATIVA TW</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

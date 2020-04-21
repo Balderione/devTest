@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dichiarazione d&apos;Intento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dichiarazioni d&apos;Intento</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC User --></label>
+        <name>IT_AC_User__c</name>
+    </fields>
+    <fields>
+        <label>Ragione Sociale</label>
+        <name>IT_Account__c</name>
+        <relationshipLabel><!-- Intent declaration --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Numero Dichiarazione</label>
+        <name>IT_Declaration_Number__c</name>
+    </fields>
+    <fields>
+        <label>Importo dichiarato</label>
+        <name>IT_Declared_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Tipo esportatore</label>
+        <name>IT_Exporter_Type__c</name>
+    </fields>
+    <fields>
+        <label>Codice Fiscale</label>
+        <name>IT_Fiscal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Change Intent Declaration --></label>
+        <name>IT_Future_Change_Intent_Declaration__c</name>
+    </fields>
+    <fields>
+        <label>Tipo operazione</label>
+        <name>IT_Operation_Type__c</name>
+        <picklistValues>
+            <masterLabel>One Operation only</masterLabel>
+            <translation>Una sola Operazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation up to contentions</masterLabel>
+            <translation>Operazione fino a Concorrenza</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data presentaz. dichiaraz. Ag.Entrate</label>
+        <name>IT_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Progressivo</label>
+        <name>IT_Progressive__c</name>
+    </fields>
+    <fields>
+        <label>Tipologia</label>
+        <name>IT_Type__c</name>
+        <picklistValues>
+            <masterLabel>EXCLUDING VAT</masterLabel>
+            <translation><!-- EXCLUDING VAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREE</masterLabel>
+            <translation><!-- FREE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT TAXABLE</masterLabel>
+            <translation><!-- NOT TAXABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OFF-VAT</masterLabel>
+            <translation><!-- OFF-VAT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data Fine Validità</label>
+        <name>IT_Validity_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Data Inizio validità</label>
+        <name>IT_Validity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Anno di validità</label>
+        <name>IT_Validity_Year__c</name>
+    </fields>
+    <fields>
+        <label>Importo Residuo</label>
+        <name>Remaining_Amount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Dichiarazione d&apos;Intento</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Il Codice Fiscale deve corrispondere a quello dell&apos;Account!</errorMessage>
+        <name>VR04IT_Fiscal_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ATTENZIONE! Inserire l&apos;anno corrente o l&apos;anno corrente +1!</errorMessage>
+        <name>VRIT01_Validity_Year</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La data di presentazione all&apos;A.E. non può essere una data futura!</errorMessage>
+        <name>VRIT02_Presentation_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inserire il Tipo Esportatore, il Tipo Utilizzo, l&apos;Importo Dichiarato e il Codice Fiscale!</errorMessage>
+        <name>VRIT03_Exporter_Type_OR</name>
+    </validationRules>
+</CustomObjectTranslation>
